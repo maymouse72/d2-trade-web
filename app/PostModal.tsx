@@ -10,8 +10,9 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   const [priceRune, setPriceRune] = useState('');
   const [roomInfo, setRoomInfo] = useState('');
 
-  const [allItems, setAllItems] = useState([]);
-  const [filteredItems, setFilteredItems] = useState([]);
+  // 💡 [에러 해결 핵심] 빈 괄호 안에 ([])를 채워 넣어 정품 배열 변수방으로 선언해 줍니다!
+  const [allItems, setAllItems] = useState<string[]>([]);         
+  const [filteredItems, setFilteredItems] = useState<string[]>([]); 
   const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
@@ -22,13 +23,18 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
         setAllItems(names);
       })
       .catch((err) => console.error('사전 로드 실패:', err));
-  }, []);
+  },);
 
+  // 💡 [안전망 보완 완료] 유저가 타자를 칠 때마다 안전하게 사전을 필터링하는 엔진
   const handleItemChange = (e: any) => {
     const value = e.target.value;
     setItemBase(value);
-    if (value.trim().length > 0) {
-      const filtered = allItems.filter((name: string) => name.includes(value)).slice(0, 8);
+
+    // 전송받은 사전 데이터(allItems)가 온전하게 존재할 때만 필터 가동 (오류 완벽 차단!)
+    if (allItems && value.trim().length > 0) {
+      const filtered = allItems
+        .filter((name: string) => name.includes(value))
+        .slice(0, 8);
       setFilteredItems(filtered);
       setShowDropdown(true);
     } else {
@@ -48,15 +54,16 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50 overflow-y-auto backdrop-blur-sm">
-      <div className="bg-[#141414] border-2 border-[#8C6D3B] w-full max-w-md p-6 rounded shadow-2xl relative my-8 text-[#DCDCDC]">
-        <button onClick={onClose} className="absolute top-3 right-4 text-lg text-[#777777] hover:text-white cursor-pointer transition-colors">✕</button>
-        <h2 className="text-xl font-bold text-center text-[#C76C2E] mb-6 tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">NEW TRADE POST (WEB)</h2>
+    <div style={{ backgroundColor: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(4px)' }} className="fixed inset-0 flex items-center justify-center p-4 z-50 overflow-y-auto">
+      <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', maxWidth: '450px' }} className="w-full p-6 rounded shadow-2xl relative my-8 text-[#DCDCDC]">
+        <button onClick={onClose} className="absolute top-3 right-4 text-xl text-[#777777] hover:text-white cursor-pointer transition-colors">✕</button>
+        <h2 style={{ color: '#C76C2E' }} className="text-xl font-bold text-center mb-6 tracking-wide text-shadow">NEW TRADE POST (WEB)</h2>
         
-        <form onSubmit={handleFormSubmit} className="space-y-4">
+        <form onSubmit={handleFormSubmit} className="space-y-5">
+          {/* 게임 모드 선택 */}
           <div>
             <label className="block text-xs text-[#AAAAAA] mb-2 font-bold tracking-wide">게임 모드 선택</label>
-            <div className="flex gap-6 p-2 bg-[#0A0A0A] rounded border border-[#222222]">
+            <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222' }} className="flex gap-6 p-3 rounded">
               <label className="flex items-center gap-2 text-sm cursor-pointer select-none">
                 <input type="radio" checked={gameMode === 'ladder'} onChange={() => setGameMode('ladder')} className="w-4 h-4 accent-[#C5A059] cursor-pointer" /> 래더 (Ladder)
               </label>
@@ -66,26 +73,29 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
             </div>
           </div>
 
-          <div>
-            <label className="block text-xs text-[#AAAAAA] mb-1 font-bold tracking-wide">배틀넷 ID (Battle.net Tag)</label>
-            <input type="text" value={battlenetId} onChange={(e) => setBattlenetId(e.target.value)} placeholder="예: 홍길동#1234" className="w-full h-11 px-3 bg-[#0A0A0A] border-2 border-[#8C6D3B] focus:border-[#C5A059] text-white rounded text-sm outline-none transition-colors" />
+          {/* 배틀넷 ID */}
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">배틀넷 ID (Battle.net Tag)</label>
+            <input type="text" value={battlenetId} onChange={(e) => setBattlenetId(e.target.value)} placeholder="예: 홍길동#1234" style={{ width: '100%', boxSizing: 'border-box' }} />
           </div>
 
-          <div className="relative">
-            <label className="block text-xs text-[#AAAAAA] mb-1 font-bold tracking-wide">아이템 베이스 (자동완성 검색)</label>
+          {/* 아이템 베이스 */}
+          <div className="flex flex-col gap-1.5 relative">
+            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">아이템 베이스 (자동완성 검색)</label>
             <input 
               type="text" value={itemBase} onChange={handleItemChange} 
               onFocus={() => itemBase.length > 0 && setShowDropdown(true)}
               onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
               placeholder="예: 크리스탈 소드, 샤코" 
-              className="w-full h-11 px-3 bg-[#0A0A0A] border-2 border-[#8C6D3B] focus:border-[#C5A059] text-white rounded text-sm outline-none transition-colors" 
+              style={{ width: '100%', boxSizing: 'border-box' }}
             />
             {showDropdown && filteredItems.length > 0 && (
-              <div className="absolute left-0 right-0 mt-1 bg-[#141414] border border-[#8C6D3B] rounded shadow-2xl z-50 max-h-48 overflow-y-auto">
+              <div style={{ backgroundColor: '#141414', border: '1px solid #8C6D3B' }} className="absolute left-0 right-0 top-[74px] rounded shadow-2xl z-50 max-h-48 overflow-y-auto">
                 {filteredItems.map((name, index) => (
                   <div 
                     key={index} onClick={() => { setItemBase(name); setShowDropdown(false); }}
-                    className="px-3 py-2 text-xs text-left text-white hover:bg-[#C5A059] hover:text-[#0A0A0A] cursor-pointer font-bold border-b border-[#222222] last:border-b-0 transition-colors"
+                    style={{ borderBottom: '1px solid #222222' }}
+                    className="px-3 py-2.5 text-xs text-left text-white hover:bg-[#C5A059] hover:text-[#0A0A0A] cursor-pointer font-bold last:border-b-0 transition-colors"
                   >
                     {name}
                   </div>
@@ -94,22 +104,26 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
             )}
           </div>
 
-          <div>
-            <label className="block text-xs text-[#AAAAAA] mb-1 font-bold tracking-wide">상세 옵션 및 설명</label>
-            <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="자유롭게 상세 수치를 적어주세요." rows={3} className="w-full p-3 bg-[#0A0A0A] border-2 border-[#8C6D3B] focus:border-[#C5A059] text-white rounded text-sm outline-none transition-colors resize-none" />
+          {/* 상세 옵션 설명 */}
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">상세 옵션 및 설명</label>
+            <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="자유롭게 상세 수치를 적어주세요." rows={3} style={{ width: '100%', boxSizing: 'border-box' }} />
           </div>
 
-          <div>
-            <label className="block text-xs text-[#AAAAAA] mb-1 font-bold tracking-wide">희망 가격 (요구 룬 수량)</label>
-            <input type="text" value={priceRune} onChange={(e) => setPriceRune(e.target.value)} placeholder="예: 2 베르, 자+로" className="w-full h-11 px-3 bg-[#0A0A0A] border-2 border-[#8C6D3B] focus:border-[#C5A059] text-white rounded text-sm outline-none transition-colors" />
+          {/* 희망 가격 */}
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">희망 가격 (요구 룬 수량)</label>
+            <input type="text" value={priceRune} onChange={(e) => setPriceRune(e.target.value)} placeholder="예: 2 베르, 자+로" style={{ width: '100%', boxSizing: 'border-box' }} />
           </div>
 
-          <div>
-            <label className="block text-xs text-[#AAAAAA] mb-1 font-bold tracking-wide">인게임 방 정보 (방제 /// 패스워드)</label>
-            <input type="text" value={roomInfo} onChange={(e) => setRoomInfo(e.target.value)} placeholder="예: dia-01 /// 1" className="w-full h-11 px-3 bg-[#0A0A0A] border-2 border-[#8C6D3B] focus:border-[#C5A059] text-white rounded text-sm outline-none transition-colors" />
+          {/* 인게임 방 정보 */}
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">인게임 방 정보 (방제 /// 패스워드)</label>
+            <input type="text" value={roomInfo} onChange={(e) => setRoomInfo(e.target.value)} placeholder="예: dia-01 /// 1" style={{ width: '100%', boxSizing: 'border-box' }} />
           </div>
 
-          <button type="submit" disabled={submitting} className="w-full h-12 bg-[#C5A059] hover:bg-[#B48F48] disabled:bg-[#444444] disabled:text-[#777777] text-[#0A0A0A] font-extrabold rounded transition text-sm shadow-xl mt-4 cursor-pointer">
+          {/* 등록 버튼 */}
+          <button type="submit" disabled={submitting} style={{ backgroundColor: submitting ? '#444444' : '#C5A059', color: '#0A0A0A', width: '100%' }} className="h-12 font-extrabold rounded transition text-sm shadow-xl mt-4 cursor-pointer hover:bg-[#B48F48]">
             {submitting ? '서버로 등록 중...' : '매물 등록하기 (1시간 유지)'}
           </button>
         </form>
