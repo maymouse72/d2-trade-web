@@ -10,8 +10,9 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   const [priceRune, setPriceRune] = useState('');
   const [roomInfo, setRoomInfo] = useState('');
 
-  const [allItems, setAllItems] = useState<string[]>();
-  const [filteredItems, setFilteredItems] = useState<string[]>();
+  // 💡 [타입 버그 해결] 단순 string이 아니라 배열([]) 형태로 변수방을 명확하게 선언합니다!
+  const [allItems, setAllItems] = useState<string[]>([]);
+  const [filteredItems, setFilteredItems] = useState<string[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
@@ -36,18 +37,26 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
     }
   };
 
+  // 💡 [자동 청소기 비서 엔진] 등록 성공 신호를 받으면 칸을 싹 치워주는 함수 보따리
+  const resetFormFields = () => {
+    setItemBase('');
+    setDescription('');
+    setPriceRune('');
+    setRoomInfo('');
+  };
+
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
     if (!battlenetId || !itemBase || !priceRune || !roomInfo) {
       alert('필수 항목을 모두 입력해 주세요!');
       return;
     }
-    onSubmit({ gameMode, battlenetId, itemBase, description, priceRune, roomInfo });
+    // 부모 비서(MarketHome)에게 청소기 함수(resetFormFields)를 함께 동봉해서 넘겨줍니다!
+    onSubmit({ gameMode, battlenetId, itemBase, description, priceRune, roomInfo }, resetFormFields);
   };
 
   if (!isOpen) return null;
 
-  // 💡 [로컬과 200% 똑같이 매핑하는 웹 표준 인라인 마스터 스타일 비서]
   const inputStyle = {
     width: '100%',
     height: '44px',
@@ -55,7 +64,7 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
     backgroundColor: '#0A0A0A',
     border: '2px solid #8C6D3B',
     color: '#FFFFFF',
-    borderRadius: '4px',           // 💡 입력창 모서리 곡선 디테일 복원
+    borderRadius: '4px',
     fontSize: '14px',
     outline: 'none',
     boxSizing: 'border-box' as const,
@@ -63,13 +72,9 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   };
 
   return (
-    // 💡 [배경 흐림 및 화면 정중앙 강제 정렬 기폭장치]
-    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(4px)', zIndex: 9999 }}>
-      
-      {/* 💡 [핵심 교정: 모달 상자 본체] 브라우저가 강제로 늘리지 못하도록 width와 max-width 분리 각인 및 곡선(borderRadius) 적용! */}
+    <div className="fixed inset-0 p-4 z-50 bg-black/80" style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999, backdropFilter: 'blur(4px)' }}>
       <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', width: '90%', maxWidth: '440px', padding: '28px 24px 24px 24px', borderRadius: '8px', boxSizing: 'border-box', position: 'relative', boxShadow: '0 20px 25px rgba(0,0,0,0.5)' }}>
         
-        {/* 💡 [닫기 버튼 정위치 마감] 부모 상자 내부(relative)를 기준으로 우측 상단 안쪽(absolute top-4 right-4)에 자석처럼 강제 배치! */}
         <button 
           type="button" 
           onClick={onClose} 
@@ -85,7 +90,6 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
         
         <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           
-          {/* 게임 모드 선택 */}
           <div>
             <label style={{ display: 'block', fontSize: '12px', color: '#AAAAAA', marginBottom: '8px', fontWeight: 'bold', letterSpacing: '0.5px' }}>게임 모드 선택</label>
             <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', display: 'flex', gap: '24px', padding: '12px', borderRadius: '4px' }}>
@@ -98,13 +102,11 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
             </div>
           </div>
 
-          {/* 배틀넷 ID */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>배틀넷 ID (Battle.net Tag)</label>
             <input type="text" value={battlenetId} onChange={(e) => setBattlenetId(e.target.value)} placeholder="예: 홍길동#1234" style={inputStyle} />
           </div>
 
-          {/* 아이템 베이스 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', position: 'relative' }}>
             <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>아이템 베이스 (자동완성 검색)</label>
             <input 
@@ -128,25 +130,21 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
             )}
           </div>
 
-          {/* 상세 옵션 설명 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>상세 옵션 및 설명</label>
             <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="자유롭게 상세 수치를 적어주세요." rows={3} style={{ ...inputStyle, height: 'auto', resize: 'none' }} />
           </div>
 
-          {/* 희망 가격 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>희망 가격 (요구 룬 수량)</label>
             <input type="text" value={priceRune} onChange={(e) => setPriceRune(e.target.value)} placeholder="예: 2 베르, 자+로" style={inputStyle} />
           </div>
 
-          {/* 인게임 방 정보 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>인게임 방 정보 (방제 /// 패스워드)</label>
             <input type="text" value={roomInfo} onChange={(e) => setRoomInfo(e.target.value)} placeholder="예: dia-01 /// 1" style={inputStyle} />
           </div>
 
-          {/* 등록 버튼 */}
           <button type="submit" disabled={submitting} style={{ backgroundColor: submitting ? '#444444' : '#C5A059', color: '#0A0A0A', width: '100%', height: '48px', border: 'none', borderRadius: '4px', fontSize: '14px', fontWeight: 'extrabold', cursor: 'pointer', marginTop: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
             {submitting ? '서버로 등록 중...' : '매물 등록하기 (1시간 유지)'}
           </button>

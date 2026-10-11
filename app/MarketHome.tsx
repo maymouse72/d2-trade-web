@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import PostModal from './PostModal'; // 💡 [중요] 진짜 황금 테두리 정품 팝업창을 정확히 수입!
+import PostModal from './PostModal';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -34,7 +34,7 @@ export default function MarketHome() {
     fetchTrades();
   }, []); // 💡 빈 배열을 정확히 명시해 무한 루프 버그 원천 차단!
 
-  const handleModalSubmit = async (formData: any) => {
+  const handleModalSubmit = async (formData: any, resetFormFields: () => void) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
     setSubmitting(true);
     const { error } = await supabase.from('trades').insert([
@@ -52,6 +52,9 @@ export default function MarketHome() {
     if (error) {
       alert(`등록 실패: ${error.message}`);
     } else {
+      alert('디아블로2 매물이 웹에서 실시간 등록되었습니다!');
+      // 💡 [초기화 엔진 트리거] 등록 대성공 시 팝업창 내부의 글자 비우기 청소기를 작동시킵니다!
+      resetFormFields();
       setIsModalOpen(false);
       fetchTrades();
     }
