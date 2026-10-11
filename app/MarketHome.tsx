@@ -2,14 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import PostModal from './PostModal';
+import PostModal from './PostModal'; // 💡 [중요] 진짜 황금 테두리 정품 팝업창을 정확히 수입!
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
 export default function MarketHome() {
-  const [trades, setTrades] = useState<any>([]);
+  const [trades, setTrades] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -30,10 +30,9 @@ export default function MarketHome() {
     setLoading(false);
   };
 
-  // 💡 [버그 해결 핵심 구역] 맨 뒤에 빈 배열 명세 []를 정확히 채워 넣어 무한 루프 폭탄을 완벽히 차단합니다!
   useEffect(() => {
     fetchTrades();
-  }, []);
+  }, []); // 💡 빈 배열을 정확히 명시해 무한 루프 버그 원천 차단!
 
   const handleModalSubmit = async (formData: any) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
