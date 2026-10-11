@@ -10,9 +10,8 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   const [priceRune, setPriceRune] = useState('');
   const [roomInfo, setRoomInfo] = useState('');
 
-  // 💡 [에러 해결 핵심] 빈 괄호 안에 ([])를 채워 넣어 정품 배열 변수방으로 선언해 줍니다!
-  const [allItems, setAllItems] = useState<string[]>([]);         
-  const [filteredItems, setFilteredItems] = useState<string[]>([]); 
+  const [allItems, setAllItems] = useState<string[]>([]);
+  const [filteredItems, setFilteredItems] = useState<string[]>([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
@@ -23,18 +22,13 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
         setAllItems(names);
       })
       .catch((err) => console.error('사전 로드 실패:', err));
-  },);
+  }, []);
 
-  // 💡 [안전망 보완 완료] 유저가 타자를 칠 때마다 안전하게 사전을 필터링하는 엔진
   const handleItemChange = (e: any) => {
     const value = e.target.value;
     setItemBase(value);
-
-    // 전송받은 사전 데이터(allItems)가 온전하게 존재할 때만 필터 가동 (오류 완벽 차단!)
     if (allItems && value.trim().length > 0) {
-      const filtered = allItems
-        .filter((name: string) => name.includes(value))
-        .slice(0, 8);
+      const filtered = allItems.filter((name: string) => name.includes(value)).slice(0, 8);
       setFilteredItems(filtered);
       setShowDropdown(true);
     } else {
@@ -54,8 +48,9 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   if (!isOpen) return null;
 
   return (
-    <div style={{ backgroundColor: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(4px)' }} className="fixed inset-0 flex items-center justify-center p-4 z-50 overflow-y-auto">
-      <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', maxWidth: '450px' }} className="w-full p-6 rounded shadow-2xl relative my-8 text-[#DCDCDC]">
+    // 💡 [오타 완벽 교정] justifyCenter를 justifyContent: 'center'로 정교하게 보정 완료!
+    <div className="fixed inset-0 p-4 z-50 bg-black/80 backdrop-blur-sm" style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999 }}>
+      <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', maxWidth: '450px', width: '100%', margin: '0 auto' }} className="p-6 rounded shadow-2xl relative text-[#DCDCDC]">
         <button onClick={onClose} className="absolute top-3 right-4 text-xl text-[#777777] hover:text-white cursor-pointer transition-colors">✕</button>
         <h2 style={{ color: '#C76C2E' }} className="text-xl font-bold text-center mb-6 tracking-wide text-shadow">NEW TRADE POST (WEB)</h2>
         
