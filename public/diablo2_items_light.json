@@ -9958,5 +9958,490 @@
     "key": "gemsAbbrev",
     "name_ko": "보석",
     "name_en": "Gems"
+  },
+  {
+    "id": 28083,
+    "name_ko": "각운",
+    "name_en": "Rhyme"
+  },
+  {
+    "id": 28084,
+    "name_ko": "강철b",
+    "name_en": "Steel"
+  },
+  {
+    "id": 28085,
+    "name_ko": "강함",
+    "name_en": "Strength"
+  },
+  {
+    "id": 28086,
+    "name_ko": "고대인의 서약",
+    "name_en": "Ancient's Pledge"
+  },
+  {
+    "id": 28087,
+    "name_ko": "광채",
+    "name_en": "Splendor"
+  },
+  {
+    "id": 28088,
+    "name_ko": "광휘",
+    "name_en": "Radiance"
+  },
+  {
+    "id": 28089,
+    "name_ko": "구렁텅이",
+    "name_en": "Nadir"
+  },
+  {
+    "id": 28090,
+    "name_ko": "귀감",
+    "name_en": "Pattern"
+  },
+  {
+    "id": 28091,
+    "name_ko": "균열",
+    "name_en": "Rift"
+  },
+  {
+    "id": 28092,
+    "name_ko": "긍지",
+    "name_en": "Pride"
+  },
+  {
+    "id": 28093,
+    "name_ko": "기근",
+    "name_en": "Famine"
+  },
+  {
+    "id": 28094,
+    "name_ko": "기억",
+    "name_en": "Memory"
+  },
+  {
+    "id": 28095,
+    "name_ko": "깨우침",
+    "name_en": "Enlightenment"
+  },
+  {
+    "id": 28096,
+    "name_ko": "꺼져가는 불길",
+    "name_en": "Flickering Flame"
+  },
+  {
+    "id": 28097,
+    "name_ko": "꿈",
+    "name_en": "Dream"
+  },
+  {
+    "id": 28098,
+    "name_ko": "낙인",
+    "name_en": "Brand"
+  },
+  {
+    "id": 28099,
+    "name_ko": "담금질",
+    "name_en": "Temper"
+  },
+  {
+    "id": 28100,
+    "name_ko": "돌",
+    "name_en": "Stone"
+  },
+  {
+    "id": 28101,
+    "name_ko": "마지막 소원",
+    "name_en": "Last Wish"
+  },
+  {
+    "id": 28102,
+    "name_ko": "맹독",
+    "name_en": "Venom"
+  },
+  {
+    "id": 28103,
+    "name_ko": "명예",
+    "name_en": "Honor"
+  },
+  {
+    "id": 28104,
+    "name_ko": "명예의 굴레",
+    "name_en": "Chains of Honor"
+  },
+  {
+    "id": 28105,
+    "name_ko": "모서리",
+    "name_en": "Edge"
+  },
+  {
+    "id": 28106,
+    "name_ko": "모자이크",
+    "name_en": "Mosaic"
+  },
+  {
+    "id": 28107,
+    "name_ko": "무한",
+    "name_en": "Infinity"
+  },
+  {
+    "id": 28108,
+    "name_ko": "바람",
+    "name_en": "Wind"
+  },
+  {
+    "id": 28109,
+    "name_ko": "방책",
+    "name_en": "Bulwark"
+  },
+  {
+    "id": 28110,
+    "name_ko": "배신",
+    "name_en": "Treachery"
+  },
+  {
+    "id": 28111,
+    "name_ko": "부",
+    "name_en": "Wealth"
+  },
+  {
+    "id": 28112,
+    "name_ko": "분노",
+    "name_en": "Fury"
+  },
+  {
+    "id": 28113,
+    "name_ko": "불굴의 의지",
+    "name_en": "Unbending Will"
+  },
+  {
+    "id": 28114,
+    "name_ko": "불사조(무기)",
+    "name_en": "Phoenix"
+  },
+  {
+    "id": 28115,
+    "name_ko": "불사조(쉴드)",
+    "name_en": "Phoenix"
+  },
+  {
+    "id": 28116,
+    "name_ko": "비",
+    "name_en": "Rain"
+  },
+  {
+    "id": 28117,
+    "name_ko": "뼈",
+    "name_en": "Bone"
+  },
+  {
+    "id": 28118,
+    "name_ko": "서약",
+    "name_en": "Oath"
+  },
+  {
+    "id": 28119,
+    "name_ko": "서풍",
+    "name_en": "Zephyr"
+  },
+  {
+    "id": 28120,
+    "name_ko": "선율",
+    "name_en": "Melody"
+  },
+  {
+    "id": 28121,
+    "name_ko": "성역",
+    "name_en": "Sanctuary"
+  },
+  {
+    "id": 28122,
+    "name_ko": "소집",
+    "name_en": "Call to Arms"
+  },
+  {
+    "id": 28123,
+    "name_ko": "수수께끼",
+    "name_en": "Enigma"
+  },
+  {
+    "id": 28124,
+    "name_ko": "순백",
+    "name_en": "White"
+  },
+  {
+    "id": 28125,
+    "name_ko": "순종",
+    "name_en": "Obedience"
+  },
+  {
+    "id": 28126,
+    "name_ko": "슬픔",
+    "name_en": "Grief"
+  },
+  {
+    "id": 28127,
+    "name_ko": "신념",
+    "name_en": "Faith"
+  },
+  {
+    "id": 28128,
+    "name_ko": "신성한 천둥",
+    "name_en": "Holy Thunder"
+  },
+  {
+    "id": 28129,
+    "name_ko": "신중",
+    "name_en": "Prudence"
+  },
+  {
+    "id": 28130,
+    "name_ko": "신화",
+    "name_en": "Myth"
+  },
+  {
+    "id": 28131,
+    "name_ko": "악의",
+    "name_en": "Malice"
+  },
+  {
+    "id": 28132,
+    "name_ko": "안개",
+    "name_en": "Mist"
+  },
+  {
+    "id": 28133,
+    "name_ko": "야수",
+    "name_en": "Beast"
+  },
+  {
+    "id": 28134,
+    "name_ko": "어둠",
+    "name_en": "Black"
+  },
+  {
+    "id": 28135,
+    "name_ko": "어스름",
+    "name_en": "Gloom"
+  },
+  {
+    "id": 28136,
+    "name_ko": "얼음",
+    "name_en": "Ice"
+  },
+  {
+    "id": 28137,
+    "name_ko": "역병",
+    "name_en": "Plague"
+  },
+  {
+    "id": 28138,
+    "name_ko": "연기",
+    "name_en": "Smoke"
+  },
+  {
+    "id": 28139,
+    "name_ko": "열정",
+    "name_en": "Passion"
+  },
+  {
+    "id": 28140,
+    "name_ko": "영원",
+    "name_en": "Eternity"
+  },
+  {
+    "id": 28141,
+    "name_ko": "영혼(검)",
+    "name_en": "Spirit"
+  },
+  {
+    "id": 28142,
+    "name_ko": "영혼(방패)",
+    "name_en": "Spirit"
+  },
+  {
+    "id": 28143,
+    "name_ko": "왕 시해자",
+    "name_en": "Kingslayer"
+  },
+  {
+    "id": 28144,
+    "name_ko": "왕의 은총",
+    "name_en": "King's Grace"
+  },
+  {
+    "id": 28145,
+    "name_ko": "용",
+    "name_en": "Dragon"
+  },
+  {
+    "id": 28146,
+    "name_ko": "용맹",
+    "name_en": "Lionheart"
+  },
+  {
+    "id": 28147,
+    "name_ko": "원칙",
+    "name_en": "Principle"
+  },
+  {
+    "id": 28148,
+    "name_ko": "이유있는 항변",
+    "name_en": "Voice of Reason"
+  },
+  {
+    "id": 28149,
+    "name_ko": "인내(무기)",
+    "name_en": "Fortitude"
+  },
+  {
+    "id": 28150,
+    "name_ko": "인내(아머)",
+    "name_en": "Fortitude"
+  },
+  {
+    "id": 28151,
+    "name_ko": "잎새",
+    "name_en": "Leaf"
+  },
+  {
+    "id": 28152,
+    "name_ko": "잠행",
+    "name_en": "Stealth"
+  },
+  {
+    "id": 28153,
+    "name_ko": "전승",
+    "name_en": "Lore"
+  },
+  {
+    "id": 28154,
+    "name_ko": "접지",
+    "name_en": "Ground"
+  },
+  {
+    "id": 28155,
+    "name_ko": "정의의 손길",
+    "name_en": "Hand of Justice"
+  },
+  {
+    "id": 28156,
+    "name_ko": "조화",
+    "name_en": "Harmony"
+  },
+  {
+    "id": 28157,
+    "name_ko": "죽어가는 자의 숨결",
+    "name_en": "Breath of the Dying"
+  },
+  {
+    "id": 28158,
+    "name_ko": "죽음",
+    "name_en": "Death"
+  },
+  {
+    "id": 28159,
+    "name_ko": "지혜",
+    "name_en": "Wisdom"
+  },
+  {
+    "id": 28160,
+    "name_ko": "진노",
+    "name_en": "Wrath"
+  },
+  {
+    "id": 28161,
+    "name_ko": "집착",
+    "name_en": "Obsession"
+  },
+  {
+    "id": 28162,
+    "name_ko": "집행자",
+    "name_en": "Lawbringer"
+  },
+  {
+    "id": 28163,
+    "name_ko": "찔레",
+    "name_en": "Bramble"
+  },
+  {
+    "id": 28164,
+    "name_ko": "착란",
+    "name_en": "Delirium"
+  },
+  {
+    "id": 28165,
+    "name_ko": "참나무의 심장",
+    "name_en": "Heart of the Oak"
+  },
+  {
+    "id": 28166,
+    "name_ko": "초승달",
+    "name_en": "Crescent Moon"
+  },
+  {
+    "id": 28167,
+    "name_ko": "추방",
+    "name_en": "Exile"
+  },
+  {
+    "id": 28168,
+    "name_ko": "치료",
+    "name_en": "Cure"
+  },
+  {
+    "id": 28169,
+    "name_ko": "침묵",
+    "name_en": "Silence"
+  },
+  {
+    "id": 28170,
+    "name_ko": "탈태",
+    "name_en": "Metamorphosis"
+  },
+  {
+    "id": 28171,
+    "name_ko": "통찰",
+    "name_en": "Insight"
+  },
+  {
+    "id": 28172,
+    "name_ko": "투지(갑옷)",
+    "name_en": "Hustle"
+  },
+  {
+    "id": 28173,
+    "name_ko": "투지(무기)",
+    "name_en": "Hustle"
+  },
+  {
+    "id": 28174,
+    "name_ko": "파괴",
+    "name_en": "Destruction"
+  },
+  {
+    "id": 28175,
+    "name_ko": "파멸",
+    "name_en": "Doom"
+  },
+  {
+    "id": 28176,
+    "name_ko": "평화",
+    "name_en": "Peace"
+  },
+  {
+    "id": 28177,
+    "name_ko": "협박",
+    "name_en": "Duress"
+  },
+  {
+    "id": 28178,
+    "name_ko": "혼돈",
+    "name_en": "Chaos"
+  },
+  {
+    "id": 28179,
+    "name_ko": "화로",
+    "name_en": "Hearth"
   }
 ]
