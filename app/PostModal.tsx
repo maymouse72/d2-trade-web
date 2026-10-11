@@ -47,45 +47,71 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
 
   if (!isOpen) return null;
 
+  // 💡 [로컬과 200% 똑같이 매핑하는 웹 표준 인라인 마스터 스타일 비서]
+  const inputStyle = {
+    width: '100%',
+    height: '44px',
+    padding: '10px 14px',
+    backgroundColor: '#0A0A0A',
+    border: '2px solid #8C6D3B',
+    color: '#FFFFFF',
+    borderRadius: '4px',           // 💡 입력창 모서리 곡선 디테일 복원
+    fontSize: '14px',
+    outline: 'none',
+    boxSizing: 'border-box' as const,
+    textAlign: 'left' as const,
+  };
+
   return (
-    // 💡 [오타 완벽 교정] backdropFilter, justifyContent, borderRadius, textAlign을 웹 표준 규격 객체 문법으로 완벽 정돈 완료!
-    <div className="fixed inset-0 p-4 z-50 bg-black/80" style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999, backdropFilter: 'blur(4px)' }}>
-      <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', maxWidth: '450px', width: '100%', margin: '0 auto' }} className="p-6 rounded shadow-2xl relative text-[#DCDCDC]">
+    // 💡 [배경 흐림 및 화면 정중앙 강제 정렬 기폭장치]
+    <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(4px)', zIndex: 9999 }}>
+      
+      {/* 💡 [핵심 교정: 모달 상자 본체] 브라우저가 강제로 늘리지 못하도록 width와 max-width 분리 각인 및 곡선(borderRadius) 적용! */}
+      <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', width: '90%', maxWidth: '440px', padding: '28px 24px 24px 24px', borderRadius: '8px', boxSizing: 'border-box', position: 'relative', boxShadow: '0 20px 25px rgba(0,0,0,0.5)' }}>
         
-        {/* X 닫기 버튼 우측 상단 정위치 완료 */}
-        <button type="button" onClick={onClose} className="absolute cursor-pointer transition-colors" style={{ position: 'absolute', top: '16px', right: '16px', backgroundColor: 'transparent', border: 'none', color: '#777777', fontSize: '20px', fontWeight: 'bold' }}>✕</button>
-        <h2 style={{ color: '#C76C2E', textAlign: 'center', fontSize: '20px', fontWeight: 'bold', marginBottom: '24px', letterSpacing: '1px' }}>NEW TRADE POST (WEB)</h2>
+        {/* 💡 [닫기 버튼 정위치 마감] 부모 상자 내부(relative)를 기준으로 우측 상단 안쪽(absolute top-4 right-4)에 자석처럼 강제 배치! */}
+        <button 
+          type="button" 
+          onClick={onClose} 
+          style={{ position: 'absolute', top: '16px', right: '16px', backgroundColor: 'transparent', border: 'none', color: '#777777', fontSize: '22px', fontWeight: 'bold', cursor: 'pointer', outline: 'none', padding: 0, width: '24px', height: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          className="hover:text-white transition-colors"
+        >
+          ✕
+        </button>
         
-        <form onSubmit={handleFormSubmit} className="space-y-5" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        <h2 style={{ color: '#C76C2E', textAlign: 'center', fontSize: '20px', fontWeight: 'bold', marginTop: '4px', marginBottom: '24px', letterSpacing: '1px' }}>
+          NEW TRADE POST (WEB)
+        </h2>
+        
+        <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           
           {/* 게임 모드 선택 */}
           <div>
-            <label className="block text-xs text-[#AAAAAA] mb-2 font-bold tracking-wide">게임 모드 선택</label>
+            <label style={{ display: 'block', fontSize: '12px', color: '#AAAAAA', marginBottom: '8px', fontWeight: 'bold', letterSpacing: '0.5px' }}>게임 모드 선택</label>
             <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', display: 'flex', gap: '24px', padding: '12px', borderRadius: '4px' }}>
-              <label className="flex items-center gap-2 text-sm cursor-pointer select-none" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', cursor: 'pointer' }}>
-                <input type="radio" checked={gameMode === 'ladder'} onChange={() => setGameMode('ladder')} className="w-4 h-4 accent-[#C5A059] cursor-pointer" /> 래더 (Ladder)
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', cursor: 'pointer', color: '#DCDCDC' }}>
+                <input type="radio" checked={gameMode === 'ladder'} onChange={() => setGameMode('ladder')} style={{ accentColor: '#C5A059', cursor: 'pointer' }} /> 래더 (Ladder)
               </label>
-              <label className="flex items-center gap-2 text-sm cursor-pointer select-none" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', cursor: 'pointer' }}>
-                <input type="radio" checked={gameMode === 'standard'} onChange={() => setGameMode('standard')} className="w-4 h-4 accent-[#C5A059] cursor-pointer" /> 스탠다드 (Standard)
+              <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', cursor: 'pointer', color: '#DCDCDC' }}>
+                <input type="radio" checked={gameMode === 'standard'} onChange={() => setGameMode('standard')} style={{ accentColor: '#C5A059', cursor: 'pointer' }} /> 스탠다드 (Standard)
               </label>
             </div>
           </div>
 
           {/* 배틀넷 ID */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">배틀넷 ID (Battle.net Tag)</label>
-            <input type="text" value={battlenetId} onChange={(e) => setBattlenetId(e.target.value)} placeholder="예: 홍길동#1234" style={{ width: '100%', height: '44px', padding: '10px 14px', backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', color: '#FFFFFF', borderRadius: '4px', fontSize: '14px', outline: 'none', boxSizing: 'border-box', textAlign: 'left' }} />
+            <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>배틀넷 ID (Battle.net Tag)</label>
+            <input type="text" value={battlenetId} onChange={(e) => setBattlenetId(e.target.value)} placeholder="예: 홍길동#1234" style={inputStyle} />
           </div>
 
           {/* 아이템 베이스 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', position: 'relative' }}>
-            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">아이템 베이스 (자동완성 검색)</label>
+            <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>아이템 베이스 (자동완성 검색)</label>
             <input 
               type="text" value={itemBase} onChange={handleItemChange} 
               onFocus={() => itemBase && itemBase.length > 0 && setShowDropdown(true)}
               onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-              placeholder="예: 크리스탈 소드, 샤코" 
-              style={{ width: '100%', height: '44px', padding: '10px 14px', backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', color: '#FFFFFF', borderRadius: '4px', fontSize: '14px', outline: 'none', boxSizing: 'border-box', textAlign: 'left' }}
+              placeholder="예: 크리스탈 소드, 샤코" style={inputStyle}
             />
             {showDropdown && filteredItems && filteredItems.length > 0 && (
               <div style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', position: 'absolute', left: 0, right: 0, top: '70px', borderRadius: '4px', boxShadow: '0 20px 25px rgba(0,0,0,0.5)', zIndex: 100, maxHeight: '180px', overflowY: 'auto' }}>
@@ -93,6 +119,7 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
                   <div 
                     key={index} onClick={() => { setItemBase(name); setShowDropdown(false); }}
                     style={{ borderBottom: '1px solid #222222', padding: '10px 14px', textAlign: 'left', fontSize: '13px', color: '#FFFFFF', cursor: 'pointer', fontWeight: 'bold' }}
+                    className="hover:bg-[#C5A059] hover:text-[#0A0A0A]"
                   >
                     {name}
                   </div>
@@ -103,20 +130,20 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
 
           {/* 상세 옵션 설명 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">상세 옵션 및 설명</label>
-            <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="자유롭게 상세 수치를 적어주세요." rows={3} style={{ width: '100%', padding: '10px 14px', backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', color: '#FFFFFF', borderRadius: '4px', fontSize: '14px', outline: 'none', boxSizing: 'border-box', textAlign: 'left', resize: 'none' }} />
+            <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>상세 옵션 및 설명</label>
+            <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="자유롭게 상세 수치를 적어주세요." rows={3} style={{ ...inputStyle, height: 'auto', resize: 'none' }} />
           </div>
 
           {/* 희망 가격 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">희망 가격 (요구 룬 수량)</label>
-            <input type="text" value={priceRune} onChange={(e) => setPriceRune(e.target.value)} placeholder="예: 2 베르, 자+로" style={{ width: '100%', height: '44px', padding: '10px 14px', backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', color: '#FFFFFF', borderRadius: '4px', fontSize: '14px', outline: 'none', boxSizing: 'border-box', textAlign: 'left' }} />
+            <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>희망 가격 (요구 룬 수량)</label>
+            <input type="text" value={priceRune} onChange={(e) => setPriceRune(e.target.value)} placeholder="예: 2 베르, 자+로" style={inputStyle} />
           </div>
 
           {/* 인게임 방 정보 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <label className="text-xs text-[#AAAAAA] font-bold tracking-wide">인게임 방 정보 (방제 /// 패스워드)</label>
-            <input type="text" value={roomInfo} onChange={(e) => setRoomInfo(e.target.value)} placeholder="예: dia-01 /// 1" style={{ width: '100%', height: '44px', padding: '10px 14px', backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', color: '#FFFFFF', borderRadius: '4px', fontSize: '14px', outline: 'none', boxSizing: 'border-box', textAlign: 'left' }} />
+            <label style={{ fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold' }}>인게임 방 정보 (방제 /// 패스워드)</label>
+            <input type="text" value={roomInfo} onChange={(e) => setRoomInfo(e.target.value)} placeholder="예: dia-01 /// 1" style={inputStyle} />
           </div>
 
           {/* 등록 버튼 */}
