@@ -9,7 +9,7 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
 export default function MarketHome() {
-  const [trades, setTrades] = useState<any>();
+  const [trades, setTrades] = useState<any>([]);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -30,9 +30,10 @@ export default function MarketHome() {
     setLoading(false);
   };
 
+  // 💡 [버그 해결 핵심 구역] 맨 뒤에 빈 배열 명세 []를 정확히 채워 넣어 무한 루프 폭탄을 완벽히 차단합니다!
   useEffect(() => {
     fetchTrades();
-  },);
+  }, []);
 
   const handleModalSubmit = async (formData: any) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
@@ -113,7 +114,6 @@ export default function MarketHome() {
                     {trade.price_rune}
                   </span>
                 </div>
-                {/* 💡 [오타 완벽 복구 구역] breakWord와 lineEncoding을 웹 표준 규격 문법으로 정밀 교정 완료! */}
                 <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', fontSize: '12px', color: '#DCDCDC', padding: '10px', borderRadius: '4px', minHeight: '54px', margin: '0 0 16px 0', wordBreak: 'break-all', lineHeight: '1.5' }}>
                   {trade.item_description || '상세 옵션 설명 없음'}
                 </p>
