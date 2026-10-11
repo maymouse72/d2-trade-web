@@ -1,0 +1,9962 @@
+[
+  {
+    "id": 1060,
+    "key": "qf1",
+    "name_ko": "칼림의 도리깨",
+    "name_en": "Khalim's Flail"
+  },
+  {
+    "id": 1061,
+    "key": "qf2",
+    "name_ko": "칼림의 의지",
+    "name_en": "Khalim's Will"
+  },
+  {
+    "id": 1062,
+    "key": "KhalimFlail",
+    "name_ko": "칼림의 도리깨",
+    "name_en": "Khalim's Flail"
+  },
+  {
+    "id": 1063,
+    "key": "SuperKhalimFlail",
+    "name_ko": "칼림의 의지",
+    "name_en": "Khalim's Will"
+  },
+  {
+    "id": 1064,
+    "key": "qey",
+    "name_ko": "칼림의 눈",
+    "name_en": "Khalim's Eye"
+  },
+  {
+    "id": 1065,
+    "key": "qbr",
+    "name_ko": "칼림의 뇌",
+    "name_en": "Khalim's Brain"
+  },
+  {
+    "id": 1066,
+    "key": "qhr",
+    "name_ko": "칼림의 심장",
+    "name_en": "Khalim's Heart"
+  },
+  {
+    "id": 1751,
+    "key": "Skillful",
+    "name_ko": "기술력",
+    "name_en": "Skillful"
+  },
+  {
+    "id": 1930,
+    "key": "cap",
+    "name_ko": "캡",
+    "name_en": "Cap"
+  },
+  {
+    "id": 1931,
+    "key": "skp",
+    "name_ko": "스컬 캡",
+    "name_en": "Skull Cap"
+  },
+  {
+    "id": 1932,
+    "key": "hlm",
+    "name_ko": "헬름",
+    "name_en": "Helm"
+  },
+  {
+    "id": 1933,
+    "key": "fhl",
+    "name_ko": "풀 헬름",
+    "name_en": "Full Helm"
+  },
+  {
+    "id": 1934,
+    "key": "ghm",
+    "name_ko": "그레이트 헬름",
+    "name_en": "Great Helm"
+  },
+  {
+    "id": 1935,
+    "key": "crn",
+    "name_ko": "크라운",
+    "name_en": "Crown"
+  },
+  {
+    "id": 1936,
+    "key": "msk",
+    "name_ko": "마스크",
+    "name_en": "Mask"
+  },
+  {
+    "id": 1937,
+    "key": "qui",
+    "name_ko": "퀼티드 아머",
+    "name_en": "Quilted Armor"
+  },
+  {
+    "id": 1938,
+    "key": "lea",
+    "name_ko": "레더 아머",
+    "name_en": "Leather Armor"
+  },
+  {
+    "id": 1939,
+    "key": "hla",
+    "name_ko": "하드 레더 아머",
+    "name_en": "Hard Leather Armor"
+  },
+  {
+    "id": 1940,
+    "key": "stu",
+    "name_ko": "스터디드 레더",
+    "name_en": "Studded Leather"
+  },
+  {
+    "id": 1941,
+    "key": "rng",
+    "name_ko": "링 메일",
+    "name_en": "Ring Mail"
+  },
+  {
+    "id": 1942,
+    "key": "scl",
+    "name_ko": "스케일 메일",
+    "name_en": "Scale Mail"
+  },
+  {
+    "id": 1943,
+    "key": "chn",
+    "name_ko": "체인 메일",
+    "name_en": "Chain Mail"
+  },
+  {
+    "id": 1944,
+    "key": "brs",
+    "name_ko": "브레스트 플레이트",
+    "name_en": "Breast Plate"
+  },
+  {
+    "id": 1945,
+    "key": "spl",
+    "name_ko": "스플린트 메일",
+    "name_en": "Splint Mail"
+  },
+  {
+    "id": 1946,
+    "key": "plt",
+    "name_ko": "플레이트 메일",
+    "name_en": "Plate Mail"
+  },
+  {
+    "id": 1947,
+    "key": "fld",
+    "name_ko": "필드 플레이트",
+    "name_en": "Field Plate"
+  },
+  {
+    "id": 1948,
+    "key": "gth",
+    "name_ko": "고딕 플레이트",
+    "name_en": "Gothic Plate"
+  },
+  {
+    "id": 1949,
+    "key": "ful",
+    "name_ko": "풀 플레이트 메일",
+    "name_en": "Full Plate Mail"
+  },
+  {
+    "id": 1950,
+    "key": "aar",
+    "name_ko": "에인션트 아머",
+    "name_en": "Ancient Armor"
+  },
+  {
+    "id": 1951,
+    "key": "ltp",
+    "name_ko": "라이트 플레이트",
+    "name_en": "Light Plate"
+  },
+  {
+    "id": 1952,
+    "key": "buc",
+    "name_ko": "버클러",
+    "name_en": "Buckler"
+  },
+  {
+    "id": 1953,
+    "key": "sml",
+    "name_ko": "스몰 쉴드",
+    "name_en": "Small Shield"
+  },
+  {
+    "id": 1954,
+    "key": "lrg",
+    "name_ko": "라지 쉴드",
+    "name_en": "Large Shield"
+  },
+  {
+    "id": 1955,
+    "key": "kit",
+    "name_ko": "카이트 쉴드",
+    "name_en": "Kite Shield"
+  },
+  {
+    "id": 1956,
+    "key": "tow",
+    "name_ko": "타워 쉴드",
+    "name_en": "Tower Shield"
+  },
+  {
+    "id": 1957,
+    "key": "gts",
+    "name_ko": "고딕 쉴드",
+    "name_en": "Gothic Shield"
+  },
+  {
+    "id": 1958,
+    "key": "lgl",
+    "name_ko": "레더 글러브",
+    "name_en": "Leather Gloves"
+  },
+  {
+    "id": 1959,
+    "key": "vgl",
+    "name_ko": "헤비 글러브",
+    "name_en": "Heavy Gloves"
+  },
+  {
+    "id": 1960,
+    "key": "mgl",
+    "name_ko": "체인 글러브",
+    "name_en": "Chain Gloves"
+  },
+  {
+    "id": 1961,
+    "key": "tgl",
+    "name_ko": "라이트 건틀릿",
+    "name_en": "Light Gauntlets"
+  },
+  {
+    "id": 1962,
+    "key": "hgl",
+    "name_ko": "건틀릿",
+    "name_en": "Gauntlets"
+  },
+  {
+    "id": 1963,
+    "key": "lbt",
+    "name_ko": "부츠",
+    "name_en": "Boots"
+  },
+  {
+    "id": 1964,
+    "key": "vbt",
+    "name_ko": "헤비 부츠",
+    "name_en": "Heavy Boots"
+  },
+  {
+    "id": 1965,
+    "key": "mbt",
+    "name_ko": "체인 부츠",
+    "name_en": "Chain Boots"
+  },
+  {
+    "id": 1966,
+    "key": "tbt",
+    "name_ko": "라이트 플레이트 부츠",
+    "name_en": "Light Plated Boots"
+  },
+  {
+    "id": 1967,
+    "key": "hbt",
+    "name_ko": "그리브",
+    "name_en": "Greaves"
+  },
+  {
+    "id": 1968,
+    "key": "lbl",
+    "name_ko": "새시",
+    "name_en": "Sash"
+  },
+  {
+    "id": 1969,
+    "key": "vbl",
+    "name_ko": "라이트 벨트",
+    "name_en": "Light Belt"
+  },
+  {
+    "id": 1970,
+    "key": "mbl",
+    "name_ko": "벨트",
+    "name_en": "Belt"
+  },
+  {
+    "id": 1971,
+    "key": "tbl",
+    "name_ko": "헤비 벨트",
+    "name_en": "Heavy Belt"
+  },
+  {
+    "id": 1972,
+    "key": "hbl",
+    "name_ko": "플레이트 벨트",
+    "name_en": "Plated Belt"
+  },
+  {
+    "id": 1973,
+    "key": "bhm",
+    "name_ko": "본 헬름",
+    "name_en": "Bone Helm"
+  },
+  {
+    "id": 1974,
+    "key": "bsh",
+    "name_ko": "본 쉴드",
+    "name_en": "Bone Shield"
+  },
+  {
+    "id": 1975,
+    "key": "spk",
+    "name_ko": "스파이크 쉴드",
+    "name_en": "Spiked Shield"
+  },
+  {
+    "id": 1976,
+    "key": "hax",
+    "name_ko": "핸드 액스",
+    "name_en": "Hand Axe"
+  },
+  {
+    "id": 1977,
+    "key": "axe",
+    "name_ko": "액스",
+    "name_en": "Axe"
+  },
+  {
+    "id": 1978,
+    "key": "2ax",
+    "name_ko": "더블 액스",
+    "name_en": "Double Axe"
+  },
+  {
+    "id": 1979,
+    "key": "mpi",
+    "name_ko": "밀리터리 픽",
+    "name_en": "Military Pick"
+  },
+  {
+    "id": 1980,
+    "key": "wax",
+    "name_ko": "워 액스",
+    "name_en": "War Axe"
+  },
+  {
+    "id": 1981,
+    "key": "lax",
+    "name_ko": "라지 액스",
+    "name_en": "Large Axe"
+  },
+  {
+    "id": 1982,
+    "key": "bax",
+    "name_ko": "브로드 액스",
+    "name_en": "Broad Axe"
+  },
+  {
+    "id": 1983,
+    "key": "btx",
+    "name_ko": "배틀 액스",
+    "name_en": "Battle Axe"
+  },
+  {
+    "id": 1984,
+    "key": "gax",
+    "name_ko": "그레이트 액스",
+    "name_en": "Great Axe"
+  },
+  {
+    "id": 1985,
+    "key": "gix",
+    "name_ko": "자이언트 액스",
+    "name_en": "Giant Axe"
+  },
+  {
+    "id": 1986,
+    "key": "wnd",
+    "name_ko": "원드",
+    "name_en": "Wand"
+  },
+  {
+    "id": 1987,
+    "key": "ywn",
+    "name_ko": "유 원드",
+    "name_en": "Yew Wand"
+  },
+  {
+    "id": 1988,
+    "key": "bwn",
+    "name_ko": "본 원드",
+    "name_en": "Bone Wand"
+  },
+  {
+    "id": 1989,
+    "key": "gwn",
+    "name_ko": "그림 원드",
+    "name_en": "Grim Wand"
+  },
+  {
+    "id": 1990,
+    "key": "clb",
+    "name_ko": "클럽",
+    "name_en": "Club"
+  },
+  {
+    "id": 1991,
+    "key": "scp",
+    "name_ko": "셉터",
+    "name_en": "Scepter"
+  },
+  {
+    "id": 1992,
+    "key": "gsc",
+    "name_ko": "그랜드 셉터",
+    "name_en": "Grand Scepter"
+  },
+  {
+    "id": 1993,
+    "key": "wsp",
+    "name_ko": "워 셉터",
+    "name_en": "War Scepter"
+  },
+  {
+    "id": 1994,
+    "key": "spc",
+    "name_ko": "스파이크 클럽",
+    "name_en": "Spiked Club"
+  },
+  {
+    "id": 1995,
+    "key": "mac",
+    "name_ko": "메이스",
+    "name_en": "Mace"
+  },
+  {
+    "id": 1996,
+    "key": "mst",
+    "name_ko": "모닝스타",
+    "name_en": "Morning Star"
+  },
+  {
+    "id": 1997,
+    "key": "fla",
+    "name_ko": "프레일",
+    "name_en": "Flail"
+  },
+  {
+    "id": 1998,
+    "key": "whm",
+    "name_ko": "워 해머",
+    "name_en": "War Hammer"
+  },
+  {
+    "id": 1999,
+    "key": "mau",
+    "name_ko": "마울",
+    "name_en": "Maul"
+  },
+  {
+    "id": 2000,
+    "key": "gma",
+    "name_ko": "그레이트 마울",
+    "name_en": "Great Maul"
+  },
+  {
+    "id": 2001,
+    "key": "ssd",
+    "name_ko": "숏소드",
+    "name_en": "Short Sword"
+  },
+  {
+    "id": 2002,
+    "key": "scm",
+    "name_ko": "시미터",
+    "name_en": "Scimitar"
+  },
+  {
+    "id": 2003,
+    "key": "sbr",
+    "name_ko": "세이버",
+    "name_en": "Sabre"
+  },
+  {
+    "id": 2004,
+    "key": "flc",
+    "name_ko": "펄션",
+    "name_en": "Falchion"
+  },
+  {
+    "id": 2005,
+    "key": "crs",
+    "name_ko": "크리스탈 소드",
+    "name_en": "Crystal Sword"
+  },
+  {
+    "id": 2006,
+    "key": "bsd",
+    "name_ko": "브로드소드",
+    "name_en": "Broad Sword"
+  },
+  {
+    "id": 2007,
+    "key": "lsd",
+    "name_ko": "롱소드",
+    "name_en": "Long Sword"
+  },
+  {
+    "id": 2008,
+    "key": "wsd",
+    "name_ko": "워 소드",
+    "name_en": "War Sword"
+  },
+  {
+    "id": 2009,
+    "key": "2hs",
+    "name_ko": "투핸드 소드",
+    "name_en": "Two-Handed Sword"
+  },
+  {
+    "id": 2010,
+    "key": "clm",
+    "name_ko": "클레이모어",
+    "name_en": "Claymore"
+  },
+  {
+    "id": 2011,
+    "key": "gis",
+    "name_ko": "자이언트 소드",
+    "name_en": "Giant Sword"
+  },
+  {
+    "id": 2012,
+    "key": "bsw",
+    "name_ko": "바스타드 소드",
+    "name_en": "Bastard Sword"
+  },
+  {
+    "id": 2013,
+    "key": "flb",
+    "name_ko": "플랑베르쥬",
+    "name_en": "Flamberge"
+  },
+  {
+    "id": 2014,
+    "key": "gsd",
+    "name_ko": "그레이트 소드",
+    "name_en": "Great Sword"
+  },
+  {
+    "id": 2015,
+    "key": "dgr",
+    "name_ko": "대거",
+    "name_en": "Dagger"
+  },
+  {
+    "id": 2016,
+    "key": "dir",
+    "name_ko": "더크",
+    "name_en": "Dirk"
+  },
+  {
+    "id": 2017,
+    "key": "kri",
+    "name_ko": "크리스",
+    "name_en": "Kris"
+  },
+  {
+    "id": 2018,
+    "key": "bld",
+    "name_ko": "블레이드",
+    "name_en": "Blade"
+  },
+  {
+    "id": 2019,
+    "key": "tkf",
+    "name_ko": "스로잉 나이프",
+    "name_en": "Throwing Knife"
+  },
+  {
+    "id": 2020,
+    "key": "tax",
+    "name_ko": "스로잉 액스",
+    "name_en": "Throwing Axe"
+  },
+  {
+    "id": 2021,
+    "key": "bkf",
+    "name_ko": "밸런스드 나이프",
+    "name_en": "Balanced Knife"
+  },
+  {
+    "id": 2022,
+    "key": "bal",
+    "name_ko": "밸런스드 액스",
+    "name_en": "Balanced Axe"
+  },
+  {
+    "id": 2023,
+    "key": "jav",
+    "name_ko": "재벌린",
+    "name_en": "Javelin"
+  },
+  {
+    "id": 2024,
+    "key": "pil",
+    "name_ko": "필럼",
+    "name_en": "Pilum"
+  },
+  {
+    "id": 2025,
+    "key": "ssp",
+    "name_ko": "숏스피어",
+    "name_en": "Short Spear"
+  },
+  {
+    "id": 2026,
+    "key": "glv",
+    "name_ko": "글레이브",
+    "name_en": "Glaive"
+  },
+  {
+    "id": 2027,
+    "key": "tsp",
+    "name_ko": "스로잉 스피어",
+    "name_en": "Throwing Spear"
+  },
+  {
+    "id": 2028,
+    "key": "spr",
+    "name_ko": "스피어",
+    "name_en": "Spear"
+  },
+  {
+    "id": 2029,
+    "key": "tri",
+    "name_ko": "트라이던트",
+    "name_en": "Trident"
+  },
+  {
+    "id": 2030,
+    "key": "brn",
+    "name_ko": "브랜디스탁",
+    "name_en": "Brandistock"
+  },
+  {
+    "id": 2031,
+    "key": "spt",
+    "name_ko": "스페텀",
+    "name_en": "Spetum"
+  },
+  {
+    "id": 2032,
+    "key": "pik",
+    "name_ko": "파이크",
+    "name_en": "Pike"
+  },
+  {
+    "id": 2033,
+    "key": "bar",
+    "name_ko": "바디쉬",
+    "name_en": "Bardiche"
+  },
+  {
+    "id": 2034,
+    "key": "vou",
+    "name_ko": "불즈",
+    "name_en": "Voulge"
+  },
+  {
+    "id": 2035,
+    "key": "scy",
+    "name_ko": "싸이드",
+    "name_en": "Scythe"
+  },
+  {
+    "id": 2036,
+    "key": "pax",
+    "name_ko": "폴액스",
+    "name_en": "Poleaxe"
+  },
+  {
+    "id": 2037,
+    "key": "hal",
+    "name_ko": "헬버드",
+    "name_en": "Halberd"
+  },
+  {
+    "id": 2038,
+    "key": "wsc",
+    "name_ko": "워 싸이드",
+    "name_en": "War Scythe"
+  },
+  {
+    "id": 2039,
+    "key": "sst",
+    "name_ko": "숏스태프",
+    "name_en": "Short Staff"
+  },
+  {
+    "id": 2040,
+    "key": "lst",
+    "name_ko": "롱스태프",
+    "name_en": "Long Staff"
+  },
+  {
+    "id": 2041,
+    "key": "cst",
+    "name_ko": "나알드 스태프",
+    "name_en": "Gnarled Staff"
+  },
+  {
+    "id": 2042,
+    "key": "bst",
+    "name_ko": "배틀 스태프",
+    "name_en": "Battle Staff"
+  },
+  {
+    "id": 2043,
+    "key": "wst",
+    "name_ko": "워 스태프",
+    "name_en": "War Staff"
+  },
+  {
+    "id": 2044,
+    "key": "sbw",
+    "name_ko": "숏보우",
+    "name_en": "Short Bow"
+  },
+  {
+    "id": 2045,
+    "key": "hbw",
+    "name_ko": "헌터보우",
+    "name_en": "Hunter's Bow"
+  },
+  {
+    "id": 2046,
+    "key": "lbw",
+    "name_ko": "롱보우",
+    "name_en": "Long Bow"
+  },
+  {
+    "id": 2047,
+    "key": "cbw",
+    "name_ko": "컴포지트 보우",
+    "name_en": "Composite Bow"
+  },
+  {
+    "id": 2048,
+    "key": "sbb",
+    "name_ko": "숏 배틀 보우",
+    "name_en": "Short Battle Bow"
+  },
+  {
+    "id": 2049,
+    "key": "lbb",
+    "name_ko": "롱 배틀 보우",
+    "name_en": "Long Battle Bow"
+  },
+  {
+    "id": 2050,
+    "key": "swb",
+    "name_ko": "숏 워 보우",
+    "name_en": "Short War Bow"
+  },
+  {
+    "id": 2051,
+    "key": "lwb",
+    "name_ko": "롱 워 보우",
+    "name_en": "Long War Bow"
+  },
+  {
+    "id": 2052,
+    "key": "lxb",
+    "name_ko": "라이트 크로스보우",
+    "name_en": "Light Crossbow"
+  },
+  {
+    "id": 2053,
+    "key": "mxb",
+    "name_ko": "크로스보우",
+    "name_en": "Crossbow"
+  },
+  {
+    "id": 2054,
+    "key": "hxb",
+    "name_ko": "헤비 크로스보우",
+    "name_en": "Heavy Crossbow"
+  },
+  {
+    "id": 2055,
+    "key": "rxb",
+    "name_ko": "리피팅 크로스보우",
+    "name_en": "Repeating Crossbow"
+  },
+  {
+    "id": 2056,
+    "key": "xpk",
+    "name_ko": "바브드 쉴드",
+    "name_en": "Barbed Shield"
+  },
+  {
+    "id": 2057,
+    "key": "xsh",
+    "name_ko": "그림 쉴드",
+    "name_en": "Grim Shield"
+  },
+  {
+    "id": 2058,
+    "key": "xh9",
+    "name_ko": "그림 헬름",
+    "name_en": "Grim Helm"
+  },
+  {
+    "id": 2059,
+    "key": "zhb",
+    "name_ko": "워 벨트",
+    "name_en": "War Belt"
+  },
+  {
+    "id": 2060,
+    "key": "ztb",
+    "name_ko": "배틀 벨트",
+    "name_en": "Battle Belt"
+  },
+  {
+    "id": 2061,
+    "key": "zmb",
+    "name_ko": "메쉬 벨트",
+    "name_en": "Mesh Belt"
+  },
+  {
+    "id": 2062,
+    "key": "zvb",
+    "name_ko": "샤크스킨 벨트",
+    "name_en": "Sharkskin Belt"
+  },
+  {
+    "id": 2063,
+    "key": "zlb",
+    "name_ko": "데몬하이드 새시",
+    "name_en": "Demonhide Sash"
+  },
+  {
+    "id": 2064,
+    "key": "xhb",
+    "name_ko": "워 부츠",
+    "name_en": "War Boots"
+  },
+  {
+    "id": 2065,
+    "key": "xtb",
+    "name_ko": "배틀 부츠",
+    "name_en": "Battle Boots"
+  },
+  {
+    "id": 2066,
+    "key": "xmb",
+    "name_ko": "메쉬 부츠",
+    "name_en": "Mesh Boots"
+  },
+  {
+    "id": 2067,
+    "key": "xvb",
+    "name_ko": "샤크스킨 부츠",
+    "name_en": "Sharkskin Boots"
+  },
+  {
+    "id": 2068,
+    "key": "xlb",
+    "name_ko": "데몬하이드 부츠",
+    "name_en": "Demonhide Boots"
+  },
+  {
+    "id": 2070,
+    "key": "xtg",
+    "name_ko": "배틀 건틀릿",
+    "name_en": "Battle Gauntlets"
+  },
+  {
+    "id": 2071,
+    "key": "xmg",
+    "name_ko": "헤비 브레이서",
+    "name_en": "Heavy Bracers"
+  },
+  {
+    "id": 2072,
+    "key": "xvg",
+    "name_ko": "샤크스킨 글러브",
+    "name_en": "Sharkskin Gloves"
+  },
+  {
+    "id": 2073,
+    "key": "xlg",
+    "name_ko": "데몬하이드 글러브",
+    "name_en": "Demonhide Gloves"
+  },
+  {
+    "id": 2074,
+    "key": "xts",
+    "name_ko": "에인션트 쉴드",
+    "name_en": "Ancient Shield"
+  },
+  {
+    "id": 2075,
+    "key": "xow",
+    "name_ko": "파비스",
+    "name_en": "Pavise"
+  },
+  {
+    "id": 2076,
+    "key": "xit",
+    "name_ko": "드래곤 쉴드",
+    "name_en": "Dragon Shield"
+  },
+  {
+    "id": 2077,
+    "key": "xrg",
+    "name_ko": "스큐텀",
+    "name_en": "Scutum"
+  },
+  {
+    "id": 2078,
+    "key": "xml",
+    "name_ko": "라운드 쉴드",
+    "name_en": "Round Shield"
+  },
+  {
+    "id": 2079,
+    "key": "xuc",
+    "name_ko": "디펜더",
+    "name_en": "Defender"
+  },
+  {
+    "id": 2080,
+    "key": "xtp",
+    "name_ko": "메이지 플레이트",
+    "name_en": "Mage Plate"
+  },
+  {
+    "id": 2081,
+    "key": "xar",
+    "name_ko": "오네이트 플레이트",
+    "name_en": "Ornate Plate"
+  },
+  {
+    "id": 2082,
+    "key": "xul",
+    "name_ko": "카오스 아머",
+    "name_en": "Chaos Armor"
+  },
+  {
+    "id": 2083,
+    "key": "xth",
+    "name_ko": "임바스트 플레이트",
+    "name_en": "Embossed Plate"
+  },
+  {
+    "id": 2084,
+    "key": "xld",
+    "name_ko": "샤크투스 아머",
+    "name_en": "Sharktooth Armor"
+  },
+  {
+    "id": 2085,
+    "key": "xlt",
+    "name_ko": "템플러 코트",
+    "name_en": "Templar Coat"
+  },
+  {
+    "id": 2086,
+    "key": "xpl",
+    "name_ko": "러셋 아머",
+    "name_en": "Russet Armor"
+  },
+  {
+    "id": 2087,
+    "key": "xrs",
+    "name_ko": "퀴래스",
+    "name_en": "Cuirass"
+  },
+  {
+    "id": 2088,
+    "key": "xhn",
+    "name_ko": "메쉬 아머",
+    "name_en": "Mesh Armor"
+  },
+  {
+    "id": 2089,
+    "key": "xcl",
+    "name_ko": "티귤레이티드 메일",
+    "name_en": "Tigulated Mail"
+  },
+  {
+    "id": 2090,
+    "key": "xng",
+    "name_ko": "링크드 메일",
+    "name_en": "Linked Mail"
+  },
+  {
+    "id": 2091,
+    "key": "xtu",
+    "name_ko": "트렐리스드 아머",
+    "name_en": "Trellised Armor"
+  },
+  {
+    "id": 2092,
+    "key": "xla",
+    "name_ko": "데몬하이드 아머",
+    "name_en": "Demonhide Armor"
+  },
+  {
+    "id": 2093,
+    "key": "xea",
+    "name_ko": "서펀트스킨 아머",
+    "name_en": "Serpentskin Armor"
+  },
+  {
+    "id": 2094,
+    "key": "xui",
+    "name_ko": "고스트 아머",
+    "name_en": "Ghost Armor"
+  },
+  {
+    "id": 2095,
+    "key": "xsk",
+    "name_ko": "데스 마스크",
+    "name_en": "Death Mask"
+  },
+  {
+    "id": 2096,
+    "key": "xrn",
+    "name_ko": "그랜드 크라운",
+    "name_en": "Grand Crown"
+  },
+  {
+    "id": 2098,
+    "key": "xhl",
+    "name_ko": "배서넷",
+    "name_en": "Basinet"
+  },
+  {
+    "id": 2099,
+    "key": "xlm",
+    "name_ko": "캐스크",
+    "name_en": "Casque"
+  },
+  {
+    "id": 2100,
+    "key": "xkp",
+    "name_ko": "샐릿",
+    "name_en": "Sallet"
+  },
+  {
+    "id": 2101,
+    "key": "xap",
+    "name_ko": "워 햇",
+    "name_en": "War Hat"
+  },
+  {
+    "id": 2102,
+    "key": "8rx",
+    "name_ko": "추코누",
+    "name_en": "Chu-Ko-Nu"
+  },
+  {
+    "id": 2103,
+    "key": "8hx",
+    "name_ko": "발리스타",
+    "name_en": "Ballista"
+  },
+  {
+    "id": 2104,
+    "key": "8mx",
+    "name_ko": "시즈 크로스보우",
+    "name_en": "Siege Crossbow"
+  },
+  {
+    "id": 2105,
+    "key": "8lx",
+    "name_ko": "아발리스트",
+    "name_en": "Arbalest"
+  },
+  {
+    "id": 2106,
+    "key": "8lw",
+    "name_ko": "고딕 보우",
+    "name_en": "Gothic Bow"
+  },
+  {
+    "id": 2107,
+    "key": "8sw",
+    "name_ko": "룬 보우",
+    "name_en": "Rune Bow"
+  },
+  {
+    "id": 2108,
+    "key": "8l8",
+    "name_ko": "라지 시즈 보우",
+    "name_en": "Large Siege Bow"
+  },
+  {
+    "id": 2109,
+    "key": "8s8",
+    "name_ko": "숏 시즈 보우",
+    "name_en": "Short Siege Bow"
+  },
+  {
+    "id": 2110,
+    "key": "8cb",
+    "name_ko": "더블 보우",
+    "name_en": "Double Bow"
+  },
+  {
+    "id": 2111,
+    "key": "8lb",
+    "name_ko": "시더 보우",
+    "name_en": "Cedar Bow"
+  },
+  {
+    "id": 2112,
+    "key": "8hb",
+    "name_ko": "레이저 보우",
+    "name_en": "Razor Bow"
+  },
+  {
+    "id": 2113,
+    "key": "8sb",
+    "name_ko": "엣지 보우",
+    "name_en": "Edge Bow"
+  },
+  {
+    "id": 2114,
+    "key": "8ws",
+    "name_ko": "룬 스태프",
+    "name_en": "Rune Staff"
+  },
+  {
+    "id": 2115,
+    "key": "8bs",
+    "name_ko": "고딕 스태프",
+    "name_en": "Gothic Staff"
+  },
+  {
+    "id": 2116,
+    "key": "8cs",
+    "name_ko": "시더 스태프",
+    "name_en": "Cedar Staff"
+  },
+  {
+    "id": 2117,
+    "key": "8ls",
+    "name_ko": "쿼터스태프",
+    "name_en": "Quarterstaff"
+  },
+  {
+    "id": 2118,
+    "key": "8ss",
+    "name_ko": "조 스태프",
+    "name_en": "Jo Staff"
+  },
+  {
+    "id": 2119,
+    "key": "9wc",
+    "name_ko": "그림 싸이드",
+    "name_en": "Grim Scythe"
+  },
+  {
+    "id": 2120,
+    "key": "9h9",
+    "name_ko": "벡드코방",
+    "name_en": "Bec-de-Corbin"
+  },
+  {
+    "id": 2121,
+    "key": "9pa",
+    "name_ko": "파르티잔",
+    "name_en": "Partizan"
+  },
+  {
+    "id": 2122,
+    "key": "9s8",
+    "name_ko": "배틀 싸이드",
+    "name_en": "Battle Scythe"
+  },
+  {
+    "id": 2123,
+    "key": "9vo",
+    "name_ko": "빌",
+    "name_en": "Bill"
+  },
+  {
+    "id": 2124,
+    "key": "9b7",
+    "name_ko": "로카버 액스",
+    "name_en": "Lochaber Axe"
+  },
+  {
+    "id": 2125,
+    "key": "9p9",
+    "name_ko": "랜스",
+    "name_en": "Lance"
+  },
+  {
+    "id": 2126,
+    "key": "9st",
+    "name_ko": "야리",
+    "name_en": "Yari"
+  },
+  {
+    "id": 2127,
+    "key": "9br",
+    "name_ko": "워 포크",
+    "name_en": "War Fork"
+  },
+  {
+    "id": 2128,
+    "key": "9tr",
+    "name_ko": "푸스키나",
+    "name_en": "Fuscina"
+  },
+  {
+    "id": 2129,
+    "key": "9sr",
+    "name_ko": "워 스피어",
+    "name_en": "War Spear"
+  },
+  {
+    "id": 2130,
+    "key": "9ts",
+    "name_ko": "하푼",
+    "name_en": "Harpoon"
+  },
+  {
+    "id": 2131,
+    "key": "9gl",
+    "name_ko": "스피큘럼",
+    "name_en": "Spiculum"
+  },
+  {
+    "id": 2132,
+    "key": "9s9",
+    "name_ko": "심빌란",
+    "name_en": "Simbilan"
+  },
+  {
+    "id": 2133,
+    "key": "9pi",
+    "name_ko": "그레이트 필럼",
+    "name_en": "Great Pilum"
+  },
+  {
+    "id": 2134,
+    "key": "9ja",
+    "name_ko": "워 재벌린",
+    "name_en": "War Javelin"
+  },
+  {
+    "id": 2135,
+    "key": "9b8",
+    "name_ko": "헐배트",
+    "name_en": "Hurlbat"
+  },
+  {
+    "id": 2136,
+    "key": "9bk",
+    "name_ko": "워 다트",
+    "name_en": "War Dart"
+  },
+  {
+    "id": 2137,
+    "key": "9ta",
+    "name_ko": "프란시스카",
+    "name_en": "Francisca"
+  },
+  {
+    "id": 2138,
+    "key": "9tk",
+    "name_ko": "배틀 다트",
+    "name_en": "Battle Dart"
+  },
+  {
+    "id": 2140,
+    "key": "9kr",
+    "name_ko": "싱쿠디아",
+    "name_en": "Cinquedeas"
+  },
+  {
+    "id": 2141,
+    "key": "9di",
+    "name_ko": "런들",
+    "name_en": "Rondel"
+  },
+  {
+    "id": 2142,
+    "key": "9dg",
+    "name_ko": "포이나드",
+    "name_en": "Poignard"
+  },
+  {
+    "id": 2143,
+    "key": "9gd",
+    "name_ko": "엑시큐셔너 소드",
+    "name_en": "Executioner Sword"
+  },
+  {
+    "id": 2144,
+    "key": "9fb",
+    "name_ko": "즈바이핸더",
+    "name_en": "Zweihander"
+  },
+  {
+    "id": 2145,
+    "key": "9gs",
+    "name_ko": "터스크 소드",
+    "name_en": "Tusk Sword"
+  },
+  {
+    "id": 2146,
+    "key": "9cm",
+    "name_ko": "다키안 팔크스",
+    "name_en": "Dacian Falx"
+  },
+  {
+    "id": 2147,
+    "key": "92h",
+    "name_ko": "에스팬돈",
+    "name_en": "Espandon"
+  },
+  {
+    "id": 2148,
+    "key": "9wd",
+    "name_ko": "에인션트 소드",
+    "name_en": "Ancient Sword"
+  },
+  {
+    "id": 2149,
+    "key": "9ls",
+    "name_ko": "룬 소드",
+    "name_en": "Rune Sword"
+  },
+  {
+    "id": 2150,
+    "key": "9bs",
+    "name_ko": "배틀 소드",
+    "name_en": "Battle Sword"
+  },
+  {
+    "id": 2151,
+    "key": "9cr",
+    "name_ko": "디멘셔널 블레이드",
+    "name_en": "Dimensional Blade"
+  },
+  {
+    "id": 2152,
+    "key": "9fc",
+    "name_ko": "털워",
+    "name_en": "Tulwar"
+  },
+  {
+    "id": 2153,
+    "key": "9sb",
+    "name_ko": "샴쉬르",
+    "name_en": "Shamshir"
+  },
+  {
+    "id": 2154,
+    "key": "9sm",
+    "name_ko": "커틀러스",
+    "name_en": "Cutlass"
+  },
+  {
+    "id": 2155,
+    "key": "9ss",
+    "name_ko": "글래디우스",
+    "name_en": "Gladius"
+  },
+  {
+    "id": 2156,
+    "key": "9gm",
+    "name_ko": "마르텔 드 페르",
+    "name_en": "Martel de Fer"
+  },
+  {
+    "id": 2157,
+    "key": "9m9",
+    "name_ko": "워 클럽",
+    "name_en": "War Club"
+  },
+  {
+    "id": 2158,
+    "key": "9wh",
+    "name_ko": "배틀 해머",
+    "name_en": "Battle Hammer"
+  },
+  {
+    "id": 2159,
+    "key": "9fl",
+    "name_ko": "나우트",
+    "name_en": "Knout"
+  },
+  {
+    "id": 2160,
+    "key": "9mt",
+    "name_ko": "재기드 스타",
+    "name_en": "Jagged Star"
+  },
+  {
+    "id": 2161,
+    "key": "9ma",
+    "name_ko": "플랜지드 메이스",
+    "name_en": "Flanged Mace"
+  },
+  {
+    "id": 2162,
+    "key": "9sp",
+    "name_ko": "바브드 클럽",
+    "name_en": "Barbed Club"
+  },
+  {
+    "id": 2163,
+    "key": "9ws",
+    "name_ko": "디바인 셉터",
+    "name_en": "Divine Scepter"
+  },
+  {
+    "id": 2164,
+    "key": "9qs",
+    "name_ko": "홀리 워터 스프링클러",
+    "name_en": "Holy Water Sprinkler"
+  },
+  {
+    "id": 2165,
+    "key": "9sc",
+    "name_ko": "룬 셉터",
+    "name_en": "Rune Scepter"
+  },
+  {
+    "id": 2166,
+    "key": "9cl",
+    "name_ko": "커절",
+    "name_en": "Cudgel"
+  },
+  {
+    "id": 2167,
+    "key": "9gw",
+    "name_ko": "그레이브 원드",
+    "name_en": "Grave Wand"
+  },
+  {
+    "id": 2168,
+    "key": "9bw",
+    "name_ko": "툼 원드",
+    "name_en": "Tomb Wand"
+  },
+  {
+    "id": 2169,
+    "key": "9yw",
+    "name_ko": "페트리파이드 원드",
+    "name_en": "Petrified Wand"
+  },
+  {
+    "id": 2170,
+    "key": "9wn",
+    "name_ko": "번트 원드",
+    "name_en": "Burnt Wand"
+  },
+  {
+    "id": 2171,
+    "key": "9gi",
+    "name_ko": "에인션트 액스",
+    "name_en": "Ancient Axe"
+  },
+  {
+    "id": 2172,
+    "key": "9ga",
+    "name_ko": "고딕 액스",
+    "name_en": "Gothic Axe"
+  },
+  {
+    "id": 2173,
+    "key": "9bt",
+    "name_ko": "타바",
+    "name_en": "Tabar"
+  },
+  {
+    "id": 2174,
+    "key": "9ba",
+    "name_ko": "비어디드 액스",
+    "name_en": "Bearded Axe"
+  },
+  {
+    "id": 2175,
+    "key": "9la",
+    "name_ko": "밀리터리 액스",
+    "name_en": "Military Axe"
+  },
+  {
+    "id": 2176,
+    "key": "9wa",
+    "name_ko": "나가",
+    "name_en": "Naga"
+  },
+  {
+    "id": 2177,
+    "key": "9mp",
+    "name_ko": "크로우빌",
+    "name_en": "Crowbill"
+  },
+  {
+    "id": 2178,
+    "key": "92a",
+    "name_ko": "트윈 액스",
+    "name_en": "Twin Axe"
+  },
+  {
+    "id": 2179,
+    "key": "9ax",
+    "name_ko": "클리버",
+    "name_en": "Cleaver"
+  },
+  {
+    "id": 2180,
+    "key": "9ha",
+    "name_ko": "해칫",
+    "name_en": "Hatchet"
+  },
+  {
+    "id": 2181,
+    "key": "9b9",
+    "name_ko": "고딕 소드",
+    "name_en": "Gothic Sword"
+  },
+  {
+    "id": 2182,
+    "key": "gpl",
+    "name_ko": "유독 가스 물약",
+    "name_en": "Strangling Gas Potion"
+  },
+  {
+    "id": 2183,
+    "key": "opl",
+    "name_ko": "기폭 물약",
+    "name_en": "Fulminating Potion"
+  },
+  {
+    "id": 2184,
+    "key": "gpm",
+    "name_ko": "질식 가스 물약",
+    "name_en": "Choking Gas Potion"
+  },
+  {
+    "id": 2185,
+    "key": "opm",
+    "name_ko": "폭발 물약",
+    "name_en": "Exploding Potion"
+  },
+  {
+    "id": 2186,
+    "key": "gps",
+    "name_ko": "부패 가스 물약",
+    "name_en": "Rancid Gas Potion"
+  },
+  {
+    "id": 2187,
+    "key": "ops",
+    "name_ko": "기름 물약",
+    "name_en": "Oil Potion"
+  },
+  {
+    "id": 2188,
+    "key": "gidbinn",
+    "name_ko": "기드빈",
+    "name_en": "Gidbinn"
+  },
+  {
+    "id": 2189,
+    "key": "g33",
+    "name_ko": "기드빈",
+    "name_en": "The Gidbinn"
+  },
+  {
+    "id": 2190,
+    "key": "d33",
+    "name_ko": "미끼 기드빈",
+    "name_en": "Decoy Gidbinn"
+  },
+  {
+    "id": 2191,
+    "key": "leg",
+    "name_ko": "워트의 의족",
+    "name_en": "Wirt's Leg"
+  },
+  {
+    "id": 2192,
+    "key": "Malus",
+    "name_ko": "호라드림 망치",
+    "name_en": "Horadric Malus"
+  },
+  {
+    "id": 2193,
+    "key": "hdm",
+    "name_ko": "호라드림 망치",
+    "name_en": "Horadric Malus"
+  },
+  {
+    "id": 2194,
+    "key": "hfh",
+    "name_ko": "지옥의 대장간 망치",
+    "name_en": "Hell Forge Hammer"
+  },
+  {
+    "id": 2195,
+    "key": "hst",
+    "name_ko": "호라드림 지팡이",
+    "name_en": "Horadric Staff"
+  },
+  {
+    "id": 2196,
+    "key": "msf",
+    "name_ko": "호라드림 지팡이 자루",
+    "name_en": "Shaft of the Horadric Staff"
+  },
+  {
+    "id": 2198,
+    "key": "elx",
+    "name_ko": "비약",
+    "name_en": "Elixir"
+  },
+  {
+    "id": 2199,
+    "key": "tbk",
+    "name_ko": "마을 차원문의 고서",
+    "name_en": "Tome of Town Portal"
+  },
+  {
+    "id": 2200,
+    "key": "tsc",
+    "name_ko": "마을 차원문의 두루마리",
+    "name_en": "Scroll of Town Portal"
+  },
+  {
+    "id": 2201,
+    "key": "ibk",
+    "name_ko": "감별의 고서",
+    "name_en": "Tome of Identify"
+  },
+  {
+    "id": 2202,
+    "key": "isc",
+    "name_ko": "감별의 두루마리",
+    "name_en": "Scroll of Identify"
+  },
+  {
+    "id": 2207,
+    "key": "vps",
+    "name_ko": "지구력 물약",
+    "name_en": "Stamina Potion"
+  },
+  {
+    "id": 2208,
+    "key": "yps",
+    "name_ko": "해독 물약",
+    "name_en": "Antidote Potion"
+  },
+  {
+    "id": 2209,
+    "key": "rvs",
+    "name_ko": "활력 물약",
+    "name_en": "Rejuvenation Potion"
+  },
+  {
+    "id": 2210,
+    "key": "rvl",
+    "name_ko": "대량의 활력 물약",
+    "name_en": "Full Rejuvenation Potion"
+  },
+  {
+    "id": 2211,
+    "key": "wms",
+    "name_ko": "해동 물약",
+    "name_en": "Thawing Potion"
+  },
+  {
+    "id": 2212,
+    "key": "amu",
+    "name_ko": "목걸이",
+    "name_en": "Amulet"
+  },
+  {
+    "id": 2213,
+    "key": "vip",
+    "name_ko": "호라드림 지팡이 꼭지",
+    "name_en": "Top of the Horadric Staff"
+  },
+  {
+    "id": 2214,
+    "key": "rin",
+    "name_ko": "반지",
+    "name_en": "Ring"
+  },
+  {
+    "id": 2216,
+    "key": "bks",
+    "name_ko": "이니푸스의 두루마리",
+    "name_en": "Scroll of Inifuss"
+  },
+  {
+    "id": 2217,
+    "key": "bkd",
+    "name_ko": "돌무덤 열쇠",
+    "name_en": "Key to the Cairn Stones"
+  },
+  {
+    "id": 2218,
+    "key": "aqv",
+    "name_ko": "화살",
+    "name_en": "Arrows"
+  },
+  {
+    "id": 2219,
+    "key": "tch",
+    "name_ko": "횃불",
+    "name_en": "Torch"
+  },
+  {
+    "id": 2220,
+    "key": "cqv",
+    "name_ko": "쇠뇌용 화살",
+    "name_en": "Bolts"
+  },
+  {
+    "id": 2221,
+    "key": "Key",
+    "name_ko": "열쇠",
+    "name_en": "Key"
+  },
+  {
+    "id": 2222,
+    "key": "key",
+    "name_ko": "열쇠",
+    "name_en": "Key"
+  },
+  {
+    "id": 2223,
+    "key": "luv",
+    "name_ko": "검은 탑 열쇠",
+    "name_en": "The Black Tower Key"
+  },
+  {
+    "id": 2227,
+    "key": "j34",
+    "name_ko": "비취 조각상",
+    "name_en": "A Jade Figurine"
+  },
+  {
+    "id": 2228,
+    "key": "g34",
+    "name_ko": "황금 새",
+    "name_en": "The Golden Bird"
+  },
+  {
+    "id": 2229,
+    "key": "bbb",
+    "name_ko": "람 에센의 고서",
+    "name_en": "Lam Esen's Tome"
+  },
+  {
+    "id": 2230,
+    "key": "LamTome",
+    "name_ko": "람 에센의 고서",
+    "name_en": "Lam Esen's Tome"
+  },
+  {
+    "id": 2231,
+    "key": "box",
+    "name_ko": "호라드림의 함",
+    "name_en": "Horadric Cube"
+  },
+  {
+    "id": 2232,
+    "key": "tr1",
+    "name_ko": "호라드림의 두루마리",
+    "name_en": "Horadric Scroll"
+  },
+  {
+    "id": 2233,
+    "key": "mss",
+    "name_ko": "메피스토의 영혼석",
+    "name_en": "Mephisto's Soulstone"
+  },
+  {
+    "id": 2235,
+    "key": "ear",
+    "name_ko": "귀",
+    "name_en": "Ear"
+  },
+  {
+    "id": 2236,
+    "key": "gcv",
+    "name_ko": "최하급 자수정",
+    "name_en": "Chipped Amethyst"
+  },
+  {
+    "id": 2237,
+    "key": "gfv",
+    "name_ko": "하급 자수정",
+    "name_en": "Flawed Amethyst"
+  },
+  {
+    "id": 2238,
+    "key": "gsv",
+    "name_ko": "자수정",
+    "name_en": "Amethyst"
+  },
+  {
+    "id": 2239,
+    "key": "gzv",
+    "name_ko": "상급 자수정",
+    "name_en": "Flawless Amethyst"
+  },
+  {
+    "id": 2240,
+    "key": "gpv",
+    "name_ko": "최상급 자수정",
+    "name_en": "Perfect Amethyst"
+  },
+  {
+    "id": 2241,
+    "key": "gcy",
+    "name_ko": "최하급 토파즈",
+    "name_en": "Chipped Topaz"
+  },
+  {
+    "id": 2242,
+    "key": "gfy",
+    "name_ko": "하급 토파즈",
+    "name_en": "Flawed Topaz"
+  },
+  {
+    "id": 2243,
+    "key": "gsy",
+    "name_ko": "토파즈",
+    "name_en": "Topaz"
+  },
+  {
+    "id": 2244,
+    "key": "gly",
+    "name_ko": "상급 토파즈",
+    "name_en": "Flawless Topaz"
+  },
+  {
+    "id": 2245,
+    "key": "gpy",
+    "name_ko": "최상급 토파즈",
+    "name_en": "Perfect Topaz"
+  },
+  {
+    "id": 2246,
+    "key": "gcb",
+    "name_ko": "최하급 사파이어",
+    "name_en": "Chipped Sapphire"
+  },
+  {
+    "id": 2247,
+    "key": "gfb",
+    "name_ko": "하급 사파이어",
+    "name_en": "Flawed Sapphire"
+  },
+  {
+    "id": 2249,
+    "key": "glb",
+    "name_ko": "상급 사파이어",
+    "name_en": "Flawless Sapphire"
+  },
+  {
+    "id": 2250,
+    "key": "gpb",
+    "name_ko": "최상급 사파이어",
+    "name_en": "Perfect Sapphire"
+  },
+  {
+    "id": 2251,
+    "key": "gcg",
+    "name_ko": "최하급 에메랄드",
+    "name_en": "Chipped Emerald"
+  },
+  {
+    "id": 2252,
+    "key": "gfg",
+    "name_ko": "하급 에메랄드",
+    "name_en": "Flawed Emerald"
+  },
+  {
+    "id": 2253,
+    "key": "glg",
+    "name_ko": "상급 에메랄드",
+    "name_en": "Flawless Emerald"
+  },
+  {
+    "id": 2255,
+    "key": "gpg",
+    "name_ko": "최상급 에메랄드",
+    "name_en": "Perfect Emerald"
+  },
+  {
+    "id": 2256,
+    "key": "gcr",
+    "name_ko": "최하급 루비",
+    "name_en": "Chipped Ruby"
+  },
+  {
+    "id": 2257,
+    "key": "gfr",
+    "name_ko": "하급 루비",
+    "name_en": "Flawed Ruby"
+  },
+  {
+    "id": 2259,
+    "key": "glr",
+    "name_ko": "상급 루비",
+    "name_en": "Flawless Ruby"
+  },
+  {
+    "id": 2260,
+    "key": "gpr",
+    "name_ko": "최상급 루비",
+    "name_en": "Perfect Ruby"
+  },
+  {
+    "id": 2261,
+    "key": "gcw",
+    "name_ko": "최하급 다이아몬드",
+    "name_en": "Chipped Diamond"
+  },
+  {
+    "id": 2262,
+    "key": "gfw",
+    "name_ko": "하급 다이아몬드",
+    "name_en": "Flawed Diamond"
+  },
+  {
+    "id": 2264,
+    "key": "glw",
+    "name_ko": "상급 다이아몬드",
+    "name_en": "Flawless Diamond"
+  },
+  {
+    "id": 2265,
+    "key": "gpw",
+    "name_ko": "최상급 다이아몬드",
+    "name_en": "Perfect Diamond"
+  },
+  {
+    "id": 2266,
+    "key": "hp1",
+    "name_ko": "미량의 치유 물약",
+    "name_en": "Minor Healing Potion"
+  },
+  {
+    "id": 2267,
+    "key": "hp2",
+    "name_ko": "소량의 치유 물약",
+    "name_en": "Light Healing Potion"
+  },
+  {
+    "id": 2268,
+    "key": "hp3",
+    "name_ko": "치유 물약",
+    "name_en": "Healing Potion"
+  },
+  {
+    "id": 2269,
+    "key": "hp4",
+    "name_ko": "대량의 치유 물약",
+    "name_en": "Greater Healing Potion"
+  },
+  {
+    "id": 2270,
+    "key": "hp5",
+    "name_ko": "초대량의 치유 물약",
+    "name_en": "Super Healing Potion"
+  },
+  {
+    "id": 2271,
+    "key": "mp1",
+    "name_ko": "미량의 마나 물약",
+    "name_en": "Minor Mana Potion"
+  },
+  {
+    "id": 2272,
+    "key": "mp2",
+    "name_ko": "소량의 마나 물약",
+    "name_en": "Light Mana Potion"
+  },
+  {
+    "id": 2273,
+    "key": "mp3",
+    "name_ko": "마나 물약",
+    "name_en": "Mana Potion"
+  },
+  {
+    "id": 2274,
+    "key": "mp4",
+    "name_ko": "대량의 마나 물약",
+    "name_en": "Greater Mana Potion"
+  },
+  {
+    "id": 2275,
+    "key": "mp5",
+    "name_ko": "초대량의 마나 물약",
+    "name_en": "Super Mana Potion"
+  },
+  {
+    "id": 2277,
+    "key": "skc",
+    "name_ko": "최하급 해골",
+    "name_en": "Chipped Skull"
+  },
+  {
+    "id": 2278,
+    "key": "skf",
+    "name_ko": "하급 해골",
+    "name_en": "Flawed Skull"
+  },
+  {
+    "id": 2279,
+    "key": "sku",
+    "name_ko": "해골",
+    "name_en": "Skull"
+  },
+  {
+    "id": 2280,
+    "key": "skl",
+    "name_ko": "상급 해골",
+    "name_en": "Flawless Skull"
+  },
+  {
+    "id": 2281,
+    "key": "skz",
+    "name_ko": "최상급 해골",
+    "name_en": "Perfect Skull"
+  },
+  {
+    "id": 2284,
+    "key": "Raven",
+    "name_ko": "큰까마귀의",
+    "name_en": "Raven"
+  },
+  {
+    "id": 2308,
+    "key": "Imp",
+    "name_ko": "임프의",
+    "name_en": "Imp"
+  },
+  {
+    "id": 2317,
+    "key": "Holocaust",
+    "name_ko": "대전쟁의",
+    "name_en": "Armageddon"
+  },
+  {
+    "id": 2334,
+    "key": "saw",
+    "name_ko": "톱",
+    "name_en": "Saw"
+  },
+  {
+    "id": 2379,
+    "key": "cry",
+    "name_ko": "울음",
+    "name_en": "Cry"
+  },
+  {
+    "id": 2384,
+    "key": "visage",
+    "name_ko": "얼굴",
+    "name_en": "Visage"
+  },
+  {
+    "id": 2385,
+    "key": "crest",
+    "name_ko": "관모",
+    "name_en": "Crest"
+  },
+  {
+    "id": 2386,
+    "key": "circlet",
+    "name_ko": "써클릿",
+    "name_en": "Circlet"
+  },
+  {
+    "id": 2387,
+    "key": "veil",
+    "name_ko": "너울",
+    "name_en": "Veil"
+  },
+  {
+    "id": 2388,
+    "key": "hood",
+    "name_ko": "두건",
+    "name_en": "Hood"
+  },
+  {
+    "id": 2389,
+    "key": "mask",
+    "name_ko": "마스크",
+    "name_en": "Mask"
+  },
+  {
+    "id": 2390,
+    "key": "brow",
+    "name_ko": "이마",
+    "name_en": "Brow"
+  },
+  {
+    "id": 2391,
+    "key": "casque",
+    "name_ko": "캐스크",
+    "name_en": "Casque"
+  },
+  {
+    "id": 2392,
+    "key": "visor",
+    "name_ko": "모자챙",
+    "name_en": "Visor"
+  },
+  {
+    "id": 2393,
+    "key": "cowl",
+    "name_ko": "머리쓰개",
+    "name_en": "Cowl"
+  },
+  {
+    "id": 2394,
+    "key": "hide",
+    "name_ko": "날가죽",
+    "name_en": "Hide"
+  },
+  {
+    "id": 2395,
+    "key": "Pelt",
+    "name_ko": "털가죽",
+    "name_en": "Pelt"
+  },
+  {
+    "id": 2396,
+    "key": "carapace",
+    "name_ko": "갑각",
+    "name_en": "Carapace"
+  },
+  {
+    "id": 2397,
+    "key": "coat",
+    "name_ko": "외투",
+    "name_en": "Coat"
+  },
+  {
+    "id": 2398,
+    "key": "wrap",
+    "name_ko": "싸개",
+    "name_en": "Wrap"
+  },
+  {
+    "id": 2399,
+    "key": "suit",
+    "name_ko": "성장",
+    "name_en": "Suit"
+  },
+  {
+    "id": 2400,
+    "key": "cloak",
+    "name_ko": "망토",
+    "name_en": "Cloak"
+  },
+  {
+    "id": 2401,
+    "key": "shroud",
+    "name_ko": "장막",
+    "name_en": "Shroud"
+  },
+  {
+    "id": 2402,
+    "key": "jack",
+    "name_ko": "잭",
+    "name_en": "Jack"
+  },
+  {
+    "id": 2403,
+    "key": "mantle",
+    "name_ko": "어깨걸이",
+    "name_en": "Mantle"
+  },
+  {
+    "id": 2404,
+    "key": "guard",
+    "name_ko": "보호구",
+    "name_en": "Guard"
+  },
+  {
+    "id": 2405,
+    "key": "badge",
+    "name_ko": "증표",
+    "name_en": "Badge"
+  },
+  {
+    "id": 2406,
+    "key": "rock",
+    "name_ko": "돌",
+    "name_en": "Rock"
+  },
+  {
+    "id": 2407,
+    "key": "aegis",
+    "name_ko": "이지스",
+    "name_en": "Aegis"
+  },
+  {
+    "id": 2408,
+    "key": "ward",
+    "name_ko": "워드",
+    "name_en": "Ward"
+  },
+  {
+    "id": 2409,
+    "key": "tower",
+    "name_ko": "탑",
+    "name_en": "Tower"
+  },
+  {
+    "id": 2410,
+    "key": "shield",
+    "name_ko": "방패",
+    "name_en": "Shield"
+  },
+  {
+    "id": 2411,
+    "key": "wing",
+    "name_ko": "날개",
+    "name_en": "Wing"
+  },
+  {
+    "id": 2412,
+    "key": "mark",
+    "name_ko": "표적",
+    "name_en": "Mark"
+  },
+  {
+    "id": 2413,
+    "key": "emblem",
+    "name_ko": "표징",
+    "name_en": "Emblem"
+  },
+  {
+    "id": 2414,
+    "key": "hand",
+    "name_ko": "손",
+    "name_en": "Hand"
+  },
+  {
+    "id": 2415,
+    "key": "fist",
+    "name_ko": "주먹",
+    "name_en": "Fist"
+  },
+  {
+    "id": 2416,
+    "key": "claw",
+    "name_ko": "손톱",
+    "name_en": "Claw"
+  },
+  {
+    "id": 2417,
+    "key": "clutches",
+    "name_ko": "악력",
+    "name_en": "Clutches"
+  },
+  {
+    "id": 2418,
+    "key": "grip",
+    "name_ko": "손아귀",
+    "name_en": "Grip"
+  },
+  {
+    "id": 2419,
+    "key": "grasp",
+    "name_ko": "손아귀",
+    "name_en": "Grasp"
+  },
+  {
+    "id": 2420,
+    "key": "hold",
+    "name_ko": "장악",
+    "name_en": "Hold"
+  },
+  {
+    "id": 2421,
+    "key": "touch",
+    "name_ko": "손길",
+    "name_en": "Touch"
+  },
+  {
+    "id": 2422,
+    "key": "finger",
+    "name_ko": "손가락",
+    "name_en": "Finger"
+  },
+  {
+    "id": 2423,
+    "key": "knuckle",
+    "name_ko": "주먹 돌기",
+    "name_en": "Knuckle"
+  },
+  {
+    "id": 2424,
+    "key": "shank",
+    "name_ko": "칼자루",
+    "name_en": "Shank"
+  },
+  {
+    "id": 2425,
+    "key": "spur",
+    "name_ko": "쇠발톱",
+    "name_en": "Spur"
+  },
+  {
+    "id": 2426,
+    "key": "tread",
+    "name_ko": "발 보호대",
+    "name_en": "Tread"
+  },
+  {
+    "id": 2427,
+    "key": "stalker",
+    "name_ko": "추적자",
+    "name_en": "Stalker"
+  },
+  {
+    "id": 2428,
+    "key": "greave",
+    "name_ko": "그리브",
+    "name_en": "Greaves"
+  },
+  {
+    "id": 2429,
+    "key": "blazer",
+    "name_ko": "퍼뜨리는 자",
+    "name_en": "Blazer"
+  },
+  {
+    "id": 2430,
+    "key": "nails",
+    "name_ko": "못",
+    "name_en": "Nails"
+  },
+  {
+    "id": 2431,
+    "key": "trample",
+    "name_ko": "짓밟기",
+    "name_en": "Trample"
+  },
+  {
+    "id": 2432,
+    "key": "Brogues",
+    "name_ko": "가죽 신",
+    "name_en": "Brogues"
+  },
+  {
+    "id": 2433,
+    "key": "track",
+    "name_ko": "추격",
+    "name_en": "Track"
+  },
+  {
+    "id": 2434,
+    "key": "slippers",
+    "name_ko": "끌신",
+    "name_en": "Slippers"
+  },
+  {
+    "id": 2435,
+    "key": "clasp",
+    "name_ko": "악수",
+    "name_en": "Clasp"
+  },
+  {
+    "id": 2436,
+    "key": "buckle",
+    "name_ko": "띠쇠",
+    "name_en": "Buckle"
+  },
+  {
+    "id": 2437,
+    "key": "harness",
+    "name_ko": "허리 멜빵",
+    "name_en": "Harness"
+  },
+  {
+    "id": 2438,
+    "key": "lock",
+    "name_ko": "자물쇠",
+    "name_en": "Lock"
+  },
+  {
+    "id": 2439,
+    "key": "fringe",
+    "name_ko": "술",
+    "name_en": "Fringe"
+  },
+  {
+    "id": 2440,
+    "key": "winding",
+    "name_ko": "굽이",
+    "name_en": "Winding"
+  },
+  {
+    "id": 2441,
+    "key": "chain",
+    "name_ko": "사슬",
+    "name_en": "Chain"
+  },
+  {
+    "id": 2443,
+    "key": "lash",
+    "name_ko": "불채찍",
+    "name_en": "Lash"
+  },
+  {
+    "id": 2444,
+    "key": "cord",
+    "name_ko": "노끈",
+    "name_en": "Cord"
+  },
+  {
+    "id": 2445,
+    "key": "knot",
+    "name_ko": "매듭",
+    "name_en": "Knot"
+  },
+  {
+    "id": 2446,
+    "key": "circle",
+    "name_ko": "원",
+    "name_en": "Circle"
+  },
+  {
+    "id": 2447,
+    "key": "loop",
+    "name_ko": "고리",
+    "name_en": "Loop"
+  },
+  {
+    "id": 2448,
+    "key": "eye",
+    "name_ko": "눈",
+    "name_en": "Eye"
+  },
+  {
+    "id": 2449,
+    "key": "turn",
+    "name_ko": "회전",
+    "name_en": "Turn"
+  },
+  {
+    "id": 2450,
+    "key": "spiral",
+    "name_ko": "나선",
+    "name_en": "Spiral"
+  },
+  {
+    "id": 2451,
+    "key": "coil",
+    "name_ko": "고리",
+    "name_en": "Coil"
+  },
+  {
+    "id": 2452,
+    "key": "gyre",
+    "name_ko": "나선 고리",
+    "name_en": "Gyre"
+  },
+  {
+    "id": 2453,
+    "key": "band",
+    "name_ko": "가락지",
+    "name_en": "Band"
+  },
+  {
+    "id": 2454,
+    "key": "whorl",
+    "name_ko": "와상문",
+    "name_en": "Whorl"
+  },
+  {
+    "id": 2455,
+    "key": "talisman",
+    "name_ko": "영물",
+    "name_en": "Talisman"
+  },
+  {
+    "id": 2456,
+    "key": "heart",
+    "name_ko": "심장",
+    "name_en": "Heart"
+  },
+  {
+    "id": 2457,
+    "key": "noose",
+    "name_ko": "올가미",
+    "name_en": "Noose"
+  },
+  {
+    "id": 2458,
+    "key": "necklace",
+    "name_ko": "목걸이",
+    "name_en": "Necklace"
+  },
+  {
+    "id": 2459,
+    "key": "collar",
+    "name_ko": "목깃",
+    "name_en": "Collar"
+  },
+  {
+    "id": 2460,
+    "key": "beads",
+    "name_ko": "구슬",
+    "name_en": "Beads"
+  },
+  {
+    "id": 2461,
+    "key": "torc",
+    "name_ko": "목 장식",
+    "name_en": "Torc"
+  },
+  {
+    "id": 2462,
+    "key": "gorget",
+    "name_ko": "목가리개",
+    "name_en": "Gorget"
+  },
+  {
+    "id": 2464,
+    "key": "wood",
+    "name_ko": "나무",
+    "name_en": "Wood"
+  },
+  {
+    "id": 2465,
+    "key": "brand",
+    "name_ko": "낙인",
+    "name_en": "Brand"
+  },
+  {
+    "id": 2466,
+    "key": "bludgeon",
+    "name_ko": "몽둥이",
+    "name_en": "Bludgeon"
+  },
+  {
+    "id": 2467,
+    "key": "cudgel",
+    "name_ko": "커절",
+    "name_en": "Cudgel"
+  },
+  {
+    "id": 2468,
+    "key": "loom",
+    "name_ko": "베틀",
+    "name_en": "Loom"
+  },
+  {
+    "id": 2469,
+    "key": "harp",
+    "name_ko": "하프",
+    "name_en": "Harp"
+  },
+  {
+    "id": 2470,
+    "key": "master",
+    "name_ko": "장인",
+    "name_en": "Master"
+  },
+  {
+    "id": 2471,
+    "key": "barRI",
+    "name_ko": "막대",
+    "name_en": "Bar"
+  },
+  {
+    "id": 2472,
+    "key": "hew",
+    "name_ko": "절단",
+    "name_en": "Hew"
+  },
+  {
+    "id": 2473,
+    "key": "crook",
+    "name_ko": "사기꾼",
+    "name_en": "Crook"
+  },
+  {
+    "id": 2474,
+    "key": "mar",
+    "name_ko": "마르",
+    "name_en": "Mar"
+  },
+  {
+    "id": 2475,
+    "key": "shell",
+    "name_ko": "껍질",
+    "name_en": "Shell"
+  },
+  {
+    "id": 2476,
+    "key": "stake",
+    "name_ko": "대못",
+    "name_en": "Stake"
+  },
+  {
+    "id": 2477,
+    "key": "picket",
+    "name_ko": "팻말",
+    "name_en": "Picket"
+  },
+  {
+    "id": 2478,
+    "key": "pale",
+    "name_ko": "대못",
+    "name_en": "Pale"
+  },
+  {
+    "id": 2479,
+    "key": "flange",
+    "name_ko": "무쇠테",
+    "name_en": "Flange"
+  },
+  {
+    "id": 2480,
+    "key": "Civerb's Vestments",
+    "name_ko": "시버브의 예복",
+    "name_en": "Civerb's Vestments"
+  },
+  {
+    "id": 2481,
+    "key": "Hsarus' Trim",
+    "name_ko": "흐사루의 방어",
+    "name_en": "Hsaru's Defense"
+  },
+  {
+    "id": 2482,
+    "key": "Cleglaw's Brace",
+    "name_ko": "클리글로의 버팀목",
+    "name_en": "Cleglaw's Brace"
+  },
+  {
+    "id": 2483,
+    "key": "Iratha's Finery",
+    "name_ko": "이라타의 장식",
+    "name_en": "Iratha's Finery"
+  },
+  {
+    "id": 2484,
+    "key": "Isenhart's Armory",
+    "name_ko": "아이젠하트의 무기고",
+    "name_en": "Isenhart's Armory"
+  },
+  {
+    "id": 2485,
+    "key": "Vidala's Rig",
+    "name_ko": "비달라의 장치",
+    "name_en": "Vidala's Rig"
+  },
+  {
+    "id": 2486,
+    "key": "Milabrega's Regalia",
+    "name_ko": "밀라브레가의 상징",
+    "name_en": "Milabrega's Regalia"
+  },
+  {
+    "id": 2487,
+    "key": "Cathan's Traps",
+    "name_ko": "카탄의 덫",
+    "name_en": "Cathan's Traps"
+  },
+  {
+    "id": 2488,
+    "key": "Tancred's Battlegear",
+    "name_ko": "탄크레드의 전투 장비",
+    "name_en": "Tancred's Battlegear"
+  },
+  {
+    "id": 2489,
+    "key": "Sigon's Complete Steel",
+    "name_ko": "시곤의 온전한 강철",
+    "name_en": "Sigon's Complete Steel"
+  },
+  {
+    "id": 2490,
+    "key": "Infernal Tools",
+    "name_ko": "지옥불 도구",
+    "name_en": "Infernal Tools"
+  },
+  {
+    "id": 2491,
+    "key": "Berserker's Garb",
+    "name_ko": "광전사의 무기고",
+    "name_en": "Berserker's Arsenal"
+  },
+  {
+    "id": 2492,
+    "key": "Death's Disguise",
+    "name_ko": "죽음의 위장",
+    "name_en": "Death's Disguise"
+  },
+  {
+    "id": 2493,
+    "key": "Angelical Raiment",
+    "name_ko": "천사의 의복",
+    "name_en": "Angelic Raiment"
+  },
+  {
+    "id": 2494,
+    "key": "Arctic Gear",
+    "name_ko": "극지 장비",
+    "name_en": "Arctic Gear"
+  },
+  {
+    "id": 2495,
+    "key": "Arcanna's Tricks",
+    "name_ko": "아르카나의 속임수",
+    "name_en": "Arcanna's Tricks"
+  },
+  {
+    "id": 2512,
+    "key": "Ward",
+    "name_ko": "워드",
+    "name_en": "Ward"
+  },
+  {
+    "id": 2513,
+    "key": "Iron Heel",
+    "name_ko": "무쇠 발꿈치",
+    "name_en": "Iron Heel"
+  },
+  {
+    "id": 2514,
+    "key": "Tooth",
+    "name_ko": "이빨",
+    "name_en": "Tooth"
+  },
+  {
+    "id": 2515,
+    "key": "Collar",
+    "name_ko": "목깃",
+    "name_en": "Collar"
+  },
+  {
+    "id": 2516,
+    "key": "Lightbrand",
+    "name_ko": "빛의 낙인",
+    "name_en": "Lightbrand"
+  },
+  {
+    "id": 2517,
+    "key": "Barb",
+    "name_ko": "미늘",
+    "name_en": "Barb"
+  },
+  {
+    "id": 2518,
+    "key": "Orb",
+    "name_ko": "보주",
+    "name_en": "Orb"
+  },
+  {
+    "id": 2519,
+    "key": "Rule",
+    "name_ko": "지배의",
+    "name_en": "Rule"
+  },
+  {
+    "id": 2520,
+    "key": "Crowbill",
+    "name_ko": "크로우빌",
+    "name_en": "Crowbill"
+  },
+  {
+    "id": 2521,
+    "key": "Visor",
+    "name_ko": "모자챙",
+    "name_en": "Visor"
+  },
+  {
+    "id": 2522,
+    "key": "Cranium",
+    "name_ko": "머리뼈",
+    "name_en": "Cranium"
+  },
+  {
+    "id": 2523,
+    "key": "Headgear",
+    "name_ko": "머리 방어구",
+    "name_en": "Headgear"
+  },
+  {
+    "id": 2524,
+    "key": "Hand",
+    "name_ko": "손",
+    "name_en": "Hand"
+  },
+  {
+    "id": 2525,
+    "key": "Sickle",
+    "name_ko": "갈고리 낫",
+    "name_en": "Sickle"
+  },
+  {
+    "id": 2526,
+    "key": "Horn",
+    "name_ko": "뿔",
+    "name_en": "Horn"
+  },
+  {
+    "id": 2527,
+    "key": "Sign",
+    "name_ko": "표식",
+    "name_en": "Sign"
+  },
+  {
+    "id": 2528,
+    "key": "Icon",
+    "name_ko": "상징",
+    "name_en": "Icon"
+  },
+  {
+    "id": 2529,
+    "key": "Iron Fist",
+    "name_ko": "무쇠 주먹",
+    "name_en": "Iron Fist"
+  },
+  {
+    "id": 2530,
+    "key": "Claw",
+    "name_ko": "손톱",
+    "name_en": "Claw"
+  },
+  {
+    "id": 2531,
+    "key": "Cuff",
+    "name_ko": "소매 장식",
+    "name_en": "Cuff"
+  },
+  {
+    "id": 2532,
+    "key": "Parry",
+    "name_ko": "회피",
+    "name_en": "Parry"
+  },
+  {
+    "id": 2533,
+    "key": "Fetlock",
+    "name_ko": "구절",
+    "name_en": "Fetlock"
+  },
+  {
+    "id": 2534,
+    "key": "Rod",
+    "name_ko": "막대",
+    "name_en": "Rod"
+  },
+  {
+    "id": 2535,
+    "key": "Mesh",
+    "name_ko": "그물망",
+    "name_en": "Mesh"
+  },
+  {
+    "id": 2536,
+    "key": "Spine",
+    "name_ko": "가시",
+    "name_en": "Spine"
+  },
+  {
+    "id": 2537,
+    "key": "Shelter",
+    "name_ko": "안식처",
+    "name_en": "Shelter"
+  },
+  {
+    "id": 2538,
+    "key": "Torch",
+    "name_ko": "횃불",
+    "name_en": "Torch"
+  },
+  {
+    "id": 2539,
+    "key": "Hauberk",
+    "name_ko": "흉갑",
+    "name_en": "Hauberk"
+  },
+  {
+    "id": 2540,
+    "key": "Guard",
+    "name_ko": "보호구",
+    "name_en": "Guard"
+  },
+  {
+    "id": 2541,
+    "key": "Mantle",
+    "name_ko": "어깨걸이",
+    "name_en": "Mantle"
+  },
+  {
+    "id": 2542,
+    "key": "Furs",
+    "name_ko": "모피",
+    "name_en": "Furs"
+  },
+  {
+    "id": 2543,
+    "key": "Deathwand",
+    "name_ko": "죽음마법봉",
+    "name_en": "Deathwand"
+  },
+  {
+    "id": 2544,
+    "key": "CudgelSI3S",
+    "name_ko": "커절",
+    "name_en": "Cudgel"
+  },
+  {
+    "id": 2545,
+    "key": "Iron Stay",
+    "name_ko": "무쇠 고정대",
+    "name_en": "Iron Stay"
+  },
+  {
+    "id": 2546,
+    "key": "Pincers",
+    "name_ko": "집게",
+    "name_en": "Pincers"
+  },
+  {
+    "id": 2547,
+    "key": "Coil",
+    "name_ko": "고리",
+    "name_en": "Coil"
+  },
+  {
+    "id": 2548,
+    "key": "Case",
+    "name_ko": "통",
+    "name_en": "Case"
+  },
+  {
+    "id": 2549,
+    "key": "Ambush",
+    "name_ko": "매복",
+    "name_en": "Ambush"
+  },
+  {
+    "id": 2550,
+    "key": "Diadem",
+    "name_ko": "다이어뎀",
+    "name_en": "Diadem"
+  },
+  {
+    "id": 2551,
+    "key": "Visage",
+    "name_ko": "얼굴",
+    "name_en": "Visage"
+  },
+  {
+    "id": 2552,
+    "key": "Hobnails",
+    "name_ko": "구두징",
+    "name_en": "Hobnails"
+  },
+  {
+    "id": 2553,
+    "key": "Gage",
+    "name_ko": "전투 장갑",
+    "name_en": "Gage"
+  },
+  {
+    "id": 2554,
+    "key": "SignSI3S",
+    "name_ko": "띠쇠",
+    "name_en": "Buckle"
+  },
+  {
+    "id": 2555,
+    "key": "Hatchet",
+    "name_ko": "해칫",
+    "name_en": "Hatchet"
+  },
+  {
+    "id": 2556,
+    "key": "Touch",
+    "name_ko": "손길",
+    "name_en": "Touch"
+  },
+  {
+    "id": 2557,
+    "key": "Halo",
+    "name_ko": "후광",
+    "name_en": "Halo"
+  },
+  {
+    "id": 2558,
+    "key": "Binding",
+    "name_ko": "감개",
+    "name_en": "Binding"
+  },
+  {
+    "id": 2559,
+    "key": "Head",
+    "name_ko": "머리",
+    "name_en": "Head"
+  },
+  {
+    "id": 2560,
+    "key": "Horns",
+    "name_ko": "뿔",
+    "name_en": "Horns"
+  },
+  {
+    "id": 2561,
+    "key": "Snare",
+    "name_ko": "덫",
+    "name_en": "Snare"
+  },
+  {
+    "id": 2562,
+    "key": "Robe",
+    "name_ko": "장포",
+    "name_en": "Robe"
+  },
+  {
+    "id": 2563,
+    "key": "Sigil",
+    "name_ko": "인장",
+    "name_en": "Sigil"
+  },
+  {
+    "id": 2565,
+    "key": "Sabot",
+    "name_ko": "나막신",
+    "name_en": "Sabot"
+  },
+  {
+    "id": 2566,
+    "key": "Wings",
+    "name_ko": "날개",
+    "name_en": "Wings"
+  },
+  {
+    "id": 2567,
+    "key": "Mitts",
+    "name_ko": "장갑",
+    "name_en": "Mitts"
+  },
+  {
+    "id": 2568,
+    "key": "Flesh",
+    "name_ko": "살점",
+    "name_en": "Flesh"
+  },
+  {
+    "id": 2569,
+    "key": "Cord",
+    "name_ko": "노끈",
+    "name_en": "Cord"
+  },
+  {
+    "id": 2570,
+    "key": "Seal",
+    "name_ko": "봉인",
+    "name_en": "Seal"
+  },
+  {
+    "id": 2571,
+    "key": "SkullSI5S",
+    "name_ko": "해골",
+    "name_en": "Skull"
+  },
+  {
+    "id": 2572,
+    "key": "Wrap",
+    "name_ko": "싸개",
+    "name_en": "Wrap"
+  },
+  {
+    "id": 2573,
+    "key": "GuardSI6S",
+    "name_ko": "보호구",
+    "name_en": "Guard"
+  },
+  {
+    "id": 2574,
+    "key": "The Gnasher",
+    "name_ko": "갉아먹는 자",
+    "name_en": "The Gnasher"
+  },
+  {
+    "id": 2575,
+    "key": "Deathspade",
+    "name_ko": "죽음의 날",
+    "name_en": "Deathspade"
+  },
+  {
+    "id": 2576,
+    "key": "Bladebone",
+    "name_ko": "칼날뼈",
+    "name_en": "Bladebone"
+  },
+  {
+    "id": 2577,
+    "key": "Mindrend",
+    "name_ko": "두개골 절단기",
+    "name_en": "Skull Splitter"
+  },
+  {
+    "id": 2578,
+    "key": "Rakescar",
+    "name_ko": "갈퀴흉터",
+    "name_en": "Rakescar"
+  },
+  {
+    "id": 2579,
+    "key": "Fechmars Axe",
+    "name_ko": "페크마르의 도끼",
+    "name_en": "Axe of Fechmar"
+  },
+  {
+    "id": 2580,
+    "key": "Goreshovel",
+    "name_ko": "피투성이삽",
+    "name_en": "Goreshovel"
+  },
+  {
+    "id": 2581,
+    "key": "The Chieftan",
+    "name_ko": "족장",
+    "name_en": "The Chieftain"
+  },
+  {
+    "id": 2582,
+    "key": "Brainhew",
+    "name_ko": "뇌절단기",
+    "name_en": "Brainhew"
+  },
+  {
+    "id": 2583,
+    "key": "The Humongous",
+    "name_ko": "무지막지",
+    "name_en": "Humongous"
+  },
+  {
+    "id": 2584,
+    "key": "Iros Torch",
+    "name_ko": "이로의 횃불",
+    "name_en": "Torch of Iro"
+  },
+  {
+    "id": 2585,
+    "key": "Maelstromwrath",
+    "name_ko": "소용돌이",
+    "name_en": "Maelstrom"
+  },
+  {
+    "id": 2586,
+    "key": "Gravenspine",
+    "name_ko": "새김등뼈",
+    "name_en": "Gravenspine"
+  },
+  {
+    "id": 2587,
+    "key": "Umes Lament",
+    "name_ko": "우메의 탄식",
+    "name_en": "Ume's Lament"
+  },
+  {
+    "id": 2588,
+    "key": "Felloak",
+    "name_ko": "쓰러진 참나무",
+    "name_en": "Felloak"
+  },
+  {
+    "id": 2589,
+    "key": "Knell Striker",
+    "name_ko": "종을 울리는 자",
+    "name_en": "Knell Striker"
+  },
+  {
+    "id": 2590,
+    "key": "Rusthandle",
+    "name_ko": "녹슨손잡이",
+    "name_en": "Rusthandle"
+  },
+  {
+    "id": 2591,
+    "key": "Stormeye",
+    "name_ko": "폭풍눈",
+    "name_en": "Stormeye"
+  },
+  {
+    "id": 2592,
+    "key": "Stoutnail",
+    "name_ko": "굵은못",
+    "name_en": "Stoutnail"
+  },
+  {
+    "id": 2593,
+    "key": "Crushflange",
+    "name_ko": "분쇄테",
+    "name_en": "Crushflange"
+  },
+  {
+    "id": 2594,
+    "key": "Bloodrise",
+    "name_ko": "피오름",
+    "name_en": "Bloodrise"
+  },
+  {
+    "id": 2595,
+    "key": "The Generals Tan Do Li Ga",
+    "name_ko": "장군의 단도리깨",
+    "name_en": "The General's Tan Do Li Ga"
+  },
+  {
+    "id": 2596,
+    "key": "Ironstone",
+    "name_ko": "무쇠돌",
+    "name_en": "Ironstone"
+  },
+  {
+    "id": 2597,
+    "key": "Bonesob",
+    "name_ko": "뼈절단기",
+    "name_en": "Bonesnap"
+  },
+  {
+    "id": 2598,
+    "key": "Steeldriver",
+    "name_ko": "강철박이",
+    "name_en": "Steeldriver"
+  },
+  {
+    "id": 2599,
+    "key": "Rixots Keen",
+    "name_ko": "릭소트의 날카로움",
+    "name_en": "Rixot's Keen"
+  },
+  {
+    "id": 2600,
+    "key": "Blood Crescent",
+    "name_ko": "피의 초승달",
+    "name_en": "Blood Crescent"
+  },
+  {
+    "id": 2601,
+    "key": "Krintizs Skewer",
+    "name_ko": "크린티즈의 꼬챙이",
+    "name_en": "Skewer of Krintiz"
+  },
+  {
+    "id": 2602,
+    "key": "Gleamscythe",
+    "name_ko": "서광칼낫",
+    "name_en": "Gleamscythe"
+  },
+  {
+    "id": 2603,
+    "key": "Azurewrath",
+    "name_ko": "푸른 서슬",
+    "name_en": "Azurewrath"
+  },
+  {
+    "id": 2604,
+    "key": "Griswolds Edge",
+    "name_ko": "그리스월드의 날",
+    "name_en": "Griswold's Edge"
+  },
+  {
+    "id": 2605,
+    "key": "Hellplague",
+    "name_ko": "지옥역병",
+    "name_en": "Hellplague"
+  },
+  {
+    "id": 2606,
+    "key": "Culwens Point",
+    "name_ko": "컬웬의 날붙이",
+    "name_en": "Culwen's Point"
+  },
+  {
+    "id": 2607,
+    "key": "Shadowfang",
+    "name_ko": "그림자송곳니",
+    "name_en": "Shadowfang"
+  },
+  {
+    "id": 2608,
+    "key": "Soulflay",
+    "name_ko": "영혼난도",
+    "name_en": "Soulflay"
+  },
+  {
+    "id": 2609,
+    "key": "Kinemils Awl",
+    "name_ko": "키네밀의 송곳",
+    "name_en": "Kinemil's Awl"
+  },
+  {
+    "id": 2610,
+    "key": "Blacktongue",
+    "name_ko": "검은혀",
+    "name_en": "Blacktongue"
+  },
+  {
+    "id": 2611,
+    "key": "Ripsaw",
+    "name_ko": "톱날검",
+    "name_en": "Ripsaw"
+  },
+  {
+    "id": 2612,
+    "key": "The Patriarch",
+    "name_ko": "장로",
+    "name_en": "The Patriarch"
+  },
+  {
+    "id": 2613,
+    "key": "Gull",
+    "name_ko": "속임수",
+    "name_en": "Gull"
+  },
+  {
+    "id": 2614,
+    "key": "The Diggler",
+    "name_ko": "디글러",
+    "name_en": "The Diggler"
+  },
+  {
+    "id": 2615,
+    "key": "The Jade Tan Do",
+    "name_ko": "비취 단도",
+    "name_en": "The Jade Tan Do"
+  },
+  {
+    "id": 2616,
+    "key": "Irices Shard",
+    "name_ko": "혼령 파편",
+    "name_en": "Spectral Shard"
+  },
+  {
+    "id": 2617,
+    "key": "The Dragon Chang",
+    "name_ko": "용창",
+    "name_en": "The Dragon Chang"
+  },
+  {
+    "id": 2618,
+    "key": "Razortine",
+    "name_ko": "서슬가지",
+    "name_en": "Razortine"
+  },
+  {
+    "id": 2619,
+    "key": "Bloodthief",
+    "name_ko": "피도둑",
+    "name_en": "Bloodthief"
+  },
+  {
+    "id": 2620,
+    "key": "Lance of Yaggai",
+    "name_ko": "야가이의 기병창",
+    "name_en": "Lance of Yaggai"
+  },
+  {
+    "id": 2621,
+    "key": "The Tannr Gorerod",
+    "name_ko": "탄르 고어로드",
+    "name_en": "The Tannr Gorerod"
+  },
+  {
+    "id": 2622,
+    "key": "Dimoaks Hew",
+    "name_ko": "디모악의 절단",
+    "name_en": "Dimoak's Hew"
+  },
+  {
+    "id": 2623,
+    "key": "Steelgoad",
+    "name_ko": "강철 몰이막대",
+    "name_en": "Steelgoad"
+  },
+  {
+    "id": 2624,
+    "key": "Soul Harvest",
+    "name_ko": "혼령 수확자",
+    "name_en": "Soul Harvest"
+  },
+  {
+    "id": 2625,
+    "key": "The Battlebranch",
+    "name_ko": "전투가지",
+    "name_en": "The Battlebranch"
+  },
+  {
+    "id": 2626,
+    "key": "Woestave",
+    "name_ko": "재앙의 지팡이",
+    "name_en": "Woestave"
+  },
+  {
+    "id": 2627,
+    "key": "The Grim Reaper",
+    "name_ko": "사신의 낫",
+    "name_en": "The Grim Reaper"
+  },
+  {
+    "id": 2628,
+    "key": "Bane Ash",
+    "name_ko": "재앙의 재",
+    "name_en": "Bane Ash"
+  },
+  {
+    "id": 2629,
+    "key": "Serpent Lord",
+    "name_ko": "구렁이 군주",
+    "name_en": "Serpent Lord"
+  },
+  {
+    "id": 2630,
+    "key": "Lazarus Spire",
+    "name_ko": "라자루스의 첨탑",
+    "name_en": "Spire of Lazarus"
+  },
+  {
+    "id": 2631,
+    "key": "The Salamander",
+    "name_ko": "불도마뱀",
+    "name_en": "The Salamander"
+  },
+  {
+    "id": 2632,
+    "key": "The Iron Jang Bong",
+    "name_ko": "무쇠 장봉",
+    "name_en": "The Iron Jang Bong"
+  },
+  {
+    "id": 2633,
+    "key": "Pluckeye",
+    "name_ko": "눈살",
+    "name_en": "Pluckeye"
+  },
+  {
+    "id": 2634,
+    "key": "Witherstring",
+    "name_ko": "마른시위",
+    "name_en": "Witherstring"
+  },
+  {
+    "id": 2635,
+    "key": "Rimeraven",
+    "name_ko": "큰까마귀 발톱",
+    "name_en": "Raven Claw"
+  },
+  {
+    "id": 2636,
+    "key": "Piercerib",
+    "name_ko": "도적의 활",
+    "name_en": "Rogue's Bow"
+  },
+  {
+    "id": 2637,
+    "key": "Pullspite",
+    "name_ko": "폭풍격",
+    "name_en": "Stormstrike"
+  },
+  {
+    "id": 2638,
+    "key": "Wizendraw",
+    "name_ko": "슬기매김",
+    "name_en": "Wizendraw"
+  },
+  {
+    "id": 2639,
+    "key": "Hellclap",
+    "name_ko": "지옥맞이",
+    "name_en": "Hellclap"
+  },
+  {
+    "id": 2640,
+    "key": "Blastbark",
+    "name_ko": "폭발껍질",
+    "name_en": "Blastbark"
+  },
+  {
+    "id": 2641,
+    "key": "Leadcrow",
+    "name_ko": "납까마귀",
+    "name_en": "Leadcrow"
+  },
+  {
+    "id": 2642,
+    "key": "Ichorsting",
+    "name_ko": "신혈쐐기",
+    "name_en": "Ichorsting"
+  },
+  {
+    "id": 2643,
+    "key": "Hellcast",
+    "name_ko": "지옥발사기",
+    "name_en": "Hellcast"
+  },
+  {
+    "id": 2644,
+    "key": "Doomspittle",
+    "name_ko": "멸궁",
+    "name_en": "Doomslinger"
+  },
+  {
+    "id": 2645,
+    "key": "War Bonnet",
+    "name_ko": "비긴의 모자",
+    "name_en": "Biggin's Bonnet"
+  },
+  {
+    "id": 2646,
+    "key": "Tarnhelm",
+    "name_ko": "타른헬름",
+    "name_en": "Tarnhelm"
+  },
+  {
+    "id": 2647,
+    "key": "Coif of Glory",
+    "name_ko": "영예의 두건모",
+    "name_en": "Coif of Glory"
+  },
+  {
+    "id": 2648,
+    "key": "Duskdeep",
+    "name_ko": "황혼심연",
+    "name_en": "Duskdeep"
+  },
+  {
+    "id": 2649,
+    "key": "Wormskull",
+    "name_ko": "벌레두개골",
+    "name_en": "Wormskull"
+  },
+  {
+    "id": 2650,
+    "key": "Howltusk",
+    "name_ko": "울부짖는 엄니",
+    "name_en": "Howltusk"
+  },
+  {
+    "id": 2651,
+    "key": "Undead Crown",
+    "name_ko": "언데드 왕관",
+    "name_en": "Undead Crown"
+  },
+  {
+    "id": 2652,
+    "key": "The Face of Horror",
+    "name_ko": "섬뜩한 얼굴",
+    "name_en": "The Face of Horror"
+  },
+  {
+    "id": 2653,
+    "key": "Greyform",
+    "name_ko": "회색 형체",
+    "name_en": "Greyform"
+  },
+  {
+    "id": 2654,
+    "key": "Blinkbats Form",
+    "name_ko": "점멸박쥐의 형상",
+    "name_en": "Blinkbat's Form"
+  },
+  {
+    "id": 2655,
+    "key": "The Centurion",
+    "name_ko": "백인대장",
+    "name_en": "The Centurion"
+  },
+  {
+    "id": 2656,
+    "key": "Twitchthroe",
+    "name_ko": "뒤틀린 단말마",
+    "name_en": "Twitchthroe"
+  },
+  {
+    "id": 2657,
+    "key": "Darkglow",
+    "name_ko": "어둠빛",
+    "name_en": "Darkglow"
+  },
+  {
+    "id": 2658,
+    "key": "Hawkmail",
+    "name_ko": "매 사슬갑옷",
+    "name_en": "Hawkmail"
+  },
+  {
+    "id": 2659,
+    "key": "Sparking Mail",
+    "name_ko": "불꽃 튀는 사슬 갑옷",
+    "name_en": "Sparking Mail"
+  },
+  {
+    "id": 2660,
+    "key": "Venomsward",
+    "name_ko": "맹독 호신부",
+    "name_en": "Venom Ward"
+  },
+  {
+    "id": 2661,
+    "key": "Iceblink",
+    "name_ko": "얼음빛",
+    "name_en": "Iceblink"
+  },
+  {
+    "id": 2662,
+    "key": "Boneflesh",
+    "name_ko": "뼈살점",
+    "name_en": "Boneflesh"
+  },
+  {
+    "id": 2663,
+    "key": "Rockfleece",
+    "name_ko": "바위털가죽",
+    "name_en": "Rockfleece"
+  },
+  {
+    "id": 2664,
+    "key": "Rattlecage",
+    "name_ko": "성가신 철창",
+    "name_en": "Rattlecage"
+  },
+  {
+    "id": 2665,
+    "key": "Goldskin",
+    "name_ko": "황금 가죽",
+    "name_en": "Goldskin"
+  },
+  {
+    "id": 2666,
+    "key": "Victors Silk",
+    "name_ko": "승자의 비단",
+    "name_en": "Silks of the Victor"
+  },
+  {
+    "id": 2667,
+    "key": "Heavenly Garb",
+    "name_ko": "천상의 의복",
+    "name_en": "Heavenly Garb"
+  },
+  {
+    "id": 2668,
+    "key": "Pelta Lunata",
+    "name_ko": "펠타 루나타",
+    "name_en": "Pelta Lunata"
+  },
+  {
+    "id": 2669,
+    "key": "Umbral Disk",
+    "name_ko": "그림자 원반",
+    "name_en": "Umbral Disk"
+  },
+  {
+    "id": 2670,
+    "key": "Stormguild",
+    "name_ko": "폭풍길드",
+    "name_en": "Stormguild"
+  },
+  {
+    "id": 2671,
+    "key": "Wall of the Eyeless",
+    "name_ko": "눈 없는 자의 벽",
+    "name_en": "Wall of the Eyeless"
+  },
+  {
+    "id": 2672,
+    "key": "Swordback Hold",
+    "name_ko": "검등 잡이",
+    "name_en": "Swordback Hold"
+  },
+  {
+    "id": 2673,
+    "key": "Steelclash",
+    "name_ko": "강철격돌",
+    "name_en": "Steelclash"
+  },
+  {
+    "id": 2674,
+    "key": "Bverrit Keep",
+    "name_ko": "브베리트 성채",
+    "name_en": "Bverrit Keep"
+  },
+  {
+    "id": 2675,
+    "key": "The Ward",
+    "name_ko": "호신부",
+    "name_en": "The Ward"
+  },
+  {
+    "id": 2676,
+    "key": "The Hand of Broc",
+    "name_ko": "브록의 손",
+    "name_en": "The Hand of Broc"
+  },
+  {
+    "id": 2677,
+    "key": "Bloodfist",
+    "name_ko": "피주먹",
+    "name_en": "Bloodfist"
+  },
+  {
+    "id": 2678,
+    "key": "Chance Guards",
+    "name_ko": "행운의 장갑",
+    "name_en": "Chance Guards"
+  },
+  {
+    "id": 2679,
+    "key": "Magefist",
+    "name_ko": "마수",
+    "name_en": "Magefist"
+  },
+  {
+    "id": 2680,
+    "key": "Frostburn",
+    "name_ko": "서리불꽃",
+    "name_en": "Frostburn"
+  },
+  {
+    "id": 2681,
+    "key": "Hotspur",
+    "name_ko": "다혈질",
+    "name_en": "Hotspur"
+  },
+  {
+    "id": 2682,
+    "key": "Gorefoot",
+    "name_ko": "핏덩이발",
+    "name_en": "Gorefoot"
+  },
+  {
+    "id": 2683,
+    "key": "Treads of Cthon",
+    "name_ko": "크톤의 발 보호대",
+    "name_en": "Treads of Cthon"
+  },
+  {
+    "id": 2684,
+    "key": "Goblin Toe",
+    "name_ko": "고블린 발가락",
+    "name_en": "Goblin Toe"
+  },
+  {
+    "id": 2685,
+    "key": "Tearhaunch",
+    "name_ko": "둔부찢개",
+    "name_en": "Tearhaunch"
+  },
+  {
+    "id": 2686,
+    "key": "Lenyms Cord",
+    "name_ko": "레니모",
+    "name_en": "Lenymo"
+  },
+  {
+    "id": 2687,
+    "key": "Snakecord",
+    "name_ko": "뱀노끈",
+    "name_en": "Snakecord"
+  },
+  {
+    "id": 2688,
+    "key": "Nightsmoke",
+    "name_ko": "밤연기",
+    "name_en": "Nightsmoke"
+  },
+  {
+    "id": 2689,
+    "key": "Goldwrap",
+    "name_ko": "금박 허리띠",
+    "name_en": "Goldwrap"
+  },
+  {
+    "id": 2690,
+    "key": "Bladebuckle",
+    "name_ko": "칼날 죔쇠",
+    "name_en": "Bladebuckle"
+  },
+  {
+    "id": 2691,
+    "key": "Nokozan Relic",
+    "name_ko": "노코잔 유물",
+    "name_en": "Nokozan Relic"
+  },
+  {
+    "id": 2692,
+    "key": "The Eye of Etlich",
+    "name_ko": "에틀리크의 눈",
+    "name_en": "The Eye of Etlich"
+  },
+  {
+    "id": 2693,
+    "key": "The Mahim-Oak Curio",
+    "name_ko": "마힘오크 수집품",
+    "name_en": "The Mahim-Oak Curio"
+  },
+  {
+    "id": 2694,
+    "key": "Nagelring",
+    "name_ko": "나겔링 반지",
+    "name_en": "Nagelring"
+  },
+  {
+    "id": 2695,
+    "key": "Manald Heal",
+    "name_ko": "마날드 치유 반지",
+    "name_en": "Manald Heal"
+  },
+  {
+    "id": 2696,
+    "key": "Gorgethroat",
+    "name_ko": "숨통탐식자",
+    "name_en": "Gorgethroat"
+  },
+  {
+    "id": 2697,
+    "key": "Amulet of the Viper",
+    "name_ko": "독사의 목걸이",
+    "name_en": "Amulet of the Viper"
+  },
+  {
+    "id": 2698,
+    "key": "Staff of Kings",
+    "name_ko": "왕들의 지팡이",
+    "name_en": "Staff of Kings"
+  },
+  {
+    "id": 2699,
+    "key": "Horadric Staff",
+    "name_ko": "호라드림 지팡이",
+    "name_en": "Horadric Staff"
+  },
+  {
+    "id": 2700,
+    "key": "Hell Forge Hammer",
+    "name_ko": "지옥의 대장간 망치",
+    "name_en": "Hell Forge Hammer"
+  },
+  {
+    "id": 2701,
+    "key": "The Stone of Jordan",
+    "name_ko": "요르단의 반지",
+    "name_en": "The Stone of Jordan"
+  },
+  {
+    "id": 3245,
+    "key": "Gibbet",
+    "name_ko": "케인의 교수대",
+    "name_en": "Cain's Gibbet"
+  },
+  {
+    "id": 3263,
+    "key": "HorazonsJournal",
+    "name_ko": "호라존의 일지",
+    "name_en": "Horazon's Journal"
+  },
+  {
+    "id": 3277,
+    "key": "jug",
+    "name_ko": "항아리",
+    "name_en": "Jug"
+  },
+  {
+    "id": 3279,
+    "key": "ratnest",
+    "name_ko": "쥐굴",
+    "name_en": "Rat's Nest"
+  },
+  {
+    "id": 3289,
+    "key": "bed",
+    "name_ko": "침대",
+    "name_en": "Bed"
+  },
+  {
+    "id": 3304,
+    "key": "Tome",
+    "name_ko": "호라존의 일지",
+    "name_en": "Horazon's Journal"
+  },
+  {
+    "id": 3314,
+    "key": "wirt's body",
+    "name_ko": "워트의 시체",
+    "name_en": "Wirt's body"
+  },
+  {
+    "id": 10000,
+    "key": "Cutthroat1",
+    "name_ko": "바르툭의 목 따개",
+    "name_en": "Bartuc's Cut-Throat"
+  },
+  {
+    "id": 10021,
+    "key": "xhm",
+    "name_ko": "윙드 헬름",
+    "name_en": "Winged Helm"
+  },
+  {
+    "id": 10022,
+    "key": "Hsarus' Defense",
+    "name_ko": "흐사루스의 방어",
+    "name_en": "Hsarus' Defense"
+  },
+  {
+    "id": 10122,
+    "key": "Civerb's Ward",
+    "name_ko": "시버브의 수호물",
+    "name_en": "Civerb's Ward"
+  },
+  {
+    "id": 10123,
+    "key": "Civerb's Icon",
+    "name_ko": "시버브의 우상",
+    "name_en": "Civerb's Icon"
+  },
+  {
+    "id": 10124,
+    "key": "Civerb's Cudgel",
+    "name_ko": "시버브의 곤봉",
+    "name_en": "Civerb's Cudgel"
+  },
+  {
+    "id": 10125,
+    "key": "Hsarus' Iron Heel",
+    "name_ko": "흐사루스의 무쇠 발꿈치",
+    "name_en": "Hsarus' Iron Heel"
+  },
+  {
+    "id": 10126,
+    "key": "Hsarus' Iron Fist",
+    "name_ko": "흐사루스의 무쇠 주먹",
+    "name_en": "Hsarus' Iron Fist"
+  },
+  {
+    "id": 10127,
+    "key": "Hsarus' Iron Stay",
+    "name_ko": "흐사루스의 무쇠 고정대",
+    "name_en": "Hsarus' Iron Stay"
+  },
+  {
+    "id": 10128,
+    "key": "Cleglaw's Tooth",
+    "name_ko": "클리글로의 이빨",
+    "name_en": "Cleglaw's Tooth"
+  },
+  {
+    "id": 10129,
+    "key": "Cleglaw's Claw",
+    "name_ko": "클리글로의 발톱",
+    "name_en": "Cleglaw's Claw"
+  },
+  {
+    "id": 10130,
+    "key": "Cleglaw's Pincers",
+    "name_ko": "클리글로의 집게",
+    "name_en": "Cleglaw's Pincers"
+  },
+  {
+    "id": 10131,
+    "key": "Iratha's Cord",
+    "name_ko": "이라타의 노끈",
+    "name_en": "Iratha's Cord"
+  },
+  {
+    "id": 10132,
+    "key": "Iratha's Coil",
+    "name_ko": "이라타의 고리",
+    "name_en": "Iratha's Coil"
+  },
+  {
+    "id": 10133,
+    "key": "Iratha's Cuff",
+    "name_ko": "이라타의 소매 장식",
+    "name_en": "Iratha's Cuff"
+  },
+  {
+    "id": 10134,
+    "key": "Iratha's Collar",
+    "name_ko": "이라타의 목깃",
+    "name_en": "Iratha's Collar"
+  },
+  {
+    "id": 10135,
+    "key": "Isenhart's Horns",
+    "name_ko": "아이젠하트의 뿔",
+    "name_en": "Isenhart's Horns"
+  },
+  {
+    "id": 10136,
+    "key": "Isenhart's Case",
+    "name_ko": "아이젠하트의 통",
+    "name_en": "Isenhart's Case"
+  },
+  {
+    "id": 10137,
+    "key": "Isenhart's Parry",
+    "name_ko": "아이젠하트의 회피",
+    "name_en": "Isenhart's Parry"
+  },
+  {
+    "id": 10138,
+    "key": "Isenhart's Lightbrand",
+    "name_ko": "아이젠하트의 빛 낙인",
+    "name_en": "Isenhart's Lightbrand"
+  },
+  {
+    "id": 10139,
+    "key": "Vidala's Snare",
+    "name_ko": "비달라의 덫",
+    "name_en": "Vidala's Snare"
+  },
+  {
+    "id": 10140,
+    "key": "Vidala's Ambush",
+    "name_ko": "비달라의 매복",
+    "name_en": "Vidala's Ambush"
+  },
+  {
+    "id": 10141,
+    "key": "Vidala's Fetlock",
+    "name_ko": "비달라의 구절",
+    "name_en": "Vidala's Fetlock"
+  },
+  {
+    "id": 10142,
+    "key": "Vidala's Barb",
+    "name_ko": "비달라의 미늘",
+    "name_en": "Vidala's Barb"
+  },
+  {
+    "id": 10143,
+    "key": "Milabrega's Robe",
+    "name_ko": "밀라브레가의 장포",
+    "name_en": "Milabrega's Robe"
+  },
+  {
+    "id": 10144,
+    "key": "Milabrega's Diadem",
+    "name_ko": "밀라브레가의 머리관",
+    "name_en": "Milabrega's Diadem"
+  },
+  {
+    "id": 10145,
+    "key": "Milabrega's Rod",
+    "name_ko": "밀라브레가의 막대",
+    "name_en": "Milabrega's Rod"
+  },
+  {
+    "id": 10146,
+    "key": "Milabrega's Orb",
+    "name_ko": "밀라브레가의 보주",
+    "name_en": "Milabrega's Orb"
+  },
+  {
+    "id": 10147,
+    "key": "Cathan's Seal",
+    "name_ko": "카탄의 문장",
+    "name_en": "Cathan's Seal"
+  },
+  {
+    "id": 10148,
+    "key": "Cathan's Sigil",
+    "name_ko": "카탄의 인장",
+    "name_en": "Cathan's Sigil"
+  },
+  {
+    "id": 10149,
+    "key": "Cathan's Visage",
+    "name_ko": "카탄의 얼굴",
+    "name_en": "Cathan's Visage"
+  },
+  {
+    "id": 10150,
+    "key": "Cathan's Mesh",
+    "name_ko": "카탄의 그물망",
+    "name_en": "Cathan's Mesh"
+  },
+  {
+    "id": 10151,
+    "key": "Cathan's Rule",
+    "name_ko": "카탄의 지배",
+    "name_en": "Cathan's Rule"
+  },
+  {
+    "id": 10152,
+    "key": "Tancred's Crowbill",
+    "name_ko": "탄크레드의 크로우빌",
+    "name_en": "Tancred's Crowbill"
+  },
+  {
+    "id": 10153,
+    "key": "Tancred's Spine",
+    "name_ko": "탄크레드의 가시",
+    "name_en": "Tancred's Spine"
+  },
+  {
+    "id": 10154,
+    "key": "Tancred's Hobnails",
+    "name_ko": "탄크레드의 구두징",
+    "name_en": "Tancred's Hobnails"
+  },
+  {
+    "id": 10155,
+    "key": "Tancred's Weird",
+    "name_ko": "탄크레드의 기묘",
+    "name_en": "Tancred's Weird"
+  },
+  {
+    "id": 10156,
+    "key": "Tancred's Skull",
+    "name_ko": "탄크레드의 두개골",
+    "name_en": "Tancred's Skull"
+  },
+  {
+    "id": 10157,
+    "key": "Sigon's Visor",
+    "name_ko": "시곤의 챙",
+    "name_en": "Sigon's Visor"
+  },
+  {
+    "id": 10158,
+    "key": "Sigon's Shelter",
+    "name_ko": "시곤의 안식처",
+    "name_en": "Sigon's Shelter"
+  },
+  {
+    "id": 10159,
+    "key": "Sigon's Gage",
+    "name_ko": "시곤의 전투 장갑",
+    "name_en": "Sigon's Gage"
+  },
+  {
+    "id": 10160,
+    "key": "Sigon's Sabot",
+    "name_ko": "시곤의 나막신",
+    "name_en": "Sigon's Sabot"
+  },
+  {
+    "id": 10161,
+    "key": "Sigon's Wrap",
+    "name_ko": "시곤의 싸개",
+    "name_en": "Sigon's Wrap"
+  },
+  {
+    "id": 10162,
+    "key": "Sigon's Guard",
+    "name_ko": "시곤의 보호구",
+    "name_en": "Sigon's Guard"
+  },
+  {
+    "id": 10163,
+    "key": "Infernal Cranium",
+    "name_ko": "지옥불 두개골",
+    "name_en": "Infernal Cranium"
+  },
+  {
+    "id": 10164,
+    "key": "Infernal Torch",
+    "name_ko": "지옥불 횃불",
+    "name_en": "Infernal Torch"
+  },
+  {
+    "id": 10165,
+    "key": "Infernal Sign",
+    "name_ko": "지옥불 징조",
+    "name_en": "Infernal Sign"
+  },
+  {
+    "id": 10166,
+    "key": "Berserker's Headgear",
+    "name_ko": "광전사의 머리 방어구",
+    "name_en": "Berserker's Headgear"
+  },
+  {
+    "id": 10167,
+    "key": "Berserker's Hauberk",
+    "name_ko": "광전사의 흉갑",
+    "name_en": "Berserker's Hauberk"
+  },
+  {
+    "id": 10168,
+    "key": "Berserker's Hatchet",
+    "name_ko": "광전사의 해칫",
+    "name_en": "Berserker's Hatchet"
+  },
+  {
+    "id": 10169,
+    "key": "Death's Hand",
+    "name_ko": "죽음의 손",
+    "name_en": "Death's Hand"
+  },
+  {
+    "id": 10170,
+    "key": "Death's Guard",
+    "name_ko": "죽음의 경비",
+    "name_en": "Death's Guard"
+  },
+  {
+    "id": 10171,
+    "key": "Death's Touch",
+    "name_ko": "죽음의 손길",
+    "name_en": "Death's Touch"
+  },
+  {
+    "id": 10172,
+    "key": "Angelic Sickle",
+    "name_ko": "천사의 낫",
+    "name_en": "Angelic Sickle"
+  },
+  {
+    "id": 10173,
+    "key": "Angelic Mantle",
+    "name_ko": "천사의 어깨걸이",
+    "name_en": "Angelic Mantle"
+  },
+  {
+    "id": 10174,
+    "key": "Angelic Halo",
+    "name_ko": "천사의 후광",
+    "name_en": "Angelic Halo"
+  },
+  {
+    "id": 10175,
+    "key": "Angelic Wings",
+    "name_ko": "천사의 날개",
+    "name_en": "Angelic Wings"
+  },
+  {
+    "id": 10176,
+    "key": "Arctic Horn",
+    "name_ko": "극지 뿔",
+    "name_en": "Arctic Horn"
+  },
+  {
+    "id": 10177,
+    "key": "Arctic Furs",
+    "name_ko": "극지 모피",
+    "name_en": "Arctic Furs"
+  },
+  {
+    "id": 10178,
+    "key": "Arctic Binding",
+    "name_ko": "극지 허리띠",
+    "name_en": "Arctic Binding"
+  },
+  {
+    "id": 10179,
+    "key": "Arctic Mitts",
+    "name_ko": "극지 장갑",
+    "name_en": "Arctic Mitts"
+  },
+  {
+    "id": 10180,
+    "key": "Arcanna's Sign",
+    "name_ko": "아르카나의 징조",
+    "name_en": "Arcanna's Sign"
+  },
+  {
+    "id": 10181,
+    "key": "Arcanna's Deathwand",
+    "name_ko": "아르카나의 죽음마법봉",
+    "name_en": "Arcanna's Deathwand"
+  },
+  {
+    "id": 10182,
+    "key": "Arcanna's Head",
+    "name_ko": "아르카나의 머리",
+    "name_en": "Arcanna's Head"
+  },
+  {
+    "id": 10183,
+    "key": "Arcanna's Flesh",
+    "name_ko": "아르카나의 살점",
+    "name_en": "Arcanna's Flesh"
+  },
+  {
+    "id": 10911,
+    "key": "Whichwild String",
+    "name_ko": "마녀림의 시위",
+    "name_en": "Witchwild String"
+  },
+  {
+    "id": 11006,
+    "key": "neg",
+    "name_ko": "헬스폰 스컬",
+    "name_en": "Hellspawn Skull"
+  },
+  {
+    "id": 11008,
+    "key": "uhf",
+    "name_ko": "레전더리 맬릿",
+    "name_en": "Legendary Mallet"
+  },
+  {
+    "id": 11010,
+    "key": "7wa",
+    "name_ko": "버서커 액스",
+    "name_en": "Berserker Axe"
+  },
+  {
+    "id": 11012,
+    "key": "xhg",
+    "name_ko": "워 건틀릿",
+    "name_en": "War Gauntlets"
+  },
+  {
+    "id": 11028,
+    "key": "9bl",
+    "name_ko": "스틸레토",
+    "name_en": "Stiletto"
+  },
+  {
+    "id": 11146,
+    "key": "pk1",
+    "name_ko": "공포의 열쇠",
+    "name_en": "Key of Terror"
+  },
+  {
+    "id": 11147,
+    "key": "pk2",
+    "name_ko": "증오의 열쇠",
+    "name_en": "Key of Hate"
+  },
+  {
+    "id": 11148,
+    "key": "pk3",
+    "name_ko": "파괴의 열쇠",
+    "name_en": "Key of Destruction"
+  },
+  {
+    "id": 11149,
+    "key": "dhn",
+    "name_ko": "디아블로의 뿔",
+    "name_en": "Diablo's Horn"
+  },
+  {
+    "id": 11150,
+    "key": "bey",
+    "name_ko": "바알의 눈",
+    "name_en": "Baal's Eye"
+  },
+  {
+    "id": 11151,
+    "key": "mbr",
+    "name_ko": "메피스토의 뇌",
+    "name_en": "Mephisto's Brain"
+  },
+  {
+    "id": 11152,
+    "key": "std",
+    "name_ko": "영웅들의 깃발",
+    "name_en": "Standard of Heroes"
+  },
+  {
+    "id": 11153,
+    "key": "Hellfire Torch",
+    "name_ko": "지옥불 횃불",
+    "name_en": "Hellfire Torch"
+  },
+  {
+    "id": 11164,
+    "key": "tes",
+    "name_ko": "뒤틀린 고통의 정수",
+    "name_en": "Twisted Essence of Suffering"
+  },
+  {
+    "id": 11165,
+    "key": "ceh",
+    "name_ko": "차오른 증오의 정수",
+    "name_en": "Charged Essence of Hatred"
+  },
+  {
+    "id": 11166,
+    "key": "bet",
+    "name_ko": "불타는 공포의 정수",
+    "name_en": "Burning Essence of Terror"
+  },
+  {
+    "id": 11167,
+    "key": "fed",
+    "name_ko": "곪은 파괴의 정수",
+    "name_en": "Festering Essence of Destruction"
+  },
+  {
+    "id": 20181,
+    "key": "ktr",
+    "name_ko": "카타르",
+    "name_en": "Katar"
+  },
+  {
+    "id": 20182,
+    "key": "wrb",
+    "name_ko": "리스트 블레이드",
+    "name_en": "Wrist Blade"
+  },
+  {
+    "id": 20183,
+    "key": "ces",
+    "name_ko": "세스터스",
+    "name_en": "Cestus"
+  },
+  {
+    "id": 20184,
+    "key": "clw",
+    "name_ko": "클러",
+    "name_en": "Claws"
+  },
+  {
+    "id": 20185,
+    "key": "btl",
+    "name_ko": "블레이드 탤런",
+    "name_en": "Blade Talons"
+  },
+  {
+    "id": 20186,
+    "key": "skr",
+    "name_ko": "시저스 카타르",
+    "name_en": "Scissors Katar"
+  },
+  {
+    "id": 20187,
+    "key": "9ar",
+    "name_ko": "쿠하브",
+    "name_en": "Quhab"
+  },
+  {
+    "id": 20188,
+    "key": "9wb",
+    "name_ko": "리스트 스파이크",
+    "name_en": "Wrist Spike"
+  },
+  {
+    "id": 20189,
+    "key": "9xf",
+    "name_ko": "패시아",
+    "name_en": "Fascia"
+  },
+  {
+    "id": 20190,
+    "key": "9cs",
+    "name_ko": "핸드 사이드",
+    "name_en": "Hand Scythe"
+  },
+  {
+    "id": 20191,
+    "key": "9lw",
+    "name_ko": "그레이터 클러",
+    "name_en": "Greater Claws"
+  },
+  {
+    "id": 20192,
+    "key": "9tw",
+    "name_ko": "그레이터 탤런",
+    "name_en": "Greater Talons"
+  },
+  {
+    "id": 20193,
+    "key": "9qr",
+    "name_ko": "시저스 쿠하브",
+    "name_en": "Scissors Quhab"
+  },
+  {
+    "id": 20194,
+    "key": "7ar",
+    "name_ko": "수웨이야",
+    "name_en": "Suwayyah"
+  },
+  {
+    "id": 20195,
+    "key": "7wb",
+    "name_ko": "리스트 소드",
+    "name_en": "Wrist Sword"
+  },
+  {
+    "id": 20196,
+    "key": "7xf",
+    "name_ko": "워 피스트",
+    "name_en": "War Fist"
+  },
+  {
+    "id": 20197,
+    "key": "7cs",
+    "name_ko": "배틀 세스터스",
+    "name_en": "Battle Cestus"
+  },
+  {
+    "id": 20198,
+    "key": "7lw",
+    "name_ko": "페럴 클러",
+    "name_en": "Feral Claws"
+  },
+  {
+    "id": 20199,
+    "key": "7tw",
+    "name_ko": "루닉 탤런",
+    "name_en": "Runic Talons"
+  },
+  {
+    "id": 20200,
+    "key": "7qr",
+    "name_ko": "시저스 수웨이야",
+    "name_en": "Scissors Suwayyah"
+  },
+  {
+    "id": 20201,
+    "key": "7ha",
+    "name_ko": "토마호크",
+    "name_en": "Tomahawk"
+  },
+  {
+    "id": 20202,
+    "key": "7ax",
+    "name_ko": "스몰 크레센트",
+    "name_en": "Small Crescent"
+  },
+  {
+    "id": 20203,
+    "key": "72a",
+    "name_ko": "에틴 액스",
+    "name_en": "Ettin Axe"
+  },
+  {
+    "id": 20204,
+    "key": "7mp",
+    "name_ko": "워 스파이크",
+    "name_en": "War Spike"
+  },
+  {
+    "id": 20206,
+    "key": "7la",
+    "name_ko": "페럴 액스",
+    "name_en": "Feral Axe"
+  },
+  {
+    "id": 20207,
+    "key": "7ba",
+    "name_ko": "실버 엣지드 액스",
+    "name_en": "Silver-edged Axe"
+  },
+  {
+    "id": 20208,
+    "key": "7bt",
+    "name_ko": "디캐피테이터",
+    "name_en": "Decapitator"
+  },
+  {
+    "id": 20209,
+    "key": "7ga",
+    "name_ko": "챔피언 액스",
+    "name_en": "Champion Axe"
+  },
+  {
+    "id": 20210,
+    "key": "7gi",
+    "name_ko": "글로리어스 액스",
+    "name_en": "Glorious Axe"
+  },
+  {
+    "id": 20211,
+    "key": "7wn",
+    "name_ko": "폴리시드 원드",
+    "name_en": "Polished Wand"
+  },
+  {
+    "id": 20212,
+    "key": "7yw",
+    "name_ko": "고스트 원드",
+    "name_en": "Ghost Wand"
+  },
+  {
+    "id": 20213,
+    "key": "7bw",
+    "name_ko": "리치 원드",
+    "name_en": "Lich Wand"
+  },
+  {
+    "id": 20214,
+    "key": "7gw",
+    "name_ko": "언어스드 원드",
+    "name_en": "Unearthed Wand"
+  },
+  {
+    "id": 20215,
+    "key": "7cl",
+    "name_ko": "트런천",
+    "name_en": "Truncheon"
+  },
+  {
+    "id": 20216,
+    "key": "7sc",
+    "name_ko": "마이티 셉터",
+    "name_en": "Mighty Scepter"
+  },
+  {
+    "id": 20217,
+    "key": "7qs",
+    "name_ko": "세라프 로드",
+    "name_en": "Seraph Rod"
+  },
+  {
+    "id": 20218,
+    "key": "7ws",
+    "name_ko": "카두세우스",
+    "name_en": "Caduceus"
+  },
+  {
+    "id": 20219,
+    "key": "7sp",
+    "name_ko": "타이런트 클럽",
+    "name_en": "Tyrant Club"
+  },
+  {
+    "id": 20220,
+    "key": "7ma",
+    "name_ko": "리인포스드 메이스",
+    "name_en": "Reinforced Mace"
+  },
+  {
+    "id": 20221,
+    "key": "7mt",
+    "name_ko": "데빌 스타",
+    "name_en": "Devil Star"
+  },
+  {
+    "id": 20222,
+    "key": "7fl",
+    "name_ko": "스컬지",
+    "name_en": "Scourge"
+  },
+  {
+    "id": 20223,
+    "key": "7wh",
+    "name_ko": "레전더리 맬릿",
+    "name_en": "Legendary Mallet"
+  },
+  {
+    "id": 20224,
+    "key": "7m7",
+    "name_ko": "오우거 마울",
+    "name_en": "Ogre Maul"
+  },
+  {
+    "id": 20225,
+    "key": "7gm",
+    "name_ko": "썬더 마울",
+    "name_en": "Thunder Maul"
+  },
+  {
+    "id": 20226,
+    "key": "7ss",
+    "name_ko": "팔카타",
+    "name_en": "Falcata"
+  },
+  {
+    "id": 20227,
+    "key": "7sm",
+    "name_ko": "아타간",
+    "name_en": "Ataghan"
+  },
+  {
+    "id": 20228,
+    "key": "7sb",
+    "name_ko": "엘리건트 블레이드",
+    "name_en": "Elegant Blade"
+  },
+  {
+    "id": 20229,
+    "key": "7fc",
+    "name_ko": "히드라 엣지",
+    "name_en": "Hydra Edge"
+  },
+  {
+    "id": 20230,
+    "key": "7cr",
+    "name_ko": "페이즈 블레이드",
+    "name_en": "Phase Blade"
+  },
+  {
+    "id": 20231,
+    "key": "7bs",
+    "name_ko": "컨퀘스트 소드",
+    "name_en": "Conquest Sword"
+  },
+  {
+    "id": 20232,
+    "key": "7ls",
+    "name_ko": "크립틱 소드",
+    "name_en": "Cryptic Sword"
+  },
+  {
+    "id": 20233,
+    "key": "7wd",
+    "name_ko": "미시컬 소드",
+    "name_en": "Mythical Sword"
+  },
+  {
+    "id": 20234,
+    "key": "72h",
+    "name_ko": "레전드 소드",
+    "name_en": "Legend Sword"
+  },
+  {
+    "id": 20235,
+    "key": "7cm",
+    "name_ko": "하이랜드 블레이드",
+    "name_en": "Highland Blade"
+  },
+  {
+    "id": 20236,
+    "key": "7gs",
+    "name_ko": "발록 블레이드",
+    "name_en": "Balrog Blade"
+  },
+  {
+    "id": 20237,
+    "key": "7b7",
+    "name_ko": "챔피언 소드",
+    "name_en": "Champion Sword"
+  },
+  {
+    "id": 20238,
+    "key": "7fb",
+    "name_ko": "콜로서스 소드",
+    "name_en": "Colossus Sword"
+  },
+  {
+    "id": 20239,
+    "key": "7gd",
+    "name_ko": "콜로서스 블레이드",
+    "name_en": "Colossus Blade"
+  },
+  {
+    "id": 20240,
+    "key": "7dg",
+    "name_ko": "본 나이프",
+    "name_en": "Bone Knife"
+  },
+  {
+    "id": 20241,
+    "key": "7di",
+    "name_ko": "미스릴 포인트",
+    "name_en": "Mithril Point"
+  },
+  {
+    "id": 20242,
+    "key": "7kr",
+    "name_ko": "팽드 나이프",
+    "name_en": "Fanged Knife"
+  },
+  {
+    "id": 20243,
+    "key": "7bl",
+    "name_ko": "레전드 스파이크",
+    "name_en": "Legend Spike"
+  },
+  {
+    "id": 20244,
+    "key": "7tk",
+    "name_ko": "플라잉 나이프",
+    "name_en": "Flying Knife"
+  },
+  {
+    "id": 20245,
+    "key": "7ta",
+    "name_ko": "플라잉 액스",
+    "name_en": "Flying Axe"
+  },
+  {
+    "id": 20246,
+    "key": "7bk",
+    "name_ko": "윙드 나이프",
+    "name_en": "Winged Knife"
+  },
+  {
+    "id": 20247,
+    "key": "7b8",
+    "name_ko": "윙드 액스",
+    "name_en": "Winged Axe"
+  },
+  {
+    "id": 20248,
+    "key": "7ja",
+    "name_ko": "하이페리온 재벌린",
+    "name_en": "Hyperion Javelin"
+  },
+  {
+    "id": 20249,
+    "key": "7pi",
+    "name_ko": "스티지언 필럼",
+    "name_en": "Stygian Pilum"
+  },
+  {
+    "id": 20250,
+    "key": "7s7",
+    "name_ko": "발록 스피어",
+    "name_en": "Balrog Spear"
+  },
+  {
+    "id": 20251,
+    "key": "7gl",
+    "name_ko": "고스트 글레이브",
+    "name_en": "Ghost Glaive"
+  },
+  {
+    "id": 20252,
+    "key": "7ts",
+    "name_ko": "윙드 하푼",
+    "name_en": "Winged Harpoon"
+  },
+  {
+    "id": 20253,
+    "key": "7sr",
+    "name_ko": "하이페리온 스피어",
+    "name_en": "Hyperion Spear"
+  },
+  {
+    "id": 20254,
+    "key": "7tr",
+    "name_ko": "스티지언 파이크",
+    "name_en": "Stygian Pike"
+  },
+  {
+    "id": 20255,
+    "key": "7br",
+    "name_ko": "맨캐쳐",
+    "name_en": "Mancatcher"
+  },
+  {
+    "id": 20256,
+    "key": "7st",
+    "name_ko": "고스트 스피어",
+    "name_en": "Ghost Spear"
+  },
+  {
+    "id": 20257,
+    "key": "7p7",
+    "name_ko": "워 파이크",
+    "name_en": "War Pike"
+  },
+  {
+    "id": 20258,
+    "key": "7o7",
+    "name_ko": "오우거 액스",
+    "name_en": "Ogre Axe"
+  },
+  {
+    "id": 20259,
+    "key": "7vo",
+    "name_ko": "콜로서스 불즈",
+    "name_en": "Colossus Voulge"
+  },
+  {
+    "id": 20260,
+    "key": "7s8",
+    "name_ko": "쓰레셔",
+    "name_en": "Thresher"
+  },
+  {
+    "id": 20261,
+    "key": "7pa",
+    "name_ko": "크립틱 액스",
+    "name_en": "Cryptic Axe"
+  },
+  {
+    "id": 20262,
+    "key": "7h7",
+    "name_ko": "그레이트 폴액스",
+    "name_en": "Great Poleaxe"
+  },
+  {
+    "id": 20263,
+    "key": "7wc",
+    "name_ko": "자이언트 쓰레셔",
+    "name_en": "Giant Thresher"
+  },
+  {
+    "id": 20264,
+    "key": "6ss",
+    "name_ko": "워킹 스틱",
+    "name_en": "Walking Stick"
+  },
+  {
+    "id": 20265,
+    "key": "6ls",
+    "name_ko": "스탈라그마이트",
+    "name_en": "Stalagmite"
+  },
+  {
+    "id": 20266,
+    "key": "6cs",
+    "name_ko": "엘더 스태프",
+    "name_en": "Elder Staff"
+  },
+  {
+    "id": 20267,
+    "key": "6bs",
+    "name_ko": "쉴레일리",
+    "name_en": "Shillelagh"
+  },
+  {
+    "id": 20268,
+    "key": "6ws",
+    "name_ko": "아콘 스태프",
+    "name_en": "Archon Staff"
+  },
+  {
+    "id": 20269,
+    "key": "6sb",
+    "name_ko": "스파이더 보우",
+    "name_en": "Spider Bow"
+  },
+  {
+    "id": 20270,
+    "key": "6hb",
+    "name_ko": "블레이드 보우",
+    "name_en": "Blade Bow"
+  },
+  {
+    "id": 20271,
+    "key": "6lb",
+    "name_ko": "쉐도우 보우",
+    "name_en": "Shadow Bow"
+  },
+  {
+    "id": 20272,
+    "key": "6cb",
+    "name_ko": "그레이트 보우",
+    "name_en": "Great Bow"
+  },
+  {
+    "id": 20273,
+    "key": "6s7",
+    "name_ko": "다이아몬드 보우",
+    "name_en": "Diamond Bow"
+  },
+  {
+    "id": 20274,
+    "key": "6l7",
+    "name_ko": "크루세이더 보우",
+    "name_en": "Crusader Bow"
+  },
+  {
+    "id": 20275,
+    "key": "6sw",
+    "name_ko": "워드 보우",
+    "name_en": "Ward Bow"
+  },
+  {
+    "id": 20276,
+    "key": "6lw",
+    "name_ko": "히드라 보우",
+    "name_en": "Hydra Bow"
+  },
+  {
+    "id": 20277,
+    "key": "6lx",
+    "name_ko": "팰리트 보우",
+    "name_en": "Pellet Bow"
+  },
+  {
+    "id": 20278,
+    "key": "6mx",
+    "name_ko": "고르곤 크로스보우",
+    "name_en": "Gorgon Crossbow"
+  },
+  {
+    "id": 20279,
+    "key": "6hx",
+    "name_ko": "콜로서스 크로스보우",
+    "name_en": "Colossus Crossbow"
+  },
+  {
+    "id": 20280,
+    "key": "6rx",
+    "name_ko": "데몬 크로스보우",
+    "name_en": "Demon Crossbow"
+  },
+  {
+    "id": 20281,
+    "key": "ob1",
+    "name_ko": "이글 오브",
+    "name_en": "Eagle Orb"
+  },
+  {
+    "id": 20282,
+    "key": "ob2",
+    "name_ko": "세이크리드 글로브",
+    "name_en": "Sacred Globe"
+  },
+  {
+    "id": 20283,
+    "key": "ob3",
+    "name_ko": "스모크드 스피어",
+    "name_en": "Smoked Sphere"
+  },
+  {
+    "id": 20284,
+    "key": "ob4",
+    "name_ko": "클래스프드 오브",
+    "name_en": "Clasped Orb"
+  },
+  {
+    "id": 20285,
+    "key": "as1",
+    "name_ko": "두르개",
+    "name_en": "Wraps"
+  },
+  {
+    "id": 20286,
+    "key": "as2",
+    "name_ko": "주먹 돌기",
+    "name_en": "Knuckles"
+  },
+  {
+    "id": 20287,
+    "key": "as3",
+    "name_ko": "척살자",
+    "name_en": "Slashers"
+  },
+  {
+    "id": 20288,
+    "key": "as4",
+    "name_ko": "탈구",
+    "name_en": "Splay"
+  },
+  {
+    "id": 20289,
+    "key": "as5",
+    "name_ko": "갈고리",
+    "name_en": "Hook"
+  },
+  {
+    "id": 20290,
+    "key": "as6",
+    "name_ko": "칼자루",
+    "name_en": "Shank"
+  },
+  {
+    "id": 20291,
+    "key": "as7",
+    "name_ko": "클러",
+    "name_en": "Claws"
+  },
+  {
+    "id": 20292,
+    "key": "am1",
+    "name_ko": "스태그 보우",
+    "name_en": "Stag Bow"
+  },
+  {
+    "id": 20293,
+    "key": "am2",
+    "name_ko": "리플렉스 보우",
+    "name_en": "Reflex Bow"
+  },
+  {
+    "id": 20294,
+    "key": "am3",
+    "name_ko": "메이든 스피어",
+    "name_en": "Maiden Spear"
+  },
+  {
+    "id": 20295,
+    "key": "am4",
+    "name_ko": "메이든 파이크",
+    "name_en": "Maiden Pike"
+  },
+  {
+    "id": 20296,
+    "key": "am5",
+    "name_ko": "메이든 재벌린",
+    "name_en": "Maiden Javelin"
+  },
+  {
+    "id": 20297,
+    "key": "ob6",
+    "name_ko": "글로잉 오브",
+    "name_en": "Glowing Orb"
+  },
+  {
+    "id": 20298,
+    "key": "ob7",
+    "name_ko": "크리스탈라인 글로브",
+    "name_en": "Crystalline Globe"
+  },
+  {
+    "id": 20299,
+    "key": "ob8",
+    "name_ko": "클라우디 스피어",
+    "name_en": "Cloudy Sphere"
+  },
+  {
+    "id": 20300,
+    "key": "ob9",
+    "name_ko": "스파클링 볼",
+    "name_en": "Sparkling Ball"
+  },
+  {
+    "id": 20301,
+    "key": "oba",
+    "name_ko": "스월링 크리스탈",
+    "name_en": "Swirling Crystal"
+  },
+  {
+    "id": 20302,
+    "key": "am6",
+    "name_ko": "애쉬우드 보우",
+    "name_en": "Ashwood Bow"
+  },
+  {
+    "id": 20303,
+    "key": "am7",
+    "name_ko": "세러모니얼 보우",
+    "name_en": "Ceremonial Bow"
+  },
+  {
+    "id": 20304,
+    "key": "am8",
+    "name_ko": "세러모니얼 스피어",
+    "name_en": "Ceremonial Spear"
+  },
+  {
+    "id": 20305,
+    "key": "am9",
+    "name_ko": "세러모니얼 파이크",
+    "name_en": "Ceremonial Pike"
+  },
+  {
+    "id": 20306,
+    "key": "ama",
+    "name_ko": "세러모니얼 재벌린",
+    "name_en": "Ceremonial Javelin"
+  },
+  {
+    "id": 20307,
+    "key": "obb",
+    "name_ko": "헤븐리 스톤",
+    "name_en": "Heavenly Stone"
+  },
+  {
+    "id": 20308,
+    "key": "obc",
+    "name_ko": "엘드리치 오브",
+    "name_en": "Eldritch Orb"
+  },
+  {
+    "id": 20309,
+    "key": "obd",
+    "name_ko": "데몬 하트",
+    "name_en": "Demon Heart"
+  },
+  {
+    "id": 20310,
+    "key": "obe",
+    "name_ko": "볼텍스 오브",
+    "name_en": "Vortex Orb"
+  },
+  {
+    "id": 20311,
+    "key": "obf",
+    "name_ko": "디멘셔널 샤드",
+    "name_en": "Dimensional Shard"
+  },
+  {
+    "id": 20312,
+    "key": "amb",
+    "name_ko": "메이트리어컬 보우",
+    "name_en": "Matriarchal Bow"
+  },
+  {
+    "id": 20313,
+    "key": "amc",
+    "name_ko": "그랜드 메이트런 보우",
+    "name_en": "Grand Matron Bow"
+  },
+  {
+    "id": 20314,
+    "key": "amd",
+    "name_ko": "메이트리어컬 스피어",
+    "name_en": "Matriarchal Spear"
+  },
+  {
+    "id": 20315,
+    "key": "ame",
+    "name_ko": "메이트리어컬 파이크",
+    "name_en": "Matriarchal Pike"
+  },
+  {
+    "id": 20316,
+    "key": "amf",
+    "name_ko": "메이트리어컬 재벌린",
+    "name_en": "Matriarchal Javelin"
+  },
+  {
+    "id": 20317,
+    "key": "dr4",
+    "name_ko": "팔콘 마스크",
+    "name_en": "Falcon Mask"
+  },
+  {
+    "id": 20318,
+    "key": "dr2",
+    "name_ko": "호크 헬름",
+    "name_en": "Hawk Helm"
+  },
+  {
+    "id": 20319,
+    "key": "dr3",
+    "name_ko": "앤틀러스",
+    "name_en": "Antlers"
+  },
+  {
+    "id": 20320,
+    "key": "dr1",
+    "name_ko": "울프 헤드",
+    "name_en": "Wolf Head"
+  },
+  {
+    "id": 20321,
+    "key": "dr5",
+    "name_ko": "스피리트 마스크",
+    "name_en": "Spirit Mask"
+  },
+  {
+    "id": 20322,
+    "key": "ba1",
+    "name_ko": "조우본 캡",
+    "name_en": "Jawbone Cap"
+  },
+  {
+    "id": 20323,
+    "key": "ba2",
+    "name_ko": "팽드 헬름",
+    "name_en": "Fanged Helm"
+  },
+  {
+    "id": 20324,
+    "key": "ba3",
+    "name_ko": "혼드 헬름",
+    "name_en": "Horned Helm"
+  },
+  {
+    "id": 20325,
+    "key": "ba4",
+    "name_ko": "어썰트 헬멧",
+    "name_en": "Assault Helmet"
+  },
+  {
+    "id": 20326,
+    "key": "ba5",
+    "name_ko": "어벤저 가드",
+    "name_en": "Avenger Guard"
+  },
+  {
+    "id": 20327,
+    "key": "pa1",
+    "name_ko": "타아지",
+    "name_en": "Targe"
+  },
+  {
+    "id": 20328,
+    "key": "pa2",
+    "name_ko": "론다쉬",
+    "name_en": "Rondache"
+  },
+  {
+    "id": 20329,
+    "key": "pa3",
+    "name_ko": "헤럴딕 쉴드",
+    "name_en": "Heraldic Shield"
+  },
+  {
+    "id": 20330,
+    "key": "pa4",
+    "name_ko": "에어린 쉴드",
+    "name_en": "Aerin Shield"
+  },
+  {
+    "id": 20331,
+    "key": "pa5",
+    "name_ko": "크라운 쉴드",
+    "name_en": "Crown Shield"
+  },
+  {
+    "id": 20332,
+    "key": "ne1",
+    "name_ko": "프리저브드 헤드",
+    "name_en": "Preserved Head"
+  },
+  {
+    "id": 20333,
+    "key": "ne2",
+    "name_ko": "좀비 헤드",
+    "name_en": "Zombie Head"
+  },
+  {
+    "id": 20334,
+    "key": "ne3",
+    "name_ko": "언레이블러 헤드",
+    "name_en": "Unraveller Head"
+  },
+  {
+    "id": 20335,
+    "key": "ne4",
+    "name_ko": "가고일 헤드",
+    "name_en": "Gargoyle Head"
+  },
+  {
+    "id": 20336,
+    "key": "ne5",
+    "name_ko": "데몬 헤드",
+    "name_en": "Demon Head"
+  },
+  {
+    "id": 20337,
+    "key": "ci0",
+    "name_ko": "써클릿",
+    "name_en": "Circlet"
+  },
+  {
+    "id": 20338,
+    "key": "ci1",
+    "name_ko": "코로니트",
+    "name_en": "Coronet"
+  },
+  {
+    "id": 20339,
+    "key": "ci2",
+    "name_ko": "티아라",
+    "name_en": "Tiara"
+  },
+  {
+    "id": 20340,
+    "key": "ci3",
+    "name_ko": "다이어뎀",
+    "name_en": "Diadem"
+  },
+  {
+    "id": 20341,
+    "key": "uap",
+    "name_ko": "샤코",
+    "name_en": "Shako"
+  },
+  {
+    "id": 20342,
+    "key": "ukp",
+    "name_ko": "히드라스컬",
+    "name_en": "Hydraskull"
+  },
+  {
+    "id": 20343,
+    "key": "ulm",
+    "name_ko": "아메트",
+    "name_en": "Armet"
+  },
+  {
+    "id": 20344,
+    "key": "uhl",
+    "name_ko": "자이언트 칸크",
+    "name_en": "Giant Conch"
+  },
+  {
+    "id": 20345,
+    "key": "uhm",
+    "name_ko": "스파이어드 헬름",
+    "name_en": "Spired Helm"
+  },
+  {
+    "id": 20346,
+    "key": "urn",
+    "name_ko": "코로나",
+    "name_en": "Corona"
+  },
+  {
+    "id": 20347,
+    "key": "usk",
+    "name_ko": "데몬헤드",
+    "name_en": "Demonhead"
+  },
+  {
+    "id": 20348,
+    "key": "uui",
+    "name_ko": "더스크 슈라우드",
+    "name_en": "Dusk Shroud"
+  },
+  {
+    "id": 20349,
+    "key": "uea",
+    "name_ko": "웜하이드",
+    "name_en": "Wyrmhide"
+  },
+  {
+    "id": 20350,
+    "key": "ula",
+    "name_ko": "스캐럽 허스크",
+    "name_en": "Scarab Husk"
+  },
+  {
+    "id": 20351,
+    "key": "utu",
+    "name_ko": "와이어 플리스",
+    "name_en": "Wire Fleece"
+  },
+  {
+    "id": 20352,
+    "key": "ung",
+    "name_ko": "다이아몬드 메일",
+    "name_en": "Diamond Mail"
+  },
+  {
+    "id": 20353,
+    "key": "ucl",
+    "name_ko": "로러케이티드 메일",
+    "name_en": "Loricated Mail"
+  },
+  {
+    "id": 20354,
+    "key": "uhn",
+    "name_ko": "본위브",
+    "name_en": "Boneweave"
+  },
+  {
+    "id": 20355,
+    "key": "urs",
+    "name_ko": "그레이트 허버크",
+    "name_en": "Great Hauberk"
+  },
+  {
+    "id": 20356,
+    "key": "upl",
+    "name_ko": "발록 스킨",
+    "name_en": "Balrog Skin"
+  },
+  {
+    "id": 20357,
+    "key": "ult",
+    "name_ko": "헬포지 플레이트",
+    "name_en": "Hellforge Plate"
+  },
+  {
+    "id": 20358,
+    "key": "uld",
+    "name_ko": "크라켄 쉘",
+    "name_en": "Kraken Shell"
+  },
+  {
+    "id": 20359,
+    "key": "uth",
+    "name_ko": "래커드 플레이트",
+    "name_en": "Lacquered Plate"
+  },
+  {
+    "id": 20360,
+    "key": "uul",
+    "name_ko": "쉐도우 플레이트",
+    "name_en": "Shadow Plate"
+  },
+  {
+    "id": 20361,
+    "key": "uar",
+    "name_ko": "세이크리드 아머",
+    "name_en": "Sacred Armor"
+  },
+  {
+    "id": 20362,
+    "key": "utp",
+    "name_ko": "아콘 플레이트",
+    "name_en": "Archon Plate"
+  },
+  {
+    "id": 20363,
+    "key": "uuc",
+    "name_ko": "히터",
+    "name_en": "Heater"
+  },
+  {
+    "id": 20364,
+    "key": "uml",
+    "name_ko": "루나",
+    "name_en": "Luna"
+  },
+  {
+    "id": 20365,
+    "key": "urg",
+    "name_ko": "하이페리온",
+    "name_en": "Hyperion"
+  },
+  {
+    "id": 20366,
+    "key": "uit",
+    "name_ko": "모너크",
+    "name_en": "Monarch"
+  },
+  {
+    "id": 20367,
+    "key": "uow",
+    "name_ko": "이지스",
+    "name_en": "Aegis"
+  },
+  {
+    "id": 20368,
+    "key": "uts",
+    "name_ko": "워드",
+    "name_en": "Ward"
+  },
+  {
+    "id": 20369,
+    "key": "ulg",
+    "name_ko": "브램블 미트",
+    "name_en": "Bramble Mitts"
+  },
+  {
+    "id": 20370,
+    "key": "uvg",
+    "name_ko": "뱀파이어본 글러브",
+    "name_en": "Vampirebone Gloves"
+  },
+  {
+    "id": 20371,
+    "key": "umg",
+    "name_ko": "뱀브레이스",
+    "name_en": "Vambraces"
+  },
+  {
+    "id": 20372,
+    "key": "utg",
+    "name_ko": "크루세이더 건틀릿",
+    "name_en": "Crusader Gauntlets"
+  },
+  {
+    "id": 20373,
+    "key": "uhg",
+    "name_ko": "오우거 건틀릿",
+    "name_en": "Ogre Gauntlets"
+  },
+  {
+    "id": 20374,
+    "key": "ulb",
+    "name_ko": "웜하이드 부츠",
+    "name_en": "Wyrmhide Boots"
+  },
+  {
+    "id": 20375,
+    "key": "uvb",
+    "name_ko": "스캐럽쉘 부츠",
+    "name_en": "Scarabshell Boots"
+  },
+  {
+    "id": 20376,
+    "key": "umb",
+    "name_ko": "본위브 부츠",
+    "name_en": "Boneweave Boots"
+  },
+  {
+    "id": 20377,
+    "key": "utb",
+    "name_ko": "미러드 부츠",
+    "name_en": "Mirrored Boots"
+  },
+  {
+    "id": 20378,
+    "key": "uhb",
+    "name_ko": "뮈르미돈 그리브",
+    "name_en": "Myrmidon Greaves"
+  },
+  {
+    "id": 20379,
+    "key": "ulc",
+    "name_ko": "스파이더웹 새시",
+    "name_en": "Spiderweb Sash"
+  },
+  {
+    "id": 20380,
+    "key": "uvc",
+    "name_ko": "뱀파이어팽 벨트",
+    "name_en": "Vampirefang Belt"
+  },
+  {
+    "id": 20381,
+    "key": "umc",
+    "name_ko": "미스릴 코일",
+    "name_en": "Mithril Coil"
+  },
+  {
+    "id": 20382,
+    "key": "utc",
+    "name_ko": "트롤 벨트",
+    "name_en": "Troll Belt"
+  },
+  {
+    "id": 20383,
+    "key": "uhc",
+    "name_ko": "콜로서스 거들",
+    "name_en": "Colossus Girdle"
+  },
+  {
+    "id": 20384,
+    "key": "uh9",
+    "name_ko": "본 비지즈",
+    "name_en": "Bone Visage"
+  },
+  {
+    "id": 20385,
+    "key": "ush",
+    "name_ko": "트롤 네스트",
+    "name_en": "Troll Nest"
+  },
+  {
+    "id": 20386,
+    "key": "upk",
+    "name_ko": "블레이드 배리어",
+    "name_en": "Blade Barrier"
+  },
+  {
+    "id": 20387,
+    "key": "dr9",
+    "name_ko": "세이크리드 페더스",
+    "name_en": "Sacred Feathers"
+  },
+  {
+    "id": 20388,
+    "key": "dr7",
+    "name_ko": "그리폰 헤드레스",
+    "name_en": "Griffon Headdress"
+  },
+  {
+    "id": 20389,
+    "key": "dr8",
+    "name_ko": "헌터스 가이즈",
+    "name_en": "Hunter's Guise"
+  },
+  {
+    "id": 20390,
+    "key": "dr6",
+    "name_ko": "알파 헬름",
+    "name_en": "Alpha Helm"
+  },
+  {
+    "id": 20391,
+    "key": "dra",
+    "name_ko": "토테믹 마스크",
+    "name_en": "Totemic Mask"
+  },
+  {
+    "id": 20392,
+    "key": "ba6",
+    "name_ko": "조우본 바이저",
+    "name_en": "Jawbone Visor"
+  },
+  {
+    "id": 20393,
+    "key": "ba7",
+    "name_ko": "라이온 헬름",
+    "name_en": "Lion Helm"
+  },
+  {
+    "id": 20394,
+    "key": "ba8",
+    "name_ko": "레이지 마스크",
+    "name_en": "Rage Mask"
+  },
+  {
+    "id": 20395,
+    "key": "ba9",
+    "name_ko": "세비지 헬멧",
+    "name_en": "Savage Helmet"
+  },
+  {
+    "id": 20396,
+    "key": "baa",
+    "name_ko": "슬레이어 가드",
+    "name_en": "Slayer Guard"
+  },
+  {
+    "id": 20397,
+    "key": "pa6",
+    "name_ko": "아카란 타아지",
+    "name_en": "Akaran Targe"
+  },
+  {
+    "id": 20398,
+    "key": "pa7",
+    "name_ko": "아카란 론다쉬",
+    "name_en": "Akaran Rondache"
+  },
+  {
+    "id": 20399,
+    "key": "pa8",
+    "name_ko": "프로텍터 쉴드",
+    "name_en": "Protector Shield"
+  },
+  {
+    "id": 20400,
+    "key": "pa9",
+    "name_ko": "길디드 쉴드",
+    "name_en": "Gilded Shield"
+  },
+  {
+    "id": 20401,
+    "key": "paa",
+    "name_ko": "로얄 쉴드",
+    "name_en": "Royal Shield"
+  },
+  {
+    "id": 20402,
+    "key": "ne6",
+    "name_ko": "머미파이드 트로피",
+    "name_en": "Mummified Trophy"
+  },
+  {
+    "id": 20403,
+    "key": "ne7",
+    "name_ko": "페티쉬 트로피",
+    "name_en": "Fetish Trophy"
+  },
+  {
+    "id": 20404,
+    "key": "ne8",
+    "name_ko": "섹스턴 트로피",
+    "name_en": "Sexton Trophy"
+  },
+  {
+    "id": 20405,
+    "key": "ne9",
+    "name_ko": "캔터 트로피",
+    "name_en": "Cantor Trophy"
+  },
+  {
+    "id": 20406,
+    "key": "nea",
+    "name_ko": "하이어러팬트 트로피",
+    "name_en": "Hierophant Trophy"
+  },
+  {
+    "id": 20407,
+    "key": "dre",
+    "name_ko": "스카이 스피리트",
+    "name_en": "Sky Spirit"
+  },
+  {
+    "id": 20408,
+    "key": "drc",
+    "name_ko": "선 스피리트",
+    "name_en": "Sun Spirit"
+  },
+  {
+    "id": 20409,
+    "key": "drd",
+    "name_ko": "어스 스피리트",
+    "name_en": "Earth Spirit"
+  },
+  {
+    "id": 20410,
+    "key": "drb",
+    "name_ko": "블러드 스피리트",
+    "name_en": "Blood Spirit"
+  },
+  {
+    "id": 20411,
+    "key": "drf",
+    "name_ko": "드림 스피리트",
+    "name_en": "Dream Spirit"
+  },
+  {
+    "id": 20412,
+    "key": "bab",
+    "name_ko": "카니지 헬름",
+    "name_en": "Carnage Helm"
+  },
+  {
+    "id": 20413,
+    "key": "bac",
+    "name_ko": "퓨리 바이저",
+    "name_en": "Fury Visor"
+  },
+  {
+    "id": 20414,
+    "key": "bad",
+    "name_ko": "디스트로이어 헬름",
+    "name_en": "Destroyer Helm"
+  },
+  {
+    "id": 20415,
+    "key": "bae",
+    "name_ko": "컨커러 크라운",
+    "name_en": "Conqueror Crown"
+  },
+  {
+    "id": 20416,
+    "key": "baf",
+    "name_ko": "가디언 크라운",
+    "name_en": "Guardian Crown"
+  },
+  {
+    "id": 20417,
+    "key": "pab",
+    "name_ko": "세이크리드 타아지",
+    "name_en": "Sacred Targe"
+  },
+  {
+    "id": 20418,
+    "key": "pac",
+    "name_ko": "세이크리드 론다쉬",
+    "name_en": "Sacred Rondache"
+  },
+  {
+    "id": 20419,
+    "key": "pae",
+    "name_ko": "자카룸 쉴드",
+    "name_en": "Zakarum Shield"
+  },
+  {
+    "id": 20420,
+    "key": "paf",
+    "name_ko": "볼텍스 쉴드",
+    "name_en": "Vortex Shield"
+  },
+  {
+    "id": 20421,
+    "key": "neb",
+    "name_ko": "미니언 스컬",
+    "name_en": "Minion Skull"
+  },
+  {
+    "id": 20422,
+    "key": "nec",
+    "name_ko": "헬스폰 스컬",
+    "name_en": "Hellspawn Skull"
+  },
+  {
+    "id": 20423,
+    "key": "ned",
+    "name_ko": "오버시어 스컬",
+    "name_en": "Overseer Skull"
+  },
+  {
+    "id": 20424,
+    "key": "nee",
+    "name_ko": "써큐버스 스컬",
+    "name_en": "Succubus Skull"
+  },
+  {
+    "id": 20425,
+    "key": "nef",
+    "name_ko": "블러드로드 스컬",
+    "name_en": "Bloodlord Skull"
+  },
+  {
+    "id": 20433,
+    "key": "jew",
+    "name_ko": "주얼",
+    "name_en": "Jewel"
+  },
+  {
+    "id": 20434,
+    "key": "hrb",
+    "name_ko": "약초",
+    "name_en": "Herb"
+  },
+  {
+    "id": 20435,
+    "key": "cm1",
+    "name_ko": "작은 부적",
+    "name_en": "Small Charm"
+  },
+  {
+    "id": 20436,
+    "key": "cm2",
+    "name_ko": "큰 부적",
+    "name_en": "Large Charm"
+  },
+  {
+    "id": 20437,
+    "key": "cm3",
+    "name_ko": "거대 부적",
+    "name_en": "Grand Charm"
+  },
+  {
+    "id": 20676,
+    "key": "spe",
+    "name_ko": "지라",
+    "name_en": "Spleen"
+  },
+  {
+    "id": 20677,
+    "key": "scz",
+    "name_ko": "머릿가죽",
+    "name_en": "Scalp"
+  },
+  {
+    "id": 20678,
+    "key": "sol",
+    "name_ko": "영혼",
+    "name_en": "Soul"
+  },
+  {
+    "id": 20679,
+    "key": "qll",
+    "name_ko": "쇠가시",
+    "name_en": "Quill"
+  },
+  {
+    "id": 20680,
+    "key": "fng",
+    "name_ko": "송곳니",
+    "name_en": "Fang"
+  },
+  {
+    "id": 20681,
+    "key": "flg",
+    "name_ko": "깃발",
+    "name_en": "Flag"
+  },
+  {
+    "id": 20682,
+    "key": "tal",
+    "name_ko": "꼬리",
+    "name_en": "Tail"
+  },
+  {
+    "id": 20683,
+    "key": "hrn",
+    "name_ko": "뿔",
+    "name_en": "Horn"
+  },
+  {
+    "id": 20684,
+    "key": "eyz",
+    "name_ko": "눈",
+    "name_en": "Eye"
+  },
+  {
+    "id": 20685,
+    "key": "jaw",
+    "name_ko": "턱뼈",
+    "name_en": "Jawbone"
+  },
+  {
+    "id": 20686,
+    "key": "brz",
+    "name_ko": "뇌",
+    "name_en": "Brain"
+  },
+  {
+    "id": 20687,
+    "key": "hrt",
+    "name_ko": "심장",
+    "name_en": "Heart"
+  },
+  {
+    "id": 21286,
+    "key": "Coldkill",
+    "name_ko": "차가운 죽음",
+    "name_en": "Coldkill"
+  },
+  {
+    "id": 21287,
+    "key": "Butchers Cleaver",
+    "name_ko": "도살자 식칼",
+    "name_en": "Butcher's Cleaver"
+  },
+  {
+    "id": 21288,
+    "key": "Butcher's Pupil",
+    "name_ko": "도살자의 제자",
+    "name_en": "Butcher's Pupil"
+  },
+  {
+    "id": 21289,
+    "key": "Islestrike",
+    "name_ko": "섬습격자",
+    "name_en": "Islestrike"
+  },
+  {
+    "id": 21290,
+    "key": "Pompe's Wrath",
+    "name_ko": "폼페이의 진노",
+    "name_en": "Pompeii's Wrath"
+  },
+  {
+    "id": 21291,
+    "key": "Guardian Naga",
+    "name_ko": "수호자 나가",
+    "name_en": "Guardian Naga"
+  },
+  {
+    "id": 21292,
+    "key": "Warlord's Trust",
+    "name_ko": "군장의 신뢰",
+    "name_en": "Warlord's Trust"
+  },
+  {
+    "id": 21293,
+    "key": "Spellsteel",
+    "name_ko": "주문 강철",
+    "name_en": "Spellsteel"
+  },
+  {
+    "id": 21294,
+    "key": "Stormrider",
+    "name_ko": "폭풍 기수",
+    "name_en": "Stormrider"
+  },
+  {
+    "id": 21295,
+    "key": "Boneslayer Blade",
+    "name_ko": "뼈학살자 칼날",
+    "name_en": "Boneslayer Blade"
+  },
+  {
+    "id": 21296,
+    "key": "The Minotaur",
+    "name_ko": "미노타우루스",
+    "name_en": "The Minotaur"
+  },
+  {
+    "id": 21297,
+    "key": "Suicide Branch",
+    "name_ko": "자해의 가지",
+    "name_en": "Suicide Branch"
+  },
+  {
+    "id": 21298,
+    "key": "Cairn Shard",
+    "name_ko": "돌무덤 파편",
+    "name_en": "Cairn Shard"
+  },
+  {
+    "id": 21299,
+    "key": "Arm of King Leoric",
+    "name_ko": "레오릭 왕의 팔",
+    "name_en": "Arm of King Leoric"
+  },
+  {
+    "id": 21300,
+    "key": "Blackhand Key",
+    "name_ko": "검은손 열쇠",
+    "name_en": "Blackhand Key"
+  },
+  {
+    "id": 21301,
+    "key": "Dark Clan Crusher",
+    "name_ko": "어둠의 일족 분쇄자",
+    "name_en": "Dark Clan Crusher"
+  },
+  {
+    "id": 21302,
+    "key": "Drulan's Tongue",
+    "name_ko": "드룰란의 혀",
+    "name_en": "Drulan's Tongue"
+  },
+  {
+    "id": 21303,
+    "key": "Zakrum's Hand",
+    "name_ko": "자카룸의 손",
+    "name_en": "Zakarum's Hand"
+  },
+  {
+    "id": 21304,
+    "key": "The Fetid Sprinkler",
+    "name_ko": "썩은 뿌리개",
+    "name_en": "The Fetid Sprinkler"
+  },
+  {
+    "id": 21305,
+    "key": "Hand of Blessed Light",
+    "name_ko": "축복받은 빛의 손",
+    "name_en": "Hand of Blessed Light"
+  },
+  {
+    "id": 21306,
+    "key": "Fleshrender",
+    "name_ko": "살점 분쇄봉",
+    "name_en": "Fleshrender"
+  },
+  {
+    "id": 21307,
+    "key": "Sureshrill Frost",
+    "name_ko": "외마디 서리",
+    "name_en": "Sureshrill Frost"
+  },
+  {
+    "id": 21308,
+    "key": "Moonfall",
+    "name_ko": "달내림",
+    "name_en": "Moonfall"
+  },
+  {
+    "id": 21309,
+    "key": "Baezils Vortex",
+    "name_ko": "배질의 소용돌이",
+    "name_en": "Baezil's Vortex"
+  },
+  {
+    "id": 21310,
+    "key": "Earthshaker",
+    "name_ko": "대지진의 망치",
+    "name_en": "Earthshaker"
+  },
+  {
+    "id": 21311,
+    "key": "Bloodtree Stump",
+    "name_ko": "피나무 그루터기",
+    "name_en": "Bloodtree Stump"
+  },
+  {
+    "id": 21312,
+    "key": "The Gavel of Pain",
+    "name_ko": "고통의 망치",
+    "name_en": "The Gavel of Pain"
+  },
+  {
+    "id": 21313,
+    "key": "Bloodletter",
+    "name_ko": "유혈자",
+    "name_en": "Bloodletter"
+  },
+  {
+    "id": 21314,
+    "key": "Coldsteal Eye",
+    "name_ko": "추위도둑 눈",
+    "name_en": "Coldsteal Eye"
+  },
+  {
+    "id": 21315,
+    "key": "Hexfire",
+    "name_ko": "사술불길",
+    "name_en": "Hexfire"
+  },
+  {
+    "id": 21316,
+    "key": "Blade of Ali Baba",
+    "name_ko": "알리바바의 칼날",
+    "name_en": "Blade of Ali Baba"
+  },
+  {
+    "id": 21317,
+    "key": "Riftslash",
+    "name_ko": "균열베기",
+    "name_en": "Riftslash"
+  },
+  {
+    "id": 21318,
+    "key": "Headstriker",
+    "name_ko": "머리분쇄기",
+    "name_en": "Headstriker"
+  },
+  {
+    "id": 21319,
+    "key": "Plague Bearer",
+    "name_ko": "역병 유발자",
+    "name_en": "Plague Bearer"
+  },
+  {
+    "id": 21320,
+    "key": "The Atlantien",
+    "name_ko": "아틀란티안",
+    "name_en": "The Atlantean"
+  },
+  {
+    "id": 21321,
+    "key": "Crainte Vomir",
+    "name_ko": "공포 구토자",
+    "name_en": "Crainte Vomir"
+  },
+  {
+    "id": 21322,
+    "key": "Bing Sz Wang",
+    "name_ko": "얼음의 왕",
+    "name_en": "Bing Sz Wang"
+  },
+  {
+    "id": 21323,
+    "key": "The Vile Husk",
+    "name_ko": "지독한 껍질",
+    "name_en": "The Vile Husk"
+  },
+  {
+    "id": 21324,
+    "key": "Cloudcrack",
+    "name_ko": "구름가르개",
+    "name_en": "Cloudcrack"
+  },
+  {
+    "id": 21325,
+    "key": "Todesfaelle Flamme",
+    "name_ko": "죽음나락 불길",
+    "name_en": "Todesfaelle Flamme"
+  },
+  {
+    "id": 21326,
+    "key": "Swordguard",
+    "name_ko": "검막이",
+    "name_en": "Swordguard"
+  },
+  {
+    "id": 21327,
+    "key": "Spineripper",
+    "name_ko": "척추적출자",
+    "name_en": "Spineripper"
+  },
+  {
+    "id": 21328,
+    "key": "Heart Carver",
+    "name_ko": "심장 도리개",
+    "name_en": "Heart Carver"
+  },
+  {
+    "id": 21329,
+    "key": "Blackbog's Sharp",
+    "name_ko": "블랙보그의 날붙이",
+    "name_en": "Blackbog's Sharp"
+  },
+  {
+    "id": 21330,
+    "key": "Stormspike",
+    "name_ko": "폭풍쐐기",
+    "name_en": "Stormspike"
+  },
+  {
+    "id": 21331,
+    "key": "The Impaler",
+    "name_ko": "꿰뚫는 자",
+    "name_en": "The Impaler"
+  },
+  {
+    "id": 21332,
+    "key": "Kelpie Snare",
+    "name_ko": "켈피 올가미",
+    "name_en": "Kelpie Snare"
+  },
+  {
+    "id": 21333,
+    "key": "Soulfeast Tine",
+    "name_ko": "영혼포식 뿔",
+    "name_en": "Soulfeast Tine"
+  },
+  {
+    "id": 21334,
+    "key": "Hone Sundan",
+    "name_ko": "골 토막",
+    "name_en": "Hone Sundan"
+  },
+  {
+    "id": 21335,
+    "key": "Spire of Honor",
+    "name_ko": "명예의 첨탑",
+    "name_en": "Spire of Honor"
+  },
+  {
+    "id": 21336,
+    "key": "The Meat Scraper",
+    "name_ko": "고기 긁개",
+    "name_en": "The Meat Scraper"
+  },
+  {
+    "id": 21337,
+    "key": "Blackleach Blade",
+    "name_ko": "검은거머리 칼날",
+    "name_en": "Blackleach Blade"
+  },
+  {
+    "id": 21338,
+    "key": "Athena's Wrath",
+    "name_ko": "아테나의 진노",
+    "name_en": "Athena's Wrath"
+  },
+  {
+    "id": 21339,
+    "key": "Pierre Tombale Couant",
+    "name_ko": "피에르 통발 쿠앙",
+    "name_en": "Pierre Tombale Couant"
+  },
+  {
+    "id": 21340,
+    "key": "Husoldal Evo",
+    "name_ko": "후솔달 에보",
+    "name_en": "Husoldal Evo"
+  },
+  {
+    "id": 21341,
+    "key": "Grim's Burning Dead",
+    "name_ko": "사신의 불타는 망자",
+    "name_en": "Grim's Burning Dead"
+  },
+  {
+    "id": 21342,
+    "key": "Ribcracker",
+    "name_ko": "늑골분쇄기",
+    "name_en": "Ribcracker"
+  },
+  {
+    "id": 21343,
+    "key": "Chromatic Ire",
+    "name_ko": "찬란한 분노",
+    "name_en": "Chromatic Ire"
+  },
+  {
+    "id": 21344,
+    "key": "Warpspear",
+    "name_ko": "왜곡창",
+    "name_en": "Warpspear"
+  },
+  {
+    "id": 21345,
+    "key": "Skullcollector",
+    "name_ko": "두개골 수집가",
+    "name_en": "Skull Collector"
+  },
+  {
+    "id": 21346,
+    "key": "Skystrike",
+    "name_ko": "하늘일격",
+    "name_en": "Skystrike"
+  },
+  {
+    "id": 21347,
+    "key": "Kuko Shakaku",
+    "name_ko": "쿠코 샤카쿠",
+    "name_en": "Kuko Shakaku"
+  },
+  {
+    "id": 21348,
+    "key": "Endlessshail",
+    "name_ko": "끝없는 우박",
+    "name_en": "Endlesshail"
+  },
+  {
+    "id": 21350,
+    "key": "Godstrike Arch",
+    "name_ko": "황금일격 활",
+    "name_en": "Goldstrike Arch"
+  },
+  {
+    "id": 21351,
+    "key": "Langer Briser",
+    "name_ko": "랑거 브리저",
+    "name_en": "Langer Briser"
+  },
+  {
+    "id": 21352,
+    "key": "Pus Spiter",
+    "name_ko": "고름 쏘개",
+    "name_en": "Pus Spitter"
+  },
+  {
+    "id": 21353,
+    "key": "Buriza-Do Kyanon",
+    "name_ko": "눈보라 포",
+    "name_en": "Buriza-Do Kyanon"
+  },
+  {
+    "id": 21354,
+    "key": "Vampiregaze",
+    "name_ko": "흡혈귀의 눈길",
+    "name_en": "Vampire Gaze"
+  },
+  {
+    "id": 21355,
+    "key": "String of Ears",
+    "name_ko": "귀 꿰미",
+    "name_en": "String of Ears"
+  },
+  {
+    "id": 21356,
+    "key": "Gorerider",
+    "name_ko": "선혈 기수",
+    "name_en": "Gore Rider"
+  },
+  {
+    "id": 21357,
+    "key": "Lavagout",
+    "name_ko": "용암 불똥",
+    "name_en": "Lava Gout"
+  },
+  {
+    "id": 21358,
+    "key": "Venom Grip",
+    "name_ko": "맹독 손아귀",
+    "name_en": "Venom Grip"
+  },
+  {
+    "id": 21359,
+    "key": "Visceratuant",
+    "name_ko": "적출자",
+    "name_en": "Visceratuant"
+  },
+  {
+    "id": 21360,
+    "key": "Guardian Angle",
+    "name_ko": "수호 천사",
+    "name_en": "Guardian Angel"
+  },
+  {
+    "id": 21361,
+    "key": "Shaftstop",
+    "name_ko": "장대막이",
+    "name_en": "Shaftstop"
+  },
+  {
+    "id": 21362,
+    "key": "Skin of the Vipermagi",
+    "name_ko": "독사마술사의 가죽",
+    "name_en": "Skin of the Vipermagi"
+  },
+  {
+    "id": 21363,
+    "key": "Blackhorn",
+    "name_ko": "검은뿔",
+    "name_en": "Blackhorn"
+  },
+  {
+    "id": 21364,
+    "key": "Valkiry Wing",
+    "name_ko": "발키리 날개",
+    "name_en": "Valkyrie Wing"
+  },
+  {
+    "id": 21365,
+    "key": "Peasent Crown",
+    "name_ko": "평민의 왕관",
+    "name_en": "Peasant Crown"
+  },
+  {
+    "id": 21366,
+    "key": "Demon Machine",
+    "name_ko": "악마의 기계",
+    "name_en": "Demon Machine"
+  },
+  {
+    "id": 21367,
+    "key": "Magewrath",
+    "name_ko": "마술사의 진노",
+    "name_en": "Magewrath"
+  },
+  {
+    "id": 21368,
+    "key": "Cliffkiller",
+    "name_ko": "벼랑몰이",
+    "name_en": "Cliffkiller"
+  },
+  {
+    "id": 21369,
+    "key": "Riphook",
+    "name_ko": "파열갈고리",
+    "name_en": "Riphook"
+  },
+  {
+    "id": 21370,
+    "key": "Razorswitch",
+    "name_ko": "서슬돌기",
+    "name_en": "Razorswitch"
+  },
+  {
+    "id": 21371,
+    "key": "Meatscrape",
+    "name_ko": "고기 주걱",
+    "name_en": "Meatscrape"
+  },
+  {
+    "id": 21372,
+    "key": "Coldsteel Eye",
+    "name_ko": "얼음강철 눈",
+    "name_en": "Coldsteel Eye"
+  },
+  {
+    "id": 21373,
+    "key": "Pitblood Thirst",
+    "name_ko": "구덩이피의 갈증",
+    "name_en": "Pitblood Thirst"
+  },
+  {
+    "id": 21374,
+    "key": "Gaya Wand",
+    "name_ko": "가야 마법봉",
+    "name_en": "Gaya Wand"
+  },
+  {
+    "id": 21375,
+    "key": "Ondal's Wisdom",
+    "name_ko": "온달의 지혜",
+    "name_en": "Ondal's Wisdom"
+  },
+  {
+    "id": 21376,
+    "key": "Geronimo's Fury",
+    "name_ko": "제로니모의 분노",
+    "name_en": "Geronimo's Fury"
+  },
+  {
+    "id": 21377,
+    "key": "Charsi's Favor",
+    "name_ko": "찰시의 호의",
+    "name_en": "Charsi's Favor"
+  },
+  {
+    "id": 21378,
+    "key": "Doppleganger's Shadow",
+    "name_ko": "도플갱어의 그림자",
+    "name_en": "Doppleganger's Shadow"
+  },
+  {
+    "id": 21379,
+    "key": "Deathbit",
+    "name_ko": "죽음조각",
+    "name_en": "Deathbit"
+  },
+  {
+    "id": 21380,
+    "key": "Warshrike",
+    "name_ko": "전쟁표창",
+    "name_en": "Warshrike"
+  },
+  {
+    "id": 21381,
+    "key": "Gutsiphon",
+    "name_ko": "내장 흡수",
+    "name_en": "Gut Siphon"
+  },
+  {
+    "id": 21382,
+    "key": "Razoredge",
+    "name_ko": "서슬푸른 날붙이",
+    "name_en": "Razor's Edge"
+  },
+  {
+    "id": 21383,
+    "key": "Stonerattle",
+    "name_ko": "돌 딸랑이",
+    "name_en": "Stone Rattle"
+  },
+  {
+    "id": 21384,
+    "key": "Marrowgrinder",
+    "name_ko": "골수 분쇄자",
+    "name_en": "Marrow Grinder"
+  },
+  {
+    "id": 21385,
+    "key": "Gore Ripper",
+    "name_ko": "피칠갑",
+    "name_en": "Gore Ripper"
+  },
+  {
+    "id": 21386,
+    "key": "Bush Wacker",
+    "name_ko": "덤불 매복자",
+    "name_en": "Bush Wacker"
+  },
+  {
+    "id": 21387,
+    "key": "Demonlimb",
+    "name_ko": "악마의 사지",
+    "name_en": "Demon Limb"
+  },
+  {
+    "id": 21388,
+    "key": "Steelshade",
+    "name_ko": "강철 그늘",
+    "name_en": "Steel Shade"
+  },
+  {
+    "id": 21389,
+    "key": "Tomb Reaver",
+    "name_ko": "무덤 강탈자",
+    "name_en": "Tomb Reaver"
+  },
+  {
+    "id": 21390,
+    "key": "Death's Web",
+    "name_ko": "죽음의 거미줄",
+    "name_en": "Death's Web"
+  },
+  {
+    "id": 21391,
+    "key": "Gaia's Wrath",
+    "name_ko": "가이아의 진노",
+    "name_en": "Gaia's Wrath"
+  },
+  {
+    "id": 21392,
+    "key": "Khalim's Vengance",
+    "name_ko": "칼림의 복수",
+    "name_en": "Khalim's Vengeance"
+  },
+  {
+    "id": 21393,
+    "key": "Angel's Song",
+    "name_ko": "천사의 노래",
+    "name_en": "Angel's Song"
+  },
+  {
+    "id": 21394,
+    "key": "The Reedeemer",
+    "name_ko": "구원자",
+    "name_en": "The Redeemer"
+  },
+  {
+    "id": 21395,
+    "key": "Fleshbone",
+    "name_ko": "살뼈",
+    "name_en": "Fleshbone"
+  },
+  {
+    "id": 21396,
+    "key": "Odium",
+    "name_ko": "혐오",
+    "name_en": "Odium"
+  },
+  {
+    "id": 21397,
+    "key": "Blood Comet",
+    "name_ko": "피의 혜성",
+    "name_en": "Blood Comet"
+  },
+  {
+    "id": 21398,
+    "key": "Bonehew",
+    "name_ko": "뼈자르개",
+    "name_en": "Bonehew"
+  },
+  {
+    "id": 21399,
+    "key": "Steelrend",
+    "name_ko": "강철찢개",
+    "name_en": "Steelrend"
+  },
+  {
+    "id": 21400,
+    "key": "Stone Crusher",
+    "name_ko": "돌 분쇄자",
+    "name_en": "Stone Crusher"
+  },
+  {
+    "id": 21401,
+    "key": "Bul-Kathos' Might",
+    "name_ko": "불카토스의 힘",
+    "name_en": "Bul-Kathos' Might"
+  },
+  {
+    "id": 21402,
+    "key": "Arioc's Needle",
+    "name_ko": "아리옥의 바늘",
+    "name_en": "Arioc's Needle"
+  },
+  {
+    "id": 21403,
+    "key": "Shadowdancer",
+    "name_ko": "그림자 춤꾼",
+    "name_en": "Shadow Dancer"
+  },
+  {
+    "id": 21404,
+    "key": "Indiego's Fancy",
+    "name_ko": "인디에고의 공상",
+    "name_en": "Indiego's Fancy"
+  },
+  {
+    "id": 21405,
+    "key": "Aladdin's Eviserator",
+    "name_ko": "알라딘의 적출자",
+    "name_en": "Aladdin's Eviscerator"
+  },
+  {
+    "id": 21406,
+    "key": "Tyrael's Mercy",
+    "name_ko": "티리엘의 자비",
+    "name_en": "Tyrael's Mercy"
+  },
+  {
+    "id": 21407,
+    "key": "Souldrain",
+    "name_ko": "영혼 흡수자",
+    "name_en": "Soul Drainer"
+  },
+  {
+    "id": 21408,
+    "key": "Runemaster",
+    "name_ko": "룬 지배자",
+    "name_en": "Rune Master"
+  },
+  {
+    "id": 21409,
+    "key": "Deathcleaver",
+    "name_ko": "죽음 가르개",
+    "name_en": "Death Cleaver"
+  },
+  {
+    "id": 21410,
+    "key": "Executioner's Justice",
+    "name_ko": "집행자의 정의",
+    "name_en": "Executioner's Justice"
+  },
+  {
+    "id": 21411,
+    "key": "Wallace's Tear",
+    "name_ko": "월리스의 눈물",
+    "name_en": "Wallace's Tear"
+  },
+  {
+    "id": 21412,
+    "key": "Leviathan",
+    "name_ko": "거대괴수",
+    "name_en": "Leviathan"
+  },
+  {
+    "id": 21413,
+    "key": "The Wanderer's Blade",
+    "name_ko": "방랑자의 칼날",
+    "name_en": "The Wanderer's Blade"
+  },
+  {
+    "id": 21414,
+    "key": "Qual'Kek's Enforcer",
+    "name_ko": "콸케크의 집행자",
+    "name_en": "Qual-Khek's Enforcer"
+  },
+  {
+    "id": 21415,
+    "key": "Dawnbringer",
+    "name_ko": "새벽의 인도자",
+    "name_en": "Dawn Bringer"
+  },
+  {
+    "id": 21416,
+    "key": "Dragontooth",
+    "name_ko": "용이빨",
+    "name_en": "Dragontooth"
+  },
+  {
+    "id": 21417,
+    "key": "Wisp",
+    "name_ko": "위습 투사기",
+    "name_en": "Wisp Projector"
+  },
+  {
+    "id": 21418,
+    "key": "Gargoyle's Bite",
+    "name_ko": "가고일의 이빨",
+    "name_en": "Gargoyle's Bite"
+  },
+  {
+    "id": 21419,
+    "key": "Lacerator",
+    "name_ko": "난도질 도끼",
+    "name_en": "Lacerator"
+  },
+  {
+    "id": 21420,
+    "key": "Mang Song's Lesson",
+    "name_ko": "망 송의 가르침",
+    "name_en": "Mang Song's Lesson"
+  },
+  {
+    "id": 21421,
+    "key": "Viperfork",
+    "name_ko": "맹독갈퀴",
+    "name_en": "Viperfork"
+  },
+  {
+    "id": 21422,
+    "key": "Blood Chalice",
+    "name_ko": "피의 성배",
+    "name_en": "Blood Chalice"
+  },
+  {
+    "id": 21423,
+    "key": "El Espiritu",
+    "name_ko": "엘 에르피리투",
+    "name_en": "El Espiritu"
+  },
+  {
+    "id": 21424,
+    "key": "The Long Rod",
+    "name_ko": "가장 긴 막대",
+    "name_en": "The Longest Rod"
+  },
+  {
+    "id": 21425,
+    "key": "Demonhorn's Edge",
+    "name_ko": "악마뿔의 날",
+    "name_en": "Demonhorn's Edge"
+  },
+  {
+    "id": 21426,
+    "key": "The Ensanguinator",
+    "name_ko": "피칠갑",
+    "name_en": "The Ensanguinator"
+  },
+  {
+    "id": 21427,
+    "key": "The Reaper's Toll",
+    "name_ko": "사신의 종소리",
+    "name_en": "The Reaper's Toll"
+  },
+  {
+    "id": 21428,
+    "key": "Spiritkeeper",
+    "name_ko": "영혼 수호자",
+    "name_en": "Spirit Keeper"
+  },
+  {
+    "id": 21429,
+    "key": "Hellrack",
+    "name_ko": "지옥포",
+    "name_en": "Hellrack"
+  },
+  {
+    "id": 21430,
+    "key": "Alma Negra",
+    "name_ko": "알마 네그라",
+    "name_en": "Alma Negra"
+  },
+  {
+    "id": 21431,
+    "key": "Darkforge Spawn",
+    "name_ko": "어둠의 종자",
+    "name_en": "Darkforce Spawn"
+  },
+  {
+    "id": 21432,
+    "key": "Rockhew",
+    "name_ko": "바위깎이",
+    "name_en": "Rockhew"
+  },
+  {
+    "id": 21433,
+    "key": "Sankenkur's Resurrection",
+    "name_ko": "산케쿠르의 부활",
+    "name_en": "Sankekur's Resurrection"
+  },
+  {
+    "id": 21434,
+    "key": "Erion's Bonehandle",
+    "name_ko": "에리온의 뼈손잡이",
+    "name_en": "Erion's Bonehandle"
+  },
+  {
+    "id": 21435,
+    "key": "The Archon Magus",
+    "name_ko": "아크론 마술사",
+    "name_en": "The Achron Magus"
+  },
+  {
+    "id": 21436,
+    "key": "Widow maker",
+    "name_ko": "과부제조기",
+    "name_en": "Widowmaker"
+  },
+  {
+    "id": 21437,
+    "key": "Catgut",
+    "name_ko": "고양이창자",
+    "name_en": "Catgut"
+  },
+  {
+    "id": 21438,
+    "key": "Ghostflame",
+    "name_ko": "유령불꽃",
+    "name_en": "Ghostflame"
+  },
+  {
+    "id": 21439,
+    "key": "Shadowkiller",
+    "name_ko": "죽음의 그림자",
+    "name_en": "Shadow Killer"
+  },
+  {
+    "id": 21440,
+    "key": "Bling Bling",
+    "name_ko": "반짝반짝",
+    "name_en": "Bling Bling"
+  },
+  {
+    "id": 21441,
+    "key": "Nebucaneezer's Storm",
+    "name_ko": "네부카드네자르의 폭풍",
+    "name_en": "Nebuchadnezzar's Storm"
+  },
+  {
+    "id": 21442,
+    "key": "Griffon's Eye",
+    "name_ko": "그리폰의 눈",
+    "name_en": "Griffon's Eye"
+  },
+  {
+    "id": 21443,
+    "key": "Eaglewind",
+    "name_ko": "수리바람",
+    "name_en": "Eaglewind"
+  },
+  {
+    "id": 21444,
+    "key": "Windhammer",
+    "name_ko": "바람망치",
+    "name_en": "Windhammer"
+  },
+  {
+    "id": 21445,
+    "key": "Thunderstroke",
+    "name_ko": "천둥일격",
+    "name_en": "Thunderstroke"
+  },
+  {
+    "id": 21446,
+    "key": "Giantmaimer",
+    "name_ko": "거대 파쇄자",
+    "name_en": "Giant Maimer"
+  },
+  {
+    "id": 21447,
+    "key": "Demon's Arch",
+    "name_ko": "악마의 호",
+    "name_en": "Demon's Arch"
+  },
+  {
+    "id": 21448,
+    "key": "The Scalper",
+    "name_ko": "무두도끼",
+    "name_en": "The Scalper"
+  },
+  {
+    "id": 21449,
+    "key": "Bloodmoon",
+    "name_ko": "핏빛 달",
+    "name_en": "Bloodmoon"
+  },
+  {
+    "id": 21450,
+    "key": "Djinnslayer",
+    "name_ko": "신령 학살자",
+    "name_en": "Djinn Slayer"
+  },
+  {
+    "id": 21451,
+    "key": "Cranebeak",
+    "name_ko": "학부리",
+    "name_en": "Cranebeak"
+  },
+  {
+    "id": 21452,
+    "key": "Iansang's Frenzy",
+    "name_ko": "이안상의 광분",
+    "name_en": "Iansang's Frenzy"
+  },
+  {
+    "id": 21453,
+    "key": "Warhound",
+    "name_ko": "투견",
+    "name_en": "Warhound"
+  },
+  {
+    "id": 21454,
+    "key": "Gulletwound",
+    "name_ko": "멱따기",
+    "name_en": "Gulletwound"
+  },
+  {
+    "id": 21455,
+    "key": "Headhunter's Glory",
+    "name_ko": "머리 사냥꾼의 영예",
+    "name_en": "Head Hunter's Glory"
+  },
+  {
+    "id": 21456,
+    "key": "Mordoc's marauder",
+    "name_ko": "모르도크의 습격자",
+    "name_en": "Mordoc's Marauder"
+  },
+  {
+    "id": 21457,
+    "key": "Talberd's Law",
+    "name_ko": "탤버드의 규율",
+    "name_en": "Talberd's Law"
+  },
+  {
+    "id": 21458,
+    "key": "Amodeus's Manipulator",
+    "name_ko": "아모데우스의 조작자",
+    "name_en": "Amodeus' Manipulator"
+  },
+  {
+    "id": 21459,
+    "key": "Darksoul",
+    "name_ko": "어둠혼",
+    "name_en": "Darksoul"
+  },
+  {
+    "id": 21460,
+    "key": "The Black Adder",
+    "name_ko": "검은 살모사",
+    "name_en": "The Black Adder"
+  },
+  {
+    "id": 21461,
+    "key": "Earthshifter",
+    "name_ko": "대지 변형자",
+    "name_en": "Earth Shifter"
+  },
+  {
+    "id": 21462,
+    "key": "Nature's Peace",
+    "name_ko": "자연의 평화",
+    "name_en": "Nature's Peace"
+  },
+  {
+    "id": 21463,
+    "key": "Horazon's Chalice",
+    "name_ko": "호라존의 성배",
+    "name_en": "Horazon's Chalice"
+  },
+  {
+    "id": 21464,
+    "key": "Seraph's Hymn",
+    "name_ko": "천사의 찬송가",
+    "name_en": "Seraph's Hymn"
+  },
+  {
+    "id": 21465,
+    "key": "Zakarum's Salvation",
+    "name_ko": "자카룸의 구원",
+    "name_en": "Zakarum's Salvation"
+  },
+  {
+    "id": 21466,
+    "key": "Fleshripper",
+    "name_ko": "살점갈퀴",
+    "name_en": "Fleshripper"
+  },
+  {
+    "id": 21467,
+    "key": "Stonerage",
+    "name_ko": "돌분노",
+    "name_en": "Stonerage"
+  },
+  {
+    "id": 21468,
+    "key": "Blood Rain",
+    "name_ko": "핏빛 비",
+    "name_en": "Blood Rain"
+  },
+  {
+    "id": 21469,
+    "key": "Horizon's Tornado",
+    "name_ko": "지평선의 회오리",
+    "name_en": "Horizon's Tornado"
+  },
+  {
+    "id": 21470,
+    "key": "Nord's Tenderizer",
+    "name_ko": "노르드의 고기 방망이",
+    "name_en": "Nord's Tenderizer"
+  },
+  {
+    "id": 21471,
+    "key": "Wrath of Cain",
+    "name_ko": "케인의 진노",
+    "name_en": "Wrath of Cain"
+  },
+  {
+    "id": 21472,
+    "key": "Siren's call",
+    "name_ko": "세이렌의 부름",
+    "name_en": "Siren's Call"
+  },
+  {
+    "id": 21473,
+    "key": "Jadetalon",
+    "name_ko": "비취 발톱",
+    "name_en": "Jade Talon"
+  },
+  {
+    "id": 21474,
+    "key": "Wraithfang",
+    "name_ko": "망령송곳니",
+    "name_en": "Wraithfang"
+  },
+  {
+    "id": 21475,
+    "key": "Blademaster",
+    "name_ko": "날의 달인",
+    "name_en": "Blade Master"
+  },
+  {
+    "id": 21476,
+    "key": "Cerebus",
+    "name_ko": "세레부스의 이빨",
+    "name_en": "Cerebus' Bite"
+  },
+  {
+    "id": 21477,
+    "key": "Archangel's Deliverance",
+    "name_ko": "대천사의 구원",
+    "name_en": "Arch-angel's Deliverance"
+  },
+  {
+    "id": 21478,
+    "key": "Sinblade",
+    "name_ko": "죄악검",
+    "name_en": "Sinblade"
+  },
+  {
+    "id": 21479,
+    "key": "Runeslayer",
+    "name_ko": "룬 학살자",
+    "name_en": "Rune Slayer"
+  },
+  {
+    "id": 21480,
+    "key": "Excalibur",
+    "name_ko": "엑스칼리버",
+    "name_en": "Excalibur"
+  },
+  {
+    "id": 21481,
+    "key": "Fuego Del Sol",
+    "name_ko": "태양의 힘",
+    "name_en": "Fuego Del Sol"
+  },
+  {
+    "id": 21482,
+    "key": "Stoneraven",
+    "name_ko": "돌까마귀",
+    "name_en": "Stoneraven"
+  },
+  {
+    "id": 21483,
+    "key": "El Infierno",
+    "name_ko": "불지옥",
+    "name_en": "El Infierno"
+  },
+  {
+    "id": 21484,
+    "key": "Moonrend",
+    "name_ko": "달분쇄기",
+    "name_en": "Moonrend"
+  },
+  {
+    "id": 21485,
+    "key": "Larzuk's Champion",
+    "name_ko": "라르주크의 용사",
+    "name_en": "Larzuk's Champion"
+  },
+  {
+    "id": 21486,
+    "key": "Nightsummon",
+    "name_ko": "밤부름",
+    "name_en": "Nightsummon"
+  },
+  {
+    "id": 21487,
+    "key": "Bonescapel",
+    "name_ko": "뼈 비수",
+    "name_en": "Bonescalpel"
+  },
+  {
+    "id": 21488,
+    "key": "Rabbit Slayer",
+    "name_ko": "토끼 학살자",
+    "name_en": "Rabbit Slayer"
+  },
+  {
+    "id": 21489,
+    "key": "Pagan's Athame",
+    "name_ko": "이교도의 의식용 칼",
+    "name_en": "Pagan's Athame"
+  },
+  {
+    "id": 21490,
+    "key": "The Swashbuckler",
+    "name_ko": "허세꾼",
+    "name_en": "The Swashbuckler"
+  },
+  {
+    "id": 21491,
+    "key": "Kang's Virtue",
+    "name_ko": "강의 미덕",
+    "name_en": "Kang's Virtue"
+  },
+  {
+    "id": 21492,
+    "key": "Snaketongue",
+    "name_ko": "뱀 혓바닥",
+    "name_en": "Snake Tongue"
+  },
+  {
+    "id": 21493,
+    "key": "Lifechoke",
+    "name_ko": "숨조르기",
+    "name_en": "Lifechoke"
+  },
+  {
+    "id": 21494,
+    "key": "Ethereal edge",
+    "name_ko": "무형의 날붙이",
+    "name_en": "Ethereal Edge"
+  },
+  {
+    "id": 21495,
+    "key": "Palo Grande",
+    "name_ko": "큰 막대",
+    "name_en": "Palo Grande"
+  },
+  {
+    "id": 21496,
+    "key": "Carnageleaver",
+    "name_ko": "대학살을 남기는 자",
+    "name_en": "Carnage Leaver"
+  },
+  {
+    "id": 21497,
+    "key": "Ghostleach",
+    "name_ko": "유령 침출",
+    "name_en": "Ghost Leach"
+  },
+  {
+    "id": 21498,
+    "key": "Soulreaper",
+    "name_ko": "영혼 수확자",
+    "name_en": "Soul Reaper"
+  },
+  {
+    "id": 21499,
+    "key": "Samual's Caretaker",
+    "name_ko": "사무엘의 관리인",
+    "name_en": "Samuel's Caretaker"
+  },
+  {
+    "id": 21500,
+    "key": "Hell's Whisper",
+    "name_ko": "지옥의 속삭임",
+    "name_en": "Hell Whisper"
+  },
+  {
+    "id": 21501,
+    "key": "The Harvester",
+    "name_ko": "수확자",
+    "name_en": "The Harvester"
+  },
+  {
+    "id": 21502,
+    "key": "Raiden's Crutch",
+    "name_ko": "라이덴의 목발",
+    "name_en": "Raiden's Crutch"
+  },
+  {
+    "id": 21503,
+    "key": "The TreeEnt",
+    "name_ko": "트린트스터",
+    "name_en": "The Treentster"
+  },
+  {
+    "id": 21504,
+    "key": "Stormwillow",
+    "name_ko": "폭풍버들",
+    "name_en": "Stormwillow"
+  },
+  {
+    "id": 21505,
+    "key": "Moonshadow",
+    "name_ko": "달 그림자",
+    "name_en": "Moon Shadow"
+  },
+  {
+    "id": 21507,
+    "key": "Demonweb",
+    "name_ko": "악마거미줄",
+    "name_en": "Demonweb"
+  },
+  {
+    "id": 21508,
+    "key": "Bloodraven's Charge",
+    "name_ko": "핏빛 큰까마귀의 돌진",
+    "name_en": "Blood Raven's Charge"
+  },
+  {
+    "id": 21509,
+    "key": "Shadefalcon",
+    "name_ko": "그늘 매",
+    "name_en": "Shade Falcon"
+  },
+  {
+    "id": 21510,
+    "key": "Robin's Yolk",
+    "name_ko": "울새의 노른자",
+    "name_en": "Robin's Yolk"
+  },
+  {
+    "id": 21511,
+    "key": "Glimmershred",
+    "name_ko": "아른날",
+    "name_en": "Glimmershred"
+  },
+  {
+    "id": 21512,
+    "key": "Wraithflight",
+    "name_ko": "망령의 비행",
+    "name_en": "Wraith Flight"
+  },
+  {
+    "id": 21513,
+    "key": "Lestron's Mark",
+    "name_ko": "레스트론의 표식",
+    "name_en": "Lestron's Mark"
+  },
+  {
+    "id": 21514,
+    "key": "Banshee's Wail",
+    "name_ko": "밴시의 비명",
+    "name_en": "Banshee's Wail"
+  },
+  {
+    "id": 21515,
+    "key": "Windstrike",
+    "name_ko": "풍격",
+    "name_en": "Windstrike"
+  },
+  {
+    "id": 21516,
+    "key": "Medusa's Gaze",
+    "name_ko": "메두사의 눈길",
+    "name_en": "Medusa's Gaze"
+  },
+  {
+    "id": 21517,
+    "key": "Titanfist",
+    "name_ko": "거인의 주먹",
+    "name_en": "Titan's Fist"
+  },
+  {
+    "id": 21518,
+    "key": "Hadeshorn",
+    "name_ko": "저승뿔",
+    "name_en": "Hadeshorn"
+  },
+  {
+    "id": 21519,
+    "key": "Rockstopper",
+    "name_ko": "바위막이",
+    "name_en": "Rockstopper"
+  },
+  {
+    "id": 21520,
+    "key": "Stealskull",
+    "name_ko": "두개골 도둑",
+    "name_en": "Stealskull"
+  },
+  {
+    "id": 21521,
+    "key": "Darksight Helm",
+    "name_ko": "어둑눈 투구",
+    "name_en": "Darksight Helm"
+  },
+  {
+    "id": 21522,
+    "key": "Crown of Thieves",
+    "name_ko": "도둑의 왕관",
+    "name_en": "Crown of Thieves"
+  },
+  {
+    "id": 21523,
+    "key": "Blackhorn's Face",
+    "name_ko": "블랙혼의 얼굴",
+    "name_en": "Blackhorn's Face"
+  },
+  {
+    "id": 21524,
+    "key": "The Spirit Shroud",
+    "name_ko": "혼령 장막",
+    "name_en": "The Spirit Shroud"
+  },
+  {
+    "id": 21525,
+    "key": "Skin of the Flayed One",
+    "name_ko": "벗겨진 자의 가죽",
+    "name_en": "Skin of Flayed One"
+  },
+  {
+    "id": 21526,
+    "key": "Ironpelt",
+    "name_ko": "무쇠 털가죽",
+    "name_en": "Iron Pelt"
+  },
+  {
+    "id": 21527,
+    "key": "Spiritforge",
+    "name_ko": "영혼의 용광로",
+    "name_en": "Spirit Forge"
+  },
+  {
+    "id": 21528,
+    "key": "Crow Caw",
+    "name_ko": "까마귀 울음",
+    "name_en": "Crow Caw"
+  },
+  {
+    "id": 21529,
+    "key": "Duriel's Shell",
+    "name_ko": "두리엘의 껍질",
+    "name_en": "Duriel's Shell"
+  },
+  {
+    "id": 21530,
+    "key": "Skullder's Ire",
+    "name_ko": "스쿨더의 분노",
+    "name_en": "Skullder's Ire"
+  },
+  {
+    "id": 21531,
+    "key": "Toothrow",
+    "name_ko": "강철니",
+    "name_en": "Toothrow"
+  },
+  {
+    "id": 21532,
+    "key": "Atma's Wail",
+    "name_ko": "아트마의 통곡",
+    "name_en": "Atma's Wail"
+  },
+  {
+    "id": 21533,
+    "key": "Black Hades",
+    "name_ko": "검은 하데스",
+    "name_en": "Black Hades"
+  },
+  {
+    "id": 21534,
+    "key": "Corpsemourn",
+    "name_ko": "망자의 애도",
+    "name_en": "Corpsemourn"
+  },
+  {
+    "id": 21535,
+    "key": "Que-hegan's Wisdom",
+    "name_ko": "쿠에 히간의 지혜",
+    "name_en": "Que-Hegan's Wisdom"
+  },
+  {
+    "id": 21536,
+    "key": "Moser's Blessed Circle",
+    "name_ko": "모저의 축복받은 고리",
+    "name_en": "Moser's Blessed Circle"
+  },
+  {
+    "id": 21537,
+    "key": "Stormchaser",
+    "name_ko": "폭풍추격자",
+    "name_en": "Stormchaser"
+  },
+  {
+    "id": 21538,
+    "key": "Tiamat's Rebuke",
+    "name_ko": "티아마트의 질책",
+    "name_en": "Tiamat's Rebuke"
+  },
+  {
+    "id": 21539,
+    "key": "Gerke's Sanctuary",
+    "name_ko": "게르케의 성역",
+    "name_en": "Gerke's Sanctuary"
+  },
+  {
+    "id": 21540,
+    "key": "Radimant's Sphere",
+    "name_ko": "라다먼트의 명주",
+    "name_en": "Radament's Sphere"
+  },
+  {
+    "id": 21541,
+    "key": "Gravepalm",
+    "name_ko": "무덤손바닥",
+    "name_en": "Gravepalm"
+  },
+  {
+    "id": 21542,
+    "key": "Ghoulhide",
+    "name_ko": "구울 가죽",
+    "name_en": "Ghoulhide"
+  },
+  {
+    "id": 21543,
+    "key": "Hellmouth",
+    "name_ko": "지옥어귀",
+    "name_en": "Hellmouth"
+  },
+  {
+    "id": 21544,
+    "key": "Infernostride",
+    "name_ko": "지옥불걸음",
+    "name_en": "Infernostride"
+  },
+  {
+    "id": 21545,
+    "key": "Waterwalk",
+    "name_ko": "물나그네",
+    "name_en": "Waterwalk"
+  },
+  {
+    "id": 21546,
+    "key": "Silkweave",
+    "name_ko": "비단매듭",
+    "name_en": "Silkweave"
+  },
+  {
+    "id": 21547,
+    "key": "Wartraveler",
+    "name_ko": "전쟁 여행자",
+    "name_en": "War Traveler"
+  },
+  {
+    "id": 21548,
+    "key": "Razortail",
+    "name_ko": "서슬꼬리",
+    "name_en": "Razortail"
+  },
+  {
+    "id": 21549,
+    "key": "Gloomstrap",
+    "name_ko": "어스름의 덫",
+    "name_en": "Gloom's Trap"
+  },
+  {
+    "id": 21550,
+    "key": "Snowclash",
+    "name_ko": "눈싸움",
+    "name_en": "Snowclash"
+  },
+  {
+    "id": 21551,
+    "key": "Thudergod's Vigor",
+    "name_ko": "천둥신의 박력",
+    "name_en": "Thundergod's Vigor"
+  },
+  {
+    "id": 21552,
+    "key": "Lidless Wall",
+    "name_ko": "각성의 벽",
+    "name_en": "Lidless Wall"
+  },
+  {
+    "id": 21553,
+    "key": "Lanceguard",
+    "name_ko": "기병창 보호구",
+    "name_en": "Lance Guard"
+  },
+  {
+    "id": 21554,
+    "key": "Squire's Cover",
+    "name_ko": "견습생의 덮개",
+    "name_en": "Squire's Cover"
+  },
+  {
+    "id": 21555,
+    "key": "Boneflame",
+    "name_ko": "뼈불길",
+    "name_en": "Boneflame"
+  },
+  {
+    "id": 21556,
+    "key": "Steelpillar",
+    "name_ko": "강철 기둥",
+    "name_en": "Steel Pillar"
+  },
+  {
+    "id": 21557,
+    "key": "Nightwing's Veil",
+    "name_ko": "밤날개의 너울",
+    "name_en": "Nightwing's Veil"
+  },
+  {
+    "id": 21558,
+    "key": "Hightower's Watch",
+    "name_ko": "높은 탑의 감시",
+    "name_en": "Hightower's Watch"
+  },
+  {
+    "id": 21559,
+    "key": "Crown of Ages",
+    "name_ko": "시대의 왕관",
+    "name_en": "Crown of Ages"
+  },
+  {
+    "id": 21560,
+    "key": "Andariel's Visage",
+    "name_ko": "안다리엘의 두개골",
+    "name_en": "Andariel's Visage"
+  },
+  {
+    "id": 21561,
+    "key": "Darkfear",
+    "name_ko": "어둠공포",
+    "name_en": "Darkfear"
+  },
+  {
+    "id": 21562,
+    "key": "Dragonscale",
+    "name_ko": "용비늘",
+    "name_en": "Dragonscale"
+  },
+  {
+    "id": 21563,
+    "key": "Steel Carapice",
+    "name_ko": "강철 갑피",
+    "name_en": "Steel Carapace"
+  },
+  {
+    "id": 21564,
+    "key": "Ashrera's Wired Frame",
+    "name_ko": "아시아라의 철사 장식",
+    "name_en": "Asheara's Wired Frame"
+  },
+  {
+    "id": 21565,
+    "key": "Rainbow Facet",
+    "name_ko": "무지개 자락",
+    "name_en": "Rainbow Facet"
+  },
+  {
+    "id": 21566,
+    "key": "Ravenlore",
+    "name_ko": "까마귀전승",
+    "name_en": "Ravenlore"
+  },
+  {
+    "id": 21567,
+    "key": "Boneshade",
+    "name_ko": "뼈그늘",
+    "name_en": "Boneshade"
+  },
+  {
+    "id": 21568,
+    "key": "Nethercrow",
+    "name_ko": "황천까마귀",
+    "name_en": "Nethercrow"
+  },
+  {
+    "id": 21569,
+    "key": "Hellwarden's Husk",
+    "name_ko": "지옥 파수꾼의 껍데기",
+    "name_en": "Hell Warden's Husk"
+  },
+  {
+    "id": 21570,
+    "key": "Flamebellow",
+    "name_ko": "기염검",
+    "name_en": "Flamebellow"
+  },
+  {
+    "id": 21571,
+    "key": "Fathom",
+    "name_ko": "죽음의 깊이",
+    "name_en": "Death's Fathom"
+  },
+  {
+    "id": 21572,
+    "key": "Wolfhowl",
+    "name_ko": "울부짖는 늑대",
+    "name_en": "Wolfhowl"
+  },
+  {
+    "id": 21573,
+    "key": "Spirit Ward",
+    "name_ko": "혼령 호신부",
+    "name_en": "Spirit Ward"
+  },
+  {
+    "id": 21574,
+    "key": "Kira's Guardian",
+    "name_ko": "키라의 수호자",
+    "name_en": "Kira's Guardian"
+  },
+  {
+    "id": 21575,
+    "key": "Orumus' Robes",
+    "name_ko": "오르무스의 장포",
+    "name_en": "Ormus' Robe"
+  },
+  {
+    "id": 21576,
+    "key": "Gheed's Fortune",
+    "name_ko": "기드의 행운",
+    "name_en": "Gheed's Fortune"
+  },
+  {
+    "id": 21577,
+    "key": "The Vicar",
+    "name_ko": "목사",
+    "name_en": "The Vicar"
+  },
+  {
+    "id": 21578,
+    "key": "Stormlash",
+    "name_ko": "폭풍채찍",
+    "name_en": "Stormlash"
+  },
+  {
+    "id": 21579,
+    "key": "Halaberd's Reign",
+    "name_ko": "할라버드의 통치",
+    "name_en": "Halaberd's Reign"
+  },
+  {
+    "id": 21580,
+    "key": "Parkersor's Calm",
+    "name_ko": "파커소르의 고요",
+    "name_en": "Parkersor's Calm"
+  },
+  {
+    "id": 21581,
+    "key": "Warriv's Warder",
+    "name_ko": "와리브의 보초",
+    "name_en": "Warriv's Warder"
+  },
+  {
+    "id": 21582,
+    "key": "Spike Thorn",
+    "name_ko": "쐐기 가시",
+    "name_en": "Spike Thorn"
+  },
+  {
+    "id": 21583,
+    "key": "Dracul's Grasp",
+    "name_ko": "드라쿨의 손아귀",
+    "name_en": "Dracul's Grasp"
+  },
+  {
+    "id": 21584,
+    "key": "Frostwind",
+    "name_ko": "서리바람",
+    "name_en": "Frostwind"
+  },
+  {
+    "id": 21585,
+    "key": "Templar's Might",
+    "name_ko": "기사단의 위세",
+    "name_en": "Templar's Might"
+  },
+  {
+    "id": 21586,
+    "key": "Eschuta's temper",
+    "name_ko": "에슈타의 성미",
+    "name_en": "Eschuta's Temper"
+  },
+  {
+    "id": 21587,
+    "key": "Firelizard's Talons",
+    "name_ko": "불도마뱀의 발톱",
+    "name_en": "Firelizard's Talons"
+  },
+  {
+    "id": 21588,
+    "key": "Sandstorm Trek",
+    "name_ko": "모래폭풍 여로",
+    "name_en": "Sandstorm Trek"
+  },
+  {
+    "id": 21589,
+    "key": "Marrowwalk",
+    "name_ko": "골수걸음",
+    "name_en": "Marrowwalk"
+  },
+  {
+    "id": 21590,
+    "key": "Heaven's Light",
+    "name_ko": "천상의 빛",
+    "name_en": "Heaven's Light"
+  },
+  {
+    "id": 21591,
+    "key": "Merman's Speed",
+    "name_ko": "인어의 사슬톱니",
+    "name_en": "Merman's Sprocket"
+  },
+  {
+    "id": 21592,
+    "key": "Arachnid Mesh",
+    "name_ko": "거미 그물띠",
+    "name_en": "Arachnid Mesh"
+  },
+  {
+    "id": 21593,
+    "key": "Nosferatu's Coil",
+    "name_ko": "노스페라투의 고리",
+    "name_en": "Nosferatu's Coil"
+  },
+  {
+    "id": 21594,
+    "key": "Metalgird",
+    "name_ko": "메탈라이트의 끈",
+    "name_en": "Metalite's Girth"
+  },
+  {
+    "id": 21595,
+    "key": "Verdugo's Hearty Cord",
+    "name_ko": "베르둔고의 튼튼한 노끈",
+    "name_en": "Verdungo's Hearty Cord"
+  },
+  {
+    "id": 21596,
+    "key": "Sigurd's Staunch",
+    "name_ko": "시가르드의 은폐",
+    "name_en": "Siggard's Stealth"
+  },
+  {
+    "id": 21597,
+    "key": "Carrion Wind",
+    "name_ko": "부패의 바람",
+    "name_en": "Carrion Wind"
+  },
+  {
+    "id": 21598,
+    "key": "Giantskull",
+    "name_ko": "거인 두개골",
+    "name_en": "Giant Skull"
+  },
+  {
+    "id": 21599,
+    "key": "Ironward",
+    "name_ko": "아스트레온의 무쇠 호신부",
+    "name_en": "Astreon's Iron Ward"
+  },
+  {
+    "id": 21600,
+    "key": "Gillian's Brazier",
+    "name_ko": "길리언의 화로",
+    "name_en": "Gillian's Brazier"
+  },
+  {
+    "id": 21601,
+    "key": "Drakeflame",
+    "name_ko": "비룡불길",
+    "name_en": "Drakeflame"
+  },
+  {
+    "id": 21602,
+    "key": "Dust Storm",
+    "name_ko": "먼지 폭풍",
+    "name_en": "Dust Storm"
+  },
+  {
+    "id": 21603,
+    "key": "Skulltred",
+    "name_ko": "스컬트레드",
+    "name_en": "Skulltred"
+  },
+  {
+    "id": 21604,
+    "key": "Alma's Reflection",
+    "name_ko": "알마의 심사숙고",
+    "name_en": "Alma's Reflection"
+  },
+  {
+    "id": 21605,
+    "key": "Drulan's Tounge",
+    "name_ko": "드룰란의 혀",
+    "name_en": "Drulan's Tongue"
+  },
+  {
+    "id": 21606,
+    "key": "Sacred Charge",
+    "name_ko": "신성한 돌진",
+    "name_en": "Sacred Charge"
+  },
+  {
+    "id": 21607,
+    "key": "Bul-Kathos",
+    "name_ko": "불카토스",
+    "name_en": "Bul-Kathos"
+  },
+  {
+    "id": 21608,
+    "key": "Saracen's Chance",
+    "name_ko": "사라센의 기회",
+    "name_en": "Saracen's Chance"
+  },
+  {
+    "id": 21609,
+    "key": "Highlord's Wrath",
+    "name_ko": "대군주의 진노",
+    "name_en": "Highlord's Wrath"
+  },
+  {
+    "id": 21610,
+    "key": "Raven Frost",
+    "name_ko": "칠흑 서리",
+    "name_en": "Raven Frost"
+  },
+  {
+    "id": 21611,
+    "key": "Dwarf Star",
+    "name_ko": "왜성",
+    "name_en": "Dwarf Star"
+  },
+  {
+    "id": 21612,
+    "key": "Atma's Scarab",
+    "name_ko": "아트마의 스카라베",
+    "name_en": "Atma's Scarab"
+  },
+  {
+    "id": 21613,
+    "key": "Mara's Kaleidoscope",
+    "name_ko": "마라의 만화경",
+    "name_en": "Mara's Kaleidoscope"
+  },
+  {
+    "id": 21614,
+    "key": "Crescent Moon",
+    "name_ko": "초승달",
+    "name_en": "Crescent Moon"
+  },
+  {
+    "id": 21615,
+    "key": "The Rising Sun",
+    "name_ko": "떠오르는 태양",
+    "name_en": "The Rising Sun"
+  },
+  {
+    "id": 21616,
+    "key": "The Cat's Eye",
+    "name_ko": "고양이 눈",
+    "name_en": "The Cat's Eye"
+  },
+  {
+    "id": 21617,
+    "key": "Bul Katho's Wedding Band",
+    "name_ko": "불카토스의 결혼반지",
+    "name_en": "Bul-Kathos' Wedding Band"
+  },
+  {
+    "id": 21618,
+    "key": "Rings",
+    "name_ko": "반지",
+    "name_en": "Rings"
+  },
+  {
+    "id": 21619,
+    "key": "Metalgrid",
+    "name_ko": "금속 격자",
+    "name_en": "Metalgrid"
+  },
+  {
+    "id": 21621,
+    "key": "Stormshield",
+    "name_ko": "폭풍막이",
+    "name_en": "Stormshield"
+  },
+  {
+    "id": 21622,
+    "key": "Blackoak Shield",
+    "name_ko": "검은참나무 방패",
+    "name_en": "Blackoak Shield"
+  },
+  {
+    "id": 21623,
+    "key": "Ormus' Robes",
+    "name_ko": "오르무스의 장포",
+    "name_en": "Ormus' Robes"
+  },
+  {
+    "id": 21624,
+    "key": "Arkaine's Valor",
+    "name_ko": "아르케인의 용맹",
+    "name_en": "Arkaine's Valor"
+  },
+  {
+    "id": 21625,
+    "key": "The Gladiator's Bane",
+    "name_ko": "검투사의 재앙",
+    "name_en": "The Gladiator's Bane"
+  },
+  {
+    "id": 21626,
+    "key": "Veil of Steel",
+    "name_ko": "강철의 베일",
+    "name_en": "Veil of Steel"
+  },
+  {
+    "id": 21627,
+    "key": "Harlequin Crest",
+    "name_ko": "할리퀸 관모",
+    "name_en": "Harlequin Crest"
+  },
+  {
+    "id": 21628,
+    "key": "Lance Guard",
+    "name_ko": "기병창 보호구",
+    "name_en": "Lance Guard"
+  },
+  {
+    "id": 21629,
+    "key": "Kerke's Sanctuary",
+    "name_ko": "게르케의 성역",
+    "name_en": "Gerke's Sanctuary"
+  },
+  {
+    "id": 21630,
+    "key": "Mosers Blessed Circle",
+    "name_ko": "모저의 축복받은 고리",
+    "name_en": "Moser's Blessed Circle"
+  },
+  {
+    "id": 21631,
+    "key": "Que-Hegan's Wisdon",
+    "name_ko": "쿠에 히간의 지혜",
+    "name_en": "Que-Hegan's Wisdom"
+  },
+  {
+    "id": 21632,
+    "key": "Guardian Angel",
+    "name_ko": "수호 천사",
+    "name_en": "Guardian Angel"
+  },
+  {
+    "id": 21633,
+    "key": "Skin of the Flayerd One",
+    "name_ko": "벗겨진 자의 가죽",
+    "name_en": "Skin of the Flayed One"
+  },
+  {
+    "id": 21634,
+    "key": "Armor",
+    "name_ko": "갑옷",
+    "name_en": "Armor"
+  },
+  {
+    "id": 21635,
+    "key": "Windforce",
+    "name_ko": "바람살",
+    "name_en": "Windforce"
+  },
+  {
+    "id": 21636,
+    "key": "Eaglehorn",
+    "name_ko": "수리뿔",
+    "name_en": "Eaglehorn"
+  },
+  {
+    "id": 21637,
+    "key": "Gimmershred",
+    "name_ko": "아른날",
+    "name_en": "Gimmershred"
+  },
+  {
+    "id": 21638,
+    "key": "Widowmaker",
+    "name_ko": "과부제조기",
+    "name_en": "Widowmaker"
+  },
+  {
+    "id": 21639,
+    "key": "Stormspire",
+    "name_ko": "폭풍첨탑",
+    "name_en": "Stormspire"
+  },
+  {
+    "id": 21640,
+    "key": "Naj's Puzzler",
+    "name_ko": "나즈의 수수께끼",
+    "name_en": "Naj's Puzzler"
+  },
+  {
+    "id": 21641,
+    "key": "Ethereal Edge",
+    "name_ko": "무형의 날붙이",
+    "name_en": "Ethereal Edge"
+  },
+  {
+    "id": 21642,
+    "key": "Wizardspike",
+    "name_ko": "마법사의 쐐기검",
+    "name_en": "Wizardspike"
+  },
+  {
+    "id": 21643,
+    "key": "The Grandfather",
+    "name_ko": "한아비",
+    "name_en": "The Grandfather"
+  },
+  {
+    "id": 21644,
+    "key": "Doombringer",
+    "name_ko": "궤멸자",
+    "name_en": "Doombringer"
+  },
+  {
+    "id": 21645,
+    "key": "Tyrael's Might",
+    "name_ko": "티리엘의 권능",
+    "name_en": "Tyrael's Might"
+  },
+  {
+    "id": 21646,
+    "key": "Lightsabre",
+    "name_ko": "라이트세이버",
+    "name_en": "Lightsabre"
+  },
+  {
+    "id": 21647,
+    "key": "The Cranium Basher",
+    "name_ko": "두개골 분쇄망치",
+    "name_en": "The Cranium Basher"
+  },
+  {
+    "id": 21648,
+    "key": "Schaefer's Hammer",
+    "name_ko": "섀퍼의 망치",
+    "name_en": "Schaefer's Hammer"
+  },
+  {
+    "id": 21649,
+    "key": "Baranar's Star",
+    "name_ko": "바라나르의 별",
+    "name_en": "Baranar's Star"
+  },
+  {
+    "id": 21650,
+    "key": "Deaths's Web",
+    "name_ko": "죽음의 거미줄",
+    "name_en": "Death's Web"
+  },
+  {
+    "id": 21651,
+    "key": "Messerschmidt's Reaver",
+    "name_ko": "메서슈미트의 도끼",
+    "name_en": "Messerschmidt's Reaver"
+  },
+  {
+    "id": 21652,
+    "key": "Hellslayer",
+    "name_ko": "지옥학살자",
+    "name_en": "Hellslayer"
+  },
+  {
+    "id": 21653,
+    "key": "Endlesshail",
+    "name_ko": "끝없는 우박",
+    "name_en": "Endlesshail"
+  },
+  {
+    "id": 21654,
+    "key": "The Atlantian",
+    "name_ko": "아틀란티안",
+    "name_en": "The Atlantean"
+  },
+  {
+    "id": 21655,
+    "key": "Riftlash",
+    "name_ko": "균열채찍",
+    "name_en": "Riftlash"
+  },
+  {
+    "id": 21656,
+    "key": "Baezil's Vortex",
+    "name_ko": "배질의 소용돌이",
+    "name_en": "Baezil's Vortex"
+  },
+  {
+    "id": 21657,
+    "key": "Zakarum's Hand",
+    "name_ko": "자카룸의 손",
+    "name_en": "Zakarum's Hand"
+  },
+  {
+    "id": 21658,
+    "key": "Carin Shard",
+    "name_ko": "카린 파편",
+    "name_en": "Carin Shard"
+  },
+  {
+    "id": 21659,
+    "key": "The Minataur",
+    "name_ko": "미노타우루스",
+    "name_en": "The Minotaur"
+  },
+  {
+    "id": 21660,
+    "key": "Trang-Oul's Avatar",
+    "name_ko": "트래그울의 화신",
+    "name_en": "Trang-Oul's Avatar"
+  },
+  {
+    "id": 21661,
+    "key": "Trang-Oul's Guise",
+    "name_ko": "트래그울의 허울",
+    "name_en": "Trang-Oul's Guise"
+  },
+  {
+    "id": 21662,
+    "key": "Trang-Oul's Wing",
+    "name_ko": "트래그울의 날개",
+    "name_en": "Trang-Oul's Wing"
+  },
+  {
+    "id": 21663,
+    "key": "Trang-Oul's Mask",
+    "name_ko": "트래그울의 가면",
+    "name_en": "Trang-Oul's Mask"
+  },
+  {
+    "id": 21664,
+    "key": "Trang-Oul's Scales",
+    "name_ko": "트래그울의 비늘",
+    "name_en": "Trang-Oul's Scales"
+  },
+  {
+    "id": 21665,
+    "key": "Trang-Oul's Claws",
+    "name_ko": "트래그울의 발톱",
+    "name_en": "Trang-Oul's Claws"
+  },
+  {
+    "id": 21666,
+    "key": "Trang-Oul's Girth",
+    "name_ko": "트래그울의 끈",
+    "name_en": "Trang-Oul's Girth"
+  },
+  {
+    "id": 21667,
+    "key": "Natalya's Odium",
+    "name_ko": "나탈랴의 혐오",
+    "name_en": "Natalya's Odium"
+  },
+  {
+    "id": 21668,
+    "key": "Natalya's Totem",
+    "name_ko": "나탈랴의 토템",
+    "name_en": "Natalya's Totem"
+  },
+  {
+    "id": 21669,
+    "key": "Natalya's Mark",
+    "name_ko": "나탈랴의 표식",
+    "name_en": "Natalya's Mark"
+  },
+  {
+    "id": 21670,
+    "key": "Natalya's Shadow",
+    "name_ko": "나탈랴의 그림자",
+    "name_en": "Natalya's Shadow"
+  },
+  {
+    "id": 21671,
+    "key": "Natalya's Soul",
+    "name_ko": "나탈랴의 영혼",
+    "name_en": "Natalya's Soul"
+  },
+  {
+    "id": 21672,
+    "key": "Griswold's Legacy",
+    "name_ko": "그리스월드의 유산",
+    "name_en": "Griswold's Legacy"
+  },
+  {
+    "id": 21673,
+    "key": "Griswolds's Redemption",
+    "name_ko": "그리스월드의 구원",
+    "name_en": "Griswold's Redemption"
+  },
+  {
+    "id": 21674,
+    "key": "Griswold's Honor",
+    "name_ko": "그리스월드의 명예",
+    "name_en": "Griswold's Honor"
+  },
+  {
+    "id": 21675,
+    "key": "Griswold's Heart",
+    "name_ko": "그리스월드의 심장",
+    "name_en": "Griswold's Heart"
+  },
+  {
+    "id": 21676,
+    "key": "Griswold's Valor",
+    "name_ko": "그리스월드의 용맹",
+    "name_en": "Griswold's Valor"
+  },
+  {
+    "id": 21677,
+    "key": "Tang's Imperial Robes",
+    "name_ko": "탕의 황실 장포",
+    "name_en": "Tang's Imperial Robes"
+  },
+  {
+    "id": 21678,
+    "key": "Tang's Fore-Fathers",
+    "name_ko": "탕의 선조들",
+    "name_en": "Tang's Fore-Fathers"
+  },
+  {
+    "id": 21679,
+    "key": "Tang's Rule",
+    "name_ko": "탕의 지배",
+    "name_en": "Tang's Rule"
+  },
+  {
+    "id": 21680,
+    "key": "Tang's Throne",
+    "name_ko": "탕의 왕좌",
+    "name_en": "Tang's Throne"
+  },
+  {
+    "id": 21681,
+    "key": "Tang's Battle Standard",
+    "name_ko": "탕의 전투 깃발",
+    "name_en": "Tang's Battle Standard"
+  },
+  {
+    "id": 21682,
+    "key": "Ogun's Fierce Visage",
+    "name_ko": "오군의 맹렬한 얼굴",
+    "name_en": "Ogun's Fierce Visage"
+  },
+  {
+    "id": 21683,
+    "key": "Ogun's Shadow",
+    "name_ko": "오군의 그림자",
+    "name_en": "Ogun's Shadow"
+  },
+  {
+    "id": 21684,
+    "key": "Ogun's Lash",
+    "name_ko": "오군의 채찍",
+    "name_en": "Ogun's Lash"
+  },
+  {
+    "id": 21685,
+    "key": "Ogun's Vengeance",
+    "name_ko": "오군의 복수",
+    "name_en": "Ogun's Vengeance"
+  },
+  {
+    "id": 21686,
+    "key": "Bul-Kathos' Warden",
+    "name_ko": "불카토스의 파수꾼",
+    "name_en": "Bul-Kathos' Warden"
+  },
+  {
+    "id": 21687,
+    "key": "Bul-Kathos' Children",
+    "name_ko": "불카토스의 자손",
+    "name_en": "Bul-Kathos' Children"
+  },
+  {
+    "id": 21688,
+    "key": "Bul-Kathos' Sacred Charge",
+    "name_ko": "불카토스의 신성한 임무",
+    "name_en": "Bul-Kathos' Sacred Charge"
+  },
+  {
+    "id": 21689,
+    "key": "Bul-Kathos' Tribal Guardian",
+    "name_ko": "불카토스의 부족 수호자",
+    "name_en": "Bul-Kathos' Tribal Guardian"
+  },
+  {
+    "id": 21690,
+    "key": "Bul-Kathos' Custodian",
+    "name_ko": "불카토스의 관리인",
+    "name_en": "Bul-Kathos' Custodian"
+  },
+  {
+    "id": 21691,
+    "key": "Flowkrad's Howl",
+    "name_ko": "플로우크라드의 울부짖음",
+    "name_en": "Flowkrad's Howl"
+  },
+  {
+    "id": 21692,
+    "key": "Flowkrad's Grin",
+    "name_ko": "플로우크라드의 웃음",
+    "name_en": "Flowkrad's Grin"
+  },
+  {
+    "id": 21693,
+    "key": "Flowkrad's Fur",
+    "name_ko": "플로우크라드의 모피",
+    "name_en": "Flowkrad's Fur"
+  },
+  {
+    "id": 21694,
+    "key": "Flowkrad's Paws",
+    "name_ko": "플로우크라드의 앞발",
+    "name_en": "Flowkrad's Paws"
+  },
+  {
+    "id": 21695,
+    "key": "Flowkrad's Sinew",
+    "name_ko": "플로우크라드의 힘줄",
+    "name_en": "Flowkrad's Sinew"
+  },
+  {
+    "id": 21696,
+    "key": "Aldur's Watchtower",
+    "name_ko": "알두르의 감시탑",
+    "name_en": "Aldur's Watchtower"
+  },
+  {
+    "id": 21697,
+    "key": "Aldur's Stony Gaze",
+    "name_ko": "알두르의 냉랭한 눈길",
+    "name_en": "Aldur's Stony Gaze"
+  },
+  {
+    "id": 21698,
+    "key": "Aldur's Deception",
+    "name_ko": "알두르의 기만",
+    "name_en": "Aldur's Deception"
+  },
+  {
+    "id": 21699,
+    "key": "Aldur's Guantlet",
+    "name_ko": "알두르의 건틀릿",
+    "name_en": "Aldur's Gauntlet"
+  },
+  {
+    "id": 21700,
+    "key": "Aldur's Advance",
+    "name_ko": "알두르의 진보",
+    "name_en": "Aldur's Advance"
+  },
+  {
+    "id": 21701,
+    "key": "M'avina's Battle Hymn",
+    "name_ko": "마비나의 전투 찬가",
+    "name_en": "M'avina's Battle Hymn"
+  },
+  {
+    "id": 21702,
+    "key": "M'avina's True Sight",
+    "name_ko": "마비나의 진실의 눈",
+    "name_en": "M'avina's True Sight"
+  },
+  {
+    "id": 21703,
+    "key": "M'avina's Embrace",
+    "name_ko": "마비나의 포옹",
+    "name_en": "M'avina's Embrace"
+  },
+  {
+    "id": 21704,
+    "key": "M'avina's Icy Clutch",
+    "name_ko": "마비나의 얼음 같은 손길",
+    "name_en": "M'avina's Icy Clutch"
+  },
+  {
+    "id": 21705,
+    "key": "M'avina's Tenet",
+    "name_ko": "마비나의 신조",
+    "name_en": "M'avina's Tenet"
+  },
+  {
+    "id": 21706,
+    "key": "M'avina's Caster",
+    "name_ko": "마비나의 활",
+    "name_en": "M'avina's Caster"
+  },
+  {
+    "id": 21707,
+    "key": "Sazabi's Grand Tribute",
+    "name_ko": "사자비의 대공물",
+    "name_en": "Sazabi's Grand Tribute"
+  },
+  {
+    "id": 21708,
+    "key": "Sazabi's Cobalt Redeemer",
+    "name_ko": "사자비의 코발트 구원자",
+    "name_en": "Sazabi's Cobalt Redeemer"
+  },
+  {
+    "id": 21709,
+    "key": "Sazabi's Ghost Liberator",
+    "name_ko": "사자비의 유령 해방자",
+    "name_en": "Sazabi's Ghost Liberator"
+  },
+  {
+    "id": 21710,
+    "key": "Sazabi's Mental Sheath",
+    "name_ko": "사자비의 정신 보호구",
+    "name_en": "Sazabi's Mental Sheath"
+  },
+  {
+    "id": 21711,
+    "key": "Hwanin's Majesty",
+    "name_ko": "환인의 위엄",
+    "name_en": "Hwanin's Majesty"
+  },
+  {
+    "id": 21712,
+    "key": "Hwanin's Justice",
+    "name_ko": "환인의 정의",
+    "name_en": "Hwanin's Justice"
+  },
+  {
+    "id": 21713,
+    "key": "Hwanin's Splendor",
+    "name_ko": "환인의 광채",
+    "name_en": "Hwanin's Splendor"
+  },
+  {
+    "id": 21714,
+    "key": "Hwanin's Refuge",
+    "name_ko": "환인의 피난처",
+    "name_en": "Hwanin's Refuge"
+  },
+  {
+    "id": 21715,
+    "key": "Hwanin's Cordon",
+    "name_ko": "환인의 저지선",
+    "name_en": "Hwanin's Cordon"
+  },
+  {
+    "id": 21716,
+    "key": "The Disciple",
+    "name_ko": "사도",
+    "name_en": "The Disciple"
+  },
+  {
+    "id": 21717,
+    "key": "Telling of Beads",
+    "name_ko": "구슬 묵주",
+    "name_en": "Telling of Beads"
+  },
+  {
+    "id": 21718,
+    "key": "Laying of Hands",
+    "name_ko": "안수",
+    "name_en": "Laying of Hands"
+  },
+  {
+    "id": 21719,
+    "key": "Rite of Passage",
+    "name_ko": "통과의례",
+    "name_en": "Rite of Passage"
+  },
+  {
+    "id": 21720,
+    "key": "Spiritual Custodian",
+    "name_ko": "어둠의 추종자",
+    "name_en": "Dark Adherent"
+  },
+  {
+    "id": 21721,
+    "key": "Credendum",
+    "name_ko": "신조",
+    "name_en": "Credendum"
+  },
+  {
+    "id": 21722,
+    "key": "Cow King's Leathers",
+    "name_ko": "젖소 왕의 보호구",
+    "name_en": "Cow King's Leathers"
+  },
+  {
+    "id": 21723,
+    "key": "Cow King's Horns",
+    "name_ko": "젖소 왕의 뿔",
+    "name_en": "Cow King's Horns"
+  },
+  {
+    "id": 21724,
+    "key": "Cow King's Hide",
+    "name_ko": "젖소 왕의 날가죽",
+    "name_en": "Cow King's Hide"
+  },
+  {
+    "id": 21725,
+    "key": "Cow King's Hoofs",
+    "name_ko": "젖소 왕의 발굽",
+    "name_en": "Cow King's Hooves"
+  },
+  {
+    "id": 21726,
+    "key": "Aragon's Masterpiece",
+    "name_ko": "아라곤의 걸작",
+    "name_en": "Aragon's Masterpiece"
+  },
+  {
+    "id": 21727,
+    "key": "Aragon's Sunfire",
+    "name_ko": "아라곤의 태양불꽃",
+    "name_en": "Aragon's Sunfire"
+  },
+  {
+    "id": 21728,
+    "key": "Aragon's Icy Stare",
+    "name_ko": "아라곤의 차가운 눈빛",
+    "name_en": "Aragon's Icy Stare"
+  },
+  {
+    "id": 21729,
+    "key": "Aragon's Storm Cloud",
+    "name_ko": "아라곤의 폭풍 구름",
+    "name_en": "Aragon's Storm Cloud"
+  },
+  {
+    "id": 21730,
+    "key": "Orphan's Call",
+    "name_ko": "고아의 부름",
+    "name_en": "Orphan's Call"
+  },
+  {
+    "id": 21731,
+    "key": "Guillaume's Face",
+    "name_ko": "기욤의 얼굴",
+    "name_en": "Guillaume's Face"
+  },
+  {
+    "id": 21732,
+    "key": "Willhelm's Pride",
+    "name_ko": "빌헬름의 자부심",
+    "name_en": "Willhelm's Pride"
+  },
+  {
+    "id": 21733,
+    "key": "Magnus' Skin",
+    "name_ko": "마그누스의 가죽",
+    "name_en": "Magnus' Skin"
+  },
+  {
+    "id": 21734,
+    "key": "Wihtstan's Guard",
+    "name_ko": "위트스탄의 보호구",
+    "name_en": "Whitstan's Guard"
+  },
+  {
+    "id": 21735,
+    "key": "Titan's Revenge",
+    "name_ko": "거인의 복수",
+    "name_en": "Titan's Revenge"
+  },
+  {
+    "id": 21736,
+    "key": "Shakabra's Crux",
+    "name_ko": "샤카브라의 급소",
+    "name_en": "Shakabra's Crux"
+  },
+  {
+    "id": 21737,
+    "key": "Lycander's Aim",
+    "name_ko": "라이칸더의 조준",
+    "name_en": "Lycander's Aim"
+  },
+  {
+    "id": 21738,
+    "key": "Shadow's Touch",
+    "name_ko": "그림자 손길",
+    "name_en": "Shadow Touch"
+  },
+  {
+    "id": 21739,
+    "key": "The Prowler",
+    "name_ko": "배회자",
+    "name_en": "The Prowler"
+  },
+  {
+    "id": 21740,
+    "key": "Mortal Crescent",
+    "name_ko": "필멸의 초승달",
+    "name_en": "Mortal Crescent"
+  },
+  {
+    "id": 21741,
+    "key": "Cutthroat",
+    "name_ko": "바르툭의 썰개",
+    "name_en": "Bartuc's Chop Chop"
+  },
+  {
+    "id": 21742,
+    "key": "Sarmichian Justice",
+    "name_ko": "무사의 정의",
+    "name_en": "Samurai Justice"
+  },
+  {
+    "id": 21743,
+    "key": "Annihilus",
+    "name_ko": "어나이얼러스",
+    "name_en": "Annihilus"
+  },
+  {
+    "id": 21744,
+    "key": "Arreat's Face",
+    "name_ko": "아리앗의 얼굴",
+    "name_en": "Arreat's Face"
+  },
+  {
+    "id": 21745,
+    "key": "The Harbinger",
+    "name_ko": "선구자",
+    "name_en": "The Harbinger"
+  },
+  {
+    "id": 21746,
+    "key": "Doomseer",
+    "name_ko": "파멸 예언자",
+    "name_en": "Doomseer"
+  },
+  {
+    "id": 21747,
+    "key": "Howling Visage",
+    "name_ko": "울부짖는 얼굴",
+    "name_en": "Howling Visage"
+  },
+  {
+    "id": 21748,
+    "key": "Terra",
+    "name_ko": "테라의 수호자",
+    "name_en": "Terra's Guardian"
+  },
+  {
+    "id": 21749,
+    "key": "Syrian",
+    "name_ko": "셋의 잎",
+    "name_en": "Triad's Foliage"
+  },
+  {
+    "id": 21750,
+    "key": "Jalal's Mane",
+    "name_ko": "잘랄의 갈기",
+    "name_en": "Jalal's Mane"
+  },
+  {
+    "id": 21751,
+    "key": "Malignant",
+    "name_ko": "악의 어린 두개골",
+    "name_en": "Malignant Skull"
+  },
+  {
+    "id": 21752,
+    "key": "Apothecary's Tote",
+    "name_ko": "약제사의 짐",
+    "name_en": "Apothecary's Tote"
+  },
+  {
+    "id": 21753,
+    "key": "Apocrypha",
+    "name_ko": "외경",
+    "name_en": "Apocrypha"
+  },
+  {
+    "id": 21754,
+    "key": "Foci of Visjerei",
+    "name_ko": "비제레이의 초점",
+    "name_en": "Foci of the Vizjerei"
+  },
+  {
+    "id": 21755,
+    "key": "Homunculus",
+    "name_ko": "호문쿨루스",
+    "name_en": "Homunculus"
+  },
+  {
+    "id": 21756,
+    "key": "Aurora's Guard",
+    "name_ko": "오로라의 보호구",
+    "name_en": "Aurora's Guard"
+  },
+  {
+    "id": 21757,
+    "key": "Crest of Morn",
+    "name_ko": "아침의 문장",
+    "name_en": "Crest of Morn"
+  },
+  {
+    "id": 21758,
+    "key": "Herald of Zakarum",
+    "name_ko": "자카룸의 전령",
+    "name_en": "Herald of Zakarum"
+  },
+  {
+    "id": 21759,
+    "key": "Akarat's Protector",
+    "name_ko": "아카라트의 수호자",
+    "name_en": "Akarat's Protector"
+  },
+  {
+    "id": 21760,
+    "key": "Ancient Eye",
+    "name_ko": "고대 눈",
+    "name_en": "Ancient Eye"
+  },
+  {
+    "id": 21761,
+    "key": "Globe of Visjerei",
+    "name_ko": "비제레이의 구체",
+    "name_en": "Globe of the Vizjerei"
+  },
+  {
+    "id": 21762,
+    "key": "The Oculus",
+    "name_ko": "망울",
+    "name_en": "The Oculus"
+  },
+  {
+    "id": 21763,
+    "key": "Phoenix Egg",
+    "name_ko": "불사조 알",
+    "name_en": "Phoenix Egg"
+  },
+  {
+    "id": 21764,
+    "key": "Xenos",
+    "name_ko": "제노스",
+    "name_en": "Xenos"
+  },
+  {
+    "id": 21765,
+    "key": "Nagas",
+    "name_ko": "나가스",
+    "name_en": "Nagas"
+  },
+  {
+    "id": 21766,
+    "key": "Wyvern's Head",
+    "name_ko": "와이번 머리",
+    "name_en": "Wyvern's Head"
+  },
+  {
+    "id": 21767,
+    "key": "Sightless Veil",
+    "name_ko": "보이지 않는 너울",
+    "name_en": "Sightless Veil"
+  },
+  {
+    "id": 21768,
+    "key": "ChampionFormatX",
+    "name_ko": "%0 %1",
+    "name_en": "%0 %1"
+  },
+  {
+    "id": 21778,
+    "key": "ob5",
+    "name_ko": "자레드 스톤",
+    "name_en": "Jared's Stone"
+  },
+  {
+    "id": 21779,
+    "key": "pad",
+    "name_ko": "쿠라스트 쉴드",
+    "name_en": "Kurast Shield"
+  },
+  {
+    "id": 21780,
+    "key": "axf",
+    "name_ko": "해칫 핸즈",
+    "name_en": "Hatchet Hands"
+  },
+  {
+    "id": 21784,
+    "key": "Class Specific",
+    "name_ko": "직업 전용",
+    "name_en": "Class-specific"
+  },
+  {
+    "id": 21785,
+    "key": "fana",
+    "name_ko": "얼어붙은 안야",
+    "name_en": "Frozen Anya"
+  },
+  {
+    "id": 21805,
+    "key": "0sc",
+    "name_ko": "지식의 두루마리",
+    "name_en": "Scroll of Knowledge"
+  },
+  {
+    "id": 21815,
+    "key": "Tal Rasha's Wrappings",
+    "name_ko": "탈 라샤의 수의",
+    "name_en": "Tal Rasha's Wrappings"
+  },
+  {
+    "id": 21816,
+    "key": "Tal Rasha's Fire-Spun Cloth",
+    "name_ko": "탈 라샤의 고운 띠",
+    "name_en": "Tal Rasha's Fine-Spun Cloth"
+  },
+  {
+    "id": 21817,
+    "key": "Tal Rasha's Adjudication",
+    "name_ko": "탈 라샤의 선고",
+    "name_en": "Tal Rasha's Adjudication"
+  },
+  {
+    "id": 21818,
+    "key": "Tal Rasha's Howling Wind",
+    "name_ko": "탈 라샤의 보호",
+    "name_en": "Tal Rasha's Guardianship"
+  },
+  {
+    "id": 21819,
+    "key": "Tal Rasha's Lidless Eye",
+    "name_ko": "탈 라샤의 잠들지 않는 눈",
+    "name_en": "Tal Rasha's Lidless Eye"
+  },
+  {
+    "id": 21820,
+    "key": "Tal Rasha's Horadric Crest",
+    "name_ko": "탈 라샤의 호라드림 관모",
+    "name_en": "Tal Rasha's Horadric Crest"
+  },
+  {
+    "id": 21821,
+    "key": "Hwanin's Seal",
+    "name_ko": "환인의 축복",
+    "name_en": "Hwanin's Blessing"
+  },
+  {
+    "id": 21822,
+    "key": "Heaven's Brethren",
+    "name_ko": "천상의 동포",
+    "name_en": "Heaven's Brethren"
+  },
+  {
+    "id": 21823,
+    "key": "Dangoon's Teaching",
+    "name_ko": "단군의 가르침",
+    "name_en": "Dangoon's Teaching"
+  },
+  {
+    "id": 21824,
+    "key": "Ondal's Almighty",
+    "name_ko": "온달의 사랑",
+    "name_en": "Ondal's Almighty"
+  },
+  {
+    "id": 21825,
+    "key": "Heaven's Taebaek",
+    "name_ko": "태백의 영예",
+    "name_en": "Taebaek's Glory"
+  },
+  {
+    "id": 21826,
+    "key": "Haemosu's Adament",
+    "name_ko": "해모수의 견고",
+    "name_en": "Haemosu's Adamant"
+  },
+  {
+    "id": 21827,
+    "key": "Lycander's Flank",
+    "name_ko": "라이칸더의 측방",
+    "name_en": "Lycander's Flank"
+  },
+  {
+    "id": 21828,
+    "key": "Constricting Ring",
+    "name_ko": "죄어오는 반지",
+    "name_en": "Constricting Ring"
+  },
+  {
+    "id": 21829,
+    "key": "Ginther's Rift",
+    "name_ko": "긴터의 균열",
+    "name_en": "Ginther's Rift"
+  },
+  {
+    "id": 21830,
+    "key": "Naj's Ancient Set",
+    "name_ko": "나즈의 고대 흔적",
+    "name_en": "Naj's Ancient Vestige"
+  },
+  {
+    "id": 21831,
+    "key": "Naj's Light Plate",
+    "name_ko": "나즈의 경판갑",
+    "name_en": "Naj's Light Plate"
+  },
+  {
+    "id": 21832,
+    "key": "Naj's Circlet",
+    "name_ko": "나즈의 띠관",
+    "name_en": "Naj's Circlet"
+  },
+  {
+    "id": 21833,
+    "key": "Sander's Superstition",
+    "name_ko": "매컬리의 미신",
+    "name_en": "McAuley's Superstition"
+  },
+  {
+    "id": 21834,
+    "key": "Sander's Taboo",
+    "name_ko": "매컬리의 금기",
+    "name_en": "McAuley's Taboo"
+  },
+  {
+    "id": 21835,
+    "key": "Sander's Basis",
+    "name_ko": "매컬리의 기반",
+    "name_en": "McAuley's Basis"
+  },
+  {
+    "id": 21836,
+    "key": "Sander's Derby",
+    "name_ko": "매컬리의 서약",
+    "name_en": "McAuley's Pledge"
+  },
+  {
+    "id": 21837,
+    "key": "Sander's Court Jester",
+    "name_ko": "매컬리의 어리석음",
+    "name_en": "McAuley's Folly"
+  },
+  {
+    "id": 21838,
+    "key": "Ghost Liberator",
+    "name_ko": "유령 해방자",
+    "name_en": "Ghost Liberator"
+  },
+  {
+    "id": 21839,
+    "key": "Wilhelm's Pride",
+    "name_ko": "빌헬름의 자부심",
+    "name_en": "Wilhelm's Pride"
+  },
+  {
+    "id": 21840,
+    "key": "Immortal King's Stone Crusher",
+    "name_ko": "불멸왕의 파석추",
+    "name_en": "Immortal King's Stone Crusher"
+  },
+  {
+    "id": 21841,
+    "key": "Immortal King's Pillar",
+    "name_ko": "불멸왕의 기둥",
+    "name_en": "Immortal King's Pillar"
+  },
+  {
+    "id": 21842,
+    "key": "Immortal King's Forge",
+    "name_ko": "불멸왕의 용광로",
+    "name_en": "Immortal King's Forge"
+  },
+  {
+    "id": 21843,
+    "key": "Immortal King's Detail",
+    "name_ko": "불멸왕의 장식띠",
+    "name_en": "Immortal King's Detail"
+  },
+  {
+    "id": 21844,
+    "key": "Immortal King's Soul Cage",
+    "name_ko": "불멸왕의 영혼집",
+    "name_en": "Immortal King's Soul Cage"
+  },
+  {
+    "id": 21845,
+    "key": "Immortal King's Will",
+    "name_ko": "불멸왕의 의지",
+    "name_en": "Immortal King's Will"
+  },
+  {
+    "id": 21846,
+    "key": "Immortal King",
+    "name_ko": "불멸왕",
+    "name_en": "Immortal King"
+  },
+  {
+    "id": 21847,
+    "key": "Aldur's Gauntlet",
+    "name_ko": "알두르의 운율",
+    "name_en": "Aldur's Rhythm"
+  },
+  {
+    "id": 21848,
+    "key": "Ancient Statue 3",
+    "name_ko": "보호자 콜릭",
+    "name_en": "Korlic the Protector"
+  },
+  {
+    "id": 21849,
+    "key": "Ancient Statue 2",
+    "name_ko": "감시자 마도크",
+    "name_en": "Madawc the Guardian"
+  },
+  {
+    "id": 21850,
+    "key": "Ancient Statue 1",
+    "name_ko": "수호자 탈릭",
+    "name_en": "Talic the Defender"
+  },
+  {
+    "id": 21856,
+    "key": "Baal Subject 6",
+    "name_ko": "도살자",
+    "name_en": "The Butcher"
+  },
+  {
+    "id": 21857,
+    "key": "Baal Subject 6a",
+    "name_ko": "굽는 자",
+    "name_en": "The Baker"
+  },
+  {
+    "id": 21858,
+    "key": "Baal Subject 6b",
+    "name_ko": "양초 장인",
+    "name_en": "The Candlestick Maker"
+  },
+  {
+    "id": 21861,
+    "key": "BaalColdMage",
+    "name_ko": "죽음의 마술사",
+    "name_en": "Death Mage"
+  },
+  {
+    "id": 21863,
+    "key": "Baal Tentacle",
+    "name_ko": "부패한 촉수",
+    "name_en": "Festering Appendages"
+  },
+  {
+    "id": 21875,
+    "key": "McAuley's Superstition",
+    "name_ko": "샌더의 미신",
+    "name_en": "Sander's Superstition"
+  },
+  {
+    "id": 21876,
+    "key": "McAuley's Taboo",
+    "name_ko": "샌더의 금기",
+    "name_en": "Sander's Taboo"
+  },
+  {
+    "id": 21877,
+    "key": "McAuley's Riprap",
+    "name_ko": "샌더의 사석",
+    "name_en": "Sander's Riprap"
+  },
+  {
+    "id": 21878,
+    "key": "McAuley's Paragon",
+    "name_ko": "샌더의 귀감",
+    "name_en": "Sander's Paragon"
+  },
+  {
+    "id": 21879,
+    "key": "McAuley's Folly",
+    "name_ko": "샌더의 어리석음",
+    "name_en": "Sander's Folly"
+  },
+  {
+    "id": 22485,
+    "key": "Moe",
+    "name_ko": "모오",
+    "name_en": "Moe"
+  },
+  {
+    "id": 27345,
+    "key": "Cold Rupture",
+    "name_ko": "추위의 파열",
+    "name_en": "Cold Rupture"
+  },
+  {
+    "id": 27346,
+    "key": "Flame Rift",
+    "name_ko": "불길의 균열",
+    "name_en": "Flame Rift"
+  },
+  {
+    "id": 27347,
+    "key": "Crack of the Heavens",
+    "name_ko": "천상의 틈",
+    "name_en": "Crack of the Heavens"
+  },
+  {
+    "id": 27348,
+    "key": "Rotting Fissure",
+    "name_ko": "부패의 분열",
+    "name_en": "Rotting Fissure"
+  },
+  {
+    "id": 27349,
+    "key": "Bone Break",
+    "name_ko": "뼈의 분쇄",
+    "name_en": "Bone Break"
+  },
+  {
+    "id": 27350,
+    "key": "Black Cleft",
+    "name_ko": "칠흑의 천공",
+    "name_en": "Black Cleft"
+  },
+  {
+    "id": 27387,
+    "key": "Warlord's Glory",
+    "name_ko": "군장의 영예",
+    "name_en": "Warlord's Glory"
+  },
+  {
+    "id": 27388,
+    "key": "Warlord's Lust",
+    "name_ko": "군장의 욕정",
+    "name_en": "Warlord's Lust"
+  },
+  {
+    "id": 27389,
+    "key": "Warlord's Conquest",
+    "name_ko": "군장의 정복",
+    "name_en": "Warlord's Conquest"
+  },
+  {
+    "id": 27390,
+    "key": "Warlord's Mantle",
+    "name_ko": "군장의 책임",
+    "name_en": "Warlord's Mantle"
+  },
+  {
+    "id": 27391,
+    "key": "Warlord's Crushers",
+    "name_ko": "군장의 분쇄자",
+    "name_en": "Warlord's Crushers"
+  },
+  {
+    "id": 27392,
+    "key": "Warlord's Authority",
+    "name_ko": "군장의 권위",
+    "name_en": "Warlord's Authority"
+  },
+  {
+    "id": 27587,
+    "key": "wa1",
+    "name_ko": "오래된 책",
+    "name_en": "Old Book"
+  },
+  {
+    "id": 27588,
+    "key": "wa2",
+    "name_ko": "고서",
+    "name_en": "Tome"
+  },
+  {
+    "id": 27589,
+    "key": "wa3",
+    "name_ko": "고문서",
+    "name_en": "Codex"
+  },
+  {
+    "id": 27590,
+    "key": "wa4",
+    "name_ko": "전서",
+    "name_en": "Compendium"
+  },
+  {
+    "id": 27591,
+    "key": "wa5",
+    "name_ko": "마법서",
+    "name_en": "Grimoire"
+  },
+  {
+    "id": 27592,
+    "key": "wa6",
+    "name_ko": "불탄 문헌",
+    "name_en": "Burnt Text"
+  },
+  {
+    "id": 27593,
+    "key": "wa7",
+    "name_ko": "어두운 고서",
+    "name_en": "Dark Tome"
+  },
+  {
+    "id": 27594,
+    "key": "wa8",
+    "name_ko": "어두운 고문서",
+    "name_en": "Dark Codex"
+  },
+  {
+    "id": 27595,
+    "key": "wa9",
+    "name_ko": "빙의된 전서",
+    "name_en": "Possessed Compendium"
+  },
+  {
+    "id": 27596,
+    "key": "waa",
+    "name_ko": "빙의된 마법서",
+    "name_en": "Possessed Grimoire"
+  },
+  {
+    "id": 27597,
+    "key": "wab",
+    "name_ko": "잊힌 책자",
+    "name_en": "Forgotten Volume"
+  },
+  {
+    "id": 27598,
+    "key": "wac",
+    "name_ko": "비술 고서",
+    "name_en": "Occult Tome"
+  },
+  {
+    "id": 27599,
+    "key": "wad",
+    "name_ko": "비술 고문서",
+    "name_en": "Occult Codex"
+  },
+  {
+    "id": 27600,
+    "key": "wae",
+    "name_ko": "신성모독 전서",
+    "name_en": "Blasphemous Compendium"
+  },
+  {
+    "id": 27601,
+    "key": "waf",
+    "name_ko": "신성모독 마법서",
+    "name_en": "Blasphemous Grimoire"
+  },
+  {
+    "id": 27609,
+    "key": "ua1",
+    "name_ko": "탈릭의 고뇌",
+    "name_en": "Talic's Anguish"
+  },
+  {
+    "id": 27610,
+    "key": "ua2",
+    "name_ko": "콜릭의 고통",
+    "name_en": "Korlic's Pain"
+  },
+  {
+    "id": 27611,
+    "key": "ua3",
+    "name_ko": "마도크의 분노",
+    "name_en": "Madawc's Ire"
+  },
+  {
+    "id": 27612,
+    "key": "ua4",
+    "name_ko": "불카토스의 악몽",
+    "name_en": "Bul-Kathos' Nightmare"
+  },
+  {
+    "id": 27613,
+    "key": "ua5",
+    "name_ko": "워루스크의 끝",
+    "name_en": "Worusk's End"
+  },
+  {
+    "id": 27614,
+    "key": "um3",
+    "name_ko": "보호자의 서리",
+    "name_en": "Protector's Frost"
+  },
+  {
+    "id": 27615,
+    "key": "um6",
+    "name_ko": "감시자의 빛",
+    "name_en": "Guardian's Light"
+  },
+  {
+    "id": 27616,
+    "key": "um5",
+    "name_ko": "감시자의 천둥",
+    "name_en": "Guardian's Thunder"
+  },
+  {
+    "id": 27617,
+    "key": "um1",
+    "name_ko": "수호자의 불",
+    "name_en": "Defender's Fire"
+  },
+  {
+    "id": 27618,
+    "key": "um4",
+    "name_ko": "보호자의 돌",
+    "name_en": "Protector's Stone"
+  },
+  {
+    "id": 27619,
+    "key": "um2",
+    "name_ko": "수호자의 역정",
+    "name_en": "Defender's Bile"
+  },
+  {
+    "id": 27628,
+    "key": "Ars Al'Diablolos",
+    "name_ko": "아르스 알디아볼로스",
+    "name_en": "Ars Al'Diabolos"
+  },
+  {
+    "id": 27629,
+    "key": "Ars Tor'Baalos",
+    "name_ko": "아르스 토르바알로스",
+    "name_en": "Ars Tor'Baalos"
+  },
+  {
+    "id": 27630,
+    "key": "Ars Dul'Mephistos",
+    "name_ko": "아르스 둘메피스토스",
+    "name_en": "Ars Dul'Mephistos"
+  },
+  {
+    "id": 27631,
+    "key": "Measured Wrath",
+    "name_ko": "신중한 진노",
+    "name_en": "Measured Wrath"
+  },
+  {
+    "id": 27632,
+    "key": "Dreadfang",
+    "name_ko": "공포송곳니",
+    "name_en": "Dreadfang"
+  },
+  {
+    "id": 27633,
+    "key": "Wraithstep",
+    "name_ko": "망령걸음",
+    "name_en": "Wraithstep"
+  },
+  {
+    "id": 27634,
+    "key": "Bloodpact Shard",
+    "name_ko": "피의 맹약 파편",
+    "name_en": "Bloodpact Shard"
+  },
+  {
+    "id": 27635,
+    "key": "Sling",
+    "name_ko": "새총",
+    "name_en": "Sling"
+  },
+  {
+    "id": 27636,
+    "key": "Opalvein",
+    "name_ko": "오팔맥",
+    "name_en": "Opalvein"
+  },
+  {
+    "id": 27637,
+    "key": "Entropy Locket",
+    "name_ko": "엔트로피 로켓",
+    "name_en": "Entropy Locket"
+  },
+  {
+    "id": 27638,
+    "key": "Gheed's Wager",
+    "name_ko": "기드의 내기",
+    "name_en": "Gheed's Wager"
+  },
+  {
+    "id": 27639,
+    "key": "Unique Warlock Helm",
+    "name_ko": "지옥파수꾼의 의지",
+    "name_en": "Hellwarden's Will"
+  },
+  {
+    "id": 27641,
+    "key": "Bane's Oathmaker",
+    "name_ko": "재앙의 맹약자",
+    "name_en": "Bane's Oathmaker"
+  },
+  {
+    "id": 27642,
+    "key": "Bane's Wraithskin",
+    "name_ko": "재앙의 망령껍질",
+    "name_en": "Bane's Wraithskin"
+  },
+  {
+    "id": 27643,
+    "key": "Bane's Authority",
+    "name_ko": "재앙의 권위",
+    "name_en": "Bane's Authority"
+  },
+  {
+    "id": 27644,
+    "key": "Horazon's Countenance",
+    "name_ko": "호라존의 표정",
+    "name_en": "Horazon's Countenance"
+  },
+  {
+    "id": 27645,
+    "key": "Horazon's Dominion",
+    "name_ko": "호라존의 지배",
+    "name_en": "Horazon's Dominion"
+  },
+  {
+    "id": 27646,
+    "key": "Horazon's Hold",
+    "name_ko": "호라존의 장악",
+    "name_en": "Horazon's Hold"
+  },
+  {
+    "id": 27647,
+    "key": "Horazon's Legacy",
+    "name_ko": "호라존의 유산",
+    "name_en": "Horazon's Legacy"
+  },
+  {
+    "id": 27648,
+    "key": "Horazon's Secrets",
+    "name_ko": "호라존의 비밀",
+    "name_en": "Horazon's Secrets"
+  },
+  {
+    "id": 27649,
+    "key": "Horazon's Splendor",
+    "name_ko": "호라존의 광채",
+    "name_en": "Horazon's Splendor"
+  },
+  {
+    "id": 27653,
+    "key": "Bane's Garments",
+    "name_ko": "재앙의 복장",
+    "name_en": "Bane's Garments"
+  },
+  {
+    "id": 27700,
+    "key": "helms",
+    "name_ko": "투구",
+    "name_en": "Helms"
+  },
+  {
+    "id": 27701,
+    "key": "armor",
+    "name_ko": "갑옷",
+    "name_en": "Armor"
+  },
+  {
+    "id": 27702,
+    "key": "shlds",
+    "name_ko": "방패",
+    "name_en": "Shields"
+  },
+  {
+    "id": 27703,
+    "key": "glove",
+    "name_ko": "장갑",
+    "name_en": "Gloves"
+  },
+  {
+    "id": 27704,
+    "key": "boots",
+    "name_ko": "장화",
+    "name_en": "Boots"
+  },
+  {
+    "id": 27705,
+    "key": "belts",
+    "name_ko": "허리띠",
+    "name_en": "Belts"
+  },
+  {
+    "id": 27706,
+    "key": "barbh",
+    "name_ko": "야만용사",
+    "name_en": "Barbarian"
+  },
+  {
+    "id": 27707,
+    "key": "druid",
+    "name_ko": "드루이드",
+    "name_en": "Druid"
+  },
+  {
+    "id": 27708,
+    "key": "palad",
+    "name_ko": "성기사",
+    "name_en": "Paladin"
+  },
+  {
+    "id": 27709,
+    "key": "necro",
+    "name_ko": "강령술사",
+    "name_en": "Necromancer"
+  },
+  {
+    "id": 27710,
+    "key": "warlo",
+    "name_ko": "악마술사",
+    "name_en": "Warlock"
+  },
+  {
+    "id": 27711,
+    "key": "axes",
+    "name_ko": "도끼",
+    "name_en": "Axes"
+  },
+  {
+    "id": 27712,
+    "key": "bows",
+    "name_ko": "활",
+    "name_en": "Bows"
+  },
+  {
+    "id": 27713,
+    "key": "xbows",
+    "name_ko": "석궁",
+    "name_en": "Crossbows"
+  },
+  {
+    "id": 27714,
+    "key": "daggs",
+    "name_ko": "단검",
+    "name_en": "Daggers"
+  },
+  {
+    "id": 27715,
+    "key": "javel",
+    "name_ko": "투창",
+    "name_en": "Javelins"
+  },
+  {
+    "id": 27716,
+    "key": "maces",
+    "name_ko": "철퇴",
+    "name_en": "Maces"
+  },
+  {
+    "id": 27717,
+    "key": "poles",
+    "name_ko": "미늘창",
+    "name_en": "Polearms"
+  },
+  {
+    "id": 27718,
+    "key": "scept",
+    "name_ko": "홀",
+    "name_en": "Scepters"
+  },
+  {
+    "id": 27719,
+    "key": "spear",
+    "name_ko": "창",
+    "name_en": "Spears"
+  },
+  {
+    "id": 27720,
+    "key": "stave",
+    "name_ko": "지팡이",
+    "name_en": "Staves"
+  },
+  {
+    "id": 27721,
+    "key": "sword",
+    "name_ko": "검",
+    "name_en": "Swords"
+  },
+  {
+    "id": 27722,
+    "key": "throw",
+    "name_ko": "투척",
+    "name_en": "Throwing"
+  },
+  {
+    "id": 27723,
+    "key": "wands",
+    "name_ko": "마법봉",
+    "name_en": "Wands"
+  },
+  {
+    "id": 27724,
+    "key": "amazo",
+    "name_ko": "아마존",
+    "name_en": "Amazon"
+  },
+  {
+    "id": 27725,
+    "key": "assas",
+    "name_ko": "암살자",
+    "name_en": "Assassin"
+  },
+  {
+    "id": 27726,
+    "key": "sorce",
+    "name_ko": "원소술사",
+    "name_en": "Sorceress"
+  },
+  {
+    "id": 27727,
+    "key": "charm",
+    "name_ko": "부적",
+    "name_en": "Charms"
+  },
+  {
+    "id": 27728,
+    "key": "amule",
+    "name_ko": "목걸이",
+    "name_en": "Amulets"
+  },
+  {
+    "id": 27729,
+    "key": "rings",
+    "name_ko": "반지",
+    "name_en": "Rings"
+  },
+  {
+    "id": 27730,
+    "key": "jewel",
+    "name_ko": "주얼",
+    "name_en": "Jewels"
+  },
+  {
+    "id": 27731,
+    "key": "potis",
+    "name_ko": "물약",
+    "name_en": "Potions"
+  },
+  {
+    "id": 27732,
+    "key": "keysr",
+    "name_ko": "열쇠 (일반)",
+    "name_en": "Keys (Regular)"
+  },
+  {
+    "id": 27733,
+    "key": "scrlt",
+    "name_ko": "두루마리와 고서",
+    "name_en": "Scrolls and Tomes"
+  },
+  {
+    "id": 27734,
+    "key": "ammo",
+    "name_ko": "탄약",
+    "name_en": "Ammunition"
+  },
+  {
+    "id": 27735,
+    "key": "uberr",
+    "name_ko": "우버 보상",
+    "name_en": "Uber Rewards"
+  },
+  {
+    "id": 27736,
+    "key": "uberm",
+    "name_ko": "우버 재료",
+    "name_en": "Uber Materials"
+  },
+  {
+    "id": 27737,
+    "key": "terrt",
+    "name_ko": "공포의 마수 토큰",
+    "name_en": "Terrorize Tokens"
+  },
+  {
+    "id": 27738,
+    "key": "absol",
+    "name_ko": "정수 / 면죄의 징표",
+    "name_en": "Essence / Token of Absolution"
+  },
+  {
+    "id": 27739,
+    "key": "runes",
+    "name_ko": "룬",
+    "name_en": "Runes"
+  },
+  {
+    "id": 27740,
+    "key": "gems",
+    "name_ko": "보석",
+    "name_en": "Gems"
+  },
+  {
+    "id": 27770,
+    "key": "armo",
+    "name_ko": "갑옷",
+    "name_en": "Armor"
+  },
+  {
+    "id": 27771,
+    "key": "weap",
+    "name_ko": "무기",
+    "name_en": "Weapons"
+  },
+  {
+    "id": 27772,
+    "key": "acce",
+    "name_ko": "장신구",
+    "name_en": "Accessories"
+  },
+  {
+    "id": 27773,
+    "key": "misc",
+    "name_ko": "기타",
+    "name_en": "Misc"
+  },
+  {
+    "id": 27830,
+    "key": "r_hel",
+    "name_ko": "투구",
+    "name_en": "Helmet"
+  },
+  {
+    "id": 27831,
+    "key": "r_arm",
+    "name_ko": "갑옷",
+    "name_en": "Body Armor"
+  },
+  {
+    "id": 27832,
+    "key": "r_off",
+    "name_ko": "보조 무기",
+    "name_en": "Offhand"
+  },
+  {
+    "id": 27833,
+    "key": "r_mel",
+    "name_ko": "근접",
+    "name_en": "Melee"
+  },
+  {
+    "id": 27834,
+    "key": "r_mis",
+    "name_ko": "투사체",
+    "name_en": "Missile"
+  },
+  {
+    "id": 27906,
+    "key": "Defender's Bile",
+    "name_ko": "수호자의 역정",
+    "name_en": "Defender's Bile"
+  },
+  {
+    "id": 27907,
+    "key": "Guardian's Thunder",
+    "name_ko": "감시자의 천둥",
+    "name_en": "Guardian's Thunder"
+  },
+  {
+    "id": 27908,
+    "key": "Protector's Frost",
+    "name_ko": "보호자의 서리",
+    "name_en": "Protector's Frost"
+  },
+  {
+    "id": 27909,
+    "key": "Defender's Fire",
+    "name_ko": "수호자의 불",
+    "name_en": "Defender's Fire"
+  },
+  {
+    "id": 27910,
+    "key": "Protector's Stone",
+    "name_ko": "보호자의 돌",
+    "name_en": "Protector's Stone"
+  },
+  {
+    "id": 27911,
+    "key": "Guardian's Light",
+    "name_ko": "감시자의 빛",
+    "name_en": "Guardian's Light"
+  },
+  {
+    "id": 27959,
+    "key": "circl",
+    "name_ko": "띠관",
+    "name_en": "Circlets"
+  },
+  {
+    "id": 28035,
+    "key": "PreCrafted Cold Rupture",
+    "name_ko": "잠복하는 추위의 파열",
+    "name_en": "Latent Cold Rupture"
+  },
+  {
+    "id": 28036,
+    "key": "Crafted Cold Rupture",
+    "name_ko": "새로워진 추위의 파열",
+    "name_en": "Renewed Cold Rupture"
+  },
+  {
+    "id": 28037,
+    "key": "PreCrafted Flame Rift",
+    "name_ko": "잠복하는 불길의 균열",
+    "name_en": "Latent Flame Rift"
+  },
+  {
+    "id": 28038,
+    "key": "Crafted Flame Rift",
+    "name_ko": "새로워진 불길의 균열",
+    "name_en": "Renewed Flame Rift"
+  },
+  {
+    "id": 28039,
+    "key": "PreCrafted Crack of the Heavens",
+    "name_ko": "잠복하는 천상의 틈",
+    "name_en": "Latent Crack of the Heavens"
+  },
+  {
+    "id": 28040,
+    "key": "Crafted Crack of the Heavens",
+    "name_ko": "새로워진 천상의 틈",
+    "name_en": "Renewed Crack of the Heavens"
+  },
+  {
+    "id": 28041,
+    "key": "PreCrafted Rotting Fissure",
+    "name_ko": "잠복하는 부패의 분열",
+    "name_en": "Latent Rotting Fissure"
+  },
+  {
+    "id": 28042,
+    "key": "Crafted Rotting Fissure",
+    "name_ko": "새로워진 부패의 분열",
+    "name_en": "Renewed Rotting Fissure"
+  },
+  {
+    "id": 28043,
+    "key": "PreCrafted Bone Break",
+    "name_ko": "잠복하는 뼈의 분쇄",
+    "name_en": "Latent Bone Break"
+  },
+  {
+    "id": 28044,
+    "key": "Crafted Bone Break",
+    "name_ko": "새로워진 뼈의 분쇄",
+    "name_en": "Renewed Bone Break"
+  },
+  {
+    "id": 28045,
+    "key": "PreCrafted Black Cleft",
+    "name_ko": "잠복하는 칠흑의 천공",
+    "name_en": "Latent Black Cleft"
+  },
+  {
+    "id": 28046,
+    "key": "Crafted Black Cleft",
+    "name_ko": "새로워진 칠흑의 천공",
+    "name_en": "Renewed Black Cleft"
+  },
+  {
+    "id": 28082,
+    "key": "gemsAbbrev",
+    "name_ko": "보석",
+    "name_en": "Gems"
+  }
+]
