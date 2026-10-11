@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* 💡 VS Code의 철 지난 문법 검사기 착각을 완전히 뚫어버리는 100% 무결점 청정 코드! */
+:root {
+  --background: #0A0A0A;
+  --foreground: #DCDCDC;
+}
