@@ -1,4 +1,4 @@
-import MarketHome from "../MarketHome"; // 💡 [깨짐 해결 핵심] 통신 엔진을 하위 부속품으로 호출!
+import MarketHome from "./MarketHome"; // 💡 [깨짐 해결 핵심] 통신 엔진을 하위 부속품으로 호출!
 
 export const metadata = {
   title: "Diablo II Realtime Market",
