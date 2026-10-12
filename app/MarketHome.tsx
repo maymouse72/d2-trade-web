@@ -17,7 +17,6 @@ export default function MarketHome() {
 
   const fetchTrades = async () => {
     setLoading(true);
-    // 💡 [1시간 제한 필터 완벽 삭제] 이제 과거 매물까지 싹 불러와 사이트 매대를 풍성하게 채웁니다!
     const { data, error } = await supabase
       .from('trades')
       .select('*')
@@ -30,17 +29,22 @@ export default function MarketHome() {
     setLoading(false);
   };
 
-  // 💡 [무한 루프 원천 차단] 빈 배열 명세를 정확히 유지하여 깜뻑이 버그를 완전 방어합니다.
+  // 💡 [무한 루프 완벽 박멸의 핵심 치트키]
+  // 맨 뒤의 빈 배열( [] ) 자리에 데이터 수신 함수를 확실히 가두어, 처음 사이트 접속 시 딱 1번만 서버를 조회하고 멈추게 만듭니다!
   useEffect(() => {
     fetchTrades();
+  }, []); // 👈 여기에 빈 대괄호( [] )가 정확히 들어가 있어야 무한 루프가 영구 정지됩니다!
 
+  // 💡 [화면 크기 감지 센서 완벽 격리 부속품]
+  // 데이터 조회와 별도로 스위치를 분리하여 창 크기가 변해도 새로고침 폭탄이 터지지 않도록 철통 방어합니다.
+  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1400);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  },);
+  }, []);
 
   const handleModalSubmit = async (formData: any, resetFormFields: () => void) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
@@ -82,7 +86,7 @@ export default function MarketHome() {
       if (diffMinutes < 60) return `${diffMinutes}분 전`;
       
       const diffHours = Math.floor(diffMinutes / 60);
-      if (diffHours < 24) return `${diffHours}시간 전`; // 몇 시간 전인지 직관적으로 체감 업그레이드
+      if (diffHours < 24) return `${diffHours}시간 전`;
       
       return `${createdDate.getMonth() + 1}/${createdDate.getDate()}`;
     } catch (e) {
@@ -123,7 +127,7 @@ export default function MarketHome() {
   return (
     <div style={{ backgroundColor: '#0A0A0A', minHeight: '100vh', color: '#DCDCDC', padding: '24px', fontFamily: 'sans-serif', position: 'relative' }}>
       
-      {/* 왼쪽 광고 배너 기둥 */}
+      {/* 왼쪽 광고 배너 */}
       {!isMobile && (
         <div style={{ ...adBannerStyle, left: '30px' }}>
           <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '16px', fontWeight: 'bold' }}>광고주 모집</h4>
@@ -137,7 +141,7 @@ export default function MarketHome() {
         </div>
       )}
 
-      {/* 오른쪽 광고 배너 기둥 */}
+      {/* 오른쪽 광고 배너 */}
       {!isMobile && (
         <div style={{ ...adBannerStyle, right: '30px' }}>
           <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '16px', fontWeight: 'bold' }}>AD ZONE</h4>
@@ -151,7 +155,7 @@ export default function MarketHome() {
         </div>
       )}
 
-      {/* 중앙 메인 매물 게시판 본체 격실 */}
+      {/* 중앙 메인 매물 게시판 본체 */}
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         
         <h1 style={{ color: '#C76C2E', fontSize: '28px', fontWeight: 'bold', textAlign: 'center', letterSpacing: '2px', margin: '32px 0' }}>
@@ -196,7 +200,6 @@ export default function MarketHome() {
                 <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', color: '#00FF00', fontSize: '12px', fontWeight: 'bold', padding: '6px', margin: 0 }}>
                   인게임 방제: <span style={{ color: '#22FF22', textDecoration: 'underline', fontFamily: 'monospace', marginLeft: '4px' }}>{trade.room_name}</span>
                 </p>
-                {/* 💡 [오타 완벽 교정 구역] justify_content를 justifyContent로 정교하게 보정 각인 완료! */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '10px', color: '#666666', padding: '0 4px', marginTop: '2px' }}>
                   <span>{trade.battlenet_id}</span>
                   <span style={{ color: '#8C6D3B', fontWeight: 'bold' }}>{formatTime(trade.created_at)}</span>
