@@ -13,8 +13,6 @@ export default function MarketHome() {
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-
-  // 💡 화면 가로 크기를 감지하여 모바일에서 광고를 숨겨주는 반응형 자바스크립트 엔진
   const [isMobile, setIsMobile] = useState(false);
 
   const fetchTrades = async () => {
@@ -36,14 +34,13 @@ export default function MarketHome() {
   useEffect(() => {
     fetchTrades();
 
-    // 화면 크기 실시간 체크 안전장치
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1400); // 1400px 이하 모니터 및 폰에서는 광고 숨김
+      setIsMobile(window.innerWidth < 1400);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  },);
 
   const handleModalSubmit = async (formData: any, resetFormFields: () => void) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
@@ -89,16 +86,15 @@ export default function MarketHome() {
     }
   };
 
-  // 💡 [디아블로 테마 공통 광고판 디자인 비서 서랍]
   const adBannerStyle = {
     position: 'fixed' as const,
     top: '160px',
-    width: '140px',
+    width: '150px', // 💡 이메일 확장을 위해 배너 가로폭을 10px 더 여유롭게 미세 조정!
     height: '500px',
     backgroundColor: '#141414',
-    border: '2px dashed #8C6D3B', // 점선 테두리로 배너 구역 느낌 물씬 각인
+    border: '2px dashed #8C6D3B',
     borderRadius: '6px',
-    padding: '20px 12px',
+    padding: '20px 10px',
     boxSizing: 'border-box' as const,
     display: 'flex',
     flexDirection: 'column' as const,
@@ -108,33 +104,48 @@ export default function MarketHome() {
     boxShadow: '0 10px 20px rgba(0,0,0,0.7)',
   };
 
+  // 💡 [초강력 가독성 이메일 전용 스타일 비서 서랍]
+  const emailStyle = {
+    display: 'block',
+    color: '#22FF22',
+    fontSize: '13px',            // 💡 기존 10px에서 13px로 대폭 확장 시인성 극대화!
+    fontFamily: 'monospace',
+    fontWeight: 'bold',
+    wordBreak: 'break-all' as const,
+    letterSpacing: '0.3px',       // 글자 간격을 넓혀 알아보기 편하게 정돈
+    lineHeight: '1.4',
+    marginTop: '6px'
+  };
+
   return (
     <div style={{ backgroundColor: '#0A0A0A', minHeight: '100vh', color: '#DCDCDC', padding: '24px', fontFamily: 'sans-serif', position: 'relative' }}>
       
-      {/* 💡 [왼쪽 광고주 모집 배너 기둥] 모바일이 아닐 때만 웅장하게 로드! */}
+      {/* 왼쪽 광고주 모집 배너 기둥 */}
       {!isMobile && (
-        <div style={{ ...adBannerStyle, left: '40px' }}>
-          <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '15px', fontWeight: 'bold' }}>광고주 모집</h4>
+        <div style={{ ...adBannerStyle, left: '30px' }}>
+          <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '16px', fontWeight: 'bold' }}>광고주 모집</h4>
           <p style={{ color: '#777777', fontSize: '12px', lineHeight: '1.6', margin: '0 0 24px 0' }}>
             디아블로2<br />실시간 마켓<br />배너 광고 구역
           </p>
           <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
-            <span style={{ display: 'block', color: '#C5A059', fontSize: '11px', fontWeight: 'bold', marginBottom: '6px' }}>문의 이메일</span>
-            <span style={{ display: 'block', color: '#22FF22', fontSize: '10px', fontFamily: 'monospace', wordBreak: 'break-all' }}>maymouse72<br />@gmail.com</span>
+            <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>문의 이메일</span>
+            {/* 💡 정품 확대 서체 적용 완료! */}
+            <span style={emailStyle}>maymouse72<br />@gmail.com</span>
           </div>
         </div>
       )}
 
-      {/* 💡 [오른쪽 광고주 모집 배너 기둥] */}
+      {/* 오른쪽 광고주 모집 배너 기둥 */}
       {!isMobile && (
-        <div style={{ ...adBannerStyle, right: '40px' }}>
-          <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '15px', fontWeight: 'bold' }}>AD ZONE</h4>
+        <div style={{ ...adBannerStyle, right: '30px' }}>
+          <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '16px', fontWeight: 'bold' }}>AD ZONE</h4>
           <p style={{ color: '#777777', fontSize: '12px', lineHeight: '1.6', margin: '0 0 24px 0' }}>
             24시간<br />잠들지 않는<br />트레이드 스페이스
           </p>
           <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
-            <span style={{ display: 'block', color: '#C5A059', fontSize: '11px', fontWeight: 'bold', marginBottom: '6px' }}>AD INQUIRY</span>
-            <span style={{ display: 'block', color: '#22FF22', fontSize: '10px', fontFamily: 'monospace', wordBreak: 'break-all' }}>maymouse72<br />@gmail.com</span>
+            <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>AD INQUIRY</span>
+            {/* 💡 정품 확대 서체 적용 완료! */}
+            <span style={emailStyle}>maymouse72<br />@gmail.com</span>
           </div>
         </div>
       )}
@@ -163,7 +174,7 @@ export default function MarketHome() {
             <div 
               key={trade.id} 
               onClick={() => handleCopyRoomName(trade.room_name)} 
-              style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
+              style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justify_content: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
             >
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '12px' }}>
