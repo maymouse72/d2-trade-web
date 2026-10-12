@@ -31,6 +31,7 @@ export default function MarketHome() {
     setLoading(false);
   };
 
+  // 💡 [버그 완전 해결 핵심 구역] 대괄호 [] 세팅을 완벽히 명시하여 무한 루프 폭탄을 영구 차단합니다!
   useEffect(() => {
     fetchTrades();
 
@@ -40,7 +41,7 @@ export default function MarketHome() {
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  },);
+  }, []);
 
   const handleModalSubmit = async (formData: any, resetFormFields: () => void) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
@@ -89,7 +90,7 @@ export default function MarketHome() {
   const adBannerStyle = {
     position: 'fixed' as const,
     top: '160px',
-    width: '150px', // 💡 이메일 확장을 위해 배너 가로폭을 10px 더 여유롭게 미세 조정!
+    width: '150px',
     height: '500px',
     backgroundColor: '#141414',
     border: '2px dashed #8C6D3B',
@@ -104,15 +105,14 @@ export default function MarketHome() {
     boxShadow: '0 10px 20px rgba(0,0,0,0.7)',
   };
 
-  // 💡 [초강력 가독성 이메일 전용 스타일 비서 서랍]
   const emailStyle = {
     display: 'block',
     color: '#22FF22',
-    fontSize: '13px',            // 💡 기존 10px에서 13px로 대폭 확장 시인성 극대화!
+    fontSize: '13px',
     fontFamily: 'monospace',
     fontWeight: 'bold',
     wordBreak: 'break-all' as const,
-    letterSpacing: '0.3px',       // 글자 간격을 넓혀 알아보기 편하게 정돈
+    letterSpacing: '0.3px',
     lineHeight: '1.4',
     marginTop: '6px'
   };
@@ -129,7 +129,6 @@ export default function MarketHome() {
           </p>
           <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
             <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>문의 이메일</span>
-            {/* 💡 정품 확대 서체 적용 완료! */}
             <span style={emailStyle}>maymouse72<br />@gmail.com</span>
           </div>
         </div>
@@ -144,7 +143,6 @@ export default function MarketHome() {
           </p>
           <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
             <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>AD INQUIRY</span>
-            {/* 💡 정품 확대 서체 적용 완료! */}
             <span style={emailStyle}>maymouse72<br />@gmail.com</span>
           </div>
         </div>
@@ -174,7 +172,7 @@ export default function MarketHome() {
             <div 
               key={trade.id} 
               onClick={() => handleCopyRoomName(trade.room_name)} 
-              style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justify_content: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
+              style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
             >
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '12px' }}>
