@@ -31,19 +31,19 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [초정밀 공간 디자이닝] 사장님 피드백 100% 반영 균형 교정소
+   📐 [초정밀 줄 정렬소] 매물창 내부 엉킴 현상 100% 박멸 구역
    ========================================================== */
 
-/* 1. 💡 [공백 제거] 중앙 마켓 게시판 가로 폭을 대폭 확장하여 양옆 배너 사이 틈새 전면 차단 */
+/* 1. 중앙 마켓 게시판 와이드 뷰 설정 */
 .center-board-container {
-  max-width: 1200px !important; /* 900px에서 1200px로 대폭 확장하여 와이드 뷰 개통! */
+  max-width: 1200px !important;
   width: 100% !important;
   margin: 0 auto !important;
   padding: 0 40px !important;
   box-sizing: border-box !important;
 }
 
-/* 2. 💡 [매물창 알맹이 대확장] 가로 폭이 커진 만큼 카드 3열 종대 상자들을 시원시원하게 넓힙니다 */
+/* 2. 매물 상자 3열 종대 배치 */
 .grid { 
   display: grid !important; 
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
@@ -58,56 +58,93 @@ input[type="text"]:focus, textarea:focus {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-/* 3. 💡 [래더·탈아뮬과 이스트 일직선 교정] 카드 헤더 내부 가로축 정밀 동기화 */
-.grid > div > div:first-child {
+/* 🚨 3. [핵심 줄꼬임 수술] 매물 카드 본체 내부 정렬 강제 격리 */
+.bg-black-90 {
+  background-color: rgba(17, 17, 17, 0.9) !important;
+  display: flex !important;
+  flex-direction: column !important; /* 내부 요소들을 위에서 아래로 순서대로 정렬 */
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+}
+
+/* 🚨 4. [헤더 줄꼬임 차단] 래더·아이템명(왼쪽 끝)과 가격룬(우측 끝)을 한 줄로 완벽 일직선 정렬 */
+.bg-black-90 > div:first-child > div:first-child {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important; /* 양쪽 끝으로 밀어내기 */
+  align-items: center !important; /* 아래위 중심선 칼 일치 */
+  width: 100% !important;
+  margin-bottom: 12px !important; /* 아래 옵션창과의 간격 유지 */
+  box-sizing: border-box !important;
+}
+
+/* 아이템 제목 글자 압축 버그 차단 */
+.bg-black-90 h3 {
+  color: #C76C2E !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  margin: 0 !important;
+  text-align: left !important;
+  line-height: 1.4 !important;
+  flex: 1 !important; /* 남는 가로 공간을 다 차지하게 함 */
+}
+
+/* 가격 룬 박스 규격 고정 */
+.bg-black-90 h3 + span {
+  color: #C5A059 !important;
+  background-color: #0A0A0A !important;
+  border: 1px solid #222222 !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  white-space: nowrap !important; /* 줄바꿈 절대 방지 */
+  margin-left: 12px !important;
+}
+
+/* 🚨 5. [옵션창 독방 격리] 뒤엉키던 세부 옵션 글자 상자를 아랫줄 독립 공간으로 분리 */
+.bg-black-90 p {
+  display: block !important; /* 무조건 한 줄 통째로 차지 */
+  width: 100% !important;
+  background-color: #0A0A0A !important;
+  border: 1px solid #1A1A1A !important;
+  color: #B0B0B0 !important;
+  font-size: 12px !important;
+  padding: 12px !important;
+  border-radius: 6px !important;
+  min-height: 70px !important;
+  margin: 8px 0 16px 0 !important;
+  line-height: 1.5 !important;
+  word-break: break-all !important;
+  box-sizing: border-box !important;
+}
+
+/* 6. 새로고침 및 내 매물 등록 버튼 라인 높이 일치 마감 */
+.bg-dark-gray {
+  background-color: #141414 !important;
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
-  align-items: center !important; /* ⚔️ 아래위 일직선 칼정렬 맞춤 */
-  width: 100% !important;
+  align-items: center !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
 }
 
-/* 4. 💡 [버튼 짝짝이 교정] 새로고침과 매물등록 버튼 규격·스타일 100% 동기화 */
 .bg-dark-gray button {
-  height: 38px !important; /* 높이 규격 통일 */
+  height: 38px !important;
   padding: 0 20px !important;
   font-size: 13px !important;
   font-weight: 800 !important;
   border-radius: 4px !important;
-  transition: all 0.15s ease !important;
   box-sizing: border-box !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
+.bg-dark-gray button:first-child { background-color: #1F1F1F !important; border: 1px solid #8C6D3B !important; color: #FFFFFF !important; }
+.bg-dark-gray button:last-child { background-color: #C5A059 !important; border: 1px solid #6E5325 !important; color: #0A0A0A !important; }
 
-/* 새로고침 버튼 전용 배틀넷 다크 스킨 */
-.bg-dark-gray button:first-child {
-  background-color: #1F1F1F !important;
-  border: 1px solid #8C6D3B !important;
-  color: #FFFFFF !important;
-}
-.bg-dark-gray button:first-child:hover {
-  border-color: #C5A059 !important;
-}
-
-/* 내 매물 등록 버튼 전용 호라드릭 골드 스킨 */
-.bg-dark-gray button:last-child {
-  background-color: #C5A059 !important;
-  border: 1px solid #6E5325 !important;
-  color: #0A0A0A !important;
-}
-.bg-dark-gray button:last-child:hover {
-  background-color: #B48F48 !important;
-}
-
-/* 5. 플렉스 기본 축 안전 한계선 세팅 */
-.flex { display: flex !important; flex-direction: row !important; }
-.flex-col { display: flex !important; flex-direction: column !important; }
-.justify-between { justify-content: space-between !important; align-items: center !important; }
-.items-center { align-items: center !important; }
-
-/* 6. 좌우 고정 광고 기둥 슬림 하드웨어 배치 */
+/* 7. 고정 광고 기둥 슬림 배치 */
 .fixed-ad-banner {
   position: fixed !important;
   top: 160px !important;
@@ -129,27 +166,14 @@ input[type="text"]:focus, textarea:focus {
 .fixed-left-box { left: 20px !important; }
 .fixed-right-box { right: 20px !important; }
 
-/* 7. 고풍스러운 타이틀 디테일 명세 */
+/* 기타 타이포 배너 세팅 */
 .welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
 .main-platform-title { color: #C76C2E !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 16px 0 32px 0 !important; }
-
-.bg-dark-gray { background-color: #141414 !important; }
-.bg-black-90 { background-color: rgba(17, 17, 17, 0.9) !important; }
-.bg-deep-black { background-color: #0A0A0A !important; }
 .border-2 { border-width: 2px !important; border-style: solid !important; }
-.border { border-width: 1px !important; border-style: solid !important; }
 .border-gold { border-color: #8C6D3B !important; }
 .rounded-md { border-radius: 6px !important; }
-.p-4 { padding: 16px !important; }
 .p-5 { padding: 20px !important; }
-.mb-4 { margin-bottom: 16px !important; }
-.mb-6 { margin-bottom: 24px !important; }
-.mt-6 { margin-top: 24px !important; }
 .whitespace-nowrap { white-space: nowrap !important; }
-.break-all { word-break: break-all !important; }
-.text-center { text-align: center !important; }
-
-/* 배너 문자 폰트 복구 */
 .ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 15px !important; font-weight: bold !important; }
 .ad-text-muted { color: #777777 !important; font-size: 11px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
 .ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
