@@ -1,6 +1,6 @@
-/* app/globals.css */
+/* src/app/globals.css */
 
-/* 💡 테일윈드 v4 기본 엔진 구동 */
+/* 💡 테일윈드 v4 최신 가속 가루 엔진 정품 구동 */
 @import "tailwindcss";
 
 :root {
@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-/* 폼 입력창 레이아웃 철통 보존 */
+/* 폼 입력창 및 텍스트 상자 레이아웃 철통 보존 */
 input[type="text"], textarea {
   background-color: #0A0A0A !important;
   border: 2px solid #8C6D3B !important;
@@ -31,7 +31,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [철통 잠금] 첫 화면 예전 정품 황금비율 100% 홀딩 보존 구역
+   📐 [메인화면] 첫 화면 예전 정품 황금비율 100% 홀딩 보존 구역
    ========================================================== */
 
 .center-board-container {
@@ -51,7 +51,14 @@ input[type="text"]:focus, textarea:focus {
   margin: 16px 0 48px 0 !important; 
 }
 
-.welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
+.welcome-banner-text { 
+  color: #C5A059 !important; 
+  font-size: 15px !important; 
+  font-weight: bold !important; 
+  text-align: center !important; 
+  margin-top: 32px !important; 
+  letter-spacing: 0.5px !important; 
+}
 
 .bg-dark-gray {
   background-color: #141414 !important;
@@ -161,193 +168,117 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   🚨 [순수 태그 타격] 특수문자 전면 박멸 및 상세창 강제 인양 구역
+   🚨 [2부 정밀 인양 격실] 아래 조각을 이 라인 바짝 밑에 연달아 붙이시면 완공됩니다!
    ========================================================== */
-
-/* 1. 상세창 전체 외곽 암막 및 고화질 일러스트 정품 주소 결합 */
-body:has(.min-h-screen), body:has([class*="trade"]) {
-  min-height: 100vh !important;
-  background-image: url('https://unsplash.com') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-blend-mode: color-burn !important;
-}
-
-/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 100% 무조건 복구 강제 각인 */
-body:has([class*="trade"]) main,
-body:has([class*="trade"]) .min-h-screen > div:nth-child(2),
-body:has([class*="trade"]) div[style*="max-width: 650px"],
-.max-w-650-center {
+   /* 1. 🛡️ 중앙 상세창 호라드릭 프레임 암막 상자 100% 원격 강제 복구 각인 */
+.max-w-650-center,
+div[style*="max-width: 650px"],
+div[style*="max-width:650px"] {
   max-width: 650px !important;
   width: 100% !important;
-  margin: 0 auto !important;
-  background-color: rgba(20, 20, 20, 0.95) !important; /* 칠흑 같은 암막 상자 */
-  border: 2px solid #8C6D3B !important; /* 골드 프레임 테두리 완벽 복구 */
+  margin: 40px auto !important;
+  background-color: #141414 !important; /* 칠흑 스킨 강제 각인 */
+  border: 2px solid #8C6D3B !important; /* 골드 프레임 하드웨어 테두리 복구 */
   padding: 32px !important;
   border-radius: 8px !important;
   box-shadow: 0 20px 50px rgba(0,0,0,0.95) !important;
   box-sizing: border-box !important;
-  display: flex !important;
-  flex-direction: column !important; /* 내부 세로 찢어짐 원천 파괴 */
 }
 
-/* 상세창 전체 버튼 및 링크 마우스 올리면 무조건 손모양(Pointer) 잠금 */
-body:has([class*="trade"]) button, 
-body:has([class*="trade"]) [onClick] {
-  cursor: pointer !important;
-}
-
-/* 3. 수평 플렉스 기본 축 안전선 세팅 */
-body:has([class*="trade"]) .flex { display: flex !important; flex-direction: row !important; }
-body:has([class*="trade"]) .flex-col { display: flex !important; flex-direction: column !important; }
-body:has([class*="trade"]) .justify-between { justify-content: space-between !important; align-items: center !important; }
-
-/* 4. PWA 푸시 알림 주황색 테두리 배너 강제 복구 */
-body:has([class*="trade"]) main > div:first-child,
-body:has([class*="trade"]) div[style*="border: 1px solid #C76C2E"] {
+/* 2. PWA 푸시 알림 주황색 테두리 배너 레이아웃 강제 교정 */
+div[style*="border: 1px solid #C76C2E"],
+div[style*="border:1px solid #C76C2E"] {
   background-color: #0A0A0A !important;
   border: 1px solid #C76C2E !important;
   padding: 16px !important;
   border-radius: 6px !important;
   box-sizing: border-box !important;
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 100% !important;
 }
 
-body:has([class*="trade"]) div[style*="border: 1px solid #C76C2E"] button {
-  height: 34px !important;
-  padding: 0 16px !important;
-  font-size: 12px !important;
-  font-weight: 900 !important;
-  background-color: #C76C2E !important;
-  color: #0A0A0A !important;
-  border: none !important;
-  border-radius: 4px !important;
-}
-
-/* 5. 래더시즌·아이템명 가격 가로축 정렬 수술 */
-body:has([class*="trade"]) div[style*="border-bottom: 1px solid #222222"],
-body:has([class*="trade"]) div[style*="border-bottom"] {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: center !important;
+/* 3. 래더시즌 · 아이템명 가격 수평 축 보정 수술 */
+div[style*="border-bottom: 1px solid #222222"],
+div[style*="border-bottom:1px solid #222222"] {
   border-bottom: 1px solid #2A2A2A !important;
   padding-bottom: 20px !important;
   margin-bottom: 20px !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
 }
 
-body:has([class*="trade"]) h2 { color: #C76C2E !important; font-size: 24px !important; font-weight: 900 !important; margin: 0 !important; text-align: left !important; }
-body:has([class*="trade"]) h2 + div { text-align: right !important; }
-body:has([class*="trade"]) h2 + div > span { color: #C5A059 !important; background-color: #0A0A0A !important; border: 2px solid #8C6D3B !important; padding: 6px 16px !important; border-radius: 4px !important; font-weight: 900 !important; font-size: 18px !important; display: inline-block !important; }
-
-/* 6. 🚨 [아이템 세부 옵션창 칠흑 스킨 강제 각인] 투명화 전면 철폐 및 가로 100% 와이드 복구 */
-body:has([class*="trade"]) div[style*="min-height: 80px"],
-body:has([class*="trade"]) div[style*="min-height"] {
+/* 4. 🚨 [아이템 세부 옵션창 칠흑 복구] 쪼그라들던 박스 가로폭 100% 와이드 보정 */
+div[style*="min-height: 80px"],
+div[style*="min-height:80px"],
+div[style*="min-height: 96px"] {
   background-color: #030303 !important;
   border: 1px solid #222222 !important;
   padding: 16px !important;
   border-radius: 4px !important;
   color: #DDD !important;
-  font-size: 14px !important;
-  font-family: monospace !important;
-  line-height: 1.6 !important;
   box-sizing: border-box !important;
-  width: 100% !important; /* 쪼그라들던 박스 대연장 */
+  width: 100% !important;
 }
 
-/* 7. 🚨 [인게임 방 정보 상자 골드 프레임 각인] 복사 버튼 밸런스 및 와이드 가로 폭 완전체 */
-body:has([class*="trade"]) div[style*="border: 2px solid #8C6D3B"],
-body:has([class*="trade"]) div[style*="border: 2px solid"] {
+/* 5. 🚨 [인게임 방 정보 상자 골드 프레임 각인] 복사 버튼 정렬 복구 */
+div[style*="border: 2px solid #8C6D3B"]:not(.max-w-650-center),
+div[style*="border:2px solid #8C6D3B"]:not(.max-w-650-center) {
   background-color: #0A0A0A !important;
   border: 2px solid #8C6D3B !important;
   padding: 16px !important;
   border-radius: 6px !important;
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  margin-bottom: 32px !important;
   box-sizing: border-box !important;
-  width: 100% !important; /* 투명화 영구 파괴 */
+  width: 100% !important;
 }
 
-body:has([class*="trade"]) div[style*="border: 2px solid #8C6D3B"] button {
-  background-color: #C5A059 !important;
-  color: #0A0A0A !important;
-  border: 1px solid #6E5325 !important;
-  padding: 10px 18px !important;
-  font-size: 13px !important;
-  font-weight: 900 !important;
-  border-radius: 4px !important;
-  height: 38px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-/* 8. 실시간 흥정 댓글 구역 수평 정렬 */
-body:has([class*="trade"]) div[style*="border-top: 2px dashed #333333"],
-body:has([class*="trade"]) div[style*="border-top: 2px dashed"] {
+/* 6. 실시간 흥정 댓글 구역 수평 정렬 수술 */
+div[style*="border-top: 2px dashed #333333"],
+div[style*="border-top:2px dashed #333333"] {
   border-top: 2px dashed #262626 !important;
   padding-top: 24px !important;
   width: 100% !important;
 }
 
-body:has([class*="trade"]) div[style*="border-top: 2px dashed #333333"] h3 { color: #C76C2E !important; font-size: 16px !important; font-weight: 800 !important; margin: 0 0 16px 0 !important; text-align: left !important; }
-
-/* 댓글 입력칸과 버튼 가로 100% 일직선 라인 수술 */
-body:has([class*="trade"]) div[style*="border-top: 2px dashed #333333"] > div {
-  display: flex !important;
-  flex-direction: row !important;
+div[style*="border-top: 2px dashed #333333"] > div,
+div[style*="border-top:2px dashed #333333"] > div {
   gap: 10px !important;
   margin-bottom: 24px !important;
   width: 100% !important;
-  align-items: center !important;
 }
 
-body:has([class*="trade"]) div[style*="border-top: 2px dashed #333333"] input {
-  flex-grow: 1 !important;
-  width: 100% !important;
-  height: 40px !important;
+/* 7. 좌우 고정 광고 날개 기둥 하드웨어 정렬 */
+.fixed-ad-banner { 
+  position: fixed !important; 
+  top: 160px !important; 
+  width: 150px !important; 
+  height: 500px !important; 
+  background-color: #141414 !important; 
+  border: 2px dashed #8C6D3B !important; 
+  border-radius: 6px !important; 
+  padding: 20px 10px !important; 
+  box-sizing: border-box !important; 
+  display: flex !important; 
+  flex-direction: column !important; 
+  justify-content: center !important; 
+  align-items: center !important; 
+  text-align: center !important; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important; 
+  z-index: 50 !important; 
 }
-
-body:has([class*="trade"]) div[style*="border-top: 2px dashed #333333"] button {
-  height: 40px !important;
-  background-color: #1F1F1F !important;
-  border: 1px solid #8C6D3B !important;
-  color: #FFFFFF !important;
-  padding: 0 20px !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
-  border-radius: 4px !important;
-}
-
-/* 댓글 리스트 개별 박스 테마 복구 수술 */
-body:has([class*="trade"]) div[style*="border: 1px solid #222222"] {
-  background-color: #0A0A0A !important;
-  border: 1px solid #222222 !important;
-  padding: 12px 16px !important;
-  border-radius: 4px !important;
-  box-sizing: border-box !important;
-  width: 100% !important;
-}
-
-/* 좌우 고정 광고 날개 기둥 하드웨어 정렬 */
-.fixed-ad-banner { position: fixed !important; top: 160px !important; width: 140px !important; height: 500px !important; background-color: #141414 !important; border: 2px dashed #8C6D3B !important; border-radius: 6px !important; padding: 20px 10px !important; box-sizing: border-box !important; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important; z-index: 50 !important; }
-.fixed-left-box { left: 20px !important; }
-.fixed-right-box { right: 20px !important; }
+.fixed-left-box { left: 30px !important; }
+.fixed-right-box { right: 30px !important; }
 .whitespace-nowrap { white-space: nowrap !important; }
 .break-all { word-break: break-all !important; }
 .text-center { text-align: center !important; }
-.ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 15px !important; font-weight: bold !important; }
-.ad-text-muted { color: #777777 !important; font-size: 11px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
+.ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 16px !important; font-weight: bold !important; }
+.ad-text-muted { color: #777777 !important; font-size: 12px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
 .ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
-.ad-label { display: block !important; color: #C5A059 !important; font-size: 11px !important; font-weight: bold !important; margin-bottom: 4px !important; }
-.ad-email-text { display: block !important; color: #22FF22 !important; font-size: 12px !important; font-family: monospace !important; font-weight: bold !important; word-break: break-all !important; line-height: 1.4 !important; margin-top: 6px !important; }
+.ad-label { display: block !important; color: #C5A059 !important; font-size: 12px !important; font-weight: bold !important; margin-bottom: 4px !important; }
+
+/* 💡 [오타 완벽 정돈 완료 구역] font-size 소문자로 정밀 매핑하여 VS Code 에러 영구 박멸! */
+.ad-email-text { 
+  display: block !important; 
+  color: #22FF22 !important; 
+  font-size: 13px !important; 
+  font-family: monospace !important; 
+  font-weight: bold !important; 
+  word-break: break-all !important; 
+  line-height: 1.4 !important; 
+  margin-top: 6px !important; 
+}
