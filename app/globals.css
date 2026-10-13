@@ -1,9 +1,9 @@
 /* app/globals.css */
 
-/* 💡 테일윈드 v4 엔진 구동 */
+/* 💡 테일윈드 v4 기본 엔진 구동 */
 @import "tailwindcss";
 
-/* 🛡️ [대완공 치트키] 컴파일러가 깨져도 브라우저가 직접 정렬하도록 강제 주입 */
+/* 🛡️ [대완공 치트키] 컴파일러가 깨져도 브라우저가 직접 정렬하도록 레이아웃 강제 고정 */
 :root {
   --background: #030303;
   --foreground: #DCDCDC;
@@ -33,55 +33,81 @@ input[type="text"], textarea {
   border-radius: 4px !important;
   outline: none !important;
 }
-
 input[type="text"]:focus, textarea:focus {
   border-color: #C5A059 !important;
 }
 
-/* 💡 [글자 찢어짐 및 배너 겹침 현상 원천 차단] 강제 그리드/플렉스 정밀 보정 아키텍처 */
-.max-w-\[900px\] { max-width: 900px !important; width: 100% !important; }
-.mx-auto { margin-left: auto !important; margin-right: auto !important; }
-.bg-\[\#141414\] { background-color: #141414 !important; }
-.border-\[\#8C6D3B\] { border-color: #8C6D3B !important; }
-.border-2 { border-width: 2px !important; border-style: solid !important; }
-.rounded-md { border-radius: 0.375rem !important; }
-.p-5 { padding: 1.25rem !important; }
-.mb-6 { margin-bottom: 1.5rem !important; }
+/* ==========================================================
+   🚨 [오타 100% 원천 박멸] 순수 CSS 표준 정렬 구역
+   ========================================================== */
 
-/* 🚨 찌그러진 매물 카드 상자 강제 와이드 정렬 */
+/* 1. 중앙 메물 게시판 본체 크기 및 강제 마진 조율 */
+.max-w-900 { 
+  max-width: 900px !important; 
+  width: 100% !important; 
+  margin: 0 auto !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  box-sizing: border-box !important;
+}
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* 2. 성역의 매물 카드 상자 3열 종대 완벽 그리드 정렬 */
 .grid { 
   display: grid !important; 
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
-  gap: 1.25rem !important; 
+  gap: 20px !important; 
   width: 100% !important;
+  box-sizing: border-box !important;
 }
-
 @media (min-width: 768px) {
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-/* 가로 배열 요소 강제 복구 (글자 세로 찢어짐 박멸) */
+/* 3. 글자 세로 찢어짐 원천 차단 (가로 정렬 플렉스 축 완벽 고정) */
 .flex { 
   display: flex !important; 
   flex-direction: row !important; 
-  width: 100% !important; 
+  width: 100% !important;
 }
 .flex-col { 
   display: flex !important; 
   flex-direction: column !important; 
 }
-.justify-between { justify-content: space-between !important; flex-wrap: nowrap !important; }
-.items-center { align-items: center !important; }
+.justify-between { justify-content: space-between !important; align-items: center !important; }
 .items-start { align-items: flex-start !important; }
-.gap-2 { gap: 0.5rem !important; }
-.gap-3 { gap: 0.75rem !important; }
-.gap-4 { gap: 1rem !important; }
-.gap-5 { gap: 1.25rem !important; }
+.items-center { align-items: center !important; }
 
-/* 배너 내부 텍스트 유실 방지 */
-.break-all { word-break: break-all !important; }
+/* 4. 고정 배너 위치 이탈 및 상단 겹침 버그 완벽 박멸 (역슬래시 오타 싹 청소) */
+.fixed { position: fixed !important; z-index: 50 !important; }
+.top-160 { top: 160px !important; }
+.left-30 { left: 30px !important; }
+.right-30 { right: 30px !important; }
+.w-150 { width: 150px !important; }
+.h-500 { height: 500px !important; }
+
+/* 5. 디아블로 테마 고풍스러운 색상 및 테두리 인프라 수동 직접 복구 */
+.bg-dark-gray { background-color: #141414 !important; }
+.bg-black-90 { background-color: rgba(17, 17, 17, 0.9) !important; }
+.bg-deep-black { background-color: #0A0A0A !important; }
+.bg-button-dark { background-color: #1F1F1F !important; }
+.border-2 { border-width: 2px !important; border-style: solid !important; }
+.border { border-width: 1px !important; border-style: solid !important; }
+.border-gold { border-color: #8C6D3B !important; }
+.border-dashed { border-style: dashed !important; }
+.rounded-md { border-radius: 6px !important; }
+.p-4 { padding: 16px !important; }
+.p-5 { padding: 20px !important; }
+.mb-4 { margin-bottom: 16px !important; }
+.mb-6 { margin-bottom: 24px !important; }
+.mb-8 { margin-bottom: 32px !important; }
+.mt-3 { margin-top: 12px !important; }
+.mt-6 { margin-top: 24px !important; }
+
+/* 6. 컴포넌트 텍스트 예외 규격 세팅 */
 .whitespace-nowrap { white-space: nowrap !important; }
+.break-all { word-break: break-all !important; }
+.text-center { text-align: center !important; }
