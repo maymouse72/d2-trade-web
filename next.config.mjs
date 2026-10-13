@@ -2,7 +2,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // 💡 [타입 스크립트 필터 우회] 빌드 로봇이 globals.css를 해독하도록 강제 연동선 주입!
+  // 💡 빌드 로봇(Turbopack)이 globals.css에 주입된 테일윈드 v4 명령어를 완벽하게 해독하도록 다리를 놓아줍니다!
   experimental: {
     turbo: {
       rules: {
