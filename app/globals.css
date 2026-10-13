@@ -1,6 +1,6 @@
 /* app/globals.css */
 
-/* 💡 테일윈드 기본 엔진 구동 */
+/* 💡 테일윈드 v4 기본 엔진 구동 */
 @import "tailwindcss";
 
 :root {
@@ -15,12 +15,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* 💡 [배경 복구 성공] 디아블로 감성의 웅장한 다크 판타지 고화질 일러스트 정품 경로 주입! */
-  background-image: url('https://unsplash.com') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-blend-mode: color-burn !important;
 }
 
 /* 폼 입력창 레이아웃 철통 보존 */
@@ -37,15 +31,90 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   ⚔️ [성역의 마켓] 레이아웃 간섭 완벽 조율 명세서
+   📐 [초정밀 공간 디자이닝] 사장님 피드백 100% 반영 균형 교정소
    ========================================================== */
 
-/* 1. 좌우 고정 광고 기둥 정밀 좌표 고정 수술 */
+/* 1. 💡 [공백 제거] 중앙 마켓 게시판 가로 폭을 대폭 확장하여 양옆 배너 사이 틈새 전면 차단 */
+.center-board-container {
+  max-width: 1200px !important; /* 900px에서 1200px로 대폭 확장하여 와이드 뷰 개통! */
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. 💡 [매물창 알맹이 대확장] 가로 폭이 커진 만큼 카드 3열 종대 상자들을 시원시원하게 넓힙니다 */
+.grid { 
+  display: grid !important; 
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
+  gap: 24px !important; 
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (min-width: 1400px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+}
+
+/* 3. 💡 [래더·탈아뮬과 이스트 일직선 교정] 카드 헤더 내부 가로축 정밀 동기화 */
+.grid > div > div:first-child {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important; /* ⚔️ 아래위 일직선 칼정렬 맞춤 */
+  width: 100% !important;
+}
+
+/* 4. 💡 [버튼 짝짝이 교정] 새로고침과 매물등록 버튼 규격·스타일 100% 동기화 */
+.bg-dark-gray button {
+  height: 38px !important; /* 높이 규격 통일 */
+  padding: 0 20px !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  border-radius: 4px !important;
+  transition: all 0.15s ease !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 새로고침 버튼 전용 배틀넷 다크 스킨 */
+.bg-dark-gray button:first-child {
+  background-color: #1F1F1F !important;
+  border: 1px solid #8C6D3B !important;
+  color: #FFFFFF !important;
+}
+.bg-dark-gray button:first-child:hover {
+  border-color: #C5A059 !important;
+}
+
+/* 내 매물 등록 버튼 전용 호라드릭 골드 스킨 */
+.bg-dark-gray button:last-child {
+  background-color: #C5A059 !important;
+  border: 1px solid #6E5325 !important;
+  color: #0A0A0A !important;
+}
+.bg-dark-gray button:last-child:hover {
+  background-color: #B48F48 !important;
+}
+
+/* 5. 플렉스 기본 축 안전 한계선 세팅 */
+.flex { display: flex !important; flex-direction: row !important; }
+.flex-col { display: flex !important; flex-direction: column !important; }
+.justify-between { justify-content: space-between !important; align-items: center !important; }
+.items-center { align-items: center !important; }
+
+/* 6. 좌우 고정 광고 기둥 슬림 하드웨어 배치 */
 .fixed-ad-banner {
   position: fixed !important;
   top: 160px !important;
-  width: 150px !important;
+  width: 140px !important;
   height: 500px !important;
+  background-color: #141414 !important;
+  border: 2px dashed #8C6D3B !important;
   border-radius: 6px !important;
   padding: 20px 10px !important;
   box-sizing: border-box !important;
@@ -57,67 +126,16 @@ input[type="text"]:focus, textarea:focus {
   box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important;
   z-index: 50 !important;
 }
-.fixed-left-box { left: 30px !important; }
-.fixed-right-box { right: 30px !important; }
+.fixed-left-box { left: 20px !important; }
+.fixed-right-box { right: 20px !important; }
 
-.ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 16px !important; font-weight: bold !important; }
-.ad-text-muted { color: #777777 !important; font-size: 12px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
-.ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
-.ad-label { display: block !important; color: #C5A059 !important; font-size: 12px !important; font-weight: bold !important; margin-bottom: 4px !important; }
-.ad-email-text { display: block !important; color: #22FF22 !important; font-size: 13px !important; font-family: monospace !important; font-weight: bold !important; word-break: break-all !important; line-height: 1.4 !important; margin-top: 6px !important; }
+/* 7. 고풍스러운 타이틀 디테일 명세 */
+.welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
+.main-platform-title { color: #C76C2E !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 16px 0 32px 0 !important; }
 
-/* 2. 중앙 메인 컨테이너 폭 강제 압축 */
-.center-board-container {
-  max-width: 900px !important;
-  width: 100% !important;
-  margin: 0 auto !important;
-  padding: 0 16px !important;
-  box-sizing: border-box !important;
-}
-
-.welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 24px !important; letter-spacing: 0.5px !important; }
-.main-platform-title { color: #C76C2E !important; font-size: 22px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 14px 0 28px 0 !important; }
-
-/* 3. 매물 상자 3열 종대 완벽 그리드 정렬 */
-.grid { 
-  display: grid !important; 
-  grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
-  gap: 20px !important; 
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-@media (min-width: 768px) {
-  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-}
-@media (min-width: 1200px) {
-  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-}
-
-/* 4. 💡 [상단 제어 바 뭉침 박멸] 가로 배치 플렉스 정밀 설계 */
-.flex { 
-  display: flex !important; 
-  flex-direction: row !important; 
-}
-.flex-col { 
-  display: flex !important; 
-  flex-direction: column !important; 
-}
-
-/* 💡 문구와 버튼 박스가 뭉치지 않도록 반응형 가로 폭 유연화 적용 */
-.justify-between { 
-  justify-content: space-between !important; 
-  align-items: center !important; 
-  flex-wrap: wrap !important; /* 모바일 환경 배려 */
-}
-.items-start { align-items: flex-start !important; }
-.items-center { align-items: center !important; }
-
-/* 5. 디아블로 무결점 수동 배경 색상 코드 완비 */
 .bg-dark-gray { background-color: #141414 !important; }
 .bg-black-90 { background-color: rgba(17, 17, 17, 0.9) !important; }
 .bg-deep-black { background-color: #0A0A0A !important; }
-.bg-button-dark { background-color: #1F1F1F !important; }
 .border-2 { border-width: 2px !important; border-style: solid !important; }
 .border { border-width: 1px !important; border-style: solid !important; }
 .border-gold { border-color: #8C6D3B !important; }
@@ -126,10 +144,14 @@ input[type="text"]:focus, textarea:focus {
 .p-5 { padding: 20px !important; }
 .mb-4 { margin-bottom: 16px !important; }
 .mb-6 { margin-bottom: 24px !important; }
-.mb-8 { margin-bottom: 32px !important; }
-.mt-3 { margin-top: 12px !important; }
 .mt-6 { margin-top: 24px !important; }
-
 .whitespace-nowrap { white-space: nowrap !important; }
 .break-all { word-break: break-all !important; }
 .text-center { text-align: center !important; }
+
+/* 배너 문자 폰트 복구 */
+.ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 15px !important; font-weight: bold !important; }
+.ad-text-muted { color: #777777 !important; font-size: 11px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
+.ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
+.ad-label { display: block !important; color: #C5A059 !important; font-size: 11px !important; font-weight: bold !important; margin-bottom: 4px !important; }
+.ad-email-text { display: block !important; color: #22FF22 !important; font-size: 12px !important; font-family: monospace !important; font-weight: bold !important; word-break: break-all !important; line-height: 1.4 !important; margin-top: 6px !important; }
