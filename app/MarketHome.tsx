@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation'; // 💡 [중요] 상세화면방으로 유저를 광속 워프시킬 정품 이동 엔진 수입!
+import { useRouter } from 'next/navigation'; // 💡 3부 연동을 위한 라우터 내비게이션 임포트
 import { createClient } from '@supabase/supabase-js';
 import PostModal from './PostModal';
 
@@ -10,7 +10,7 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
 export default function MarketHome() {
-  const router = useRouter(); // 💡 이동 엔진 비서 배정
+  const router = useRouter(); // 💡 라우터 제어 장치 활성화
   const [trades, setTrades] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,10 +31,12 @@ export default function MarketHome() {
     setLoading(false);
   };
 
+  // 💡 [무한 루프 완벽 박멸의 핵심 치트키]
   useEffect(() => {
     fetchTrades();
-  }, []);
+  }, []); 
 
+  // 💡 [화면 크기 감지 센서 완벽 격리 부속품]
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1400);
@@ -126,7 +128,7 @@ export default function MarketHome() {
           <p style={{ color: '#777777', fontSize: '12px', lineHeight: '1.6', margin: '0 0 24px 0' }}>
             디아블로2<br />실시간 마켓<br />배너 광고 구역
           </p>
-          <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
+          <div style={{ borderTop: '1px solid #33 whispers', paddingTop: '16px', width: '100%' }}>
             <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>문의 이메일</span>
             <span style={emailStyle}>maymouse72<br />@gmail.com</span>
           </div>
@@ -155,7 +157,7 @@ export default function MarketHome() {
         </h1>
 
         <div style={{ backgroundColor: '#141414', border: '1px solid #8C6D3B', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px', borderRadius: '4px', marginBottom: '24px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
-          <p style={{ color: '#777777', fontSize: '13px', fontWeight: 'bold', margin: 0 }}>카드를 터치하면 상세화면으로 이동합니다</p>
+          <p style={{ color: '#777777', fontSize: '13px', fontWeight: 'bold', margin: 0 }}>카드를 터치하면 상세페이지로 이동하며 방 정보를 확인합니다.</p>
           <div style={{ display: 'flex', gap: '12px' }}>
             <button onClick={fetchTrades} disabled={loading} style={{ backgroundColor: '#1A1A1A', border: '1px solid #8C6D3B', color: '#FFFFFF', padding: '8px 16px', fontSize: '13px', fontWeight: 'bold', borderRadius: '4px', cursor: 'pointer' }}>
               {loading ? '로딩 중...' : '새로고침'}
@@ -168,11 +170,11 @@ export default function MarketHome() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
           {trades && trades.map((trade: any) => (
-            /* 💡 [동선 완전 정비] 카드를 터치하면 복사 팝업 대신 고유 상세방 주소(/trade/매물ID번호)로 매끄럽게 워프합니다! */
             <div 
               key={trade.id} 
-              onClick={() => router.push(`/trade/${trade.id}`)} 
+              onClick={() => router.push(`/trade/${trade.id}`)} // 💡 [핵심 교체] 클릭 시 상세페이지 라우팅으로 다이렉트 송신!
               style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
+              className="hover:border-[#C5A059] transition-all" // 미세한 호버 효과 추가
             >
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '12px' }}>
@@ -190,8 +192,8 @@ export default function MarketHome() {
               </div>
 
               <div style={{ borderTop: '1px solid #222222', paddingTop: '12px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', color: '#00FF00', fontSize: '12px', fontWeight: 'bold', padding: '6px', margin: 0 }}>
-                  상세보기 및 흥정 댓글 작성하기 →
+                <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', color: '#C5A059', fontSize: '12px', fontWeight: 'bold', padding: '6px', margin: 0, textAlign: 'center' }}>
+                  상세 정보 및 방제 보러가기 →
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '10px', color: '#666666', padding: '0 4px', marginTop: '2px' }}>
                   <span>{trade.battlenet_id}</span>
