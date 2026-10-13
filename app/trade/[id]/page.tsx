@@ -72,7 +72,7 @@ export default function TradeDetailPage({ params }: PageProps) {
         })
         .catch((err) => console.error('서비스 워커 오작동:', err));
     }
-  },);
+  }, []);
 
   // 4. 유저 알림 권한 요청 및 Vercel 기지국 등록
   const handleRequestNotification = async () => {
@@ -118,7 +118,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     initPage();
   }, [tradeId]);
 
-  // 💡 5. [초정밀 개조] 댓글 금고 전송 및 리얼 에러 추적 함수
+  // 💡 5. 댓글 금고 전송 및 푸시 진동 정밀 규격 보정 함수
   const handleCommentSubmit = async () => {
     if (!newComment.trim()) {
       alert('댓글 내용을 입력해주세요!');
@@ -127,12 +127,11 @@ export default function TradeDetailPage({ params }: PageProps) {
 
     setCommentSubmitting(true);
     
-    // public 스키마를 모바일 브라우저에게 명확하게 인지시킵니다.
     const { error } = await supabase
       .from('trade_comments')
       .insert([
         {
-          trade_id: Number(tradeId), // 💡 숫자로 안전하게 형변환하여 매핑 불일치 방지
+          trade_id: Number(tradeId),
           content: newComment.trim(),
         }
       ]);
@@ -140,12 +139,26 @@ export default function TradeDetailPage({ params }: PageProps) {
     setCommentSubmitting(false);
 
     if (error) {
-      console.error('진짜 발생한 에러 원인 코드:', error);
-      // 💡 [핵심 교체] 기존의 눈가림식 안내문 대신, 모바일 브라우저에서 터진 "진짜 에러 내용"을 직접 팝업으로 뿜어내게 만듭니다!
-      alert(`댓글 등록 실패 사유: ${error.message} (코드: ${error.code})`);
+      alert(`댓글 등록 실패 사유: ${error.message}`);
     } else {
+      // 💡 [오타 완벽 교체] 진동 패턴 배열을 주입하고 속성 타입을 안전하게 매핑했습니다!
+      if ('serviceWorker' in navigator && Notification.permission === 'granted') {
+        navigator.serviceWorker.ready.then((reg) => {
+          reg.showNotification('⚔️ D2 마켓 실시간 흥정 알림', {
+            body: `내가 등록한 매물에 새 댓글이 달렸습니다: "${newComment.trim()}"`,
+            icon: '/favicon.ico',
+            badge: '/favicon.ico',
+            tag: 'comment-alert',
+            vibrate:[200, 100, 200], // 💡 징~ 징~ 진동 효과 수치 고정
+            data: {
+              url: `/trade/${tradeId}`
+            }
+          } as NotificationOptions);
+        });
+      }
+
       setNewComment('');
-      fetchComments(); // 즉시 새로고침 싱크
+      fetchComments();
     }
   };
 
@@ -228,7 +241,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             방제 복사
           </button>
         </div>
-                {/* 실시간 흥정 댓글 구역 */}
+                        {/* 실시간 흥정 댓글 구역 */}
         <div style={{ borderTop: '2px dashed #333333', paddingTop: '24px' }}>
           <h3 style={{ color: '#C76C2E', fontSize: '16px', fontWeight: 'bold', margin: '0 0 16px 0' }}>
             실시간 흥정 댓글 ({comments ? comments.length : 0})
