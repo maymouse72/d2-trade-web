@@ -29,7 +29,7 @@ export async function POST(request: Request) {
         title: '⚔️ D2 마켓 실시간 흥정 알림',
         body: `새로운 댓글: "${commentData.content}"`,
         // 💡 [치유 핵심 2번] 가비아 대표 도메인 www 포워딩 주소 체계와 완벽하게 일치시켜 오류 유령을 완벽 박멸합니다!
-        url: `https://d2jugobatgo.com{commentData.trade_id || 1}`
+        url: `https://www.d2jugobatgo.com/trade/${commentData.trade_id || 1}`
       });
 
       pushSubscriptions.forEach(sub => {
