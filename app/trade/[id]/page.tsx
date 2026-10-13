@@ -5,8 +5,7 @@ import { useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 
-// 💡 환경변수가 모바일단에서 간혹 누락되는 현상을 방지하기 위해 
-// 실제 사장님의 Supabase 주소와 Anon 키 값을 다이렉트로 안전하게 바인딩합니다.
+// 💡 모바일 브라우저단 환경변수 유실을 막기 위해 직통 보관함 주소 강제 결합
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 const supabase = createClient(supabaseUrl, supabaseKey);
@@ -62,22 +61,20 @@ export default function TradeDetailPage({ params }: PageProps) {
     }
   };
 
-  // 3. PWA 브라우저 로봇 등록 및 알림 상태 체크
+  // 3. PWA 서비스 워커 및 알림 상태 권한 체크
   useEffect(() => {
     if ('serviceWorker' in navigator && 'PushManager' in window) {
       navigator.serviceWorker.register('/sw.js')
         .then((reg) => {
-          console.log('PWA 서비스 워커 로봇 등록 완료:', reg);
           if (Notification.permission === 'granted') {
             setIsSubscribed(true);
           }
         })
-        .catch((err) => console.error('로봇 등록 실패:', err));
+        .catch((err) => console.error('서비스 워커 오작동:', err));
     }
-  }, []);
+  },);
 
-  // 4. 유저에게 "알림 권한" 요청하는 액션 함수
-  // 4. 유저에게 "알림 권한" 요청 및 백엔드 기지국 등록 함수
+  // 4. 유저 알림 권한 요청 및 Vercel 기지국 등록
   const handleRequestNotification = async () => {
     if (!('Notification' in window)) {
       alert('이 브라우저는 실시간 알림 기능을 지원하지 않습니다.');
@@ -87,30 +84,31 @@ export default function TradeDetailPage({ params }: PageProps) {
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
       if ('serviceWorker' in navigator) {
-        const reg = await navigator.serviceWorker.ready;
-        
-        // 💡 브라우저가 제공하는 고유의 알림 수신 Endpoint 키를 발급받습니다.
-        const sub = await reg.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
-        });
+        try {
+          const reg = await navigator.serviceWorker.ready;
+          const sub = await reg.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
+          });
 
-        // 💡 발급받은 열쇠를 우리 Vercel 백엔드 기지국(api/push)으로 전송하여 저장합니다.
-        await fetch('/api/push', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ type: 'SUBSCRIBE', subscription: sub })
-        });
+          await fetch('/api/push', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ type: 'SUBSCRIBE', subscription: sub })
+          });
 
-        setIsSubscribed(true);
-        alert('실시간 흥정 알림 셋업이 완료되었습니다! 스마트폰/PC로 알림이 전송됩니다.');
+          setIsSubscribed(true);
+          alert('실시간 흥정 알림 채널 개통 완료!');
+        } catch (e) {
+          console.error(e);
+        }
       }
     } else {
-      alert('알림 권한이 거부되었습니다. 브라우저 주소창 왼쪽 자물쇠 아이콘을 눌러 권한을 허용해주세요.');
+      alert('알림 권한이 거부되었습니다. 자물쇠 아이콘을 눌러 허용해주세요.');
     }
   };
 
-  // 페이지 진입 시 매물과 댓글을 동시에 최초 1회 감지
+  // 페이지 최초 진입 시 데이터 흡입
   useEffect(() => {
     const initPage = async () => {
       setLoading(true);
@@ -120,7 +118,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     initPage();
   }, [tradeId]);
 
-  // 댓글 금고 전송 함수
+  // 💡 5. [초정밀 개조] 댓글 금고 전송 및 리얼 에러 추적 함수
   const handleCommentSubmit = async () => {
     if (!newComment.trim()) {
       alert('댓글 내용을 입력해주세요!');
@@ -128,29 +126,33 @@ export default function TradeDetailPage({ params }: PageProps) {
     }
 
     setCommentSubmitting(true);
+    
+    // public 스키마를 모바일 브라우저에게 명확하게 인지시킵니다.
     const { error } = await supabase
       .from('trade_comments')
       .insert([
         {
-          trade_id: tradeId,
-          content: newComment,
+          trade_id: Number(tradeId), // 💡 숫자로 안전하게 형변환하여 매핑 불일치 방지
+          content: newComment.trim(),
         }
       ]);
+      
     setCommentSubmitting(false);
 
     if (error) {
-      console.error('댓글 등록 에러:', error);
-      alert(`댓글 등록 실패: Supabase에 'trade_comments' 테이블이 생성되어 있는지 확인이 필요합니다.`);
+      console.error('진짜 발생한 에러 원인 코드:', error);
+      // 💡 [핵심 교체] 기존의 눈가림식 안내문 대신, 모바일 브라우저에서 터진 "진짜 에러 내용"을 직접 팝업으로 뿜어내게 만듭니다!
+      alert(`댓글 등록 실패 사유: ${error.message} (코드: ${error.code})`);
     } else {
       setNewComment('');
-      fetchComments();
+      fetchComments(); // 즉시 새로고침 싱크
     }
   };
 
   const handleCopyRoomName = () => {
     if (!trade) return;
     navigator.clipboard.writeText(trade.room_name).then(() => {
-      alert(`인게임 방제 [ ${trade.room_name} ] 가 클립보드에 복사되었습니다! 배틀넷에 붙여넣기 하세요.`);
+      alert(`인게임 방제 [ ${trade.room_name} ] 가 복사되었습니다!`);
     });
   };
 
@@ -226,8 +228,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             방제 복사
           </button>
         </div>
-
-        {/* 실시간 흥정 댓글 구역 */}
+                {/* 실시간 흥정 댓글 구역 */}
         <div style={{ borderTop: '2px dashed #333333', paddingTop: '24px' }}>
           <h3 style={{ color: '#C76C2E', fontSize: '16px', fontWeight: 'bold', margin: '0 0 16px 0' }}>
             실시간 흥정 댓글 ({comments ? comments.length : 0})
@@ -239,7 +240,7 @@ export default function TradeDetailPage({ params }: PageProps) {
               type="text" 
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
-              placeholder="익명 흥정 댓글을 입력하세요 (예: 1오움  룬에 네고 되나요?)" 
+              placeholder="익명 흥정 댓글을 입력하세요 (예: 1오움 룬에 네고 되나요?)" 
               style={{ flexGrow: 1, height: '40px', padding: '0 12px', backgroundColor: '#0A0A0A', border: '1px solid #8C6D3B', color: '#FFF', borderRadius: '4px', fontSize: '13px', outline: 'none' }} 
             />
             <button 
@@ -250,7 +251,8 @@ export default function TradeDetailPage({ params }: PageProps) {
               {commentSubmitting ? '등록중..' : '등록'}
             </button>
           </div>
-                    {/* 댓글 리스트 출력 */}
+
+          {/* 댓글 리스트 출력 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {comments && comments.map((item: any) => (
               <div key={item.id} style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', padding: '12px 16px', borderRadius: '4px' }}>
