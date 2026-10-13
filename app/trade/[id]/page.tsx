@@ -86,8 +86,8 @@ export default function TradeDetailPage({ params }: PageProps) {
             applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
           });
 
-          // 💡 [버그 완전 제압] 주소창의 ://d2jugobatgo.com 도메인과 단 1글자의 부딪힘도 없도록 정형화 완료!
-          await fetch('https://://d2jugobatgo.com/api/push', {
+          // 💡 [오타 완벽 박멸 1번] 중복 슬래시 기호를 지우고 완벽한 상용 정품 주소로 복원 완료!
+          await fetch('https://www.d2jugobatgo.com/api/push', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ type: 'SUBSCRIBE', subscription: sub })
@@ -123,7 +123,6 @@ export default function TradeDetailPage({ params }: PageProps) {
 
     setCommentSubmitting(true);
     
-    // 💡 [철통 보안망] 오염 물질을 원천 차단하고 순수 주소창 숫자방 일련번호만 Supabase 규칙에 맞춤 바인딩!
     const { error } = await supabase
       .from('trade_comments')
       .insert([
@@ -138,7 +137,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     if (error) {
       alert(`댓글 등록 실패 사유: ${error.message}`);
     } else {
-      // 💡 스마트폰 푸시 진동 주소까지 www 정품 규격으로 완전 무결점 싱크 매핑!
+      // 💡 [오타 완벽 박멸 2번] 스마트폰 푸시 진동 타격 주소까지 깨끗한 대표 도메인 절대 경로 주소로 정밀 각인!
       if ('serviceWorker' in navigator && Notification.permission === 'granted') {
         navigator.serviceWorker.ready.then((reg) => {
           reg.showNotification('⚔️ D2 마켓 실시간 흥정 알림', {
@@ -148,7 +147,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             tag: 'comment-alert',
             vibrate:[200, 100, 200],
             data: {
-              url: `https://://d2jugobatgo.com/trade/${tradeId}`
+              url: `https://www.d2jugobatgo.com/trade/${tradeId}`
             }
           } as NotificationOptions);
         });
@@ -174,6 +173,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     );
   }
 
+  // 💡 [정밀 분할 절단선] 이 밑바닥 줄 아래에 이어서 곧바로 2부 소스를 붙여넣으시면 됩니다!
   if (!trade) return null;
     return (
     <div style={{ backgroundColor: '#0A0A0A', minHeight: '100vh', color: '#DCDCDC', padding: '40px 24px', fontFamily: 'sans-serif' }}>
@@ -223,7 +223,7 @@ export default function TradeDetailPage({ params }: PageProps) {
 
         <div style={{ marginBottom: '28px' }}>
           <label style={{ display: 'block', fontSize: '12px', color: '#AAAAAA', fontWeight: 'bold', marginBottom: '8px' }}>아이템 세부 옵션</label>
-          <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', padding: '16px', borderRadius: '4px', minHeight: '80px', lineHeight: '1.6', fontSize: '14px', wordBreak: 'break-all' }}>
+          <div style={{ backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', minHeight: '80px', lineHeight: '1.6', fontSize: '14px', wordBreak: 'break-all' }}>
             {trade.item_description || '상세 옵션 설명이 등록되지 않은 매물입니다.'}
           </div>
         </div>
