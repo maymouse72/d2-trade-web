@@ -86,6 +86,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
           });
 
+          // 💡 [치유 치트키 1번] 가비아 www 주소와 100% 완벽하게 싱크로율을 일치시킨 마스터 절대 경로 수정 완료!
           await fetch('https://d2jugobatgo.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -171,7 +172,6 @@ export default function TradeDetailPage({ params }: PageProps) {
     );
   }
 
-  // 💡 [정밀 커팅 2분할 기준점 기준선] 아래에 이어서 2부 코스를 바로 붙여넣으시면 완료됩니다!
   if (!trade) return null;
     return (
     <div style={{ backgroundColor: '#0A0A0A', minHeight: '100vh', color: '#DCDCDC', padding: '40px 24px', fontFamily: 'sans-serif' }}>

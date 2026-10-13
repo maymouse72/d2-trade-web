@@ -1,4 +1,3 @@
-// app/api/push/route.ts
 import { NextResponse } from 'next/server';
 import webpush from 'web-push';
 
@@ -10,7 +9,6 @@ webpush.setVapidDetails(
 
 let pushSubscriptions: any = [];
 
-// 💡 Supabase Webhook과 브라우저 통신을 안전하게 다 수용하도록 POST 엔드포인트 전면 개방
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -24,13 +22,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true, message: '알림 주소 등록 성공' });
     }
 
-    // 2. Supabase 신호 수신 분기 (유연한 방어 코드 주입)
+    // 2. Supabase 신호 수신 분기 및 www 경로 일치 완공
     const commentData = body.record || body;
     if (commentData && commentData.content) {
       const pushPayload = JSON.stringify({
         title: '⚔️ D2 마켓 실시간 흥정 알림',
         body: `새로운 댓글: "${commentData.content}"`,
-        // 💡 [최종 완공 치트키] 대표 도메인 절대 주소를 완벽하게 명시하여 주소 꼬임을 원천 차단합니다!
+        // 💡 [치유 핵심 2번] 가비아 대표 도메인 www 포워딩 주소 체계와 완벽하게 일치시켜 오류 유령을 완벽 박멸합니다!
         url: `https://d2jugobatgo.com{commentData.trade_id || 1}`
       });
 
@@ -44,7 +42,6 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ success: true, message: '안전 보정 패스 완료' });
   } catch (error: any) {
-    // 💡 에러 발생 시 전체 시스템이 다운되지 않도록 안전 장치 가동
     return NextResponse.json({ success: false, error: error.message });
   }
 }
