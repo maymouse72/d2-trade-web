@@ -21,10 +21,13 @@ export default function TradeDetailPage({ params }: PageProps) {
   const [trade, setTrade] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
-  // 💡 댓글 관리를 위한 인터넷 금고 상태 장치들
-  const [comments, setComments] = useState<any[]>([]);
+  // 댓글 관리를 위한 상태 장치들
+  const [comments, setComments] = useState<any>();
   const [newComment, setNewComment] = useState('');
   const [commentSubmitting, setCommentSubmitting] = useState(false);
+
+  // PWA 알림 권한 상태 관리 장치
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   // 1. 매물 상세 정보 가져오기
   const fetchTradeDetail = async () => {
@@ -43,10 +46,9 @@ export default function TradeDetailPage({ params }: PageProps) {
     }
   };
 
-  // 2. 💡 실시간 댓글 목록 가져오기 함수
+  // 2. 실시간 댓글 목록 가져오기 함수
   const fetchComments = async () => {
     if (!tradeId) return;
-    // 'trade_comments' 테이블에서 현재 매물 id와 일치하는 댓글을 최신순으로 긁어옵니다.
     const { data, error } = await supabase
       .from('trade_comments') 
       .select('*')
@@ -58,7 +60,45 @@ export default function TradeDetailPage({ params }: PageProps) {
     }
   };
 
-  // 3. 페이지 진입 시 매물과 댓글을 동시에 최초 1회 감지
+  // 3. PWA 브라우저 로봇 등록 및 알림 상태 체크
+  useEffect(() => {
+    if ('serviceWorker' in navigator && 'PushManager' in window) {
+      navigator.serviceWorker.register('/sw.js')
+        .then((reg) => {
+          console.log('PWA 서비스 워커 로봇 등록 완료:', reg);
+          if (Notification.permission === 'granted') {
+            setIsSubscribed(true);
+          }
+        })
+        .catch((err) => console.error('로봇 등록 실패:', err));
+    }
+  }, []);
+
+  // 4. 유저에게 "알림 권한" 요청하는 액션 함수
+  const handleRequestNotification = async () => {
+    if (!('Notification' in window)) {
+      alert('이 브라우저는 실시간 알림 기능을 지원하지 않습니다.');
+      return;
+    }
+
+    const permission = await Notification.requestPermission();
+    if (permission === 'granted') {
+      setIsSubscribed(true);
+      alert('실시간 흥정 알림 셋업이 완료되었습니다! 스마트폰/PC로 알림이 전송됩니다.');
+      
+      if ('serviceWorker' in navigator) {
+        const reg = await navigator.serviceWorker.ready;
+        reg.showNotification('D2 Realtime Market', {
+          body: '흥정 알림 채널이 성공적으로 개통되었습니다!',
+          icon: '/favicon.ico',
+        });
+      }
+    } else {
+      alert('알림 권한이 거부되었습니다. 브라우저 주소창 왼쪽 자물쇠 아이콘을 눌러 권한을 허용해주세요.');
+    }
+  };
+
+  // 페이지 진입 시 매물과 댓글을 동시에 최초 1회 감지
   useEffect(() => {
     const initPage = async () => {
       setLoading(true);
@@ -68,7 +108,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     initPage();
   }, [tradeId]);
 
-  // 4. 💡 댓글 금고 전송 (Supabase Insert) 함수
+  // 댓글 금고 전송 함수
   const handleCommentSubmit = async () => {
     if (!newComment.trim()) {
       alert('댓글 내용을 입력해주세요!');
@@ -77,7 +117,7 @@ export default function TradeDetailPage({ params }: PageProps) {
 
     setCommentSubmitting(true);
     const { error } = await supabase
-      .from('trade_comments') // 사장님의 Supabase 댓글 테이블 명칭
+      .from('trade_comments')
       .insert([
         {
           trade_id: tradeId,
@@ -87,12 +127,11 @@ export default function TradeDetailPage({ params }: PageProps) {
     setCommentSubmitting(false);
 
     if (error) {
-      // 💡 만약 테이블이 없어서 에러가 난다면 유저에게 알림을 주고 콘솔에 표기합니다.
       console.error('댓글 등록 에러:', error);
       alert(`댓글 등록 실패: Supabase에 'trade_comments' 테이블이 생성되어 있는지 확인이 필요합니다.`);
     } else {
-      setNewComment(''); // 입력창 청소
-      fetchComments(); // 댓글 목록 실시간 새로고침
+      setNewComment('');
+      fetchComments();
     }
   };
 
@@ -121,6 +160,30 @@ export default function TradeDetailPage({ params }: PageProps) {
           ← 거래소 목록으로 돌아가기
         </button>
 
+        {/* PWA 실시간 알림 가동 대시보드 배너 */}
+        <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #C76C2E', padding: '12px 16px', borderRadius: '4px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+          <div>
+            <span style={{ color: '#C76C2E', fontSize: '13px', fontWeight: 'bold', display: 'block' }}>PWA 흥정 푸시 알림</span>
+            <span style={{ color: '#777777', fontSize: '11px' }}>댓글이 달리면 스마트폰으로 즉시 진동 알림이 울립니다.</span>
+          </div>
+          <button 
+            onClick={handleRequestNotification}
+            disabled={isSubscribed}
+            style={{ 
+              backgroundColor: isSubscribed ? '#1A1A1A' : '#C76C2E', 
+              color: isSubscribed ? '#777777' : '#0A0A0A', 
+              border: isSubscribed ? '1px solid #333' : 'none', 
+              padding: '8px 14px', 
+              fontSize: '12px', 
+              fontWeight: 'bold', 
+              borderRadius: '4px', 
+              cursor: isSubscribed ? 'default' : 'pointer' 
+            }}
+          >
+            {isSubscribed ? '● 실시간 수신중' : '알림 켜기'}
+          </button>
+        </div>
+
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', borderBottom: '1px solid #222222', paddingBottom: '16px', marginBottom: '20px' }}>
           <div>
             <span style={{ color: '#C5A059', fontSize: '12px', fontWeight: 'bold', backgroundColor: '#0A0A0A', padding: '3px 8px', borderRadius: '4px', border: '1px solid #222222' }}>
@@ -142,7 +205,7 @@ export default function TradeDetailPage({ params }: PageProps) {
           </div>
         </div>
 
-        <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
+        <div style={{ backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
           <div>
             <span style={{ display: 'block', fontSize: '11px', color: '#777777', fontWeight: 'bold', marginBottom: '4px' }}>인게임 방 정보</span>
             <span style={{ color: '#22FF22', fontSize: '15px', fontFamily: 'monospace', fontWeight: 'bold' }}>{trade.room_name}</span>
@@ -152,10 +215,10 @@ export default function TradeDetailPage({ params }: PageProps) {
           </button>
         </div>
 
-        {/* 💡 실시간 흥정 댓글 구역 연동 마감 */}
+        {/* 실시간 흥정 댓글 구역 */}
         <div style={{ borderTop: '2px dashed #333333', paddingTop: '24px' }}>
           <h3 style={{ color: '#C76C2E', fontSize: '16px', fontWeight: 'bold', margin: '0 0 16px 0' }}>
-            실시간 흥정 댓글 ({comments.length})
+            실시간 흥정 댓글 ({comments ? comments.length : 0})
           </h3>
           
           {/* 댓글 입력 폼 */}
@@ -164,7 +227,7 @@ export default function TradeDetailPage({ params }: PageProps) {
               type="text" 
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
-              placeholder="익명 흥정 댓글을 입력하세요 (예: 1오움 룬에 네고 되나요?)" 
+              placeholder="익명 흥정 댓글을 입력하세요 (예: 1오움  룬에 네고 되나요?)" 
               style={{ flexGrow: 1, height: '40px', padding: '0 12px', backgroundColor: '#0A0A0A', border: '1px solid #8C6D3B', color: '#FFF', borderRadius: '4px', fontSize: '13px', outline: 'none' }} 
             />
             <button 
@@ -175,21 +238,20 @@ export default function TradeDetailPage({ params }: PageProps) {
               {commentSubmitting ? '등록중..' : '등록'}
             </button>
           </div>
-
-          {/* 댓글 리스트 출력 */}
+                    {/* 댓글 리스트 출력 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {comments.map((item: any) => (
+            {comments && comments.map((item: any) => (
               <div key={item.id} style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', padding: '12px 16px', borderRadius: '4px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', color: '#666666', marginBottom: '6px' }}>
                   <span style={{ color: '#8C6D3B', fontWeight: 'bold' }}>익명의 디아러</span>
-                  <span>{new Date(item.created_at).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                  <span>{new Date(item.created_at).toLocaleTimeString('ko-KR', {hour: '2-digit', minute:'2-digit'})}</span>
                 </div>
                 <p style={{ margin: 0, fontSize: '13px', color: '#DDD', wordBreak: 'break-all' }}>{item.content}</p>
               </div>
             ))}
           </div>
 
-          {comments.length === 0 && (
+          {(!comments || comments.length === 0) && (
             <p style={{ textAlign: 'center', color: '#444444', fontSize: '12px', margin: '24px 0' }}>아직 등록된 실시간 흥정 제안이 없습니다.</p>
           )}
         </div>
