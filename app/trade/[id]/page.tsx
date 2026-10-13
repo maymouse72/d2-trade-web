@@ -121,7 +121,7 @@ export default function TradeDetailPage({ params }: PageProps) {
           ← 거래소 목록으로 돌아가기
         </button>
 
-        <div style={{ display: 'flex', justifycontent: 'space-between', alignItems: 'start', borderBottom: '1px solid #222222', paddingBottom: '16px', marginBottom: '20px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', borderBottom: '1px solid #222222', paddingBottom: '16px', marginBottom: '20px' }}>
           <div>
             <span style={{ color: '#C5A059', fontSize: '12px', fontWeight: 'bold', backgroundColor: '#0A0A0A', padding: '3px 8px', borderRadius: '4px', border: '1px solid #222222' }}>
               {trade.game_mode === 'standard' ? '스탠다드' : '래더 시즌'}
@@ -170,7 +170,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             <button 
               onClick={handleCommentSubmit}
               disabled={commentSubmitting}
-              style={{ backgroundColor: '#1A1A1A', border: '1px solid #8C6D3B', color: '#FFF', padding: '0 16px', borderRadius: '4px', fontSize: '13px', fontweight: 'bold', cursor: 'pointer' }}
+              style={{ backgroundColor: '#1A1A1A', border: '1px solid #8C6D3B', color: '#FFF', padding: '0 16px', borderRadius: '4px', fontSize: '13px', fontWeight: 'bold', cursor: 'pointer' }}
             >
               {commentSubmitting ? '등록중..' : '등록'}
             </button>
