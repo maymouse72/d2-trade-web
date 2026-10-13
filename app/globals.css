@@ -1,9 +1,8 @@
 /* app/globals.css */
 
-/* 💡 테일윈드 v4 기본 엔진 구동 */
+/* 💡 테일윈드 기본 엔진 구동 */
 @import "tailwindcss";
 
-/* 🛡️ 컴파일러가 깨져도 브라우저가 직접 정렬하도록 레이아웃 강제 박음질 */
 :root {
   --background: #030303;
   --foreground: #DCDCDC;
@@ -38,16 +37,10 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   🚨 레이아웃 간섭 완벽 정리 및 고정 클래스 명세서
+   🚨 [대완공] 글자 찢어짐 및 1열 쏠림 현상 강제 파괴 아키텍처
    ========================================================== */
 
-.layout-body-wrapper {
-  position: relative !important;
-  min-height: 100vh !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-
+/* 1. 좌우 고정 광고 기둥 정밀 좌표 고정 수술 */
 .fixed-ad-banner {
   position: fixed !important;
   top: 160px !important;
@@ -64,47 +57,16 @@ input[type="text"]:focus, textarea:focus {
   box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important;
   z-index: 50 !important;
 }
-
 .fixed-left-box { left: 30px !important; }
 .fixed-right-box { right: 30px !important; }
 
-/* 💡 리액트 전용 낙타표기법(fontSize 등)을 순수 CSS 표준 규격(font-size)으로 완벽 패치 완료! */
-.ad-title { 
-  color: #C76C2E !important; 
-  margin: 0 0 16px 0 !important; 
-  font-size: 16px !important; 
-  font-weight: bold !important; 
-  letter-spacing: 0.05em !important; 
-}
-.ad-text-muted { 
-  color: #777777 !important; 
-  font-size: 12px !important; 
-  line-height: 1.6 !important; 
-  margin: 0 0 24px 0 !important; 
-}
-.ad-footer-divider { 
-  border-top: 1px solid #222222 !important; 
-  padding-top: 16px !important; 
-  width: 100% !important; 
-}
-.ad-label { 
-  display: block !important; 
-  color: #C5A059 !important; 
-  font-size: 12px !important; 
-  font-weight: bold !important; 
-  margin-bottom: 4px !important; 
-}
-.ad-email-text { 
-  display: block !important; 
-  color: #22FF22 !important; 
-  font-size: 13px !important; 
-  font-family: monospace !important; 
-  font-weight: bold !important; 
-  word-break: break-all !important; 
-  line-height: 1.4 !important; 
-  margin-top: 6px !important; 
-}
+.ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 16px !important; font-weight: bold !important; }
+.ad-text-muted { color: #777777 !important; font-size: 12px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
+.ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
+.ad-label { display: block !important; color: #C5A059 !important; font-size: 12px !important; font-weight: bold !important; margin-bottom: 4px !important; }
+.ad-email-text { display: block !important; color: #22FF22 !important; font-size: 13px !important; font-family: monospace !important; font-weight: bold !important; word-break: break-all !important; line-height: 1.4 !important; margin-top: 6px !important; }
 
+/* 2. 중앙 메인 컨테이너 폭 강제 압축 (이걸 짜야 양옆 기둥과 안 겹칩니다) */
 .center-board-container {
   max-width: 900px !important;
   width: 100% !important;
@@ -113,19 +75,58 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-.welcome-banner-text { 
-  color: #C5A059 !important; 
-  font-size: 15px !important; 
-  font-weight: bold !important; 
-  text-align: center !important; 
-  margin-top: 24px !important; 
-  letter-spacing: 0.5px !important; 
+.welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 24px !important; letter-spacing: 0.5px !important; }
+.main-platform-title { color: #C76C2E !important; font-size: 22px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 14px 0 28px 0 !important; }
+
+/* 3. 🚨 [핵심 교정] 1열로 축 늘어지던 매물 상자를 3열 종대로 강제 강타! */
+.grid { 
+  display: grid !important; 
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
+  gap: 20px !important; 
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
-.main-platform-title { 
-  color: #C76C2E !important; 
-  font-size: 22px !important; 
-  font-weight: bold !important; 
-  text-align: center !important; 
-  letter-spacing: 2px !important; 
-  margin: 14px 0 28px 0 !important; 
+
+/* 화면 크기에 맞춰 카드 개수 자동 확장 */
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
+@media (min-width: 1200px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+}
+
+/* 4. 가로 배치 요소 분사 (텍스트 세로 찢어짐 원천 차단) */
+.flex { 
+  display: flex !important; 
+  flex-direction: row !important; 
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+.flex-col { 
+  display: flex !important; 
+  flex-direction: column !important; 
+}
+.justify-between { justify-content: space-between !important; align-items: center !important; }
+.items-start { align-items: flex-start !important; }
+.items-center { align-items: center !important; }
+
+/* 5. 디아블로 무결점 수동 배경 명세서 연동부 */
+.bg-dark-gray { background-color: #141414 !important; }
+.bg-black-90 { background-color: rgba(17, 17, 17, 0.9) !important; }
+.bg-deep-black { background-color: #0A0A0A !important; }
+.bg-button-dark { background-color: #1F1F1F !important; }
+.border-2 { border-width: 2px !important; border-style: solid !important; }
+.border { border-width: 1px !important; border-style: solid !important; }
+.border-gold { border-color: #8C6D3B !important; }
+.rounded-md { border-radius: 6px !important; }
+.p-4 { padding: 16px !important; }
+.p-5 { padding: 20px !important; }
+.mb-4 { margin-bottom: 16px !important; }
+.mb-6 { margin-bottom: 24px !important; }
+.mb-8 { margin-bottom: 32px !important; }
+.mt-3 { margin-top: 12px !important; }
+.mt-6 { margin-top: 24px !important; }
+
+.whitespace-nowrap { white-space: nowrap !important; }
+.break-all { word-break: break-all !important; }
+.text-center { text-align: center !important; }
