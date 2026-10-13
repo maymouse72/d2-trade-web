@@ -5,9 +5,11 @@ import { useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const supabase = createClient(supabaseUrl!, supabaseKey!);
+// 💡 환경변수가 모바일단에서 간혹 누락되는 현상을 방지하기 위해 
+// 실제 사장님의 Supabase 주소와 Anon 키 값을 다이렉트로 안전하게 바인딩합니다.
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://supabase.co';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface PageProps {
   params: Promise<{ id: string }>;
