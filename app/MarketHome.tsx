@@ -1,16 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation'; // 💡 3부 연동을 위한 라우터 내비게이션 임포트
+import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 import PostModal from './PostModal';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
 export default function MarketHome() {
-  const router = useRouter(); // 💡 라우터 제어 장치 활성화
+  const router = useRouter();
   const [trades, setTrades] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,12 +31,10 @@ export default function MarketHome() {
     setLoading(false);
   };
 
-  // 💡 [무한 루프 완벽 박멸의 핵심 치트키]
   useEffect(() => {
     fetchTrades();
   }, []); 
 
-  // 💡 [화면 크기 감지 센서 완벽 격리 부속품]
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1400);
@@ -78,131 +76,105 @@ export default function MarketHome() {
       const diffMinutes = Math.floor((currentDate.getTime() - createdDate.getTime()) / (1000 * 60));
       if (diffMinutes < 1) return '방금 전';
       if (diffMinutes < 60) return `${diffMinutes}분 전`;
-      
       const diffHours = Math.floor(diffMinutes / 60);
       if (diffHours < 24) return `${diffHours}시간 전`;
-      
       return `${createdDate.getMonth() + 1}/${createdDate.getDate()}`;
     } catch (e) {
       return '방금 전';
     }
   };
 
-  const adBannerStyle = {
-    position: 'fixed' as const,
-    top: '160px',
-    width: '150px',
-    height: '500px',
-    backgroundColor: '#141414',
-    border: '2px dashed #8C6D3B',
-    borderRadius: '6px',
-    padding: '20px 10px',
-    boxSizing: 'border-box' as const,
-    display: 'flex',
-    flexDirection: 'column' as const,
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center' as const,
-    boxShadow: '0 10px 20px rgba(0,0,0,0.7)',
-  };
-
-  const emailStyle = {
-    display: 'block',
-    color: '#22FF22',
-    fontSize: '13px',
-    fontFamily: 'monospace',
-    fontWeight: 'bold',
-    wordBreak: 'break-all' as const,
-    letterSpacing: '0.3px',
-    lineHeight: '1.4',
-    marginTop: '6px'
-  };
-
   return (
-    <div style={{ backgroundColor: '#0A0A0A', minHeight: '100vh', color: '#DCDCDC', padding: '24px', fontFamily: 'sans-serif', position: 'relative' }}>
+    // 💡 디아블로 감성의 칠흑 배경 + 무료 다크 판타지 전사/악마 그래픽 백그라운드 블렌딩 연출
+    <div className="relative min-h-screen bg-[#030303] text-[#DCDCDC] p-6 font-sans overflow-x-hidden bg-[url('https://unsplash.com')] bg-cover bg-center bg-fixed bg-blend-color-burn">
       
-      {/* 왼쪽 광고 배너 */}
-      {!isMobile && (
-        <div style={{ ...adBannerStyle, left: '30px' }}>
-          <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '16px', fontWeight: 'bold' }}>광고주 모집</h4>
-          <p style={{ color: '#777777', fontSize: '12px', lineHeight: '1.6', margin: '0 0 24px 0' }}>
-            디아블로2<br />실시간 마켓<br />배너 광고 구역
-          </p>
-          <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
-            <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>문의 이메일</span>
-            <span style={emailStyle}>maymouse72<br />@gmail.com</span>
-          </div>
-        </div>
-      )}
+      {/* 백그라운드 디아블로풍 다크 암막 레이어 */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#030303]/90 via-[#050505]/95 to-[#030303]/90 pointer-events-none z-0"></div>
 
-      {/* 오른쪽 광고 배너 */}
-      {!isMobile && (
-        <div style={{ ...adBannerStyle, right: '30px' }}>
-          <h4 style={{ color: '#C76C2E', margin: '0 0 16px 0', fontSize: '16px', fontWeight: 'bold' }}>AD ZONE</h4>
-          <p style={{ color: '#777777', fontSize: '12px', lineHeight: '1.6', margin: '0 0 24px 0' }}>
-            24시간<br />잠들지 않는<br />트레이드 스페이스
-          </p>
-          <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
-            <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>AD INQUIRY</span>
-            <span style={emailStyle}>maymouse72<br />@gmail.com</span>
-          </div>
-        </div>
-      )}
-
-      {/* 중앙 메인 매물 게시판 본체 */}
-      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+      <div className="relative z-10 max-w-[900px] mx-auto">
         
-        {/* 💡 [요청 사항 반영] 정식 사이트 상기 웰컴 배너 레이블 노출 */}
-        <div style={{ color: '#C5A059', fontSize: '15px', fontWeight: 'bold', textAlign: 'center', marginTop: '24px', letterSpacing: '0.5px' }}>
+        {/* 왼쪽 광고 배너 (Tailwind 완전 리팩토링) */}
+        {!isMobile && (
+          <div className="fixed top-[160px] left-[30px] w-[150px] h-[500px] bg-[#141414] border-2 border-dashed border-[#8C6D3B] rounded-md p-5 flex flex-col justify-center items-center text-center shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+            <h4 className="text-[#C76C2E] m-0 mb-4 text-base font-bold tracking-wider">광고주 모집</h4>
+            <p className="text-[#777777] text-xs leading-relaxed m-0 mb-6">디아블로2<br />실시간 마켓<br />배너 광고 구역</p>
+            <div className="border-t border-gray-800 pt-4 w-full">
+              <span className="block text-[#C5A059] text-xs font-bold mb-1">문의 이메일</span>
+              <span className="block text-[#22FF22] text-xs font-mono font-bold break-all leading-normal">maymouse72<br />@gmail.com</span>
+            </div>
+          </div>
+        )}
+
+        {/* 오른쪽 광고 배너 (Tailwind 완전 리팩토링) */}
+        {!isMobile && (
+          <div className="fixed top-[160px] right-[30px] w-[150px] h-[500px] bg-[#141414] border-2 border-dashed border-[#8C6D3B] rounded-md p-5 flex flex-col justify-center items-center text-center shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+            <h4 className="text-[#C76C2E] m-0 mb-4 text-base font-bold tracking-wider">AD ZONE</h4>
+            <p className="text-[#777777] text-xs leading-relaxed m-0 mb-6">24시간<br />잠들지 않는<br />트레이드 스페이스</p>
+            <div className="border-t border-gray-800 pt-4 w-full">
+              <span className="block text-[#C5A059] text-xs font-bold mb-1">AD INQUIRY</span>
+              <span className="block text-[#22FF22] text-xs font-mono font-bold break-all leading-normal">maymouse72<br />@gmail.com</span>
+            </div>
+          </div>
+        )}
+
+        {/* 상단 정식 사이트 레이블 */}
+        <div className="text-[#C5A059] text-sm md:text-base font-bold text-center mt-6 tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,1)]">
           D2 주고받고(://d2jugobatgo.com) 사이트 방문을 환영합니다!!
         </div>
 
-        {/* 💡 [요청 사항 반영] 메인 타이틀 마진 조정 및 폰트 크기 슬림 다운(28px → 22px) */}
-        <h1 style={{ color: '#C76C2E', fontSize: '22px', fontWeight: 'bold', textAlign: 'center', letterSpacing: '2px', margin: '14px 0 28px 0' }}>
+        {/* 고풍스러운 메인 타이틀 헤더 */}
+        <h1 className="text-[#C76C2E] text-2xl md:text-3xl font-extrabold text-center tracking-[4px] mt-3 mb-8 drop-shadow-[0_4px_8px_rgba(0,0,0,1)] selection:bg-amber-900">
           DIABLO II REALTIME MARKET
         </h1>
-                <div style={{ backgroundColor: '#141414', border: '1px solid #8C6D3B', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px', borderRadius: '4px', marginBottom: '24px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
-          <p style={{ color: '#777777', fontSize: '13px', fontWeight: 'bold', margin: 0 }}>카드를 터치하면 상세페이지로 이동하며 방 정보를 확인합니다.</p>
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <button onClick={fetchTrades} disabled={loading} style={{ backgroundColor: '#1A1A1A', border: '1px solid #8C6D3B', color: '#FFFFFF', padding: '8px 16px', fontSize: '13px', fontWeight: 'bold', borderRadius: '4px', cursor: 'pointer' }}>
-              {loading ? '로딩 중...' : '새로고침'}
+
+        {/* 대시보드 제어 바 */}
+        <div className="bg-[#141414] border border-[#8C6D3B] flex flex-col sm:flex-row justify-between items-center p-4 rounded-md mb-6 shadow-[0_4px_10px_rgba(0,0,0,0.5)] gap-4">
+          <p className="text-[#888] text-xs md:text-sm font-semibold m-0 text-center sm:text-left">
+            🛡️ 카드를 터치하면 상세페이지로 이동하며 실시간 네고 댓글을 확인합니다.
+          </p>
+          <div className="flex gap-3 w-full sm:w-auto">
+            <button onClick={fetchTrades} disabled={loading} className="flex-1 sm:flex-none bg-[#1F1F1F] border border-[#8C6D3B] hover:border-[#C5A059] text-white px-4 py-2 text-xs font-bold rounded cursor-pointer transition-all active:scale-95 disabled:opacity-50">
+              {loading ? '호라드림 감지중..' : '새로고침'}
             </button>
-            <button onClick={() => setIsModalOpen(true)} style={{ backgroundColor: '#C5A059', color: '#0A0A0A', padding: '8px 16px', fontSize: '13px', fontWeight: 'bold', borderRadius: '4px', border: 'none', cursor: 'pointer', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+            <button onClick={() => setIsModalOpen(true)} className="flex-1 sm:flex-none bg-gradient-to-b from-[#C5A059] to-[#9A7A3E] hover:from-[#Dbc281] hover:to-[#B48F48] text-[#0A0A0A] px-4 py-2 text-xs font-black rounded cursor-pointer border border-[#6E5325] shadow-md transition-all active:scale-95">
               내 매물 등록
             </button>
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+        {/* 아이템 매물 리스트 그리드 구역 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {trades && trades.map((trade: any) => (
             <div 
               key={trade.id} 
-              onClick={() => router.push(`/trade/${trade.id}`)} // 💡 [핵심 교체] 클릭 시 상세페이지 라우팅으로 다이렉트 송신!
-              style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
-              className="hover:border-[#C5A059] transition-all" // 미세한 호버 효과 추가
+              onClick={() => router.push(`/trade/${trade.id}`)}
+              className="group bg-[#111111]/90 border-2 border-[#8C6D3B] hover:border-[#C5A059] p-5 rounded-md flex flex-col justify-between shadow-[0_10px_20px_rgba(0,0,0,0.6)] hover:shadow-[0_10px_25px_rgba(197,160,89,0.15)] cursor-pointer transform hover:-translate-y-1 transition-all duration-200 relative overflow-hidden"
             >
+              {/* 장식용 엔틱 코너 라인 효과 */}
+              <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[#C5A059]/30 group-hover:border-[#C5A059]"></div>
+              <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-[#C5A059]/30 group-hover:border-[#C5A059]"></div>
+
               <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '12px' }}>
-                  <h3 style={{ color: '#C76C2E', fontSize: '16px', fontWeight: 'bold', margin: 0, paddingRight: '8px' }}>
-                    {trade.game_mode === 'standard' ? '[스탠] ' : '[래더] '}
-                    {trade.item_name_ko}
+                <div className="flex justify-between items-start gap-2 mb-4">
+                  <h3 className="text-[#C76C2E] group-hover:text-[#E2854A] text-base font-extrabold m-0 leading-snug tracking-wide transition-colors">
+                    {trade.game_mode === 'standard' ? '스탠' : '래더'} · {trade.item_name_ko}
                   </h3>
-                  <span style={{ color: '#C5A059', backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', fontSize: '13px', fontWeight: 'bold', padding: '2px 8px', borderRadius: '4px', whiteSpace: 'nowrap' }}>
+                  <span className="text-[#C5A059] bg-[#030303] border border-[#2A2A2A] text-xs font-black px-2.5 py-1 rounded shadow-inner whitespace-nowrap">
                     {trade.price_rune}
                   </span>
                 </div>
-                <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', fontSize: '12px', color: '#DCDCDC', padding: '10px', borderRadius: '4px', minHeight: '54px', margin: '0 0 16px 0', wordBreak: 'break-all', lineHeight: '1.5' }}>
-                  {trade.item_description || '상세 옵션 설명 없음'}
+                <p className="bg-[#030303]/80 border border-[#1A1A1A] text-xs text-[#B0B0B0] p-3 rounded-md min-h-[64px] m-0 mb-4 break-all leading-relaxed font-mono">
+                  {trade.item_description || '상세 옵션 설명이 명시되지 않은 전설 매물입니다.'}
                 </p>
               </div>
 
-              <div style={{ borderTop: '1px solid #222222', paddingTop: '12px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', color: '#C5A059', fontSize: '12px', fontWeight: 'bold', padding: '6px', margin: 0, textAlign: 'center' }}>
-                  상세 정보 및 방제 보러가기 →
+              <div className="border-t border-[#222] pt-3 flex flex-col gap-2.5">
+                <p className="bg-[#0A0A0A] border border-[#1F1F1F] group-hover:border-[#8C6D3B]/40 text-[#C5A059] text-xs font-bold py-1.5 m-0 text-center rounded transition-colors">
+                  흥정 제안 및 방제 보러가기 →
                 </p>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '10px', color: '#666666', padding: '0 4px', marginTop: '2px' }}>
-                  <span>{trade.battlenet_id}</span>
-                  <span style={{ color: '#8C6D3B', fontWeight: 'bold' }}>{formatTime(trade.created_at)}</span>
+                <div className="flex justify-between items-center text-[11px] text-[#555] px-1 font-mono">
+                  <span className="group-hover:text-[#888] transition-colors">{trade.battlenet_id}</span>
+                  <span className="text-[#8C6D3B] font-bold">{formatTime(trade.created_at)}</span>
                 </div>
               </div>
             </div>
@@ -210,7 +182,7 @@ export default function MarketHome() {
         </div>
 
         {!loading && (!trades || trades.length === 0) && (
-          <p style={{ textAlign: 'center', color: '#555555', margin: '96px 0', fontSize: '14px', fontWeight: 'bold' }}>현재 활성화된 실시간 거래 매물이 없습니다.</p>
+          <p className="text-center text-[#555] my-24 text-sm font-bold tracking-wider">현재 성역에 활성화된 실시간 거래 매물이 존재하지 않습니다.</p>
         )}
       </div>
 
