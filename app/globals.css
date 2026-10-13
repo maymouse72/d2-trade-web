@@ -31,7 +31,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [최종 대마감] 새로고침 색상 주입 및 하단 텍스트 양끝 정렬
+   📐 [공간 균형소] 타이틀 하단 간격 예전 정품 비율로 복구
    ========================================================== */
 
 /* 1. 중앙 마켓 게시판 와이드 뷰 설정 */
@@ -43,7 +43,19 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 2. 매물 상자 3열 종대 배치 */
+/* 🚨 2. [사장님 지시 사항 반영] 메인 타이틀 아래 여백을 예전 화면처럼 시원하게 개방 (mb-8을 mb-12로 대폭 확장!) */
+.main-platform-title { 
+  color: #C76C2E !important; 
+  font-size: 24px !important; 
+  font-weight: bold !important; 
+  text-align: center !important; 
+  letter-spacing: 2px !important; 
+  margin: 16px 0 48px 0 !important; /* 💡 맨 뒤의 24px 간격을 48px로 넓혀서 위아래 균형을 완벽히 맞췄습니다! */
+}
+
+.welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
+
+/* 3. 매물 상자 3열 종대 배치 */
 .grid { 
   display: grid !important; 
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
@@ -117,17 +129,17 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 🚨 3. [텍스트 양끝 정렬 수술] 베넷아이디(왼쪽 끝)와 경과 시간(오른쪽 끝)으로 강제 분사 */
+/* 베넷아이디(왼쪽 끝)와 경과 시간(오른쪽 끝) 양끝 정렬 */
 .bg-black-90 .font-mono {
   display: flex !important;
   flex-direction: row !important;
-  justify-content: space-between !important; /* ⚔️ 서로 가차 없이 양끝으로 밀어내기 */
+  justify-content: space-between !important;
   align-items: center !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
 
-/* 🚨 4. [새로고침 버튼 색상 완벽 복구] 상단 제어 바 및 버튼 레이아웃 고정 */
+/* 상단 제어 바 및 버튼 레이아웃 고정 */
 .bg-dark-gray {
   background-color: #141414 !important;
   display: flex !important;
@@ -150,7 +162,6 @@ input[type="text"]:focus, textarea:focus {
   justify-content: center !important;
 }
 
-/* 💡 새로고침 버튼에 웅장한 배틀넷 다크 스킨 색상 강제 도색 및 누락 버그 박멸 */
 .bg-dark-gray button, .bg-dark-gray button:first-child { 
   background-color: #1F1F1F !important; 
   border: 1px solid #8C6D3B !important; 
@@ -160,7 +171,6 @@ input[type="text"]:focus, textarea:focus {
   border-color: #C5A059 !important; 
 }
 
-/* 내 매물 등록 버튼 호라드릭 골드 고정 */
 .bg-dark-gray button:last-child { 
   background-color: #C5A059 !important; 
   border: 1px solid #6E5325 !important; 
@@ -170,7 +180,7 @@ input[type="text"]:focus, textarea:focus {
   background-color: #B48F48 !important; 
 }
 
-/* 5. 고정 광고 기둥 배치 */
+/* 고정 광고 기둥 배치 */
 .fixed-ad-banner {
   position: fixed !important;
   top: 160px !important;
@@ -193,8 +203,6 @@ input[type="text"]:focus, textarea:focus {
 .fixed-right-box { right: 20px !important; }
 
 /* 기타 가독성 서브 레이블 */
-.welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
-.main-platform-title { color: #C76C2E !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 16px 0 32px 0 !important; }
 .border-2 { border-width: 2px !important; border-style: solid !important; }
 .border-gold { border-color: #8C6D3B !important; }
 .rounded-md { border-radius: 6px !important; }
