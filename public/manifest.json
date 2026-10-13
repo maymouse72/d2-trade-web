@@ -1,0 +1,17 @@
+{
+  "name": "Diablo II Realtime Market",
+  "short_name": "D2 Market",
+  "description": "금별아빠 디아블로2 실시간 트레이드 마켓",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#C76C2E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
