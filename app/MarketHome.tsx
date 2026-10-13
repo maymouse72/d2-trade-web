@@ -128,7 +128,7 @@ export default function MarketHome() {
           <p style={{ color: '#777777', fontSize: '12px', lineHeight: '1.6', margin: '0 0 24px 0' }}>
             디아블로2<br />실시간 마켓<br />배너 광고 구역
           </p>
-          <div style={{ borderTop: '1px solid #33 whispers', paddingTop: '16px', width: '100%' }}>
+          <div style={{ borderTop: '1px solid #333', paddingTop: '16px', width: '100%' }}>
             <span style={{ display: 'block', color: '#C5A059', fontSize: '12px', fontWeight: 'bold' }}>문의 이메일</span>
             <span style={emailStyle}>maymouse72<br />@gmail.com</span>
           </div>
@@ -152,11 +152,16 @@ export default function MarketHome() {
       {/* 중앙 메인 매물 게시판 본체 */}
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         
-        <h1 style={{ color: '#C76C2E', fontSize: '28px', fontWeight: 'bold', textAlign: 'center', letterSpacing: '2px', margin: '32px 0' }}>
+        {/* 💡 [요청 사항 반영] 정식 사이트 상기 웰컴 배너 레이블 노출 */}
+        <div style={{ color: '#C5A059', fontSize: '15px', fontWeight: 'bold', textAlign: 'center', marginTop: '24px', letterSpacing: '0.5px' }}>
+          D2 주고받고(://d2jugobatgo.com) 사이트 방문을 환영합니다!!
+        </div>
+
+        {/* 💡 [요청 사항 반영] 메인 타이틀 마진 조정 및 폰트 크기 슬림 다운(28px → 22px) */}
+        <h1 style={{ color: '#C76C2E', fontSize: '22px', fontWeight: 'bold', textAlign: 'center', letterSpacing: '2px', margin: '14px 0 28px 0' }}>
           DIABLO II REALTIME MARKET
         </h1>
-
-        <div style={{ backgroundColor: '#141414', border: '1px solid #8C6D3B', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px', borderRadius: '4px', marginBottom: '24px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
+                <div style={{ backgroundColor: '#141414', border: '1px solid #8C6D3B', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px', borderRadius: '4px', marginBottom: '24px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
           <p style={{ color: '#777777', fontSize: '13px', fontWeight: 'bold', margin: 0 }}>카드를 터치하면 상세페이지로 이동하며 방 정보를 확인합니다.</p>
           <div style={{ display: 'flex', gap: '12px' }}>
             <button onClick={fetchTrades} disabled={loading} style={{ backgroundColor: '#1A1A1A', border: '1px solid #8C6D3B', color: '#FFFFFF', padding: '8px 16px', fontSize: '13px', fontWeight: 'bold', borderRadius: '4px', cursor: 'pointer' }}>
