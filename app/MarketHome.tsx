@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation'; // 💡 [중요] 상세화면방으로 유저를 광속 워프시킬 정품 이동 엔진 수입!
 import { createClient } from '@supabase/supabase-js';
 import PostModal from './PostModal';
 
@@ -9,6 +10,7 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
 export default function MarketHome() {
+  const router = useRouter(); // 💡 이동 엔진 비서 배정
   const [trades, setTrades] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,14 +31,10 @@ export default function MarketHome() {
     setLoading(false);
   };
 
-  // 💡 [무한 루프 완벽 박멸의 핵심 치트키]
-  // 맨 뒤의 빈 배열( [] ) 자리에 데이터 수신 함수를 확실히 가두어, 처음 사이트 접속 시 딱 1번만 서버를 조회하고 멈추게 만듭니다!
   useEffect(() => {
     fetchTrades();
-  }, []); // 👈 여기에 빈 대괄호( [] )가 정확히 들어가 있어야 무한 루프가 영구 정지됩니다!
+  }, []);
 
-  // 💡 [화면 크기 감지 센서 완벽 격리 부속품]
-  // 데이터 조회와 별도로 스위치를 분리하여 창 크기가 변해도 새로고침 폭탄이 터지지 않도록 철통 방어합니다.
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1400);
@@ -69,12 +67,6 @@ export default function MarketHome() {
       setIsModalOpen(false);
       fetchTrades();
     }
-  };
-
-  const handleCopyRoomName = (roomName: string) => {
-    navigator.clipboard.writeText(roomName).then(() => {
-      alert(`인게임 방제 [ ${roomName} ] 가 클립보드에 복사되었습니다!`);
-    });
   };
 
   const formatTime = (createdAt: string) => {
@@ -163,7 +155,7 @@ export default function MarketHome() {
         </h1>
 
         <div style={{ backgroundColor: '#141414', border: '1px solid #8C6D3B', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px', borderRadius: '4px', marginBottom: '24px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
-          <p style={{ color: '#777777', fontSize: '13px', fontWeight: 'bold', margin: 0 }}>카드를 터치하면 방제가 자동 복사됩니다</p>
+          <p style={{ color: '#777777', fontSize: '13px', fontWeight: 'bold', margin: 0 }}>카드를 터치하면 상세화면으로 이동합니다</p>
           <div style={{ display: 'flex', gap: '12px' }}>
             <button onClick={fetchTrades} disabled={loading} style={{ backgroundColor: '#1A1A1A', border: '1px solid #8C6D3B', color: '#FFFFFF', padding: '8px 16px', fontSize: '13px', fontWeight: 'bold', borderRadius: '4px', cursor: 'pointer' }}>
               {loading ? '로딩 중...' : '새로고침'}
@@ -176,9 +168,10 @@ export default function MarketHome() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
           {trades && trades.map((trade: any) => (
+            /* 💡 [동선 완전 정비] 카드를 터치하면 복사 팝업 대신 고유 상세방 주소(/trade/매물ID번호)로 매끄럽게 워프합니다! */
             <div 
               key={trade.id} 
-              onClick={() => handleCopyRoomName(trade.room_name)} 
+              onClick={() => router.push(`/trade/${trade.id}`)} 
               style={{ backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '4px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', boxShadow: '0 10px 15px rgba(0,0,0,0.5)', cursor: 'pointer' }}
             >
               <div>
@@ -198,7 +191,7 @@ export default function MarketHome() {
 
               <div style={{ borderTop: '1px solid #222222', paddingTop: '12px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                 <p style={{ backgroundColor: '#0A0A0A', border: '1px solid #1A1A1A', color: '#00FF00', fontSize: '12px', fontWeight: 'bold', padding: '6px', margin: 0 }}>
-                  인게임 방제: <span style={{ color: '#22FF22', textDecoration: 'underline', fontFamily: 'monospace', marginLeft: '4px' }}>{trade.room_name}</span>
+                  상세보기 및 흥정 댓글 작성하기 →
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '10px', color: '#666666', padding: '0 4px', marginTop: '2px' }}>
                   <span>{trade.battlenet_id}</span>
