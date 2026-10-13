@@ -31,9 +31,10 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [공간 균형소] 메인 홈 화면 100% 복구 및 정밀 레이아웃
+   📐 [공간 균형소] 메인 홈 화면 100% 원상복구 및 정렬 구역
    ========================================================== */
 
+/* 중앙 마켓 게시판 와이드 뷰 설정 */
 .center-board-container {
   max-width: 1200px !important;
   width: 100% !important;
@@ -42,6 +43,7 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
+/* 메인 타이틀 아래 여백 황금비율 세팅 */
 .main-platform-title { 
   color: #C76C2E !important; 
   font-size: 24px !important; 
@@ -65,7 +67,7 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 3열 종대 그리드 완벽 고정 */
+/* 3열 종대 그리드 완벽 잠금 */
 .grid { 
   display: grid !important; 
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
@@ -80,7 +82,7 @@ input[type="text"]:focus, textarea:focus {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-/* 메인 매물 카드 복구 */
+/* 메인 매물 카드 스킨 완벽 복구 */
 .bg-black-90 {
   background-color: rgba(17, 17, 17, 0.9) !important;
   display: flex !important;
@@ -146,7 +148,7 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 상단 버튼 라인 높이 완벽 일치 */
+/* 상단 버튼 라인 높이 및 색상 원상복구 */
 .bg-dark-gray button {
   height: 38px !important;
   padding: 0 20px !important;
@@ -159,9 +161,12 @@ input[type="text"]:focus, textarea:focus {
   justify-content: center !important;
 }
 .bg-dark-gray button, .bg-dark-gray button:first-child { background-color: #1F1F1F !important; border: 1px solid #8C6D3B !important; color: #FFFFFF !important; }
+.bg-dark-gray button:hover, .bg-dark-gray button:first-child:hover { border-color: #C5A059 !important; }
 .bg-dark-gray button:last-child { background-color: #C5A059 !important; border: 1px solid #6E5325 !important; color: #0A0A0A !important; }
+.bg-dark-gray button:last-child:hover { background-color: #B48F48 !important; }
+
 /* ==========================================================
-   🚨 [상세창 부활 구역] 상세페이지 직통 연결선 및 레이아웃 박음질
+   🚨 [상세창 부활 구역] 특수기호 제거 및 자바스크립트 우회 완전체
    ========================================================== */
 
 /* 1. 상세창 전체 외곽 암막 및 고화질 일러스트 정품 주소 강제 결합 */
@@ -174,28 +179,24 @@ input[type="text"]:focus, textarea:focus {
   background-blend-mode: color-burn !important;
 }
 
-/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 강제 복구 (타이밍 매핑 버그 원천 박멸) */
-.min-h-screen {
-  min-height: 100vh !important;
-  background-image: url('https://unsplash.com') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-blend-mode: color-burn !important;
-}
-
-.max-w-650-center, .min-h-screen > div:nth-child(2), [class*="max-w-[650px]"] {
+/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 강제 복구 (특수문자 클래스 완벽 우회 및 가로폭 강제 인양) */
+.min-h-screen > div:nth-child(2),
+[class*="max-w-"],
+[class*="650px"] {
   max-width: 650px !important;
   width: 100% !important;
   margin: 0 auto !important;
-  background-color: rgba(20, 20, 20, 0.95) !important;
-  border: 2px solid #8C6D3B !important;
+  background-color: rgba(20, 20, 20, 0.95) !important; /* 묵직한 다크 패널 */
+  border: 2px solid #8C6D3B !important; /* 골드 프레임 테두리 */
   padding: 32px !important;
   border-radius: 8px !important;
   box-shadow: 0 20px 50px rgba(0,0,0,0.95) !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important; /* 내부 세로 찢어짐 원천 차단 */
 }
 
+/* 3. 플렉스 방향 가로 정렬 강제 주입 (글자 세로 조각남 박멸) */
 .flex { 
   display: flex !important; 
   flex-direction: row !important; 
@@ -209,15 +210,22 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important; 
 }
 
-.pwa-push-banner, .min-h-screen [class*="bg-[#0A0A0A]"] {
+/* 4. PWA 푸시 알림 배너 스킨 가동 및 수평 정렬 */
+.min-h-screen [class*="bg-"][class*="0A0A0A"] {
   background-color: #0A0A0A !important;
   border: 1px solid #C76C2E !important;
   padding: 16px !important;
   border-radius: 6px !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
 }
 
-.pwa-push-banner button, .min-h-screen [class*="bg-[#0A0A0A]"] button {
+/* 알림 켜기 버튼 조율 */
+.min-h-screen [class*="bg-"][class*="0A0A0A"] button {
   height: 34px !important;
   padding: 0 16px !important;
   font-size: 12px !important;
@@ -228,7 +236,8 @@ input[type="text"]:focus, textarea:focus {
   border-radius: 4px !important;
 }
 
-.detail-item-header, .min-h-screen [class*="border-b"] {
+/* 5. 상세창 아이템 명과 요구 가격 가로축 정렬 */
+.min-h-screen [class*="border-b"] {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
@@ -240,11 +249,12 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-.detail-item-header h2, .min-h-screen h2 { color: #C76C2E !important; font-size: 22px !important; font-weight: 900 !important; margin: 0 !important; }
-.detail-item-header .price-box-wrapper, .min-h-screen h2 + div { text-align: right !important; }
-.detail-item-header .price-box-wrapper > span, .min-h-screen h2 + div > span { color: #C5A059 !important; background-color: #0A0A0A !important; border: 2px solid #8C6D3B !important; padding: 6px 16px !important; border-radius: 4px !important; font-weight: 900 !important; font-size: 16px !important; }
+.min-h-screen h2 { color: #C76C2E !important; font-size: 22px !important; font-weight: 900 !important; margin: 0 !important; }
+.min-h-screen h2 + div { text-align: right !important; }
+.min-h-screen h2 + div > span { color: #C5A059 !important; background-color: #0A0A0A !important; border: 2px solid #8C6D3B !important; padding: 6px 16px !important; border-radius: 4px !important; font-weight: 900 !important; font-size: 16px !important; }
 
-.detail-option-box, .min-h-screen [class*="bg-[#030303]"] {
+/* 6. 상세 옵션창 및 인게임 방제 고유 박스 스킨 가로 배열 고정 */
+.min-h-screen [class*="bg-"][class*="030303"] {
   background-color: #030303 !important;
   border: 1px solid #222222 !important;
   padding: 16px !important;
@@ -254,9 +264,11 @@ input[type="text"]:focus, textarea:focus {
   font-family: monospace !important;
   line-height: 1.6 !important;
   box-sizing: border-box !important;
+  width: 100% !important;
 }
 
-.detail-room-info-box, .min-h-screen [class*="border-2"] {
+/* 방 정보 박스 정밀 가로축 튜닝 */
+.min-h-screen [class*="border-2"] {
   background-color: #0A0A0A !important;
   border: 2px solid #8C6D3B !important;
   padding: 16px !important;
@@ -267,9 +279,11 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important;
   margin-bottom: 32px !important;
   box-sizing: border-box !important;
+  width: 100% !important;
 }
 
-.detail-room-info-box button, .min-h-screen [class*="border-2"] button {
+.min-h-screen .border-2 button,
+.min-h-screen [class*="border-2"] button {
   background-color: #C5A059 !important;
   color: #0A0A0A !important;
   border: 1px solid #6E5325 !important;
@@ -279,22 +293,26 @@ input[type="text"]:focus, textarea:focus {
   border-radius: 4px !important;
 }
 
-.detail-comment-section, .min-h-screen [class*="border-dashed"] {
+/* 7. 댓글 입력 트랙 및 리스트 수평 배열 완공 */
+.min-h-screen [class*="border-dashed"] {
   border-top: 2px dashed #262626 !important;
   padding-top: 24px !important;
+  width: 100% !important;
 }
 
-.detail-comment-section h3, .min-h-screen [class*="border-dashed"] h3 { color: #C76C2E !important; font-size: 16px !important; font-weight: 800 !important; margin: 0 0 16px 0 !important; }
+.min-h-screen [class*="border-dashed"] h3 { color: #C76C2E !important; font-size: 16px !important; font-weight: 800 !important; margin: 0 0 16px 0 !important; }
 
-.detail-comment-input-row, .min-h-screen [class*="border-dashed"] > div:nth-child(2) {
+/* 댓글 입력칸과 버튼 가로 라인 일치 수술 */
+.min-h-screen [class*="border-dashed"] > div:nth-child(2) {
   display: flex !important;
   flex-direction: row !important;
   gap: 8px !important;
   margin-bottom: 24px !important;
   width: 100% !important;
+  align-items: center !important;
 }
 
-.detail-comment-section button, .min-h-screen [class*="border-dashed"] button {
+.min-h-screen [class*="border-dashed"] button {
   height: 40px !important;
   background-color: #1F1F1F !important;
   border: 1px solid #8C6D3B !important;
@@ -305,6 +323,7 @@ input[type="text"]:focus, textarea:focus {
   border-radius: 4px !important;
 }
 
+/* 좌우 고정 광고 날개 기둥 하드웨어 정렬 */
 .fixed-ad-banner { position: fixed !important; top: 160px !important; width: 140px !important; height: 500px !important; background-color: #141414 !important; border: 2px dashed #8C6D3B !important; border-radius: 6px !important; padding: 20px 10px !important; box-sizing: border-box !important; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important; z-index: 50 !important; }
 .fixed-left-box { left: 20px !important; }
 .fixed-right-box { right: 20px !important; }
