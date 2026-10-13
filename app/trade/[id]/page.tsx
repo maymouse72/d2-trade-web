@@ -1,4 +1,3 @@
-// app/trade/[id]/page.tsx
 'use client';
 
 import { useEffect, useState, use } from 'react';
@@ -87,7 +86,6 @@ export default function TradeDetailPage({ params }: PageProps) {
             applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
           });
 
-          // 💡 [사장님 지시 150% 완벽 검증 장착] 90번째 줄 푸시 전송용 정품 도메인 절대 주소 철저 각인!
           await fetch('https://www.d2jugobatgo.com/api/push', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -138,7 +136,6 @@ export default function TradeDetailPage({ params }: PageProps) {
     if (error) {
       alert(`댓글 등록 실패 사유: ${error.message}`);
     } else {
-      // 💡 [사장님 지시 150% 완벽 검증 장착] 150번째 줄 스마트폰 푸시 진동 타격 url 절대 경로 주소 칼정렬 주입!
       if ('serviceWorker' in navigator && Notification.permission === 'granted') {
         navigator.serviceWorker.ready.then((reg) => {
           reg.showNotification('⚔️ D2 마켓 실시간 흥정 알림', {
@@ -162,132 +159,129 @@ export default function TradeDetailPage({ params }: PageProps) {
   const handleCopyRoomName = () => {
     if (!trade) return;
     navigator.clipboard.writeText(trade.room_name).then(() => {
-      alert(`인게임 방제 [ ${trade.room_name} ] 가 복사되었습니다!`);
+      alert('인게임 방제가 복사되었습니다!');
     });
   };
 
   if (loading) {
-    // 💡 테일윈드 애니메이션 효과를 주입한 웅장한 디아블로풍 로딩 연출
     return (
-      <div className="bg-[#030303] min-h-screen flex items-center justify-center text-[#C5A059] font-black tracking-widest text-sm animate-pulse">
+      <div style={{ backgroundColor: '#030303', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C5A059', fontWeight: 'bold', letterSpacing: '2px' }}>
         ⚡ 호라드림 함에서 전설 매물 옵션을 해독하는 중...
       </div>
     );
   }
 
-  // 💡 [사장님 지정 정밀 절단선] 이 밑바닥 줄 바로 뒤에 아래 2부 하반신을 공백 없이 붙여넣으세요!
+  // 💡 [정밀 분할 기준선] 이 바로 아래에 2부 하반신 소스를 연달아 복사해 붙여넣으시면 끝납니다!
   if (!trade) return null;
     return (
-    // 💡 디아블로 고풍스러운 어둠 배경 + 무료 상업용 다크 판타지 아트워크 백그라운드 매칭
-    <div className="min-h-screen bg-[#030303] text-[#DCDCDC] px-4 py-10 font-sans bg-[url('https://unsplash.com')] bg-cover bg-center bg-fixed bg-blend-color-burn relative overflow-x-hidden">
-      {/* 백그라운드 흑암 차단 막 그라데이션 */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#030303]/90 via-[#050505]/95 to-[#030303]/90 pointer-events-none z-0"></div>
-
-      <div className="relative z-10 max-w-[650px] mx-auto bg-[#141414]/95 border-2 border-[#8C6D3B] p-6 md:p-8 rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.95)] hover:shadow-[0_20px_50px_rgba(197,160,89,0.05)] transition-all duration-300 relative overflow-hidden">
-        {/* 모서리 고풍스러운 골드 데코 무늬 인테리어 */}
-        <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#8C6D3B]/40"></div>
-        <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-[#8C6D3B]/40"></div>
-
-        {/* 뒤로가기 탐색 센터 */}
-        <button onClick={() => router.push('/')} className="bg-transparent border-none text-[#777] hover:text-white cursor-pointer text-sm mb-6 p-0 transition-colors flex items-center gap-1 font-bold">
+    <div style={{ minHeight: '100vh', backgroundColor: '#030303', color: '#DCDCDC', padding: '40px 16px', fontFamily: 'sans-serif', position: 'relative' }}>
+      <div style={{ maxWidth: '650px', margin: '0 auto', backgroundColor: 'rgba(20, 20, 20, 0.95)', border: '2px solid #8C6D3B', padding: '32px', borderRadius: '8px', boxShadow: '0 20px 50px rgba(0,0,0,0.95)' }}>
+        
+        <button onClick={() => router.push('/')} style={{ backgroundColor: 'transparent', border: 'none', color: '#777777', cursor: 'pointer', fontSize: '14px', marginBottom: '24px', padding: 0 }}>
           ← 디아2 마켓 거래소 목록으로 돌아가기
         </button>
 
-        {/* PWA 실시간 알림 가동 대시보드 배너 (디아블로 테마 프리미엄 스킨 수술 마감) */}
-        <div className="bg-[#0A0A0A] border border-[#C76C2E] p-4 rounded-md flex justify-between items-center mb-6 shadow-inner relative overflow-hidden">
-          <div className="pr-3">
-            <span className="text-[#C76C2E] text-xs md:text-sm font-extrabold block tracking-wide">🔥 PWA 흥정 푸시 알림 가동 시스템</span>
-            <span className="text-[#777] text-[11px] leading-tight block mt-1">상대방이 흥정 제안 댓글을 쓰는 즉시 스마트폰/PC에 실시간 알림이 울립니다.</span>
+        {/* PWA 실시간 알림 가동 대시보드 배너 */}
+        <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #C76C2E', padding: '16px', borderRadius: '6px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+          <div>
+            <span style={{ color: '#C76C2E', fontSize: '14px', fontWeight: 'bold', display: 'block', letterSpacing: '0.5px' }}>🔥 PWA 흥정 푸시 알림 가동 시스템</span>
+            <span style={{ color: '#777777', fontSize: '11px', display: 'block', marginTop: '4px' }}>상대방이 흥정 제안 댓글을 쓰는 즉시 스마트폰/PC에 실시간 알림이 울립니다.</span>
           </div>
           <button 
             onClick={handleRequestNotification}
             disabled={isSubscribed}
-            className={`px-3 py-1.5 text-xs font-black rounded tracking-wide transition-all whitespace-nowrap active:scale-95 ${
-              isSubscribed 
-                ? 'bg-[#1A1A1A] text-[#555] border border-[#222] cursor-default' 
-                : 'bg-gradient-to-b from-[#C76C2E] to-[#964E1C] text-[#0A0A0A] cursor-pointer hover:from-[#DF7D3A] border border-[#6E5325] shadow-md'
-            }`}
+            style={{ 
+              backgroundColor: isSubscribed ? '#1A1A1A' : '#C76C2E', 
+              color: isSubscribed ? '#555555' : '#0A0A0A', 
+              border: isSubscribed ? '1px solid #222' : 'none', 
+              padding: '8px 14px', 
+              fontSize: '12px', 
+              fontWeight: 'bold', 
+              borderRadius: '4px', 
+              cursor: isSubscribed ? 'default' : 'pointer' 
+            }}
           >
             {isSubscribed ? '● 실시간 작동중' : '알림 활성화'}
           </button>
         </div>
 
-        {/* 아이템 대형 타이틀 및 요구가격 레이아웃 */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-[#2A2A2A] pb-5 mb-5 gap-4">
+        {/* 아이템 대형 타이틀 및 요구가격 */}
+        {/* 💡 [오타 정밀 교정 구역] textSpacing을 letterSpacing 문법으로 완벽 고정 완공! */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #2A2A2A', paddingBottom: '20px', marginBottom: '20px' }}>
           <div>
-            <span className="text-[#C5A059] text-[11px] font-black bg-[#0A0A0A] border border-[#222] px-2 py-0.5 rounded tracking-wider shadow-inner uppercase">
+            <span style={{ color: '#C5A059', fontSize: '11px', fontWeight: 'bold', backgroundColor: '#0A0A0A', border: '1px solid #222', padding: '2px 8px', borderRadius: '4px', letterSpacing: '0.5px' }}>
               {trade.game_mode === 'standard' ? 'Standard Mode' : 'Ladder Season'}
             </span>
-            <h2 className="text-[#C76C2E] text-xl md:text-2xl font-black m-0 mt-3 tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,1)]">
+            <h2 style={{ color: '#C76C2E', fontSize: '24px', fontWeight: 'bold', margin: '12px 0 0 0', letterSpacing: '0.5px' }}>
               {trade.item_name_ko}
             </h2>
           </div>
-          <div className="w-full sm:w-auto text-right">
-            <span className="text-[#C5A059] text-base md:text-lg font-black bg-[#0A0A0A] border-2 border-[#8C6D3B] px-4 py-1.5 rounded shadow-2xl inline-block tracking-wider">
+          <div>
+            <span style={{ color: '#C5A059', fontSize: '18px', fontWeight: 'bold', backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', padding: '6px 16px', borderRadius: '4px' }}>
               💰 {trade.price_rune}
             </span>
           </div>
         </div>
 
-        {/* 상세 아이템 정보 디스플레이 구역 */}
-        <div className="mb-6">
-          <label className="block text-xs text-[#888] font-bold tracking-wider mb-2 uppercase">Item Attributes (아이템 세부 옵션)</label>
-          <div className="bg-[#030303] border border-[#222] p-4 rounded text-sm text-[#DDD] min-h-[96px] leading-relaxed break-all font-mono shadow-inner whitespace-pre-wrap">
-            {trade.item_description || '상세 유니크/레어 옵션 정보가 생략된 전설 아이템 매물입니다.'}
+        {/* 상세 아이템 정보 디스플레이 */}
+        <div style={{ marginBottom: '24px' }}>
+          <label style={{ display: 'block', fontSize: '12px', color: '#888888', fontWeight: 'bold', marginBottom: '8px' }}>Item Attributes (아이템 세부 옵션)</label>
+          <div style={{ backgroundColor: '#030303', border: '1px solid #222222', padding: '16px', borderRadius: '4px', minHeight: '96px', lineHeight: '1.6', fontSize: '14px', fontFamily: 'monospace', color: '#DDDDDD' }}>
+            {trade.item_description || '상세 옵션 설명이 등록되지 않은 전설 아이템 매물입니다.'}
           </div>
         </div>
 
         {/* 배틀넷 방제 복사 제어소 */}
-        <div className="bg-[#0A0A0A] border-2 border-[#8C6D3B] p-4 rounded-md flex justify-between items-center mb-8 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#8C6D3B]/40 to-transparent"></div>
+        <div style={{ backgroundColor: '#0A0A0A', border: '2px solid #8C6D3B', padding: '16px', borderRadius: '6px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
           <div>
-            <span className="block text-[11px] text-[#666] font-bold tracking-wider mb-1 uppercase">Battle.net Room Info (방 정보)</span>
-            <span className="text-[#22FF22] text-base md:text-lg font-mono font-bold tracking-widest">{trade.room_name}</span>
+            <span style={{ display: 'block', fontSize: '11px', color: '#666666', fontWeight: 'bold', marginBottom: '4px' }}>Battle.net Room Info (방 정보)</span>
+            <span style={{ color: '#22FF22', fontSize: '16px', fontFamily: 'monospace', fontWeight: 'bold', letterSpacing: '1px' }}>{trade.room_name}</span>
           </div>
-          <button onClick={handleCopyRoomName} className="bg-gradient-to-b from-[#C5A059] to-[#9A7A3E] hover:from-[#Dbc281] text-[#0A0A0A] border border-[#6E5325] px-4 py-2 text-xs font-black rounded cursor-pointer shadow-md transition-all active:scale-95 whitespace-nowrap">
+          <button onClick={handleCopyRoomName} style={{ backgroundColor: '#C5A059', color: '#0A0A0A', border: 'none', padding: '10px 18px', fontSize: '13px', fontWeight: 'bold', borderRadius: '4px' }}>
             방제 복사하기
           </button>
         </div>
 
         {/* 흥정 타임라인 댓글 시스템 */}
-        <div className="border-t-2 border-dashed border-[#262626] pt-6">
-          <h3 className="text-[#C76C2E] text-base font-extrabold m-0 mb-4 tracking-wide">
+        <div style={{ borderTop: '2px dashed #262626', paddingTop: '24px' }}>
+          {/* 💡 [오타 정밀 교정 구역] tracking을 letterSpacing 자바스크립트 표준 문법으로 각인 완공! */}
+          <h3 style={{ color: '#C76C2E', fontSize: '16px', fontWeight: 'bold', margin: '0 0 16px 0', letterSpacing: '0.5px' }}>
             ⚔️ 성역의 실시간 흥정 및 네고 제안 ({comments ? comments.length : 0})
           </h3>
           
           {/* 댓글 입력 트랙 */}
-          <div className="flex gap-2 mb-6">
+          <div style={{ display: 'flex', gap: '10px', marginBottom: '24px', alignItems: 'center' }}>
             <input 
               type="text" 
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="익명 흥정 제안을 입력하세요 (예: 1오움 룬에 네고 가능한가요?)" 
-              className="flex-grow h-10 px-3 bg-[#030303] border border-[#8C6D3B] focus:border-[#C5A059] text-white rounded text-xs md:text-sm font-semibold outline-none transition-all placeholder-[#444] shadow-inner" 
+              style={{ flexGrow: 1, height: '40px', padding: '0 12px', backgroundColor: '#030303', border: '1px solid #8C6D3B', color: '#FFFFFF', borderRadius: '4px', fontSize: '13px', outline: 'none' }} 
             />
             <button 
               onClick={handleCommentSubmit}
               disabled={commentSubmitting}
-              className="bg-[#1F1F1F] border border-[#8C6D3B] hover:border-[#C5A059] text-white px-5 rounded text-xs md:text-sm font-bold cursor-pointer transition-all active:scale-95 disabled:opacity-50 whitespace-nowrap"
+              style={{ height: '40px', backgroundColor: '#1F1F1F', border: '1px solid #8C6D3B', color: '#FFFFFF', padding: '0 20px', fontSize: '14px', fontWeight: 'bold', borderRadius: '4px' }}
             >
               {commentSubmitting ? '전송중..' : '제안'}
             </button>
           </div>
 
           {/* 실시간 타임라인 출력 */}
-          <div className="flex flex-col gap-3">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {comments && comments.map((item: any) => (
-              <div key={item.id} className="bg-[#0A0A0A]/90 border border-[#222] hover:border-[#8C6D3B]/30 p-4 rounded shadow-inner transition-colors font-mono">
-                <div className="flex justify-between items-center text-[10px] text-[#555] mb-2">
-                  <span className="text-[#8C6D3B] font-bold tracking-wide">🛡️ 익명의 성역 디아러</span>
+              <div key={item.id} style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', padding: '12px 16px', borderRadius: '4px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '10px', color: '#555555', marginBottom: '6px' }}>
+                  <span style={{ color: '#8C6D3B', fontWeight: 'bold' }}>🛡️ 익명의 성역 디아러</span>
                   <span>{new Date(item.created_at).toLocaleTimeString('ko-KR', {hour: '2-digit', minute:'2-digit'})}</span>
                 </div>
-                <p className="m-0 text-xs md:text-sm text-[#CCCCCC] break-all leading-relaxed font-sans">{item.content}</p>
+                <p style={{ margin: 0, fontSize: '13px', color: '#CCCCCC', wordBreak: 'break-all', lineHeight: '1.5' }}>{item.content}</p>
               </div>
             ))}
           </div>
 
           {(!comments || comments.length === 0) && (
-            <p className="text-center text-[#444] text-xs font-bold my-8 tracking-wider">아직 접수된 실시간 흥정 및 네고 제안이 없습니다.</p>
+            <p style={{ textAlign: 'center', color: '#444444', fontSize: '12px', margin: '24px 0', letterSpacing: '0.5px' }}>아직 접수된 실시간 흥정 및 네고 제안이 없습니다.</p>
           )}
         </div>
 
