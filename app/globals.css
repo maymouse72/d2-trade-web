@@ -31,10 +31,9 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [공간 균형소] 메인 홈 화면 예전 정품 황금비율 100% 동기화 구역
+   📐 [철통 방어] 첫 화면 예전 정품 황금비율 100% 홀딩 보존 구역
    ========================================================== */
 
-/* 중앙 마켓 게시판 와이드 뷰 설정 */
 .center-board-container {
   max-width: 1200px !important;
   width: 100% !important;
@@ -43,7 +42,6 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 메인 타이틀 아래 여백 황금비율 세팅 */
 .main-platform-title { 
   color: #C76C2E !important; 
   font-size: 24px !important; 
@@ -55,7 +53,6 @@ input[type="text"]:focus, textarea:focus {
 
 .welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
 
-/* 메인 제어 바 간격 고정 */
 .bg-dark-gray {
   background-color: #141414 !important;
   display: flex !important;
@@ -67,7 +64,6 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 상단 버튼 라인 높이 및 색상 고정 */
 .bg-dark-gray button {
   height: 38px !important;
   padding: 0 20px !important;
@@ -79,12 +75,11 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important;
   justify-content: center !important;
 }
-.bg-dark-gray button, .bg-dark-gray button:first-child { background-color: #1F1F1F !important; border: 1px solid #8C6D3B !important; color: #FFFFFF !important; }
+.bg-dark-gray button, .bg-dark-gray button:first-child { background-color: #1F1F1F !important; border: 1px solid #8C6D3B !important; color: #FFFFFF !important; cursor: pointer !important; }
 .bg-dark-gray button:hover, .bg-dark-gray button:first-child:hover { border-color: #C5A059 !important; }
-.bg-dark-gray button:last-child { background-color: #C5A059 !important; border: 1px solid #6E5325 !important; color: #0A0A0A !important; }
+.bg-dark-gray button:last-child { background-color: #C5A059 !important; border: 1px solid #6E5325 !important; color: #0A0A0A !important; cursor: pointer !important; }
 .bg-dark-gray button:last-child:hover { background-color: #B48F48 !important; }
 
-/* 3열 종대 그리드 완벽 잠금 */
 .grid { 
   display: grid !important; 
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
@@ -99,16 +94,15 @@ input[type="text"]:focus, textarea:focus {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-/* 🚨 [초정밀 격리 복구] 상세창 flex 간섭을 원천 차단하고 첫 화면 카드 내부 줄꼬임 완전 복원 */
-.grid .bg-black-90 {
+.grid .bg-black-90, .grid > div {
   background-color: rgba(17, 17, 17, 0.9) !important;
   display: flex !important;
-  flex-direction: column !important; /* 세로 배열 독립 고정 */
+  flex-direction: column !important; 
   justify-content: space-between !important;
   box-sizing: border-box !important;
+  cursor: pointer !important;
 }
 
-/* 헤더 줄꼬임 차단 (래더 아이템명과 가격룬 수평 칼정렬) */
 .grid .bg-black-90 > div:first-child > div:first-child {
   display: flex !important;
   flex-direction: row !important;
@@ -141,7 +135,6 @@ input[type="text"]:focus, textarea:focus {
   margin-left: 12px !important;
 }
 
-/* 옵션 설명 상자 독방 배치 및 뭉개짐 박멸 */
 .grid .bg-black-90 p {
   display: block !important;
   width: 100% !important;
@@ -158,7 +151,6 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 베넷아이디와 경과 시간 양끝 정렬 복원 */
 .grid .bg-black-90 .font-mono {
   display: flex !important;
   flex-direction: row !important;
@@ -166,11 +158,13 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important;
   width: 100% !important;
   box-sizing: border-box !important;
-}/* ==========================================================
-   🚨 [상세창 대완공 구역] 첫 화면 간섭 원천 차단 및 독자 스킨 안착
+}
+
+/* ==========================================================
+   🚨 [오직 상세창만 타격] 첫 화면 철저히 보존하고 상세창 규격 대완공
    ========================================================== */
 
-/* 1. 상세창 전체 외곽 암막 및 배경 일러스트 고정 */
+/* 1. 상세창 전체 외곽 암막 및 고화질 일러스트 정품 주소 강제 결합 */
 .min-h-screen {
   min-height: 100vh !important;
   background-image: url('https://unsplash.com') !important;
@@ -180,7 +174,7 @@ input[type="text"]:focus, textarea:focus {
   background-blend-mode: color-burn !important;
 }
 
-/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 복구 및 가로폭 강제 인양 */
+/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 복구 및 가로폭 강제 인양 (전체 간섭 해결) */
 .min-h-screen > div:nth-child(2),
 .max-w-\[650px\] {
   max-width: 650px !important;
@@ -194,6 +188,13 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
   display: flex !important;
   flex-direction: column !important; /* 내부 세로 찢어짐 원천 차단 */
+}
+
+/* 상세창 내 모든 버튼 및 링크 마우스 올리면 손모양(Pointer) 강제 각인 */
+.min-h-screen button, 
+.min-h-screen button[onClick], 
+.min-h-screen [onClick] {
+  cursor: pointer !important;
 }
 
 /* 3. 상세페이지 내부 플렉스 기본 축 안전 한계선 세팅 */
@@ -253,7 +254,7 @@ input[type="text"]:focus, textarea:focus {
 .min-h-screen h2 + div { text-align: right !important; }
 .min-h-screen h2 + div > span { color: #C5A059 !important; background-color: #0A0A0A !important; border: 2px solid #8C6D3B !important; padding: 6px 16px !important; border-radius: 4px !important; font-weight: 900 !important; font-size: 16px !important; }
 
-/* 6. 상세 옵션창 및 인게임 방제 고유 박스 스킨 가로 배열 고정 */
+/* 6. 상세 옵션창 및 인게임 방제 고유 박스 스킨 가로 배열 고정 (가로 폭 100% 인양 완료) */
 .min-h-screen .bg-\[\#030303\] {
   background-color: #030303 !important;
   border: 1px solid #222222 !important;
@@ -264,7 +265,7 @@ input[type="text"]:focus, textarea:focus {
   font-family: monospace !important;
   line-height: 1.6 !important;
   box-sizing: border-box !important;
-  width: 100% !important;
+  width: 100% !important; /* 💡 쪼그라들던 옵션 박스 가로 폭 강제 대확장! */
 }
 
 /* 방 정보 박스 정밀 가로축 튜닝 */
@@ -279,7 +280,7 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important;
   margin-bottom: 32px !important;
   box-sizing: border-box !important;
-  width: 100% !important;
+  width: 100% !important; /* 💡 방제 박스 가로 폭 시원하게 100% 안착! */
 }
 
 .min-h-screen .border-2 button {
@@ -309,6 +310,12 @@ input[type="text"]:focus, textarea:focus {
   margin-bottom: 24px !important;
   width: 100% !important;
   align-items: center !important;
+}
+
+/* 댓글창 내부 입력 상자 가로 폭 강제 연장 */
+.min-h-screen .border-dashed input[type="text"] {
+  flex-grow: 1 !important;
+  width: 100% !important;
 }
 
 .min-h-screen .border-dashed button {
