@@ -1,11 +1,9 @@
 /* app/globals.css */
 
-/* 💡 테일윈드 버전 3 정품 핵심 선언문 주입! */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* 💡 [버전 4 정품 스마트 단선 주입] 기존 3줄 선언문을 지우고 이 한 줄만 딱 넣어주면 꼬여있던 버전 충돌이 1초 만에 뻥 뚫립니다! */
+@import "tailwindcss";
 
-/* 🛡️ [금별아빠 사장님 오리지널 디아블로 테마 100% 복존] */
+/* 🛡️ [금별아빠 사장님 오리지널 디아블로 테마 100% 철통 보존] */
 :root {
   --background: #0A0A0A;
   --foreground: #DCDCDC;
