@@ -75,6 +75,7 @@ export default function TradeDetailPage({ params }: PageProps) {
   }, []);
 
   // 4. 유저에게 "알림 권한" 요청하는 액션 함수
+  // 4. 유저에게 "알림 권한" 요청 및 백엔드 기지국 등록 함수
   const handleRequestNotification = async () => {
     if (!('Notification' in window)) {
       alert('이 브라우저는 실시간 알림 기능을 지원하지 않습니다.');
@@ -83,15 +84,24 @@ export default function TradeDetailPage({ params }: PageProps) {
 
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
-      setIsSubscribed(true);
-      alert('실시간 흥정 알림 셋업이 완료되었습니다! 스마트폰/PC로 알림이 전송됩니다.');
-      
       if ('serviceWorker' in navigator) {
         const reg = await navigator.serviceWorker.ready;
-        reg.showNotification('D2 Realtime Market', {
-          body: '흥정 알림 채널이 성공적으로 개통되었습니다!',
-          icon: '/favicon.ico',
+        
+        // 💡 브라우저가 제공하는 고유의 알림 수신 Endpoint 키를 발급받습니다.
+        const sub = await reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
         });
+
+        // 💡 발급받은 열쇠를 우리 Vercel 백엔드 기지국(api/push)으로 전송하여 저장합니다.
+        await fetch('/api/push', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ type: 'SUBSCRIBE', subscription: sub })
+        });
+
+        setIsSubscribed(true);
+        alert('실시간 흥정 알림 셋업이 완료되었습니다! 스마트폰/PC로 알림이 전송됩니다.');
       }
     } else {
       alert('알림 권한이 거부되었습니다. 브라우저 주소창 왼쪽 자물쇠 아이콘을 눌러 권한을 허용해주세요.');
