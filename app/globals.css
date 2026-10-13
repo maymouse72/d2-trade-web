@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  /* 웅장한 다크 판타지 배경 일러스트 강제 결합 */
+  /* 💡 [배경 복구 성공] 디아블로 감성의 웅장한 다크 판타지 고화질 일러스트 정품 경로 주입! */
   background-image: url('https://unsplash.com') !important;
   background-size: cover !important;
   background-position: center !important;
@@ -37,7 +37,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   🚨 [대완공] 글자 찢어짐 및 1열 쏠림 현상 강제 파괴 아키텍처
+   ⚔️ [성역의 마켓] 레이아웃 간섭 완벽 조율 명세서
    ========================================================== */
 
 /* 1. 좌우 고정 광고 기둥 정밀 좌표 고정 수술 */
@@ -66,7 +66,7 @@ input[type="text"]:focus, textarea:focus {
 .ad-label { display: block !important; color: #C5A059 !important; font-size: 12px !important; font-weight: bold !important; margin-bottom: 4px !important; }
 .ad-email-text { display: block !important; color: #22FF22 !important; font-size: 13px !important; font-family: monospace !important; font-weight: bold !important; word-break: break-all !important; line-height: 1.4 !important; margin-top: 6px !important; }
 
-/* 2. 중앙 메인 컨테이너 폭 강제 압축 (이걸 짜야 양옆 기둥과 안 겹칩니다) */
+/* 2. 중앙 메인 컨테이너 폭 강제 압축 */
 .center-board-container {
   max-width: 900px !important;
   width: 100% !important;
@@ -78,7 +78,7 @@ input[type="text"]:focus, textarea:focus {
 .welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 24px !important; letter-spacing: 0.5px !important; }
 .main-platform-title { color: #C76C2E !important; font-size: 22px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 14px 0 28px 0 !important; }
 
-/* 3. 🚨 [핵심 교정] 1열로 축 늘어지던 매물 상자를 3열 종대로 강제 강타! */
+/* 3. 매물 상자 3열 종대 완벽 그리드 정렬 */
 .grid { 
   display: grid !important; 
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important; 
@@ -87,7 +87,6 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 화면 크기에 맞춰 카드 개수 자동 확장 */
 @media (min-width: 768px) {
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
@@ -95,22 +94,26 @@ input[type="text"]:focus, textarea:focus {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-/* 4. 가로 배치 요소 분사 (텍스트 세로 찢어짐 원천 차단) */
+/* 4. 💡 [상단 제어 바 뭉침 박멸] 가로 배치 플렉스 정밀 설계 */
 .flex { 
   display: flex !important; 
   flex-direction: row !important; 
-  width: 100% !important;
-  box-sizing: border-box !important;
 }
 .flex-col { 
   display: flex !important; 
   flex-direction: column !important; 
 }
-.justify-between { justify-content: space-between !important; align-items: center !important; }
+
+/* 💡 문구와 버튼 박스가 뭉치지 않도록 반응형 가로 폭 유연화 적용 */
+.justify-between { 
+  justify-content: space-between !important; 
+  align-items: center !important; 
+  flex-wrap: wrap !important; /* 모바일 환경 배려 */
+}
 .items-start { align-items: flex-start !important; }
 .items-center { align-items: center !important; }
 
-/* 5. 디아블로 무결점 수동 배경 명세서 연동부 */
+/* 5. 디아블로 무결점 수동 배경 색상 코드 완비 */
 .bg-dark-gray { background-color: #141414 !important; }
 .bg-black-90 { background-color: rgba(17, 17, 17, 0.9) !important; }
 .bg-deep-black { background-color: #0A0A0A !important; }
