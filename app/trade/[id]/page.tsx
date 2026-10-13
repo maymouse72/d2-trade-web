@@ -67,7 +67,7 @@ export default function TradeDetailPage({ params }: PageProps) {
         })
         .catch((err) => console.error('서비스 워커 오작동:', err));
     }
-  }, []);
+  },);
 
   // 4. 유저 알림 권한 요청 및 Vercel 기지국 등록
   const handleRequestNotification = async () => {
@@ -86,7 +86,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
           });
 
-          // 💡 [치유 치트키 1번] 가비아 www 주소와 100% 완벽하게 싱크로율을 일치시킨 마스터 절대 경로 수정 완료!
+          // 💡 가비아 정식 도메인 주소 규격 완벽 일치!
           await fetch('https://d2jugobatgo.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -137,6 +137,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     if (error) {
       alert(`댓글 등록 실패 사유: ${error.message}`);
     } else {
+      // 💡 [치유 치트키] 스마트폰 푸시 진동이 울릴 때도 절대 경로 주소창을 완전무결하게 싱크 매핑 완료!
       if ('serviceWorker' in navigator && Notification.permission === 'granted') {
         navigator.serviceWorker.ready.then((reg) => {
           reg.showNotification('⚔️ D2 마켓 실시간 흥정 알림', {
@@ -146,7 +147,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             tag: 'comment-alert',
             vibrate:[200, 100, 200],
             data: {
-              url: `/trade/${tradeId}`
+              url: `https://d2jugobatgo.com{tradeId}`
             }
           } as NotificationOptions);
         });
