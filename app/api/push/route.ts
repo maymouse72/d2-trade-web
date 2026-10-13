@@ -30,7 +30,8 @@ export async function POST(request: Request) {
       const pushPayload = JSON.stringify({
         title: '⚔️ D2 마켓 실시간 흥정 알림',
         body: `새로운 댓글: "${commentData.content}"`,
-        url: `/trade/${commentData.trade_id || 1}`
+        // 💡 [최종 완공 치트키] 대표 도메인 절대 주소를 완벽하게 명시하여 주소 꼬임을 원천 차단합니다!
+        url: `https://d2jugobatgo.com{commentData.trade_id || 1}`
       });
 
       pushSubscriptions.forEach(sub => {

@@ -1,4 +1,3 @@
-// app/trade/[id]/page.tsx
 'use client';
 
 import { useEffect, useState, use } from 'react';
@@ -15,18 +14,15 @@ interface PageProps {
 
 export default function TradeDetailPage({ params }: PageProps) {
   const resolvedParams = use(params);
-  const tradeId = resolvedParams?.id;
+  const tradeId = resolvedParams?.id ? String(resolvedParams.id).trim() : '';
   
   const router = useRouter();
   const [trade, setTrade] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
-  // 댓글 관리를 위한 상태 장치들
   const [comments, setComments] = useState<any>();
   const [newComment, setNewComment] = useState('');
   const [commentSubmitting, setCommentSubmitting] = useState(false);
-
-  // PWA 알림 권한 상태 관리 장치
   const [isSubscribed, setIsSubscribed] = useState(false);
 
   // 1. 매물 상세 정보 가져오기
@@ -52,7 +48,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     const { data, error } = await supabase
       .from('trade_comments') 
       .select('*')
-      .eq('trade_id', tradeId)
+      .eq('trade_id', Number(tradeId))
       .order('created_at', { ascending: true });
 
     if (!error && data) {
@@ -60,18 +56,18 @@ export default function TradeDetailPage({ params }: PageProps) {
     }
   };
 
-  // 3. PWA 서비스 워커 및 알림 상태 권한 체크
+  // 3. PWA 알림 권한 상태 관리 장치
   useEffect(() => {
     if ('serviceWorker' in navigator && 'PushManager' in window) {
       navigator.serviceWorker.register('/sw.js')
-        .then((reg) => {
+        .then(() => {
           if (Notification.permission === 'granted') {
             setIsSubscribed(true);
           }
         })
         .catch((err) => console.error('서비스 워커 오작동:', err));
     }
-  },);
+  }, []);
 
   // 4. 유저 알림 권한 요청 및 Vercel 기지국 등록
   const handleRequestNotification = async () => {
@@ -90,7 +86,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
           });
 
-          await fetch('/api/push', {
+          await fetch('https://d2jugobatgo.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ type: 'SUBSCRIBE', subscription: sub })
@@ -117,7 +113,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     initPage();
   }, [tradeId]);
 
-  // 5. 댓글 금고 전송 및 푸시 진동 원격 트리거 함수
+  // 5. 댓글 금고 전송 함수
   const handleCommentSubmit = async () => {
     if (!newComment.trim()) {
       alert('댓글 내용을 입력해주세요!');
@@ -140,7 +136,6 @@ export default function TradeDetailPage({ params }: PageProps) {
     if (error) {
       alert(`댓글 등록 실패 사유: ${error.message}`);
     } else {
-      // 💡 [필터 우회 완벽 성공] 대괄호와 숫자를 문법 파괴 없이 주입 완료했습니다!
       if ('serviceWorker' in navigator && Notification.permission === 'granted') {
         navigator.serviceWorker.ready.then((reg) => {
           reg.showNotification('⚔️ D2 마켓 실시간 흥정 알림', {
@@ -148,7 +143,7 @@ export default function TradeDetailPage({ params }: PageProps) {
             icon: '/favicon.ico',
             badge: '/favicon.ico',
             tag: 'comment-alert',
-            vibrate:[200, 100, 200], // 💡 대괄호 수치 강제 복구 성공!
+            vibrate:[200, 100, 200],
             data: {
               url: `/trade/${tradeId}`
             }
@@ -176,9 +171,9 @@ export default function TradeDetailPage({ params }: PageProps) {
     );
   }
 
+  // 💡 [정밀 커팅 2분할 기준점 기준선] 아래에 이어서 2부 코스를 바로 붙여넣으시면 완료됩니다!
   if (!trade) return null;
-
-  return (
+    return (
     <div style={{ backgroundColor: '#0A0A0A', minHeight: '100vh', color: '#DCDCDC', padding: '40px 24px', fontFamily: 'sans-serif' }}>
       <div style={{ maxWidth: '650px', margin: '0 auto', backgroundColor: '#141414', border: '2px solid #8C6D3B', padding: '28px', borderRadius: '8px', boxShadow: '0 20px 25px rgba(0,0,0,0.5)' }}>
         
@@ -240,7 +235,8 @@ export default function TradeDetailPage({ params }: PageProps) {
             방제 복사
           </button>
         </div>
-                {/* 실시간 흥정 댓글 구역 */}
+
+        {/* 실시간 흥정 댓글 구역 */}
         <div style={{ borderTop: '2px dashed #333333', paddingTop: '24px' }}>
           <h3 style={{ color: '#C76C2E', fontSize: '16px', fontWeight: 'bold', margin: '0 0 16px 0' }}>
             실시간 흥정 댓글 ({comments ? comments.length : 0})
