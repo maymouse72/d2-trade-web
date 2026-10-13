@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 import PostModal from './PostModal';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://supabase.co';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://dzttxnsqarwksbxnvypt.supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
@@ -121,7 +121,8 @@ export default function MarketHome() {
         <h1 className="main-platform-title">
           DIABLO II REALTIME MARKET
         </h1>
-                {/* 컨트롤 유틸리티 대시보드 */}
+
+        {/* 컨트롤 유틸리티 대시보드 */}
         <div className="bg-dark-gray border border-gold flex justify-between items-center p-4 rounded-md mb-6 gap-4">
           <p className="text-center font-bold text-xs md:text-sm text-[#777777] m-0">
             🔮 카드를 터치하면 상세페이지로 이동하며 실시간 네고 댓글을 확인합니다.
