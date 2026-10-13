@@ -31,7 +31,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [철통 방어] 첫 화면 예전 정품 황금비율 100% 홀딩 보존 구역
+   📐 [철통 잠금] 첫 화면 예전 정품 황금비율 100% 홀딩 보존 구역
    ========================================================== */
 
 .center-board-container {
@@ -159,9 +159,8 @@ input[type="text"]:focus, textarea:focus {
   width: 100% !important;
   box-sizing: border-box !important;
 }
-
 /* ==========================================================
-   🚨 [오직 상세창만 타격] 첫 화면 철저히 보존하고 상세창 규격 대완공
+   🚨 [정품 대완공 구역] 사장님의 한글 뼈대(태그 구조) 전수 정밀 매핑
    ========================================================== */
 
 /* 1. 상세창 전체 외곽 암막 및 고화질 일러스트 정품 주소 강제 결합 */
@@ -174,9 +173,8 @@ input[type="text"]:focus, textarea:focus {
   background-blend-mode: color-burn !important;
 }
 
-/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 복구 및 가로폭 강제 인양 (전체 간섭 해결) */
-.min-h-screen > div:nth-child(2),
-.max-w-\[650px\] {
+/* 2. 🛡️ 중앙 호라드릭 명품 프레임 박스 디자인 복구 및 가로폭 강제 인양 */
+.min-h-screen > div:nth-child(2) {
   max-width: 650px !important;
   width: 100% !important;
   margin: 0 auto !important;
@@ -190,7 +188,7 @@ input[type="text"]:focus, textarea:focus {
   flex-direction: column !important; /* 내부 세로 찢어짐 원천 차단 */
 }
 
-/* 상세창 내 모든 버튼 및 링크 마우스 올리면 손모양(Pointer) 강제 각인 */
+/* 💡 [사장님 지시 커서 이식] 돌아가기 버튼 마우스 올리면 100% 손모양 전환 고정! */
 .min-h-screen button, 
 .min-h-screen button[onClick], 
 .min-h-screen [onClick] {
@@ -212,7 +210,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* 4. PWA 푸시 알림 배너 스킨 가동 및 수평 정렬 */
-.min-h-screen .bg-\[\#0A0A0A\] {
+.min-h-screen div[style*="border: 1px solid #C76C2E"] {
   background-color: #0A0A0A !important;
   border: 1px solid #C76C2E !important;
   padding: 16px !important;
@@ -226,7 +224,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* 알림 켜기 버튼 조율 */
-.min-h-screen .bg-\[\#0A0A0A\] button {
+.min-h-screen div[style*="border: 1px solid #C76C2E"] button {
   height: 34px !important;
   padding: 0 16px !important;
   font-size: 12px !important;
@@ -237,25 +235,27 @@ input[type="text"]:focus, textarea:focus {
   border-radius: 4px !important;
 }
 
-/* 5. 상세창 아이템 명과 요구 가격 가로축 정렬 */
-.min-h-screen .border-b {
+/* 5. 🚨 [정품 래더시즌·아이템명 가격 한 줄 교정] 사장님 원본 한글 뼈대 가로축 정밀 튜닝 */
+.min-h-screen div[style*="border-bottom: 1px solid #222222"],
+.min-h-screen div[style*="border-bottom: 1px solid"] {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
   align-items: center !important;
-  border-bottom: 1px solid #2A2A2A !important;
+  border-bottom: 1px solid #222222 !important;
   padding-bottom: 20px !important;
   margin-bottom: 20px !important;
   width: 100% !important;
   box-sizing: border-box !important;
 }
 
-.min-h-screen h2 { color: #C76C2E !important; font-size: 22px !important; font-weight: 900 !important; margin: 0 !important; }
+.min-h-screen h2 { color: #C76C2E !important; font-size: 24px !important; font-weight: 900 !important; margin: 0 !important; }
 .min-h-screen h2 + div { text-align: right !important; }
-.min-h-screen h2 + div > span { color: #C5A059 !important; background-color: #0A0A0A !important; border: 2px solid #8C6D3B !important; padding: 6px 16px !important; border-radius: 4px !important; font-weight: 900 !important; font-size: 16px !important; }
+.min-h-screen h2 + div > span { color: #C5A059 !important; background-color: #0A0A0A !important; border: 2px solid #8C6D3B !important; padding: 6px 16px !important; border-radius: 4px !important; font-weight: 900 !important; font-size: 18px !important; display: inline-block !important; }
 
-/* 6. 상세 옵션창 및 인게임 방제 고유 박스 스킨 가로 배열 고정 (가로 폭 100% 인양 완료) */
-.min-h-screen .bg-\[\#030303\] {
+/* 6. 🚨 [아이템 세부 옵션창 100% 가로 와이드 복구] 부서지고 쪼그라들던 상자 대확장 연장 수술 */
+.min-h-screen div[style*="min-height: 80px"],
+.min-h-screen div[style*="min-height:"] {
   background-color: #030303 !important;
   border: 1px solid #222222 !important;
   padding: 16px !important;
@@ -265,11 +265,12 @@ input[type="text"]:focus, textarea:focus {
   font-family: monospace !important;
   line-height: 1.6 !important;
   box-sizing: border-box !important;
-  width: 100% !important; /* 💡 쪼그라들던 옵션 박스 가로 폭 강제 대확장! */
+  width: 100% !important; /* 💡 가로 찌그러짐 원천 파괴 박음질! */
 }
 
-/* 방 정보 박스 정밀 가로축 튜닝 */
-.min-h-screen .border-2 {
+/* 7. 🚨 [인게임 방 정보 상자 원상복구] 복사 버튼 높낮이 밸런스 및 와이드 가로 폭 100% 결합 */
+.min-h-screen div[style*="border: 2px solid #8C6D3B"],
+.min-h-screen div[style*="border: 2px solid"] {
   background-color: #0A0A0A !important;
   border: 2px solid #8C6D3B !important;
   padding: 16px !important;
@@ -280,45 +281,50 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important;
   margin-bottom: 32px !important;
   box-sizing: border-box !important;
-  width: 100% !important; /* 💡 방제 박스 가로 폭 시원하게 100% 안착! */
+  width: 100% !important; /* 💡 방제 박스 가로 와이드 폭 복구 완료! */
 }
 
-.min-h-screen .border-2 button {
+.min-h-screen div[style*="border: 2px solid #8C6D3B"] button {
   background-color: #C5A059 !important;
   color: #0A0A0A !important;
   border: 1px solid #6E5325 !important;
-  padding: 10px 16px !important;
+  padding: 10px 18px !important;
   font-size: 13px !important;
   font-weight: 900 !important;
   border-radius: 4px !important;
+  height: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-/* 7. 댓글 입력 트랙 및 리스트 수평 배열 완공 */
-.min-h-screen .border-dashed {
+/* 8. 🚨 [실시간 흥정 댓글 구역 수평 배열 복원] 입력 박스와 등록 단추 높이 일치 마감 */
+.min-h-screen div[style*="border-top: 2px dashed #333333"],
+.min-h-screen div[style*="border-top: 2px dashed"] {
   border-top: 2px dashed #262626 !important;
   padding-top: 24px !important;
   width: 100% !important;
 }
 
-.min-h-screen .border-dashed h3 { color: #C76C2E !important; font-size: 16px !important; font-weight: 800 !important; margin: 0 0 16px 0 !important; }
+.min-h-screen div[style*="border-top: 2px dashed #333333"] h3 { color: #C76C2E !important; font-size: 16px !important; font-weight: 800 !important; margin: 0 0 16px 0 !important; }
 
-/* 댓글 입력칸과 버튼 가로 라인 일치 수술 */
-.min-h-screen .border-dashed > div:nth-child(2) {
+/* 댓글 입력 상자 가로 가득 채우기 수술 */
+.min-h-screen div[style*="border-top: 2px dashed #333333"] > div[style*="display: flex"] {
   display: flex !important;
   flex-direction: row !important;
-  gap: 8px !important;
+  gap: 10px !important;
   margin-bottom: 24px !important;
   width: 100% !important;
   align-items: center !important;
 }
 
-/* 댓글창 내부 입력 상자 가로 폭 강제 연장 */
-.min-h-screen .border-dashed input[type="text"] {
+.min-h-screen div[style*="border-top: 2px dashed #333333"] input {
   flex-grow: 1 !important;
   width: 100% !important;
+  height: 40px !important;
 }
 
-.min-h-screen .border-dashed button {
+.min-h-screen div[style*="border-top: 2px dashed #333333"] button {
   height: 40px !important;
   background-color: #1F1F1F !important;
   border: 1px solid #8C6D3B !important;
@@ -329,7 +335,7 @@ input[type="text"]:focus, textarea:focus {
   border-radius: 4px !important;
 }
 
-/* 좌우 고정 광고 날개 기둥 하드웨어 정렬 */
+/* 좌우 고정 광고 날개 기둥 완벽 동기화 */
 .fixed-ad-banner { position: fixed !important; top: 160px !important; width: 140px !important; height: 500px !important; background-color: #141414 !important; border: 2px dashed #8C6D3B !important; border-radius: 6px !important; padding: 20px 10px !important; box-sizing: border-box !important; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important; z-index: 50 !important; }
 .fixed-left-box { left: 20px !important; }
 .fixed-right-box { right: 20px !important; }
