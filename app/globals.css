@@ -31,7 +31,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [공간 균형소] 타이틀 하단 간격 예전 정품 비율로 복구
+   📐 [공간 균형소] 버튼 영역과 매물 영역 사이 여백 철통 보정
    ========================================================== */
 
 /* 1. 중앙 마켓 게시판 와이드 뷰 설정 */
@@ -43,17 +43,29 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 🚨 2. [사장님 지시 사항 반영] 메인 타이틀 아래 여백을 예전 화면처럼 시원하게 개방 (mb-8을 mb-12로 대폭 확장!) */
+/* 메인 타이틀 아래 여백 */
 .main-platform-title { 
   color: #C76C2E !important; 
   font-size: 24px !important; 
   font-weight: bold !important; 
   text-align: center !important; 
   letter-spacing: 2px !important; 
-  margin: 16px 0 48px 0 !important; /* 💡 맨 뒤의 24px 간격을 48px로 넓혀서 위아래 균형을 완벽히 맞췄습니다! */
+  margin: 16px 0 48px 0 !important; 
 }
 
 .welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
+
+/* 🚨 2. [사장님 지시 사항 집중 정밀 타격] 버튼 제어 바와 하단 매물 카드 사이 여백 대폭 확장 (mb-6 누락을 margin-bottom: 40px 강제 각인으로 박멸!) */
+.bg-dark-gray {
+  background-color: #141414 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 16px !important;
+  margin-bottom: 40px !important; /* 💡 아랫줄 매물창과의 간격을 40px로 널찍하고 시원하게 벌렸습니다! */
+  box-sizing: border-box !important;
+}
 
 /* 3. 매물 상자 3열 종대 배치 */
 .grid { 
@@ -139,17 +151,7 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 상단 제어 바 및 버튼 레이아웃 고정 */
-.bg-dark-gray {
-  background-color: #141414 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 16px !important;
-  box-sizing: border-box !important;
-}
-
+/* 버튼 제어 바 내부 버튼 레이아웃 규격 고정 */
 .bg-dark-gray button {
   height: 38px !important;
   padding: 0 20px !important;
