@@ -31,7 +31,7 @@ input[type="text"]:focus, textarea:focus {
 }
 
 /* ==========================================================
-   📐 [초정밀 줄 정렬소] 매물창 내부 엉킴 현상 100% 박멸 구역
+   📐 [최종 대마감] 새로고침 색상 주입 및 하단 텍스트 양끝 정렬
    ========================================================== */
 
 /* 1. 중앙 마켓 게시판 와이드 뷰 설정 */
@@ -58,27 +58,26 @@ input[type="text"]:focus, textarea:focus {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-/* 🚨 3. [핵심 줄꼬임 수술] 매물 카드 본체 내부 정렬 강제 격리 */
+/* 매물 카드 본체 내부 정렬 */
 .bg-black-90 {
   background-color: rgba(17, 17, 17, 0.9) !important;
   display: flex !important;
-  flex-direction: column !important; /* 내부 요소들을 위에서 아래로 순서대로 정렬 */
+  flex-direction: column !important;
   justify-content: space-between !important;
   box-sizing: border-box !important;
 }
 
-/* 🚨 4. [헤더 줄꼬임 차단] 래더·아이템명(왼쪽 끝)과 가격룬(우측 끝)을 한 줄로 완벽 일직선 정렬 */
+/* 래더·아이템명(왼쪽 끝)과 가격룬(우측 끝) 일직선 정렬 */
 .bg-black-90 > div:first-child > div:first-child {
   display: flex !important;
   flex-direction: row !important;
-  justify-content: space-between !important; /* 양쪽 끝으로 밀어내기 */
-  align-items: center !important; /* 아래위 중심선 칼 일치 */
+  justify-content: space-between !important;
+  align-items: center !important;
   width: 100% !important;
-  margin-bottom: 12px !important; /* 아래 옵션창과의 간격 유지 */
+  margin-bottom: 12px !important;
   box-sizing: border-box !important;
 }
 
-/* 아이템 제목 글자 압축 버그 차단 */
 .bg-black-90 h3 {
   color: #C76C2E !important;
   font-size: 15px !important;
@@ -86,10 +85,9 @@ input[type="text"]:focus, textarea:focus {
   margin: 0 !important;
   text-align: left !important;
   line-height: 1.4 !important;
-  flex: 1 !important; /* 남는 가로 공간을 다 차지하게 함 */
+  flex: 1 !important;
 }
 
-/* 가격 룬 박스 규격 고정 */
 .bg-black-90 h3 + span {
   color: #C5A059 !important;
   background-color: #0A0A0A !important;
@@ -98,13 +96,13 @@ input[type="text"]:focus, textarea:focus {
   font-weight: 900 !important;
   padding: 4px 10px !important;
   border-radius: 4px !important;
-  white-space: nowrap !important; /* 줄바꿈 절대 방지 */
+  white-space: nowrap !important;
   margin-left: 12px !important;
 }
 
-/* 🚨 5. [옵션창 독방 격리] 뒤엉키던 세부 옵션 글자 상자를 아랫줄 독립 공간으로 분리 */
+/* 옵션 설명 상자 독방 배치 */
 .bg-black-90 p {
-  display: block !important; /* 무조건 한 줄 통째로 차지 */
+  display: block !important;
   width: 100% !important;
   background-color: #0A0A0A !important;
   border: 1px solid #1A1A1A !important;
@@ -119,7 +117,17 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-/* 6. 새로고침 및 내 매물 등록 버튼 라인 높이 일치 마감 */
+/* 🚨 3. [텍스트 양끝 정렬 수술] 베넷아이디(왼쪽 끝)와 경과 시간(오른쪽 끝)으로 강제 분사 */
+.bg-black-90 .font-mono {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important; /* ⚔️ 서로 가차 없이 양끝으로 밀어내기 */
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 🚨 4. [새로고침 버튼 색상 완벽 복구] 상단 제어 바 및 버튼 레이아웃 고정 */
 .bg-dark-gray {
   background-color: #141414 !important;
   display: flex !important;
@@ -141,10 +149,28 @@ input[type="text"]:focus, textarea:focus {
   align-items: center !important;
   justify-content: center !important;
 }
-.bg-dark-gray button:first-child { background-color: #1F1F1F !important; border: 1px solid #8C6D3B !important; color: #FFFFFF !important; }
-.bg-dark-gray button:last-child { background-color: #C5A059 !important; border: 1px solid #6E5325 !important; color: #0A0A0A !important; }
 
-/* 7. 고정 광고 기둥 슬림 배치 */
+/* 💡 새로고침 버튼에 웅장한 배틀넷 다크 스킨 색상 강제 도색 및 누락 버그 박멸 */
+.bg-dark-gray button, .bg-dark-gray button:first-child { 
+  background-color: #1F1F1F !important; 
+  border: 1px solid #8C6D3B !important; 
+  color: #FFFFFF !important; 
+}
+.bg-dark-gray button:hover, .bg-dark-gray button:first-child:hover { 
+  border-color: #C5A059 !important; 
+}
+
+/* 내 매물 등록 버튼 호라드릭 골드 고정 */
+.bg-dark-gray button:last-child { 
+  background-color: #C5A059 !important; 
+  border: 1px solid #6E5325 !important; 
+  color: #0A0A0A !important; 
+}
+.bg-dark-gray button:last-child:hover { 
+  background-color: #B48F48 !important; 
+}
+
+/* 5. 고정 광고 기둥 배치 */
 .fixed-ad-banner {
   position: fixed !important;
   top: 160px !important;
@@ -166,7 +192,7 @@ input[type="text"]:focus, textarea:focus {
 .fixed-left-box { left: 20px !important; }
 .fixed-right-box { right: 20px !important; }
 
-/* 기타 타이포 배너 세팅 */
+/* 기타 가독성 서브 레이블 */
 .welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
 .main-platform-title { color: #C76C2E !important; font-size: 24px !important; font-weight: bold !important; text-align: center !important; letter-spacing: 2px !important; margin: 16px 0 32px 0 !important; }
 .border-2 { border-width: 2px !important; border-style: solid !important; }
@@ -174,6 +200,9 @@ input[type="text"]:focus, textarea:focus {
 .rounded-md { border-radius: 6px !important; }
 .p-5 { padding: 20px !important; }
 .whitespace-nowrap { white-space: nowrap !important; }
+.break-all { word-break: break-all !important; }
+.text-center { text-align: center !important; }
+
 .ad-title { color: #C76C2E !important; margin: 0 0 16px 0 !important; font-size: 15px !important; font-weight: bold !important; }
 .ad-text-muted { color: #777777 !important; font-size: 11px !important; line-height: 1.6 !important; margin: 0 0 24px 0 !important; }
 .ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
