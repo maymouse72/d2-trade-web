@@ -1,6 +1,11 @@
-@import "tailwindcss";
+/* app/globals.css */
 
-/* 디아블로 고유의 묵직한 하드웨어 기본 배경 및 입력창 보완 테마 강제 주입 */
+/* 💡 [버전 3 정품 선언문 주입] 사장님의 tailwind.config.js와 완벽하게 싱크를 맞춥니다! */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🛡️ [금별아빠 사장님 오리지널 디아블로 테마 100% 보존] */
 :root {
   --background: #0A0A0A;
   --foreground: #DCDCDC;
