@@ -46,18 +46,34 @@ input[type="text"]:focus, textarea:focus {
 
 .welcome-banner-text { color: #C5A059 !important; font-size: 15px !important; font-weight: bold !important; text-align: center !important; margin-top: 32px !important; letter-spacing: 0.5px !important; }
 
-.bg-dark-gray {
+.market-toolbar {
   background-color: #141414 !important;
+  border: 1px solid #191919;
+  border-radius: 6px;
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
   align-items: center !important;
   padding: 16px !important;
-  margin-bottom: 40px !important; 
+  margin-bottom: 40px !important;
+  gap: 16px;
   box-sizing: border-box !important;
 }
 
-.bg-dark-gray button {
+.market-toolbar-copy {
+  color: #d0d0d0;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.market-toolbar-actions {
+  display: flex;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+.market-button {
   height: 38px !important;
   padding: 0 20px !important;
   font-size: 13px !important;
@@ -67,11 +83,12 @@ input[type="text"]:focus, textarea:focus {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
+  cursor: pointer;
 }
-.bg-dark-gray button, .bg-dark-gray button:first-child { background-color: #1F1F1F !important; border: 1px solid #8C6D3B !important; color: #FFFFFF !important; cursor: pointer !important; }
-.bg-dark-gray button:hover, .bg-dark-gray button:first-child:hover { border-color: #C5A059 !important; }
-.bg-dark-gray button:last-child { background-color: #C5A059 !important; border: 1px solid #6E5325 !important; color: #0A0A0A !important; cursor: pointer !important; }
-.bg-dark-gray button:last-child:hover { background-color: #B48F48 !important; }
+.market-button-refresh { background-color: #1F1F1F; border: 1px solid #8C6D3B; color: #fff; }
+.market-button-refresh:hover { border-color: #C5A059; }
+.market-button-primary { background-color: #C5A059; border: 1px solid #6E5325; color: #0A0A0A; }
+.market-button-primary:hover { background-color: #B48F48; }
 
 .grid { 
   display: grid !important; 
@@ -87,16 +104,21 @@ input[type="text"]:focus, textarea:focus {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 }
 
-.grid .bg-black-90, .grid > div {
+.trade-card {
   background-color: rgba(17, 17, 17, 0.9) !important;
+  border: 2px solid #8c6d3b;
+  border-radius: 6px;
+  padding: 20px;
   display: flex !important;
   flex-direction: column !important; 
   justify-content: space-between !important;
   box-sizing: border-box !important;
   cursor: pointer !important;
+  min-height: 304px;
+  transition: border-color 150ms ease, background-color 150ms ease;
 }
-/* src/app/globals.css - [2부] */
-.grid .bg-black-90 > div:first-child > div:first-child {
+.trade-card:hover { border-color: #c5a059; background-color: #15130f !important; }
+.trade-card > div:first-child > div:first-child {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
@@ -106,7 +128,7 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
-.grid .bg-black-90 h3 {
+.trade-card h3 {
   color: #C76C2E !important;
   font-size: 15px !important;
   font-weight: 800 !important;
@@ -116,7 +138,7 @@ input[type="text"]:focus, textarea:focus {
   flex: 1 !important;
 }
 
-.grid .bg-black-90 h3 + span {
+.trade-price {
   color: #C5A059 !important;
   background-color: #0A0A0A !important;
   border: 1px solid #222222 !important;
@@ -128,7 +150,7 @@ input[type="text"]:focus, textarea:focus {
   margin-left: 12px !important;
 }
 
-.grid .bg-black-90 p {
+.trade-description {
   display: block !important;
   width: 100% !important;
   background-color: #0A0A0A !important;
@@ -153,6 +175,11 @@ input[type="text"]:focus, textarea:focus {
   box-sizing: border-box !important;
 }
 
+.trade-card-footer { border-top: 1px solid #222; padding-top: 12px; display: flex; flex-direction: column; gap: 12px; }
+.trade-card-action { background: #0a0a0a; border: 1px solid #1f1f1f; border-radius: 6px; min-height: 70px; display: flex; align-items: center; justify-content: center; color: #c5a059; font-size: 12px; font-weight: 700; margin: 0; text-align: center; }
+.trade-card-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #d0d0d0; font-size: 14px; padding: 0 1px; }
+.trade-card-meta span:last-child { color: #8c6d3b; font-weight: 700; white-space: nowrap; }
+
 .fixed-ad-banner { position: fixed !important; top: 160px !important; width: 150px !important; height: 500px !important; background-color: #141414 !important; border: 2px dashed #8C6D3B !important; border-radius: 6px !important; padding: 20px 10px !important; box-sizing: border-box !important; display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-shadow: 0 10px 20px rgba(0,0,0,0.8) !important; z-index: 50 !important; }
 .fixed-left-box { left: 30px !important; }
 .fixed-right-box { right: 30px !important; }
@@ -164,3 +191,14 @@ input[type="text"]:focus, textarea:focus {
 .ad-footer-divider { border-top: 1px solid #222222 !important; padding-top: 16px !important; width: 100% !important; }
 .ad-label { display: block !important; color: #C5A059 !important; font-size: 12px !important; font-weight: bold !important; }
 .ad-email-text { display: block !important; color: #22FF22 !important; font-size: 13px !important; font-family: monospace !important; font-weight: bold !important; word-break: break-all !important; line-height: 1.4 !important; margin-top: 6px !important; }
+
+@media (max-width: 640px) {
+  .center-board-container { padding: 0 16px !important; }
+  .main-platform-title { font-size: 20px !important; margin-bottom: 30px !important; }
+  .market-toolbar { align-items: stretch; flex-direction: column; margin-bottom: 24px !important; }
+  .market-toolbar-copy { font-size: 13px; line-height: 1.5; }
+  .market-toolbar-actions { justify-content: flex-end; }
+  .market-button { padding: 0 14px !important; }
+  .grid { gap: 16px !important; }
+  .trade-card { min-height: 280px; padding: 16px; }
+}

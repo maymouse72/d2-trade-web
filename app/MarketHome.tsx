@@ -123,15 +123,15 @@ export default function MarketHome() {
         </h1>
 
         {/* 컨트롤 유틸리티 대시보드 */}
-        <div className="bg-dark-gray border border-gold flex justify-between items-center p-4 rounded-md mb-6 gap-4">
-          <p className="text-center font-bold text-xs md:text-sm text-[#777777] m-0">
+        <div className="market-toolbar">
+          <p className="market-toolbar-copy">
             🔮 카드를 터치하면 상세페이지로 이동하며 실시간 네고 댓글을 확인합니다.
           </p>
-          <div className="flex gap-3" style={{ width: 'auto' }}>
-            <button onClick={fetchTrades} disabled={loading} className="bg-button-dark border border-gold text-white px-4 py-2 text-xs font-bold rounded cursor-pointer whitespace-nowrap">
+          <div className="market-toolbar-actions">
+            <button onClick={fetchTrades} disabled={loading} className="market-button market-button-refresh">
               {loading ? '로딩 중...' : '새로고침'}
             </button>
-            <button onClick={() => setIsModalOpen(true)} className="border-none text-[#0A0A0A] px-4 py-2 text-xs font-black rounded cursor-pointer whitespace-nowrap" style={{ backgroundColor: '#C5A059' }}>
+            <button onClick={() => setIsModalOpen(true)} className="market-button market-button-primary">
               내 매물 등록
             </button>
           </div>
@@ -143,30 +143,29 @@ export default function MarketHome() {
             <div 
               key={trade.id} 
               onClick={() => router.push(`/trade/${trade.id}`)}
-              className="bg-black-90 border-2 border-gold p-5 rounded-md flex flex-col justify-between cursor-pointer"
-              style={{ minHeight: '210px' }}
+              className="trade-card"
             >
               <div>
                 <div className="flex justify-between items-start gap-2 mb-4">
-                  <h3 className="text-center font-extrabold m-0 text-base tracking-wide" style={{ color: '#C76C2E', textAlign: 'left' }}>
+                  <h3>
                     {trade.game_mode === 'standard' ? '스탠' : '래더'} · {trade.item_name_ko}
                   </h3>
-                  <span className="bg-deep-black border border-[#222222] text-xs font-black px-2 py-0.5 rounded whitespace-nowrap" style={{ color: '#C5A059' }}>
+                  <span className="trade-price">
                     {trade.price_rune}
                   </span>
                 </div>
-                <p className="bg-deep-black border border-[#1A1A1A] text-xs p-3 rounded-md mb-4 break-all" style={{ color: '#B0B0B0', minHeight: '64px', margin: '0 0 16px 0', lineHeight: '1.5' }}>
+                <p className="trade-description">
                   {trade.item_description || '상세 옵션 설명이 등록되지 않은 전설 매물입니다.'}
                 </p>
               </div>
 
-              <div className="ad-footer-divider flex flex-col gap-2" style={{ borderTop: '1px solid #222222', paddingTop: '12px' }}>
-                <p className="bg-deep-black border border-[#1F1F1F] text-center text-xs font-bold py-1.5 m-0 rounded" style={{ color: '#C5A059' }}>
+              <div className="trade-card-footer">
+                <p className="trade-card-action">
                   흥정 제안 및 방제 보러가기 →
                 </p>
-                <div className="flex justify-between items-center text-[10px] text-[#555555] px-1 font-mono">
+                <div className="trade-card-meta">
                   <span>{trade.battlenet_id}</span>
-                  <span className="font-bold" style={{ color: '#8C6D3B' }}>{formatTime(trade.created_at)}</span>
+                  <span>{formatTime(trade.created_at)}</span>
                 </div>
               </div>
             </div>
