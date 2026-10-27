@@ -2,6 +2,9 @@
 
 import { useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import SiteFrame from '../../SiteFrame';
+import frameStyles from '../../SiteFrame.module.css';
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://dzttxnsqarwkslxnvypt.supabase.co';
@@ -165,21 +168,17 @@ export default function TradeDetailPage({ params }: PageProps) {
 
   if (loading) {
     return (
-      <div style={{ backgroundColor: '#030303', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#C5A059', fontWeight: 'bold', letterSpacing: '2px' }}>
-        ⚡ 호라드림 함에서 전설 매물 옵션을 해독하는 중...
-      </div>
+      <SiteFrame><div className={frameStyles.loading} role="status">매물 정보를 불러오는 중입니다...</div></SiteFrame>
     );
   }
 
   // 💡 [정밀 분할 기준선] 이 바로 아래에 2부 하반신 소스를 연달아 복사해 붙여넣으시면 끝납니다!
   if (!trade) return null;
     return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#030303', color: '#DCDCDC', padding: '40px 16px', fontFamily: 'sans-serif', position: 'relative' }}>
-      <div style={{ maxWidth: '650px', margin: '0 auto', backgroundColor: 'rgba(20, 20, 20, 0.95)', border: '2px solid #8C6D3B', padding: '32px', borderRadius: '8px', boxShadow: '0 20px 50px rgba(0,0,0,0.95)' }}>
+    <SiteFrame>
+      <div className={frameStyles.detailCard}>
         
-        <button onClick={() => router.push('/')} style={{ backgroundColor: 'transparent', border: 'none', color: '#777777', cursor: 'pointer', fontSize: '14px', marginBottom: '24px', padding: 0 }}>
-          ← 디아2 마켓 거래소 목록으로 돌아가기
-        </button>
+        <Link href="/" className={frameStyles.back}>← 거래소 목록으로 돌아가기</Link>
 
         {/* PWA 실시간 알림 가동 대시보드 배너 */}
         <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #C76C2E', padding: '16px', borderRadius: '6px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
@@ -286,6 +285,6 @@ export default function TradeDetailPage({ params }: PageProps) {
         </div>
 
       </div>
-    </div>
+    </SiteFrame>
   );
 }
