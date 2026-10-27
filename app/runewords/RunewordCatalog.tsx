@@ -8,7 +8,7 @@ import runeFiles from './runes.json';
 import styles from './catalog.module.css';
 
 const equipment = [...new Set(records.map(row => row.equipment))].sort((a, b) => a.localeCompare(b, 'ko'));
-const runes = [...new Set(records.flatMap(row => row.runes))].sort((a, b) => a.localeCompare(b, 'ko'));
+const runes = '엘 엘드 티르 네프 에드 아이드 탈 랄 오르트 주울 앰 솔 샤엘 돌 헬 이오 룸 코 팔 렘 풀 우움 말 이스트 굴 벡스 오움 로 수르 베르 자 참 조드'.split(' ');
 const normalize = (value: string) => value.toLocaleLowerCase().replace(/\s+/g, '');
 
 export default function RunewordCatalog() {
@@ -33,7 +33,7 @@ export default function RunewordCatalog() {
         <label>장비 종류<select value={base} onChange={e => setBase(e.target.value)}><option value="">전체 장비</option>{equipment.map(value => <option key={value}>{value}</option>)}</select></label>
         <label>소켓 수<select value={sockets} onChange={e => setSockets(e.target.value)}><option value="">전체 소켓</option>{[2,3,4,5,6].map(value => <option key={value} value={value}>{value}소켓</option>)}</select></label>
         <label>최대 요구 레벨<input type="number" min="1" max="99" placeholder="제한 없음" value={level} onChange={e => setLevel(e.target.value)} /></label>
-        <label>포함 룬<select value={rune} onChange={e => setRune(e.target.value)}><option value="">전체 룬</option>{runes.map(value => <option key={value}>{value}</option>)}</select></label>
+        <label>포함 룬<select value={rune} onChange={e => setRune(e.target.value)}><option value="">전체 룬</option>{runes.map((value, index) => <option key={value} value={value}>{index + 1}. {value}</option>)}</select></label>
         <label>정렬<select value={sort} onChange={e => setSort(e.target.value)}><option value="name">이름순</option><option value="level">레벨 낮은 순</option><option value="sockets">소켓 적은 순</option></select></label>
         <button type="button" onClick={reset}>전체 초기화</button>
       </section>
