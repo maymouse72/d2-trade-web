@@ -17,7 +17,7 @@ export default function SiteFrame({ children, active = 'market' }: { children: R
       </aside>
       <div className={`center-board-container ${styles.board}`}>
         <header>
-          <div className="welcome-banner-text">D2 주고받고(://d2jugobatgo.com) 사이트 방문을 환영합니다!!</div>
+          <div className="welcome-banner-text">디아블로2 주고받고(www.d2jugobatgo.com) 사이트 방문을 환영합니다!!</div>
           <h1 className="main-platform-title">DIABLO II REALTIME MARKET</h1>
           <nav aria-label="주요 메뉴" className={styles.nav}>
             <Link href="/" className={`market-button ${active === 'market' ? 'market-button-primary' : 'market-button-refresh'}`}>거래소</Link>
