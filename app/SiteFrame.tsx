@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import styles from './SiteFrame.module.css';
 
-export default function SiteFrame({ children, active = 'market' }: { children: ReactNode; active?: 'market' | 'uniques' }) {
+export default function SiteFrame({ children, active = 'market' }: { children: ReactNode; active?: 'market' | 'runewords' | 'uniques' }) {
   return (
     <div className={styles.shell}>
       <aside aria-label="왼쪽 광고" className={`fixed-ad-banner fixed-left-box ${styles.ad}`}>
@@ -21,7 +21,7 @@ export default function SiteFrame({ children, active = 'market' }: { children: R
           <h1 className="main-platform-title">DIABLO II REALTIME MARKET</h1>
           <nav aria-label="주요 메뉴" className={styles.nav}>
             <Link href="/" className={`market-button ${active === 'market' ? 'market-button-primary' : 'market-button-refresh'}`}>거래소</Link>
-            <Link href="/runewords" className="market-button market-button-refresh">룬워드 도감</Link>
+            <Link href="/runewords" aria-current={active === 'runewords' ? 'page' : undefined} className={`market-button ${active === 'runewords' ? 'market-button-primary' : 'market-button-refresh'}`}>룬워드 도감</Link>
             <Link href="/uniques" aria-current={active === 'uniques' ? 'page' : undefined} className={`market-button ${active === 'uniques' ? 'market-button-primary' : 'market-button-refresh'}`}>유니크 도감</Link>
           </nav>
         </header>

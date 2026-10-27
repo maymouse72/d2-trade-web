@@ -6,3 +6,5 @@
 .catalogHeader h2{font-size:28px;color:#c76c2e;margin:0 0 12px}
 @media(min-width:1400px){.shell .adBanner{display:flex!important}.shell .catalog{width:calc(100% - 400px)!important}}
 @media(max-width:650px){.catalogHeader h2{font-size:24px}}
+
+.catalog{padding:0 0 60px}
