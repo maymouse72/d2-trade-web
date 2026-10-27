@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 import PostModal from './PostModal';
+import Link from 'next/link';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://dzttxnsqarwksbxnvypt.supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -121,6 +122,8 @@ export default function MarketHome() {
         <h1 className="main-platform-title">
           DIABLO II REALTIME MARKET
         </h1>
+
+        <nav aria-label="주요 메뉴" style={{ display: "flex", gap: 12, marginBottom: 24 }}><Link href="/" aria-current="page" className="market-button market-button-primary">거래소</Link><Link href="/runewords" className="market-button market-button-refresh">룬워드 도감</Link></nav>
 
         {/* 컨트롤 유틸리티 대시보드 */}
         <div className="market-toolbar">
