@@ -25,10 +25,22 @@ export default function RunewordCatalog() {
   ).sort((a, b) => sort === 'level' ? a.level - b.level || a.id - b.id : sort === 'sockets' ? a.sockets - b.sockets || a.id - b.id : a.name.localeCompare(b.name, 'ko'));
   function reset() { setQuery(''); setBase(''); setSockets(''); setLevel(''); setRune(''); setSort('name'); }
   return (
-    <main className={styles.catalog}>
-      <p className={styles.brand}>D2 주고받고</p>
-      <nav className={styles.nav} aria-label="주요 메뉴"><Link href="/">거래소</Link><Link href="/runewords" aria-current="page">룬워드 도감</Link></nav>
-      <header><h1>룬워드 도감</h1><p>필요한 장비와 룬을 선택하고, 나에게 맞는 조합을 찾아보세요.</p></header>
+    <div className={styles.shell}>
+      <aside aria-label="왼쪽 광고" className={`fixed-ad-banner fixed-left-box ${styles.adBanner}`}>
+        <h4 className="ad-title">광고주 모집</h4>
+        <p className="ad-text-muted">디아블로2<br />실시간 마켓<br />배너 광고 구역</p>
+        <div className="ad-footer-divider"><span className="ad-label">문의 이메일</span><span className="ad-email-text">maymouse72<br />@gmail.com</span></div>
+      </aside>
+      <aside aria-label="오른쪽 광고" className={`fixed-ad-banner fixed-right-box ${styles.adBanner}`}>
+        <h4 className="ad-title">AD ZONE</h4>
+        <p className="ad-text-muted">24시간<br />잠들지 않는<br />트레이드 스페이스</p>
+        <div className="ad-footer-divider"><span className="ad-label">AD INQUIRY</span><span className="ad-email-text">maymouse72<br />@gmail.com</span></div>
+      </aside>
+      <main className={`center-board-container ${styles.catalog}`}>
+      <div className="welcome-banner-text">D2 주고받고(://d2jugobatgo.com) 사이트 방문을 환영합니다!!</div>
+      <h1 className="main-platform-title">DIABLO II REALTIME MARKET</h1>
+      <nav aria-label="주요 메뉴" style={{ display: "flex", gap: 12, marginBottom: 24 }}><Link href="/" className="market-button market-button-refresh">거래소</Link><Link href="/runewords" aria-current="page" className="market-button market-button-primary">룬워드 도감</Link></nav>
+      <header className={styles.catalogHeader}><h2>룬워드 도감</h2><p>필요한 장비와 룬을 선택하고, 나에게 맞는 조합을 찾아보세요.</p></header>
       <section className={styles.filters} aria-label="룬워드 검색 조건">
         <label className={styles.search}>통합 검색<input type="search" placeholder="이름·영문명·옵션·룬 검색" value={query} onChange={e => setQuery(e.target.value)} /></label>
         <label>장비 종류<select value={base} onChange={e => setBase(e.target.value)}><option value="">전체 장비</option>{equipment.map(value => <option key={value}>{value}</option>)}</select></label>
@@ -50,6 +62,7 @@ export default function RunewordCatalog() {
       </div>
       {visible.length === 0 && <div className={styles.empty}><p>조건에 맞는 룬워드가 없습니다.</p><button onClick={reset}>검색 조건 초기화</button></div>}
       <footer className={styles.footer}>룬 이미지: <a href="https://classic.battle.net/diablo2exp/items/runes.shtml" target="_blank" rel="noreferrer">Blizzard Entertainment · The Arreat Summit</a>. Diablo II 및 게임 이미지의 권리는 Blizzard Entertainment에 있습니다. 본 사이트는 비공식 팬 사이트입니다.</footer>
-    </main>
+      </main>
+    </div>
   );
 }
