@@ -146,7 +146,7 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
           </div>
 
           <button type="submit" disabled={submitting} style={{ backgroundColor: submitting ? '#444444' : '#C5A059', color: '#0A0A0A', width: '100%', height: '48px', border: 'none', borderRadius: '4px', fontSize: '14px', fontWeight: 'extrabold', cursor: 'pointer', marginTop: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>
-            {submitting ? '서버로 등록 중...' : '매물 등록하기 (1시간 유지)'}
+            {submitting ? '서버로 등록 중...' : '매물 등록하기'}
           </button>
         </form>
       </div>

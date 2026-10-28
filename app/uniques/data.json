@@ -38,7 +38,8 @@
     "baseStats": [
       "기본 무기 피해 3~6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "1",
@@ -83,7 +84,8 @@
     "baseStats": [
       "기본 무기 피해 4~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "2",
@@ -136,7 +138,8 @@
     "baseStats": [
       "기본 무기 피해 5~13"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "3",
@@ -189,7 +192,8 @@
     "baseStats": [
       "기본 무기 피해 7~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "4",
@@ -234,7 +238,8 @@
     "baseStats": [
       "기본 무기 피해 10~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "5",
@@ -275,7 +280,8 @@
     "baseStats": [
       "기본 양손 피해 6~13"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "6",
@@ -320,7 +326,8 @@
     "baseStats": [
       "기본 양손 피해 10~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "7",
@@ -365,7 +372,8 @@
     "baseStats": [
       "기본 양손 피해 12~32"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "8",
@@ -414,7 +422,8 @@
     "baseStats": [
       "기본 양손 피해 9~30"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "9",
@@ -463,7 +472,8 @@
     "baseStats": [
       "기본 양손 피해 22~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "10",
@@ -512,7 +522,8 @@
     "baseStats": [
       "기본 무기 피해 2~4"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "11",
@@ -573,7 +584,8 @@
     "baseStats": [
       "기본 무기 피해 2~8"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "12",
@@ -634,7 +646,8 @@
     "baseStats": [
       "기본 무기 피해 3~7"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "13",
@@ -683,7 +696,8 @@
     "baseStats": [
       "기본 무기 피해 5~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "14",
@@ -732,7 +746,8 @@
     "baseStats": [
       "기본 무기 피해 1~6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "15",
@@ -781,7 +796,8 @@
     "baseStats": [
       "기본 무기 피해 6~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "16",
@@ -838,7 +854,8 @@
     "baseStats": [
       "기본 무기 피해 8~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "17",
@@ -891,7 +908,8 @@
     "baseStats": [
       "기본 무기 피해 10~17"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "18",
@@ -932,7 +950,8 @@
     "baseStats": [
       "기본 무기 피해 5~8"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "19",
@@ -981,7 +1000,8 @@
     "baseStats": [
       "기본 무기 피해 3~10"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "20",
@@ -1034,7 +1054,8 @@
     "baseStats": [
       "기본 무기 피해 7~16"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "21",
@@ -1087,7 +1108,8 @@
     "baseStats": [
       "기본 무기 피해 1~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "22",
@@ -1132,7 +1154,8 @@
     "baseStats": [
       "기본 무기 피해 19~29"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "23",
@@ -1177,7 +1200,8 @@
     "baseStats": [
       "기본 양손 피해 30~43"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "24",
@@ -1218,7 +1242,8 @@
     "baseStats": [
       "기본 양손 피해 38~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "25",
@@ -1267,7 +1292,8 @@
     "baseStats": [
       "기본 무기 피해 2~7"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "26",
@@ -1320,7 +1346,8 @@
     "baseStats": [
       "기본 무기 피해 2~6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "27",
@@ -1369,7 +1396,8 @@
     "baseStats": [
       "기본 무기 피해 3~8"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "28",
@@ -1418,7 +1446,8 @@
     "baseStats": [
       "기본 무기 피해 9~17"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "30",
@@ -1471,7 +1500,8 @@
     "baseStats": [
       "기본 무기 피해 7~14"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "31",
@@ -1520,7 +1550,8 @@
     "baseStats": [
       "기본 무기 피해 3~19"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "32",
@@ -1569,7 +1600,8 @@
     "baseStats": [
       "기본 무기 피해 8~20"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "33",
@@ -1619,7 +1651,8 @@
       "기본 무기 피해 2~9",
       "기본 양손 피해 8~17"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "34",
@@ -1665,7 +1698,8 @@
       "기본 무기 피해 5~12",
       "기본 양손 피해 13~30"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "35",
@@ -1715,7 +1749,8 @@
       "기본 무기 피해 3~16",
       "기본 양손 피해 9~28"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "36",
@@ -1761,7 +1796,8 @@
       "기본 무기 피해 7~19",
       "기본 양손 피해 20~28"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "37",
@@ -1803,7 +1839,8 @@
       "기본 무기 피해 9~15",
       "기본 양손 피해 13~26"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "38",
@@ -1853,7 +1890,8 @@
       "기본 무기 피해 12~20",
       "기본 양손 피해 25~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "39",
@@ -1894,7 +1932,8 @@
     "baseStats": [
       "기본 무기 피해 1~4"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "40",
@@ -1943,7 +1982,8 @@
     "baseStats": [
       "기본 무기 피해 3~9"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "41",
@@ -1988,7 +2028,8 @@
     "baseStats": [
       "기본 무기 피해 2~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "42",
@@ -2029,7 +2070,8 @@
     "baseStats": [
       "기본 무기 피해 4~15"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "43",
@@ -2074,7 +2116,8 @@
     "baseStats": [
       "기본 양손 피해 3~15"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "44",
@@ -2123,7 +2166,8 @@
     "baseStats": [
       "기본 양손 피해 9~15"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "45",
@@ -2168,7 +2212,8 @@
     "baseStats": [
       "기본 양손 피해 7~17"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "46",
@@ -2213,7 +2258,8 @@
     "baseStats": [
       "기본 양손 피해 15~23"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "47",
@@ -2270,7 +2316,8 @@
     "baseStats": [
       "기본 양손 피해 14~63"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "48",
@@ -2311,7 +2358,8 @@
     "baseStats": [
       "기본 양손 피해 1~27"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "49",
@@ -2360,7 +2408,8 @@
     "baseStats": [
       "기본 양손 피해 6~21"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "50",
@@ -2409,7 +2458,8 @@
     "baseStats": [
       "기본 양손 피해 8~20"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "51",
@@ -2454,7 +2504,8 @@
     "baseStats": [
       "기본 양손 피해 18~39"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "52",
@@ -2511,7 +2562,8 @@
     "baseStats": [
       "기본 양손 피해 12~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "53",
@@ -2556,7 +2608,8 @@
     "baseStats": [
       "기본 양손 피해 15~36"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "54",
@@ -2609,7 +2662,8 @@
     "baseStats": [
       "기본 양손 피해 1~5"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "55",
@@ -2662,7 +2716,8 @@
     "baseStats": [
       "기본 양손 피해 2~8"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "56",
@@ -2723,7 +2778,8 @@
     "baseStats": [
       "기본 양손 피해 4~12"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "57",
@@ -2772,7 +2828,8 @@
     "baseStats": [
       "기본 양손 피해 6~13"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "58",
@@ -2829,7 +2886,8 @@
     "baseStats": [
       "기본 양손 피해 12~28"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "59",
@@ -2882,7 +2940,8 @@
     "baseStats": [
       "기본 양손 피해 1~4"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "60",
@@ -2931,7 +2990,8 @@
     "baseStats": [
       "기본 양손 피해 2~6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "61",
@@ -2976,7 +3036,8 @@
     "baseStats": [
       "기본 양손 피해 3~10"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "62",
@@ -3029,7 +3090,8 @@
     "baseStats": [
       "기본 양손 피해 4~8"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "63",
@@ -3078,7 +3140,8 @@
     "baseStats": [
       "기본 양손 피해 5~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "64",
@@ -3135,7 +3198,8 @@
     "baseStats": [
       "기본 양손 피해 3~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "65",
@@ -3192,7 +3256,8 @@
     "baseStats": [
       "기본 양손 피해 6~14"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "66",
@@ -3237,7 +3302,8 @@
     "baseStats": [
       "기본 양손 피해 3~23"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "67",
@@ -3286,7 +3352,8 @@
     "baseStats": [
       "기본 양손 피해 6~9"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "68",
@@ -3335,7 +3402,8 @@
     "baseStats": [
       "기본 양손 피해 9~16"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "69",
@@ -3388,7 +3456,8 @@
     "baseStats": [
       "기본 양손 피해 14~26"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "70",
@@ -3433,7 +3502,8 @@
     "baseStats": [
       "기본 양손 피해 6~12"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "71",
@@ -3478,7 +3548,8 @@
     "baseStats": [
       "기본 방어력 3~5"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "72",
@@ -3515,7 +3586,8 @@
     "baseStats": [
       "기본 방어력 8~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "73",
@@ -3560,7 +3632,8 @@
     "baseStats": [
       "기본 방어력 15~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "74",
@@ -3609,7 +3682,8 @@
     "baseStats": [
       "기본 방어력 23~26"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "75",
@@ -3654,7 +3728,8 @@
     "baseStats": [
       "기본 방어력 33~36"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "76",
@@ -3703,7 +3778,8 @@
     "baseStats": [
       "기본 방어력 30~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "77",
@@ -3760,7 +3836,8 @@
     "baseStats": [
       "기본 방어력 25~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "78",
@@ -3805,7 +3882,8 @@
     "baseStats": [
       "기본 방어력 9~27"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "79",
@@ -3854,7 +3932,8 @@
     "baseStats": [
       "기본 방어력 8~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "80",
@@ -3907,7 +3986,8 @@
     "baseStats": [
       "기본 방어력 14~17"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "81",
@@ -3964,7 +4044,8 @@
     "baseStats": [
       "기본 방어력 21~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "82",
@@ -4013,7 +4094,8 @@
     "baseStats": [
       "기본 방어력 32~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "83",
@@ -4062,7 +4144,8 @@
     "baseStats": [
       "기본 방어력 45~48"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "84",
@@ -4107,7 +4190,8 @@
     "baseStats": [
       "기본 방어력 57~60"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "85",
@@ -4148,7 +4232,8 @@
     "baseStats": [
       "기본 방어력 72~75"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "86",
@@ -4193,7 +4278,8 @@
     "baseStats": [
       "기본 방어력 65~68"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "87",
@@ -4238,7 +4324,8 @@
     "baseStats": [
       "기본 방어력 90~95"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "88",
@@ -4279,7 +4366,8 @@
     "baseStats": [
       "기본 방어력 108~116"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "89",
@@ -4324,7 +4412,8 @@
     "baseStats": [
       "기본 방어력 101~105"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "90",
@@ -4365,7 +4454,8 @@
     "baseStats": [
       "기본 방어력 128~135"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "91",
@@ -4410,7 +4500,8 @@
     "baseStats": [
       "기본 방어력 150~161"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "92",
@@ -4451,7 +4542,8 @@
     "baseStats": [
       "기본 방어력 218~233"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "93",
@@ -4500,7 +4592,8 @@
     "baseStats": [
       "기본 방어력 90~107"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "94",
@@ -4558,7 +4651,8 @@
       "기본 방어력 4~6",
       "기본 무기 피해 1~3"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "95",
@@ -4616,7 +4710,8 @@
       "기본 방어력 8~10",
       "기본 무기 피해 2~3"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "96",
@@ -4674,7 +4769,8 @@
       "기본 방어력 12~14",
       "기본 무기 피해 2~4"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "97",
@@ -4724,7 +4820,8 @@
       "기본 방어력 10~30",
       "기본 무기 피해 3~6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "98",
@@ -4778,7 +4875,8 @@
       "기본 방어력 15~25",
       "기본 무기 피해 5~9"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "99",
@@ -4840,7 +4938,8 @@
       "기본 방어력 16~18",
       "기본 무기 피해 2~5"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "100",
@@ -4894,7 +4993,8 @@
       "기본 방어력 22~25",
       "기본 무기 피해 1~5"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "101",
@@ -4948,7 +5048,8 @@
       "기본 방어력 30~35",
       "기본 무기 피해 2~6"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "102",
@@ -4997,7 +5098,8 @@
     "baseStats": [
       "기본 방어력 2~3"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "103",
@@ -5046,7 +5148,8 @@
     "baseStats": [
       "기본 방어력 5~6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "104",
@@ -5095,7 +5198,8 @@
     "baseStats": [
       "기본 방어력 8~9"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "105",
@@ -5144,7 +5248,8 @@
     "baseStats": [
       "기본 방어력 9~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "106",
@@ -5189,7 +5294,8 @@
     "baseStats": [
       "기본 방어력 12~15"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "107",
@@ -5239,7 +5345,8 @@
       "기본 방어력 2~3",
       "기본 무기 피해 3~8"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "108",
@@ -5293,7 +5400,8 @@
       "기본 방어력 5~6",
       "기본 무기 피해 4~10"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "109",
@@ -5343,7 +5451,8 @@
       "기본 방어력 8~9",
       "기본 무기 피해 6~12"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "110",
@@ -5393,7 +5502,8 @@
       "기본 방어력 9~11",
       "기본 무기 피해 8~16"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "111",
@@ -5447,7 +5557,8 @@
       "기본 방어력 12~15",
       "기본 무기 피해 10~20"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "112",
@@ -5488,7 +5599,8 @@
     "baseStats": [
       "기본 방어력 2"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "113",
@@ -5537,7 +5649,8 @@
     "baseStats": [
       "기본 방어력 3"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "114",
@@ -5586,7 +5699,8 @@
     "baseStats": [
       "기본 방어력 5"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "115",
@@ -5635,7 +5749,8 @@
     "baseStats": [
       "기본 방어력 6"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "116",
@@ -5688,7 +5803,8 @@
     "baseStats": [
       "기본 방어력 8~11"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "117",
@@ -5731,7 +5847,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "118",
@@ -5782,7 +5899,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "119",
@@ -5837,7 +5955,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "120",
@@ -5876,7 +5995,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "121",
@@ -5919,7 +6039,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "122",
@@ -5965,7 +6086,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "129",
@@ -6018,7 +6140,8 @@
     "baseStats": [
       "기본 무기 피해 10~21"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "130",
@@ -6067,7 +6190,8 @@
     "baseStats": [
       "기본 무기 피해 10~33"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "131",
@@ -6132,7 +6256,8 @@
     "baseStats": [
       "기본 무기 피해 13~38"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "132",
@@ -6177,7 +6302,8 @@
     "baseStats": [
       "기본 무기 피해 14~34"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "133",
@@ -6226,7 +6352,8 @@
     "baseStats": [
       "기본 무기 피해 16~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "134",
@@ -6275,7 +6402,8 @@
     "baseStats": [
       "기본 양손 피해 14~34"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "135",
@@ -6340,7 +6468,8 @@
     "baseStats": [
       "기본 양손 피해 21~49"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "136",
@@ -6397,7 +6526,8 @@
     "baseStats": [
       "기본 양손 피해 24~77"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "137",
@@ -6454,7 +6584,8 @@
     "baseStats": [
       "기본 양손 피해 18~70"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "138",
@@ -6507,7 +6638,8 @@
     "baseStats": [
       "기본 양손 피해 43~85"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "139",
@@ -6556,7 +6688,8 @@
     "baseStats": [
       "기본 무기 피해 8~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "140",
@@ -6609,7 +6742,8 @@
     "baseStats": [
       "기본 무기 피해 8~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "141",
@@ -6674,7 +6808,8 @@
     "baseStats": [
       "기본 무기 피해 10~22"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "142",
@@ -6731,7 +6866,8 @@
     "baseStats": [
       "기본 무기 피해 13~29"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "143",
@@ -6780,7 +6916,8 @@
     "baseStats": [
       "기본 무기 피해 6~21"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "144",
@@ -6841,7 +6978,8 @@
     "baseStats": [
       "기본 무기 피해 13~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "145",
@@ -6894,7 +7032,8 @@
     "baseStats": [
       "기본 무기 피해 14~36"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "146",
@@ -6959,7 +7098,8 @@
     "baseStats": [
       "기본 무기 피해 16~38"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "147",
@@ -7020,7 +7160,8 @@
     "baseStats": [
       "기본 무기 피해 13~25"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "148",
@@ -7069,7 +7210,8 @@
     "baseStats": [
       "기본 무기 피해 15~23"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "149",
@@ -7122,7 +7264,8 @@
     "baseStats": [
       "기본 무기 피해 20~31"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "150",
@@ -7175,7 +7318,8 @@
     "baseStats": [
       "기본 무기 피해 13~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "151",
@@ -7228,7 +7372,8 @@
     "baseStats": [
       "기본 무기 피해 35~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "152",
@@ -7281,7 +7426,8 @@
     "baseStats": [
       "기본 양손 피해 53~78"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "153",
@@ -7334,7 +7480,8 @@
     "baseStats": [
       "기본 양손 피해 61~99"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "154",
@@ -7399,7 +7546,8 @@
     "baseStats": [
       "기본 무기 피해 8~22"
     ],
-    "availability": "원본 데이터의 래더 시즌 조건: 15~15"
+    "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+    "optionGroups": []
   },
   {
     "id": "155",
@@ -7452,7 +7600,8 @@
     "baseStats": [
       "기본 무기 피해 8~21"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "156",
@@ -7505,7 +7654,8 @@
     "baseStats": [
       "기본 무기 피해 10~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "157",
@@ -7554,7 +7704,8 @@
     "baseStats": [
       "기본 무기 피해 16~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "158",
@@ -7603,7 +7754,8 @@
     "baseStats": [
       "기본 무기 피해 13~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "159",
@@ -7648,7 +7800,8 @@
     "baseStats": [
       "기본 무기 피해 16~34"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "160",
@@ -7697,7 +7850,8 @@
     "baseStats": [
       "기본 무기 피해 10~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "161",
@@ -7754,7 +7908,8 @@
     "baseStats": [
       "기본 무기 피해 18~43"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "162",
@@ -7804,7 +7959,8 @@
       "기본 무기 피해 8~26",
       "기본 양손 피해 18~40"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "163",
@@ -7854,7 +8010,8 @@
       "기본 무기 피해 13~30",
       "기본 양손 피해 26~61"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "164",
@@ -7904,7 +8061,8 @@
       "기본 무기 피해 10~37",
       "기본 양손 피해 19~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "165",
@@ -7966,7 +8124,8 @@
       "기본 무기 피해 14~40",
       "기본 양손 피해 39~60"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "166",
@@ -8020,7 +8179,8 @@
       "기본 무기 피해 19~35",
       "기본 양손 피해 29~54"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "167",
@@ -8082,7 +8242,8 @@
       "기본 무기 피해 24~40",
       "기본 양손 피해 47~80"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "168",
@@ -8139,7 +8300,8 @@
     "baseStats": [
       "기본 무기 피해 6~18"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "169",
@@ -8192,7 +8354,8 @@
     "baseStats": [
       "기본 무기 피해 10~26"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "170",
@@ -8249,7 +8412,8 @@
     "baseStats": [
       "기본 무기 피해 15~31"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "171",
@@ -8294,7 +8458,8 @@
     "baseStats": [
       "기본 무기 피해 19~36"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "172",
@@ -8351,7 +8516,8 @@
     "baseStats": [
       "기본 양손 피해 10~37"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "173",
@@ -8400,7 +8566,8 @@
     "baseStats": [
       "기본 양손 피해 19~37"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "174",
@@ -8453,7 +8620,8 @@
     "baseStats": [
       "기본 양손 피해 16~40"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "175",
@@ -8498,7 +8666,8 @@
     "baseStats": [
       "기본 양손 피해 29~59"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "176",
@@ -8559,7 +8728,8 @@
     "baseStats": [
       "기본 양손 피해 27~114"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "177",
@@ -8608,7 +8778,8 @@
     "baseStats": [
       "기본 양손 피해 6~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "178",
@@ -8657,7 +8828,8 @@
     "baseStats": [
       "기본 양손 피해 14~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "179",
@@ -8706,7 +8878,8 @@
     "baseStats": [
       "기본 양손 피해 18~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "180",
@@ -8759,7 +8932,8 @@
     "baseStats": [
       "기본 양손 피해 34~75"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "181",
@@ -8808,7 +8982,8 @@
     "baseStats": [
       "기본 양손 피해 13~85"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "182",
@@ -8869,7 +9044,8 @@
     "baseStats": [
       "기본 양손 피해 30~70"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "183",
@@ -8922,7 +9098,8 @@
     "baseStats": [
       "기본 양손 피해 6~21"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "184",
@@ -8983,7 +9160,8 @@
     "baseStats": [
       "기본 양손 피해 8~26"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "185",
@@ -9040,7 +9218,8 @@
     "baseStats": [
       "기본 양손 피해 11~32"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "186",
@@ -9089,7 +9268,8 @@
     "baseStats": [
       "기본 양손 피해 14~34"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "187",
@@ -9130,7 +9310,8 @@
     "baseStats": [
       "기본 양손 피해 24~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "188",
@@ -9183,7 +9364,8 @@
     "baseStats": [
       "기본 양손 피해 6~19"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "189",
@@ -9232,7 +9414,8 @@
     "baseStats": [
       "기본 양손 피해 8~22"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "190",
@@ -9281,7 +9464,8 @@
     "baseStats": [
       "기본 양손 피해 10~29"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "191",
@@ -9330,7 +9514,8 @@
     "baseStats": [
       "기본 양손 피해 11~26"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "192",
@@ -9379,7 +9564,8 @@
     "baseStats": [
       "기본 양손 피해 13~30"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "193",
@@ -9432,7 +9618,8 @@
     "baseStats": [
       "기본 양손 피해 10~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "194",
@@ -9493,7 +9680,8 @@
     "baseStats": [
       "기본 양손 피해 14~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "195",
@@ -9546,7 +9734,8 @@
     "baseStats": [
       "기본 양손 피해 10~50"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "196",
@@ -9599,7 +9788,8 @@
     "baseStats": [
       "기본 양손 피해 14~27"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "197",
@@ -9656,7 +9846,8 @@
     "baseStats": [
       "기본 양손 피해 20~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "198",
@@ -9713,7 +9904,8 @@
     "baseStats": [
       "기본 양손 피해 33~55"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "199",
@@ -9766,7 +9958,8 @@
     "baseStats": [
       "기본 양손 피해 14~32"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "201",
@@ -9815,7 +10008,8 @@
     "baseStats": [
       "기본 방어력 45~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "202",
@@ -9868,7 +10062,8 @@
     "baseStats": [
       "기본 방어력 52~62"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "203",
@@ -9917,7 +10112,8 @@
     "baseStats": [
       "기본 방어력 63~72"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "204",
@@ -9970,7 +10166,8 @@
     "baseStats": [
       "기본 방어력 75~84"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "205",
@@ -10015,7 +10212,8 @@
     "baseStats": [
       "기본 방어력 85~98"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "206",
@@ -10068,7 +10266,8 @@
     "baseStats": [
       "기본 방어력 78~113"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "207",
@@ -10117,7 +10316,8 @@
     "baseStats": [
       "기본 방어력 54~86"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "208",
@@ -10170,7 +10370,8 @@
     "baseStats": [
       "기본 방어력 60~125"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "209",
@@ -10215,7 +10416,8 @@
     "baseStats": [
       "기본 방어력 102~117"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "210",
@@ -10260,7 +10462,8 @@
     "baseStats": [
       "기본 방어력 111~126"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "211",
@@ -10309,7 +10512,8 @@
     "baseStats": [
       "기본 방어력 122~136"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "212",
@@ -10358,7 +10562,8 @@
     "baseStats": [
       "기본 방어력 138~153"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "213",
@@ -10411,7 +10616,8 @@
     "baseStats": [
       "기본 방어력 158~172"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "214",
@@ -10456,7 +10662,8 @@
     "baseStats": [
       "기본 방어력 176~190"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "215",
@@ -10497,7 +10704,8 @@
     "baseStats": [
       "기본 방어력 198~213"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "216",
@@ -10562,7 +10770,8 @@
     "baseStats": [
       "기본 방어력 188~202"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "217",
@@ -10611,7 +10820,8 @@
     "baseStats": [
       "기본 방어력 225~243"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "218",
@@ -10664,7 +10874,8 @@
     "baseStats": [
       "기본 방어력 252~274"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "219",
@@ -10717,7 +10928,8 @@
     "baseStats": [
       "기본 방어력 242~258"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "220",
@@ -10774,7 +10986,8 @@
     "baseStats": [
       "기본 방어력 282~303"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "221",
@@ -10823,7 +11036,8 @@
     "baseStats": [
       "기본 방어력 315~342"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "222",
@@ -10876,7 +11090,8 @@
     "baseStats": [
       "기본 방어력 417~450"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "223",
@@ -10929,7 +11144,8 @@
     "baseStats": [
       "기본 방어력 225~261"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "224",
@@ -10975,7 +11191,8 @@
       "기본 방어력 41~49",
       "기본 무기 피해 8~12"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "225",
@@ -11021,7 +11238,8 @@
       "기본 방어력 47~55",
       "기본 무기 피해 7~14"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "226",
@@ -11083,7 +11301,8 @@
       "기본 방어력 53~61",
       "기본 무기 피해 11~15"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "227",
@@ -11145,7 +11364,8 @@
       "기본 방어력 59~67",
       "기본 무기 피해 15~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "228",
@@ -11199,7 +11419,8 @@
       "기본 방어력 68~78",
       "기본 무기 피해 10~17"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "229",
@@ -11257,7 +11478,8 @@
       "기본 방어력 80~93",
       "기본 무기 피해 12~16"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "230",
@@ -11311,7 +11533,8 @@
       "기본 방어력 50~150",
       "기본 무기 피해 14~20"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "231",
@@ -11361,7 +11584,8 @@
       "기본 방어력 58~78",
       "기본 무기 피해 18~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "232",
@@ -11414,7 +11638,8 @@
     "baseStats": [
       "기본 방어력 28~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "233",
@@ -11459,7 +11684,8 @@
     "baseStats": [
       "기본 방어력 33~39"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "234",
@@ -11504,7 +11730,8 @@
     "baseStats": [
       "기본 방어력 37~44"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "235",
@@ -11557,7 +11784,8 @@
     "baseStats": [
       "기본 방어력 39~47"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "236",
@@ -11606,7 +11834,8 @@
     "baseStats": [
       "기본 방어력 43~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "237",
@@ -11668,7 +11897,8 @@
       "기본 방어력 28~35",
       "기본 무기 피해 26~46"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "238",
@@ -11726,7 +11956,8 @@
       "기본 방어력 33~39",
       "기본 무기 피해 28~50"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "239",
@@ -11772,7 +12003,8 @@
       "기본 방어력 37~44",
       "기본 무기 피해 23~52"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "240",
@@ -11837,7 +12069,8 @@
       "기본 방어력 39~47",
       "기본 무기 피해 37~64"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "241",
@@ -11895,7 +12128,8 @@
       "기본 방어력 43~53",
       "기본 무기 피해 39~80"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "242",
@@ -11944,7 +12178,8 @@
     "baseStats": [
       "기본 방어력 29~34"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "243",
@@ -11993,7 +12228,8 @@
     "baseStats": [
       "기본 방어력 31~36"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "244",
@@ -12042,7 +12278,8 @@
     "baseStats": [
       "기본 방어력 35~40"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "245",
@@ -12099,7 +12336,8 @@
     "baseStats": [
       "기본 방어력 37~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "246",
@@ -12160,7 +12398,8 @@
     "baseStats": [
       "기본 방어력 41~52"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "248",
@@ -12224,7 +12463,8 @@
     "baseStats": [
       "기본 방어력 98~141"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "249",
@@ -12277,7 +12517,8 @@
     "baseStats": [
       "기본 방어력 114~159"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "250",
@@ -12338,7 +12579,8 @@
     "baseStats": [
       "기본 방어력 375~481"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "251",
@@ -12383,7 +12625,8 @@
     "baseStats": [
       "기본 방어력 410~517"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "252",
@@ -12441,7 +12684,8 @@
       "기본 방어력 108~123",
       "기본 무기 피해 17~29"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "253",
@@ -12503,7 +12747,8 @@
       "기본 방어력 133~148",
       "기본 무기 피해 12~34"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "254",
@@ -12556,7 +12801,8 @@
     "baseStats": [
       "기본 양손 피해 49~137"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "255",
@@ -12617,7 +12863,8 @@
     "baseStats": [
       "기본 양손 피해 59~94"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "256",
@@ -12678,7 +12925,8 @@
     "baseStats": [
       "기본 무기 피해 43~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "257",
@@ -12743,7 +12991,8 @@
     "baseStats": [
       "기본 무기 피해 50~61"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "258",
@@ -12800,7 +13049,8 @@
     "baseStats": [
       "기본 양손 피해 33~180"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "259",
@@ -12865,7 +13115,8 @@
     "baseStats": [
       "기본 무기 피해 31~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "260",
@@ -12919,7 +13170,8 @@
       "기본 무기 피해 24~54",
       "기본 양손 피해 71~83"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "261",
@@ -12981,7 +13233,8 @@
       "기본 무기 피해 25~65",
       "기본 양손 피해 58~115"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "262",
@@ -13030,7 +13283,8 @@
     "baseStats": [
       "기본 무기 피해 23~49"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "264",
@@ -13091,7 +13345,8 @@
     "baseStats": [
       "기본 양손 피해 40~114"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "265",
@@ -13140,7 +13395,8 @@
     "baseStats": [
       "기본 양손 피해 15~63"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "266",
@@ -13199,7 +13455,8 @@
     "baseStats": [
       "기본 양손 피해 10~68"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "268",
@@ -13238,7 +13495,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "269",
@@ -13281,7 +13539,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "270",
@@ -13328,7 +13587,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "271",
@@ -13375,7 +13635,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "272",
@@ -13422,7 +13683,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "273",
@@ -13469,7 +13731,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "274",
@@ -13516,7 +13779,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "275",
@@ -13563,7 +13827,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "276",
@@ -13610,7 +13875,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "277",
@@ -13657,7 +13923,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "279",
@@ -13718,7 +13985,8 @@
     "baseStats": [
       "기본 방어력 93~120"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "280",
@@ -13779,7 +14047,8 @@
     "baseStats": [
       "기본 방어력 58~70"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "281",
@@ -13845,7 +14114,8 @@
       "기본 무기 피해 18~35",
       "기본 투척 피해 18~54"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "282",
@@ -13906,7 +14176,8 @@
     "baseStats": [
       "기본 양손 피해 19~41"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "283",
@@ -13967,7 +14238,8 @@
     "baseStats": [
       "기본 양손 피해 42~101"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "284",
@@ -14031,7 +14303,8 @@
     "baseStats": [
       "기본 무기 피해 18~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "285",
@@ -14093,7 +14366,8 @@
       "기본 방어력 144~168",
       "기본 무기 피해 20~28"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "286",
@@ -14154,7 +14428,8 @@
     "baseStats": [
       "기본 무기 피해 21~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "287",
@@ -14215,7 +14490,8 @@
     "baseStats": [
       "기본 방어력 73~98"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "288",
@@ -14269,7 +14545,8 @@
       "기본 무기 피해 11~22",
       "기본 투척 피해 18~33"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "289",
@@ -14314,7 +14591,8 @@
     "baseStats": [
       "기본 무기 피해 33~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "290",
@@ -14367,7 +14645,8 @@
     "baseStats": [
       "기본 무기 피해 26~46"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "291",
@@ -14417,7 +14696,8 @@
       "기본 무기 피해 8~16",
       "기본 투척 피해 11~24"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "292",
@@ -14467,7 +14747,8 @@
       "기본 무기 피해 27~35",
       "기본 투척 피해 23~39"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "293",
@@ -14512,7 +14793,8 @@
     "baseStats": [
       "기본 양손 피해 26~40"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "294",
@@ -14557,7 +14839,8 @@
     "baseStats": [
       "기본 무기 피해 33~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "296",
@@ -14610,7 +14893,8 @@
     "baseStats": [
       "기본 무기 피해 32~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "297",
@@ -14651,7 +14935,8 @@
     "baseStats": [
       "기본 방어력 105~149"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "298",
@@ -14716,7 +15001,8 @@
     "baseStats": [
       "기본 양손 피해 33~150"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "299",
@@ -14761,7 +15047,8 @@
     "baseStats": [
       "기본 무기 피해 22~28"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "300",
@@ -14804,7 +15091,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "301",
@@ -14861,7 +15149,8 @@
     "baseStats": [
       "기본 무기 피해 31~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "302",
@@ -14912,7 +15201,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "304",
@@ -14965,7 +15255,8 @@
     "baseStats": [
       "기본 무기 피해 15~57"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "306",
@@ -15010,7 +15301,8 @@
     "baseStats": [
       "기본 무기 피해 3~80"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "307",
@@ -15059,7 +15351,8 @@
     "baseStats": [
       "기본 무기 피해 50~61"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "308",
@@ -15108,7 +15401,8 @@
     "baseStats": [
       "기본 무기 피해 34~45"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "309",
@@ -15158,7 +15452,8 @@
       "기본 방어력 62~71",
       "기본 무기 피해 83~149"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "310",
@@ -15207,7 +15502,8 @@
     "baseStats": [
       "기본 방어력 101~145"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "311",
@@ -15268,7 +15564,8 @@
     "baseStats": [
       "기본 방어력 487~600"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "312",
@@ -15313,7 +15610,8 @@
     "baseStats": [
       "기본 방어력 59~67"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "313",
@@ -15354,7 +15652,8 @@
     "baseStats": [
       "기본 무기 피해 33~66"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "314",
@@ -15399,7 +15698,8 @@
     "baseStats": [
       "기본 무기 피해 24~71"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "315",
@@ -15444,7 +15744,8 @@
     "baseStats": [
       "기본 양손 피해 60~124"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "316",
@@ -15489,7 +15790,8 @@
     "baseStats": [
       "기본 양손 피해 65~95"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "317",
@@ -15534,7 +15836,8 @@
     "baseStats": [
       "기본 방어력 417~523"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "319",
@@ -15581,7 +15884,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "320",
@@ -15627,7 +15931,8 @@
       "기본 무기 피해 27~35",
       "기본 투척 피해 11~77"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "321",
@@ -15681,7 +15986,8 @@
       "기본 무기 피해 11~56",
       "기본 투척 피해 7~60"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "322",
@@ -15730,7 +16036,8 @@
     "baseStats": [
       "기본 양손 피해 83~99"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "323",
@@ -15779,7 +16086,8 @@
     "baseStats": [
       "기본 양손 피해 42~92"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "324",
@@ -15836,7 +16144,8 @@
     "baseStats": [
       "기본 양손 피해 62~110"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "325",
@@ -15889,7 +16198,8 @@
     "baseStats": [
       "기본 방어력 111~156"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "326",
@@ -15944,7 +16254,8 @@
     "baseStats": [
       "기본 양손 피해 12~141"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "327",
@@ -15997,7 +16308,8 @@
     "baseStats": [
       "기본 방어력 107~152"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "328",
@@ -16046,7 +16358,8 @@
     "baseStats": [
       "기본 양손 피해 32~91"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "329",
@@ -16100,7 +16413,8 @@
       "기본 방어력 138~164",
       "기본 무기 피해 35~58"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "330",
@@ -16149,7 +16463,8 @@
     "baseStats": [
       "기본 방어력 103~148"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "331",
@@ -16194,7 +16509,8 @@
     "baseStats": [
       "기본 양손 피해 20~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "332",
@@ -16239,7 +16555,8 @@
     "baseStats": [
       "기본 양손 피해 20~47"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "333",
@@ -16292,7 +16609,8 @@
     "baseStats": [
       "기본 무기 피해 31~47"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "334",
@@ -16345,7 +16663,8 @@
     "baseStats": [
       "기본 무기 피해 36~42"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "335",
@@ -16395,7 +16714,8 @@
       "기본 무기 피해 17~65",
       "기본 투척 피해 15~66"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "336",
@@ -16443,7 +16763,8 @@
     "baseStats": [
       "기본 방어력 50~60"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "337",
@@ -16484,7 +16805,8 @@
     "baseStats": [
       "기본 양손 피해 77~106"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "338",
@@ -16538,7 +16860,8 @@
       "기본 무기 피해 30~54",
       "기본 투척 피해 35~66"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "340",
@@ -16588,7 +16911,8 @@
       "기본 무기 피해 33~63",
       "기본 투척 피해 40~62"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "341",
@@ -16633,7 +16957,8 @@
     "baseStats": [
       "기본 방어력 100~146"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "342",
@@ -16682,7 +17007,8 @@
     "baseStats": [
       "기본 양손 피해 33~178"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "343",
@@ -16735,7 +17061,8 @@
     "baseStats": [
       "기본 방어력 114~159"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "344",
@@ -16792,7 +17119,8 @@
     "baseStats": [
       "기본 방어력 111~165"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "345",
@@ -16859,7 +17187,8 @@
     "baseStats": [
       "기본 방어력 101~154"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "347",
@@ -16913,7 +17242,8 @@
       "기본 방어력 169~193",
       "기본 무기 피해 46~46"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "348",
@@ -16966,7 +17296,8 @@
     "baseStats": [
       "기본 방어력 446~557"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "349",
@@ -17016,7 +17347,8 @@
       "기본 방어력 145~161",
       "기본 무기 피해 18~28"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "350",
@@ -17065,7 +17397,8 @@
     "baseStats": [
       "기본 방어력 103~155"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "351",
@@ -17118,7 +17451,8 @@
     "baseStats": [
       "기본 무기 피해 10~31"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "353",
@@ -17176,7 +17510,8 @@
       "기본 무기 피해 15~75",
       "기본 양손 피해 55~118"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "354",
@@ -17221,7 +17556,8 @@
     "baseStats": [
       "기본 무기 피해 30~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "355",
@@ -17282,7 +17618,8 @@
     "baseStats": [
       "기본 방어력 105~150"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "356",
@@ -17332,7 +17669,8 @@
       "기본 방어력 153~170",
       "기본 무기 피해 11~35"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "357",
@@ -17373,7 +17711,8 @@
     "baseStats": [
       "기본 방어력 40~50"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "358",
@@ -17426,7 +17765,8 @@
     "baseStats": [
       "기본 방어력 361~467"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "359",
@@ -17439,16 +17779,12 @@
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 62,
     "strength": 0,
     "dexterity": 0,
     "options": [
-      {
-        "text": "마법 아이템 발견 확률 20~40% 증가",
-        "variable": true
-      },
       {
         "text": "괴물에게서 얻는 금화 80~160% 증가",
         "variable": true
@@ -17456,14 +17792,19 @@
       {
         "text": "상점 물품 가격 10~15% 하락",
         "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 20~40% 증가",
+        "variable": true
       }
     ],
-    "image": "/uniques/3908a5798d0abda0.gif",
-    "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ucharms.shtml",
+    "image": "/uniques/charm-7a86951d76beb227.png",
+    "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "360",
@@ -17520,7 +17861,8 @@
     "baseStats": [
       "기본 무기 피해 3~80"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "361",
@@ -17573,7 +17915,8 @@
     "baseStats": [
       "기본 방어력 114~159"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "363",
@@ -17623,7 +17966,8 @@
       "기본 방어력 147~163",
       "기본 무기 피해 26~40"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "364",
@@ -17672,7 +18016,8 @@
     "baseStats": [
       "기본 방어력 56~65"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "365",
@@ -17725,7 +18070,8 @@
     "baseStats": [
       "기본 무기 피해 5~77"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "366",
@@ -17778,7 +18124,8 @@
     "baseStats": [
       "기본 방어력 487~600"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "367",
@@ -17823,7 +18170,8 @@
     "baseStats": [
       "기본 무기 피해 18~50"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "368",
@@ -17876,7 +18224,8 @@
     "baseStats": [
       "기본 무기 피해 22~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "369",
@@ -17938,7 +18287,8 @@
       "기본 방어력 56~65",
       "기본 무기 피해 60~110"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "370",
@@ -18004,7 +18354,8 @@
       "기본 방어력 59~67",
       "기본 무기 피해 69~118"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "371",
@@ -18061,7 +18412,8 @@
     "baseStats": [
       "기본 무기 피해 40~52"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "373",
@@ -18112,7 +18464,8 @@
     "baseStats": [
       "기본 방어력 55~62"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "374",
@@ -18161,7 +18514,8 @@
     "baseStats": [
       "기본 방어력 56~63"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "375",
@@ -18204,7 +18558,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "376",
@@ -18253,7 +18608,8 @@
     "baseStats": [
       "기본 방어력 58~65"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "378",
@@ -18304,7 +18660,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "379",
@@ -18349,7 +18706,8 @@
     "baseStats": [
       "기본 방어력 100~157"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "380",
@@ -18410,7 +18768,8 @@
     "baseStats": [
       "기본 무기 피해 37~43"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "381",
@@ -18423,7 +18782,7 @@
     "base": "작은 부적",
     "baseEnglish": "Small Charm",
     "category": "장신구·기타",
-    "type": "작은 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 70,
     "strength": 0,
@@ -18451,7 +18810,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "382",
@@ -18500,7 +18860,8 @@
     "baseStats": [
       "기본 양손 피해 35~119"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "383",
@@ -18549,7 +18910,8 @@
     "baseStats": [
       "기본 무기 피해 30~48"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "384",
@@ -18602,7 +18964,8 @@
     "baseStats": [
       "기본 무기 피해 35~43"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "385",
@@ -18655,7 +19018,8 @@
     "baseStats": [
       "기본 양손 피해 33~180"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "386",
@@ -18701,7 +19065,8 @@
       "기본 무기 피해 19~60",
       "기본 투척 피해 30~85"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "387",
@@ -18750,7 +19115,8 @@
     "baseStats": [
       "기본 양손 피해 28~145"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "388",
@@ -18799,7 +19165,8 @@
     "baseStats": [
       "기본 양손 피해 80~93"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "389",
@@ -18860,7 +19227,8 @@
     "baseStats": [
       "기본 무기 피해 40~52"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "390",
@@ -18910,7 +19278,8 @@
       "기본 방어력 158~173",
       "기본 무기 피해 24~38"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "391",
@@ -18951,7 +19320,8 @@
     "baseStats": [
       "기본 방어력 62~71"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "392",
@@ -18990,7 +19360,8 @@
     "variant": "번개 / 사망 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "393",
@@ -19029,7 +19400,8 @@
     "variant": "냉기 / 사망 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "394",
@@ -19068,7 +19440,8 @@
     "variant": "화염 / 사망 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "395",
@@ -19107,7 +19480,8 @@
     "variant": "독 / 사망 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "396",
@@ -19146,7 +19520,8 @@
     "variant": "번개 / 레벨 상승 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "397",
@@ -19185,7 +19560,8 @@
     "variant": "냉기 / 레벨 상승 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "398",
@@ -19224,7 +19600,8 @@
     "variant": "화염 / 레벨 상승 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "399",
@@ -19263,7 +19640,8 @@
     "variant": "독 / 레벨 상승 시",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "400",
@@ -19276,7 +19654,7 @@
     "base": "큰 부적",
     "baseEnglish": "Large Charm",
     "category": "장신구·기타",
-    "type": "큰 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
@@ -19312,7 +19690,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "408",
@@ -19373,7 +19752,8 @@
     "baseStats": [
       "기본 방어력 103~148"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "409",
@@ -19434,7 +19814,8 @@
     "baseStats": [
       "기본 방어력 100~146"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "410",
@@ -19495,7 +19876,8 @@
     "baseStats": [
       "기본 방어력 96~141"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "411",
@@ -19560,7 +19942,8 @@
     "baseStats": [
       "기본 방어력 38~48"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "412",
@@ -19618,7 +20001,8 @@
       "기본 무기 피해 22~56",
       "기본 양손 피해 50~94"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "413",
@@ -19668,7 +20052,8 @@
       "기본 방어력 59~68",
       "기본 무기 피해 50~145"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "414",
@@ -19725,7 +20110,8 @@
     "baseStats": [
       "기본 무기 피해 37~53"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "415",
@@ -19772,7 +20158,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "416",
@@ -19819,7 +20206,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "417",
@@ -19866,7 +20254,8 @@
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "418",
@@ -19919,192 +20308,925 @@
     "baseStats": [
       "기본 방어력 59~66"
     ],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "426",
-    "name": "Cold Rupture",
-    "english": "Cold Rupture",
+    "name": "추위의 파열",
+    "english": "The Cold Rupture",
     "legacy": "",
-    "aliases": [],
+    "aliases": [
+      "냉파참"
+    ],
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
     "dexterity": 0,
     "options": [
       {
-        "text": "냉기 면역 파괴",
+        "text": "괴물의 냉기 면역이 파괴됨",
         "variable": false
       },
       {
-        "text": "냉기 저항 -90~-70%",
+        "text": "냉기 저항 -70~90%",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/charm-efb1c61d893f61cd.png",
     "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "428",
-    "name": "Flame Rift",
-    "english": "Flame Rift",
+    "name": "불길의 균열",
+    "english": "The Flame Rift",
     "legacy": "",
-    "aliases": [],
+    "aliases": [
+      "화파참"
+    ],
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
     "dexterity": 0,
     "options": [
       {
-        "text": "화염 면역 파괴",
+        "text": "괴물의 화염 면역이 파괴됨",
         "variable": false
       },
       {
-        "text": "화염 저항 -90~-70%",
+        "text": "화염 저항 -70~90%",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/charm-5b0e7943512bb526.png",
     "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "429",
-    "name": "Crack of the Heavens",
-    "english": "Crack of the Heavens",
+    "name": "천상의 틈",
+    "english": "The Crack of the Heavens",
     "legacy": "",
-    "aliases": [],
+    "aliases": [
+      "번파참"
+    ],
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
     "dexterity": 0,
     "options": [
       {
-        "text": "번개 면역 파괴",
+        "text": "괴물의 번개 면역이 파괴됨",
         "variable": false
       },
       {
-        "text": "번개 저항 -90~-70%",
+        "text": "번개 저항 -70~90%",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/charm-aa6e44fa78af70d0.png",
     "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "430",
-    "name": "Rotting Fissure",
-    "english": "Rotting Fissure",
+    "name": "부패의 분열",
+    "english": "The Rotting Fissure",
     "legacy": "",
-    "aliases": [],
+    "aliases": [
+      "독파참"
+    ],
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
     "dexterity": 0,
     "options": [
       {
-        "text": "독 면역 파괴",
+        "text": "괴물의 독 면역이 파괴됨",
         "variable": false
       },
       {
-        "text": "독 저항 -90~-70%",
+        "text": "독 저항 -70~90%",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/charm-296811305a8c17bc.png",
     "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "431",
-    "name": "Bone Break",
-    "english": "Bone Break",
+    "name": "뼈의 분쇄",
+    "english": "The Bone Break",
     "legacy": "",
-    "aliases": [],
+    "aliases": [
+      "물파참"
+    ],
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
     "dexterity": 0,
     "options": [
       {
-        "text": "물리 면역 파괴",
+        "text": "괴물의 물리 면역이 파괴됨",
         "variable": false
       },
       {
-        "text": "물리 피해 -20~-10% 감소",
+        "text": "받는 물리 피해 10~30% 증가",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/charm-1c7417696f0dba10.png",
     "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
   },
   {
     "id": "432",
-    "name": "Black Cleft",
-    "english": "Black Cleft",
+    "name": "칠흑의 천공",
+    "english": "The Black Cleft",
     "legacy": "",
-    "aliases": [],
+    "aliases": [
+      "마파참"
+    ],
     "base": "거대 부적",
     "baseEnglish": "Grand Charm",
     "category": "장신구·기타",
-    "type": "거대 부적",
+    "type": "부적",
     "tier": "기타",
     "level": 75,
     "strength": 0,
     "dexterity": 0,
     "options": [
       {
-        "text": "마법 면역 파괴",
+        "text": "괴물의 마법 면역이 파괴됨",
         "variable": false
       },
       {
-        "text": "마법 저항 -65~-45%",
+        "text": "마법 저항 -45~65%",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/charm-e1e7a06a5222032d.png",
     "imageSource": "",
     "variant": "",
-    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "requirementsNote": "",
     "baseStats": [],
-    "availability": ""
+    "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "10004",
+    "name": "새로워진 뼈의 분쇄",
+    "english": "Renewed Bone Break",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 물리 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "받는 물리 피해 10% 증가",
+        "variable": false
+      }
+    ],
+    "image": "/uniques/charm-03602dd0dd2019f9.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": [
+      [
+        {
+          "text": "피해 +75~100% 증가",
+          "variable": true
+        },
+        {
+          "text": "적의 물리 피해 저항 -5~10%",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "마법 아이템 발견 확률 14~25% 증가",
+          "variable": true
+        },
+        {
+          "text": "괴물에게서 얻는 금화 20~55% 증가",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "생명력 +10~65",
+          "variable": true
+        },
+        {
+          "text": "마나 +10~75",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "달리기/걷기 속도 +5~10%",
+          "variable": true
+        },
+        {
+          "text": "타격 회복 속도 +12~24%",
+          "variable": true
+        },
+        {
+          "text": "모든 능력치 +3~8",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "피해 5~10 감소",
+          "variable": true
+        },
+        {
+          "text": "마법 피해 5~10 감소",
+          "variable": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "10005",
+    "name": "새로워진 칠흑의 천공",
+    "english": "Renewed Black Cleft",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 마법 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "마법 저항 -45%",
+        "variable": false
+      }
+    ],
+    "image": "/uniques/charm-96d64600590896a8.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": [
+      [
+        {
+          "text": "마법 기술 피해 +10~15%",
+          "variable": true
+        },
+        {
+          "text": "적의 마법 저항 -5~10%",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "마법 아이템 발견 확률 14~25% 증가",
+          "variable": true
+        },
+        {
+          "text": "괴물에게서 얻는 금화 20~55% 증가",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "생명력 +10~65",
+          "variable": true
+        },
+        {
+          "text": "마나 +10~75",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "달리기/걷기 속도 +5~10%",
+          "variable": true
+        },
+        {
+          "text": "타격 회복 속도 +12~24%",
+          "variable": true
+        },
+        {
+          "text": "모든 능력치 +3~8",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "피해 5~10 감소",
+          "variable": true
+        },
+        {
+          "text": "마법 피해 5~10 감소",
+          "variable": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "10006",
+    "name": "새로워진 추위의 파열",
+    "english": "Renewed Cold Rupture",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 냉기 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "냉기 저항 -70%",
+        "variable": false
+      }
+    ],
+    "image": "/uniques/charm-aa50bca438a316ae.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": [
+      [
+        {
+          "text": "냉기 기술 피해 +5~15%",
+          "variable": true
+        },
+        {
+          "text": "적의 냉기 저항 -5~10%",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "마법 아이템 발견 확률 14~25% 증가",
+          "variable": true
+        },
+        {
+          "text": "괴물에게서 얻는 금화 20~55% 증가",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "생명력 +10~65",
+          "variable": true
+        },
+        {
+          "text": "마나 +10~75",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "달리기/걷기 속도 +5~10%",
+          "variable": true
+        },
+        {
+          "text": "타격 회복 속도 +12~24%",
+          "variable": true
+        },
+        {
+          "text": "모든 능력치 +3~8",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "피해 5~10 감소",
+          "variable": true
+        },
+        {
+          "text": "마법 피해 5~10 감소",
+          "variable": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "10007",
+    "name": "새로워진 천상의 틈",
+    "english": "Renewed Crack of the Heavens",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 번개 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "번개 저항 -70%",
+        "variable": false
+      }
+    ],
+    "image": "/uniques/charm-1086a67917f12686.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": [
+      [
+        {
+          "text": "번개 기술 피해 +5~15%",
+          "variable": true
+        },
+        {
+          "text": "적의 번개 저항 -5~10%",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "마법 아이템 발견 확률 14~25% 증가",
+          "variable": true
+        },
+        {
+          "text": "괴물에게서 얻는 금화 20~55% 증가",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "생명력 +10~65",
+          "variable": true
+        },
+        {
+          "text": "마나 +10~75",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "달리기/걷기 속도 +5~10%",
+          "variable": true
+        },
+        {
+          "text": "타격 회복 속도 +12~24%",
+          "variable": true
+        },
+        {
+          "text": "모든 능력치 +3~8",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "피해 5~10 감소",
+          "variable": true
+        },
+        {
+          "text": "마법 피해 5~10 감소",
+          "variable": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "10008",
+    "name": "새로워진 불길의 균열",
+    "english": "Renewed Flame Rift",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 화염 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "화염 저항 -70%",
+        "variable": false
+      }
+    ],
+    "image": "/uniques/charm-b0cae1a7a9416153.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": [
+      [
+        {
+          "text": "화염 기술 피해 +5~15%",
+          "variable": true
+        },
+        {
+          "text": "적의 화염 저항 -5~10%",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "마법 아이템 발견 확률 14~25% 증가",
+          "variable": true
+        },
+        {
+          "text": "괴물에게서 얻는 금화 20~55% 증가",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "생명력 +10~65",
+          "variable": true
+        },
+        {
+          "text": "마나 +10~75",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "달리기/걷기 속도 +5~10%",
+          "variable": true
+        },
+        {
+          "text": "타격 회복 속도 +12~24%",
+          "variable": true
+        },
+        {
+          "text": "모든 능력치 +3~8",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "피해 5~10 감소",
+          "variable": true
+        },
+        {
+          "text": "마법 피해 5~10 감소",
+          "variable": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "10009",
+    "name": "새로워진 부패의 분열",
+    "english": "Renewed Rotting Fissure",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 독 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "독 저항 -70%",
+        "variable": false
+      }
+    ],
+    "image": "/uniques/charm-7ae17d37c9ca3497.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": [
+      [
+        {
+          "text": "독 기술 피해 +5~15%",
+          "variable": true
+        },
+        {
+          "text": "적의 독 저항 -5~10%",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "마법 아이템 발견 확률 14~25% 증가",
+          "variable": true
+        },
+        {
+          "text": "괴물에게서 얻는 금화 20~55% 증가",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "생명력 +10~65",
+          "variable": true
+        },
+        {
+          "text": "마나 +10~75",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "달리기/걷기 속도 +5~10%",
+          "variable": true
+        },
+        {
+          "text": "타격 회복 속도 +12~24%",
+          "variable": true
+        },
+        {
+          "text": "모든 능력치 +3~8",
+          "variable": true
+        }
+      ],
+      [
+        {
+          "text": "피해 5~10 감소",
+          "variable": true
+        },
+        {
+          "text": "마법 피해 5~10 감소",
+          "variable": true
+        }
+      ]
+    ]
+  },
+  {
+    "id": "10010",
+    "name": "잠복하는 뼈의 분쇄",
+    "english": "Latent Bone Break",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 물리 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "받는 물리 피해 10~20% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/charm-03602dd0dd2019f9.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "10011",
+    "name": "잠복하는 칠흑의 천공",
+    "english": "Latent Black Cleft",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 마법 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "마법 저항 -45~65%",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/charm-96d64600590896a8.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "10012",
+    "name": "잠복하는 천상의 틈",
+    "english": "Latent Crack of the Heavens",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 번개 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "번개 저항 -70~90%",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/charm-1086a67917f12686.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "10013",
+    "name": "잠복하는 추위의 파열",
+    "english": "Latent Cold Rupture",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 냉기 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "냉기 저항 -70~90%",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/charm-aa50bca438a316ae.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "10014",
+    "name": "잠복하는 불길의 균열",
+    "english": "Latent Flame Rift",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 화염 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "화염 저항 -70~90%",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/charm-b0cae1a7a9416153.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "10015",
+    "name": "잠복하는 부패의 분열",
+    "english": "Latent Rotting Fissure",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 부적",
+    "baseEnglish": "Grand Charm",
+    "category": "장신구·기타",
+    "type": "부적",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "괴물의 독 면역이 파괴됨",
+        "variable": false
+      },
+      {
+        "text": "독 저항 -70~90%",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/charm-7ae17d37c9ca3497.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "",
+    "baseStats": [],
+    "availability": "",
+    "optionGroups": []
   }
 ]

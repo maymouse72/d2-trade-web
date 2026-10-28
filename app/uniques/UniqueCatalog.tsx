@@ -7,7 +7,7 @@ import styles from './uniques.module.css';
 
 const pageSize = 24;
 const normalize = (value: string) => value.toLowerCase().replace(/\s+/g, '');
-const searchable = items.map(item => ({ item, text: normalize([item.name, item.english, item.legacy, item.base, item.baseEnglish, item.type, item.variant, ...item.aliases, ...item.options.map(option => option.text)].join(' ')) }));
+const searchable = items.map(item => ({ item, text: normalize([item.name, item.english, item.legacy, item.base, item.baseEnglish, item.type, item.variant, ...item.aliases, ...item.options.map(option => option.text), ...item.optionGroups.flatMap(group => group.map(option => option.text))].join(' ')) }));
 
 export default function UniqueCatalog() {
   const [query, setQuery] = useState('');
@@ -48,6 +48,7 @@ export default function UniqueCatalog() {
         <ul className={styles.summary}>{item.options.slice(0,3).map((option,index)=><li key={index}>{option.text}{option.variable && <span className={styles.variable}> (변동)</span>}</li>)}</ul>
         <details><summary>전체 옵션 · 기본 성능 보기</summary>
           <ul className={styles.options}>{item.options.map((option,index)=><li key={index}>{option.text}{option.variable && <span className={styles.variable}> (변동)</span>}</li>)}</ul>
+          {item.optionGroups.map((group, groupIndex) => <div className={styles.optionGroup} key={groupIndex}><h4>추가 옵션 {groupIndex + 1} · 아래 중 하나</h4><ul className={styles.options}>{group.map((option, index) => <li key={index}>{option.text}{option.variable && <span className={styles.variable}> (변동)</span>}</li>)}</ul></div>)}
           {item.baseStats.length>0 && <div className={styles.baseStats}><h4>기본 아이템 성능</h4>{item.baseStats.map(stat=><p key={stat}>{stat}</p>)}<p>위 수치는 옵션 적용 전 기본값입니다. 최종 피해·방어력은 옵션에 따라 달라집니다.</p></div>}
           <p className={styles.note}>{item.requirementsNote}</p>
           {item.availability && <p className={styles.note}>{item.availability}</p>}
