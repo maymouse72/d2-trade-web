@@ -1,11 +1,13 @@
 'use client';
 
-import { useEffect, useState, use } from 'react';
+import { useCallback, useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import SiteFrame from '../../SiteFrame';
+import TradeNotifications from '../../pwa/TradeNotifications';
 import frameStyles from '../../SiteFrame.module.css';
 import { createClient } from '@supabase/supabase-js';
+import type { Trade, TradeComment } from '../../trade-types';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://dzttxnsqarwkslxnvypt.supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -20,16 +22,15 @@ export default function TradeDetailPage({ params }: PageProps) {
   const tradeId = resolvedParams?.id ? String(resolvedParams.id).trim() : '';
   
   const router = useRouter();
-  const [trade, setTrade] = useState<any>(null);
+  const [trade, setTrade] = useState<Trade | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const [comments, setComments] = useState<any>();
+  const [comments, setComments] = useState<TradeComment[]>();
   const [newComment, setNewComment] = useState('');
   const [commentSubmitting, setCommentSubmitting] = useState(false);
-  const [isSubscribed, setIsSubscribed] = useState(false);
 
   // 1. 매물 상세 정보 가져오기
-  const fetchTradeDetail = async () => {
+  const fetchTradeDetail = useCallback(async () => {
     if (!tradeId) return;
     const { data, error } = await supabase
       .from('trades')
@@ -43,10 +44,10 @@ export default function TradeDetailPage({ params }: PageProps) {
       alert('존재하지 않거나 마감된 매물입니다.');
       router.push('/');
     }
-  };
+  }, [tradeId, router]);
 
   // 2. 실시간 댓글 목록 가져오기 함수
-  const fetchComments = async () => {
+  const fetchComments = useCallback(async () => {
     if (!tradeId) return;
     const { data, error } = await supabase
       .from('trade_comments') 
@@ -57,54 +58,7 @@ export default function TradeDetailPage({ params }: PageProps) {
     if (!error && data) {
       setComments(data);
     }
-  };
-
-  // 3. PWA 알림 권한 상태 관리 장치
-  useEffect(() => {
-    if ('serviceWorker' in navigator && 'PushManager' in window) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(() => {
-          if (Notification.permission === 'granted') {
-            setIsSubscribed(true);
-          }
-        })
-        .catch((err) => console.error('서비스 워커 오작동:', err));
-    }
-  }, []);
-
-  // 4. 유저 알림 권한 요청 및 Vercel 기지국 등록
-  const handleRequestNotification = async () => {
-    if (!('Notification' in window)) {
-      alert('이 브라우저는 실시간 알림 기능을 지원하지 않습니다.');
-      return;
-    }
-
-    const permission = await Notification.requestPermission();
-    if (permission === 'granted') {
-      if ('serviceWorker' in navigator) {
-        try {
-          const reg = await navigator.serviceWorker.ready;
-          const sub = await reg.pushManager.subscribe({
-            userVisibleOnly: true,
-            applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY
-          });
-
-          await fetch('https://www.d2jugobatgo.com/api/push', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ type: 'SUBSCRIBE', subscription: sub })
-          });
-
-          setIsSubscribed(true);
-          alert('실시간 흥정 알림 채널 개통 완료!');
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    } else {
-      alert('알림 권한이 거부되었습니다. 자물쇠 아이콘을 눌러 허용해주세요.');
-    }
-  };
+  }, [tradeId]);
 
   // 페이지 최초 진입 시 데이터 흡입
   useEffect(() => {
@@ -114,7 +68,7 @@ export default function TradeDetailPage({ params }: PageProps) {
       setLoading(false);
     };
     initPage();
-  }, [tradeId]);
+  }, [fetchTradeDetail, fetchComments]);
 
   // 5. 댓글 금고 전송 함수
   const handleCommentSubmit = async () => {
@@ -139,21 +93,6 @@ export default function TradeDetailPage({ params }: PageProps) {
     if (error) {
       alert(`댓글 등록 실패 사유: ${error.message}`);
     } else {
-      if ('serviceWorker' in navigator && Notification.permission === 'granted') {
-        navigator.serviceWorker.ready.then((reg) => {
-          reg.showNotification('⚔️ D2 마켓 실시간 흥정 알림', {
-            body: `내가 등록한 매물에 새 댓글이 달렸습니다: "${newComment.trim()}"`,
-            icon: '/favicon.ico',
-            badge: '/favicon.ico',
-            tag: 'comment-alert',
-            vibrate:[200, 100, 200],
-            data: {
-              url: `https://www.d2jugobatgo.com/trade/${tradeId}`
-            }
-          } as NotificationOptions);
-        });
-      }
-
       setNewComment('');
       fetchComments();
     }
@@ -180,29 +119,7 @@ export default function TradeDetailPage({ params }: PageProps) {
         
         <Link href="/" className={frameStyles.back}>← 거래소 목록으로 돌아가기</Link>
 
-        {/* PWA 실시간 알림 가동 대시보드 배너 */}
-        <div style={{ backgroundColor: '#0A0A0A', border: '1px solid #C76C2E', padding: '16px', borderRadius: '6px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-          <div>
-            <span style={{ color: '#C76C2E', fontSize: '14px', fontWeight: 'bold', display: 'block', letterSpacing: '0.5px' }}>🔥 PWA 흥정 푸시 알림 가동 시스템</span>
-            <span style={{ color: '#777777', fontSize: '11px', display: 'block', marginTop: '4px' }}>상대방이 흥정 제안 댓글을 쓰는 즉시 스마트폰/PC에 실시간 알림이 울립니다.</span>
-          </div>
-          <button 
-            onClick={handleRequestNotification}
-            disabled={isSubscribed}
-            style={{ 
-              backgroundColor: isSubscribed ? '#1A1A1A' : '#C76C2E', 
-              color: isSubscribed ? '#555555' : '#0A0A0A', 
-              border: isSubscribed ? '1px solid #222' : 'none', 
-              padding: '8px 14px', 
-              fontSize: '12px', 
-              fontWeight: 'bold', 
-              borderRadius: '4px', 
-              cursor: isSubscribed ? 'default' : 'pointer' 
-            }}
-          >
-            {isSubscribed ? '● 실시간 작동중' : '알림 활성화'}
-          </button>
-        </div>
+        <TradeNotifications key={tradeId} tradeId={tradeId} />
 
         {/* 아이템 대형 타이틀 및 요구가격 */}
         {/* 💡 [오타 정밀 교정 구역] textSpacing을 letterSpacing 문법으로 완벽 고정 완공! */}
@@ -268,7 +185,7 @@ export default function TradeDetailPage({ params }: PageProps) {
 
           {/* 실시간 타임라인 출력 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {comments && comments.map((item: any) => (
+            {comments && comments.map((item) => (
               <div key={item.id} style={{ backgroundColor: '#0A0A0A', border: '1px solid #222222', padding: '12px 16px', borderRadius: '4px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '10px', color: '#555555', marginBottom: '6px' }}>
                   <span style={{ color: '#8C6D3B', fontWeight: 'bold' }}>🛡️ 익명의 성역 디아러</span>

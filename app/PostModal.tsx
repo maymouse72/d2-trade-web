@@ -1,9 +1,18 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
+import type { TradeFormValues } from './trade-types';
 
-export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any) {
-  const [gameMode, setGameMode] = useState('ladder');
+interface PostModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: (values: TradeFormValues, resetFormFields: () => void) => void | Promise<void>;
+  submitting: boolean;
+}
+
+export default function PostModal({ isOpen, onClose, onSubmit, submitting }: PostModalProps) {
+  const [gameMode, setGameMode] = useState<TradeFormValues['gameMode']>('ladder');
   const [battlenetId, setBattlenetId] = useState('');
   const [itemBase, setItemBase] = useState('');
   const [description, setDescription] = useState('');
@@ -18,14 +27,14 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
   useEffect(() => {
     fetch('/diablo2_items_light.json')
       .then((res) => res.json())
-      .then((data) => {
-        const names: any = Array.from(new Set(data.map((item: any) => item.name_ko)));
+      .then((data: { name_ko: string }[]) => {
+        const names = Array.from(new Set(data.map((item) => item.name_ko)));
         setAllItems(names);
       })
       .catch((err) => console.error('사전 로드 실패:', err));
   }, []);
 
-  const handleItemChange = (e: any) => {
+  const handleItemChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setItemBase(value);
     if (allItems && value.trim().length > 0) {
@@ -45,7 +54,7 @@ export default function PostModal({ isOpen, onClose, onSubmit, submitting }: any
     setRoomInfo('');
   };
 
-  const handleFormSubmit = (e: any) => {
+  const handleFormSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!battlenetId || !itemBase || !priceRune || !roomInfo) {
       alert('필수 항목을 모두 입력해 주세요!');

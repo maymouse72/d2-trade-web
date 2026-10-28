@@ -1,4 +1,5 @@
 // app/layout.tsx
+import PwaRegistration from "./pwa/PwaRegistration";
 import "./globals.css"; // 💡 [가장 중요] 테일윈드 미사일을 발사하는 핵심 파이프라인!
 
 export const metadata = {
@@ -15,12 +16,14 @@ export default function RootLayout({
     <html lang="ko" style={{ margin: 0, padding: 0, backgroundColor: "#0A0A0A" }}>
       <head>
         <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
         <meta name="theme-color" content="#C76C2E" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </head>
       
       <body style={{ margin: 0, padding: 0, backgroundColor: "#0A0A0A", color: "#DCDCDC", minHeight: "100vh" }}>
+        <PwaRegistration />
         {children}
       </body>
     </html>

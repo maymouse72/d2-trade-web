@@ -1,17 +1,32 @@
 {
-  "name": "Diablo II Realtime Market",
-  "short_name": "D2 Market",
-  "description": "금별아빠 디아블로2 실시간 트레이드 마켓",
+  "id": "/",
+  "name": "디아블로2 주고받고",
+  "short_name": "주고받고",
+  "description": "디아블로2 아이템 거래 및 게임 정보",
+  "lang": "ko",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0A0A0A",
   "theme_color": "#C76C2E",
-  "orientation": "portrait",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

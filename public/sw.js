@@ -1,29 +1,45 @@
-// public/sw.js
+const OFFLINE_CACHE = 'd2-offline-v1';
+const OFFLINE_URL = '/offline.html';
 
-// 💡 서버에서 푸시 신호가 날아오면 OS(안드로이드/iOS/윈도우) 시스템 알림창을 트리거합니다.
-self.addEventListener('push', function (event) {
-  if (event.data) {
-    const data = event.data.json();
-    const options = {
-      body: data.body || '새로운 흥정 댓글이 도착했습니다!',
-      icon: '/favicon.ico', // 알림창에 뜰 마켓 아이콘
-      badge: '/favicon.ico',
-      vibrate: [200, 100, 200], // 징~ 징~ 진동 효과
-      data: {
-        url: data.url || '/' // 알림 클릭 시 이동할 상세페이지 주소
-      }
-    };
-
-    event.waitUntil(
-      self.registration.showNotification(data.title || 'D2 Realtime Market', options)
-    );
-  }
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(OFFLINE_CACHE).then(cache => cache.add(OFFLINE_URL)));
 });
-
-// 알림을 클릭하면 해당 매물 상세페이지 주소창으로 브라우저를 이동시킵니다.
-self.addEventListener('notificationclick', function (event) {
+self.addEventListener('activate', event => {
+  event.waitUntil(Promise.all([
+    caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('d2-offline-') && key !== OFFLINE_CACHE).map(key => caches.delete(key)))),
+    self.clients.claim()
+  ]));
+});
+// Never cache trading pages, comments, API responses or user data.
+self.addEventListener('fetch', event => {
+  if (event.request.mode !== 'navigate' || new URL(event.request.url).origin !== self.location.origin) return;
+  event.respondWith(fetch(event.request).catch(async () =>
+    (await caches.match(OFFLINE_URL)) || new Response('인터넷 연결을 확인해 주세요.', { status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' } })
+  ));
+});
+function safePath(value) {
+  try {
+    const url = new URL(value || '/', self.location.origin);
+    return url.origin === self.location.origin && (url.pathname === '/' || /^\/trade\/[1-9]\d*$/.test(url.pathname)) ? url.pathname : '/';
+  } catch { return '/'; }
+}
+self.addEventListener('push', event => {
+  let data = {};
+  try { data = event.data ? event.data.json() : {}; } catch { /* Show a safe fallback for malformed payloads. */ }
+  if (!data || typeof data !== 'object') data = {};
+  event.waitUntil(self.registration.showNotification(typeof data.title === 'string' ? data.title : '디아블로2 주고받고', {
+    body: typeof data.body === 'string' ? data.body : '신청한 매물에 새 댓글이 도착했습니다.',
+    icon: '/icons/icon-192.png', badge: '/icons/icon-192.png',
+    tag: typeof data.tag === 'string' ? data.tag : 'trade-comment',
+    data: { url: safePath(data.url) }
+  }));
+});
+self.addEventListener('notificationclick', event => {
   event.notification.close();
-  event.waitUntil(
-    clients.openWindow(event.notification.data.url)
-  );
+  const target = new URL(safePath(event.notification.data?.url), self.location.origin).href;
+  event.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(async windows => {
+    const existing = windows.find(client => client.url === target);
+    if (existing && 'focus' in existing) return existing.focus();
+    return self.clients.openWindow(target);
+  }));
 });

@@ -5,35 +5,40 @@ import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
 import PostModal from './PostModal';
 import Link from 'next/link';
+import type { Trade, TradeFormValues } from './trade-types';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://dzttxnsqarwksbxnvypt.supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl!, supabaseKey!);
 
+const fetchTrades = () => supabase
+  .from('trades')
+  .select('*')
+  .eq('status', 'active')
+  .order('created_at', { ascending: false });
+
 export default function MarketHome() {
   const router = useRouter();
-  const [trades, setTrades] = useState<any>();
+  const [trades, setTrades] = useState<Trade[]>();
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const fetchTrades = async () => {
-    setLoading(true);
-    const { data, error } = await supabase
-      .from('trades')
-      .select('*')
-      .eq('status', 'active')
-      .order('created_at', { ascending: false });
-
+  const applyTrades = ({ data, error }: { data: Trade[] | null; error: unknown }) => {
     if (!error && data) {
       setTrades(data);
     }
     setLoading(false);
   };
 
+  const refreshTrades = () => {
+    setLoading(true);
+    void fetchTrades().then(applyTrades);
+  };
+
   useEffect(() => {
-    fetchTrades();
+    void fetchTrades().then(applyTrades);
   }, []); 
 
   useEffect(() => {
@@ -45,7 +50,7 @@ export default function MarketHome() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handleModalSubmit = async (formData: any, resetFormFields: () => void) => {
+  const handleModalSubmit = async (formData: TradeFormValues, resetFormFields: () => void) => {
     const { gameMode, battlenetId, itemBase, description, priceRune, roomInfo } = formData;
     setSubmitting(true);
     const { error } = await supabase.from('trades').insert([
@@ -66,7 +71,7 @@ export default function MarketHome() {
       alert('디아블로2 매물이 웹에서 실시간 등록되었습니다!');
       resetFormFields();
       setIsModalOpen(false);
-      fetchTrades();
+      refreshTrades();
     }
   };
 
@@ -80,7 +85,7 @@ export default function MarketHome() {
       const diffHours = Math.floor(diffMinutes / 60);
       if (diffHours < 24) return `${diffHours}시간 전`;
       return `${createdDate.getMonth() + 1}/${createdDate.getDate()}`;
-    } catch (e) {
+    } catch {
       return '방금 전';
     }
   };
@@ -131,7 +136,7 @@ export default function MarketHome() {
             🔮 카드를 터치하면 상세페이지로 이동하며 실시간 네고 댓글을 확인합니다.
           </p>
           <div className="market-toolbar-actions">
-            <button onClick={fetchTrades} disabled={loading} className="market-button market-button-refresh">
+            <button onClick={refreshTrades} disabled={loading} className="market-button market-button-refresh">
               {loading ? '로딩 중...' : '새로고침'}
             </button>
             <button onClick={() => setIsModalOpen(true)} className="market-button market-button-primary">
@@ -142,7 +147,7 @@ export default function MarketHome() {
 
         {/* 성역의 실시간 아이템 카드 트레이드 그리드 */}
         <div className="grid">
-          {trades && trades.map((trade: any) => (
+          {trades && trades.map((trade) => (
             <div 
               key={trade.id} 
               onClick={() => router.push(`/trade/${trade.id}`)}
