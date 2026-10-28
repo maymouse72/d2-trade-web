@@ -1,0 +1,8445 @@
+[
+  {
+    "id": "18",
+    "name": "알두르의 감시탑",
+    "english": "Aldur's Watchtower",
+    "legacy": "알더의 와치타워",
+    "aliases": [
+      "알두르셋"
+    ],
+    "className": "드루이드",
+    "level": 76,
+    "pieces": [
+      {
+        "id": "69",
+        "name": "알두르의 진보",
+        "english": "Aldur's Advance",
+        "legacy": "알더의 어드벤스",
+        "base": "배틀 부츠",
+        "type": "장화",
+        "tier": "익셉셔널",
+        "level": 45,
+        "strength": 95,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "파괴 불가",
+            "variable": false
+          },
+          {
+            "text": "지구력 회복 속도 32% 증가",
+            "variable": false
+          },
+          {
+            "text": "생명력 +50",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 10%만큼 마나 회복",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "최대 지구력 +180",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 40~50%",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "민첩 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "민첩 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "민첩 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 39~47",
+          "기본 무기 피해 37~64"
+        ],
+        "image": "/sets/51b44f68dda96887.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "67",
+        "name": "알두르의 기만",
+        "english": "Aldur's Deception",
+        "legacy": "알더의 디셉션",
+        "base": "쉐도우 플레이트",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 76,
+        "strength": 115,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +300",
+            "variable": false
+          },
+          {
+            "text": "변신 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "힘 +20",
+            "variable": false
+          },
+          {
+            "text": "민첩 +15",
+            "variable": false
+          },
+          {
+            "text": "번개 저항 40~50%",
+            "variable": true
+          },
+          {
+            "text": "착용 조건 -50%",
+            "variable": false
+          },
+          {
+            "text": "원소 기술 +1",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "활력 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "활력 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "활력 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 446~557"
+        ],
+        "image": "/sets/ee4c6c7e1552b765.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "68",
+        "name": "알두르의 운율",
+        "english": "Aldur's Rhythm",
+        "legacy": "알더의 리듬",
+        "base": "재기드 스타",
+        "type": "철퇴",
+        "tier": "익셉셔널",
+        "level": 42,
+        "strength": 74,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "물리 피해 40~62 추가",
+            "variable": false
+          },
+          {
+            "text": "번개 피해 50~75 추가",
+            "variable": false
+          },
+          {
+            "text": "적중당 생명력 10% 훔침",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "악마에게 주는 피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "홈 2~3개",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "힘 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "힘 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "힘 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 20~31"
+        ],
+        "image": "/sets/31facc6e39338695.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "66",
+        "name": "알두르의 냉랭한 눈길",
+        "english": "Aldur's Stony Gaze",
+        "legacy": "알더의 스토니 게이즈",
+        "base": "헌터스 가이즈",
+        "type": "드루이드 투구",
+        "tier": "익셉셔널",
+        "level": 36,
+        "strength": 56,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +90",
+            "variable": false
+          },
+          {
+            "text": "마나 재생 17%",
+            "variable": false
+          },
+          {
+            "text": "시야 +5",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +25%",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 40~50%",
+            "variable": true
+          },
+          {
+            "text": "홈 2개",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마력 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마력 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "마력 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 67~81"
+        ],
+        "image": "/sets/c080dcba027cf50a.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "명중률 보너스 150%",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "마법 아이템 발견 확률 50% 증가",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "적중당 생명력 10% 훔침",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "드루이드 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "방어력 +150",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 10% 훔침",
+        "variable": false
+      },
+      {
+        "text": "마나 +150",
+        "variable": false
+      },
+      {
+        "text": "피해 +350%",
+        "variable": false
+      },
+      {
+        "text": "세트 완성 시 시각 효과",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "천사의 의복",
+    "english": "Angelic Raiment",
+    "legacy": "엔젤릭 레이먼트",
+    "aliases": [
+      "엔젤셋",
+      "엔젤릭"
+    ],
+    "className": "공용",
+    "level": 12,
+    "pieces": [
+      {
+        "id": "52",
+        "name": "천사의 후광",
+        "english": "Angelic Halo",
+        "legacy": "엔젤릭 헤일로우",
+        "base": "반지",
+        "type": "반지",
+        "tier": "기타",
+        "level": 12,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 회복 +6",
+            "variable": false
+          },
+          {
+            "text": "생명력 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +12",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 50% 증가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/dafc96efb417fb3c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": "원본 래더 시즌 조건: 15~16"
+      },
+      {
+        "id": "51",
+        "name": "천사의 어깨걸이",
+        "english": "Angelic Mantle",
+        "legacy": "엔젤릭 맨틀",
+        "base": "링 메일",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 12,
+        "strength": 36,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "피해 3 감소",
+            "variable": false
+          },
+          {
+            "text": "방어력 +40%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +150",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "화염 저항 50%",
+                "variable": false
+              },
+              {
+                "text": "언데드에게 주는 피해 +100%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 45~48"
+        ],
+        "image": "/sets/385a6f1a5217a149.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": "원본 래더 시즌 조건: 15~16"
+      },
+      {
+        "id": "50",
+        "name": "천사의 낫",
+        "english": "Angelic Sickle",
+        "legacy": "엔젤릭 시클",
+        "base": "세이버",
+        "type": "검",
+        "tier": "노멀",
+        "level": 12,
+        "strength": 25,
+        "dexterity": 25,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          },
+          {
+            "text": "언데드에게 주는 피해 +250%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "피해 +75%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +30%",
+                "variable": false
+              },
+              {
+                "text": "피해 +6",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 3~8"
+        ],
+        "image": "/sets/75e476f0565d5492.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": "원본 래더 시즌 조건: 15~16"
+      },
+      {
+        "id": "53",
+        "name": "천사의 날개",
+        "english": "Angelic Wings",
+        "legacy": "엔젤릭 윙",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 12,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "시야 +3",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 20%만큼 마나 회복",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "생명력 +75",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "모든 기술 +1",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/93017b8535da6b30.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": "원본 래더 시즌 조건: 15~16"
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "민첩 +10",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "마나 +50",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +25",
+        "variable": false
+      },
+      {
+        "text": "빙결 지속시간 절반으로 감소",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 40% 증가",
+        "variable": false
+      },
+      {
+        "text": "마나 재생 8%",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "아르카나의 속임수",
+    "english": "Arcanna's Tricks",
+    "legacy": "아칸나 트릭스",
+    "aliases": [],
+    "className": "원소술사",
+    "level": 15,
+    "pieces": [
+      {
+        "id": "59",
+        "name": "아르카나의 죽음마법봉",
+        "english": "Arcanna's Deathwand",
+        "legacy": "아칸나의 데쓰원드",
+        "base": "워 스태프",
+        "type": "지팡이",
+        "tier": "노멀",
+        "level": 15,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "원소술사 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "치명적 공격 25%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마나 +50",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마나 재생 5%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 양손 피해 12~28"
+        ],
+        "image": "/sets/b1d51b0bb3bd805c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "61",
+        "name": "아르카나의 살점",
+        "english": "Arcanna's Flesh",
+        "legacy": "아칸나의 플레쉬",
+        "base": "라이트 플레이트",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 15,
+        "strength": 41,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "시야 +2",
+            "variable": false
+          },
+          {
+            "text": "피해 3 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +100",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마력 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 90~107"
+        ],
+        "image": "/sets/d4cf1da9244b76a3.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "60",
+        "name": "아르카나의 머리",
+        "english": "Arcanna's Head",
+        "legacy": "아칸나의 헤드",
+        "base": "스컬 캡",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 15,
+        "strength": 15,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 회복 +4",
+            "variable": false
+          },
+          {
+            "text": "공격자가 피해 2 받음",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +3",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "번개 저항 15%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 8~11"
+        ],
+        "image": "/sets/7e450567a32aae6e.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "58",
+        "name": "아르카나의 징조",
+        "english": "Arcanna's Sign",
+        "legacy": "아칸나의 싸인",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 15,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마나 +15",
+            "variable": false
+          },
+          {
+            "text": "마나 재생 20%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 50% 증가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "화염 저항 20%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/28dc7400e74391d0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "마나 +50",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "생명력 +50",
+            "variable": false
+          },
+          {
+            "text": "마나 재생 12%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "시전 속도 +20%",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 5% 훔침",
+        "variable": false
+      },
+      {
+        "text": "마나 +25",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "극지 장비",
+    "english": "Arctic Gear",
+    "legacy": "아틱 기어",
+    "aliases": [],
+    "className": "아마존",
+    "level": 2,
+    "pieces": [
+      {
+        "id": "56",
+        "name": "극지 허리띠",
+        "english": "Arctic Binding",
+        "legacy": "아틱 바인딩",
+        "base": "라이트 벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 2,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "냉기 저항 40%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +30",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 40% 증가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 저항 10%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 3~3"
+        ],
+        "image": "/sets/f650adb593555eb2.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "55",
+        "name": "극지 모피",
+        "english": "Arctic Furs",
+        "legacy": "아틱 퍼스",
+        "base": "퀼티드 아머",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 2,
+        "strength": 12,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +275~325%",
+            "variable": true
+          },
+          {
+            "text": "모든 저항 +10",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +3",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 저항 15%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 8~11"
+        ],
+        "image": "/sets/444480db83160af4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "54",
+        "name": "극지 뿔",
+        "english": "Arctic Horn",
+        "legacy": "아틱 혼",
+        "base": "숏 워 보우",
+        "type": "활",
+        "tier": "노멀",
+        "level": 2,
+        "strength": 35,
+        "dexterity": 55,
+        "options": [
+          {
+            "text": "명중률 보너스 20%",
+            "variable": false
+          },
+          {
+            "text": "피해 +50%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +8",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 피해 20~30 추가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 양손 피해 6~14"
+        ],
+        "image": "/sets/6bb1638a47093bae.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "57",
+        "name": "극지 장갑",
+        "english": "Arctic Mitts",
+        "legacy": "아틱 미트",
+        "base": "라이트 건틀릿",
+        "type": "장갑",
+        "tier": "노멀",
+        "level": 2,
+        "strength": 45,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 +20",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +10%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "명중률 +50",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "민첩 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 9~11"
+        ],
+        "image": "/sets/a73f7c1d0d7255d0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "힘 +5",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "생명력 +50",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "캐릭터 레벨당 최대 냉기 피해 +2",
+        "variable": false
+      },
+      {
+        "text": "냉기 지속시간 4~4초",
+        "variable": false
+      },
+      {
+        "text": "빙결되지 않음",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "name": "Bane's Garments",
+    "english": "Bane's Garments",
+    "legacy": "",
+    "aliases": [],
+    "className": "악마술사",
+    "level": 8,
+    "pieces": [
+      {
+        "id": "134",
+        "name": "Bane's Authority",
+        "english": "Bane's Authority",
+        "legacy": "",
+        "base": "라이트 벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "시전 속도 +10%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마력 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 3~3"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      },
+      {
+        "id": "132",
+        "name": "Bane's Oathmaker",
+        "english": "Bane's Oathmaker",
+        "legacy": "",
+        "base": "크리스",
+        "type": "단도",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 0,
+        "dexterity": 45,
+        "options": [
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 최대 피해 +1",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "적 처치 시 마나 +3",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "치명적 공격 30%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 2~11"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      },
+      {
+        "id": "133",
+        "name": "Bane's Wraithskin",
+        "english": "Bane's Wraithskin",
+        "legacy": "",
+        "base": "하드 레더 아머",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 20,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "마법 저항 30%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "타격 회복 속도 +25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 21~24"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "피해 +80%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      },
+      {
+        "text": "민첩 +15",
+        "variable": false
+      },
+      {
+        "text": "시전 속도 +25%",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 40% 증가",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "광전사의 무기고",
+    "english": "Berserker's Arsenal",
+    "legacy": "버서커 아스널",
+    "aliases": [],
+    "className": "야만용사",
+    "level": 3,
+    "pieces": [
+      {
+        "id": "46",
+        "name": "광전사의 해칫",
+        "english": "Berserker's Hatchet",
+        "legacy": "버서커의 헤칫",
+        "base": "더블 액스",
+        "type": "도끼",
+        "tier": "노멀",
+        "level": 3,
+        "strength": 43,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "명중률 보너스 30%",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "피해 +50%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 5~13"
+        ],
+        "image": "/sets/96e5b279a1981fe8.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "45",
+        "name": "광전사의 흉갑",
+        "english": "Berserker's Hauberk",
+        "legacy": "버서커의 허버크",
+        "base": "스플린트 메일",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 3,
+        "strength": 51,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마법 피해 2 감소",
+            "variable": false
+          },
+          {
+            "text": "야만용사 기술 +1",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +3",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 90~95"
+        ],
+        "image": "/sets/772171fa5cf4bdbb.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "44",
+        "name": "광전사의 머리 방어구",
+        "english": "Berserker's Headgear",
+        "legacy": "버서커의 헤드기어",
+        "base": "헬름",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 3,
+        "strength": 26,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +15",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 25%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 15~18"
+        ],
+        "image": "/sets/30361d33764128cf.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "생명력 +50",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "독 지속시간 75% 감소",
+        "variable": false
+      },
+      {
+        "text": "독 피해 5~10 추가 (3초에 걸쳐)",
+        "variable": false
+      },
+      {
+        "text": "방어력 +75",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "불카토스의 자손",
+    "english": "Bul-Kathos' Children",
+    "legacy": "발카서스의 칠드런",
+    "aliases": [],
+    "className": "야만용사",
+    "level": 66,
+    "pieces": [
+      {
+        "id": "115",
+        "name": "불카토스의 신성한 임무",
+        "english": "Bul-Kathos' Sacred Charge",
+        "legacy": "발카서스의 세이크리드 차지",
+        "base": "콜로서스 블레이드",
+        "type": "검",
+        "tier": "엘리트",
+        "level": 63,
+        "strength": 189,
+        "dexterity": 110,
+        "options": [
+          {
+            "text": "강타 확률 35%",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +20",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "피해 +200%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 25~65",
+          "기본 양손 피해 58~115"
+        ],
+        "image": "/sets/bb4509ca2b0dbb00.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "116",
+        "name": "불카토스의 부족 수호자",
+        "english": "Bul-Kathos' Tribal Guardian",
+        "legacy": "발카서스의 트라이벌 가디안",
+        "base": "미시컬 소드",
+        "type": "검",
+        "tier": "엘리트",
+        "level": 66,
+        "strength": 147,
+        "dexterity": 124,
+        "options": [
+          {
+            "text": "화염 저항 50%",
+            "variable": false
+          },
+          {
+            "text": "독 피해 50 추가 (2초에 걸쳐)",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "힘 +20",
+            "variable": false
+          },
+          {
+            "text": "피해 +200%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 40~50"
+        ],
+        "image": "/sets/428dc13b4f27dd46.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [],
+    "full": [
+      {
+        "text": "화염 피해 200~200 추가",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +2",
+        "variable": false
+      },
+      {
+        "text": "명중률 +200",
+        "variable": false
+      },
+      {
+        "text": "방어력 +200",
+        "variable": false
+      },
+      {
+        "text": "언데드에게 주는 피해 +200%",
+        "variable": false
+      },
+      {
+        "text": "악마에게 주는 피해 +200%",
+        "variable": false
+      },
+      {
+        "text": "적중당 생명력 10% 훔침",
+        "variable": false
+      },
+      {
+        "text": "치명적 공격 20%",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "카탄의 덫",
+    "english": "Cathan's Traps",
+    "legacy": "캐산 트랩",
+    "aliases": [],
+    "className": "원소술사",
+    "level": 11,
+    "pieces": [
+      {
+        "id": "26",
+        "name": "카탄의 그물망",
+        "english": "Cathan's Mesh",
+        "legacy": "캐산의 메쉬",
+        "base": "체인 메일",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 11,
+        "strength": 24,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +15",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -50%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격자가 피해 5 받음",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "화염 저항 30%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 72~75"
+        ],
+        "image": "/sets/2bc8b40f93c7ae32.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "25",
+        "name": "카탄의 지배",
+        "english": "Cathan's Rule",
+        "legacy": "캐산의 룰",
+        "base": "배틀 스태프",
+        "type": "지팡이",
+        "tier": "노멀",
+        "level": 11,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "화염 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "최대 화염 피해 +10",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마나 +50",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 양손 피해 6~13"
+        ],
+        "image": "/sets/6d100bb096f6d14c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "29",
+        "name": "카탄의 문장",
+        "english": "Cathan's Seal",
+        "legacy": "캐산의 씨일",
+        "base": "반지",
+        "type": "반지",
+        "tier": "기타",
+        "level": 11,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "적중당 생명력 6% 훔침",
+            "variable": false
+          },
+          {
+            "text": "피해 2 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "힘 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/f7b7911453c2cfb4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "28",
+        "name": "카탄의 인장",
+        "english": "Cathan's Sigil",
+        "legacy": "캐산의 씨질",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 11,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "타격 회복 속도 +10%",
+            "variable": false
+          },
+          {
+            "text": "공격자가 번개 피해 5 받음",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "명중률 +50",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 25% 증가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/3e89c7b3e40630e7.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      },
+      {
+        "id": "27",
+        "name": "카탄의 얼굴",
+        "english": "Cathan's Visage",
+        "legacy": "캐산의 비지즈",
+        "base": "마스크",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 11,
+        "strength": 23,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마나 +20",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 25%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 9~27"
+        ],
+        "image": "/sets/1d83d851c7a52532.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "화염 피해 15~20 추가",
+            "variable": false
+          },
+          {
+            "text": "마나 재생 16%",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "번개 저항 25%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "명중률 +60",
+        "variable": false
+      },
+      {
+        "text": "마법 피해 3 감소",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +25",
+        "variable": false
+      },
+      {
+        "text": "시전 속도 +10%",
+        "variable": false
+      },
+      {
+        "text": "마나 +20",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "0",
+    "name": "시버브의 예복",
+    "english": "Civerb's Vestments",
+    "legacy": "시버브 베스트먼트",
+    "aliases": [],
+    "className": "공용",
+    "level": 9,
+    "pieces": [
+      {
+        "id": "2",
+        "name": "시버브의 곤봉",
+        "english": "Civerb's Cudgel",
+        "legacy": "시버브의 커질",
+        "base": "그랜드 셉터",
+        "type": "홀",
+        "tier": "노멀",
+        "level": 9,
+        "strength": 37,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          },
+          {
+            "text": "최대 피해 +17~23",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 최대 피해 +1",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 8~18"
+        ],
+        "image": "/sets/0a8fed9a0ebc29d5.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "1",
+        "name": "시버브의 우상",
+        "english": "Civerb's Icon",
+        "legacy": "시버브의 아이콘",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 9,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마나 재생 40%",
+            "variable": false
+          },
+          {
+            "text": "생명력 회복 +4",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 저항 25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +25",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/3e89c7b3e40630e7.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "0",
+        "name": "시버브의 수호물",
+        "english": "Civerb's Ward",
+        "legacy": "시버브의 워드",
+        "base": "라지 쉴드",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 9,
+        "strength": 34,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +15",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 15% 증가",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "시버브의 우상 함께 착용",
+            "options": [
+              {
+                "text": "마나 +21~22",
+                "variable": true
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "시버브의 곤봉 함께 착용",
+            "options": [
+              {
+                "text": "독 저항 25~26%",
+                "variable": true
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 12~14",
+          "기본 무기 피해 2~4"
+        ],
+        "image": "/sets/edcb1833df1a9556.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "화염 저항 25%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "힘 +15",
+        "variable": false
+      },
+      {
+        "text": "언데드에게 주는 피해 +200%",
+        "variable": false
+      },
+      {
+        "text": "번개 저항 25%",
+        "variable": false
+      },
+      {
+        "text": "명중률 보너스 25%",
+        "variable": false
+      },
+      {
+        "text": "방어력 +50",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "클리글로의 버팀목",
+    "english": "Cleglaw's Brace",
+    "legacy": "클레글로우 브레이스",
+    "aliases": [],
+    "className": "공용",
+    "level": 4,
+    "pieces": [
+      {
+        "id": "7",
+        "name": "클리글로의 발톱",
+        "english": "Cleglaw's Claw",
+        "legacy": "클레그로우의 클러",
+        "base": "스몰 쉴드",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 4,
+        "strength": 22,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +17",
+            "variable": false
+          },
+          {
+            "text": "독 지속시간 75% 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 8~10",
+          "기본 무기 피해 2~3"
+        ],
+        "image": "/sets/0870890d2a7274a4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "8",
+        "name": "클리글로의 집게",
+        "english": "Cleglaw's Pincers",
+        "legacy": "클레그로우의 핀서즈",
+        "base": "체인 글러브",
+        "type": "장갑",
+        "tier": "노멀",
+        "level": 4,
+        "strength": 25,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "밀쳐내기",
+            "variable": false
+          },
+          {
+            "text": "대상 감속 25%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 8~9"
+        ],
+        "image": "/sets/bf6612d3eb60bfa0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "6",
+        "name": "클리글로의 이빨",
+        "english": "Cleglaw's Tooth",
+        "legacy": "클레그로우의 투쓰",
+        "base": "롱소드",
+        "type": "검",
+        "tier": "노멀",
+        "level": 4,
+        "strength": 55,
+        "dexterity": 39,
+        "options": [
+          {
+            "text": "명중률 보너스 30%",
+            "variable": false
+          },
+          {
+            "text": "치명적 공격 50%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 최대 피해 +1.25",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 3~19"
+        ],
+        "image": "/sets/7a920fb7da66ff4e.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "방어력 +50",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 6% 훔침",
+        "variable": false
+      },
+      {
+        "text": "강타 확률 35%",
+        "variable": false
+      },
+      {
+        "text": "공격 속도 +20%",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "젖소 왕의 보호구",
+    "english": "Cow King's Leathers",
+    "legacy": "카우 킹의 레더",
+    "aliases": [],
+    "className": "공용",
+    "level": 25,
+    "pieces": [
+      {
+        "id": "118",
+        "name": "젖소 왕의 날가죽",
+        "english": "Cow King's Hide",
+        "legacy": "카우 킹의 하이드",
+        "base": "스터디드 레더",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 18,
+        "strength": 27,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "모든 저항 +18",
+            "variable": false
+          },
+          {
+            "text": "방어력 +60%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +30",
+            "variable": false
+          },
+          {
+            "text": "피격 시 18% 확률로 5레벨 Chain Lightning 시전",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 32~35"
+        ],
+        "image": "/sets/275b7d63e9490b97.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "119",
+        "name": "젖소 왕의 발굽",
+        "english": "Cow King's Hooves",
+        "legacy": "카우 킹의 후브",
+        "base": "헤비 부츠",
+        "type": "장화",
+        "tier": "노멀",
+        "level": 13,
+        "strength": 18,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +25~35",
+            "variable": true
+          },
+          {
+            "text": "달리기/걷기 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "마법 아이템 발견 확률 25% 증가",
+            "variable": false
+          },
+          {
+            "text": "민첩 +20",
+            "variable": false
+          },
+          {
+            "text": "화염 피해 25~35 추가",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 5~6",
+          "기본 무기 피해 4~10"
+        ],
+        "image": "/sets/5e06dbfbfe4a07fa.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "117",
+        "name": "젖소 왕의 뿔",
+        "english": "Cow King's Horns",
+        "legacy": "카우 킹의 혼스",
+        "base": "워 햇",
+        "type": "투구",
+        "tier": "익셉셔널",
+        "level": 25,
+        "strength": 20,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +75",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 35%만큼 마나 회복",
+            "variable": false
+          },
+          {
+            "text": "공격자가 피해 10 받음",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 45~53"
+        ],
+        "image": "/sets/1a320129328a2fff.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "독 저항 25%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +100",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "최대 지구력 +100",
+        "variable": false
+      },
+      {
+        "text": "힘 +20",
+        "variable": false
+      },
+      {
+        "text": "괴물에게서 얻는 금화 100% 증가",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 100% 증가",
+        "variable": false
+      },
+      {
+        "text": "피격 시 25% 확률로 5레벨 Static Field 시전",
+        "variable": false
+      },
+      {
+        "text": "공격 속도 +30%",
+        "variable": false
+      },
+      {
+        "text": "생명력 +100",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "죽음의 위장",
+    "english": "Death's Disguise",
+    "legacy": "데쓰 디스가이즈",
+    "aliases": [],
+    "className": "공용",
+    "level": 6,
+    "pieces": [
+      {
+        "id": "48",
+        "name": "죽음의 경비",
+        "english": "Death's Guard",
+        "legacy": "데쓰 가드",
+        "base": "새시",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +20",
+            "variable": false
+          },
+          {
+            "text": "빙결되지 않음",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 2~2"
+        ],
+        "image": "/sets/6049492c396b822f.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "47",
+        "name": "죽음의 손",
+        "english": "Death's Hand",
+        "legacy": "데쓰 핸드",
+        "base": "레더 글러브",
+        "type": "장갑",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "독 저항 50%",
+            "variable": false
+          },
+          {
+            "text": "독 지속시간 75% 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +30%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 2~3"
+        ],
+        "image": "/sets/60a73b3a49f27970.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "49",
+        "name": "죽음의 손길",
+        "english": "Death's Touch",
+        "legacy": "데쓰 터치",
+        "base": "워 소드",
+        "type": "검",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 71,
+        "dexterity": 45,
+        "options": [
+          {
+            "text": "피해 +25%",
+            "variable": false
+          },
+          {
+            "text": "적중당 생명력 4% 훔침",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 피해 25~75 추가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 8~20"
+        ],
+        "image": "/sets/86f424c4a93b3dea.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "적중당 생명력 8% 훔침",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "명중률 보너스 40%",
+        "variable": false
+      },
+      {
+        "text": "최소 피해 +10",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +25",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "그리스월드의 유산",
+    "english": "Griswold's Legacy",
+    "legacy": "그리스월드의 리가시",
+    "aliases": [
+      "그리스셋"
+    ],
+    "className": "성기사",
+    "level": 69,
+    "pieces": [
+      {
+        "id": "82",
+        "name": "그리스월드의 심장",
+        "english": "Griswold's Heart",
+        "legacy": "그리스월드의 하트",
+        "base": "오네이트 플레이트",
+        "type": "갑옷",
+        "tier": "익셉셔널",
+        "level": 45,
+        "strength": 102,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +500",
+            "variable": false
+          },
+          {
+            "text": "방어 오라 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "홈 3개",
+            "variable": false
+          },
+          {
+            "text": "힘 +20",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -40%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 417~450"
+        ],
+        "image": "/sets/76779c90a4ef6a11.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "84",
+        "name": "그리스월드의 명예",
+        "english": "Griswold's Honor",
+        "legacy": "그리스월드의 아너",
+        "base": "볼텍스 쉴드",
+        "type": "성기사 방패",
+        "tier": "엘리트",
+        "level": 68,
+        "strength": 148,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +108",
+            "variable": false
+          },
+          {
+            "text": "홈 0개",
+            "variable": false
+          },
+          {
+            "text": "막기 속도 +65%",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 20% 증가",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +45",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 182~225",
+          "기본 무기 피해 5~87"
+        ],
+        "image": "/sets/b2d632bf35971394.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "81",
+        "name": "그리스월드의 용맹",
+        "english": "Griswold's Valor",
+        "legacy": "그리스월드의 밸러",
+        "base": "코로나",
+        "type": "투구",
+        "tier": "엘리트",
+        "level": 69,
+        "strength": 105,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50~75%",
+            "variable": true
+          },
+          {
+            "text": "캐릭터 레벨당 냉기 흡수 +0",
+            "variable": false
+          },
+          {
+            "text": "홈 2개",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -40%",
+            "variable": false
+          },
+          {
+            "text": "마법 아이템 발견 확률 20~30% 증가",
+            "variable": true
+          },
+          {
+            "text": "모든 저항 +5",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격 오라 기술 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 111~165"
+        ],
+        "image": "/sets/44b2fb1dc6ad9ba4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "83",
+        "name": "그리스월드의 구원",
+        "english": "Griswold's Redemption",
+        "legacy": "그리스월드의 리뎀프션",
+        "base": "카두세우스",
+        "type": "홀",
+        "tier": "엘리트",
+        "level": 66,
+        "strength": 78,
+        "dexterity": 56,
+        "options": [
+          {
+            "text": "피해 +200~240%",
+            "variable": true
+          },
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "언데드에게 주는 피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -20%",
+            "variable": false
+          },
+          {
+            "text": "홈 3~4개",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "전투 기술 (성기사) 기술 +2",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "물리 피해 10~20 추가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "물리 피해 10~20 추가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 37~43"
+        ],
+        "image": "/sets/5e49a55f5cedd9f4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "힘 +20",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "민첩 +30",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "성기사 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "명중률 +200",
+        "variable": false
+      },
+      {
+        "text": "생명력 +150",
+        "variable": false
+      },
+      {
+        "text": "세트 완성 시 시각 효과",
+        "variable": false
+      },
+      {
+        "text": "타격 회복 속도 +30%",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "천상의 동포",
+    "english": "Heaven's Brethren",
+    "legacy": "천인의 형제",
+    "aliases": [],
+    "className": "공용",
+    "level": 81,
+    "pieces": [
+      {
+        "id": "100",
+        "name": "단군의 가르침",
+        "english": "Dangoon's Teaching",
+        "legacy": "단군의 가르침",
+        "base": "리인포스드 메이스",
+        "type": "철퇴",
+        "tier": "엘리트",
+        "level": 68,
+        "strength": 145,
+        "dexterity": 46,
+        "options": [
+          {
+            "text": "캐릭터 레벨당 최대 피해 +1.5",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "타격 시 10% 확률로 3레벨 Frost Nova 시전",
+            "variable": false
+          },
+          {
+            "text": "화염 피해 20~30 추가",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 41~49"
+        ],
+        "image": "/sets/5e349a66e711f3f4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "102",
+        "name": "해모수의 견고",
+        "english": "Haemosu's Adamant",
+        "legacy": "해모수의 강직",
+        "base": "퀴래스",
+        "type": "갑옷",
+        "tier": "익셉셔널",
+        "level": 44,
+        "strength": 52,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +500",
+            "variable": false
+          },
+          {
+            "text": "원거리 공격 방어력 +35",
+            "variable": false
+          },
+          {
+            "text": "생명력 +75",
+            "variable": false
+          },
+          {
+            "text": "근접 공격 방어력 +40",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -20%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 188~202"
+        ],
+        "image": "/sets/a7bbf5e6809940ca.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "101",
+        "name": "태백의 영예",
+        "english": "Taebaek's Glory",
+        "legacy": "태백의 영광",
+        "base": "워드",
+        "type": "방패",
+        "tier": "엘리트",
+        "level": 81,
+        "strength": 185,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "마나 +100",
+            "variable": false
+          },
+          {
+            "text": "번개 저항 30%",
+            "variable": false
+          },
+          {
+            "text": "공격자가 피해 30 받음",
+            "variable": false
+          },
+          {
+            "text": "파괴 불가",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 25% 증가",
+            "variable": false
+          },
+          {
+            "text": "막기 속도 +30%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 153~170",
+          "기본 무기 피해 11~35"
+        ],
+        "image": "/sets/72bc56f19d3863c4.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "103",
+        "name": "온달의 사랑",
+        "english": "Ondal's Almighty",
+        "legacy": "온달의 사랑",
+        "base": "스파이어드 헬름",
+        "type": "투구",
+        "tier": "엘리트",
+        "level": 69,
+        "strength": 116,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -40%",
+            "variable": false
+          },
+          {
+            "text": "타격 시 10% 확률로 3레벨 Weaken 시전",
+            "variable": false
+          },
+          {
+            "text": "힘 +10",
+            "variable": false
+          },
+          {
+            "text": "민첩 +15",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +24%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 114~159"
+        ],
+        "image": "/sets/bc376fdebe55fb42.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "적중당 생명력 10% 훔침",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "생명력 회복 +30",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 최대 화염 피해 +3",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +2",
+        "variable": false
+      },
+      {
+        "text": "빙결되지 않음",
+        "variable": false
+      },
+      {
+        "text": "시야 +5",
+        "variable": false
+      },
+      {
+        "text": "물리 피해 24% 감소",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Horazon's Splendor",
+    "english": "Horazon's Splendor",
+    "legacy": "",
+    "aliases": [],
+    "className": "악마술사",
+    "level": 67,
+    "pieces": [
+      {
+        "id": "135",
+        "name": "Horazon's Countenance",
+        "english": "Horazon's Countenance",
+        "legacy": "",
+        "base": "데몬헤드",
+        "type": "투구",
+        "tier": "엘리트",
+        "level": 62,
+        "strength": 102,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "캐릭터 레벨당 명중률 보너스(%) +1",
+            "variable": false
+          },
+          {
+            "text": "악마술사 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "힘 +10~20",
+            "variable": true
+          },
+          {
+            "text": "마법 피해 7~10 감소",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "최대 생명력 5% 증가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "힘 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 101~154"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      },
+      {
+        "id": "136",
+        "name": "Horazon's Dominion",
+        "english": "Horazon's Dominion",
+        "legacy": "",
+        "base": "러셋 아머",
+        "type": "갑옷",
+        "tier": "익셉셔널",
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "악마술사 기술 계열 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "방어력 +75~100%",
+            "variable": true
+          },
+          {
+            "text": "마나 +75~100",
+            "variable": true
+          },
+          {
+            "text": "냉기 저항 15~25%",
+            "variable": true
+          },
+          {
+            "text": "화염 저항 15~25%",
+            "variable": true
+          },
+          {
+            "text": "번개 저항 15~25%",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "독 저항 25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "활력 +15",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "condition": "6개 이상 착용",
+            "options": [
+              {
+                "text": "물리 피해 15% 감소",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 225~243"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      },
+      {
+        "id": "137",
+        "name": "Horazon's Hold",
+        "english": "Horazon's Hold",
+        "legacy": "",
+        "base": "데몬하이드 글러브",
+        "type": "장갑",
+        "tier": "익셉셔널",
+        "level": 48,
+        "strength": 20,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "강타 확률 10%",
+            "variable": false
+          },
+          {
+            "text": "명중률 +95~150",
+            "variable": true
+          },
+          {
+            "text": "민첩 +10~15",
+            "variable": true
+          },
+          {
+            "text": "화염 피해 140~270 추가",
+            "variable": false
+          },
+          {
+            "text": "생명력 +30~40",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +30%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "적중당 마나 7% 훔침",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "적중당 생명력 7% 훔침",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 28~35"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      },
+      {
+        "id": "138",
+        "name": "Horazon's Legacy",
+        "english": "Horazon's Legacy",
+        "legacy": "",
+        "base": "미러드 부츠",
+        "type": "장화",
+        "tier": "엘리트",
+        "level": 67,
+        "strength": 115,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "달리기/걷기 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "힘 +10~15",
+            "variable": true
+          },
+          {
+            "text": "민첩 +10~15",
+            "variable": true
+          },
+          {
+            "text": "마법 저항 20~30%",
+            "variable": true
+          },
+          {
+            "text": "빙결되지 않음",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -30%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "달리기/걷기 속도 +10%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 59~68",
+          "기본 무기 피해 50~145"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      },
+      {
+        "id": "139",
+        "name": "Horazon's Secrets",
+        "english": "Horazon's Secrets",
+        "legacy": "",
+        "base": "wad",
+        "type": "악마술사 서적",
+        "tier": "엘리트",
+        "level": 57,
+        "strength": 91,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "악마술사 기술 계열 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 20% 증가",
+            "variable": false
+          },
+          {
+            "text": "활력 +20~30",
+            "variable": true
+          },
+          {
+            "text": "생명력 +30~50",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "독 지속시간 75% 감소",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "적의 화염 저항 -25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "마력 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 98~142"
+        ],
+        "image": "",
+        "imageSource": "",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "민첩 +20",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "마력 +30",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "방어력 +300",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "악마술사 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "피해 +350%",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 100% 증가",
+        "variable": false
+      },
+      {
+        "text": "Enchant +30",
+        "variable": false
+      },
+      {
+        "text": "세트 완성 시 시각 효과",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "흐사루스의 방어",
+    "english": "Hsarus' Defense",
+    "legacy": "사루의 디펜스",
+    "aliases": [],
+    "className": "공용",
+    "level": 3,
+    "pieces": [
+      {
+        "id": "4",
+        "name": "흐사루스의 무쇠 주먹",
+        "english": "Hsarus' Iron Fist",
+        "legacy": "사루의 아이언 피스트",
+        "base": "버클러",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 3,
+        "strength": 12,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "피해 2 감소",
+            "variable": false
+          },
+          {
+            "text": "힘 +10",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2.5",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 4~6",
+          "기본 무기 피해 1~3"
+        ],
+        "image": "/sets/f8374376e2d4f73c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "3",
+        "name": "흐사루스의 무쇠 발꿈치",
+        "english": "Hsarus' Iron Heel",
+        "legacy": "사루의 아이언 힐",
+        "base": "체인 부츠",
+        "type": "장화",
+        "tier": "노멀",
+        "level": 3,
+        "strength": 30,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "화염 저항 25%",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 8~9",
+          "기본 무기 피해 6~12"
+        ],
+        "image": "/sets/90a110efacd3afe5.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "5",
+        "name": "흐사루스의 무쇠 고정대",
+        "english": "Hsarus' Iron Stay",
+        "legacy": "사루의 아이언 스테이",
+        "base": "벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 3,
+        "strength": 25,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "냉기 저항 20%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2.5",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 5~5"
+        ],
+        "image": "/sets/4c77df31e07dd8eb.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "공격자가 피해 5 받음",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "최대 피해 +5",
+        "variable": false
+      },
+      {
+        "text": "빙결되지 않음",
+        "variable": false
+      },
+      {
+        "text": "번개 저항 25%",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "환인의 위엄",
+    "english": "Hwanin's Majesty",
+    "legacy": "한인의 위엄",
+    "aliases": [],
+    "className": "공용",
+    "level": 45,
+    "pieces": [
+      {
+        "id": "111",
+        "name": "환인의 정의",
+        "english": "Hwanin's Justice",
+        "legacy": "한인의 정의",
+        "base": "빌",
+        "type": "미늘창",
+        "tier": "익셉셔널",
+        "level": 28,
+        "strength": 95,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "명중률 +330",
+            "variable": false
+          },
+          {
+            "text": "파괴 불가",
+            "variable": false
+          },
+          {
+            "text": "타격 시 10% 확률로 3레벨 Ice Blast 시전",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "번개 피해 5~25 추가",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 양손 피해 14~53"
+        ],
+        "image": "/sets/28c22b77fb52eaea.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "109",
+        "name": "환인의 피난처",
+        "english": "Hwanin's Refuge",
+        "legacy": "한인의 보호",
+        "base": "티귤레이티드 메일",
+        "type": "갑옷",
+        "tier": "익셉셔널",
+        "level": 30,
+        "strength": 86,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +200",
+            "variable": false
+          },
+          {
+            "text": "독 저항 27%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +100",
+            "variable": false
+          },
+          {
+            "text": "피격 시 10% 확률로 3레벨 Static Field 시전",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 176~190"
+        ],
+        "image": "/sets/44d83e9e81c646c5.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "110",
+        "name": "환인의 축복",
+        "english": "Hwanin's Blessing",
+        "legacy": "한인의 축복",
+        "base": "벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 35,
+        "strength": 25,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "번개 피해 3~33 추가",
+            "variable": false
+          },
+          {
+            "text": "괴물 회복 저지",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 방어력 +1.5",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 12%만큼 마나 회복",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 5~5"
+        ],
+        "image": "/sets/b15aa51ce02eabb8.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "108",
+        "name": "환인의 광채",
+        "english": "Hwanin's Splendor",
+        "legacy": "한인의 광채",
+        "base": "그랜드 크라운",
+        "type": "투구",
+        "tier": "익셉셔널",
+        "level": 45,
+        "strength": 103,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 회복 +20",
+            "variable": false
+          },
+          {
+            "text": "마법 피해 10 감소",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 37%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +100%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 78~113"
+        ],
+        "image": "/sets/4ec8a539c2d294fe.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "방어력 +100",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "방어력 +200",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 기술 +2",
+        "variable": false
+      },
+      {
+        "text": "적중당 생명력 20% 훔침",
+        "variable": false
+      },
+      {
+        "text": "달리기/걷기 속도 +30%",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +30",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "불멸왕",
+    "english": "Immortal King",
+    "legacy": "임모틀 킹",
+    "aliases": [
+      "불멸왕셋",
+      "임모탈"
+    ],
+    "className": "야만용사",
+    "level": 76,
+    "pieces": [
+      {
+        "id": "72",
+        "name": "불멸왕의 장식띠",
+        "english": "Immortal King's Detail",
+        "legacy": "임모틀 킹의 디테일",
+        "base": "워 벨트",
+        "type": "허리띠",
+        "tier": "익셉셔널",
+        "level": 29,
+        "strength": 110,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +36",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 28%",
+            "variable": false
+          },
+          {
+            "text": "번개 저항 31%",
+            "variable": false
+          },
+          {
+            "text": "힘 +25",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +105",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "타격 회복 속도 +25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +100%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "물리 피해 20% 감소",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "condition": "6개 이상 착용",
+            "options": [
+              {
+                "text": "전투 숙련 기술 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 41~52"
+        ],
+        "image": "/sets/d4a4cfa527efffb6.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "73",
+        "name": "불멸왕의 용광로",
+        "english": "Immortal King's Forge",
+        "legacy": "임모틀 킹의 포지",
+        "base": "워 건틀릿",
+        "type": "장갑",
+        "tier": "익셉셔널",
+        "level": 30,
+        "strength": 110,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +65",
+            "variable": false
+          },
+          {
+            "text": "힘 +20",
+            "variable": false
+          },
+          {
+            "text": "민첩 +20",
+            "variable": false
+          },
+          {
+            "text": "피격 시 12% 확률로 4레벨 Charged Bolt 시전",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +120",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "적중당 생명력 10% 훔침",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "적중당 마나 10% 훔침",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "condition": "6개 이상 착용",
+            "options": [
+              {
+                "text": "대상 빙결 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 43~53"
+        ],
+        "image": "/sets/54333f76830d6f2d.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "74",
+        "name": "불멸왕의 기둥",
+        "english": "Immortal King's Pillar",
+        "legacy": "임모틀 킹의 필라",
+        "base": "워 부츠",
+        "type": "장화",
+        "tier": "익셉셔널",
+        "level": 31,
+        "strength": 125,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +75",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "명중률 +110",
+            "variable": false
+          },
+          {
+            "text": "생명력 +44",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 25% 증가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "전투 기술 (야만용사) 기술 +2",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +160",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "빙결 지속시간 절반으로 감소",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 43~53",
+          "기본 무기 피해 39~80"
+        ],
+        "image": "/sets/85c0994f738846df.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "71",
+        "name": "불멸왕의 영혼집",
+        "english": "Immortal King's Soul Cage",
+        "legacy": "임모틀 킹의 소울 케이지",
+        "base": "세이크리드 아머",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 76,
+        "strength": 232,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +400",
+            "variable": false
+          },
+          {
+            "text": "피격 시 5% 확률로 5레벨 Enchant 시전",
+            "variable": false
+          },
+          {
+            "text": "전투 기술 (야만용사) 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "독 저항 50%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "타격 회복 속도 +25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 저항 40%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "화염 저항 40%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "번개 저항 40%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "condition": "6개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +50%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 487~600"
+        ],
+        "image": "/sets/3f200e5ed7806bbe.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "75",
+        "name": "불멸왕의 파석추",
+        "english": "Immortal King's Stone Crusher",
+        "legacy": "임모틀 킹의 스톤 크러셔",
+        "base": "오우거 마울",
+        "type": "망치",
+        "tier": "엘리트",
+        "level": 76,
+        "strength": 225,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "파괴 불가",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "악마에게 주는 피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "언데드에게 주는 피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "강타 확률 35~40%",
+            "variable": true
+          },
+          {
+            "text": "피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "홈 2개",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "화염 피해 211~397 추가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "번개 피해 7~477 추가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 피해 127~364 추가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "독 피해 205 추가 (6초에 걸쳐)",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "condition": "6개 이상 착용",
+            "options": [
+              {
+                "text": "마법 피해 250~361 추가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 양손 피해 77~106"
+        ],
+        "image": "/sets/97f903a4cad878ea.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      },
+      {
+        "id": "70",
+        "name": "불멸왕의 의지",
+        "english": "Immortal King's Will",
+        "legacy": "임모틀 킹의 윌",
+        "base": "어벤저 가드",
+        "type": "야만용사 투구",
+        "tier": "노멀",
+        "level": 47,
+        "strength": 65,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +125",
+            "variable": false
+          },
+          {
+            "text": "괴물에게서 얻는 금화 37% 증가",
+            "variable": false
+          },
+          {
+            "text": "함성 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "시야 +4",
+            "variable": false
+          },
+          {
+            "text": "마법 아이템 발견 확률 25~40% 증가",
+            "variable": true
+          },
+          {
+            "text": "홈 2개",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 35~50"
+        ],
+        "image": "/sets/6bf8af4903f2ace8.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets5.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "명중률 +50",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "명중률 +125",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 5,
+        "options": [
+          {
+            "text": "명중률 +200",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "야만용사 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "생명력 +150",
+        "variable": false
+      },
+      {
+        "text": "마법 피해 10 감소",
+        "variable": false
+      },
+      {
+        "text": "세트 완성 시 시각 효과",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "지옥불 도구",
+    "english": "Infernal Tools",
+    "legacy": "인퍼널 툴스",
+    "aliases": [],
+    "className": "강령술사",
+    "level": 5,
+    "pieces": [
+      {
+        "id": "41",
+        "name": "지옥불 두개골",
+        "english": "Infernal Cranium",
+        "legacy": "인퍼널 크래니엄",
+        "base": "캡",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 5,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "모든 저항 +10",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 20%만큼 마나 회복",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 3~5"
+        ],
+        "image": "/sets/dd7a81c14aa39d6a.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "43",
+        "name": "지옥불 징조",
+        "english": "Infernal Sign",
+        "legacy": "인퍼널 싸인",
+        "base": "헤비 벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 5,
+        "strength": 45,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +25",
+            "variable": false
+          },
+          {
+            "text": "생명력 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "독 저항 25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "빙결 지속시간 절반으로 감소",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 6~6"
+        ],
+        "image": "/sets/094a1e6f3f134e83.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      },
+      {
+        "id": "42",
+        "name": "지옥불 횃불",
+        "english": "Infernal Torch",
+        "legacy": "인퍼널 토치",
+        "base": "그림 원드",
+        "type": "원드",
+        "tier": "노멀",
+        "level": 5,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "최소 피해 +8",
+            "variable": false
+          },
+          {
+            "text": "강령술사 기술 +1",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 5~11"
+        ],
+        "image": "/sets/1bf215d5fff1a4bd.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets2.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "독 피해 8 추가 (3.2초에 걸쳐)",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "마나 +10",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "명중률 보너스 20%",
+        "variable": false
+      },
+      {
+        "text": "강령술사 기술 +1",
+        "variable": false
+      },
+      {
+        "text": "상처 악화 확률 20%",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 6% 훔침",
+        "variable": false
+      },
+      {
+        "text": "최대 마나 20% 증가",
+        "variable": false
+      },
+      {
+        "text": "빙결되지 않음",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "이라타의 장식",
+    "english": "Iratha's Finery",
+    "legacy": "이라사 파이너리",
+    "aliases": [],
+    "className": "공용",
+    "level": 15,
+    "pieces": [
+      {
+        "id": "11",
+        "name": "이라타의 고리",
+        "english": "Iratha's Coil",
+        "legacy": "이라사의 코일",
+        "base": "크라운",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 15,
+        "strength": 55,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "화염 저항 30%",
+            "variable": false
+          },
+          {
+            "text": "번개 저항 30%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 25~45"
+        ],
+        "image": "/sets/4f76dd5e0f76a4a6.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "9",
+        "name": "이라타의 목깃",
+        "english": "Iratha's Collar",
+        "legacy": "이라사의 칼러",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 15,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "독 저항 30%",
+            "variable": false
+          },
+          {
+            "text": "독 지속시간 75% 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/3e89c7b3e40630e7.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "12",
+        "name": "이라타의 노끈",
+        "english": "Iratha's Cord",
+        "legacy": "이라사의 코드",
+        "base": "헤비 벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 15,
+        "strength": 45,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +25",
+            "variable": false
+          },
+          {
+            "text": "최소 피해 +5",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "민첩 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 6~6"
+        ],
+        "image": "/sets/95c1bd5dec86377e.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "10",
+        "name": "이라타의 소매 장식",
+        "english": "Iratha's Cuff",
+        "legacy": "이라사의 커프",
+        "base": "라이트 건틀릿",
+        "type": "장갑",
+        "tier": "노멀",
+        "level": 15,
+        "strength": 45,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "냉기 저항 30%",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +20%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 9~11"
+        ],
+        "image": "/sets/80bd4406458975f7.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "관통 공격 24%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +20",
+        "variable": false
+      },
+      {
+        "text": "최대 화염 저항 +10%",
+        "variable": false
+      },
+      {
+        "text": "최대 냉기 저항 +10%",
+        "variable": false
+      },
+      {
+        "text": "최대 번개 저항 +10%",
+        "variable": false
+      },
+      {
+        "text": "최대 독 저항 +10%",
+        "variable": false
+      },
+      {
+        "text": "민첩 +15",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "아이젠하트의 무기고",
+    "english": "Isenhart's Armory",
+    "legacy": "아이젠하트 아머리",
+    "aliases": [],
+    "className": "공용",
+    "level": 8,
+    "pieces": [
+      {
+        "id": "15",
+        "name": "아이젠하트의 통",
+        "english": "Isenhart's Case",
+        "legacy": "아이젠하트의 케이스",
+        "base": "브레스트 플레이트",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 30,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +40",
+            "variable": false
+          },
+          {
+            "text": "마법 피해 2 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 65~68"
+        ],
+        "image": "/sets/eb0de68253b3bf5c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "16",
+        "name": "아이젠하트의 뿔",
+        "english": "Isenhart's Horns",
+        "legacy": "아이젠하트의 혼즈",
+        "base": "풀 헬름",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 41,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "민첩 +6",
+            "variable": false
+          },
+          {
+            "text": "피해 2 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 23~26"
+        ],
+        "image": "/sets/af49e8a1fb3793b9.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "13",
+        "name": "아이젠하트의 빛 낙인",
+        "english": "Isenhart's Lightbrand",
+        "legacy": "아이젠하트의 라이트브랜드",
+        "base": "브로드소드",
+        "type": "검",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 48,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "최소 피해 +10",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +5",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 7~14"
+        ],
+        "image": "/sets/09848200d98bd929.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "14",
+        "name": "아이젠하트의 회피",
+        "english": "Isenhart's Parry",
+        "legacy": "아이젠하트의 패리",
+        "base": "고딕 쉴드",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 60,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +40",
+            "variable": false
+          },
+          {
+            "text": "공격자가 번개 피해 4 받음",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 30~35",
+          "기본 무기 피해 2~6"
+        ],
+        "image": "/sets/ddede0ac0ef70f99.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "힘 +10",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "민첩 +10",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "적중당 생명력 5% 훔침",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +10",
+        "variable": false
+      },
+      {
+        "text": "명중률 보너스 35%",
+        "variable": false
+      },
+      {
+        "text": "막기 확률 30% 증가",
+        "variable": false
+      },
+      {
+        "text": "달리기/걷기 속도 +20%",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "마비나의 전투 찬가",
+    "english": "M'avina's Battle Hymn",
+    "legacy": "마비나의 배틀 힘",
+    "aliases": [
+      "마비나셋"
+    ],
+    "className": "아마존",
+    "level": 70,
+    "pieces": [
+      {
+        "id": "94",
+        "name": "마비나의 활",
+        "english": "M'avina's Caster",
+        "legacy": "마비나의 캐스터",
+        "base": "그랜드 메이트런 보우",
+        "type": "아마존 활",
+        "tier": "엘리트",
+        "level": 70,
+        "strength": 108,
+        "dexterity": 152,
+        "options": [
+          {
+            "text": "피해 +188%",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "마법 화살 발사",
+            "variable": false
+          },
+          {
+            "text": "명중률 +50",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마법 피해 114~377 추가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "타격 시 10% 확률로 15레벨 Nova 시전",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "활과 쇠뇌 기술 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 양손 피해 14~72"
+        ],
+        "image": "/sets/cb3154d9fe6101e8.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "91",
+        "name": "마비나의 포옹",
+        "english": "M'avina's Embrace",
+        "legacy": "마비나의 엠브레스",
+        "base": "크라켄 쉘",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 70,
+        "strength": 122,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "피격 시 10% 확률로 3레벨 Glacial Spike 시전",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -30%",
+            "variable": false
+          },
+          {
+            "text": "마법 피해 5~12 감소",
+            "variable": true
+          },
+          {
+            "text": "지속 효과와 마법 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 방어력 +4",
+            "variable": false
+          },
+          {
+            "text": "방어력 +350",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "타격 회복 속도 +30%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 417~523"
+        ],
+        "image": "/sets/1f9def03038a367b.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "92",
+        "name": "마비나의 얼음 같은 손길",
+        "english": "M'avina's Icy Clutch",
+        "legacy": "마비나의 아이시 클러쳐",
+        "base": "배틀 건틀릿",
+        "type": "장갑",
+        "tier": "익셉셔널",
+        "level": 32,
+        "strength": 88,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +45~50",
+            "variable": true
+          },
+          {
+            "text": "냉기 피해 6~18 추가",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          },
+          {
+            "text": "괴물에게서 얻는 금화 56% 증가",
+            "variable": false
+          },
+          {
+            "text": "힘 +10",
+            "variable": false
+          },
+          {
+            "text": "민첩 +15",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 피해 131~252 추가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 기술 피해 +20%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 39~47"
+        ],
+        "image": "/sets/48ded67362e2c0b1.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "93",
+        "name": "마비나의 신조",
+        "english": "M'avina's Tenet",
+        "legacy": "마비나의 테너트",
+        "base": "샤크스킨 벨트",
+        "type": "허리띠",
+        "tier": "익셉셔널",
+        "level": 45,
+        "strength": 20,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "시야 +5",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +25",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 31~36"
+        ],
+        "image": "/sets/c153285ef5e44669.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "90",
+        "name": "마비나의 진실의 눈",
+        "english": "M'avina's True Sight",
+        "legacy": "마비나의 트루 사이트",
+        "base": "다이어뎀",
+        "type": "서클릿",
+        "tier": "엘리트",
+        "level": 64,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +150",
+            "variable": false
+          },
+          {
+            "text": "생명력 회복 +10",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "마나 +25",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 기술 +1",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "명중률 보너스 50%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +25",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 50~60"
+        ],
+        "image": "/sets/0aad4c0fc4396785.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "힘 +20",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "민첩 +30",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "아마존 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "방어력 +100",
+        "variable": false
+      },
+      {
+        "text": "명중률 +100",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 100% 증가",
+        "variable": false
+      },
+      {
+        "text": "세트 완성 시 시각 효과",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "name": "샌더의 어리석음",
+    "english": "Sander's Folly",
+    "legacy": "샌더의 폴리",
+    "aliases": [],
+    "className": "공용",
+    "level": 28,
+    "pieces": [
+      {
+        "id": "123",
+        "name": "샌더의 귀감",
+        "english": "Sander's Paragon",
+        "legacy": "샌더의 파라곤",
+        "base": "캡",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 25,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마법 아이템 발견 확률 35% 증가",
+            "variable": false
+          },
+          {
+            "text": "공격자가 피해 8 받음",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 방어력 +1",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 3~5"
+        ],
+        "image": "/sets/00f53742fb1ad3fe.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "124",
+        "name": "샌더의 사석",
+        "english": "Sander's Riprap",
+        "legacy": "샌더의 립랩",
+        "base": "헤비 부츠",
+        "type": "장화",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 18,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "달리기/걷기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "명중률 +100",
+            "variable": false
+          },
+          {
+            "text": "힘 +5",
+            "variable": false
+          },
+          {
+            "text": "민첩 +10",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 5~6",
+          "기본 무기 피해 4~10"
+        ],
+        "image": "/sets/eb796b4ca20e417c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "126",
+        "name": "샌더의 미신",
+        "english": "Sander's Superstition",
+        "legacy": "샌더의 수퍼스티션",
+        "base": "본 원드",
+        "type": "원드",
+        "tier": "노멀",
+        "level": 25,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "피해 +75%",
+            "variable": false
+          },
+          {
+            "text": "마나 +25",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 8% 훔침",
+            "variable": false
+          },
+          {
+            "text": "시전 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "냉기 피해 25~75 추가",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 3~7"
+        ],
+        "image": "/sets/11791d512b2daff8.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "125",
+        "name": "샌더의 금기",
+        "english": "Sander's Taboo",
+        "legacy": "샌더의 타부",
+        "base": "헤비 글러브",
+        "type": "장갑",
+        "tier": "노멀",
+        "level": 28,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +20~25",
+            "variable": true
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +40",
+            "variable": false
+          },
+          {
+            "text": "독 피해 9~11 추가 (3초에 걸쳐)",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 5~6"
+        ],
+        "image": "/sets/e1023d13da111d29.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 50% 증가",
+        "variable": false
+      },
+      {
+        "text": "마나 +50",
+        "variable": false
+      },
+      {
+        "text": "적중당 생명력 4% 훔침",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "밀라브레가의 상징",
+    "english": "Milabrega's Regalia",
+    "legacy": "밀라브레가 리게일리어",
+    "aliases": [],
+    "className": "성기사",
+    "level": 17,
+    "pieces": [
+      {
+        "id": "23",
+        "name": "밀라브레가의 머리관",
+        "english": "Milabrega's Diadem",
+        "legacy": "밀라브레가의 다이어뎀",
+        "base": "크라운",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 17,
+        "strength": 55,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 +15",
+            "variable": false
+          },
+          {
+            "text": "마나 +15",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 저항 40%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 25~45"
+        ],
+        "image": "/sets/b078179fdd04deb7.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "21",
+        "name": "밀라브레가의 보주",
+        "english": "Milabrega's Orb",
+        "legacy": "밀라브레가의 오브",
+        "base": "카이트 쉴드",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 17,
+        "strength": 47,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마법 아이템 발견 확률 20% 증가",
+            "variable": false
+          },
+          {
+            "text": "방어력 +25",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "생명력 +50",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +50%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 16~18",
+          "기본 무기 피해 2~5"
+        ],
+        "image": "/sets/8ec63afbae5deb77.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "24",
+        "name": "밀라브레가의 장포",
+        "english": "Milabrega's Robe",
+        "legacy": "밀라브레가의 로브",
+        "base": "에인션트 아머",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 17,
+        "strength": 100,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "공격자가 피해 3 받음",
+            "variable": false
+          },
+          {
+            "text": "피해 2 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +100%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 218~233"
+        ],
+        "image": "/sets/a19adddf8a491391.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "22",
+        "name": "밀라브레가의 막대",
+        "english": "Milabrega's Rod",
+        "legacy": "밀라브레가의 로드",
+        "base": "워 셉터",
+        "type": "홀",
+        "tier": "노멀",
+        "level": 17,
+        "strength": 55,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "성기사 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "피해 +50%",
+            "variable": false
+          },
+          {
+            "text": "시야 +2",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 10~17"
+        ],
+        "image": "/sets/4ab844bd6a41a73c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 최대 번개 피해 +2",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "명중률 +125",
+            "variable": false
+          },
+          {
+            "text": "빙결되지 않음",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "적중당 생명력 8% 훔침",
+        "variable": false
+      },
+      {
+        "text": "성기사 기술 +2",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 10% 훔침",
+        "variable": false
+      },
+      {
+        "text": "독 저항 15%",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "name": "나즈의 고대 흔적",
+    "english": "Naj's Ancient Vestige",
+    "legacy": "나즈 앤션트 베스티지",
+    "aliases": [],
+    "className": "원소술사",
+    "level": 78,
+    "pieces": [
+      {
+        "id": "122",
+        "name": "나즈의 띠관",
+        "english": "Naj's Circlet",
+        "legacy": "나즈 서클리트",
+        "base": "써클릿",
+        "type": "서클릿",
+        "tier": "노멀",
+        "level": 28,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +75",
+            "variable": false
+          },
+          {
+            "text": "화염 피해 25~35 추가",
+            "variable": false
+          },
+          {
+            "text": "시야 +5",
+            "variable": false
+          },
+          {
+            "text": "힘 +15",
+            "variable": false
+          },
+          {
+            "text": "피격 시 12% 확률로 5레벨 Chain Lightning 시전",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 20~30"
+        ],
+        "image": "/sets/96d1031b55e3ad20.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "121",
+        "name": "나즈의 경판갑",
+        "english": "Naj's Light Plate",
+        "legacy": "나즈 라이트 플레이트",
+        "base": "헬포지 플레이트",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 71,
+        "strength": 79,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "착용 조건 -60%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +65",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +25",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 45%만큼 마나 회복",
+            "variable": false
+          },
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "방어력 +300",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 421~530"
+        ],
+        "image": "/sets/0faf86ccacd30cb0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "120",
+        "name": "나즈의 수수께끼",
+        "english": "Naj's Puzzler",
+        "legacy": "나즈 퍼즐",
+        "base": "엘더 스태프",
+        "type": "지팡이",
+        "tier": "엘리트",
+        "level": 78,
+        "strength": 44,
+        "dexterity": 37,
+        "options": [
+          {
+            "text": "마력 +35",
+            "variable": false
+          },
+          {
+            "text": "피해 +150%",
+            "variable": false
+          },
+          {
+            "text": "69레벨 Teleport (11회 충전)",
+            "variable": false
+          },
+          {
+            "text": "시전 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "번개 피해 6~45 추가",
+            "variable": false
+          },
+          {
+            "text": "마나 +70",
+            "variable": false
+          },
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 양손 피해 80~93"
+        ],
+        "image": "/sets/0617abaa81107c08.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "방어력 +175",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 마법 아이템 발견 확률(%) +1.5",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      },
+      {
+        "text": "생명력 회복 +20",
+        "variable": false
+      },
+      {
+        "text": "민첩 +15",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "힘 +20",
+        "variable": false
+      },
+      {
+        "text": "마나 +100",
+        "variable": false
+      },
+      {
+        "text": "화염 기술 +2",
+        "variable": false
+      },
+      {
+        "text": "최대 생명력 12% 증가",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "나탈랴의 혐오",
+    "english": "Natalya's Odium",
+    "legacy": "나탈리아의 오디엄",
+    "aliases": [
+      "나탈셋"
+    ],
+    "className": "암살자",
+    "level": 79,
+    "pieces": [
+      {
+        "id": "63",
+        "name": "나탈랴의 표식",
+        "english": "Natalya's Mark",
+        "legacy": "나탈리아의 마크",
+        "base": "시저스 수웨이야",
+        "type": "암살자 손톱",
+        "tier": "엘리트",
+        "level": 79,
+        "strength": 118,
+        "dexterity": 118,
+        "options": [
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "대상의 방어력 무시",
+            "variable": false
+          },
+          {
+            "text": "냉기 피해 50~50 추가",
+            "variable": false
+          },
+          {
+            "text": "화염 피해 12~17 추가",
+            "variable": false
+          },
+          {
+            "text": "언데드에게 주는 피해 +200%",
+            "variable": false
+          },
+          {
+            "text": "악마에게 주는 피해 +200%",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 40~51"
+        ],
+        "image": "/sets/956eaa32fc431e8c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "64",
+        "name": "나탈랴의 그림자",
+        "english": "Natalya's Shadow",
+        "legacy": "나탈리아의 쉐도우",
+        "base": "로러케이티드 메일",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 73,
+        "strength": 149,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +150~225",
+            "variable": true
+          },
+          {
+            "text": "캐릭터 레벨당 생명력 +1",
+            "variable": false
+          },
+          {
+            "text": "그림자 단련 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "독 지속시간 75% 감소",
+            "variable": false
+          },
+          {
+            "text": "독 저항 25%",
+            "variable": false
+          },
+          {
+            "text": "홈 1~3개",
+            "variable": true
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 390~496"
+        ],
+        "image": "/sets/324ee937a824adde.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "65",
+        "name": "나탈랴의 영혼",
+        "english": "Natalya's Soul",
+        "legacy": "나탈리아의 소울",
+        "base": "메쉬 부츠",
+        "type": "장화",
+        "tier": "익셉셔널",
+        "level": 25,
+        "strength": 65,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +75~125",
+            "variable": true
+          },
+          {
+            "text": "달리기/걷기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 지구력 회복률(%) +0.25",
+            "variable": false
+          },
+          {
+            "text": "내구도 +50",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 15~25%",
+            "variable": true
+          },
+          {
+            "text": "번개 저항 15~25%",
+            "variable": true
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 37~44",
+          "기본 무기 피해 23~52"
+        ],
+        "image": "/sets/5c4d66d9b79ac9a3.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "62",
+        "name": "나탈랴의 토템",
+        "english": "Natalya's Totem",
+        "legacy": "나탈리아의 토템",
+        "base": "그림 헬름",
+        "type": "투구",
+        "tier": "익셉셔널",
+        "level": 59,
+        "strength": 58,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +135~175",
+            "variable": true
+          },
+          {
+            "text": "민첩 +20~30",
+            "variable": true
+          },
+          {
+            "text": "힘 +10~20",
+            "variable": true
+          },
+          {
+            "text": "모든 저항 +10~20",
+            "variable": true
+          },
+          {
+            "text": "마법 피해 3 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 60~125"
+        ],
+        "image": "/sets/4dbc06bb2c9cea16.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "마법 피해 15 감소",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "방어력 +200",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "독 저항 20%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "암살자 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "방어력 +150",
+        "variable": false
+      },
+      {
+        "text": "적중당 생명력 14% 훔침",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 14% 훔침",
+        "variable": false
+      },
+      {
+        "text": "물리 피해 30% 감소",
+        "variable": false
+      },
+      {
+        "text": "반투명 외형 효과",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "고아의 부름",
+    "english": "Orphan's Call",
+    "legacy": "오펀의 콜",
+    "aliases": [],
+    "className": "공용",
+    "level": 42,
+    "pieces": [
+      {
+        "id": "104",
+        "name": "기욤의 얼굴",
+        "english": "Guillaume's Face",
+        "legacy": "길리엄의 페이스",
+        "base": "윙드 헬름",
+        "type": "투구",
+        "tier": "익셉셔널",
+        "level": 34,
+        "strength": 115,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +120%",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "강타 확률 35%",
+            "variable": false
+          },
+          {
+            "text": "치명적 공격 15%",
+            "variable": false
+          },
+          {
+            "text": "힘 +15",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 85~98"
+        ],
+        "image": "/sets/fc6fc3a796acea58.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "106",
+        "name": "마그누스의 가죽",
+        "english": "Magnus' Skin",
+        "legacy": "메이그너스의 스킨",
+        "base": "샤크스킨 글러브",
+        "type": "장갑",
+        "tier": "익셉셔널",
+        "level": 37,
+        "strength": 20,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50%",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 15%",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "시야 +3",
+            "variable": false
+          },
+          {
+            "text": "명중률 +100",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 33~39"
+        ],
+        "image": "/sets/88ff185fd83c98d9.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "107",
+        "name": "위트스탄의 보호구",
+        "english": "Whitstan's Guard",
+        "legacy": "위트스탄의 가드",
+        "base": "라운드 쉴드",
+        "type": "방패",
+        "tier": "익셉셔널",
+        "level": 29,
+        "strength": 53,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +175%",
+            "variable": false
+          },
+          {
+            "text": "막기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 55% 증가",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          },
+          {
+            "text": "시야 +5",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 47~55",
+          "기본 무기 피해 7~14"
+        ],
+        "image": "/sets/1b73ff434b84e0fa.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      },
+      {
+        "id": "105",
+        "name": "빌헬름의 자부심",
+        "english": "Wilhelm's Pride",
+        "legacy": "빌헬름의 프라이드",
+        "base": "배틀 벨트",
+        "type": "허리띠",
+        "tier": "익셉셔널",
+        "level": 42,
+        "strength": 88,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +75%",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 10%",
+            "variable": false
+          },
+          {
+            "text": "적중당 생명력 5% 훔침",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 37~42"
+        ],
+        "image": "/sets/408c6b5fdf664ace.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets6.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "생명력 +35",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "공격자가 피해 5 받음",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "방어력 +100",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "생명력 +50",
+        "variable": false
+      },
+      {
+        "text": "민첩 +10",
+        "variable": false
+      },
+      {
+        "text": "힘 +20",
+        "variable": false
+      },
+      {
+        "text": "방어력 +100",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +15",
+        "variable": false
+      },
+      {
+        "text": "마법 아이템 발견 확률 80% 증가",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "사자비의 대공물",
+    "english": "Sazabi's Grand Tribute",
+    "legacy": "사자바이의 그랜드 트라이뷰트",
+    "aliases": [],
+    "className": "공용",
+    "level": 73,
+    "pieces": [
+      {
+        "id": "112",
+        "name": "사자비의 코발트 구원자",
+        "english": "Sazabi's Cobalt Redeemer",
+        "legacy": "사자바이의 코발트 리디머르",
+        "base": "크립틱 소드",
+        "type": "검",
+        "tier": "엘리트",
+        "level": 73,
+        "strength": 99,
+        "dexterity": 109,
+        "options": [
+          {
+            "text": "피해 +150%",
+            "variable": false
+          },
+          {
+            "text": "냉기 피해 25~35 추가",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "악마에게 주는 피해 +318%",
+            "variable": false
+          },
+          {
+            "text": "파괴 불가",
+            "variable": false
+          },
+          {
+            "text": "민첩 +15",
+            "variable": false
+          },
+          {
+            "text": "힘 +5",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 무기 피해 5~77"
+        ],
+        "image": "/sets/f611ead18071c8ac.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "113",
+        "name": "사자비의 유령 해방자",
+        "english": "Sazabi's Ghost Liberator",
+        "legacy": "사자바이의 고스트 리버레이터",
+        "base": "발록 스킨",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 67,
+        "strength": 165,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +400",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "힘 +25",
+            "variable": false
+          },
+          {
+            "text": "악마 명중률 +300",
+            "variable": false
+          },
+          {
+            "text": "생명력 +50~75",
+            "variable": true
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 410~517"
+        ],
+        "image": "/sets/484a5ba75d4b1617.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "114",
+        "name": "사자비의 정신 보호구",
+        "english": "Sazabi's Mental Sheath",
+        "legacy": "사자바이의 멘틀 쉬쓰",
+        "base": "배서넷",
+        "type": "투구",
+        "tier": "익셉셔널",
+        "level": 43,
+        "strength": 82,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +100",
+            "variable": false
+          },
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 15~20%",
+            "variable": true
+          },
+          {
+            "text": "번개 저항 15~20%",
+            "variable": true
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 75~84"
+        ],
+        "image": "/sets/267642746475a00d.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "달리기/걷기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "독 지속시간 75% 감소",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +30",
+        "variable": false
+      },
+      {
+        "text": "적중당 생명력 15% 훔침",
+        "variable": false
+      },
+      {
+        "text": "최대 생명력 27% 증가",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +1",
+        "variable": false
+      },
+      {
+        "text": "물리 피해 16% 감소",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "시곤의 온전한 강철",
+    "english": "Sigon's Complete Steel",
+    "legacy": "사이곤 컴플릿스틸",
+    "aliases": [
+      "시곤셋",
+      "시곤"
+    ],
+    "className": "공용",
+    "level": 6,
+    "pieces": [
+      {
+        "id": "35",
+        "name": "시곤의 전투 장갑",
+        "english": "Sigon's Gage",
+        "legacy": "사이곤의 게이지",
+        "base": "건틀릿",
+        "type": "장갑",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 60,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "힘 +10",
+            "variable": false
+          },
+          {
+            "text": "명중률 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +30%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 12~15"
+        ],
+        "image": "/sets/b0a728876ae29a6a.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "40",
+        "name": "시곤의 보호구",
+        "english": "Sigon's Guard",
+        "legacy": "사이곤의 가드",
+        "base": "타워 쉴드",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 75,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 20% 증가",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 22~25",
+          "기본 무기 피해 1~5"
+        ],
+        "image": "/sets/d443fcdf54708a77.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "38",
+        "name": "시곤의 나막신",
+        "english": "Sigon's Sabot",
+        "legacy": "사이곤의 새보우",
+        "base": "그리브",
+        "type": "장화",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 70,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 40%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "명중률 +50",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 50% 증가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 12~15",
+          "기본 무기 피해 10~20"
+        ],
+        "image": "/sets/43cf6183c5595e65.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "37",
+        "name": "시곤의 안식처",
+        "english": "Sigon's Shelter",
+        "legacy": "사이곤의 쉘터",
+        "base": "고딕 플레이트",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 70,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +25%",
+            "variable": false
+          },
+          {
+            "text": "번개 저항 30%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "공격자가 피해 20 받음",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 128~135"
+        ],
+        "image": "/sets/91d3fec5f5fcdc21.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "36",
+        "name": "시곤의 챙",
+        "english": "Sigon's Visor",
+        "legacy": "사이곤의 바이저",
+        "base": "그레이트 헬름",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 63,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마나 +30",
+            "variable": false
+          },
+          {
+            "text": "방어력 +25",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 30~35"
+        ],
+        "image": "/sets/6182dfce87097e90.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "39",
+        "name": "시곤의 싸개",
+        "english": "Sigon's Wrap",
+        "legacy": "사이곤의 랩",
+        "base": "플레이트 벨트",
+        "type": "허리띠",
+        "tier": "노멀",
+        "level": 6,
+        "strength": 60,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "화염 저항 20%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 8~11"
+        ],
+        "image": "/sets/8bc5ee8290a3e81c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "적중당 생명력 10% 훔침",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "방어력 +100",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "화염 저항 12%",
+        "variable": false
+      },
+      {
+        "text": "공격자가 피해 12 받음",
+        "variable": false
+      },
+      {
+        "text": "피해 7 감소",
+        "variable": false
+      },
+      {
+        "text": "최대 화염 피해 +24",
+        "variable": false
+      },
+      {
+        "text": "마나 +20",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "탈 라샤의 수의",
+    "english": "Tal Rasha's Wrappings",
+    "legacy": "탈 라샤의 래핑스",
+    "aliases": [
+      "탈셋",
+      "탈라샤"
+    ],
+    "className": "원소술사",
+    "level": 71,
+    "pieces": [
+      {
+        "id": "77",
+        "name": "탈 라샤의 선고",
+        "english": "Tal Rasha's Adjudication",
+        "legacy": "탈 라샤의 어쥬디케이션",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 67,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "번개 저항 33%",
+            "variable": false
+          },
+          {
+            "text": "원소술사 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "생명력 +50",
+            "variable": false
+          },
+          {
+            "text": "번개 피해 3~32 추가",
+            "variable": false
+          },
+          {
+            "text": "마나 +42",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "시전 속도 +10%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/b62b25c9122af2a0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "76",
+        "name": "탈 라샤의 고운 띠",
+        "english": "Tal Rasha's Fine-Spun Cloth",
+        "legacy": "탈 라샤의 파인-스펀 클로쓰",
+        "base": "메쉬 벨트",
+        "type": "허리띠",
+        "tier": "익셉셔널",
+        "level": 53,
+        "strength": 47,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "착용 조건 -20%",
+            "variable": false
+          },
+          {
+            "text": "마나 +30",
+            "variable": false
+          },
+          {
+            "text": "민첩 +20",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 37%만큼 마나 회복",
+            "variable": false
+          },
+          {
+            "text": "마법 아이템 발견 확률 10~15% 증가",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "방어력 +60",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "시전 속도 +10%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 35~40"
+        ],
+        "image": "/sets/5e1037c1e50b5249.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "80",
+        "name": "탈 라샤의 호라드림 관모",
+        "english": "Tal Rasha's Horadric Crest",
+        "legacy": "탈 라샤의 호라드릭 크레스트",
+        "base": "데스 마스크",
+        "type": "투구",
+        "tier": "익셉셔널",
+        "level": 66,
+        "strength": 55,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "마나 +30",
+            "variable": false
+          },
+          {
+            "text": "생명력 +60",
+            "variable": false
+          },
+          {
+            "text": "방어력 +45",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +15",
+            "variable": false
+          },
+          {
+            "text": "적중당 생명력 10% 훔침",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 10% 훔침",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 54~86"
+        ],
+        "image": "/sets/79458c66405949d5.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "79",
+        "name": "탈 라샤의 보호",
+        "english": "Tal Rasha's Guardianship",
+        "legacy": "탈 라샤의 가이언쉽",
+        "base": "래커드 플레이트",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 71,
+        "strength": 84,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "착용 조건 -60%",
+            "variable": false
+          },
+          {
+            "text": "마법 피해 15 감소",
+            "variable": false
+          },
+          {
+            "text": "마법 아이템 발견 확률 88% 증가",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 40%",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 40%",
+            "variable": false
+          },
+          {
+            "text": "번개 저항 40%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +400",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "시전 속도 +10%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 433~541"
+        ],
+        "image": "/sets/694a64dd894aaef5.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "78",
+        "name": "탈 라샤의 잠들지 않는 눈",
+        "english": "Tal Rasha's Lidless Eye",
+        "legacy": "탈 라샤의 리드리스 아이",
+        "base": "스월링 크리스탈",
+        "type": "원소술사 보주",
+        "tier": "익셉셔널",
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 +57",
+            "variable": false
+          },
+          {
+            "text": "마나 +77",
+            "variable": false
+          },
+          {
+            "text": "마력 +10",
+            "variable": false
+          },
+          {
+            "text": "시전 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "Fire Mastery +1~2 (해당 직업 전용)",
+            "variable": true
+          },
+          {
+            "text": "Lightning Mastery +1~2 (해당 직업 전용)",
+            "variable": true
+          },
+          {
+            "text": "Cold Mastery +1~2 (해당 직업 전용)",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "원소술사 기술 +1",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "적의 화염 저항 -15%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "적의 번개 저항 -15%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 기술 피해 +15%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 18~42"
+        ],
+        "image": "/sets/2f159a7ffe5f5d06.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "생명력 회복 +10",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "마법 아이템 발견 확률 65% 증가",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "타격 회복 속도 +25%",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "원소술사 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "방어력 +150",
+        "variable": false
+      },
+      {
+        "text": "생명력 +150",
+        "variable": false
+      },
+      {
+        "text": "원거리 공격 방어력 +50",
+        "variable": false
+      },
+      {
+        "text": "세트 완성 시 시각 효과",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "탄크레드의 전투 장비",
+    "english": "Tancred's Battlegear",
+    "legacy": "탄크레드 배틀기어",
+    "aliases": [],
+    "className": "공용",
+    "level": 20,
+    "pieces": [
+      {
+        "id": "30",
+        "name": "탄크레드의 크로우빌",
+        "english": "Tancred's Crowbill",
+        "legacy": "탄크레드의 크로우빌",
+        "base": "밀리터리 픽",
+        "type": "도끼",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 49,
+        "dexterity": 33,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          },
+          {
+            "text": "피해 +80%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마나 +20",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "공격 속도 +20%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 무기 피해 7~11"
+        ],
+        "image": "/sets/0eb942de7c0735fe.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "32",
+        "name": "탄크레드의 구두징",
+        "english": "Tancred's Hobnails",
+        "legacy": "탄크레드의 헙네일즈",
+        "base": "부츠",
+        "type": "장화",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "지구력 회복 속도 25% 증가",
+            "variable": false
+          },
+          {
+            "text": "민첩 +10",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "달리기/걷기 속도 +30%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "힘 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 2~3",
+          "기본 무기 피해 3~8"
+        ],
+        "image": "/sets/4e8ad68d8d93fd80.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "34",
+        "name": "탄크레드의 두개골",
+        "english": "Tancred's Skull",
+        "legacy": "탄크레드의 스컬",
+        "base": "본 헬름",
+        "type": "투구",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 25,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "피해 +10%",
+            "variable": false
+          },
+          {
+            "text": "명중률 +40",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 33~36"
+        ],
+        "image": "/sets/9e00cdbe4c63b7f6.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "31",
+        "name": "탄크레드의 가시",
+        "english": "Tancred's Spine",
+        "legacy": "탄크레드의 스파인",
+        "base": "풀 플레이트 메일",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 80,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 +40",
+            "variable": false
+          },
+          {
+            "text": "힘 +15",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 150~161"
+        ],
+        "image": "/sets/03504cb462db7668.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "33",
+        "name": "탄크레드의 기묘",
+        "english": "Tancred's Weird",
+        "legacy": "탄크레드의 와이어드",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 20,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "피해 2 감소",
+            "variable": false
+          },
+          {
+            "text": "마법 피해 1 감소",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 78% 증가",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "명중률 +60",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/28dc7400e74391d0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "번개 피해 15~15 추가",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "적중당 생명력 5% 훔침",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "괴물에게서 얻는 금화 75% 증가",
+        "variable": false
+      },
+      {
+        "text": "모든 저항 +10",
+        "variable": false
+      },
+      {
+        "text": "대상 감속 35%",
+        "variable": false
+      },
+      {
+        "text": "적중당 마나 5% 훔침",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "사도",
+    "english": "The Disciple",
+    "legacy": "디싸이플",
+    "aliases": [],
+    "className": "공용",
+    "level": 65,
+    "pieces": [
+      {
+        "id": "99",
+        "name": "신조",
+        "english": "Credendum",
+        "legacy": "크리덴덤",
+        "base": "미스릴 코일",
+        "type": "허리띠",
+        "tier": "엘리트",
+        "level": 65,
+        "strength": 106,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "힘 +10",
+            "variable": false
+          },
+          {
+            "text": "민첩 +10",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +15",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 58~65"
+        ],
+        "image": "/sets/aef509b23a8e1edb.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "96",
+        "name": "안수",
+        "english": "Laying of Hands",
+        "legacy": "레잉 오브 핸즈",
+        "base": "브램블 미트",
+        "type": "장갑",
+        "tier": "엘리트",
+        "level": 63,
+        "strength": 50,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +25",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 50%",
+            "variable": false
+          },
+          {
+            "text": "악마에게 주는 피해 +350%",
+            "variable": false
+          },
+          {
+            "text": "타격 시 10% 확률로 3레벨 Holy Bolt 시전",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 54~62"
+        ],
+        "image": "/sets/5bebd597e9680061.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "97",
+        "name": "통과의례",
+        "english": "Rite of Passage",
+        "legacy": "고대인의 통과의례",
+        "base": "데몬하이드 부츠",
+        "type": "장화",
+        "tier": "익셉셔널",
+        "level": 29,
+        "strength": 20,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +25",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          },
+          {
+            "text": "최대 지구력 +15~25",
+            "variable": true
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 28~35",
+          "기본 무기 피해 26~46"
+        ],
+        "image": "/sets/ed678a23414a610f.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "98",
+        "name": "어둠의 추종자",
+        "english": "Dark Adherent",
+        "legacy": "다크 애드히어런트",
+        "base": "더스크 슈라우드",
+        "type": "갑옷",
+        "tier": "엘리트",
+        "level": 49,
+        "strength": 77,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +305~415",
+            "variable": true
+          },
+          {
+            "text": "화염 저항 24%",
+            "variable": false
+          },
+          {
+            "text": "피격 시 25% 확률로 3레벨 Nova 시전",
+            "variable": false
+          },
+          {
+            "text": "독 피해 25~35 추가 (2초에 걸쳐)",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 361~467"
+        ],
+        "image": "/sets/645ed3077f454b55.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      },
+      {
+        "id": "95",
+        "name": "구슬 묵주",
+        "english": "Telling of Beads",
+        "legacy": "텔링 오브 비드",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 30,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "독 저항 35~50%",
+            "variable": true
+          },
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 18%",
+            "variable": false
+          },
+          {
+            "text": "공격자가 피해 8~10 받음",
+            "variable": true
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [],
+        "image": "/sets/b62b25c9122af2a0.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets4.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "방어력 +150",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "독 피해 22 추가 (3초에 걸쳐)",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "힘 +10",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 5,
+        "options": [
+          {
+            "text": "민첩 +10",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "모든 기술 +2",
+        "variable": false
+      },
+      {
+        "text": "마나 +100",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "트래그울의 화신",
+    "english": "Trang-Oul's Avatar",
+    "legacy": "트랑-울의 아바타",
+    "aliases": [
+      "트랑울",
+      "트래그울셋"
+    ],
+    "className": "강령술사",
+    "level": 65,
+    "pieces": [
+      {
+        "id": "88",
+        "name": "트래그울의 발톱",
+        "english": "Trang-Oul's Claws",
+        "legacy": "트랑-울의 클러스",
+        "base": "헤비 브레이서",
+        "type": "장갑",
+        "tier": "익셉셔널",
+        "level": 45,
+        "strength": 58,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +30",
+            "variable": false
+          },
+          {
+            "text": "시전 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 30%",
+            "variable": false
+          },
+          {
+            "text": "저주 기술 +2",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "독 기술 피해 +25%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 37~44"
+        ],
+        "image": "/sets/406c6c7d95bb913c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "89",
+        "name": "트래그울의 끈",
+        "english": "Trang-Oul's Girth",
+        "legacy": "트랑-울의 거즈",
+        "base": "트롤 벨트",
+        "type": "허리띠",
+        "tier": "엘리트",
+        "level": 62,
+        "strength": 91,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +75~100",
+            "variable": true
+          },
+          {
+            "text": "최대 지구력 +30",
+            "variable": false
+          },
+          {
+            "text": "생명력 회복 +5",
+            "variable": false
+          },
+          {
+            "text": "생명력 +66",
+            "variable": false
+          },
+          {
+            "text": "빙결되지 않음",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -40%",
+            "variable": false
+          },
+          {
+            "text": "마나 +25~50",
+            "variable": true
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "냉기 저항 40%",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 59~66"
+        ],
+        "image": "/sets/8ff4f637512b61a3.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "85",
+        "name": "트래그울의 허울",
+        "english": "Trang-Oul's Guise",
+        "legacy": "트랑-울의 가이즈",
+        "base": "본 비지즈",
+        "type": "투구",
+        "tier": "엘리트",
+        "level": 65,
+        "strength": 106,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +80~100",
+            "variable": true
+          },
+          {
+            "text": "타격 회복 속도 +25%",
+            "variable": false
+          },
+          {
+            "text": "공격자가 피해 20 받음",
+            "variable": false
+          },
+          {
+            "text": "마나 +150",
+            "variable": false
+          },
+          {
+            "text": "생명력 회복 +5",
+            "variable": false
+          }
+        ],
+        "bonuses": [],
+        "baseStats": [
+          "기본 방어력 100~157"
+        ],
+        "image": "/sets/646122767f2a3781.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "86",
+        "name": "트래그울의 비늘",
+        "english": "Trang-Oul's Scales",
+        "legacy": "트랑-울의 스케일스",
+        "base": "카오스 아머",
+        "type": "갑옷",
+        "tier": "익셉셔널",
+        "level": 49,
+        "strength": 84,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "착용 조건 -40%",
+            "variable": false
+          },
+          {
+            "text": "원거리 공격 방어력 +100",
+            "variable": false
+          },
+          {
+            "text": "독 저항 40%",
+            "variable": false
+          },
+          {
+            "text": "소환 (강령술사) 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +150%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "번개 저항 50%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "condition": "5개 이상 착용",
+            "options": [
+              {
+                "text": "물리 피해 25% 감소",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 315~342"
+        ],
+        "image": "/sets/3843e955b2e80889.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      },
+      {
+        "id": "87",
+        "name": "트래그울의 날개",
+        "english": "Trang-Oul's Wing",
+        "legacy": "트랑-울의 윙",
+        "base": "캔터 트로피",
+        "type": "강령술사 전용 방패",
+        "tier": "익셉셔널",
+        "level": 54,
+        "strength": 50,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +125",
+            "variable": false
+          },
+          {
+            "text": "힘 +25",
+            "variable": false
+          },
+          {
+            "text": "민첩 +15",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 38~45%",
+            "variable": true
+          },
+          {
+            "text": "막기 확률 30% 증가",
+            "variable": false
+          },
+          {
+            "text": "독 저항 40%",
+            "variable": false
+          },
+          {
+            "text": "독과 뼈 기술 +2",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "적의 독 저항 -25%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "condition": "4개 이상 착용",
+            "options": [
+              {
+                "text": "생명력 회복 +15",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 50~64"
+        ],
+        "image": "/sets/5da0008e743b9ff6.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets7.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "마나 재생 15%",
+            "variable": false
+          },
+          {
+            "text": "Fire Ball +18",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "마나 재생 15%",
+            "variable": false
+          },
+          {
+            "text": "Fire Wall +13",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 4,
+        "options": [
+          {
+            "text": "마나 재생 15%",
+            "variable": false
+          },
+          {
+            "text": "Meteor +10",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "모든 저항 +50",
+        "variable": false
+      },
+      {
+        "text": "강령술사 기술 +3",
+        "variable": false
+      },
+      {
+        "text": "마나 +100",
+        "variable": false
+      },
+      {
+        "text": "방어력 +200",
+        "variable": false
+      },
+      {
+        "text": "흡혈귀 외형으로 변신",
+        "variable": false
+      },
+      {
+        "text": "마나 재생 15%",
+        "variable": false
+      },
+      {
+        "text": "Fire Mastery +3",
+        "variable": false
+      },
+      {
+        "text": "적중당 생명력 20% 훔침",
+        "variable": false
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "비달라의 장치",
+    "english": "Vidala's Rig",
+    "legacy": "비달라 리그",
+    "aliases": [],
+    "className": "아마존",
+    "level": 14,
+    "pieces": [
+      {
+        "id": "19",
+        "name": "비달라의 매복",
+        "english": "Vidala's Ambush",
+        "legacy": "비달라의 앰부쉬",
+        "base": "레더 아머",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 14,
+        "strength": 15,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "민첩 +11",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "화염 저항 24%",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "condition": "3개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 방어력 +2.5",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 14~17"
+        ],
+        "image": "/sets/ebdfa7ed26982bfa.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "17",
+        "name": "비달라의 미늘",
+        "english": "Vidala's Barb",
+        "legacy": "비달라의 바아브",
+        "base": "롱 배틀 보우",
+        "type": "활",
+        "tier": "노멀",
+        "level": 14,
+        "strength": 40,
+        "dexterity": 50,
+        "options": [
+          {
+            "text": "최소 번개 피해 +1",
+            "variable": false
+          },
+          {
+            "text": "최대 번개 피해 +20",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "캐릭터 레벨당 명중률 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 양손 피해 3~18"
+        ],
+        "image": "/sets/73b59f57cc85db65.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "18",
+        "name": "비달라의 구절",
+        "english": "Vidala's Fetlock",
+        "legacy": "비달라의 페트락",
+        "base": "라이트 플레이트 부츠",
+        "type": "장화",
+        "tier": "노멀",
+        "level": 14,
+        "strength": 50,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "최대 지구력 +150",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +30%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "모든 저항 +8",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [
+          "기본 방어력 9~11",
+          "기본 무기 피해 8~16"
+        ],
+        "image": "/sets/201ad97bf24166f9.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      },
+      {
+        "id": "20",
+        "name": "비달라의 덫",
+        "english": "Vidala's Snare",
+        "legacy": "비달라의 스네어",
+        "base": "목걸이",
+        "type": "목걸이",
+        "tier": "기타",
+        "level": 14,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "생명력 +15",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 20%",
+            "variable": false
+          }
+        ],
+        "bonuses": [
+          {
+            "count": 2,
+            "condition": "2개 이상 착용",
+            "options": [
+              {
+                "text": "마법 아이템 발견 확률 50% 증가",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "baseStats": [],
+        "image": "/sets/93017b8535da6b30.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+        "availability": ""
+      }
+    ],
+    "partial": [
+      {
+        "count": 2,
+        "options": [
+          {
+            "text": "명중률 +75",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 7% 훔침",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "options": [
+          {
+            "text": "민첩 +15",
+            "variable": false
+          }
+        ]
+      }
+    ],
+    "full": [
+      {
+        "text": "캐릭터 레벨당 최대 냉기 피해 +1.5",
+        "variable": false
+      },
+      {
+        "text": "대상 빙결 +1",
+        "variable": false
+      },
+      {
+        "text": "관통 공격 50%",
+        "variable": false
+      },
+      {
+        "text": "힘 +10",
+        "variable": false
+      }
+    ]
+  }
+]

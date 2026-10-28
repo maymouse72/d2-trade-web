@@ -123,7 +123,7 @@ export default function MarketHome() {
           DIABLO II REALTIME MARKET
         </h1>
 
-        <nav aria-label="주요 메뉴" style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 24 }}><Link href="/" aria-current="page" className="market-button market-button-primary">거래소</Link><Link href="/runewords" className="market-button market-button-refresh">룬워드 도감</Link><Link href="/uniques" className="market-button market-button-refresh">유니크 도감</Link></nav>
+        <nav aria-label="주요 메뉴" style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 24 }}><Link href="/" aria-current="page" className="market-button market-button-primary">거래소</Link><Link href="/runewords" className="market-button market-button-refresh">룬워드 도감</Link><Link href="/uniques" className="market-button market-button-refresh">유니크 도감</Link><Link href="/sets" className="market-button market-button-refresh">세트 도감</Link></nav>
 
         {/* 컨트롤 유틸리티 대시보드 */}
         <div className="market-toolbar">
