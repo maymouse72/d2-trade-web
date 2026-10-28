@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import styles from './SiteFrame.module.css';
 
-export default function SiteFrame({ children, active = 'market' }: { children: ReactNode; active?: 'market' | 'runewords' | 'uniques' | 'sets' }) {
+export default function SiteFrame({ children, active = 'market' }: { children: ReactNode; active?: 'market' | 'runewords' | 'uniques' | 'sets' | 'experience' }) {
   return (
     <div className={styles.shell}>
       <aside aria-label="왼쪽 광고" className={`fixed-ad-banner fixed-left-box ${styles.ad}`}>
@@ -24,6 +24,7 @@ export default function SiteFrame({ children, active = 'market' }: { children: R
             <Link href="/runewords" aria-current={active === 'runewords' ? 'page' : undefined} className={`market-button ${active === 'runewords' ? 'market-button-primary' : 'market-button-refresh'}`}>룬워드 도감</Link>
             <Link href="/uniques" aria-current={active === 'uniques' ? 'page' : undefined} className={`market-button ${active === 'uniques' ? 'market-button-primary' : 'market-button-refresh'}`}>유니크 도감</Link>
             <Link href="/sets" aria-current={active === 'sets' ? 'page' : undefined} className={`market-button ${active === 'sets' ? 'market-button-primary' : 'market-button-refresh'}`}>세트 도감</Link>
+            <Link href="/game-info/experience" aria-current={active === 'experience' ? 'page' : undefined} className={`market-button ${active === 'experience' ? 'market-button-primary' : 'market-button-refresh'}`}>게임 정보</Link>
           </nav>
         </header>
         <main>{children}</main>
