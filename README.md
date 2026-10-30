@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 디아블로2 주고받고
 
-## Getting Started
+Next.js 기반 거래소와 게임 도감에 PWA 기능을 제공합니다.
 
-First, run the development server:
+## PWA 소스와 운영 상태
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+로컬 기준 커밋은 `5d53d2d`이며, 이번 변경은 검토용 브랜치에 있습니다. 운영 배포 여부와 DB 연결 상태를 뜻하지 않습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+구현된 기능은 매물별 Push 상태 확인·신청·해제·명시적 재시도, Service Worker 업데이트 안내, 오프라인 수동 재접속입니다. 실제 발송에는 DB 설치, 댓글 이벤트 전달, VAPID와 서버 환경 설정이 별도로 필요합니다. 운영 연결은 이번에 확인하지 않았습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+업데이트는 모든 탭과 설치 앱의 작업을 저장한 뒤 닫고 다시 열도록 안내합니다. 강제 활성화나 자동 새로고침은 하지 않습니다. 매물·댓글·API는 오프라인 캐시하지 않으며, 기기 토큰이나 기존 구독도 자동 초기화하지 않습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 로컬 검증
 
-## Learn More
+이미 설치된 의존성으로 다음 검사를 수행할 수 있습니다. 패키지 설치·업그레이드는 별도 승인 대상입니다.
 
-To learn more about Next.js, take a look at the following resources:
+- `node_modules/.bin/tsc.cmd --noEmit --incremental false`
+- `npm run lint`
+- `npm run build` — 먼저 환경변수 접근과 외부 요청 가능성을 확인하고, 운영 DB에 접속하지 않는 환경에서만 실행합니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+개발 서버 실행도 해당 작업의 승인 범위를 먼저 확인합니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 운영 절차
 
-## Deploy on Vercel
+[PWA 운영 가이드](ops/PWA-연결-가이드.md)를 확인하세요. `ops/pwa-setup.sql`은 일회 설치 자료이므로 운영 DB에서 다시 실행하지 않습니다. 과거 pg_net 설계 문서도 적용 증거가 아닙니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+배포 순서는 diff 검토 → 정적 검사 → 빌드 검사 → 운영 버전·환경 적용 범위 확인 → 롤백 기준 확보 → 사용자 승인 → 배포 → 기존 설치 사용자 검증입니다. Git Push, SQL 실행, 운영 배포, Push 활성화는 승인 없이 수행하지 않습니다. Secret 값은 Git·보고서·로그에 기록하지 않습니다.
