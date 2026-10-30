@@ -3,13 +3,11 @@
 import { useState } from 'react';
 import SiteFrame from '../SiteFrame';
 import Image from 'next/image';
-import records from './data.json';
+import { records, equipment, filterRecords, countKinds } from './catalog';
 import runeFiles from './runes.json';
 import styles from './catalog.module.css';
 
-const equipment = [...new Set(records.map(row => row.equipment))].sort((a, b) => a.localeCompare(b, 'ko'));
 const runes = '엘 엘드 티르 네프 에드 아이드 탈 랄 오르트 주울 앰 솔 샤엘 돌 헬 이오 룸 코 팔 렘 풀 우움 말 이스트 굴 벡스 오움 로 수르 베르 자 참 조드'.split(' ');
-const normalize = (value: string) => value.toLocaleLowerCase().replace(/\s+/g, '');
 
 export default function RunewordCatalog() {
   const [query, setQuery] = useState('');
@@ -18,11 +16,7 @@ export default function RunewordCatalog() {
   const [level, setLevel] = useState('');
   const [rune, setRune] = useState('');
   const [sort, setSort] = useState('name');
-  const visible = records.filter(row =>
-    (!query || normalize([row.name, row.base, row.runes.join(' '), row.options].join(' ')).includes(normalize(query))) &&
-    (!base || row.equipment === base) && (!sockets || row.sockets === Number(sockets)) &&
-    (!level || row.level <= Number(level)) && (!rune || row.runes.includes(rune))
-  ).sort((a, b) => sort === 'level' ? a.level - b.level || a.id - b.id : sort === 'sockets' ? a.sockets - b.sockets || a.id - b.id : a.name.localeCompare(b.name, 'ko'));
+  const visible = filterRecords({ query, base, sockets, level, rune, sort });
   function reset() { setQuery(''); setBase(''); setSockets(''); setLevel(''); setRune(''); setSort('name'); }
   return (
     <SiteFrame active="runewords">
@@ -37,12 +31,12 @@ export default function RunewordCatalog() {
         <label>정렬<select value={sort} onChange={e => setSort(e.target.value)}><option value="name">이름순</option><option value="level">레벨 낮은 순</option><option value="sockets">소켓 적은 순</option></select></label>
         <button type="button" onClick={reset}>전체 초기화</button>
       </section>
-      <div className={styles.result} role="status">전체 {records.length}개 중 <strong>{visible.length}개</strong>{base && ` · ${base}`}{sockets && ` · ${sockets}소켓`}{level && ` · ${level}레벨 이하`}{rune && ` · ${rune} 포함`}</div>
-      <p className={styles.note}>룬은 왼쪽부터 표시된 순서대로 장착하세요.</p>
+      <div className={styles.result} role="status">전체 {countKinds(records)}종 · 장비별 {records.length}개 항목 중 <strong>{countKinds(visible)}종 · {visible.length}개 항목</strong>{base && ` · ${base}`}{sockets && ` · ${sockets}소켓`}{level && ` · ${level}레벨 이하`}{rune && ` · ${rune} 포함`}</div>
+      <p className={styles.note}>룬은 왼쪽부터 표시된 순서대로 장착하세요.<br />불사조·영혼·인내는 제작 장비에 따라 옵션이 달라, 장비별로 나누어 표시합니다.<br />악마술사의 군림 신규 룬워드 5종을 포함합니다. 표시 레벨보다 재료 장비의 요구 레벨이 높으면 재료 기준을 따릅니다.</p>
       <div className={styles.list}>
         {visible.map(row => <article key={row.id} className={styles.card}>
           <div className={styles.heading}><h2>{row.name}</h2><span>Lv. {row.level}</span></div>
-          <p className={styles.base}>{row.equipment} · {row.sockets}소켓</p>
+          <p className={styles.base}>{row.equipment} · {row.sockets}소켓{row.edition && ` · ${row.edition}`}</p>
           <ol className={styles.runes} aria-label="룬 장착 순서">{row.runes.map((name, index) => <li key={`${row.id}-${index}`}><span className={styles.order}>{index + 1}</span><Image src={`/runes/${runeFiles[name as keyof typeof runeFiles]}.gif`} alt={`${name} 룬`} width={28} height={28} unoptimized /><span>{name}</span></li>)}</ol>
           <details><summary>옵션 보기</summary><p className={styles.options}>{row.options}</p></details>
         </article>)}
