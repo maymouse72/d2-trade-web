@@ -71,7 +71,7 @@ export default function ExperienceExplorer() {
           </>}
       </div>
 
-      <p className={styles.notice}>첨부 경험치 표를 옮긴 참고 자료입니다. 실제 시간당 경험치나 최종 경험치 수령률을 뜻하지 않습니다. 테러존·파티·처치 속도는 반영하지 않습니다.</p>
+      <p className={styles.notice}>실제 시간당 경험치나 최종 경험치 수령률을 뜻하지 않습니다. 테러존·파티·처치 속도는 반영하지 않습니다.</p>
       <div className={styles.filterBar} role="group" aria-label="경험치 표 난이도 필터">
         {filters.map(item => <button key={item.id} type="button" aria-pressed={filter === item.id} className={filter === item.id ? styles.activeFilter : styles.filter} onClick={() => setFilter(item.id)}>{item.name}</button>)}
       </div>
@@ -106,11 +106,9 @@ export default function ExperienceExplorer() {
       </div>
       <details className={styles.sources}><summary>자료 출처와 추천 기준</summary>
         <ul>
-          <li>운영자 제공 「경험치 테이블.png」를 전사했습니다. 작성 게임 버전과 액트별 집계 방식은 확인되지 않았습니다.</li>
+          <li>작성 게임 버전과 액트별 집계 방식은 확인되지 않았습니다.</li>
           <li>표는 일반 지역의 참고 비교용입니다. 70레벨 이후 별도 경험치 감소, 몬스터 구성과 실제 사냥 조건을 반영한 최종 계산표가 아닙니다.</li>
           <li>추천은 표시된 15개 셀의 최고값이며 동률을 모두 표시합니다. 난이도 필터를 바꿔도 전체 기준 추천은 유지됩니다. 추천 구간은 공동 최고가 되는 연속 레벨로 산출합니다.</li>
-          <li>원문 하단 요약보다 셀 값을 우선합니다. 예: 43레벨 나이트메어 Act 1·2 공동 93%, 83레벨 헬 Act 3·4 공동 99%. 99레벨은 최대 레벨 안내를 표시합니다.</li>
-          <li>표의 ‘평균 경험치’ 행은 집계 기준 미상으로 비교 화면에서 제외했습니다. 불명확한 수치를 확인하면 ‘확인 필요’로 관리합니다.</li>
         </ul>
         <p><a href="https://classic.battle.net/diablo2exp/basics/experience.shtml" target="_blank" rel="noreferrer">Blizzard 경험치 설명</a> · <a href="https://news.blizzard.com/de-de/article/23827590/patch-2-5-fuer-diablo-ii-resurrected-ist-jetzt-live" target="_blank" rel="noreferrer">Blizzard 테러존 안내</a></p>
         <p className={styles.muted}>자료 버전 {metadata.datasetVersion} · 전사일 {metadata.checkedAt} · 계산 방식 미검증</p>
