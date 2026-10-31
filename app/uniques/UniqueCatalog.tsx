@@ -60,9 +60,9 @@ export default function UniqueCatalog() {
     {filtered.length===0 && <div className={styles.empty}><p>조건에 맞는 유니크 아이템이 없습니다.</p><button type="button" onClick={reset}>검색 조건 초기화</button></div>}
     <nav className={styles.pagination} aria-label="유니크 목록 페이지"><button disabled={currentPage<=1} onClick={()=>setPage(currentPage-1)}>이전</button><span>{currentPage} / {totalPages}</span><button disabled={currentPage>=totalPages} onClick={()=>setPage(currentPage+1)}>다음</button></nav>
     <footer className={styles.footer}>
-      <p>수집 기준: D2R 3.3.93847 데이터 · 2026-10-27 확인. 무지개 자락 주얼은 속성·발동 조건별로 구분했습니다. 퀘스트 아이템과 미사용·중복 내부 항목은 제외했습니다.</p>
-      <p>일부 신규 아이템과 기술은 영문으로 표시됩니다. 이미지 미확보 항목은 안내 문구로 표시합니다. 실제 게임의 패치·확장팩에 따라 옵션과 획득 가능 여부가 달라질 수 있습니다.</p>
-      <p>데이터: <a href="https://github.com/blizzhackers/d2data" target="_blank" rel="noreferrer">d2data</a> · 한글 이름: <a href="https://github.com/SeonEngineer/D2R" target="_blank" rel="noreferrer">D2R 언어 자료</a> · 이미지: <a href="https://classic.battle.net/diablo2exp/items/uniques.shtml" target="_blank" rel="noreferrer">The Arreat Summit</a>. Diablo II 및 게임 이미지의 권리는 Blizzard Entertainment에 있습니다. 비공식 팬 사이트입니다.</p>
+      <p>수집 기준: D2R 3.3.93847 데이터 · 2026-10-31 갱신. 무지개 자락 주얼은 속성·발동 조건별로 구분했습니다. 퀘스트 아이템과 미사용·중복 내부 항목은 제외했습니다.</p>
+      <p>신규 아이템의 한글 이름·이미지를 반영했습니다. 일부 기술 이름은 영문으로 표시될 수 있습니다. 실제 게임의 패치·확장팩에 따라 옵션과 획득 가능 여부가 달라질 수 있습니다.</p>
+      <p>데이터: <a href="https://github.com/blizzhackers/d2data" target="_blank" rel="noreferrer">d2data</a> · 한글 이름: <a href="https://github.com/SeonEngineer/D2R" target="_blank" rel="noreferrer">D2R 언어 자료</a> · 이미지: <a href="https://classic.battle.net/diablo2exp/items/uniques.shtml" target="_blank" rel="noreferrer">The Arreat Summit</a> 및 운영자 제공 자료. Diablo II 및 게임 이미지의 권리는 Blizzard Entertainment에 있습니다. 비공식 팬 사이트입니다.</p>
     </footer>
   </section>;
 }

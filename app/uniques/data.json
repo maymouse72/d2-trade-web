@@ -19695,11 +19695,13 @@
   },
   {
     "id": "408",
-    "name": "Ars Al'Diablolos",
-    "english": "Ars Al'Diablolos",
+    "name": "아르스 알디아볼로스",
+    "english": "Ars Al'Diabolos",
     "legacy": "",
-    "aliases": [],
-    "base": "waf",
+    "aliases": [
+      "Ars Al'Diablolos"
+    ],
+    "base": "신성모독 마법서",
     "baseEnglish": "Blasphemous Grimoire",
     "category": "방어구",
     "type": "악마술사 서적",
@@ -19709,11 +19711,11 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "악마술사 기술 계열 기술 +2",
+        "text": "피격 시 15% 확률로 1 레벨 공포 시전",
         "variable": false
       },
       {
-        "text": "피격 시 15% 확률로 1레벨 Terror 시전",
+        "text": "+2 혼돈 기술 (악마술사 전용)",
         "variable": false
       },
       {
@@ -19721,15 +19723,19 @@
         "variable": false
       },
       {
-        "text": "방어력 +170~200%",
-        "variable": true
-      },
-      {
         "text": "화염 기술 피해 +15~25%",
         "variable": true
       },
       {
-        "text": "시야 +5~10",
+        "text": "+3~5 종말 (악마술사 전용)",
+        "variable": true
+      },
+      {
+        "text": "방어력 +170~200% 증가",
+        "variable": true
+      },
+      {
+        "text": "화염 저항 +20~30%",
         "variable": true
       },
       {
@@ -19737,15 +19743,11 @@
         "variable": true
       },
       {
-        "text": "화염 저항 20~30%",
-        "variable": true
-      },
-      {
-        "text": "Apocalypse +3~5 (해당 직업 전용)",
+        "text": "시야 +5~10",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-408-c84e7eba8dac.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -19757,11 +19759,11 @@
   },
   {
     "id": "409",
-    "name": "Ars Tor'Baalos",
+    "name": "아르스 토르바알로스",
     "english": "Ars Tor'Baalos",
     "legacy": "",
     "aliases": [],
-    "base": "wae",
+    "base": "신성모독 전서",
     "baseEnglish": "Blasphemous Compendium",
     "category": "방어구",
     "type": "악마술사 서적",
@@ -19771,43 +19773,43 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "악마술사 기술 계열 기술 +2",
+        "text": "피격 시 15% 확률로 1 레벨 노화 시전",
         "variable": false
       },
       {
-        "text": "피격 시 15% 확률로 1레벨 Decrepify 시전",
+        "text": "+2 악마 기술 (악마술사 전용)",
         "variable": false
       },
       {
-        "text": "Demonic Mastery +2~3 (해당 직업 전용)",
+        "text": "+2~3 소모 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Blood Boil +2~4 (해당 직업 전용)",
+        "text": "+2~4 끓는 피 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Engorge +2~3 (해당 직업 전용)",
+        "text": "+2~3 포식 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Consume +2~3 (해당 직업 전용)",
+        "text": "+2~3 악마 숙련 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "방어력 +120~150%",
+        "text": "방어력 +120~150% 증가",
         "variable": true
       },
       {
-        "text": "캐릭터 레벨당 생명력 +1.5",
+        "text": "생명력 +1~148 (캐릭터 레벨에 비례)",
         "variable": false
       },
       {
-        "text": "물리 피해 5~10% 감소",
+        "text": "받는 물리 피해 5~10% 감소",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-409-c84e7eba8dac.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -19819,11 +19821,11 @@
   },
   {
     "id": "410",
-    "name": "Ars Dul'Mephistos",
+    "name": "아르스 둘메피스토스",
     "english": "Ars Dul'Mephistos",
     "legacy": "",
     "aliases": [],
-    "base": "wac",
+    "base": "비술 고서",
     "baseEnglish": "Occult Tome",
     "category": "방어구",
     "type": "악마술사 서적",
@@ -19833,11 +19835,11 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "악마술사 기술 +2",
+        "text": "피격 시 15% 확률로 28 레벨 눈보라 시전",
         "variable": false
       },
       {
-        "text": "피격 시 15% 확률로 28레벨 Blizzard 시전",
+        "text": "+2 모든 악마술사 기술 레벨",
         "variable": false
       },
       {
@@ -19849,7 +19851,7 @@
         "variable": false
       },
       {
-        "text": "피해 +70~115%",
+        "text": "피해 +70~115% 증가",
         "variable": true
       },
       {
@@ -19857,11 +19859,11 @@
         "variable": true
       },
       {
-        "text": "방어력 +140~170%",
+        "text": "적의 마법 저항 -10~20%",
         "variable": true
       },
       {
-        "text": "적의 마법 저항 -10~20%",
+        "text": "방어력 +140~170% 증가",
         "variable": true
       },
       {
@@ -19869,7 +19871,7 @@
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-410-c84e7eba8dac.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -19881,11 +19883,11 @@
   },
   {
     "id": "411",
-    "name": "Measured Wrath",
+    "name": "신중한 진노",
     "english": "Measured Wrath",
     "legacy": "",
     "aliases": [],
-    "base": "wa6",
+    "base": "불탄 문헌",
     "baseEnglish": "Burnt Text",
     "category": "방어구",
     "type": "악마술사 서적",
@@ -19895,11 +19897,11 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "악마술사 기술 +1",
+        "text": "피격 시 5% 확률로 25 레벨 화염 고리 시전",
         "variable": false
       },
       {
-        "text": "피격 시 5% 확률로 25레벨 Ring of Fire 시전",
+        "text": "+1 모든 악마술사 기술 레벨",
         "variable": false
       },
       {
@@ -19907,19 +19909,19 @@
         "variable": false
       },
       {
-        "text": "방어력 +130~180%",
+        "text": "+1~3 화염 파도 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Summon Tainted +1~3 (해당 직업 전용)",
+        "text": "+1~3 화염 고리 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Ring of Fire +1~3 (해당 직업 전용)",
+        "text": "+1~3 오염된 자 소환 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Flame Wave +1~3 (해당 직업 전용)",
+        "text": "방어력 +130~180% 증가",
         "variable": true
       },
       {
@@ -19927,15 +19929,15 @@
         "variable": true
       },
       {
-        "text": "적 처치 시 생명력 +3~5",
+        "text": "모든 저항 +20~30",
         "variable": true
       },
       {
-        "text": "모든 저항 +20~30",
+        "text": "적 처치 시 생명력 +3~5",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-411-37d022012be0.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -19947,7 +19949,7 @@
   },
   {
     "id": "412",
-    "name": "Dreadfang",
+    "name": "공포송곳니",
     "english": "Dreadfang",
     "legacy": "",
     "aliases": [],
@@ -19957,11 +19959,11 @@
     "type": "검",
     "tier": "엘리트",
     "level": 61,
-    "strength": 117,
+    "strength": 118,
     "dexterity": 67,
     "options": [
       {
-        "text": "타격 시 33% 확률로 3레벨 Amplify Damage 시전",
+        "text": "타격 시 33% 확률로 3 레벨 피해 증폭 시전",
         "variable": false
       },
       {
@@ -19969,8 +19971,12 @@
         "variable": false
       },
       {
-        "text": "피해 +133~166%",
+        "text": "피해 +133~166% 증가",
         "variable": true
+      },
+      {
+        "text": "명중률 보너스 33%",
+        "variable": false
       },
       {
         "text": "적중당 마나 3~6% 훔침",
@@ -19981,11 +19987,7 @@
         "variable": false
       },
       {
-        "text": "Mirrored Blades +3 (해당 직업 전용)",
-        "variable": false
-      },
-      {
-        "text": "명중률 보너스 33%",
+        "text": "+3 거울상 칼날 (악마술사 전용)",
         "variable": false
       },
       {
@@ -19993,7 +19995,7 @@
         "variable": false
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-412-fd3f3abdac6c.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -20006,7 +20008,7 @@
   },
   {
     "id": "413",
-    "name": "Wraithstep",
+    "name": "망령걸음",
     "english": "Wraithstep",
     "legacy": "",
     "aliases": [],
@@ -20019,10 +20021,6 @@
     "strength": 163,
     "dexterity": 0,
     "options": [
-      {
-        "text": "악마술사 기술 계열 추가 효과 (세부 조건 확인 중)",
-        "variable": false
-      },
       {
         "text": "달리기/걷기 속도 +30%",
         "variable": false
@@ -20044,20 +20042,35 @@
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-413-3cb764232e56.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [
       "기본 방어력 59~68",
-      "기본 무기 피해 50~145"
+      "기본 발차기 피해 50~145"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [
+      [
+        {
+          "text": "+1 혼돈 기술 (악마술사 전용)",
+          "variable": false
+        },
+        {
+          "text": "+1 기괴 기술 (악마술사 전용)",
+          "variable": false
+        },
+        {
+          "text": "+1 악마 기술 (악마술사 전용)",
+          "variable": false
+        }
+      ]
+    ]
   },
   {
     "id": "414",
-    "name": "Bloodpact Shard",
+    "name": "피의 맹약 파편",
     "english": "Bloodpact Shard",
     "legacy": "",
     "aliases": [],
@@ -20071,7 +20084,7 @@
     "dexterity": 98,
     "options": [
       {
-        "text": "모든 기술 +1",
+        "text": "+1 모든 기술",
         "variable": false
       },
       {
@@ -20079,31 +20092,31 @@
         "variable": false
       },
       {
-        "text": "최대 생명력 10~15% 증가",
+        "text": "+1~3 악마 속박 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Blood Oath +2~3 (해당 직업 전용)",
+        "text": "+2~3 끓는 피 (악마술사 전용)",
         "variable": true
       },
       {
-        "text": "Blood Boil +2~3 (해당 직업 전용)",
-        "variable": true
-      },
-      {
-        "text": "Bind Demon +1~3 (해당 직업 전용)",
-        "variable": true
-      },
-      {
-        "text": "마법 아이템 발견 확률 20~35% 증가",
+        "text": "+2~3 피의 맹세 (악마술사 전용)",
         "variable": true
       },
       {
         "text": "대상 감속 25%",
         "variable": false
+      },
+      {
+        "text": "최대 생명력 10~15% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 20~35% 증가",
+        "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-414-b4152cbc717a.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -20115,7 +20128,7 @@
   },
   {
     "id": "415",
-    "name": "Sling",
+    "name": "새총",
     "english": "Sling",
     "legacy": "",
     "aliases": [],
@@ -20129,10 +20142,6 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "Townportal O Skill +1",
-        "variable": false
-      },
-      {
         "text": "시전 속도 +10%",
         "variable": false
       },
@@ -20141,19 +20150,23 @@
         "variable": true
       },
       {
-        "text": "마력 +10~15",
-        "variable": true
+        "text": "+1 마을 차원문",
+        "variable": false
       },
       {
         "text": "대상 감속 15%",
         "variable": false
       },
       {
+        "text": "마력 +10~15",
+        "variable": true
+      },
+      {
         "text": "마법 아이템 발견 확률 10~20% 증가",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-415-e36e28282808.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -20163,7 +20176,7 @@
   },
   {
     "id": "416",
-    "name": "Opalvein",
+    "name": "오팔맥",
     "english": "Opalvein",
     "legacy": "",
     "aliases": [],
@@ -20177,11 +20190,7 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "공격 시 2% 확률로 15레벨 Flame Wave 시전",
-        "variable": false
-      },
-      {
-        "text": "무작위 추가 마법 효과 (세부 조건 확인 중)",
+        "text": "공격 시 2% 확률로 15 레벨 화염 파도 시전",
         "variable": false
       },
       {
@@ -20201,17 +20210,44 @@
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-416-e36e28282808.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [
+      [
+        {
+          "text": "마법 기술 피해 +3~5%",
+          "variable": true
+        },
+        {
+          "text": "피해 +20~40% 증가",
+          "variable": true
+        },
+        {
+          "text": "화염 기술 피해 +3~5%",
+          "variable": true
+        },
+        {
+          "text": "냉기 기술 피해 +3~5%",
+          "variable": true
+        },
+        {
+          "text": "번개 기술 피해 +3~5%",
+          "variable": true
+        },
+        {
+          "text": "독 기술 피해 +3~5%",
+          "variable": true
+        }
+      ]
+    ]
   },
   {
     "id": "417",
-    "name": "Entropy Locket",
+    "name": "엔트로피 로켓",
     "english": "Entropy Locket",
     "legacy": "",
     "aliases": [],
@@ -20225,19 +20261,15 @@
     "dexterity": 0,
     "options": [
       {
-        "text": "타격 시 4% 확률로 19레벨 Miasma Chains 시전",
+        "text": "타격 시 4% 확률로 19 레벨 독기 사슬 시전",
         "variable": false
-      },
-      {
-        "text": "마법 기술 피해 +5~10%",
-        "variable": true
       },
       {
         "text": "시전 속도 +5~10%",
         "variable": true
       },
       {
-        "text": "번개 저항 25~40%",
+        "text": "마법 기술 피해 +5~10%",
         "variable": true
       },
       {
@@ -20245,11 +20277,15 @@
         "variable": true
       },
       {
+        "text": "번개 저항 +25~40%",
+        "variable": true
+      },
+      {
         "text": "마법 피해 8~12 감소",
         "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-417-22713b2650b1.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -20259,7 +20295,7 @@
   },
   {
     "id": "418",
-    "name": "Gheed's Wager",
+    "name": "기드의 내기",
     "english": "Gheed's Wager",
     "legacy": "",
     "aliases": [],
@@ -20273,6 +20309,10 @@
     "dexterity": 0,
     "options": [
       {
+        "text": "달리기/걷기 속도 +10~20%",
+        "variable": true
+      },
+      {
         "text": "시전 속도 +10~20%",
         "variable": true
       },
@@ -20281,27 +20321,23 @@
         "variable": true
       },
       {
-        "text": "달리기/걷기 속도 +10~20%",
-        "variable": true
-      },
-      {
-        "text": "방어력 +90~150%",
-        "variable": true
-      },
-      {
         "text": "적의 마법 저항 -3~7%",
         "variable": true
       },
       {
-        "text": "모든 저항 +5~15",
+        "text": "방어력 +90~150% 증가",
         "variable": true
       },
       {
         "text": "괴물에게서 얻는 금화 44~75% 증가",
         "variable": true
+      },
+      {
+        "text": "모든 저항 +5~15",
+        "variable": true
       }
     ],
-    "image": "",
+    "image": "/uniques/rotw-418-f4a8cf2bef6f.png",
     "imageSource": "",
     "variant": "",
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
@@ -21227,6 +21263,372 @@
     "requirementsNote": "",
     "baseStats": [],
     "availability": "",
+    "optionGroups": []
+  },
+  {
+    "id": "419",
+    "name": "지옥파수꾼의 의지",
+    "english": "Hellwarden's Will",
+    "legacy": "",
+    "aliases": [],
+    "base": "데스 마스크",
+    "baseEnglish": "Death Mask",
+    "category": "방어구",
+    "type": "투구",
+    "tier": "익셉셔널",
+    "level": 50,
+    "strength": 55,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "+1 모든 기술 레벨",
+        "variable": false
+      },
+      {
+        "text": "공격 속도 +20%",
+        "variable": false
+      },
+      {
+        "text": "시전 속도 +20%",
+        "variable": false
+      },
+      {
+        "text": "적의 마법 저항 -5~8%",
+        "variable": true
+      },
+      {
+        "text": "적의 화염 저항 -5~8%",
+        "variable": true
+      },
+      {
+        "text": "방어력 +150~215% 증가",
+        "variable": true
+      },
+      {
+        "text": "적 처치 시 마나 +4~6",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-419-2da8f693dc08.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+    "baseStats": [
+      "기본 방어력 54~86"
+    ],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
+    "optionGroups": []
+  },
+  {
+    "id": "420",
+    "name": "수호자의 역정",
+    "english": "Defender's Bile",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 주얼",
+    "baseEnglish": "Colossal Jewel",
+    "category": "장신구·기타",
+    "type": "주얼",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "피격 시 1% 확률로 25 레벨 뼈 갑옷 시전",
+        "variable": false
+      },
+      {
+        "text": "독 피해 +95 (1초에 걸쳐)",
+        "variable": false
+      },
+      {
+        "text": "독 기술 피해 +5~10%",
+        "variable": true
+      },
+      {
+        "text": "적의 독 저항 -5~10%",
+        "variable": true
+      },
+      {
+        "text": "경험치 획득량 +3~5%",
+        "variable": true
+      },
+      {
+        "text": "괴물에게서 얻는 금화 25~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 15~35% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-420-775d906ce719.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "고유 거대 주얼은 전체 장비를 통틀어 하나만 장착할 수 있습니다.",
+    "baseStats": [],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
+    "optionGroups": []
+  },
+  {
+    "id": "421",
+    "name": "감시자의 천둥",
+    "english": "Guardian's Thunder",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 주얼",
+    "baseEnglish": "Colossal Jewel",
+    "category": "장신구·기타",
+    "type": "주얼",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "피격 시 1% 확률로 25 레벨 회오리 갑옷 시전",
+        "variable": false
+      },
+      {
+        "text": "번개 피해 1 - 75 추가",
+        "variable": false
+      },
+      {
+        "text": "번개 기술 피해 +5~10%",
+        "variable": true
+      },
+      {
+        "text": "적의 번개 저항 -5~10%",
+        "variable": true
+      },
+      {
+        "text": "경험치 획득량 +3~5%",
+        "variable": true
+      },
+      {
+        "text": "괴물에게서 얻는 금화 25~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 15~35% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-421-e5982e1a00c6.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "고유 거대 주얼은 전체 장비를 통틀어 하나만 장착할 수 있습니다.",
+    "baseStats": [],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
+    "optionGroups": []
+  },
+  {
+    "id": "422",
+    "name": "보호자의 서리",
+    "english": "Protector's Frost",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 주얼",
+    "baseEnglish": "Colossal Jewel",
+    "category": "장신구·기타",
+    "type": "주얼",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "피격 시 1% 확률로 25 레벨 얼어붙은 갑옷 시전",
+        "variable": false
+      },
+      {
+        "text": "냉기 피해 10 - 30 추가",
+        "variable": false
+      },
+      {
+        "text": "적의 냉기 저항 -5~10%",
+        "variable": true
+      },
+      {
+        "text": "냉기 기술 피해 +5~10%",
+        "variable": true
+      },
+      {
+        "text": "경험치 획득량 +3~5%",
+        "variable": true
+      },
+      {
+        "text": "괴물에게서 얻는 금화 25~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 15~35% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-422-1f2fcc48e5c6.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "고유 거대 주얼은 전체 장비를 통틀어 하나만 장착할 수 있습니다.",
+    "baseStats": [],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
+    "optionGroups": []
+  },
+  {
+    "id": "423",
+    "name": "수호자의 불",
+    "english": "Defender's Fire",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 주얼",
+    "baseEnglish": "Colossal Jewel",
+    "category": "장신구·기타",
+    "type": "주얼",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "피격 시 1% 확률로 25 레벨 불길 시전",
+        "variable": false
+      },
+      {
+        "text": "화염 피해 20 - 60 추가",
+        "variable": false
+      },
+      {
+        "text": "화염 기술 피해 +5~10%",
+        "variable": true
+      },
+      {
+        "text": "적의 화염 저항 -5~10%",
+        "variable": true
+      },
+      {
+        "text": "경험치 획득량 +3~5%",
+        "variable": true
+      },
+      {
+        "text": "괴물에게서 얻는 금화 25~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 15~35% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-423-775d906ce719.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "고유 거대 주얼은 전체 장비를 통틀어 하나만 장착할 수 있습니다.",
+    "baseStats": [],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
+    "optionGroups": []
+  },
+  {
+    "id": "424",
+    "name": "보호자의 돌",
+    "english": "Protector's Stone",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 주얼",
+    "baseEnglish": "Colossal Jewel",
+    "category": "장신구·기타",
+    "type": "주얼",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "피격 시 1% 확률로 15 레벨 흐리기 시전",
+        "variable": false
+      },
+      {
+        "text": "피해 +30~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "피해 10 - 30 추가",
+        "variable": false
+      },
+      {
+        "text": "적의 물리 피해 저항 -5~10%",
+        "variable": true
+      },
+      {
+        "text": "경험치 획득량 +3~5%",
+        "variable": true
+      },
+      {
+        "text": "괴물에게서 얻는 금화 25~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 15~35% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-424-1f2fcc48e5c6.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "고유 거대 주얼은 전체 장비를 통틀어 하나만 장착할 수 있습니다.",
+    "baseStats": [],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
+    "optionGroups": []
+  },
+  {
+    "id": "425",
+    "name": "감시자의 빛",
+    "english": "Guardian's Light",
+    "legacy": "",
+    "aliases": [],
+    "base": "거대 주얼",
+    "baseEnglish": "Colossal Jewel",
+    "category": "장신구·기타",
+    "type": "주얼",
+    "tier": "기타",
+    "level": 75,
+    "strength": 0,
+    "dexterity": 0,
+    "options": [
+      {
+        "text": "피격 시 1% 확률로 25 레벨 정신 결계 시전",
+        "variable": false
+      },
+      {
+        "text": "마법 피해 15 - 35 추가",
+        "variable": false
+      },
+      {
+        "text": "적의 마법 저항 -5~10%",
+        "variable": true
+      },
+      {
+        "text": "마법 기술 피해 +5~10%",
+        "variable": true
+      },
+      {
+        "text": "경험치 획득량 +3~5%",
+        "variable": true
+      },
+      {
+        "text": "괴물에게서 얻는 금화 25~50% 증가",
+        "variable": true
+      },
+      {
+        "text": "마법 아이템 발견 확률 15~35% 증가",
+        "variable": true
+      }
+    ],
+    "image": "/uniques/rotw-425-e5982e1a00c6.png",
+    "imageSource": "",
+    "variant": "",
+    "requirementsNote": "고유 거대 주얼은 전체 장비를 통틀어 하나만 장착할 수 있습니다.",
+    "baseStats": [],
+    "availability": "악마술사의 군림에서 획득할 수 있습니다.",
     "optionGroups": []
   }
 ]

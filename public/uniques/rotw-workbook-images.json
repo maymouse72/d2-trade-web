@@ -1,0 +1,290 @@
+[
+  {
+    "id": "419",
+    "name": "지옥파수꾼의 의지",
+    "english": "Hellwarden's Will",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 3,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-419-2da8f693dc08.png",
+    "sha256": "2da8f693dc082526daab60452c795366b16829a6d5eb76bcd1af9e72a1db13d4",
+    "originalSize": [
+      196,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "420",
+    "name": "수호자의 역정",
+    "english": "Defender's Bile",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 4,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-420-775d906ce719.png",
+    "sha256": "775d906ce71919873e5bbf236b1360ab875456f3b5021defebfb5b4af4ae08f2",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "421",
+    "name": "감시자의 천둥",
+    "english": "Guardian's Thunder",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 5,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-421-e5982e1a00c6.png",
+    "sha256": "e5982e1a00c6355847aa4b057d038904febb6c141227801f7315c5f96eee3b8b",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "422",
+    "name": "보호자의 서리",
+    "english": "Protector's Frost",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 6,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-422-1f2fcc48e5c6.png",
+    "sha256": "1f2fcc48e5c65e8b1ef3d4d1473825abb6da5b8f3edb82d19b0dd5f3a476806b",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "423",
+    "name": "수호자의 불",
+    "english": "Defender's Fire",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 7,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-423-775d906ce719.png",
+    "sha256": "775d906ce71919873e5bbf236b1360ab875456f3b5021defebfb5b4af4ae08f2",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "424",
+    "name": "보호자의 돌",
+    "english": "Protector's Stone",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 8,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-424-1f2fcc48e5c6.png",
+    "sha256": "1f2fcc48e5c65e8b1ef3d4d1473825abb6da5b8f3edb82d19b0dd5f3a476806b",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "425",
+    "name": "감시자의 빛",
+    "english": "Guardian's Light",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 9,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-425-e5982e1a00c6.png",
+    "sha256": "e5982e1a00c6355847aa4b057d038904febb6c141227801f7315c5f96eee3b8b",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "408",
+    "name": "아르스 알디아볼로스",
+    "english": "Ars Al'Diabolos",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 10,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-408-c84e7eba8dac.png",
+    "sha256": "c84e7eba8dacd44403ca9f0fbabf33d3be5cd3e03d04b901a4fa903a1aeba330",
+    "originalSize": [
+      196,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "409",
+    "name": "아르스 토르바알로스",
+    "english": "Ars Tor'Baalos",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 11,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-409-c84e7eba8dac.png",
+    "sha256": "c84e7eba8dacd44403ca9f0fbabf33d3be5cd3e03d04b901a4fa903a1aeba330",
+    "originalSize": [
+      196,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "410",
+    "name": "아르스 둘메피스토스",
+    "english": "Ars Dul'Mephistos",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 12,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-410-c84e7eba8dac.png",
+    "sha256": "c84e7eba8dacd44403ca9f0fbabf33d3be5cd3e03d04b901a4fa903a1aeba330",
+    "originalSize": [
+      196,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "411",
+    "name": "신중한 진노",
+    "english": "Measured Wrath",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 13,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-411-37d022012be0.png",
+    "sha256": "37d022012be074cc9e19f3ca14704c641f2dc2e98f64edc2c66b654aa3958e0c",
+    "originalSize": [
+      196,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "412",
+    "name": "공포송곳니",
+    "english": "Dreadfang",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 14,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-412-fd3f3abdac6c.png",
+    "sha256": "fd3f3abdac6ca621abef7723f7a6426ddf8d67244f2b61882ac42bddd21d2d12",
+    "originalSize": [
+      98,
+      392
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "413",
+    "name": "망령걸음",
+    "english": "Wraithstep",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 15,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-413-3cb764232e56.png",
+    "sha256": "3cb764232e5637f5172a10dc4ece9f0033dc91f5ff99908df1e73ca2f227425e",
+    "originalSize": [
+      196,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "414",
+    "name": "피의 맹약 파편",
+    "english": "Bloodpact Shard",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 16,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-414-b4152cbc717a.png",
+    "sha256": "b4152cbc717a476a517c380db2e953b1f3f552417c901983a35b6712b1ae05d0",
+    "originalSize": [
+      98,
+      196
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "415",
+    "name": "새총",
+    "english": "Sling",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 17,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-415-e36e28282808.png",
+    "sha256": "e36e282828084b3f16ca7981ed4ddda53d617974a51621a86df748332ac63deb",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "416",
+    "name": "오팔맥",
+    "english": "Opalvein",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 18,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-416-e36e28282808.png",
+    "sha256": "e36e282828084b3f16ca7981ed4ddda53d617974a51621a86df748332ac63deb",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "417",
+    "name": "엔트로피 로켓",
+    "english": "Entropy Locket",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 19,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-417-22713b2650b1.png",
+    "sha256": "22713b2650b1bc3773beed03f7373bb3b1b19167e6b89c476fba2d6ba2401ba6",
+    "originalSize": [
+      98,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  },
+  {
+    "id": "418",
+    "name": "기드의 내기",
+    "english": "Gheed's Wager",
+    "workbook": "이미지준비목록.xlsx",
+    "sheet": "Sheet1",
+    "row": 20,
+    "imageColumn": "C",
+    "image": "/uniques/rotw-418-f4a8cf2bef6f.png",
+    "sha256": "f4a8cf2bef6fae3e6ef6a86152514aec8b740e513aa4e896a3711b284a64d0d7",
+    "originalSize": [
+      196,
+      98
+    ],
+    "source": "사용자 제공 엑셀 내장 이미지 (원본 바이트 유지)"
+  }
+]
