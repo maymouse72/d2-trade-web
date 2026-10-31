@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { bucket, columns, difficulties, highest, metadata, normalizeLevel, recommendedRange, rows, winners, type Filter } from './experience';
+import GameInfoNavigation from '../GameInfoNavigation';
 import styles from './experience.module.css';
 
 const filters: { id: Filter; name: string }[] = [{ id: 'all', name: '전체' }, ...difficulties];
@@ -42,6 +43,7 @@ export default function ExperienceExplorer() {
   return (
     <section className={styles.explorer} aria-labelledby="experience-title">
       <p className={styles.breadcrumb}>게임 정보 <span aria-hidden="true">›</span> 경험치 효율 조회</p>
+      <GameInfoNavigation active="experience" />
       <div className={styles.heading}><h2 id="experience-title">경험치 효율 조회</h2><span className={styles.badge}>참고 자료</span></div>
       <p className={styles.intro}>내 레벨에 맞는 난이도와 액트를 비교해 보세요.</p>
 

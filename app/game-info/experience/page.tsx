@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <SiteFrame active="experience"><ExperienceExplorer /></SiteFrame>;
+  return <SiteFrame active="game-info"><ExperienceExplorer /></SiteFrame>;
 }

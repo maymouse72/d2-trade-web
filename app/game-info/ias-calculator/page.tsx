@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <SiteFrame active="ias-calculator"><IASCalculator /></SiteFrame>;
+  return <SiteFrame active="game-info"><IASCalculator /></SiteFrame>;
 }

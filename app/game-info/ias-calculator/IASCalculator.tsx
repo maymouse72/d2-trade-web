@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { getCalculatorViewModel, IAS_BREAKPOINTS } from '../../../lib/ias/ui-model';
+import GameInfoNavigation from '../GameInfoNavigation';
 import styles from './ias-calculator.module.css';
 
 const classes = [
@@ -33,6 +34,7 @@ export default function IASCalculator() {
   return (
     <section className={styles.calculator} aria-labelledby="ias-title">
       <p className={styles.breadcrumb}>게임 정보 <span aria-hidden="true">›</span> 공속 계산기</p>
+      <GameInfoNavigation active="ias-calculator" />
       <div className={styles.heading}><h2 id="ias-title">디아블로2 레저렉션 공속 계산기</h2><span className={styles.badge}>시험 운영</span></div>
       <p className={styles.intro}>IAS 수치에 따른 공격 애니메이션 프레임과 브레이크포인트를 확인할 수 있습니다.</p>
       <p className={styles.notice}>현재 시험 운영 버전은 성기사의 크리스탈 소드 일반 공격 A1 기준 애니메이션만 지원합니다. 표시되는 프레임은 전체 애니메이션 길이이며, 실제 타격 판정 시점이나 모든 일반 공격의 반복 주기를 의미하지 않습니다.</p>
