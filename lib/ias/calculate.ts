@@ -5,6 +5,7 @@ import type { CalculationTrace, IASResult } from "./types.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
 import { getSkillGoldenFrameCount } from "./skill-golden.ts";
+import { calculateSupportedZeal } from "./zeal.ts";
 
 function emptyResult(
   status: IASResult["status"],
@@ -30,6 +31,8 @@ export function calculateIAS(input: unknown): IASResult {
   if (support.status !== "SUPPORTED" || !support.input) {
     return emptyResult(support.status, support.reasonCode as IASResult["reasonCode"], support.reason);
   }
+
+  if (support.input.skill === "ZEAL") return calculateSupportedZeal(support.input);
 
   const weapon = IAS_WEAPONS[support.input.weaponCode];
   const totalIAS = support.input.totalIAS;

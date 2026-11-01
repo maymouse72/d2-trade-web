@@ -61,6 +61,7 @@ export interface IASInput {
   weaponCode: string;
   weaponIAS: number;
   offWeaponIAS: number;
+  hitCount?: number;
   skillIAS?: number;
   buffIAS?: number;
   debuffIAS?: number;
@@ -91,6 +92,18 @@ export interface IASResult {
   evidenceVersion: string | null;
   reason: string;
   trace?: CalculationTrace;
+  zealSequence?: IASZealSequence | null;
+}
+
+export interface IASZealSequence {
+  hitCount: number;
+  firstHitFrame: number;
+  subsequentHitFrames: number;
+  finalHitFrame: number;
+  firstAttackFrames: number;
+  followUpAttackFrames: number;
+  finalAttackFrames: number;
+  totalSequenceFrames: number;
 }
 
 export interface BreakpointDetails {

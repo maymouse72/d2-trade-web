@@ -1,5 +1,5 @@
 import type { IASCharacterClass, IASStatus } from "./types.ts";
-import { IAS_HARD_MAX } from "./constants.ts";
+import { IAS_HARD_MAX, ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
 
@@ -27,6 +27,7 @@ export interface NormalizedIASInput {
   skillIAS: number;
   buffIAS: number;
   debuffIAS: number;
+  hitCount: number;
 }
 
 export interface SupportDecision {
@@ -83,12 +84,22 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     return decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `지원 가능한 최대 공속 증가 합계는 ${IAS_HARD_MAX}입니다.`);
   }
 
+  const skillCode = (value.skill as string | undefined) ?? "NORMAL_ATTACK";
+  const rawHitCount = value.hitCount === undefined ? 5 : value.hitCount;
+  if (skillCode === "ZEAL" && !isIASNumber(rawHitCount)) {
+    return decision("INVALID_INPUT", "INVALID_INPUT", "열의 공격 횟수는 2~5 사이 정수여야 합니다.");
+  }
+  const hitCount = isIASNumber(rawHitCount) ? rawHitCount : 5;
+  if (skillCode === "ZEAL" && (hitCount < 2 || hitCount > 5)) {
+    return decision("INVALID_INPUT", "INVALID_INPUT", "열의 공격 횟수는 2~5 사이 정수여야 합니다.");
+  }
+
   const input: NormalizedIASInput = {
     characterClass: value.characterClass as string,
     characterForm: value.characterForm as string,
     attackMode: value.attackMode as string,
     animation: value.animation as string,
-    skill: (value.skill as string | undefined) ?? "NORMAL_ATTACK",
+    skill: skillCode,
     weaponCode,
     weaponIAS: value.weaponIAS,
     offWeaponIAS: value.offWeaponIAS,
@@ -96,11 +107,21 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     skillIAS: (value.skillIAS as number | undefined) ?? 0,
     buffIAS: (value.buffIAS as number | undefined) ?? 0,
     debuffIAS: (value.debuffIAS as number | undefined) ?? 0,
+    hitCount,
   };
 
   const weapon = IAS_WEAPONS[weaponCode];
-  if (weapon && totalIAS > weapon.maxIAS) {
+  if (skillCode !== "ZEAL" && weapon && totalIAS > weapon.maxIAS) {
     return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon.name}의 검증 범위는 ${weapon.minIAS}~${weapon.maxIAS} IAS입니다.`), input };
+  }
+  if (skillCode === "ZEAL") {
+    const zealMaxIAS = ZEAL_MAX_IAS_BY_WEAPON[weaponCode];
+    if (zealMaxIAS === undefined) {
+      return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "열의는 검증된 Paladin 1HS 무기만 지원합니다."), input };
+    }
+    if (totalIAS > zealMaxIAS) {
+      return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon?.name ?? weaponCode} 열의 검증 범위는 0~${zealMaxIAS} IAS입니다.`), input };
+    }
   }
 
   if (!KNOWN_CLASSES.includes(input.characterClass as IASCharacterClass) || input.characterClass !== "PALADIN") {
@@ -110,7 +131,7 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_FORM", "현재 검증된 형태는 Human Form뿐입니다."), input };
   }
   if (input.attackMode !== "NORMAL") {
-    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "현재 지원하는 공격 유형은 일반 A1 단타입니다."), input };
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "현재 지원하는 공격 유형은 검증된 A1 공격입니다."), input };
   }
   const skill = IAS_SKILLS[input.skill as keyof typeof IAS_SKILLS];
   if (!skill) {
