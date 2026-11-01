@@ -1,0 +1,8790 @@
+{
+  "datasetId": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+  "gameBuild": "3.3.93847",
+  "characterClass": "PALADIN",
+  "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+  "independentGameMeasurement": false,
+  "sourceFiles": [
+    "paladin-crs-a1-golden.json",
+    "paladin-7cr-a1-golden.json",
+    "paladin-whm-a1-golden.json"
+  ],
+  "rowCount": 2160,
+  "datasets": [
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-crs-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 96,
+      "skill": "SACRIFICE",
+      "animationMode": "A1",
+      "weaponCode": "crs",
+      "WSM": 0,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "39e8b8046482a7bbf4c0bb7ebc6fc52f83954df657193ddf5bdc275a3937a4d2",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-crs-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 111,
+      "skill": "VENGEANCE",
+      "animationMode": "A1",
+      "weaponCode": "crs",
+      "WSM": 0,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "39e8b8046482a7bbf4c0bb7ebc6fc52f83954df657193ddf5bdc275a3937a4d2",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-crs-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 116,
+      "skill": "CONVERSION",
+      "animationMode": "A1",
+      "weaponCode": "crs",
+      "WSM": 0,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "39e8b8046482a7bbf4c0bb7ebc6fc52f83954df657193ddf5bdc275a3937a4d2",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-7cr-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 96,
+      "skill": "SACRIFICE",
+      "animationMode": "A1",
+      "weaponCode": "7cr",
+      "WSM": -30,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "45a22b763c7ca12b6a438dc355b3b1e2a52a6879897e4e6439f63e5068141fbb",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-7cr-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 111,
+      "skill": "VENGEANCE",
+      "animationMode": "A1",
+      "weaponCode": "7cr",
+      "WSM": -30,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "45a22b763c7ca12b6a438dc355b3b1e2a52a6879897e4e6439f63e5068141fbb",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-7cr-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 116,
+      "skill": "CONVERSION",
+      "animationMode": "A1",
+      "weaponCode": "7cr",
+      "WSM": -30,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "45a22b763c7ca12b6a438dc355b3b1e2a52a6879897e4e6439f63e5068141fbb",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 8
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-whm-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 96,
+      "skill": "SACRIFICE",
+      "animationMode": "A1",
+      "weaponCode": "whm",
+      "WSM": 20,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "6014cdb7559e965d97d714ccb7d1671947bd2cf3680ab08911d1202401fca8c0",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 201,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 202,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 203,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 204,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 205,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 206,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 207,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 208,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 209,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 210,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 211,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 212,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 213,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 214,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 215,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 216,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 217,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 218,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 219,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 220,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 221,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 222,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 223,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 224,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 225,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 226,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 227,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 228,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 229,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 230,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 231,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 232,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 233,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 234,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 235,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 236,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 237,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 238,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 239,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 240,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 241,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 242,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 243,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 244,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 245,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 246,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 247,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 248,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 249,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 250,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 251,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 252,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 253,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 254,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 255,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 256,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 257,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 258,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 259,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 260,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 261,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 262,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 263,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 264,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 265,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 266,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 267,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 268,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 269,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 270,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 271,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 272,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 273,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 274,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 275,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 276,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 277,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 278,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 279,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 280,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 281,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 282,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 283,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 284,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 285,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 286,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 287,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 288,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 289,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 290,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 291,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 292,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 293,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 294,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 295,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 296,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 297,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 298,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 299,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 300,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 301,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 302,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 303,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 304,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 305,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 306,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 307,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 308,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 309,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 310,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 311,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 312,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 313,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 314,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 315,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 316,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 317,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-whm-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 111,
+      "skill": "VENGEANCE",
+      "animationMode": "A1",
+      "weaponCode": "whm",
+      "WSM": 20,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "6014cdb7559e965d97d714ccb7d1671947bd2cf3680ab08911d1202401fca8c0",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 201,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 202,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 203,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 204,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 205,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 206,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 207,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 208,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 209,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 210,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 211,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 212,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 213,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 214,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 215,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 216,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 217,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 218,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 219,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 220,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 221,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 222,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 223,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 224,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 225,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 226,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 227,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 228,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 229,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 230,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 231,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 232,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 233,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 234,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 235,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 236,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 237,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 238,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 239,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 240,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 241,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 242,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 243,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 244,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 245,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 246,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 247,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 248,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 249,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 250,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 251,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 252,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 253,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 254,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 255,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 256,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 257,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 258,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 259,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 260,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 261,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 262,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 263,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 264,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 265,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 266,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 267,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 268,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 269,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 270,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 271,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 272,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 273,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 274,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 275,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 276,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 277,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 278,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 279,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 280,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 281,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 282,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 283,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 284,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 285,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 286,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 287,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 288,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 289,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 290,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 291,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 292,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 293,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 294,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 295,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 296,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 297,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 298,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 299,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 300,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 301,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 302,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 303,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 304,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 305,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 306,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 307,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 308,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 309,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 310,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 311,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 312,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 313,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 314,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 315,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 316,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 317,
+          "expectedFrames": 8
+        }
+      ]
+    },
+    {
+      "derivedFrom": "PALADIN-A1-SKILL-DERIVED-3.3.93847",
+      "sourceGolden": "lib/ias/data/paladin-whm-a1-golden.json",
+      "gameBuild": "3.3.93847",
+      "skillId": 116,
+      "skill": "CONVERSION",
+      "animationMode": "A1",
+      "weaponCode": "whm",
+      "WSM": 20,
+      "evidenceScope": "Paladin human single one-handed A1 hit; derived from existing A1 table, not an independent in-game measurement.",
+      "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+      "sourceHash": "6014cdb7559e965d97d714ccb7d1671947bd2cf3680ab08911d1202401fca8c0",
+      "rows": [
+        {
+          "IAS": 0,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 1,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 2,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 3,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 4,
+          "expectedFrames": 18
+        },
+        {
+          "IAS": 5,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 6,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 7,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 8,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 9,
+          "expectedFrames": 17
+        },
+        {
+          "IAS": 10,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 11,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 12,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 13,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 14,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 15,
+          "expectedFrames": 16
+        },
+        {
+          "IAS": 16,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 17,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 18,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 19,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 20,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 21,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 22,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 23,
+          "expectedFrames": 15
+        },
+        {
+          "IAS": 24,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 25,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 26,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 27,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 28,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 29,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 30,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 31,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 32,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 33,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 34,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 35,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 36,
+          "expectedFrames": 14
+        },
+        {
+          "IAS": 37,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 38,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 39,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 40,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 41,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 42,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 43,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 44,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 45,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 46,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 47,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 48,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 49,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 50,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 51,
+          "expectedFrames": 13
+        },
+        {
+          "IAS": 52,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 53,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 54,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 55,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 56,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 57,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 58,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 59,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 60,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 61,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 62,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 63,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 64,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 65,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 66,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 67,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 68,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 69,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 70,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 71,
+          "expectedFrames": 12
+        },
+        {
+          "IAS": 72,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 73,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 74,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 75,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 76,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 77,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 78,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 79,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 80,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 81,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 82,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 83,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 84,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 85,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 86,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 87,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 88,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 89,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 90,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 91,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 92,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 93,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 94,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 95,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 96,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 97,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 98,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 99,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 100,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 101,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 102,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 103,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 104,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 105,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 106,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 107,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 108,
+          "expectedFrames": 11
+        },
+        {
+          "IAS": 109,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 110,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 111,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 112,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 113,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 114,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 115,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 116,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 117,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 118,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 119,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 120,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 121,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 122,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 123,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 124,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 125,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 126,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 127,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 128,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 129,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 130,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 131,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 132,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 133,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 134,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 135,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 136,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 137,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 138,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 139,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 140,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 141,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 142,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 143,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 144,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 145,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 146,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 147,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 148,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 149,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 150,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 151,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 152,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 153,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 154,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 155,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 156,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 157,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 158,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 159,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 160,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 161,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 162,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 163,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 164,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 165,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 166,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 167,
+          "expectedFrames": 10
+        },
+        {
+          "IAS": 168,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 169,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 170,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 171,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 172,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 173,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 174,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 175,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 176,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 177,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 178,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 179,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 180,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 181,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 182,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 183,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 184,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 185,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 186,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 187,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 188,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 189,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 190,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 191,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 192,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 193,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 194,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 195,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 196,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 197,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 198,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 199,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 200,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 201,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 202,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 203,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 204,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 205,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 206,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 207,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 208,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 209,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 210,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 211,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 212,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 213,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 214,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 215,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 216,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 217,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 218,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 219,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 220,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 221,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 222,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 223,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 224,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 225,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 226,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 227,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 228,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 229,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 230,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 231,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 232,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 233,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 234,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 235,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 236,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 237,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 238,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 239,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 240,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 241,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 242,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 243,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 244,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 245,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 246,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 247,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 248,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 249,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 250,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 251,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 252,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 253,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 254,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 255,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 256,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 257,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 258,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 259,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 260,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 261,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 262,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 263,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 264,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 265,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 266,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 267,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 268,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 269,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 270,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 271,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 272,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 273,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 274,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 275,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 276,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 277,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 278,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 279,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 280,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 281,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 282,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 283,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 284,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 285,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 286,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 287,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 288,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 289,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 290,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 291,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 292,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 293,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 294,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 295,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 296,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 297,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 298,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 299,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 300,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 301,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 302,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 303,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 304,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 305,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 306,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 307,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 308,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 309,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 310,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 311,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 312,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 313,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 314,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 315,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 316,
+          "expectedFrames": 9
+        },
+        {
+          "IAS": 317,
+          "expectedFrames": 8
+        }
+      ]
+    }
+  ]
+}

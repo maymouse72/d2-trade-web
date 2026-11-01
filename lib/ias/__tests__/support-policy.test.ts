@@ -41,6 +41,21 @@ test("accepts verified weapons and blocks unverified combinations", () => {
   assertNoNumbers({ ...base, buffIAS: 20 }, "UNVERIFIED");
 });
 
+test("supports the three skill records only for verified Paladin A1 single-hit conditions", () => {
+  for (const [skill, skillId] of [["SACRIFICE", 96], ["VENGEANCE", 111], ["CONVERSION", 116]] as const) {
+    const input = { ...base, skill };
+    assert.equal(evaluateIASSupport(input).status, "SUPPORTED", skill);
+    assertNoNumbers({ ...input, animation: "A2" }, "UNVERIFIED");
+    assertNoNumbers({ ...input, skillIAS: 1 }, "UNVERIFIED");
+    assertNoNumbers({ ...input, characterClass: "AMAZON" }, "UNSUPPORTED");
+    assert.equal(evaluateIASSupport(input).input?.skill, skill);
+    assert.ok(skillId > 0);
+  }
+  assertNoNumbers({ ...base, skill: "ZEAL" }, "UNSUPPORTED");
+  assertNoNumbers({ ...base, skill: "SMITE" }, "UNSUPPORTED");
+  assertNoNumbers({ ...base, skill: "NOT_A_SKILL" }, "UNSUPPORTED");
+});
+
 test("rejects malformed and out-of-range values", () => {
   const invalidCases: unknown[] = [
     { ...base, weaponIAS: -1 },

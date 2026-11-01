@@ -1,12 +1,21 @@
 import { calculateIAS, deriveGoldenBreakpoints, getGoldenFrameCount } from "./index.ts";
-import type { IASAnimation, IASResult } from "./types.ts";
+import type { IASAnimation, IASAttackSkill, IASResult } from "./types.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
+import { IAS_SKILLS } from "./skills.ts";
+import { deriveSkillGoldenBreakpoints, getSkillGoldenFrameCount } from "./skill-golden.ts";
 
-export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1") {
+export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1", skill: IASAttackSkill = "NORMAL_ATTACK") {
   if (animation !== "A1" || IAS_WEAPONS[weaponCode]?.animationEvidence[animation].status !== "VERIFIED") return [];
-  return deriveGoldenBreakpoints(weaponCode).map((ias) => ({
+  const skillDefinition = IAS_SKILLS[skill];
+  if (skillDefinition?.supportStatus !== "SUPPORTED") return [];
+  const breakpoints = skill === "NORMAL_ATTACK"
+    ? deriveGoldenBreakpoints(weaponCode)
+    : deriveSkillGoldenBreakpoints(skill, weaponCode);
+  return breakpoints.map((ias) => ({
     ias,
-    fullAnimationFrames: getGoldenFrameCount(weaponCode, ias) as number,
+    fullAnimationFrames: (skill === "NORMAL_ATTACK"
+      ? getGoldenFrameCount(weaponCode, ias)
+      : getSkillGoldenFrameCount(skill, weaponCode, ias)) as number,
   }));
 }
 
@@ -14,6 +23,7 @@ export type CalculatorSelection = {
   characterClass: string;
   weaponCode: string;
   animation: string;
+  skill?: string;
 };
 
 export type CalculatorViewModel =
@@ -27,13 +37,19 @@ export function constrainIASInput(rawIAS: string, maxIAS: number): string {
 }
 
 export function getCalculatorViewModel(rawIAS: string, selection: CalculatorSelection): CalculatorViewModel {
+  return getCalculatorViewModelFromParts("0", rawIAS, selection);
+}
+
+export function getCalculatorViewModelFromParts(rawWeaponIAS: string, rawOffWeaponIAS: string, selection: CalculatorSelection): CalculatorViewModel {
   const weapon = IAS_WEAPONS[selection.weaponCode];
   const maxIAS = weapon?.maxIAS ?? 317;
-  if (!/^\d+$/.test(rawIAS)) {
-    return { status: "INVALID_INPUT", reason: `공격 속도 증가 합계는 0~${maxIAS} 사이의 정수로 입력해 주세요.` };
+  if (!/^\d+$/.test(rawWeaponIAS) || !/^\d+$/.test(rawOffWeaponIAS)) {
+    return { status: "INVALID_INPUT", reason: `무기 IAS와 장비 IAS를 각각 0 이상의 정수로 입력해 주세요. 합계 범위는 0~${maxIAS}입니다.` };
   }
 
-  const ias = Number(rawIAS);
+  const weaponIAS = Number(rawWeaponIAS);
+  const offWeaponIAS = Number(rawOffWeaponIAS);
+  const ias = weaponIAS + offWeaponIAS;
   if (!Number.isSafeInteger(ias) || ias > maxIAS) return { status: "INVALID_INPUT", reason: `공격 속도 증가 합계는 0~${maxIAS} 사이의 정수로 입력해 주세요.` };
 
   const result = calculateIAS({
@@ -41,9 +57,10 @@ export function getCalculatorViewModel(rawIAS: string, selection: CalculatorSele
     characterForm: "HUMAN",
     attackMode: "NORMAL",
     animation: selection.animation,
+    skill: selection.skill ?? "NORMAL_ATTACK",
     weaponCode: selection.weaponCode,
-    weaponIAS: 0,
-    offWeaponIAS: ias,
+    weaponIAS,
+    offWeaponIAS,
     skillIAS: 0,
     buffIAS: 0,
     debuffIAS: 0,

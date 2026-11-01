@@ -1,6 +1,7 @@
 import type { IASCharacterClass, IASStatus } from "./types.ts";
 import { IAS_HARD_MAX } from "./constants.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
+import { IAS_SKILLS } from "./skills.ts";
 
 const KNOWN_CLASSES: readonly IASCharacterClass[] = [
   "PALADIN",
@@ -18,6 +19,7 @@ export interface NormalizedIASInput {
   characterForm: string;
   attackMode: string;
   animation: string;
+  skill: string;
   weaponCode: string;
   weaponIAS: number;
   offWeaponIAS: number;
@@ -86,6 +88,7 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     characterForm: value.characterForm as string,
     attackMode: value.attackMode as string,
     animation: value.animation as string,
+    skill: (value.skill as string | undefined) ?? "NORMAL_ATTACK",
     weaponCode,
     weaponIAS: value.weaponIAS,
     offWeaponIAS: value.offWeaponIAS,
@@ -107,7 +110,26 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_FORM", "현재 검증된 형태는 Human Form뿐입니다."), input };
   }
   if (input.attackMode !== "NORMAL") {
-    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "현재 검증된 공격은 Normal Attack 기준 애니메이션뿐입니다."), input };
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "현재 지원하는 공격 유형은 일반 A1 단타입니다."), input };
+  }
+  const skill = IAS_SKILLS[input.skill as keyof typeof IAS_SKILLS];
+  if (!skill) {
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "이 공격 스킬은 IAS-4-A 지원 범위에 포함되지 않습니다."), input };
+  }
+  if (skill.supportStatus !== "SUPPORTED") {
+    return { ...decision(skill.supportStatus, skill.supportStatus === "UNVERIFIED" ? "UNVERIFIED_ANIMATION" : "UNSUPPORTED_ATTACK_MODE", skill.supportStatus === "UNVERIFIED" ? `${skill.label} 스킬의 D2R 빌드별 애니메이션 식별이 원본 skills.txt로 확인되지 않아 결과를 차단했습니다.` : `${skill.label}은(는) 후속 단계에서 검증할 예정입니다.`), input };
+  }
+  if (!weapon || !weapon.verified) {
+    return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 무기 조합은 독립적으로 검증되지 않았습니다."), input };
+  }
+  if (skill.characterClass !== input.characterClass || !skill.supportedWeapons.includes(input.weaponCode)) {
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", `${skill.label}은(는) Paladin 지원 무기의 단일 공격에만 적용됩니다.`), input };
+  }
+  if (!skill.animationMode || input.animation !== skill.animationMode) {
+    return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", `${skill.label}은(는) 검증된 A1 애니메이션만 지원합니다.`), input };
+  }
+  if (skill.speedModifierPolicy !== "NONE") {
+    return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", `${skill.label}의 스킬별 속도 보정은 검증되지 않았습니다.`), input };
   }
   if (input.skillIAS !== 0 || input.buffIAS !== 0 || input.debuffIAS !== 0) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "스킬, 버프 또는 디버프 IAS가 포함된 조합은 아직 검증되지 않았습니다."), input };
@@ -123,10 +145,6 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
       input,
     };
   }
-  if (!weapon || !weapon.verified) {
-    return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 무기 조합은 독립적으로 검증되지 않았습니다."), input };
-  }
-
   return {
     status: "SUPPORTED",
     reasonCode: "SUPPORTED_GOLDEN_MATCH",

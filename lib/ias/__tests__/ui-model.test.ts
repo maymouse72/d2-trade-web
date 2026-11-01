@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { constrainIASInput, getCalculatorViewModel, getWeaponBreakpoints } from "../ui-model.ts";
+import { constrainIASInput, getCalculatorViewModel, getCalculatorViewModelFromParts, getWeaponBreakpoints } from "../ui-model.ts";
 import { IAS_WEAPONS } from "../weapons.ts";
+import { IAS_SKILLS } from "../skills.ts";
 
 const paladin = { characterClass: "PALADIN", weaponCode: "crs", animation: "A1" };
 
@@ -80,4 +81,43 @@ test("input control constrains values to the selected weapon's maximum", () => {
   assert.equal(constrainIASInput("317", 317), "317");
   assert.equal(constrainIASInput("", 317), "");
   assert.equal(constrainIASInput("-1", 317), "-1");
+});
+
+test("split weapon and equipment IAS preserve the legacy total IAS calculation", () => {
+  const split = getCalculatorViewModelFromParts("20", "20", paladin);
+  const legacy = getCalculatorViewModel("40", paladin);
+  assert.equal(split.status, "SUPPORTED");
+  assert.equal(legacy.status, "SUPPORTED");
+  if (split.status === "SUPPORTED" && legacy.status === "SUPPORTED") {
+    assert.equal(split.ias, 40);
+    assert.deepEqual(split.result, legacy.result);
+  }
+  assert.equal(getCalculatorViewModelFromParts("201", "0", { ...paladin, weaponCode: "7cr" }).status, "INVALID_INPUT");
+  assert.equal(getCalculatorViewModelFromParts("200", "1", paladin).status, "INVALID_INPUT");
+});
+
+test("supported Paladin skills return A1 results and skill-derived breakpoint rows", () => {
+  for (const skill of ["SACRIFICE", "VENGEANCE", "CONVERSION"]) {
+    const model = getCalculatorViewModelFromParts("20", "20", { ...paladin, skill });
+    assert.equal(model.status, "SUPPORTED", skill);
+    if (model.status === "SUPPORTED") assert.equal(model.result.fullAnimationFrames, 11);
+    assert.deepEqual(getWeaponBreakpoints("crs", "A1", skill as "SACRIFICE" | "VENGEANCE" | "CONVERSION")[0], { ias: 0, fullAnimationFrames: 14 });
+  }
+  assert.equal(getCalculatorViewModelFromParts("0", "40", { ...paladin, skill: "SACRIFICE", animation: "A2" }).status, "UNVERIFIED");
+  assert.deepEqual(getWeaponBreakpoints("crs", "A2"), []);
+  assert.equal(getCalculatorViewModel("40", paladin).status, "SUPPORTED");
+});
+
+test("skill registry keeps evidence and UI support status separate", () => {
+  assert.equal(IAS_SKILLS.NORMAL_ATTACK.supportStatus, "SUPPORTED");
+  for (const code of ["SACRIFICE", "VENGEANCE", "CONVERSION"] as const) {
+    assert.equal(IAS_SKILLS[code].evidenceStatus, "VERIFIED");
+    assert.equal(IAS_SKILLS[code].supportStatus, "SUPPORTED");
+    assert.equal(IAS_SKILLS[code].selectable, true);
+    assert.equal(IAS_SKILLS[code].gameBuild, "3.3.93847");
+    assert.equal(IAS_SKILLS[code].animationMode, "A1");
+    assert.equal(IAS_SKILLS[code].gameplayTestStatus, "NOT_TESTED");
+  }
+  assert.equal(IAS_SKILLS.ZEAL.selectable, false);
+  assert.equal(IAS_SKILLS.SMITE.selectable, false);
 });

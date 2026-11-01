@@ -3,6 +3,8 @@ import { getBreakpointDetails, getGoldenFrameCount } from "./breakpoints.ts";
 import { evaluateIASSupport } from "./support-policy.ts";
 import type { CalculationTrace, IASResult } from "./types.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
+import { IAS_SKILLS } from "./skills.ts";
+import { getSkillGoldenFrameCount } from "./skill-golden.ts";
 
 function emptyResult(
   status: IASResult["status"],
@@ -42,7 +44,9 @@ export function calculateIAS(input: unknown): IASResult {
 
   const fullAnimationFrames =
     Math.ceil((256 * (PALADIN_CRS_A1.framesPerDirection - PALADIN_CRS_A1.startingFrame)) / speedIncrease) - 1;
-  const expectedFrames = getGoldenFrameCount(support.input.weaponCode, totalIAS);
+  const expectedFrames = support.input.skill === "NORMAL_ATTACK"
+    ? getGoldenFrameCount(support.input.weaponCode, totalIAS)
+    : getSkillGoldenFrameCount(support.input.skill as keyof typeof IAS_SKILLS, support.input.weaponCode, totalIAS);
   if (expectedFrames === null || fullAnimationFrames !== expectedFrames) {
     return emptyResult(
       "UNVERIFIED",
@@ -79,7 +83,7 @@ export function calculateIAS(input: unknown): IASResult {
     nextBreakpoint: breakpoint.nextBreakpoint,
     requiredAdditionalIAS: breakpoint.requiredAdditionalIAS,
     evidenceVersion: IAS_EVIDENCE_VERSION,
-    reason: support.reason,
+    reason: `${IAS_SKILLS[support.input.skill as keyof typeof IAS_SKILLS].label}: ${support.reason}`,
     trace,
   };
 }

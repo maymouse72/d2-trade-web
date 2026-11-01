@@ -1,4 +1,4 @@
-export const IAS_EVIDENCE_VERSION = "D2R-3.3.93847-IAS-3A";
+export const IAS_EVIDENCE_VERSION = "D2R-3.3.93847-IAS-4A2";
 export const IAS_HARD_MAX = 317;
 
 export const PALADIN_CRS_A1 = {

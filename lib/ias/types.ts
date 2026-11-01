@@ -9,6 +9,7 @@ export type IASCharacterClass =
   | "WARLOCK";
 
 export type IASAttackMode = "NORMAL";
+export type IASAttackSkill = "NORMAL_ATTACK" | "SACRIFICE" | "VENGEANCE" | "CONVERSION" | "ZEAL" | "SMITE";
 export type IASAnimation = "A1" | "A2";
 export type IASStatus = "SUPPORTED" | "UNVERIFIED" | "UNSUPPORTED" | "INVALID_INPUT";
 export type IASVerificationStatus = "VERIFIED" | "PROVISIONAL" | "CONFLICTED" | "UNVERIFIED";
@@ -16,6 +17,27 @@ export type IASVerificationStatus = "VERIFIED" | "PROVISIONAL" | "CONFLICTED" | 
 export interface IASAnimationEvidence {
   status: IASVerificationStatus;
   note: string;
+}
+
+export interface IASAttackSkillDefinition {
+  code: IASAttackSkill;
+  skillId: number | null;
+  skillName: string;
+  label: string;
+  characterClass: IASCharacterClass;
+  weaponClass: string | null;
+  animationMode: IASAnimation | null;
+  gameBuild: string;
+  supportedWeapons: readonly string[];
+  iasRange: Readonly<Record<string, { min: number; max: number }>> | null;
+  speedModifierPolicy: "NONE" | "UNVERIFIED";
+  evidenceSource: string;
+  evidenceScope: string;
+  gameplayTestStatus: "NOT_TESTED" | "TESTED";
+  evidenceStatus: IASVerificationStatus;
+  supportStatus: "SUPPORTED" | "UNVERIFIED" | "UNSUPPORTED";
+  selectable: boolean;
+  evidenceNote: string;
 }
 
 export type IASReasonCode =
@@ -35,6 +57,7 @@ export interface IASInput {
   characterForm: "HUMAN" | string;
   attackMode: IASAttackMode | string;
   animation: IASAnimation | string;
+  skill?: IASAttackSkill | string;
   weaponCode: string;
   weaponIAS: number;
   offWeaponIAS: number;

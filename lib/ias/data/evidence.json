@@ -1,5 +1,5 @@
 {
-  "evidenceVersion": "D2R-3.3.93847-IAS-3A",
+  "evidenceVersion": "D2R-3.3.93847-IAS-4A2",
   "accessed": "2026-11-01",
   "goldenDatasets": {
     "crs": {
@@ -80,6 +80,48 @@
     "The datasets verify Paladin A1 full-animation frame counts for listed weapons and IAS ranges only.",
     "They do not verify A2 runtime selection, hit-registration timing, repeated-input gameplay cadence, or skill/buff IAS.",
     "War Hammer is verified only through IAS 317, the upper threshold published in the reference table; IAS 318 and above are outside this dataset.",
-    "Crystal Sword's weapons.txt speed field is blank; its existing WSM 0 resolution is retained from the prior validation."
+    "Crystal Sword's weapons.txt speed field is blank; its existing WSM 0 resolution is retained from the prior validation.",
+    "Sacrifice, Vengeance, and Conversion rows in the skill-derived dataset are inherited from existing A1 Golden expectations and are not independent game measurements.",
+    "Gameplay-specific frame capture was not performed; A2, Zeal, Smite, skill/aura IAS, dual wielding, and repeated-attack cadence remain outside support."
+  ],
+  "skillDerivedGolden": {
+    "path": "lib/ias/data/paladin-a1-skill-derived-golden.json",
+    "sha256": "08c709e81ef34a0ca9adfe2378bb6ff333cd1091deba89d729ced49639dd8258",
+    "rowCount": 2160,
+    "datasetCount": 9,
+    "evidenceStatus": "DERIVED_RANGE_VALIDATION",
+    "independentGameMeasurement": false,
+    "expectedValuesSource": "Existing unchanged Paladin A1 Golden datasets, grouped by skill and weapon; not a separate in-game measurement.",
+    "sourceFiles": [
+      {
+        "path": "lib/ias/data/paladin-crs-a1-golden.json",
+        "sha256": "39e8b8046482a7bbf4c0bb7ebc6fc52f83954df657193ddf5bdc275a3937a4d2"
+      },
+      {
+        "path": "lib/ias/data/paladin-7cr-a1-golden.json",
+        "sha256": "45a22b763c7ca12b6a438dc355b3b1e2a52a6879897e4e6439f63e5068141fbb"
+      },
+      {
+        "path": "lib/ias/data/paladin-whm-a1-golden.json",
+        "sha256": "6014cdb7559e965d97d714ccb7d1671947bd2cf3680ab08911d1202401fca8c0"
+      }
+    ]
+  },
+  "skillSourceFiles": [
+    {
+      "name": "skills.txt",
+      "path": "C:\\IAS-Validation-Temp\\03-skills-extracted\\data\\data\\global\\excel\\skills.txt",
+      "sha256": "56944cb6b6b0f3c57f7b690977987a732afeafc961fa9dc969e7796e54c93f3f"
+    },
+    {
+      "name": "skilldesc.txt",
+      "path": "C:\\IAS-Validation-Temp\\03-skills-extracted\\data\\data\\global\\excel\\skilldesc.txt",
+      "sha256": "cdf11c518eab9fe678616a237fc64b28cea5ea51649ec641a14e09b06ea34b38"
+    },
+    {
+      "name": "plrmode.txt",
+      "path": "C:\\IAS-Validation-Temp\\03-skills-extracted\\data\\data\\global\\excel\\plrmode.txt",
+      "sha256": "23106da08603bc215624e2837f3990b5ed4b5521bbe8b4a80b0ea6b6502fb8e3"
+    }
   ]
 }
