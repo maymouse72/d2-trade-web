@@ -121,5 +121,6 @@ test("skill registry keeps evidence and UI support status separate", () => {
   assert.equal(IAS_SKILLS.ZEAL.selectable, true);
   assert.equal(IAS_SKILLS.ZEAL.skillId, 106);
   assert.equal(IAS_SKILLS.ZEAL.supportStatus, "SUPPORTED");
-  assert.equal(IAS_SKILLS.SMITE.selectable, false);
+  assert.equal(IAS_SKILLS.SMITE.selectable, true);
+  assert.equal(IAS_SKILLS.SMITE.animationMode, "S1");
 });

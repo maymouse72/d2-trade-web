@@ -5,6 +5,8 @@ import { IAS_SKILLS } from "./skills.ts";
 import { deriveSkillGoldenBreakpoints, getSkillGoldenFrameCount } from "./skill-golden.ts";
 import { ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
 import { deriveZealBreakpoints, getZealGoldenRow } from "./zeal-golden.ts";
+import { SMITE_MAX_IAS_BY_WEAPON } from "./constants.ts";
+import { SMITE_BREAKPOINTS } from "./smite-golden.ts";
 
 export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1", skill: IASAttackSkill = "NORMAL_ATTACK", hitCount = 5) {
   if (animation !== "A1" || IAS_WEAPONS[weaponCode]?.animationEvidence[animation].status !== "VERIFIED") return [];
@@ -13,6 +15,7 @@ export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation
   if (skill === "ZEAL") {
     return getZealBreakpoints(weaponCode, hitCount).map((row) => ({ ias: row.ias, fullAnimationFrames: row.totalSequenceFrames }));
   }
+  if (skill === "SMITE") return (SMITE_BREAKPOINTS[weaponCode] ?? []).map((row) => ({ ias: row.ias, fullAnimationFrames: row.frames }));
   const breakpoints = skill === "NORMAL_ATTACK"
     ? deriveGoldenBreakpoints(weaponCode)
     : deriveSkillGoldenBreakpoints(skill, weaponCode);
@@ -61,7 +64,7 @@ export function getCalculatorViewModel(rawIAS: string, selection: CalculatorSele
 export function getCalculatorViewModelFromParts(rawWeaponIAS: string, rawOffWeaponIAS: string, selection: CalculatorSelection): CalculatorViewModel {
   const weapon = IAS_WEAPONS[selection.weaponCode];
   const skill = selection.skill ?? "NORMAL_ATTACK";
-  const maxIAS = skill === "ZEAL" ? (ZEAL_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : (weapon?.maxIAS ?? 317);
+  const maxIAS = skill === "ZEAL" ? (ZEAL_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : skill === "SMITE" ? (SMITE_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : (weapon?.maxIAS ?? 317);
   if (!/^\d+$/.test(rawWeaponIAS) || !/^\d+$/.test(rawOffWeaponIAS)) {
     return { status: "INVALID_INPUT", reason: `무기 IAS와 장비 IAS를 각각 0 이상의 정수로 입력해 주세요. 합계 범위는 0~${maxIAS}입니다.` };
   }

@@ -51,7 +51,8 @@ test("supports the three skill records only for verified Paladin A1 single-hit c
     assert.equal(evaluateIASSupport(input).input?.skill, skill);
     assert.ok(skillId > 0);
   }
-  assertNoNumbers({ ...base, skill: "SMITE" }, "UNSUPPORTED");
+  assert.equal(evaluateIASSupport({ ...base, skill: "SMITE", animation: "S1" }).status, "SUPPORTED");
+  assertNoNumbers({ ...base, skill: "SMITE", animation: "A1" }, "UNVERIFIED");
   assertNoNumbers({ ...base, skill: "NOT_A_SKILL" }, "UNSUPPORTED");
 });
 

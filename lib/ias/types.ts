@@ -10,7 +10,7 @@ export type IASCharacterClass =
 
 export type IASAttackMode = "NORMAL";
 export type IASAttackSkill = "NORMAL_ATTACK" | "SACRIFICE" | "VENGEANCE" | "CONVERSION" | "ZEAL" | "SMITE";
-export type IASAnimation = "A1" | "A2";
+export type IASAnimation = "A1" | "A2" | "S1";
 export type IASStatus = "SUPPORTED" | "UNVERIFIED" | "UNSUPPORTED" | "INVALID_INPUT";
 export type IASVerificationStatus = "VERIFIED" | "PROVISIONAL" | "CONFLICTED" | "UNVERIFIED";
 

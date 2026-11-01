@@ -6,6 +6,7 @@ import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
 import { getSkillGoldenFrameCount } from "./skill-golden.ts";
 import { calculateSupportedZeal } from "./zeal.ts";
+import { calculateSupportedSmite } from "./smite.ts";
 
 function emptyResult(
   status: IASResult["status"],
@@ -33,6 +34,7 @@ export function calculateIAS(input: unknown): IASResult {
   }
 
   if (support.input.skill === "ZEAL") return calculateSupportedZeal(support.input);
+  if (support.input.skill === "SMITE") return calculateSupportedSmite(support.input);
 
   const weapon = IAS_WEAPONS[support.input.weaponCode];
   const totalIAS = support.input.totalIAS;

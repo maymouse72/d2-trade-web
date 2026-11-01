@@ -1,5 +1,5 @@
 import type { IASCharacterClass, IASStatus } from "./types.ts";
-import { IAS_HARD_MAX, ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
+import { IAS_HARD_MAX, SMITE_MAX_IAS_BY_WEAPON, ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
 
@@ -111,7 +111,10 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   };
 
   const weapon = IAS_WEAPONS[weaponCode];
-  if (skillCode !== "ZEAL" && weapon && totalIAS > weapon.maxIAS) {
+  if (skillCode === "SMITE" && SMITE_MAX_IAS_BY_WEAPON[weaponCode] !== undefined && totalIAS > SMITE_MAX_IAS_BY_WEAPON[weaponCode]) {
+    return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon?.name ?? weaponCode} 강타 검증 범위는 0~${SMITE_MAX_IAS_BY_WEAPON[weaponCode]} IAS입니다.`), input };
+  }
+  if (skillCode !== "ZEAL" && skillCode !== "SMITE" && weapon && totalIAS > weapon.maxIAS) {
     return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon.name}의 검증 범위는 ${weapon.minIAS}~${weapon.maxIAS} IAS입니다.`), input };
   }
   if (skillCode === "ZEAL") {
@@ -131,7 +134,7 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_FORM", "현재 검증된 형태는 Human Form뿐입니다."), input };
   }
   if (input.attackMode !== "NORMAL") {
-    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "현재 지원하는 공격 유형은 검증된 A1 공격입니다."), input };
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "현재 지원하는 공격 유형은 검증된 Paladin 단일 공격입니다."), input };
   }
   const skill = IAS_SKILLS[input.skill as keyof typeof IAS_SKILLS];
   if (!skill) {
@@ -147,7 +150,7 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", `${skill.label}은(는) Paladin 지원 무기의 단일 공격에만 적용됩니다.`), input };
   }
   if (!skill.animationMode || input.animation !== skill.animationMode) {
-    return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", `${skill.label}은(는) 검증된 A1 애니메이션만 지원합니다.`), input };
+    return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", `${skill.label}은(는) 검증된 ${skill.animationMode ?? "전용"} 애니메이션만 지원합니다.`), input };
   }
   if (skill.speedModifierPolicy !== "NONE") {
     return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", `${skill.label}의 스킬별 속도 보정은 검증되지 않았습니다.`), input };
@@ -155,7 +158,7 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   if (input.skillIAS !== 0 || input.buffIAS !== 0 || input.debuffIAS !== 0) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "스킬, 버프 또는 디버프 IAS가 포함된 조합은 아직 검증되지 않았습니다."), input };
   }
-  if (input.animation !== "A1") {
+  if (skillCode !== "SMITE" && input.animation !== "A1") {
     const animationEvidence = weapon?.animationEvidence[input.animation as "A1" | "A2"];
     return {
       ...decision(
@@ -169,7 +172,7 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   return {
     status: "SUPPORTED",
     reasonCode: "SUPPORTED_GOLDEN_MATCH",
-    reason: `Paladin A1 기준 애니메이션, ${weapon.name} WSM ${weapon.resolvedWeaponSpeedModifier >= 0 ? "+" : ""}${weapon.resolvedWeaponSpeedModifier}, 무스킬 총 IAS ${weapon.minIAS}~${weapon.maxIAS} 검증 범위입니다.`,
+    reason: `${skill.label} ${skill.animationMode} 기준 애니메이션, ${weapon.name} WSM ${weapon.resolvedWeaponSpeedModifier >= 0 ? "+" : ""}${weapon.resolvedWeaponSpeedModifier}, 무스킬 총 IAS 검증 범위입니다.`,
     input,
   };
 }
