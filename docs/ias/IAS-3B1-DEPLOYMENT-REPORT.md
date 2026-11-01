@@ -21,7 +21,7 @@ IAS-3-B 커밋 `9693343859f8318382a35f1522f25f58afb8cfc6`를 origin/main에 push
 
 운영 거래 목록은 카드 4건을 표시했고 `/trade/16` 상세 및 기존 댓글 1건을 읽었다. 경험치 페이지와 `/runewords`, `/uniques`, `/sets`도 렌더링됐다. 댓글 작성이나 거래/DB 변경은 하지 않았다.
 
-모바일 390×844는 로컬 브라우저에서 반응형 화면을 검증했다([브라우저 결과](./IAS-3B1-BROWSER-TEST-RESULTS.md)). 운영 데스크톱 브라우저에서 모바일 viewport override가 적용됐다고 확인할 수 없어, Production 모바일 실측은 미확인으로 구분한다.
+운영 모바일 viewport 390×844에서 document/body 폭 375px로 가로 넘침이 없었다. 무기/공격 선택 각 314×46px, IAS 입력 92×48px였고 War Hammer IAS 316은 9프레임, A2 선택 시 안내와 결과/표 차단을 확인했다. 운영 모바일 계산기 console error/warning도 없었다. 로컬 390×844 결과는 [브라우저 보고서](./IAS-3B1-BROWSER-TEST-RESULTS.md)에 기록했다.
 
 Git fetch는 최초 샌드박스 권한 오류 후 승인된 로컬 실행에서 성공했다. origin/main과 HEAD는 커밋 전 동일한 `c47e03214bb6fe7859c3f7eb017c5a936575b977`였다. 기존 IAS-2B/3A 보고서 변경은 커밋에서 제외했다.
 
@@ -31,11 +31,11 @@ Git fetch는 최초 샌드박스 권한 오류 후 승인된 로컬 실행에서
 | Production deployment ID | `dpl_5QN7npzeqeSvwDRpMy3yDbsDM65j` |
 | Production READY / 도메인 | PASS — READY, `www.d2jugobatgo.com` verified alias |
 | 운영 스모크 테스트 | PASS — desktop IAS 계산/A2 차단, 거래 목록·상세·댓글·경험치·도감 |
-| Production 모바일 viewport | 미확인; 로컬 390×844 검증은 PASS |
+| Production 모바일 viewport | PASS — 390×844, 넘침 없음, 계산 및 A2 차단 확인 |
 
 ## 최종 판정
 
-**IAS-3-B-1: PASS / DEPLOYED.** 필수 로컬 PC·모바일 검증, 자동 검사, 빌드, 기능 회귀, Production READY 및 운영 데스크톱 smoke test를 통과했다. A2 결과 차단은 유지된다.
+**IAS-3-B-1: PASS / DEPLOYED.** 필수 로컬 PC·모바일 검증, 자동 검사, 빌드, 기능 회귀, Production READY 및 운영 PC·모바일 smoke test를 통과했다. A2 결과 차단은 유지된다.
 
 **IAS-3-B-2: RESEARCH COMPLETE.** A2 독립 검증 근거는 미확보이며, 세 무기 상태는 UNVERIFIED다.
 

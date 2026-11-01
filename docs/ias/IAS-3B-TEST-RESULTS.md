@@ -23,6 +23,6 @@
 - 기존 거래 목록/상세/댓글, 경험치, 게임 정보 이동, 룬워드/유니크/세트 페이지: 로컬에서 읽기 전용 확인 완료.
 - 기존 광역 페이지 탐색에서 Supabase GoTrueClient 중복 인스턴스와 uniques/sets 이미지 비율 경고를 관찰했다. IAS 페이지의 오류로 확인되지는 않았다.
 - Production deployment `dpl_5QN7npzeqeSvwDRpMy3yDbsDM65j` READY 후 운영 데스크톱에서 Crystal Sword 40→11, Phase Blade 54→8, War Hammer 316→9 및 317→8을 확인했다. 318은 317로 제한됐고, A2는 숫자/표를 차단했다. IAS console error/warning은 비어 있었다.
-- 운영 거래 목록·상세·댓글(기존 댓글 1건), 경험치, 룬워드/유니크/세트 페이지를 읽기 전용으로 재확인했다. Production 모바일 viewport는 도구의 크기 적용 검증에 실패해 미확인으로 남겼고, 로컬 390×844는 PASS다.
+- 운영 거래 목록·상세·댓글(기존 댓글 1건), 경험치, 룬워드/유니크/세트 페이지를 읽기 전용으로 재확인했다. Production 모바일 390×844에서 가로 overflow 없음, War Hammer IAS 316→9프레임, A2 결과/표 차단, console error/warning 없음까지 확인했다.
 
 세부 결과는 `IAS-3B1-BROWSER-TEST-RESULTS.md` 및 `IAS-3B1-REGRESSION-RESULTS.md`에 기록한다. Production 스모크 결과는 배포 완료 뒤 `IAS-3B1-DEPLOYMENT-REPORT.md`에 기입한다.
