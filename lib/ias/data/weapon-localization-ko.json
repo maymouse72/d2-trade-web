@@ -1,0 +1,1235 @@
+{
+  "source": {
+    "gameBuild": "3.3.93847",
+    "keyRule": "Key equals weapons.txt code",
+    "file": "data/data/local/lng/strings/item-names.json",
+    "locale": "koKR",
+    "sha256": "843FF48C26AEFA6EFED7995B486E2E53553A802AE4AF9A52C2B367FEA302525A"
+  },
+  "records": {
+    "9mp": {
+      "enUS": "Crowbill",
+      "koKR": "크로우빌"
+    },
+    "6ws": {
+      "enUS": "Archon Staff",
+      "koKR": "아콘 스태프"
+    },
+    "bsw": {
+      "enUS": "Bastard Sword",
+      "koKR": "바스타드 소드"
+    },
+    "9bl": {
+      "enUS": "Stiletto",
+      "koKR": "스틸레토"
+    },
+    "7cl": {
+      "enUS": "Truncheon",
+      "koKR": "트런천"
+    },
+    "axf": {
+      "enUS": "Hatchet Hands",
+      "koKR": "해칫 핸즈"
+    },
+    "92a": {
+      "enUS": "Twin Axe",
+      "koKR": "트윈 액스"
+    },
+    "7lw": {
+      "enUS": "Feral Claws",
+      "koKR": "페럴 클러"
+    },
+    "9pa": {
+      "enUS": "Partizan",
+      "koKR": "파르티잔"
+    },
+    "qf1": {
+      "enUS": "Khalim's Flail",
+      "koKR": "칼림의 도리깨"
+    },
+    "spc": {
+      "enUS": "Spiked Club",
+      "koKR": "스파이크 클럽"
+    },
+    "7tr": {
+      "enUS": "Stygian Pike",
+      "koKR": "스티지언 파이크"
+    },
+    "7st": {
+      "enUS": "Ghost Spear",
+      "koKR": "고스트 스피어"
+    },
+    "9pi": {
+      "enUS": "Great Pilum",
+      "koKR": "그레이트 필럼"
+    },
+    "8ws": {
+      "enUS": "Rune Staff",
+      "koKR": "룬 스태프"
+    },
+    "7br": {
+      "enUS": "Mancatcher",
+      "koKR": "맨캐쳐"
+    },
+    "7mp": {
+      "enUS": "War Spike",
+      "koKR": "워 스파이크"
+    },
+    "ktr": {
+      "enUS": "Katar",
+      "koKR": "카타르"
+    },
+    "72h": {
+      "enUS": "Legend Sword",
+      "koKR": "레전드 소드"
+    },
+    "lbb": {
+      "enUS": "Long Battle Bow",
+      "koKR": "롱 배틀 보우"
+    },
+    "opm": {
+      "enUS": "Exploding Potion",
+      "koKR": "폭발 물약"
+    },
+    "scy": {
+      "enUS": "Scythe",
+      "koKR": "싸이드"
+    },
+    "lwb": {
+      "enUS": "Long War Bow",
+      "koKR": "롱 워 보우"
+    },
+    "9fc": {
+      "enUS": "Tulwar",
+      "koKR": "털워"
+    },
+    "7fl": {
+      "enUS": "Scourge",
+      "koKR": "스컬지"
+    },
+    "7bw": {
+      "enUS": "Lich Wand",
+      "koKR": "리치 원드"
+    },
+    "ob2": {
+      "enUS": "Sacred Globe",
+      "koKR": "세이크리드 글로브"
+    },
+    "opl": {
+      "enUS": "Fulminating Potion",
+      "koKR": "기폭 물약"
+    },
+    "7la": {
+      "enUS": "Feral Axe",
+      "koKR": "페럴 액스"
+    },
+    "wax": {
+      "enUS": "War Axe",
+      "koKR": "워 액스"
+    },
+    "btl": {
+      "enUS": "Blade Talons",
+      "koKR": "블레이드 탤런"
+    },
+    "hbw": {
+      "enUS": "Hunter's Bow",
+      "koKR": "헌터보우"
+    },
+    "mau": {
+      "enUS": "Maul",
+      "koKR": "마울"
+    },
+    "9tr": {
+      "enUS": "Fuscina",
+      "koKR": "푸스키나"
+    },
+    "7cm": {
+      "enUS": "Highland Blade",
+      "koKR": "하이랜드 블레이드"
+    },
+    "gwn": {
+      "enUS": "Grim Wand",
+      "koKR": "그림 원드"
+    },
+    "bal": {
+      "enUS": "Balanced Axe",
+      "koKR": "밸런스드 액스"
+    },
+    "7gl": {
+      "enUS": "Ghost Glaive",
+      "koKR": "고스트 글레이브"
+    },
+    "7ja": {
+      "enUS": "Hyperion Javelin",
+      "koKR": "하이페리온 재벌린"
+    },
+    "7bl": {
+      "enUS": "Legend Spike",
+      "koKR": "레전드 스파이크"
+    },
+    "dir": {
+      "enUS": "Dirk",
+      "koKR": "더크"
+    },
+    "gsd": {
+      "enUS": "Great Sword",
+      "koKR": "그레이트 소드"
+    },
+    "tsp": {
+      "enUS": "Throwing Spear",
+      "koKR": "스로잉 스피어"
+    },
+    "8s8": {
+      "enUS": "Short Siege Bow",
+      "koKR": "숏 시즈 보우"
+    },
+    "btx": {
+      "enUS": "Battle Axe",
+      "koKR": "배틀 액스"
+    },
+    "6cb": {
+      "enUS": "Great Bow",
+      "koKR": "그레이트 보우"
+    },
+    "6ls": {
+      "enUS": "Stalagmite",
+      "koKR": "스탈라그마이트"
+    },
+    "7tw": {
+      "enUS": "Runic Talons",
+      "koKR": "루닉 탤런"
+    },
+    "ob6": {
+      "enUS": "Glowing Orb",
+      "koKR": "글로잉 오브"
+    },
+    "6lx": {
+      "enUS": "Pellet Bow",
+      "koKR": "팰리트 보우"
+    },
+    "9gs": {
+      "enUS": "Tusk Sword",
+      "koKR": "터스크 소드"
+    },
+    "9ma": {
+      "enUS": "Flanged Mace",
+      "koKR": "플랜지드 메이스"
+    },
+    "2ax": {
+      "enUS": "Double Axe",
+      "koKR": "더블 액스"
+    },
+    "7sr": {
+      "enUS": "Hyperion Spear",
+      "koKR": "하이페리온 스피어"
+    },
+    "9qr": {
+      "enUS": "Scissors Quhab",
+      "koKR": "시저스 쿠하브"
+    },
+    "pax": {
+      "enUS": "Poleaxe",
+      "koKR": "폴액스"
+    },
+    "gpm": {
+      "enUS": "Choking Gas Potion",
+      "koKR": "질식 가스 물약"
+    },
+    "7h7": {
+      "enUS": "Great Poleaxe",
+      "koKR": "그레이트 폴액스"
+    },
+    "whm": {
+      "enUS": "War Hammer",
+      "koKR": "워 해머"
+    },
+    "sbr": {
+      "enUS": "Sabre",
+      "koKR": "세이버"
+    },
+    "9cr": {
+      "enUS": "Dimensional Blade",
+      "koKR": "디멘셔널 블레이드"
+    },
+    "gpl": {
+      "enUS": "Strangling Gas Potion",
+      "koKR": "유독 가스 물약"
+    },
+    "scp": {
+      "enUS": "Scepter",
+      "koKR": "셉터"
+    },
+    "lbw": {
+      "enUS": "Long Bow",
+      "koKR": "롱보우"
+    },
+    "7ar": {
+      "enUS": "Suwayyah",
+      "koKR": "수웨이야"
+    },
+    "bar": {
+      "enUS": "Bardiche",
+      "koKR": "바디쉬"
+    },
+    "8cb": {
+      "enUS": "Double Bow",
+      "koKR": "더블 보우"
+    },
+    "7tk": {
+      "enUS": "Flying Knife",
+      "koKR": "플라잉 나이프"
+    },
+    "tkf": {
+      "enUS": "Throwing Knife",
+      "koKR": "스로잉 나이프"
+    },
+    "ops": {
+      "enUS": "Oil Potion",
+      "koKR": "기름 물약"
+    },
+    "7gm": {
+      "enUS": "Thunder Maul",
+      "koKR": "썬더 마울"
+    },
+    "7sc": {
+      "enUS": "Mighty Scepter",
+      "koKR": "마이티 셉터"
+    },
+    "ssd": {
+      "enUS": "Short Sword",
+      "koKR": "숏소드"
+    },
+    "9ar": {
+      "enUS": "Quhab",
+      "koKR": "쿠하브"
+    },
+    "cbw": {
+      "enUS": "Composite Bow",
+      "koKR": "컴포지트 보우"
+    },
+    "9sb": {
+      "enUS": "Shamshir",
+      "koKR": "샴쉬르"
+    },
+    "9la": {
+      "enUS": "Military Axe",
+      "koKR": "밀리터리 액스"
+    },
+    "pil": {
+      "enUS": "Pilum",
+      "koKR": "필럼"
+    },
+    "9b7": {
+      "enUS": "Lochaber Axe",
+      "koKR": "로카버 액스"
+    },
+    "8cs": {
+      "enUS": "Cedar Staff",
+      "koKR": "시더 스태프"
+    },
+    "8bs": {
+      "enUS": "Gothic Staff",
+      "koKR": "고딕 스태프"
+    },
+    "obc": {
+      "enUS": "Eldritch Orb",
+      "koKR": "엘드리치 오브"
+    },
+    "wsc": {
+      "enUS": "War Scythe",
+      "koKR": "워 싸이드"
+    },
+    "hal": {
+      "enUS": "Halberd",
+      "koKR": "헬버드"
+    },
+    "am9": {
+      "enUS": "Ceremonial Pike",
+      "koKR": "세러모니얼 파이크"
+    },
+    "7fb": {
+      "enUS": "Colossus Sword",
+      "koKR": "콜로서스 소드"
+    },
+    "9wn": {
+      "enUS": "Burnt Wand",
+      "koKR": "번트 원드"
+    },
+    "9b8": {
+      "enUS": "Hurlbat",
+      "koKR": "헐배트"
+    },
+    "6ss": {
+      "enUS": "Walking Stick",
+      "koKR": "워킹 스틱"
+    },
+    "9s8": {
+      "enUS": "Battle Scythe",
+      "koKR": "배틀 싸이드"
+    },
+    "ces": {
+      "enUS": "Cestus",
+      "koKR": "세스터스"
+    },
+    "8hb": {
+      "enUS": "Razor Bow",
+      "koKR": "레이저 보우"
+    },
+    "9cm": {
+      "enUS": "Dacian Falx",
+      "koKR": "다키안 팔크스"
+    },
+    "8rx": {
+      "enUS": "Chu-Ko-Nu",
+      "koKR": "추코누"
+    },
+    "7ta": {
+      "enUS": "Flying Axe",
+      "koKR": "플라잉 액스"
+    },
+    "hfh": {
+      "enUS": "Hell Forge Hammer",
+      "koKR": "지옥의 대장간 망치"
+    },
+    "7yw": {
+      "enUS": "Ghost Wand",
+      "koKR": "고스트 원드"
+    },
+    "9m9": {
+      "enUS": "War Club",
+      "koKR": "워 클럽"
+    },
+    "gps": {
+      "enUS": "Rancid Gas Potion",
+      "koKR": "부패 가스 물약"
+    },
+    "9gd": {
+      "enUS": "Executioner Sword",
+      "koKR": "엑시큐셔너 소드"
+    },
+    "9ba": {
+      "enUS": "Bearded Axe",
+      "koKR": "비어디드 액스"
+    },
+    "7bt": {
+      "enUS": "Decapitator",
+      "koKR": "디캐피테이터"
+    },
+    "7bs": {
+      "enUS": "Conquest Sword",
+      "koKR": "컨퀘스트 소드"
+    },
+    "clm": {
+      "enUS": "Claymore",
+      "koKR": "클레이모어"
+    },
+    "8ss": {
+      "enUS": "Jo Staff",
+      "koKR": "조 스태프"
+    },
+    "leg": {
+      "enUS": "Wirt's Leg",
+      "koKR": "워트의 의족"
+    },
+    "8hx": {
+      "enUS": "Ballista",
+      "koKR": "발리스타"
+    },
+    "ob1": {
+      "enUS": "Eagle Orb",
+      "koKR": "이글 오브"
+    },
+    "ob7": {
+      "enUS": "Crystalline Globe",
+      "koKR": "크리스탈라인 글로브"
+    },
+    "6lw": {
+      "enUS": "Hydra Bow",
+      "koKR": "히드라 보우"
+    },
+    "mac": {
+      "enUS": "Mace",
+      "koKR": "메이스"
+    },
+    "7ax": {
+      "enUS": "Small Crescent",
+      "koKR": "스몰 크레센트"
+    },
+    "lax": {
+      "enUS": "Large Axe",
+      "koKR": "라지 액스"
+    },
+    "6sb": {
+      "enUS": "Spider Bow",
+      "koKR": "스파이더 보우"
+    },
+    "9dg": {
+      "enUS": "Poignard",
+      "koKR": "포이나드"
+    },
+    "7ls": {
+      "enUS": "Cryptic Sword",
+      "koKR": "크립틱 소드"
+    },
+    "lsd": {
+      "enUS": "Long Sword",
+      "koKR": "롱소드"
+    },
+    "7pa": {
+      "enUS": "Cryptic Axe",
+      "koKR": "크립틱 액스"
+    },
+    "7gw": {
+      "enUS": "Unearthed Wand",
+      "koKR": "언어스드 원드"
+    },
+    "7p7": {
+      "enUS": "War Pike",
+      "koKR": "워 파이크"
+    },
+    "msf": {
+      "enUS": "Shaft of the Horadric Staff",
+      "koKR": "호라드림 지팡이 자루"
+    },
+    "7xf": {
+      "enUS": "War Fist",
+      "koKR": "워 피스트"
+    },
+    "9ta": {
+      "enUS": "Francisca",
+      "koKR": "프란시스카"
+    },
+    "9s9": {
+      "enUS": "Simbilan",
+      "koKR": "심빌란"
+    },
+    "mxb": {
+      "enUS": "Crossbow",
+      "koKR": "크로스보우"
+    },
+    "6mx": {
+      "enUS": "Gorgon Crossbow",
+      "koKR": "고르곤 크로스보우"
+    },
+    "7kr": {
+      "enUS": "Fanged Knife",
+      "koKR": "팽드 나이프"
+    },
+    "7qs": {
+      "enUS": "Seraph Rod",
+      "koKR": "세라프 로드"
+    },
+    "ob5": {
+      "enUS": "Jared's Stone",
+      "koKR": "자레드 스톤"
+    },
+    "7o7": {
+      "enUS": "Ogre Axe",
+      "koKR": "오우거 액스"
+    },
+    "7wh": {
+      "enUS": "Legendary Mallet",
+      "koKR": "레전더리 맬릿"
+    },
+    "9bs": {
+      "enUS": "Battle Sword",
+      "koKR": "배틀 소드"
+    },
+    "am7": {
+      "enUS": "Ceremonial Bow",
+      "koKR": "세러모니얼 보우"
+    },
+    "rxb": {
+      "enUS": "Repeating Crossbow",
+      "koKR": "리피팅 크로스보우"
+    },
+    "7gd": {
+      "enUS": "Colossus Blade",
+      "koKR": "콜로서스 블레이드"
+    },
+    "sbw": {
+      "enUS": "Short Bow",
+      "koKR": "숏보우"
+    },
+    "gis": {
+      "enUS": "Giant Sword",
+      "koKR": "자이언트 소드"
+    },
+    "9cl": {
+      "enUS": "Cudgel",
+      "koKR": "커절"
+    },
+    "ywn": {
+      "enUS": "Yew Wand",
+      "koKR": "유 원드"
+    },
+    "7sp": {
+      "enUS": "Tyrant Club",
+      "koKR": "타이런트 클럽"
+    },
+    "hax": {
+      "enUS": "Hand Axe",
+      "koKR": "핸드 액스"
+    },
+    "9b9": {
+      "enUS": "Gothic Sword",
+      "koKR": "고딕 소드"
+    },
+    "mpi": {
+      "enUS": "Military Pick",
+      "koKR": "밀리터리 픽"
+    },
+    "6rx": {
+      "enUS": "Demon Crossbow",
+      "koKR": "데몬 크로스보우"
+    },
+    "7wa": {
+      "enUS": "Berserker Axe",
+      "koKR": "버서커 액스"
+    },
+    "ob9": {
+      "enUS": "Sparkling Ball",
+      "koKR": "스파클링 볼"
+    },
+    "7qr": {
+      "enUS": "Scissors Suwayyah",
+      "koKR": "시저스 수웨이야"
+    },
+    "7ts": {
+      "enUS": "Winged Harpoon",
+      "koKR": "윙드 하푼"
+    },
+    "obe": {
+      "enUS": "Vortex Orb",
+      "koKR": "볼텍스 오브"
+    },
+    "7s8": {
+      "enUS": "Thresher",
+      "koKR": "쓰레셔"
+    },
+    "wsd": {
+      "enUS": "War Sword",
+      "koKR": "워 소드"
+    },
+    "wnd": {
+      "enUS": "Wand",
+      "koKR": "원드"
+    },
+    "tri": {
+      "enUS": "Trident",
+      "koKR": "트라이던트"
+    },
+    "gax": {
+      "enUS": "Great Axe",
+      "koKR": "그레이트 액스"
+    },
+    "amd": {
+      "enUS": "Matriarchal Spear",
+      "koKR": "메이트리어컬 스피어"
+    },
+    "6hb": {
+      "enUS": "Blade Bow",
+      "koKR": "블레이드 보우"
+    },
+    "sbb": {
+      "enUS": "Short Battle Bow",
+      "koKR": "숏 배틀 보우"
+    },
+    "7mt": {
+      "enUS": "Devil Star",
+      "koKR": "데빌 스타"
+    },
+    "ob8": {
+      "enUS": "Cloudy Sphere",
+      "koKR": "클라우디 스피어"
+    },
+    "72a": {
+      "enUS": "Ettin Axe",
+      "koKR": "에틴 액스"
+    },
+    "7vo": {
+      "enUS": "Colossus Voulge",
+      "koKR": "콜로서스 불즈"
+    },
+    "7ga": {
+      "enUS": "Champion Axe",
+      "koKR": "챔피언 액스"
+    },
+    "fla": {
+      "enUS": "Flail",
+      "koKR": "프레일"
+    },
+    "gma": {
+      "enUS": "Great Maul",
+      "koKR": "그레이트 마울"
+    },
+    "bsd": {
+      "enUS": "Broad Sword",
+      "koKR": "브로드소드"
+    },
+    "9p9": {
+      "enUS": "Lance",
+      "koKR": "랜스"
+    },
+    "oba": {
+      "enUS": "Swirling Crystal",
+      "koKR": "스월링 크리스탈"
+    },
+    "g33": {
+      "enUS": "The Gidbinn",
+      "koKR": "기드빈"
+    },
+    "8sw": {
+      "enUS": "Rune Bow",
+      "koKR": "룬 보우"
+    },
+    "9qs": {
+      "enUS": "Holy Water Sprinkler",
+      "koKR": "홀리 워터 스프링클러"
+    },
+    "wrb": {
+      "enUS": "Wrist Blade",
+      "koKR": "리스트 블레이드"
+    },
+    "swb": {
+      "enUS": "Short War Bow",
+      "koKR": "숏 워 보우"
+    },
+    "hxb": {
+      "enUS": "Heavy Crossbow",
+      "koKR": "헤비 크로스보우"
+    },
+    "6bs": {
+      "enUS": "Shillelagh",
+      "koKR": "쉴레일리"
+    },
+    "spt": {
+      "enUS": "Spetum",
+      "koKR": "스페텀"
+    },
+    "hst": {
+      "enUS": "Horadric Staff",
+      "koKR": "호라드림 지팡이"
+    },
+    "am3": {
+      "enUS": "Maiden Spear",
+      "koKR": "메이든 스피어"
+    },
+    "9tw": {
+      "enUS": "Greater Talons",
+      "koKR": "그레이터 탤런"
+    },
+    "9xf": {
+      "enUS": "Fascia",
+      "koKR": "패시아"
+    },
+    "7wd": {
+      "enUS": "Mythical Sword",
+      "koKR": "미시컬 소드"
+    },
+    "6cs": {
+      "enUS": "Elder Staff",
+      "koKR": "엘더 스태프"
+    },
+    "9ts": {
+      "enUS": "Harpoon",
+      "koKR": "하푼"
+    },
+    "6s7": {
+      "enUS": "Diamond Bow",
+      "koKR": "다이아몬드 보우"
+    },
+    "9sp": {
+      "enUS": "Barbed Club",
+      "koKR": "바브드 클럽"
+    },
+    "7cr": {
+      "enUS": "Phase Blade",
+      "koKR": "페이즈 블레이드"
+    },
+    "9bk": {
+      "enUS": "War Dart",
+      "koKR": "워 다트"
+    },
+    "7fc": {
+      "enUS": "Hydra Edge",
+      "koKR": "히드라 엣지"
+    },
+    "bld": {
+      "enUS": "Blade",
+      "koKR": "블레이드"
+    },
+    "bwn": {
+      "enUS": "Bone Wand",
+      "koKR": "본 원드"
+    },
+    "spr": {
+      "enUS": "Spear",
+      "koKR": "스피어"
+    },
+    "7ss": {
+      "enUS": "Falcata",
+      "koKR": "팔카타"
+    },
+    "9wd": {
+      "enUS": "Ancient Sword",
+      "koKR": "에인션트 소드"
+    },
+    "scm": {
+      "enUS": "Scimitar",
+      "koKR": "시미터"
+    },
+    "6lb": {
+      "enUS": "Shadow Bow",
+      "koKR": "쉐도우 보우"
+    },
+    "9wa": {
+      "enUS": "Naga",
+      "koKR": "나가"
+    },
+    "d33": {
+      "enUS": "Decoy Gidbinn",
+      "koKR": "미끼 기드빈"
+    },
+    "9sm": {
+      "enUS": "Cutlass",
+      "koKR": "커틀러스"
+    },
+    "7wb": {
+      "enUS": "Wrist Sword",
+      "koKR": "리스트 소드"
+    },
+    "obf": {
+      "enUS": "Dimensional Shard",
+      "koKR": "디멘셔널 샤드"
+    },
+    "bst": {
+      "enUS": "Battle Staff",
+      "koKR": "배틀 스태프"
+    },
+    "9mt": {
+      "enUS": "Jagged Star",
+      "koKR": "재기드 스타"
+    },
+    "cst": {
+      "enUS": "Gnarled Staff",
+      "koKR": "나알드 스태프"
+    },
+    "8lx": {
+      "enUS": "Arbalest",
+      "koKR": "아발리스트"
+    },
+    "6sw": {
+      "enUS": "Ward Bow",
+      "koKR": "워드 보우"
+    },
+    "kri": {
+      "enUS": "Kris",
+      "koKR": "크리스"
+    },
+    "9di": {
+      "enUS": "Rondel",
+      "koKR": "런들"
+    },
+    "wst": {
+      "enUS": "War Staff",
+      "koKR": "워 스태프"
+    },
+    "9bw": {
+      "enUS": "Tomb Wand",
+      "koKR": "툼 원드"
+    },
+    "9gm": {
+      "enUS": "Martel de Fer",
+      "koKR": "마르텔 드 페르"
+    },
+    "mst": {
+      "enUS": "Morning Star",
+      "koKR": "모닝스타"
+    },
+    "am2": {
+      "enUS": "Reflex Bow",
+      "koKR": "리플렉스 보우"
+    },
+    "9vo": {
+      "enUS": "Bill",
+      "koKR": "빌"
+    },
+    "ob3": {
+      "enUS": "Smoked Sphere",
+      "koKR": "스모크드 스피어"
+    },
+    "qf2": {
+      "enUS": "Khalim's Will",
+      "koKR": "칼림의 의지"
+    },
+    "9wb": {
+      "enUS": "Wrist Spike",
+      "koKR": "리스트 스파이크"
+    },
+    "7gs": {
+      "enUS": "Balrog Blade",
+      "koKR": "발록 블레이드"
+    },
+    "flb": {
+      "enUS": "Flamberge",
+      "koKR": "플랑베르쥬"
+    },
+    "9sc": {
+      "enUS": "Rune Scepter",
+      "koKR": "룬 셉터"
+    },
+    "sst": {
+      "enUS": "Short Staff",
+      "koKR": "숏스태프"
+    },
+    "glv": {
+      "enUS": "Glaive",
+      "koKR": "글레이브"
+    },
+    "lxb": {
+      "enUS": "Light Crossbow",
+      "koKR": "라이트 크로스보우"
+    },
+    "7ha": {
+      "enUS": "Tomahawk",
+      "koKR": "토마호크"
+    },
+    "crs": {
+      "enUS": "Crystal Sword",
+      "koKR": "크리스탈 소드"
+    },
+    "vou": {
+      "enUS": "Voulge",
+      "koKR": "불즈"
+    },
+    "bax": {
+      "enUS": "Broad Axe",
+      "koKR": "브로드 액스"
+    },
+    "8lw": {
+      "enUS": "Gothic Bow",
+      "koKR": "고딕 보우"
+    },
+    "wsp": {
+      "enUS": "War Scepter",
+      "koKR": "워 셉터"
+    },
+    "9ss": {
+      "enUS": "Gladius",
+      "koKR": "글래디우스"
+    },
+    "9wc": {
+      "enUS": "Grim Scythe",
+      "koKR": "그림 싸이드"
+    },
+    "am5": {
+      "enUS": "Maiden Javelin",
+      "koKR": "메이든 재벌린"
+    },
+    "gsc": {
+      "enUS": "Grand Scepter",
+      "koKR": "그랜드 셉터"
+    },
+    "9fb": {
+      "enUS": "Zweihander",
+      "koKR": "즈바이핸더"
+    },
+    "7sb": {
+      "enUS": "Elegant Blade",
+      "koKR": "엘리건트 블레이드"
+    },
+    "9gl": {
+      "enUS": "Spiculum",
+      "koKR": "스피큘럼"
+    },
+    "7ma": {
+      "enUS": "Reinforced Mace",
+      "koKR": "리인포스드 메이스"
+    },
+    "7ba": {
+      "enUS": "Silver-edged Axe",
+      "koKR": "실버 엣지드 액스"
+    },
+    "8mx": {
+      "enUS": "Siege Crossbow",
+      "koKR": "시즈 크로스보우"
+    },
+    "amf": {
+      "enUS": "Matriarchal Javelin",
+      "koKR": "메이트리어컬 재벌린"
+    },
+    "7dg": {
+      "enUS": "Bone Knife",
+      "koKR": "본 나이프"
+    },
+    "9ga": {
+      "enUS": "Gothic Axe",
+      "koKR": "고딕 액스"
+    },
+    "tax": {
+      "enUS": "Throwing Axe",
+      "koKR": "스로잉 액스"
+    },
+    "7pi": {
+      "enUS": "Stygian Pilum",
+      "koKR": "스티지언 필럼"
+    },
+    "9cs": {
+      "enUS": "Hand Scythe",
+      "koKR": "핸드 사이드"
+    },
+    "7ws": {
+      "enUS": "Caduceus",
+      "koKR": "카두세우스"
+    },
+    "am1": {
+      "enUS": "Stag Bow",
+      "koKR": "스태그 보우"
+    },
+    "2hs": {
+      "enUS": "Two-Handed Sword",
+      "koKR": "투핸드 소드"
+    },
+    "am4": {
+      "enUS": "Maiden Pike",
+      "koKR": "메이든 파이크"
+    },
+    "dgr": {
+      "enUS": "Dagger",
+      "koKR": "대거"
+    },
+    "9br": {
+      "enUS": "War Fork",
+      "koKR": "워 포크"
+    },
+    "9ha": {
+      "enUS": "Hatchet",
+      "koKR": "해칫"
+    },
+    "8lb": {
+      "enUS": "Cedar Bow",
+      "koKR": "시더 보우"
+    },
+    "9gw": {
+      "enUS": "Grave Wand",
+      "koKR": "그레이브 원드"
+    },
+    "obd": {
+      "enUS": "Demon Heart",
+      "koKR": "데몬 하트"
+    },
+    "9kr": {
+      "enUS": "Cinquedeas",
+      "koKR": "싱쿠디아"
+    },
+    "8ls": {
+      "enUS": "Quarterstaff",
+      "koKR": "쿼터스태프"
+    },
+    "ob4": {
+      "enUS": "Clasped Orb",
+      "koKR": "클래스프드 오브"
+    },
+    "9ls": {
+      "enUS": "Rune Sword",
+      "koKR": "룬 소드"
+    },
+    "9lw": {
+      "enUS": "Greater Claws",
+      "koKR": "그레이터 클러"
+    },
+    "ama": {
+      "enUS": "Ceremonial Javelin",
+      "koKR": "세러모니얼 재벌린"
+    },
+    "9ws": {
+      "enUS": "Divine Scepter",
+      "koKR": "디바인 셉터"
+    },
+    "skr": {
+      "enUS": "Scissors Katar",
+      "koKR": "시저스 카타르"
+    },
+    "lst": {
+      "enUS": "Long Staff",
+      "koKR": "롱스태프"
+    },
+    "7bk": {
+      "enUS": "Winged Knife",
+      "koKR": "윙드 나이프"
+    },
+    "9yw": {
+      "enUS": "Petrified Wand",
+      "koKR": "페트리파이드 원드"
+    },
+    "flc": {
+      "enUS": "Falchion",
+      "koKR": "펄션"
+    },
+    "7wc": {
+      "enUS": "Giant Thresher",
+      "koKR": "자이언트 쓰레셔"
+    },
+    "axe": {
+      "enUS": "Axe",
+      "koKR": "액스"
+    },
+    "amc": {
+      "enUS": "Grand Matron Bow",
+      "koKR": "그랜드 메이트런 보우"
+    },
+    "7b7": {
+      "enUS": "Champion Sword",
+      "koKR": "챔피언 소드"
+    },
+    "7sm": {
+      "enUS": "Ataghan",
+      "koKR": "아타간"
+    },
+    "9tk": {
+      "enUS": "Battle Dart",
+      "koKR": "배틀 다트"
+    },
+    "9ax": {
+      "enUS": "Cleaver",
+      "koKR": "클리버"
+    },
+    "brn": {
+      "enUS": "Brandistock",
+      "koKR": "브랜디스탁"
+    },
+    "9ja": {
+      "enUS": "War Javelin",
+      "koKR": "워 재벌린"
+    },
+    "6hx": {
+      "enUS": "Colossus Crossbow",
+      "koKR": "콜로서스 크로스보우"
+    },
+    "am6": {
+      "enUS": "Ashwood Bow",
+      "koKR": "애쉬우드 보우"
+    },
+    "jav": {
+      "enUS": "Javelin",
+      "koKR": "재벌린"
+    },
+    "8l8": {
+      "enUS": "Large Siege Bow",
+      "koKR": "라지 시즈 보우"
+    },
+    "7gi": {
+      "enUS": "Glorious Axe",
+      "koKR": "글로리어스 액스"
+    },
+    "92h": {
+      "enUS": "Espandon",
+      "koKR": "에스팬돈"
+    },
+    "am8": {
+      "enUS": "Ceremonial Spear",
+      "koKR": "세러모니얼 스피어"
+    },
+    "7di": {
+      "enUS": "Mithril Point",
+      "koKR": "미스릴 포인트"
+    },
+    "7m7": {
+      "enUS": "Ogre Maul",
+      "koKR": "오우거 마울"
+    },
+    "7cs": {
+      "enUS": "Battle Cestus",
+      "koKR": "배틀 세스터스"
+    },
+    "gix": {
+      "enUS": "Giant Axe",
+      "koKR": "자이언트 액스"
+    },
+    "9st": {
+      "enUS": "Yari",
+      "koKR": "야리"
+    },
+    "pik": {
+      "enUS": "Pike",
+      "koKR": "파이크"
+    },
+    "8sb": {
+      "enUS": "Edge Bow",
+      "koKR": "엣지 보우"
+    },
+    "hdm": {
+      "enUS": "Horadric Malus",
+      "koKR": "호라드림 망치"
+    },
+    "obb": {
+      "enUS": "Heavenly Stone",
+      "koKR": "헤븐리 스톤"
+    },
+    "clb": {
+      "enUS": "Club",
+      "koKR": "클럽"
+    },
+    "amb": {
+      "enUS": "Matriarchal Bow",
+      "koKR": "메이트리어컬 보우"
+    },
+    "9h9": {
+      "enUS": "Bec-de-Corbin",
+      "koKR": "벡드코방"
+    },
+    "9gi": {
+      "enUS": "Ancient Axe",
+      "koKR": "에인션트 액스"
+    },
+    "7wn": {
+      "enUS": "Polished Wand",
+      "koKR": "폴리시드 원드"
+    },
+    "7s7": {
+      "enUS": "Balrog Spear",
+      "koKR": "발록 스피어"
+    },
+    "7b8": {
+      "enUS": "Winged Axe",
+      "koKR": "윙드 액스"
+    },
+    "clw": {
+      "enUS": "Claws",
+      "koKR": "클러"
+    },
+    "9wh": {
+      "enUS": "Battle Hammer",
+      "koKR": "배틀 해머"
+    },
+    "9bt": {
+      "enUS": "Tabar",
+      "koKR": "타바"
+    },
+    "6l7": {
+      "enUS": "Crusader Bow",
+      "koKR": "크루세이더 보우"
+    },
+    "9fl": {
+      "enUS": "Knout",
+      "koKR": "나우트"
+    },
+    "ssp": {
+      "enUS": "Short Spear",
+      "koKR": "숏스피어"
+    },
+    "bkf": {
+      "enUS": "Balanced Knife",
+      "koKR": "밸런스드 나이프"
+    },
+    "ame": {
+      "enUS": "Matriarchal Pike",
+      "koKR": "메이트리어컬 파이크"
+    },
+    "9sr": {
+      "enUS": "War Spear",
+      "koKR": "워 스피어"
+    }
+  }
+}

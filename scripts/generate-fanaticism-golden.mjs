@@ -1,0 +1,8 @@
+import { writeFile } from 'node:fs/promises';
+const weapons={crs:{wsm:0,max:{NORMAL_ATTACK:200,SACRIFICE:200,VENGEANCE:200,CONVERSION:200,ZEAL:360,SMITE:200}},'7cr':{wsm:-30,max:{NORMAL_ATTACK:200,SACRIFICE:200,VENGEANCE:200,CONVERSION:200,ZEAL:72,SMITE:72}},whm:{wsm:20,max:{NORMAL_ATTACK:317,SACRIFICE:317,VENGEANCE:317,CONVERSION:317,ZEAL:456,SMITE:456}},lsd:{wsm:-10,max:{ZEAL:142}}};
+const skills=['NORMAL_ATTACK','SACRIFICE','VENGEANCE','CONVERSION','ZEAL','SMITE'];
+function sias(level){const t=Math.floor(110*level/(level+6));return Math.min(Math.floor(t*30/100)+10,40)}
+function frame(skill,eias,hits=5){const speed=Math.floor(256*(100+eias)/100);if(skill==='ZEAL'){const first=Math.ceil(256*7/speed),last=Math.ceil(256*15/speed)-1;return first*(hits-1)+last}if(skill==='SMITE')return Math.ceil(256*12/speed)-1;return Math.ceil(256*15/speed)-1}
+const datasets=[];
+for(const [weaponCode,w] of Object.entries(weapons)) for(const skill of skills){if(w.max[skill]===undefined)continue;for(let level=1;level<=60;level++){const rows=[];let prev=null;for(let ias=0;ias<=w.max[skill];ias++){const ieias=Math.floor(120*ias/(120+ias));const eias=Math.max(-85,Math.min(75,ieias+sias(level)-w.wsm));const frames=frame(skill,eias);if(frames!==prev)rows.push({ias,frames,eias});prev=frames;}datasets.push({weaponCode,skill,fanaticismLevel:level,fanaticismSIAS:sias(level),maxIAS:w.max[skill],rows});}}
+const data={source:{gameBuild:'D2R 3.3.93847',formula:'skills.txt dm34; D2R-tools EIAS and Paladin 1HS frame equations',status:'formula-derived breakpoints; independent formula cross-check, not in-game measurement'},rowCount:datasets.reduce((n,d)=>n+d.rows.length,0),datasets};await writeFile('lib/ias/data/fanaticism-golden.json',JSON.stringify(data,null,2)+'\n');

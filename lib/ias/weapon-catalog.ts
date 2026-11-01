@@ -1,4 +1,5 @@
 import catalog from "./data/weapon-catalog.json" with { type: "json" };
+import { weaponSearchText } from "./weapon-localization.ts";
 
 export interface IASWeaponCatalogEntry {
   code: string;
@@ -22,7 +23,8 @@ export const IAS_WEAPON_CATALOG_SOURCE = catalog.sourceFiles;
 export const IAS_WEAPON_CATALOG_RECORD_COUNT = catalog.catalogRecordCount;
 
 export type WeaponHandednessFilter = "ALL" | IASWeaponCatalogEntry["handedness"];
-export type WeaponSupportFilter = "ALL" | "VERIFIED" | "UNVERIFIED";
+export type WeaponCombinationStatus = "VERIFIED" | "UNVERIFIED" | "CONFLICTED" | "UNSUPPORTED";
+export type WeaponSupportFilter = "ALL" | WeaponCombinationStatus;
 
 export function filterIASWeaponCatalog(options: {
   search?: string;
@@ -30,6 +32,7 @@ export function filterIASWeaponCatalog(options: {
   handedness?: WeaponHandednessFilter;
   support?: WeaponSupportFilter;
   verifiedWeaponCodes?: readonly string[];
+  weaponStatuses?: Readonly<Record<string, WeaponCombinationStatus>>;
   includeNonSpawnable?: boolean;
 } = {}) {
   const term = (options.search ?? "").trim().toLocaleLowerCase();
@@ -39,8 +42,9 @@ export function filterIASWeaponCatalog(options: {
     const matchesCategory = !options.category || options.category === "ALL" || category === options.category;
     const matchesSpawnable = options.includeNonSpawnable || weapon.spawnable;
     const matchesHandedness = !options.handedness || options.handedness === "ALL" || weapon.handedness === options.handedness;
-    const matchesSupport = !options.support || options.support === "ALL" || (verified.has(weapon.code) ? "VERIFIED" : "UNVERIFIED") === options.support;
-    const searchable = `${weapon.name} ${weapon.code} ${weapon.itemType} ${weapon.weaponClass ?? ""}`.toLocaleLowerCase();
+    const status = options.weaponStatuses?.[weapon.code] ?? (verified.has(weapon.code) ? "VERIFIED" : "UNVERIFIED");
+    const matchesSupport = !options.support || options.support === "ALL" || status === options.support;
+    const searchable = weaponSearchText(weapon).toLocaleLowerCase();
     return matchesSpawnable && matchesCategory && matchesHandedness && matchesSupport && (!term || searchable.includes(term));
   });
 }

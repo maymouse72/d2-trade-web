@@ -7,13 +7,14 @@ import { IAS_SKILLS } from '../../../lib/ias/skills';
 import GameInfoNavigation from '../GameInfoNavigation';
 import styles from './ias-calculator.module.css';
 import { SMITE_MAX_IAS_BY_WEAPON } from '../../../lib/ias/constants';
-import { filterIASWeaponCatalog, IAS_WEAPON_CATALOG } from '../../../lib/ias/weapon-catalog';
+import { filterIASWeaponCatalog, IAS_WEAPON_CATALOG, type WeaponCombinationStatus } from '../../../lib/ias/weapon-catalog';
+import { localizedWeaponName, WEAPON_CATEGORY_KO } from '../../../lib/ias/weapon-localization';
+import { fanaticismSIAS } from '../../../lib/ias/fanaticism';
 
 const classes = [
   ['AMAZON', '아마존'], ['ASSASSIN', '암살자'], ['BARBARIAN', '야만용사'], ['DRUID', '드루이드'],
   ['NECROMANCER', '강령술사'], ['PALADIN', '성기사'], ['SORCERESS', '원소술사'], ['WARLOCK', '워록'],
 ] as const;
-const knownKoreanNames: Record<string, string> = { crs: '크리스탈 소드', '7cr': '페이즈 블레이드', whm: '워 해머', lsd: '롱 소드' };
 const weaponByCode = new Map(IAS_WEAPON_CATALOG.map(weapon => [weapon.code, weapon]));
 const weaponCategories = [...new Set(IAS_WEAPON_CATALOG.filter(weapon => weapon.spawnable).map(weapon => weapon.itemTypeName ?? weapon.itemType))].sort();
 
@@ -36,7 +37,8 @@ export default function IASCalculator() {
   const [weaponSearch, setWeaponSearch] = useState('');
   const [weaponCategory, setWeaponCategory] = useState('ALL');
   const [weaponHandedness, setWeaponHandedness] = useState<'ALL' | 'one-handed' | 'two-handed' | 'conditional'>('ALL');
-  const [weaponSupport, setWeaponSupport] = useState<'ALL' | 'VERIFIED' | 'UNVERIFIED'>('ALL');
+  const [weaponSupport, setWeaponSupport] = useState<'ALL' | WeaponCombinationStatus>('ALL');
+  const [fanaticismLevel, setFanaticismLevel] = useState(0);
   const hitCount = getZealHitCountFromSkillLevel(skillLevel) ?? 5;
   const selectedWeapon = IAS_WEAPONS[weaponCode];
   const selectedSkill = IAS_SKILLS[skill as keyof typeof IAS_SKILLS];
@@ -44,9 +46,15 @@ export default function IASCalculator() {
   const verifiedWeaponCodes = useMemo(() => (characterClass === 'PALADIN' && (compatibleAnimation === 'A1' || compatibleAnimation === 'S1')
     ? selectedSkill.supportedWeapons
     : []), [characterClass, compatibleAnimation, selectedSkill]);
+  const weaponStatuses = useMemo(() => Object.fromEntries(IAS_WEAPON_CATALOG.map(weapon => {
+    const classOnly = ['Amazon Bow', 'Amazon Javelin', 'Amazon Spear', 'Hand to Hand', 'Hand to Hand 2', 'Orb'].includes(weapon.itemTypeName ?? '');
+    const status: WeaponCombinationStatus = characterClass !== 'PALADIN' || classOnly ? 'UNSUPPORTED' : verifiedWeaponCodes.includes(weapon.code) ? 'VERIFIED' : 'UNVERIFIED';
+    return [weapon.code, status];
+  })), [characterClass, verifiedWeaponCodes]);
+  const supportCounts = useMemo(() => Object.values(weaponStatuses).reduce((counts, status) => ({ ...counts, [status]: (counts[status] ?? 0) + 1 }), {} as Record<WeaponCombinationStatus, number>), [weaponStatuses]);
   const maxIAS = getIASLimit(skill, weaponCode);
   const selectedCatalogWeapon = weaponByCode.get(weaponCode);
-  const filteredWeapons = useMemo(() => filterIASWeaponCatalog({ search: weaponSearch, category: weaponCategory, handedness: weaponHandedness, support: weaponSupport, verifiedWeaponCodes }), [weaponCategory, weaponHandedness, weaponSearch, weaponSupport, verifiedWeaponCodes]);
+  const filteredWeapons = useMemo(() => filterIASWeaponCatalog({ search: weaponSearch, category: weaponCategory, handedness: weaponHandedness, support: weaponSupport, verifiedWeaponCodes, weaponStatuses }), [weaponCategory, weaponHandedness, weaponSearch, weaponSupport, verifiedWeaponCodes, weaponStatuses]);
   const weaponOptions = filteredWeapons.some(weapon => weapon.code === weaponCode) || !selectedCatalogWeapon
     ? filteredWeapons
     : [selectedCatalogWeapon, ...filteredWeapons];
@@ -55,10 +63,10 @@ export default function IASCalculator() {
   const totalIAS = (Number(weaponIAS) || 0) + (Number(offWeaponIAS) || 0);
   const selectedAnimation = skill === 'NORMAL_ATTACK' ? animation : skill === 'SMITE' ? 'S1' : 'A1';
   const currentAnimation = skill === 'NORMAL_ATTACK' ? selectedAnimation : selectedSkill.animationMode;
-  const model = useMemo(() => getCalculatorViewModelFromParts(weaponIAS, offWeaponIAS, { characterClass, weaponCode, animation: selectedAnimation, skill, hitCount }), [weaponIAS, offWeaponIAS, characterClass, weaponCode, skill, selectedAnimation, hitCount]);
+  const model = useMemo(() => getCalculatorViewModelFromParts(weaponIAS, offWeaponIAS, { characterClass, weaponCode, animation: selectedAnimation, skill, hitCount, fanaticismLevel }), [weaponIAS, offWeaponIAS, characterClass, weaponCode, skill, selectedAnimation, hitCount, fanaticismLevel]);
   const result = model.status === 'SUPPORTED' ? model.result : null;
-  const breakpointRows = characterClass === 'PALADIN' ? getWeaponBreakpoints(weaponCode, (skill === 'SMITE' ? 'A1' : selectedAnimation) as 'A1' | 'A2', skill as keyof typeof IAS_SKILLS, hitCount) : [];
-  const zealBreakpointRows = skill === 'ZEAL' ? getZealBreakpoints(weaponCode, hitCount) : [];
+  const breakpointRows = characterClass === 'PALADIN' ? getWeaponBreakpoints(weaponCode, (skill === 'SMITE' ? 'A1' : selectedAnimation) as 'A1' | 'A2', skill as keyof typeof IAS_SKILLS, hitCount, fanaticismLevel) : [];
+  const zealBreakpointRows = skill === 'ZEAL' ? getZealBreakpoints(weaponCode, hitCount, fanaticismLevel) : [];
   const statusMessage = model.status === 'INVALID_INPUT'
     ? model.reason
     : model.status === 'UNVERIFIED'
@@ -91,7 +99,7 @@ export default function IASCalculator() {
       <GameInfoNavigation active="ias-calculator" />
       <div className={styles.heading}><h2 id="ias-title">디아블로2 레저렉션 공속 계산기</h2><span className={styles.badge}>시험 운영</span></div>
       <p className={styles.intro}>지원하는 성기사 공격 스킬과 한손 무기의 공격 속도 기준값 및 공격 동작 전체 길이를 확인할 수 있습니다.</p>
-      <p className={styles.notice}>계산 범위는 성기사 인간형의 검증된 한손 A1 공격, 열의, 방패 착용 강타 S1입니다. 광신 등 추가 속도 보정과 A2는 지원하지 않습니다. 결과는 D2R 원본 데이터와 공개된 프레임 기준표에 대조했으며 게임 내 타격 프레임 실측값은 아닙니다.</p>
+      <p className={styles.notice}>계산 범위는 성기사 인간형의 검증된 한손 A1 공격, 열의, 방패 착용 강타 S1입니다. 광신은 검증된 성기사 조합에서만 적용합니다. 결과는 D2R 원본 데이터와 공개된 프레임 기준표에 대조했으며 게임 내 타격 프레임 실측값은 아닙니다.</p>
 
       <div className={styles.layout}>
         <section className={styles.controls} aria-labelledby="conditions-title">
@@ -101,44 +109,39 @@ export default function IASCalculator() {
               {classes.map(([id, name]) => <option key={id} value={id}>{name}{id === 'PALADIN' ? '' : ' · 준비 중'}</option>)}
             </select>
           </label>
-          <label className={styles.field} htmlFor="ias-weapon-search"><span>무기 검색</span>
-            <input id="ias-weapon-search" type="search" value={weaponSearch} onChange={event => setWeaponSearch(event.target.value)} placeholder="무기명 또는 코드 검색" />
-          </label>
-          <label className={styles.field} htmlFor="ias-weapon-category"><span>무기 종류 필터</span>
-            <select id="ias-weapon-category" value={weaponCategory} onChange={event => setWeaponCategory(event.target.value)}>
-              <option value="ALL">전체 종류 ({IAS_WEAPON_CATALOG.length})</option>
-              {weaponCategories.map(category => <option key={category} value={category}>{category}</option>)}
-            </select>
-          </label>
-          <label className={styles.field} htmlFor="ias-weapon-handedness"><span>손잡이 형태 필터</span>
-            <select id="ias-weapon-handedness" value={weaponHandedness} onChange={event => setWeaponHandedness(event.target.value as typeof weaponHandedness)}>
-              <option value="ALL">전체</option><option value="one-handed">한손 무기</option><option value="two-handed">양손 무기</option><option value="conditional">조건부</option>
-            </select>
-          </label>
-          <label className={styles.field} htmlFor="ias-weapon-support"><span>현재 스킬 검증 상태</span>
-            <select id="ias-weapon-support" value={weaponSupport} onChange={event => setWeaponSupport(event.target.value as typeof weaponSupport)}>
-              <option value="ALL">전체 상태</option><option value="VERIFIED">검증 완료 조합</option><option value="UNVERIFIED">검증 전 조합</option>
-            </select>
-          </label>
-          <label className={styles.field} htmlFor="ias-weapon"><span>무기 선택</span>
-            <select id="ias-weapon" value={weaponCode} onChange={event => { setWeaponCode(event.target.value); setWeaponIAS('0'); setOffWeaponIAS('0'); }}>
-              {weaponOptions.map(weapon => {
-                const verified = verifiedWeaponCodes.includes(weapon.code);
-                const resolvedWsm = IAS_WEAPONS[weapon.code]?.resolvedWeaponSpeedModifier ?? weapon.wsm;
-                const wsm = resolvedWsm === null ? 'WSM 확인 불가' : `WSM ${resolvedWsm > 0 ? '+' : ''}${resolvedWsm}`;
-                const handedness = weapon.handedness === 'one-handed' ? '한손' : weapon.handedness === 'two-handed' ? '양손' : '조건부';
-                const name = knownKoreanNames[weapon.code] ? `${knownKoreanNames[weapon.code]} (${weapon.name})` : weapon.name;
-                return <option key={weapon.code} value={weapon.code}>{name} · {weapon.code} · {wsm} · {handedness} · {verified ? '지원' : '검증 전'}</option>;
-              })}
-            </select>
-          </label>
-          <p className={styles.hint} aria-live="polite">등록 {IAS_WEAPON_CATALOG.length}종 · 선택 가능 {IAS_WEAPON_CATALOG.filter(weapon => weapon.spawnable).length}종 중 {filteredWeapons.length}종 표시 · 현재 조합: {verifiedWeaponCodes.includes(weaponCode) ? 'VERIFIED' : 'UNVERIFIED'}</p>
           <label className={styles.field} htmlFor="ias-skill"><span>공격 스킬</span>
             <select id="ias-skill" value={skill} onChange={event => handleSkillChange(event.target.value)}>
               {Object.values(IAS_SKILLS).filter(entry => entry.selectable).map(entry => <option key={entry.code} value={entry.code}>{entry.label}{entry.supportStatus === 'SUPPORTED' ? '' : ' · 검증 중'}</option>)}
               {Object.values(IAS_SKILLS).filter(entry => !entry.selectable).map(entry => <option key={entry.code} value={entry.code} disabled>{entry.label} · 준비 중</option>)}
             </select>
           </label>
+          <label className={styles.field} htmlFor="ias-weapon-category"><span>무기 종류</span>
+            <select id="ias-weapon-category" value={weaponCategory} onChange={event => setWeaponCategory(event.target.value)}>
+              <option value="ALL">전체 종류 (297)</option>
+              {weaponCategories.map(category => <option key={category} value={category}>{WEAPON_CATEGORY_KO[category] ?? category}</option>)}
+            </select>
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon"><span>주 무기</span>
+            <select id="ias-weapon" value={weaponCode} onChange={event => { setWeaponCode(event.target.value); setWeaponIAS('0'); setOffWeaponIAS('0'); }}>
+              {weaponOptions.map(weapon => <option key={weapon.code} value={weapon.code}>{localizedWeaponName(weapon.code, weapon.name)} · {weapon.code} · WSM {IAS_WEAPONS[weapon.code]?.resolvedWeaponSpeedModifier ?? weapon.wsm ?? '?'} · {{ VERIFIED: '계산 지원', UNVERIFIED: '검증 대기', CONFLICTED: '검증 충돌', UNSUPPORTED: '지원 불가' }[weaponStatuses[weapon.code]]}</option>)}
+            </select>
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon-search"><span>무기 검색</span>
+            <input id="ias-weapon-search" type="search" value={weaponSearch} onChange={event => setWeaponSearch(event.target.value)} placeholder="무기명 또는 코드 검색" />
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon-handedness"><span>손잡이 형태 필터</span>
+            <select id="ias-weapon-handedness" value={weaponHandedness} onChange={event => setWeaponHandedness(event.target.value as typeof weaponHandedness)}>
+              <option value="ALL">전체</option><option value="one-handed">한손 무기</option><option value="two-handed">양손 무기</option><option value="conditional">조건부</option>
+            </select>
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon-support"><span>계산 지원 상태</span>
+            <select id="ias-weapon-support" value={weaponSupport} onChange={event => setWeaponSupport(event.target.value as typeof weaponSupport)}>
+              <option value="ALL">전체 무기</option><option value="VERIFIED">계산 지원</option><option value="UNVERIFIED">검증 대기</option><option value="CONFLICTED">검증 충돌</option><option value="UNSUPPORTED">지원 불가</option>
+            </select>
+          </label>
+          <p className={styles.hint} aria-live="polite">등록 {IAS_WEAPON_CATALOG.length}종 · 선택 가능 {IAS_WEAPON_CATALOG.filter(weapon => weapon.spawnable).length}종 중 {filteredWeapons.length}종 표시 · 조합 상태: 지원 {supportCounts.VERIFIED ?? 0} · 검증 대기 {supportCounts.UNVERIFIED ?? 0} · 충돌 {supportCounts.CONFLICTED ?? 0} · 불가 {supportCounts.UNSUPPORTED ?? 0}</p>
+          <label className={styles.field} htmlFor="fanaticism-level"><span>광신 보정</span><select id="fanaticism-level" value={fanaticismLevel} onChange={event => setFanaticismLevel(Number(event.target.value))}><option value={0}>사용 안 함</option>{Array.from({length:60},(_,i)=>i+1).map(level=><option key={level} value={level}>레벨 {level} · +{fanaticismSIAS(level)} SIAS</option>)}</select></label>
+          {fanaticismLevel > 0 ? <p className={styles.hint}>광신 레벨 {fanaticismLevel}: 장비 IAS 감쇠 이후 +{fanaticismSIAS(fanaticismLevel)} 스킬 IAS 적용. 레벨은 장비 보너스를 포함한 합산 레벨입니다.</p> : null}
           {skill === 'ZEAL' ? <label className={styles.field} htmlFor="zeal-skill-level"><span>열의 기술 레벨</span>
             <select id="zeal-skill-level" value={skillLevel} onChange={event => setSkillLevel(Number(event.target.value))}>
               {Array.from({length: 20}, (_, index) => index + 1).map(level => <option key={level} value={level}>{level}레벨 · 최대 {Math.min(level + 1, 5)}회</option>)}
@@ -184,8 +187,8 @@ export default function IASCalculator() {
         <section className={styles.results} aria-labelledby="result-title" aria-live="polite" aria-atomic="true">
           <h3 id="result-title">계산 결과</h3>
           {result ? <>
-            <p className={styles.resultMeta}>성기사 · 인간형 · {selectedSkill.label} · {selectedWeapon?.name} · {currentAnimation} · 공격 속도 증가 합계 {result.totalIAS} IAS</p>
-            {result.zealSequence ? <p className={styles.resultMeta}>고정 Paladin 1HS Zeal 표와 일치한 연속 공격 시퀀스입니다. 이벤트 프레임은 표의 action frame 산출값이며 게임 내 실측값은 아닙니다.</p>
+            <p className={styles.resultMeta}>성기사 · 인간형 · {selectedSkill.label} · {selectedWeapon?.name} · {currentAnimation} · 공격 속도 증가 합계 {result.totalIAS} IAS{fanaticismLevel ? ` · 광신 레벨 ${fanaticismLevel} (+${fanaticismSIAS(fanaticismLevel)} SIAS)` : ''}</p>
+            {result.zealSequence ? <p className={styles.resultMeta}>{fanaticismLevel ? '광신 SIAS를 반영한 열의 연속 공격 시퀀스입니다.' : '고정 Paladin 1HS Zeal 표와 일치한 연속 공격 시퀀스입니다.'} 이벤트 프레임은 표의 action frame 산출값이며 게임 내 실측값은 아닙니다.</p>
               : <p className={styles.resultMeta}>{skill === 'SMITE' ? '방패 착용 상태의 강타 S1 전체 동작 길이입니다. 실제 타격 시점의 게임 내 실측은 아닙니다.' : '선택한 공격 동작의 전체 애니메이션 길이입니다. 실제 타격 판정 시점이나 연속 공격의 정확한 주기를 뜻하지 않습니다.'}</p>}
             <p className={styles.frameValue}><strong>{result.zealSequence?.totalSequenceFrames ?? result.fullAnimationFrames}</strong><span>프레임</span></p>
             <dl className={styles.stats}>

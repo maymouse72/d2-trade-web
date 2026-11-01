@@ -3,15 +3,32 @@ import type { IASAnimation, IASAttackSkill, IASResult } from "./types.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
 import { deriveSkillGoldenBreakpoints, getSkillGoldenFrameCount } from "./skill-golden.ts";
-import { ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
+import { ZEAL_MAX_IAS_BY_WEAPON, PALADIN_CRS_A1 } from "./constants.ts";
 import { deriveZealBreakpoints, getZealGoldenRow } from "./zeal-golden.ts";
 import { SMITE_MAX_IAS_BY_WEAPON } from "./constants.ts";
 import { SMITE_BREAKPOINTS } from "./smite-golden.ts";
+import { fanaticismSIAS } from "./fanaticism.ts";
 
-export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1", skill: IASAttackSkill = "NORMAL_ATTACK", hitCount = 5) {
+export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1", skill: IASAttackSkill = "NORMAL_ATTACK", hitCount = 5, fanaticismLevel = 0) {
   if (animation !== "A1" || IAS_WEAPONS[weaponCode]?.animationEvidence[animation].status !== "VERIFIED") return [];
   const skillDefinition = IAS_SKILLS[skill];
   if (skillDefinition?.supportStatus !== "SUPPORTED") return [];
+  if (fanaticismLevel > 0) {
+    const weapon = IAS_WEAPONS[weaponCode];
+    if (!weapon) return [];
+    const maxIAS = skill === "ZEAL" ? (ZEAL_MAX_IAS_BY_WEAPON[weaponCode] ?? 0) : skill === "SMITE" ? (SMITE_MAX_IAS_BY_WEAPON[weaponCode] ?? 0) : (skillDefinition.iasRange?.[weaponCode]?.max ?? weapon.maxIAS);
+    const rows: { ias: number; fullAnimationFrames: number }[] = [];
+    let previous = -1;
+    for (let ias = 0; ias <= maxIAS; ias++) {
+      const ieias = Math.floor(120 * ias / (120 + ias));
+      const eias = Math.max(-85, Math.min(75, ieias + fanaticismSIAS(fanaticismLevel) - weapon.resolvedWeaponSpeedModifier));
+      const speed = skill === "ZEAL" || skill === "SMITE" ? Math.floor(256 * (100 + eias) / 100) : Math.floor(PALADIN_CRS_A1.animationSpeed * (100 + eias) / 100);
+      const frames = skill === "ZEAL" ? Math.ceil(256 * 7 / speed) * (hitCount - 1) + Math.ceil(256 * 15 / speed) - 1 : skill === "SMITE" ? Math.ceil(256 * 12 / speed) - 1 : Math.ceil(256 * (PALADIN_CRS_A1.framesPerDirection - PALADIN_CRS_A1.startingFrame) / speed) - 1;
+      if (frames !== previous) rows.push({ ias, fullAnimationFrames: frames });
+      previous = frames;
+    }
+    return rows;
+  }
   if (skill === "ZEAL") {
     return getZealBreakpoints(weaponCode, hitCount).map((row) => ({ ias: row.ias, fullAnimationFrames: row.totalSequenceFrames }));
   }
@@ -27,7 +44,15 @@ export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation
   }));
 }
 
-export function getZealBreakpoints(weaponCode: string, hitCount: number) {
+export function getZealBreakpoints(weaponCode: string, hitCount: number, fanaticismLevel = 0) {
+  if (fanaticismLevel > 0) {
+    const weapon = IAS_WEAPONS[weaponCode]; if (!weapon) return [];
+    return getWeaponBreakpoints(weaponCode, "A1", "ZEAL", hitCount, fanaticismLevel).map(row => {
+      const ieias = Math.floor(120 * row.ias / (120 + row.ias)); const eias = Math.max(-85, Math.min(75, ieias + fanaticismSIAS(fanaticismLevel) - weapon.resolvedWeaponSpeedModifier));
+      const speed = Math.floor(256 * (100 + eias) / 100); const first = Math.ceil(256 * 7 / speed); const last = Math.ceil(256 * 15 / speed) - 1;
+      return { ias: row.ias, totalSequenceFrames: row.fullAnimationFrames, firstAttackFrames: first, followUpAttackFrames: first, finalAttackFrames: last };
+    });
+  }
   return deriveZealBreakpoints(weaponCode, hitCount).flatMap((ias) => {
     const row = getZealGoldenRow(weaponCode, ias, hitCount);
     return row ? [{ ias, ...row }] : [];
@@ -40,6 +65,7 @@ export type CalculatorSelection = {
   animation: string;
   skill?: string;
   hitCount?: number;
+  fanaticismLevel?: number;
 };
 
 export type CalculatorViewModel =
@@ -87,6 +113,7 @@ export function getCalculatorViewModelFromParts(rawWeaponIAS: string, rawOffWeap
     skillIAS: 0,
     buffIAS: 0,
     debuffIAS: 0,
+    fanaticismLevel: selection.fanaticismLevel ?? 0,
   });
 
   if (result.status !== "SUPPORTED") return { status: result.status, reason: result.reason };

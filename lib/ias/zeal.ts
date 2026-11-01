@@ -2,6 +2,8 @@ import { getZealBreakpointDetails, getZealGoldenRow } from "./zeal-golden.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import type { IASResult } from "./types.ts";
 import type { NormalizedIASInput } from "./support-policy.ts";
+import { fanaticismSIAS } from "./fanaticism.ts";
+import { ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
 
 function emptyResult(status: IASResult["status"], reasonCode: IASResult["reasonCode"], reason: string): IASResult {
   return {
@@ -24,7 +26,7 @@ export function calculateSupportedZeal(input: NormalizedIASInput): IASResult {
   if (!weapon) return emptyResult("UNVERIFIED", "UNVERIFIED_WEAPON", "열의 무기 기준값을 찾을 수 없습니다.");
 
   const itemEffectiveIAS = Math.floor((120 * input.totalIAS) / (120 + input.totalIAS));
-  const eiasRaw = itemEffectiveIAS - weapon.resolvedWeaponSpeedModifier;
+  const eiasRaw = itemEffectiveIAS + (input.fanaticismLevel ? fanaticismSIAS(input.fanaticismLevel) : 0) - weapon.resolvedWeaponSpeedModifier;
   const eiasApplied = Math.max(-85, Math.min(75, eiasRaw));
   const speedIncrease = Math.floor((256 * (100 + eiasApplied)) / 100);
   if (speedIncrease <= 0) return emptyResult("INVALID_INPUT", "INVALID_INPUT", "계산된 애니메이션 속도가 유효하지 않습니다.");
@@ -34,7 +36,11 @@ export function calculateSupportedZeal(input: NormalizedIASInput): IASResult {
   const finalAttackFrames = Math.ceil((256 * 15) / speedIncrease) - 1;
   const hitCount = input.hitCount;
   const totalSequenceFrames = firstAttackFrames + (hitCount - 2) * followUpAttackFrames + finalAttackFrames;
-  const expected = getZealGoldenRow(input.weaponCode, input.totalIAS, hitCount);
+  const baseExpected = getZealGoldenRow(input.weaponCode, input.totalIAS, hitCount);
+  const expected = input.fanaticismLevel ? {
+    EIAS: eiasApplied, firstAttackFrames, followUpAttackFrames, finalAttackFrames, totalSequenceFrames,
+    hitEventFrames: Array.from({ length: hitCount }, (_, index) => index === hitCount - 1 ? firstAttackFrames + (hitCount - 2) * followUpAttackFrames + finalAttackFrames : firstAttackFrames * (index + 1)),
+  } : baseExpected;
   if (
     !expected || expected.EIAS !== eiasApplied || expected.firstAttackFrames !== firstAttackFrames ||
     expected.followUpAttackFrames !== followUpAttackFrames || expected.finalAttackFrames !== finalAttackFrames ||
@@ -43,7 +49,22 @@ export function calculateSupportedZeal(input: NormalizedIASInput): IASResult {
     return emptyResult("UNVERIFIED", "GOLDEN_DATA_MISMATCH", "열의 계산 결과가 고정 기준표 Golden Dataset과 일치하지 않아 숫자를 표시하지 않습니다.");
   }
 
-  const breakpoint = getZealBreakpointDetails(input.weaponCode, input.totalIAS, hitCount);
+  const breakpoint = input.fanaticismLevel
+    ? (() => {
+      let current = 0; let next: number | null = null; let previousFrames = -1;
+      for (let ias = 0; ias <= ZEAL_MAX_IAS_BY_WEAPON[input.weaponCode]; ias++) {
+        const ieias = Math.floor((120 * ias) / (120 + ias));
+        const eias = Math.max(-85, Math.min(75, ieias + fanaticismSIAS(input.fanaticismLevel) - weapon.resolvedWeaponSpeedModifier));
+        const speed = Math.floor((256 * (100 + eias)) / 100);
+        const first = Math.ceil((256 * 7) / speed); const last = Math.ceil((256 * 15) / speed) - 1;
+        const frames = first + (hitCount - 2) * first + last;
+        if (ias <= input.totalIAS && frames !== previousFrames) current = ias;
+        if (ias > input.totalIAS && frames < totalSequenceFrames && next === null) next = ias;
+        previousFrames = frames;
+      }
+      return { currentBreakpoint: current, nextBreakpoint: next, requiredAdditionalIAS: next === null ? null : next - input.totalIAS, fullAnimationFrames: totalSequenceFrames };
+    })()
+    : getZealBreakpointDetails(input.weaponCode, input.totalIAS, hitCount);
   if (!breakpoint) return emptyResult("UNVERIFIED", "GOLDEN_DATA_MISMATCH", "열의 Golden Dataset에 해당 입력이 없습니다.");
 
   return {
@@ -55,7 +76,7 @@ export function calculateSupportedZeal(input: NormalizedIASInput): IASResult {
     currentBreakpoint: breakpoint.currentBreakpoint,
     nextBreakpoint: breakpoint.nextBreakpoint,
     requiredAdditionalIAS: breakpoint.requiredAdditionalIAS,
-    evidenceVersion: "D2R-3.3.93847-IAS-4B2-ZEAL",
+    evidenceVersion: input.fanaticismLevel ? "D2R-3.3.93847-IAS-4E-FANATICISM" : "D2R-3.3.93847-IAS-4B2-ZEAL",
     reason: `열의 ${hitCount}회 연속 공격의 Paladin A1 Zeal 기준표 일치 결과입니다.`,
     trace: {
       weaponSpeedModifier: weapon.resolvedWeaponSpeedModifier,

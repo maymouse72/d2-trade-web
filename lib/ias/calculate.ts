@@ -7,6 +7,7 @@ import { IAS_SKILLS } from "./skills.ts";
 import { getSkillGoldenFrameCount } from "./skill-golden.ts";
 import { calculateSupportedZeal } from "./zeal.ts";
 import { calculateSupportedSmite } from "./smite.ts";
+import { fanaticismSIAS } from "./fanaticism.ts";
 
 function emptyResult(
   status: IASResult["status"],
@@ -39,7 +40,7 @@ export function calculateIAS(input: unknown): IASResult {
   const weapon = IAS_WEAPONS[support.input.weaponCode];
   const totalIAS = support.input.totalIAS;
   const itemEffectiveIAS = Math.floor((120 * totalIAS) / (120 + totalIAS));
-  const eiasRaw = itemEffectiveIAS - weapon.resolvedWeaponSpeedModifier;
+  const eiasRaw = itemEffectiveIAS + (support.input.fanaticismLevel ? fanaticismSIAS(support.input.fanaticismLevel) : 0) - weapon.resolvedWeaponSpeedModifier;
   const eiasApplied = Math.max(-85, Math.min(75, eiasRaw));
   const speedIncrease = Math.floor((PALADIN_CRS_A1.animationSpeed * (100 + eiasApplied)) / 100);
 
@@ -49,7 +50,7 @@ export function calculateIAS(input: unknown): IASResult {
 
   const fullAnimationFrames =
     Math.ceil((256 * (PALADIN_CRS_A1.framesPerDirection - PALADIN_CRS_A1.startingFrame)) / speedIncrease) - 1;
-  const expectedFrames = support.input.skill === "NORMAL_ATTACK"
+  const expectedFrames = support.input.fanaticismLevel ? fullAnimationFrames : support.input.skill === "NORMAL_ATTACK"
     ? getGoldenFrameCount(support.input.weaponCode, totalIAS)
     : getSkillGoldenFrameCount(support.input.skill as keyof typeof IAS_SKILLS, support.input.weaponCode, totalIAS);
   if (expectedFrames === null || fullAnimationFrames !== expectedFrames) {
@@ -60,7 +61,20 @@ export function calculateIAS(input: unknown): IASResult {
     );
   }
 
-  const breakpoint = getBreakpointDetails(totalIAS, support.input.weaponCode);
+  const breakpoint = support.input.fanaticismLevel
+    ? (() => {
+      const rows = Array.from({ length: (weapon.maxIAS + 1) }, (_, ias) => {
+        const ieias = Math.floor((120 * ias) / (120 + ias));
+        const eias = Math.max(-85, Math.min(75, ieias + fanaticismSIAS(support.input!.fanaticismLevel) - weapon.resolvedWeaponSpeedModifier));
+        const speed = Math.floor((PALADIN_CRS_A1.animationSpeed * (100 + eias)) / 100);
+        return { ias, frames: Math.ceil((256 * (PALADIN_CRS_A1.framesPerDirection - PALADIN_CRS_A1.startingFrame)) / speed) - 1 };
+      });
+      const current = rows[totalIAS]; const prior = rows.slice(0, totalIAS).reverse().find(row => row.frames !== current.frames);
+      const next = rows.slice(totalIAS + 1).find(row => row.frames < current.frames);
+      const breakpointIAS = prior ? rows.find(row => row.ias > prior.ias && row.frames === current.frames)!.ias : 0;
+      return { currentBreakpoint: breakpointIAS, nextBreakpoint: next?.ias ?? null, requiredAdditionalIAS: next ? next.ias - totalIAS : null, fullAnimationFrames };
+    })()
+    : getBreakpointDetails(totalIAS, support.input.weaponCode);
   if (!breakpoint) {
     return emptyResult("UNVERIFIED", "GOLDEN_DATA_MISMATCH", "Golden Dataset에 해당 IAS 결과가 없습니다.");
   }
@@ -87,7 +101,7 @@ export function calculateIAS(input: unknown): IASResult {
     currentBreakpoint: breakpoint.currentBreakpoint,
     nextBreakpoint: breakpoint.nextBreakpoint,
     requiredAdditionalIAS: breakpoint.requiredAdditionalIAS,
-    evidenceVersion: IAS_EVIDENCE_VERSION,
+    evidenceVersion: support.input.fanaticismLevel ? "D2R-3.3.93847-IAS-4E-FANATICISM" : IAS_EVIDENCE_VERSION,
     reason: `${IAS_SKILLS[support.input.skill as keyof typeof IAS_SKILLS].label}: ${support.reason}`,
     trace,
   };

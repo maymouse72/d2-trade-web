@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { IAS_WEAPON_CATALOG, IAS_WEAPON_CATALOG_SOURCE, filterIASWeaponCatalog } from "../weapon-catalog.ts";
+import { IAS_WEAPON_CATALOG, IAS_WEAPON_CATALOG_SOURCE, filterIASWeaponCatalog, type WeaponCombinationStatus } from "../weapon-catalog.ts";
+import { localizedWeaponName, WEAPON_CATEGORY_KO, WEAPON_LOCALIZATION_COUNT } from "../weapon-localization.ts";
 
 test("normalized weapon catalog contains every coded source record", () => {
   assert.equal(IAS_WEAPON_CATALOG.length, 306);
@@ -48,4 +49,22 @@ test("support filter separates enabled combinations from unverified catalog entr
 test("combined catalog filters remain composable", () => {
   const entries = filterIASWeaponCatalog({ search: "sword", category: "Sword", handedness: "one-handed", support: "VERIFIED", verifiedWeaponCodes: ["lsd"] });
   assert.deepEqual(entries.map((weapon) => weapon.code), ["lsd"]);
+});
+
+test("official Korean item localization covers all catalog codes and supports Korean, English, and code search", () => {
+  assert.equal(WEAPON_LOCALIZATION_COUNT, 306);
+  assert.match(localizedWeaponName("crs", "Crystal Sword"), /크리스탈 소드 \(Crystal Sword\)/);
+  assert.deepEqual(filterIASWeaponCatalog({ search: "크리스탈 소드" }).map(item => item.code), ["crs"]);
+  assert.deepEqual(filterIASWeaponCatalog({ search: "PHASE BLADE" }).map(item => item.code), ["7cr"]);
+  assert.deepEqual(filterIASWeaponCatalog({ search: "7CR" }).map(item => item.code), ["7cr"]);
+  assert.equal(WEAPON_CATEGORY_KO.Sword, "검");
+  assert.equal(IAS_WEAPON_CATALOG.filter(item => item.spawnable).length, 297);
+});
+
+test("selector support-state filter separates verified, pending, conflicted, and unsupported combinations", () => {
+  for (const [state, code] of Object.entries({ VERIFIED: "crs", UNVERIFIED: "7cr", CONFLICTED: "whm", UNSUPPORTED: "lsd" })) {
+    const states: Record<string, WeaponCombinationStatus> = Object.fromEntries(IAS_WEAPON_CATALOG.map(item => [item.code, state === "VERIFIED" ? "UNVERIFIED" : "VERIFIED"]));
+    states[code] = state as WeaponCombinationStatus;
+    assert.deepEqual(filterIASWeaponCatalog({ support: state as "VERIFIED" | "UNVERIFIED" | "CONFLICTED" | "UNSUPPORTED", weaponStatuses: states, includeNonSpawnable: true }).map(item => item.code), [code]);
+  }
 });

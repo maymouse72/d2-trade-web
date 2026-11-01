@@ -65,6 +65,7 @@ export interface IASInput {
   skillIAS?: number;
   buffIAS?: number;
   debuffIAS?: number;
+  fanaticismLevel?: number;
 }
 
 export interface CalculationTrace {

@@ -28,6 +28,7 @@ export interface NormalizedIASInput {
   buffIAS: number;
   debuffIAS: number;
   hitCount: number;
+  fanaticismLevel: number;
 }
 
 export interface SupportDecision {
@@ -108,7 +109,12 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     buffIAS: (value.buffIAS as number | undefined) ?? 0,
     debuffIAS: (value.debuffIAS as number | undefined) ?? 0,
     hitCount,
+    fanaticismLevel: value.fanaticismLevel === undefined ? 0 : (value.fanaticismLevel as number),
   };
+
+  if (value.fanaticismLevel !== undefined && (!isIASNumber(value.fanaticismLevel) || value.fanaticismLevel > 60)) {
+    return decision("INVALID_INPUT", "INVALID_INPUT", "광신 레벨은 0(사용 안 함) 또는 1~60 정수여야 합니다.");
+  }
 
   const weapon = IAS_WEAPONS[weaponCode];
   if (skillCode === "SMITE" && SMITE_MAX_IAS_BY_WEAPON[weaponCode] !== undefined && totalIAS > SMITE_MAX_IAS_BY_WEAPON[weaponCode]) {
@@ -160,6 +166,12 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   }
   if (input.skillIAS !== 0 || input.buffIAS !== 0 || input.debuffIAS !== 0) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "스킬, 버프 또는 디버프 IAS가 포함된 조합은 아직 검증되지 않았습니다."), input };
+  }
+  const hasFanaticismEvidence = skillCode === "ZEAL"
+    ? skill.supportedWeapons.includes(weaponCode)
+    : ["NORMAL_ATTACK", "SACRIFICE", "VENGEANCE", "CONVERSION", "SMITE"].includes(skillCode) && weaponCode !== "lsd" && skill.supportedWeapons.includes(weaponCode);
+  if (input.fanaticismLevel > 0 && (input.characterClass !== "PALADIN" || !hasFanaticismEvidence)) {
+    return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "광신은 현재 검증된 성기사 공격 스킬·무기 조합에서만 계산할 수 있습니다."), input };
   }
   if (skillCode !== "SMITE" && input.animation !== "A1") {
     const animationEvidence = weapon?.animationEvidence[input.animation as "A1" | "A2"];
