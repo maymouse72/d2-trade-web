@@ -2,21 +2,23 @@
 
 ## Deployment status
 
-**Deployment gate passed; push/deployment pending.** IAS-4-B-2 source and generated dataset have passed automated tests, TypeScript, lint, and the Webpack production build. Local PC/mobile browser checks passed. Existing trade detail and comments have now been reviewed read-only, alongside catalogs, experience information, and navigation. No IAS-4B-2 commit has been pushed yet.
+**DEPLOYED.** IAS-4-B-2 source and generated dataset passed automated tests, TypeScript, lint, and the Webpack production build. Local and production PC/mobile browser checks passed. Existing trade detail and comments, catalogs, experience information, and navigation were reviewed read-only.
 
-## Repository baseline
+## Repository and deployment
 
 - Branch: `main`
-- Baseline HEAD: `5bb9653952f9aed0fc234dc29020e2597c17704e`
-- Baseline `origin/main`: matched at initial inspection
-- IAS-4-B-2 commit: pending
-- Production deployment ID: pending
-- Production domain: existing deployment remains in service; no IAS-4-B-2 alias change
+- Baseline HEAD and `origin/main`: `5bb9653952f9aed0fc234dc29020e2597c17704e`
+- IAS-4-B-2 commit: `a85f05d08b0065722ee31452b595fae59dc7b651`
+- Production deployment ID: `dpl_6ntYAikPWmeRSn5YfBEZj6CD16B6`
+- Production state: READY
+- Production aliases: `www.d2jugobatgo.com`, `d2jugobatgo.com` (redirects to www), and Vercel project aliases
+- Production browser smoke: PASS; console errors none
+- Rollback: not needed
 
 ## Preserved local changes
 
-Unrelated IAS-2B and IAS-3A report edits and the untracked `debug.log` remain excluded from this feature's change. Existing Golden datasets were not edited.
+Unrelated IAS-2B and IAS-3A report edits and the untracked `debug.log` were excluded from the commit. Existing A1 Golden datasets were unchanged.
 
-## Deployment steps
+## Outcome
 
-Read-only open one existing trade card's detail route and inspect existing comments; then recheck remote `main`, stage only IAS-4-B-2 files, commit, push, observe the automatic Vercel deployment, and perform production smoke checks.
+The push triggered the Vercel Production build; no duplicate deployment was created. Production smoke tests confirmed the Zeal selector, supported weapon caps, sequence output, existing read-only routes, and mobile layout.

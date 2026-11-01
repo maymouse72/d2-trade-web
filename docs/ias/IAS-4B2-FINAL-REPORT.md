@@ -1,6 +1,6 @@
 # IAS-4-B-2 Final Report
 
-## Final gate: implementation and validation passed; deployment pending
+## Final gate: PASS / DEPLOYED
 
 ### Completed
 
@@ -13,18 +13,26 @@
 - Local desktop browser interaction and console check: PASS
 - Mobile 390×844 layout and interaction check: PASS; no page-level horizontal overflow
 - Existing read-only trade list and detail `/trade/18` (0 existing comments), catalogs, experience information, and navigation checks: PASS
-
-### Outstanding gate
-
-Trade detail and existing comments were not verified read-only. This remains a required regression check. In accordance with the work order, the feature was not committed, pushed, or deployed while this item is unverified.
+- Production browser smoke tests: PASS on PC and mobile; console errors none
 
 ### Git and Vercel
 
 - Baseline HEAD and `origin/main`: `5bb9653952f9aed0fc234dc29020e2597c17704e`
-- IAS-4-B-2 commit: pending
-- Production deployment ID: pending
-- Production domain result: pending
+- IAS-4-B-2 commit: `a85f05d08b0065722ee31452b595fae59dc7b651`
+- Production deployment ID: `dpl_6ntYAikPWmeRSn5YfBEZj6CD16B6`
+- Production state: READY
+- `www.d2jugobatgo.com`: attached to the new Production deployment
 - Rollback: not applicable
+
+### Production Zeal smoke
+
+- Crystal Sword 0 IAS / 2 hits: 21 frames
+- Phase Blade 24 IAS / 2 hits: 14 frames; 200 IAS constrained to 72
+- War Hammer 317 IAS / 2 hits: 13 frames; 317 and 318 both valid within Zeal's 456 cap
+- War Hammer 456 IAS / 2 hits: 12 frames
+- Five-hit War Hammer sequence: 317 IAS → 28 frames; 456 IAS → 24 frames
+- Existing trade list/detail/comments, item catalogs, and experience page rendered; no records changed
+- Production browser console: no errors
 
 ### Evidence caveat
 
