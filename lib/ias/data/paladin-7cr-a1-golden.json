@@ -1,0 +1,851 @@
+{
+  "datasetId": "PALADIN-7CR-A1-D2R-3.3.93847",
+  "gameBuild": "3.3.93847",
+  "characterClass": "PALADIN",
+  "characterForm": "HUMAN",
+  "attackMode": "NORMAL",
+  "animation": "A1",
+  "weaponCode": "7cr",
+  "weaponName": "Phase Blade",
+  "weaponClass": "1hs",
+  "weaponSpeedModifier": -30,
+  "skillIAS": 0,
+  "iasMin": 0,
+  "iasMax": 200,
+  "metric": "FULL_ANIMATION_FRAMES",
+  "sourceTableRanges": [
+    {
+      "min": 0,
+      "max": 7,
+      "frames": 11
+    },
+    {
+      "min": 8,
+      "max": 23,
+      "frames": 10
+    },
+    {
+      "min": 24,
+      "max": 53,
+      "frames": 9
+    },
+    {
+      "min": 54,
+      "max": 200,
+      "frames": 8
+    }
+  ],
+  "source": {
+    "url": "https://theamazonbasin.com/wiki/index.php?title=Paladin_attack_speed",
+    "crossCheckUrl": "https://d2r.org/tools/breakpoints/paladin",
+    "accessed": "2026-11-01",
+    "description": "Published Paladin 1 Handed Swing table, WSM -30 column, frames and minimum IAS thresholds."
+  },
+  "generatedBy": "lib/ias/scripts/generate-golden.mjs; expands published frame ranges only; does not use calculate.ts",
+  "rows": [
+    {
+      "ias": 0,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 1,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 2,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 3,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 4,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 5,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 6,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 7,
+      "fullAnimationFrames": 11
+    },
+    {
+      "ias": 8,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 9,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 10,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 11,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 12,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 13,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 14,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 15,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 16,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 17,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 18,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 19,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 20,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 21,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 22,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 23,
+      "fullAnimationFrames": 10
+    },
+    {
+      "ias": 24,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 25,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 26,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 27,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 28,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 29,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 30,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 31,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 32,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 33,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 34,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 35,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 36,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 37,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 38,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 39,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 40,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 41,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 42,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 43,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 44,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 45,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 46,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 47,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 48,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 49,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 50,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 51,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 52,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 53,
+      "fullAnimationFrames": 9
+    },
+    {
+      "ias": 54,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 55,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 56,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 57,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 58,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 59,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 60,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 61,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 62,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 63,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 64,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 65,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 66,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 67,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 68,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 69,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 70,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 71,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 72,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 73,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 74,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 75,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 76,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 77,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 78,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 79,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 80,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 81,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 82,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 83,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 84,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 85,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 86,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 87,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 88,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 89,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 90,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 91,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 92,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 93,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 94,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 95,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 96,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 97,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 98,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 99,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 100,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 101,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 102,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 103,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 104,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 105,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 106,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 107,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 108,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 109,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 110,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 111,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 112,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 113,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 114,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 115,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 116,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 117,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 118,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 119,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 120,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 121,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 122,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 123,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 124,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 125,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 126,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 127,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 128,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 129,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 130,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 131,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 132,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 133,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 134,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 135,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 136,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 137,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 138,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 139,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 140,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 141,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 142,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 143,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 144,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 145,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 146,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 147,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 148,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 149,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 150,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 151,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 152,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 153,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 154,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 155,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 156,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 157,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 158,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 159,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 160,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 161,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 162,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 163,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 164,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 165,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 166,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 167,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 168,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 169,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 170,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 171,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 172,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 173,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 174,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 175,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 176,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 177,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 178,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 179,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 180,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 181,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 182,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 183,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 184,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 185,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 186,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 187,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 188,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 189,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 190,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 191,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 192,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 193,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 194,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 195,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 196,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 197,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 198,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 199,
+      "fullAnimationFrames": 8
+    },
+    {
+      "ias": 200,
+      "fullAnimationFrames": 8
+    }
+  ]
+}

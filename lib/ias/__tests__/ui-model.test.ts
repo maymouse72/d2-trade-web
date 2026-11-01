@@ -1,16 +1,22 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { IAS_BREAKPOINTS, getCalculatorViewModel } from "../ui-model.ts";
+import { constrainIASInput, getCalculatorViewModel, getWeaponBreakpoints } from "../ui-model.ts";
+import { IAS_WEAPONS } from "../weapons.ts";
 
 const paladin = { characterClass: "PALADIN", weaponCode: "crs", animation: "A1" };
 
 test("UI breakpoint rows come from Golden Dataset", () => {
-  assert.deepEqual(IAS_BREAKPOINTS, [
+  assert.deepEqual(getWeaponBreakpoints("crs"), [
     { ias: 0, fullAnimationFrames: 14 }, { ias: 9, fullAnimationFrames: 13 },
     { ias: 19, fullAnimationFrames: 12 }, { ias: 32, fullAnimationFrames: 11 },
     { ias: 54, fullAnimationFrames: 10 }, { ias: 86, fullAnimationFrames: 9 },
     { ias: 152, fullAnimationFrames: 8 },
   ]);
+  assert.deepEqual(getWeaponBreakpoints("7cr"), [
+    { ias: 0, fullAnimationFrames: 11 }, { ias: 8, fullAnimationFrames: 10 },
+    { ias: 24, fullAnimationFrames: 9 }, { ias: 54, fullAnimationFrames: 8 },
+  ]);
+  assert.deepEqual(getWeaponBreakpoints("whm").at(-1), { ias: 317, fullAnimationFrames: 8 });
 });
 
 test("supported result and breakpoint boundaries", () => {
@@ -40,12 +46,35 @@ test("empty, non-integer, negative, malformed, and out-of-range inputs have no r
 test("unverified animations, weapons, and unsupported classes never return numbers", () => {
   for (const selection of [
     { ...paladin, animation: "A2" },
-    { ...paladin, weaponCode: "7cr" },
-    { ...paladin, weaponCode: "whm" },
     { ...paladin, characterClass: "AMAZON" },
   ]) {
     const model = getCalculatorViewModel("40", selection);
     assert.notEqual(model.status, "SUPPORTED");
     assert.equal("result" in model, false);
   }
+});
+
+test("Phase Blade and War Hammer results use weapon-specific bounds and rows", () => {
+  const phase = getCalculatorViewModel("54", { ...paladin, weaponCode: "7cr" });
+  assert.equal(phase.status, "SUPPORTED");
+  if (phase.status === "SUPPORTED") assert.equal(phase.result.fullAnimationFrames, 8);
+  assert.equal(getCalculatorViewModel("201", { ...paladin, weaponCode: "7cr" }).status, "INVALID_INPUT");
+
+  const hammer316 = getCalculatorViewModel("316", { ...paladin, weaponCode: "whm" });
+  assert.equal(hammer316.status, "SUPPORTED");
+  if (hammer316.status === "SUPPORTED") assert.equal(hammer316.result.fullAnimationFrames, 9);
+  const hammer317 = getCalculatorViewModel("317", { ...paladin, weaponCode: "whm" });
+  assert.equal(hammer317.status, "SUPPORTED");
+  if (hammer317.status === "SUPPORTED") assert.equal(hammer317.result.fullAnimationFrames, 8);
+  assert.equal(getCalculatorViewModel("318", { ...paladin, weaponCode: "whm" }).status, "INVALID_INPUT");
+});
+
+test("input control constrains values to the selected weapon's maximum", () => {
+  assert.equal(constrainIASInput("318", 317), "317");
+  assert.equal(constrainIASInput("319", 317), "317");
+  assert.equal(constrainIASInput("201", IAS_WEAPONS["7cr"].maxIAS), "200");
+  assert.equal(constrainIASInput("201", IAS_WEAPONS.crs.maxIAS), "200");
+  assert.equal(constrainIASInput("317", 317), "317");
+  assert.equal(constrainIASInput("", 317), "");
+  assert.equal(constrainIASInput("-1", 317), "-1");
 });

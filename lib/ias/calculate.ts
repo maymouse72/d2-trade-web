@@ -42,7 +42,7 @@ export function calculateIAS(input: unknown): IASResult {
 
   const fullAnimationFrames =
     Math.ceil((256 * (PALADIN_CRS_A1.framesPerDirection - PALADIN_CRS_A1.startingFrame)) / speedIncrease) - 1;
-  const expectedFrames = getGoldenFrameCount(totalIAS);
+  const expectedFrames = getGoldenFrameCount(support.input.weaponCode, totalIAS);
   if (expectedFrames === null || fullAnimationFrames !== expectedFrames) {
     return emptyResult(
       "UNVERIFIED",
@@ -51,7 +51,7 @@ export function calculateIAS(input: unknown): IASResult {
     );
   }
 
-  const breakpoint = getBreakpointDetails(totalIAS);
+  const breakpoint = getBreakpointDetails(totalIAS, support.input.weaponCode);
   if (!breakpoint) {
     return emptyResult("UNVERIFIED", "GOLDEN_DATA_MISMATCH", "Golden Dataset에 해당 IAS 결과가 없습니다.");
   }

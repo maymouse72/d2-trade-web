@@ -1,5 +1,8 @@
 import goldenDataset from "./data/paladin-crs-a1-golden.json" with { type: "json" };
+import phaseBladeDataset from "./data/paladin-7cr-a1-golden.json" with { type: "json" };
+import warHammerDataset from "./data/paladin-whm-a1-golden.json" with { type: "json" };
 import type { BreakpointDetails } from "./types.ts";
+import { IAS_WEAPONS } from "./weapons.ts";
 
 export interface GoldenRow {
   ias: number;
@@ -7,14 +10,20 @@ export interface GoldenRow {
 }
 
 export const GOLDEN_ROWS = goldenDataset.rows as GoldenRow[];
+const GOLDEN_DATASETS: Readonly<Record<string, GoldenRow[]>> = {
+  crs: GOLDEN_ROWS,
+  "7cr": phaseBladeDataset.rows as GoldenRow[],
+  whm: warHammerDataset.rows as GoldenRow[],
+};
 
-export function getGoldenFrameCount(totalIAS: number): number | null {
-  if (!Number.isInteger(totalIAS) || totalIAS < 0 || totalIAS > 200) return null;
-  return GOLDEN_ROWS.find((row) => row.ias === totalIAS)?.fullAnimationFrames ?? null;
+export function getGoldenFrameCount(weaponCode: string, totalIAS: number): number | null {
+  const weapon = IAS_WEAPONS[weaponCode];
+  if (!weapon || !weapon.verified || !Number.isInteger(totalIAS) || totalIAS < weapon.minIAS || totalIAS > weapon.maxIAS) return null;
+  return GOLDEN_DATASETS[weaponCode]?.find((row) => row.ias === totalIAS)?.fullAnimationFrames ?? null;
 }
 
-export function deriveGoldenBreakpoints(): number[] {
-  const sorted = [...GOLDEN_ROWS].sort((a, b) => a.ias - b.ias);
+export function deriveGoldenBreakpoints(weaponCode = "crs"): number[] {
+  const sorted = [...(GOLDEN_DATASETS[weaponCode] ?? [])].sort((a, b) => a.ias - b.ias);
   const transitions: number[] = [];
   let previousFrames: number | null = null;
 
@@ -28,10 +37,10 @@ export function deriveGoldenBreakpoints(): number[] {
   return transitions;
 }
 
-export function getBreakpointDetails(totalIAS: number): BreakpointDetails | null {
-  if (getGoldenFrameCount(totalIAS) === null) return null;
+export function getBreakpointDetails(totalIAS: number, weaponCode = "crs"): BreakpointDetails | null {
+  if (getGoldenFrameCount(weaponCode, totalIAS) === null) return null;
 
-  const breakpoints = deriveGoldenBreakpoints();
+  const breakpoints = deriveGoldenBreakpoints(weaponCode);
   const currentBreakpoint = [...breakpoints].reverse().find((breakpoint) => breakpoint <= totalIAS);
   if (currentBreakpoint === undefined) return null;
 
@@ -40,6 +49,6 @@ export function getBreakpointDetails(totalIAS: number): BreakpointDetails | null
     currentBreakpoint,
     nextBreakpoint,
     requiredAdditionalIAS: nextBreakpoint === null ? null : nextBreakpoint - totalIAS,
-    fullAnimationFrames: getGoldenFrameCount(totalIAS) as number,
+    fullAnimationFrames: getGoldenFrameCount(weaponCode, totalIAS) as number,
   };
 }

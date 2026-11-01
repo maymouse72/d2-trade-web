@@ -24,11 +24,11 @@ function assertNoNumbers(input: unknown, status: string) {
   assert.equal(result.requiredAdditionalIAS, null);
 }
 
-test("accepts the one supported input and blocks unverified combinations", () => {
+test("accepts verified weapons and blocks unverified combinations", () => {
   assert.equal(evaluateIASSupport(base).status, "SUPPORTED");
+  assert.equal(evaluateIASSupport({ ...base, weaponCode: "7cr" }).status, "SUPPORTED");
+  assert.equal(evaluateIASSupport({ ...base, weaponCode: "whm" }).status, "SUPPORTED");
   assertNoNumbers({ ...base, animation: "A2" }, "UNVERIFIED");
-  assertNoNumbers({ ...base, weaponCode: "7cr" }, "UNVERIFIED");
-  assertNoNumbers({ ...base, weaponCode: "whm" }, "UNVERIFIED");
   assertNoNumbers({ ...base, weaponCode: "xyz" }, "UNVERIFIED");
   assertNoNumbers({ ...base, characterClass: "AMAZON" }, "UNSUPPORTED");
   assertNoNumbers({ ...base, attackMode: "ZEAL" }, "UNSUPPORTED");
@@ -45,6 +45,9 @@ test("rejects malformed and out-of-range values", () => {
     { ...base, weaponIAS: "40" },
     { ...base, weaponIAS: 201 },
     { ...base, weaponIAS: 200, offWeaponIAS: 1 },
+    { ...base, weaponCode: "7cr", weaponIAS: 201 },
+    { ...base, weaponCode: "whm", weaponIAS: 318 },
+    { ...base, weaponCode: "whm", weaponIAS: 317, offWeaponIAS: 1 },
     { ...base, weaponCode: "!!!" },
     { ...base, weaponCode: undefined },
     { ...base, characterClass: undefined },

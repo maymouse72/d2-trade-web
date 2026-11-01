@@ -4,11 +4,14 @@ export interface IASWeaponDefinition {
   weaponClass: string;
   rawSpeed: number | null;
   resolvedWeaponSpeedModifier: number;
+  minIAS: number;
+  maxIAS: number;
+  verified: boolean;
   evidence: string;
 }
 
-// This module contains only the weapon row independently matched to the
-// build-specific Golden Dataset. Other bases remain UNVERIFIED in policy.
+// A1 support is enabled only when the extracted D2R weapon data and published
+// Paladin 1HS frame table agree over the weapon's registered IAS range.
 export const IAS_WEAPONS: Readonly<Record<string, IASWeaponDefinition>> = {
   crs: {
     code: "crs",
@@ -16,6 +19,31 @@ export const IAS_WEAPONS: Readonly<Record<string, IASWeaponDefinition>> = {
     weaponClass: "1hs",
     rawSpeed: null,
     resolvedWeaponSpeedModifier: 0,
-    evidence: "weapons.txt speed is blank; base-item WSM 0 is independently documented and matches the D2R 3.3.93847 Paladin WSM 0 reference table.",
+    minIAS: 0,
+    maxIAS: 200,
+    verified: true,
+    evidence: "Existing 201 row dataset matches the published Paladin 1HS WSM 0 frame table.",
+  },
+  "7cr": {
+    code: "7cr",
+    name: "Phase Blade",
+    weaponClass: "1hs",
+    rawSpeed: -30,
+    resolvedWeaponSpeedModifier: -30,
+    minIAS: 0,
+    maxIAS: 200,
+    verified: true,
+    evidence: "D2R weapons.txt: WSM -30, weapon class 1hs; published Paladin 1HS WSM -30 frame thresholds match the complete 0–200 A1 dataset.",
+  },
+  whm: {
+    code: "whm",
+    name: "War Hammer",
+    weaponClass: "1hs",
+    rawSpeed: 20,
+    resolvedWeaponSpeedModifier: 20,
+    minIAS: 0,
+    maxIAS: 317,
+    verified: true,
+    evidence: "D2R weapons.txt: WSM +20, weapon class 1hs; published Paladin 1HS WSM +20 thresholds match the complete 0–317 A1 dataset.",
   },
 };

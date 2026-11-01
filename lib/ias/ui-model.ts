@@ -1,10 +1,13 @@
 import { calculateIAS, deriveGoldenBreakpoints, getGoldenFrameCount } from "./index.ts";
 import type { IASResult } from "./types.ts";
+import { IAS_WEAPONS } from "./weapons.ts";
 
-export const IAS_BREAKPOINTS = deriveGoldenBreakpoints().map((ias) => ({
-  ias,
-  fullAnimationFrames: getGoldenFrameCount(ias) as number,
-}));
+export function getWeaponBreakpoints(weaponCode: string) {
+  return deriveGoldenBreakpoints(weaponCode).map((ias) => ({
+    ias,
+    fullAnimationFrames: getGoldenFrameCount(weaponCode, ias) as number,
+  }));
+}
 
 export type CalculatorSelection = {
   characterClass: string;
@@ -17,13 +20,20 @@ export type CalculatorViewModel =
   | { status: "INVALID_INPUT"; reason: string }
   | { status: "UNVERIFIED" | "UNSUPPORTED"; reason: string };
 
+export function constrainIASInput(rawIAS: string, maxIAS: number): string {
+  if (/^\d+$/.test(rawIAS) && Number(rawIAS) > maxIAS) return String(maxIAS);
+  return rawIAS;
+}
+
 export function getCalculatorViewModel(rawIAS: string, selection: CalculatorSelection): CalculatorViewModel {
+  const weapon = IAS_WEAPONS[selection.weaponCode];
+  const maxIAS = weapon?.maxIAS ?? 317;
   if (!/^\d+$/.test(rawIAS)) {
-    return { status: "INVALID_INPUT", reason: "IAS는 0~200 사이의 정수로 입력해 주세요." };
+    return { status: "INVALID_INPUT", reason: `공격 속도 증가 합계는 0~${maxIAS} 사이의 정수로 입력해 주세요.` };
   }
 
   const ias = Number(rawIAS);
-  if (ias > 200) return { status: "INVALID_INPUT", reason: "IAS는 0~200 사이의 정수로 입력해 주세요." };
+  if (!Number.isSafeInteger(ias) || ias > maxIAS) return { status: "INVALID_INPUT", reason: `공격 속도 증가 합계는 0~${maxIAS} 사이의 정수로 입력해 주세요.` };
 
   const result = calculateIAS({
     characterClass: selection.characterClass,

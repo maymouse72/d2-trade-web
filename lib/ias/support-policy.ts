@@ -1,5 +1,5 @@
 import type { IASCharacterClass, IASStatus } from "./types.ts";
-import { PALADIN_CRS_A1 } from "./constants.ts";
+import { IAS_HARD_MAX } from "./constants.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 
 const KNOWN_CLASSES: readonly IASCharacterClass[] = [
@@ -77,8 +77,8 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   }
 
   const totalIAS = value.weaponIAS + value.offWeaponIAS;
-  if (totalIAS > PALADIN_CRS_A1.totalIASMax) {
-    return decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", "지원 범위는 총 IAS 0~200입니다.");
+  if (!Number.isSafeInteger(totalIAS) || totalIAS > IAS_HARD_MAX) {
+    return decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `지원 가능한 최대 공속 증가 합계는 ${IAS_HARD_MAX}입니다.`);
   }
 
   const input: NormalizedIASInput = {
@@ -95,6 +95,11 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     debuffIAS: (value.debuffIAS as number | undefined) ?? 0,
   };
 
+  const weapon = IAS_WEAPONS[weaponCode];
+  if (weapon && totalIAS > weapon.maxIAS) {
+    return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon.name}의 검증 범위는 ${weapon.minIAS}~${weapon.maxIAS} IAS입니다.`), input };
+  }
+
   if (!KNOWN_CLASSES.includes(input.characterClass as IASCharacterClass) || input.characterClass !== "PALADIN") {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_CLASS", "현재 검증된 직업은 Paladin뿐입니다."), input };
   }
@@ -110,14 +115,14 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   if (input.animation !== "A1") {
     return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", "A2는 독립 기준표와 실제 선택 규칙이 확인되지 않았습니다."), input };
   }
-  if (input.weaponCode !== "crs" || !IAS_WEAPONS[input.weaponCode]) {
+  if (!weapon || !weapon.verified) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 무기 조합은 독립적으로 검증되지 않았습니다."), input };
   }
 
   return {
     status: "SUPPORTED",
     reasonCode: "SUPPORTED_GOLDEN_MATCH",
-    reason: "Paladin A1 기준 애니메이션, Crystal Sword WSM 0, 무스킬 총 IAS 0~200 검증 범위입니다.",
+    reason: `Paladin A1 기준 애니메이션, ${weapon.name} WSM ${weapon.resolvedWeaponSpeedModifier >= 0 ? "+" : ""}${weapon.resolvedWeaponSpeedModifier}, 무스킬 총 IAS ${weapon.minIAS}~${weapon.maxIAS} 검증 범위입니다.`,
     input,
   };
 }
