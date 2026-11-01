@@ -7,6 +7,7 @@
 - ESLint `npm run lint`: **PASS**.
 - Webpack production build `npx next build --webpack`: **PASS** after running sequentially in the approved local build context.
 - Browser test `npm run test:ias:browser`: **2/2 PASS** (desktop Chrome and mobile Chrome 390×844).
+- Production same-suite smoke test: **2/2 PASS** against `www.d2jugobatgo.com`.
 
 ## Coverage
 
