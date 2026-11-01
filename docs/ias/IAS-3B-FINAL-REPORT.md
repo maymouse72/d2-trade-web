@@ -2,11 +2,11 @@
 
 기준 일자: 2026-11-01 (KST)
 
-## IAS-3-B-1: 배포 검증 진행
+## IAS-3-B-1: PASS / DEPLOYED
 
 로컬 검증은 자동 테스트 19/19, TypeScript, ESLint, Webpack 프로덕션 빌드, PC/모바일 브라우저 및 읽기 전용 기존 서비스 회귀까지 통과했다. A1 Golden Dataset 720행을 유지하고, 세 무기의 A2는 UNVERIFIED로 숫자/표를 차단한다.
 
-운영 배포 전 origin/main은 `c47e03214bb6fe7859c3f7eb017c5a936575b977`로 확인됐다. 최종 커밋, Production 배포 ID, READY 상태, 도메인 및 운영 스모크 결과는 [IAS-3B1-DEPLOYMENT-REPORT.md](./IAS-3B1-DEPLOYMENT-REPORT.md)에 업데이트한다.
+커밋 `9693343859f8318382a35f1522f25f58afb8cfc6`를 push했다. Vercel Production 배포 `dpl_5QN7npzeqeSvwDRpMy3yDbsDM65j`는 READY이며 `www.d2jugobatgo.com` alias가 연결됐다. 운영 데스크톱에서 IAS 계산, A2 숫자/표 차단, 거래 목록·상세·댓글·경험치·도감 페이지를 스모크 테스트했다. Production 모바일 크기 재현은 도구에서 viewport 적용 여부를 확인할 수 없어 별도 미확인으로 기록했으며, 로컬 390×844 검증은 통과했다. 세부 결과는 [배포 게이트 보고서](./IAS-3B1-DEPLOYMENT-REPORT.md)에 있다.
 
 ## IAS-3-B-2: 조사 완료
 
