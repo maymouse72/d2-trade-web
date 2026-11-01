@@ -7,7 +7,7 @@
 | `npm run lint` | PASS | Final run has no errors or warnings |
 | `npx next build --webpack` | PASS | Compiled, type-checked, prerendered 12 routes, build traces collected |
 
-The first ordinary Webpack build attempt failed at `.next/static/...` with `EPERM`. Per the project's prior approved local-run procedure, the same build was rerun in the authorized local execution context and passed. No Next configuration or security setting was changed.
+Ordinary local build attempts failed creating nested `.next` output directories with `EPERM`, including after the dev server was stopped. The same build passed in the approved elevated local execution context. This was an execution-permission boundary; no Next configuration or Windows security setting was changed.
 
 Golden checks:
 
@@ -20,4 +20,4 @@ Golden checks:
 - Long Sword independent Zeal transitions: all 9 thresholds and first/final frame pairs match.
 - Catalog tests: 306 unique coded rows, no duplicate key, missing WSM remains null, search and all filters compose, known Long Sword source fields match.
 
-The task base was local/remote `main` SHA `33d88c13be04a845e5cfc5a423f47297412e854f`. No commit was created.
+The task base was local/remote `main` SHA `33d88c13be04a845e5cfc5a423f47297412e854f`. IAS-4-D commit: `ecc64f4983f08ec80b97c2b759e059d8cf7e1d13`.
