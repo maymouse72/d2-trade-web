@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { constrainIASInput, getCalculatorViewModel, getCalculatorViewModelFromParts, getWeaponBreakpoints } from "../ui-model.ts";
+import { constrainIASInput, getCalculatorViewModel, getCalculatorViewModelFromParts, getWeaponBreakpoints, getZealBreakpoints } from "../ui-model.ts";
 import { IAS_WEAPONS } from "../weapons.ts";
 import { IAS_SKILLS } from "../skills.ts";
 
@@ -71,6 +71,16 @@ test("Phase Blade and War Hammer results use weapon-specific bounds and rows", (
   assert.equal(hammer317.status, "SUPPORTED");
   if (hammer317.status === "SUPPORTED") assert.equal(hammer317.result.fullAnimationFrames, 8);
   assert.equal(getCalculatorViewModel("318", { ...paladin, weaponCode: "whm" }).status, "INVALID_INPUT");
+});
+
+test("Long Sword exposes only its verified Zeal sequence while other skill combinations remain blocked", () => {
+  const zeal = getCalculatorViewModel("0", { characterClass: "PALADIN", weaponCode: "lsd", animation: "A1", skill: "ZEAL", hitCount: 5 });
+  assert.equal(zeal.status, "SUPPORTED");
+  if (zeal.status === "SUPPORTED") assert.equal(zeal.result.fullAnimationFrames, 41);
+  const standard = getCalculatorViewModel("0", { characterClass: "PALADIN", weaponCode: "lsd", animation: "A1", skill: "NORMAL_ATTACK" });
+  assert.notEqual(standard.status, "SUPPORTED");
+  assert.deepEqual(getWeaponBreakpoints("lsd", "A1", "NORMAL_ATTACK"), []);
+  assert.equal(getZealBreakpoints("lsd", 5)[0]?.ias, 0);
 });
 
 test("input control constrains values to the selected weapon's maximum", () => {

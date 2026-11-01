@@ -1,0 +1,24 @@
+{
+  "referenceId": "WARREN1001-PALADIN-ZEAL-LONG-SWORD",
+  "version": "1.2.5",
+  "gameBuild": "D2R 3.3",
+  "url": "https://warren1001.github.io/IAS_Calculator/",
+  "character": "Paladin",
+  "skill": "Zeal",
+  "weapon": "Long Sword",
+  "weaponCode": "lsd",
+  "wsm": -10,
+  "rows": [
+    { "ias": 0, "firstAttackFrames": 7, "finalAttackFrames": 13 },
+    { "ias": 7, "firstAttackFrames": 7, "finalAttackFrames": 12 },
+    { "ias": 8, "firstAttackFrames": 6, "finalAttackFrames": 12 },
+    { "ias": 18, "firstAttackFrames": 6, "finalAttackFrames": 11 },
+    { "ias": 35, "firstAttackFrames": 6, "finalAttackFrames": 10 },
+    { "ias": 42, "firstAttackFrames": 5, "finalAttackFrames": 10 },
+    { "ias": 60, "firstAttackFrames": 5, "finalAttackFrames": 9 },
+    { "ias": 109, "firstAttackFrames": 5, "finalAttackFrames": 8 },
+    { "ias": 142, "firstAttackFrames": 4, "finalAttackFrames": 8 }
+  ],
+  "observedUsing": "Browser selection: Character Paladin, Skill Zeal, Table IAS, P Weapon Long Sword [-10]. The independent page displayed the nine breakpoint rows and frame pairs above.",
+  "limitations": "Community reference, not an in-game capture. This table verifies Long Sword Zeal breakpoint/frame pairs at transition IAS only; full 0–142 rows are marked as deterministic expansions of the fixed Paladin 1HS Zeal reference table."
+}

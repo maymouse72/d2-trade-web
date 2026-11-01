@@ -146,8 +146,11 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   if (!weapon || !weapon.verified) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 무기 조합은 독립적으로 검증되지 않았습니다."), input };
   }
-  if (skill.characterClass !== input.characterClass || !skill.supportedWeapons.includes(input.weaponCode)) {
-    return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", `${skill.label}은(는) Paladin 지원 무기의 단일 공격에만 적용됩니다.`), input };
+  if (skill.characterClass !== input.characterClass) {
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_CLASS", `${skill.label}은(는) ${skill.characterClass} 검증 조합에만 적용됩니다.`), input };
+  }
+  if (!skill.supportedWeapons.includes(input.weaponCode)) {
+    return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", `${skill.label}과 선택한 무기 조합은 애니메이션·공속 기준 검증이 완료되지 않아 계산을 제공하지 않습니다.`), input };
   }
   if (!skill.animationMode || input.animation !== skill.animationMode) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", `${skill.label}은(는) 검증된 ${skill.animationMode ?? "전용"} 애니메이션만 지원합니다.`), input };

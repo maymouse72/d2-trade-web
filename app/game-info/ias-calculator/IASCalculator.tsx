@@ -7,12 +7,23 @@ import { IAS_SKILLS } from '../../../lib/ias/skills';
 import GameInfoNavigation from '../GameInfoNavigation';
 import styles from './ias-calculator.module.css';
 import { SMITE_MAX_IAS_BY_WEAPON } from '../../../lib/ias/constants';
+import { filterIASWeaponCatalog, IAS_WEAPON_CATALOG } from '../../../lib/ias/weapon-catalog';
 
 const classes = [
   ['AMAZON', '아마존'], ['ASSASSIN', '암살자'], ['BARBARIAN', '야만용사'], ['DRUID', '드루이드'],
   ['NECROMANCER', '강령술사'], ['PALADIN', '성기사'], ['SORCERESS', '원소술사'], ['WARLOCK', '워록'],
 ] as const;
-const weapons = [['crs', '크리스탈 소드 (Crystal Sword)'], ['7cr', '페이즈 블레이드 (Phase Blade)'], ['whm', '워 해머 (War Hammer)']] as const;
+const knownKoreanNames: Record<string, string> = { crs: '크리스탈 소드', '7cr': '페이즈 블레이드', whm: '워 해머', lsd: '롱 소드' };
+const weaponByCode = new Map(IAS_WEAPON_CATALOG.map(weapon => [weapon.code, weapon]));
+const weaponCategories = [...new Set(IAS_WEAPON_CATALOG.filter(weapon => weapon.spawnable).map(weapon => weapon.itemTypeName ?? weapon.itemType))].sort();
+
+function getIASLimit(skillCode: string, weaponCode: string) {
+  if (skillCode === 'ZEAL') return IAS_SKILLS.ZEAL.iasRange?.[weaponCode]?.max ?? 0;
+  if (skillCode === 'SMITE') return SMITE_MAX_IAS_BY_WEAPON[weaponCode] ?? 0;
+  const skillDefinition = IAS_SKILLS[skillCode as keyof typeof IAS_SKILLS];
+  if (!skillDefinition?.supportedWeapons.includes(weaponCode)) return 0;
+  return skillDefinition.iasRange?.[weaponCode]?.max ?? IAS_WEAPONS[weaponCode]?.maxIAS ?? 0;
+}
 
 export default function IASCalculator() {
   const [characterClass, setCharacterClass] = useState('PALADIN');
@@ -22,10 +33,23 @@ export default function IASCalculator() {
   const [weaponIAS, setWeaponIAS] = useState('0');
   const [offWeaponIAS, setOffWeaponIAS] = useState('0');
   const [skillLevel, setSkillLevel] = useState(4);
+  const [weaponSearch, setWeaponSearch] = useState('');
+  const [weaponCategory, setWeaponCategory] = useState('ALL');
+  const [weaponHandedness, setWeaponHandedness] = useState<'ALL' | 'one-handed' | 'two-handed' | 'conditional'>('ALL');
+  const [weaponSupport, setWeaponSupport] = useState<'ALL' | 'VERIFIED' | 'UNVERIFIED'>('ALL');
   const hitCount = getZealHitCountFromSkillLevel(skillLevel) ?? 5;
   const selectedWeapon = IAS_WEAPONS[weaponCode];
   const selectedSkill = IAS_SKILLS[skill as keyof typeof IAS_SKILLS];
-  const maxIAS = skill === 'ZEAL' ? (selectedSkill.iasRange?.[weaponCode]?.max ?? 0) : skill === 'SMITE' ? (SMITE_MAX_IAS_BY_WEAPON[weaponCode] ?? 0) : (selectedWeapon?.maxIAS ?? 317);
+  const compatibleAnimation = skill === 'SMITE' ? 'S1' : skill === 'NORMAL_ATTACK' ? animation : selectedSkill.animationMode;
+  const verifiedWeaponCodes = useMemo(() => (characterClass === 'PALADIN' && (compatibleAnimation === 'A1' || compatibleAnimation === 'S1')
+    ? selectedSkill.supportedWeapons
+    : []), [characterClass, compatibleAnimation, selectedSkill]);
+  const maxIAS = getIASLimit(skill, weaponCode);
+  const selectedCatalogWeapon = weaponByCode.get(weaponCode);
+  const filteredWeapons = useMemo(() => filterIASWeaponCatalog({ search: weaponSearch, category: weaponCategory, handedness: weaponHandedness, support: weaponSupport, verifiedWeaponCodes }), [weaponCategory, weaponHandedness, weaponSearch, weaponSupport, verifiedWeaponCodes]);
+  const weaponOptions = filteredWeapons.some(weapon => weapon.code === weaponCode) || !selectedCatalogWeapon
+    ? filteredWeapons
+    : [selectedCatalogWeapon, ...filteredWeapons];
   const weaponIASMax = Math.max(0, maxIAS - (Number(offWeaponIAS) || 0));
   const equipmentIASMax = Math.max(0, maxIAS - (Number(weaponIAS) || 0));
   const totalIAS = (Number(weaponIAS) || 0) + (Number(offWeaponIAS) || 0);
@@ -40,7 +64,7 @@ export default function IASCalculator() {
     : model.status === 'UNVERIFIED'
       ? model.reason
       : model.status === 'UNSUPPORTED'
-        ? '현재 지원하지 않는 직업 또는 공격 유형입니다.'
+        ? model.reason
         : null;
 
   function adjustIAS(delta: number) {
@@ -54,9 +78,7 @@ export default function IASCalculator() {
   }
 
   function handleSkillChange(nextSkill: string) {
-    const nextLimit = nextSkill === 'ZEAL'
-      ? (IAS_SKILLS.ZEAL.iasRange?.[weaponCode]?.max ?? 0)
-      : nextSkill === 'SMITE' ? (SMITE_MAX_IAS_BY_WEAPON[weaponCode] ?? 0) : (selectedWeapon?.maxIAS ?? 317);
+    const nextLimit = getIASLimit(nextSkill, weaponCode);
     const nextWeaponIAS = Math.min(Number(weaponIAS) || 0, nextLimit);
     setSkill(nextSkill);
     setWeaponIAS(String(nextWeaponIAS));
@@ -79,11 +101,38 @@ export default function IASCalculator() {
               {classes.map(([id, name]) => <option key={id} value={id}>{name}{id === 'PALADIN' ? '' : ' · 준비 중'}</option>)}
             </select>
           </label>
-          <label className={styles.field} htmlFor="ias-weapon"><span>무기</span>
-            <select id="ias-weapon" value={weaponCode} onChange={event => { const code = event.target.value; setWeaponCode(code); const limit = skill === 'ZEAL' ? (IAS_SKILLS.ZEAL.iasRange?.[code]?.max ?? 0) : skill === 'SMITE' ? (SMITE_MAX_IAS_BY_WEAPON[code] ?? 0) : (IAS_WEAPONS[code]?.maxIAS ?? 317); const weaponPart = Math.min(Number(weaponIAS) || 0, limit); setWeaponIAS(String(weaponPart)); setOffWeaponIAS(String(Math.min(Number(offWeaponIAS) || 0, limit - weaponPart))); }}>
-              {weapons.map(([id, name]) => <option key={id} value={id}>{name}</option>)}
+          <label className={styles.field} htmlFor="ias-weapon-search"><span>무기 검색</span>
+            <input id="ias-weapon-search" type="search" value={weaponSearch} onChange={event => setWeaponSearch(event.target.value)} placeholder="무기명 또는 코드 검색" />
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon-category"><span>무기 종류 필터</span>
+            <select id="ias-weapon-category" value={weaponCategory} onChange={event => setWeaponCategory(event.target.value)}>
+              <option value="ALL">전체 종류 ({IAS_WEAPON_CATALOG.length})</option>
+              {weaponCategories.map(category => <option key={category} value={category}>{category}</option>)}
             </select>
           </label>
+          <label className={styles.field} htmlFor="ias-weapon-handedness"><span>손잡이 형태 필터</span>
+            <select id="ias-weapon-handedness" value={weaponHandedness} onChange={event => setWeaponHandedness(event.target.value as typeof weaponHandedness)}>
+              <option value="ALL">전체</option><option value="one-handed">한손 무기</option><option value="two-handed">양손 무기</option><option value="conditional">조건부</option>
+            </select>
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon-support"><span>현재 스킬 검증 상태</span>
+            <select id="ias-weapon-support" value={weaponSupport} onChange={event => setWeaponSupport(event.target.value as typeof weaponSupport)}>
+              <option value="ALL">전체 상태</option><option value="VERIFIED">검증 완료 조합</option><option value="UNVERIFIED">검증 전 조합</option>
+            </select>
+          </label>
+          <label className={styles.field} htmlFor="ias-weapon"><span>무기 선택</span>
+            <select id="ias-weapon" value={weaponCode} onChange={event => { setWeaponCode(event.target.value); setWeaponIAS('0'); setOffWeaponIAS('0'); }}>
+              {weaponOptions.map(weapon => {
+                const verified = verifiedWeaponCodes.includes(weapon.code);
+                const resolvedWsm = IAS_WEAPONS[weapon.code]?.resolvedWeaponSpeedModifier ?? weapon.wsm;
+                const wsm = resolvedWsm === null ? 'WSM 확인 불가' : `WSM ${resolvedWsm > 0 ? '+' : ''}${resolvedWsm}`;
+                const handedness = weapon.handedness === 'one-handed' ? '한손' : weapon.handedness === 'two-handed' ? '양손' : '조건부';
+                const name = knownKoreanNames[weapon.code] ? `${knownKoreanNames[weapon.code]} (${weapon.name})` : weapon.name;
+                return <option key={weapon.code} value={weapon.code}>{name} · {weapon.code} · {wsm} · {handedness} · {verified ? '지원' : '검증 전'}</option>;
+              })}
+            </select>
+          </label>
+          <p className={styles.hint} aria-live="polite">등록 {IAS_WEAPON_CATALOG.length}종 · 선택 가능 {IAS_WEAPON_CATALOG.filter(weapon => weapon.spawnable).length}종 중 {filteredWeapons.length}종 표시 · 현재 조합: {verifiedWeaponCodes.includes(weaponCode) ? 'VERIFIED' : 'UNVERIFIED'}</p>
           <label className={styles.field} htmlFor="ias-skill"><span>공격 스킬</span>
             <select id="ias-skill" value={skill} onChange={event => handleSkillChange(event.target.value)}>
               {Object.values(IAS_SKILLS).filter(entry => entry.selectable).map(entry => <option key={entry.code} value={entry.code}>{entry.label}{entry.supportStatus === 'SUPPORTED' ? '' : ' · 검증 중'}</option>)}

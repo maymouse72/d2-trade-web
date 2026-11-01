@@ -64,4 +64,20 @@ export const IAS_WEAPONS: Readonly<Record<string, IASWeaponDefinition>> = {
     },
     evidence: "D2R weapons.txt: WSM +20, weapon class 1hs; published Paladin 1HS WSM +20 thresholds match the complete 0–317 A1 dataset.",
   },
+  lsd: {
+    code: "lsd",
+    name: "Long Sword",
+    weaponClass: "1hs",
+    rawSpeed: -10,
+    resolvedWeaponSpeedModifier: -10,
+    minIAS: 0,
+    maxIAS: 142,
+    verified: true,
+    animationEvidence: {
+      A1: { status: "VERIFIED", note: "Paladin A1 Zeal 독립 기준표와 WSM별 기준값 대조 완료." },
+      A2: { status: "UNVERIFIED", note: "A2 독립 기준표 검증 자료가 없습니다." },
+      S1: { status: "UNVERIFIED", note: "Long Sword의 Smite S1 기준표 검증 자료가 없습니다." },
+    },
+    evidence: "D2R 3.3.93847 weapons.txt: lsd, WSM -10, wclass 1hs. Warren1001 D2R 3.3 Paladin Zeal independent table matches all 9 sequence breakpoint rows from 0–142 IAS. Support is Zeal only.",
+  },
 };

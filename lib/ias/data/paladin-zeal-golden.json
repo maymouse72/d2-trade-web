@@ -4,7 +4,7 @@
   "evidenceStatus": "REFERENCE_TABLE_EXPANSION",
   "expectedValuesSource": "Fixed Amazon Basin Paladin 1HS Zeal First/Follow/Last table by EIAS. IAS values and hit counts are expanded from that fixed reference, independently of the runtime frame formula.",
   "referenceHash": "bc952f4374d214fdcfdc6f2204f0334e269711bf1669664f23c57585fe9ab7c7",
-  "rowCount": 3564,
+  "rowCount": 4136,
   "datasets": [
     {
       "datasetId": "PALADIN-CRS-ZEAL-D2R-3.3.93847",
@@ -51746,6 +51746,8379 @@
         },
         {
           "IAS": 456,
+          "EIAS": 75,
+          "hitCount": 5,
+          "firstAttackFrames": 4,
+          "followUpAttackFrames": 4,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            4,
+            8,
+            12,
+            16,
+            20
+          ],
+          "totalSequenceFrames": 24
+        }
+      ]
+    },
+    {
+      "datasetId": "PALADIN-LSD-ZEAL-D2R-3.3.93847",
+      "gameBuild": "3.3.93847",
+      "characterClass": "PALADIN",
+      "characterForm": "HUMAN",
+      "skill": "ZEAL",
+      "skillId": 106,
+      "animationMode": "A1",
+      "weaponCode": "lsd",
+      "weaponName": "Long Sword",
+      "weaponClass": "1hs",
+      "WSM": -10,
+      "IASRange": {
+        "min": 0,
+        "max": 142
+      },
+      "hitCountRange": {
+        "min": 2,
+        "max": 5
+      },
+      "evidenceStatus": "REFERENCE_TABLE_EXPANSION",
+      "sourceReference": "lib/ias/data/paladin-zeal-1hs-reference.json",
+      "sourceHash": "bc952f4374d214fdcfdc6f2204f0334e269711bf1669664f23c57585fe9ab7c7",
+      "independentBreakpointReference": {
+        "url": "https://warren1001.github.io/IAS_Calculator/",
+        "version": "1.2.5",
+        "gameBuild": "D2R 3.3",
+        "evidenceStatus": "INDEPENDENT_BREAKPOINT_CROSS_CHECK",
+        "rows": [
+          {
+            "ias": 0,
+            "firstAttackFrames": 7,
+            "finalAttackFrames": 13
+          },
+          {
+            "ias": 7,
+            "firstAttackFrames": 7,
+            "finalAttackFrames": 12
+          },
+          {
+            "ias": 8,
+            "firstAttackFrames": 6,
+            "finalAttackFrames": 12
+          },
+          {
+            "ias": 18,
+            "firstAttackFrames": 6,
+            "finalAttackFrames": 11
+          },
+          {
+            "ias": 35,
+            "firstAttackFrames": 6,
+            "finalAttackFrames": 10
+          },
+          {
+            "ias": 42,
+            "firstAttackFrames": 5,
+            "finalAttackFrames": 10
+          },
+          {
+            "ias": 60,
+            "firstAttackFrames": 5,
+            "finalAttackFrames": 9
+          },
+          {
+            "ias": 109,
+            "firstAttackFrames": 5,
+            "finalAttackFrames": 8
+          },
+          {
+            "ias": 142,
+            "firstAttackFrames": 4,
+            "finalAttackFrames": 8
+          }
+        ]
+      },
+      "rows": [
+        {
+          "IAS": 0,
+          "EIAS": 10,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 0,
+          "EIAS": 10,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 0,
+          "EIAS": 10,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 0,
+          "EIAS": 10,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 1,
+          "EIAS": 10,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 1,
+          "EIAS": 10,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 1,
+          "EIAS": 10,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 1,
+          "EIAS": 10,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 2,
+          "EIAS": 11,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 2,
+          "EIAS": 11,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 2,
+          "EIAS": 11,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 2,
+          "EIAS": 11,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 3,
+          "EIAS": 12,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 3,
+          "EIAS": 12,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 3,
+          "EIAS": 12,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 3,
+          "EIAS": 12,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 4,
+          "EIAS": 13,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 4,
+          "EIAS": 13,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 4,
+          "EIAS": 13,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 4,
+          "EIAS": 13,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 5,
+          "EIAS": 14,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 5,
+          "EIAS": 14,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 5,
+          "EIAS": 14,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 5,
+          "EIAS": 14,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 6,
+          "EIAS": 15,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 6,
+          "EIAS": 15,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 27
+        },
+        {
+          "IAS": 6,
+          "EIAS": 15,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 6,
+          "EIAS": 15,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 13,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 41
+        },
+        {
+          "IAS": 7,
+          "EIAS": 16,
+          "hitCount": 2,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            7,
+            14
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 7,
+          "EIAS": 16,
+          "hitCount": 3,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            7,
+            14,
+            21
+          ],
+          "totalSequenceFrames": 26
+        },
+        {
+          "IAS": 7,
+          "EIAS": 16,
+          "hitCount": 4,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28
+          ],
+          "totalSequenceFrames": 33
+        },
+        {
+          "IAS": 7,
+          "EIAS": 16,
+          "hitCount": 5,
+          "firstAttackFrames": 7,
+          "followUpAttackFrames": 7,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            7,
+            14,
+            21,
+            28,
+            35
+          ],
+          "totalSequenceFrames": 40
+        },
+        {
+          "IAS": 8,
+          "EIAS": 17,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 8,
+          "EIAS": 17,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 8,
+          "EIAS": 17,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 8,
+          "EIAS": 17,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 9,
+          "EIAS": 18,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 9,
+          "EIAS": 18,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 9,
+          "EIAS": 18,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 9,
+          "EIAS": 18,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 10,
+          "EIAS": 19,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 10,
+          "EIAS": 19,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 10,
+          "EIAS": 19,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 10,
+          "EIAS": 19,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 11,
+          "EIAS": 20,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 11,
+          "EIAS": 20,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 11,
+          "EIAS": 20,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 11,
+          "EIAS": 20,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 12,
+          "EIAS": 20,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 12,
+          "EIAS": 20,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 12,
+          "EIAS": 20,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 12,
+          "EIAS": 20,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 13,
+          "EIAS": 21,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 13,
+          "EIAS": 21,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 13,
+          "EIAS": 21,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 13,
+          "EIAS": 21,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 14,
+          "EIAS": 22,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 14,
+          "EIAS": 22,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 14,
+          "EIAS": 22,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 14,
+          "EIAS": 22,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 15,
+          "EIAS": 23,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 15,
+          "EIAS": 23,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 15,
+          "EIAS": 23,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 15,
+          "EIAS": 23,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 16,
+          "EIAS": 24,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 16,
+          "EIAS": 24,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 16,
+          "EIAS": 24,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 16,
+          "EIAS": 24,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 17,
+          "EIAS": 24,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 17,
+          "EIAS": 24,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 17,
+          "EIAS": 24,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 17,
+          "EIAS": 24,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 12,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 36
+        },
+        {
+          "IAS": 18,
+          "EIAS": 25,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 18,
+          "EIAS": 25,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 18,
+          "EIAS": 25,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 18,
+          "EIAS": 25,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 19,
+          "EIAS": 26,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 19,
+          "EIAS": 26,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 19,
+          "EIAS": 26,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 19,
+          "EIAS": 26,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 20,
+          "EIAS": 27,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 20,
+          "EIAS": 27,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 20,
+          "EIAS": 27,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 20,
+          "EIAS": 27,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 21,
+          "EIAS": 27,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 21,
+          "EIAS": 27,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 21,
+          "EIAS": 27,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 21,
+          "EIAS": 27,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 22,
+          "EIAS": 28,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 22,
+          "EIAS": 28,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 22,
+          "EIAS": 28,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 22,
+          "EIAS": 28,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 23,
+          "EIAS": 29,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 23,
+          "EIAS": 29,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 23,
+          "EIAS": 29,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 23,
+          "EIAS": 29,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 24,
+          "EIAS": 30,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 24,
+          "EIAS": 30,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 24,
+          "EIAS": 30,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 24,
+          "EIAS": 30,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 25,
+          "EIAS": 30,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 25,
+          "EIAS": 30,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 25,
+          "EIAS": 30,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 25,
+          "EIAS": 30,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 26,
+          "EIAS": 31,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 26,
+          "EIAS": 31,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 26,
+          "EIAS": 31,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 26,
+          "EIAS": 31,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 27,
+          "EIAS": 32,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 27,
+          "EIAS": 32,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 27,
+          "EIAS": 32,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 27,
+          "EIAS": 32,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 28,
+          "EIAS": 32,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 28,
+          "EIAS": 32,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 28,
+          "EIAS": 32,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 28,
+          "EIAS": 32,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 29,
+          "EIAS": 33,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 29,
+          "EIAS": 33,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 29,
+          "EIAS": 33,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 29,
+          "EIAS": 33,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 30,
+          "EIAS": 34,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 30,
+          "EIAS": 34,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 30,
+          "EIAS": 34,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 30,
+          "EIAS": 34,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 31,
+          "EIAS": 34,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 31,
+          "EIAS": 34,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 31,
+          "EIAS": 34,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 31,
+          "EIAS": 34,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 32,
+          "EIAS": 35,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 32,
+          "EIAS": 35,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 32,
+          "EIAS": 35,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 32,
+          "EIAS": 35,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 33,
+          "EIAS": 35,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 33,
+          "EIAS": 35,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 33,
+          "EIAS": 35,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 33,
+          "EIAS": 35,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 34,
+          "EIAS": 36,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 17
+        },
+        {
+          "IAS": 34,
+          "EIAS": 36,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 34,
+          "EIAS": 36,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 34,
+          "EIAS": 36,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 11,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 35
+        },
+        {
+          "IAS": 35,
+          "EIAS": 37,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 35,
+          "EIAS": 37,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 35,
+          "EIAS": 37,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 35,
+          "EIAS": 37,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 36,
+          "EIAS": 37,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 36,
+          "EIAS": 37,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 36,
+          "EIAS": 37,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 36,
+          "EIAS": 37,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 37,
+          "EIAS": 38,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 37,
+          "EIAS": 38,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 37,
+          "EIAS": 38,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 37,
+          "EIAS": 38,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 38,
+          "EIAS": 38,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 38,
+          "EIAS": 38,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 38,
+          "EIAS": 38,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 38,
+          "EIAS": 38,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 39,
+          "EIAS": 39,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 39,
+          "EIAS": 39,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 39,
+          "EIAS": 39,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 39,
+          "EIAS": 39,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 40,
+          "EIAS": 40,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 40,
+          "EIAS": 40,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 40,
+          "EIAS": 40,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 40,
+          "EIAS": 40,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 41,
+          "EIAS": 40,
+          "hitCount": 2,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 41,
+          "EIAS": 40,
+          "hitCount": 3,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18
+          ],
+          "totalSequenceFrames": 22
+        },
+        {
+          "IAS": 41,
+          "EIAS": 40,
+          "hitCount": 4,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 41,
+          "EIAS": 40,
+          "hitCount": 5,
+          "firstAttackFrames": 6,
+          "followUpAttackFrames": 6,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            6,
+            12,
+            18,
+            24,
+            30
+          ],
+          "totalSequenceFrames": 34
+        },
+        {
+          "IAS": 42,
+          "EIAS": 41,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 42,
+          "EIAS": 41,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 42,
+          "EIAS": 41,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 42,
+          "EIAS": 41,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 43,
+          "EIAS": 41,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 43,
+          "EIAS": 41,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 43,
+          "EIAS": 41,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 43,
+          "EIAS": 41,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 44,
+          "EIAS": 42,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 44,
+          "EIAS": 42,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 44,
+          "EIAS": 42,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 44,
+          "EIAS": 42,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 45,
+          "EIAS": 42,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 45,
+          "EIAS": 42,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 45,
+          "EIAS": 42,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 45,
+          "EIAS": 42,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 46,
+          "EIAS": 43,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 46,
+          "EIAS": 43,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 46,
+          "EIAS": 43,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 46,
+          "EIAS": 43,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 47,
+          "EIAS": 43,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 47,
+          "EIAS": 43,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 47,
+          "EIAS": 43,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 47,
+          "EIAS": 43,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 48,
+          "EIAS": 44,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 48,
+          "EIAS": 44,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 48,
+          "EIAS": 44,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 48,
+          "EIAS": 44,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 49,
+          "EIAS": 44,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 49,
+          "EIAS": 44,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 49,
+          "EIAS": 44,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 49,
+          "EIAS": 44,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 50,
+          "EIAS": 45,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 50,
+          "EIAS": 45,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 50,
+          "EIAS": 45,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 50,
+          "EIAS": 45,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 51,
+          "EIAS": 45,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 51,
+          "EIAS": 45,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 51,
+          "EIAS": 45,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 51,
+          "EIAS": 45,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 52,
+          "EIAS": 46,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 52,
+          "EIAS": 46,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 52,
+          "EIAS": 46,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 52,
+          "EIAS": 46,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 53,
+          "EIAS": 46,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 53,
+          "EIAS": 46,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 53,
+          "EIAS": 46,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 53,
+          "EIAS": 46,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 54,
+          "EIAS": 47,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 54,
+          "EIAS": 47,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 54,
+          "EIAS": 47,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 54,
+          "EIAS": 47,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 55,
+          "EIAS": 47,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 55,
+          "EIAS": 47,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 55,
+          "EIAS": 47,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 55,
+          "EIAS": 47,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 56,
+          "EIAS": 48,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 56,
+          "EIAS": 48,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 56,
+          "EIAS": 48,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 56,
+          "EIAS": 48,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 57,
+          "EIAS": 48,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 57,
+          "EIAS": 48,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 57,
+          "EIAS": 48,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 57,
+          "EIAS": 48,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 58,
+          "EIAS": 49,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 58,
+          "EIAS": 49,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 58,
+          "EIAS": 49,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 58,
+          "EIAS": 49,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 59,
+          "EIAS": 49,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 15
+        },
+        {
+          "IAS": 59,
+          "EIAS": 49,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 59,
+          "EIAS": 49,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 25
+        },
+        {
+          "IAS": 59,
+          "EIAS": 49,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 10,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 30
+        },
+        {
+          "IAS": 60,
+          "EIAS": 50,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 60,
+          "EIAS": 50,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 60,
+          "EIAS": 50,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 60,
+          "EIAS": 50,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 61,
+          "EIAS": 50,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 61,
+          "EIAS": 50,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 61,
+          "EIAS": 50,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 61,
+          "EIAS": 50,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 62,
+          "EIAS": 50,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 62,
+          "EIAS": 50,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 62,
+          "EIAS": 50,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 62,
+          "EIAS": 50,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 63,
+          "EIAS": 51,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 63,
+          "EIAS": 51,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 63,
+          "EIAS": 51,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 63,
+          "EIAS": 51,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 64,
+          "EIAS": 51,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 64,
+          "EIAS": 51,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 64,
+          "EIAS": 51,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 64,
+          "EIAS": 51,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 65,
+          "EIAS": 52,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 65,
+          "EIAS": 52,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 65,
+          "EIAS": 52,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 65,
+          "EIAS": 52,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 66,
+          "EIAS": 52,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 66,
+          "EIAS": 52,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 66,
+          "EIAS": 52,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 66,
+          "EIAS": 52,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 67,
+          "EIAS": 52,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 67,
+          "EIAS": 52,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 67,
+          "EIAS": 52,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 67,
+          "EIAS": 52,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 68,
+          "EIAS": 53,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 68,
+          "EIAS": 53,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 68,
+          "EIAS": 53,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 68,
+          "EIAS": 53,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 69,
+          "EIAS": 53,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 69,
+          "EIAS": 53,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 69,
+          "EIAS": 53,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 69,
+          "EIAS": 53,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 70,
+          "EIAS": 54,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 70,
+          "EIAS": 54,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 70,
+          "EIAS": 54,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 70,
+          "EIAS": 54,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 71,
+          "EIAS": 54,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 71,
+          "EIAS": 54,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 71,
+          "EIAS": 54,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 71,
+          "EIAS": 54,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 72,
+          "EIAS": 55,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 72,
+          "EIAS": 55,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 72,
+          "EIAS": 55,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 72,
+          "EIAS": 55,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 73,
+          "EIAS": 55,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 73,
+          "EIAS": 55,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 73,
+          "EIAS": 55,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 73,
+          "EIAS": 55,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 74,
+          "EIAS": 55,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 74,
+          "EIAS": 55,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 74,
+          "EIAS": 55,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 74,
+          "EIAS": 55,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 75,
+          "EIAS": 56,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 75,
+          "EIAS": 56,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 75,
+          "EIAS": 56,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 75,
+          "EIAS": 56,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 76,
+          "EIAS": 56,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 76,
+          "EIAS": 56,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 76,
+          "EIAS": 56,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 76,
+          "EIAS": 56,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 77,
+          "EIAS": 56,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 77,
+          "EIAS": 56,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 77,
+          "EIAS": 56,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 77,
+          "EIAS": 56,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 78,
+          "EIAS": 57,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 78,
+          "EIAS": 57,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 78,
+          "EIAS": 57,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 78,
+          "EIAS": 57,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 79,
+          "EIAS": 57,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 79,
+          "EIAS": 57,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 79,
+          "EIAS": 57,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 79,
+          "EIAS": 57,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 80,
+          "EIAS": 58,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 80,
+          "EIAS": 58,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 80,
+          "EIAS": 58,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 80,
+          "EIAS": 58,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 81,
+          "EIAS": 58,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 81,
+          "EIAS": 58,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 81,
+          "EIAS": 58,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 81,
+          "EIAS": 58,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 82,
+          "EIAS": 58,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 82,
+          "EIAS": 58,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 82,
+          "EIAS": 58,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 82,
+          "EIAS": 58,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 83,
+          "EIAS": 59,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 83,
+          "EIAS": 59,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 83,
+          "EIAS": 59,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 83,
+          "EIAS": 59,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 84,
+          "EIAS": 59,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 84,
+          "EIAS": 59,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 84,
+          "EIAS": 59,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 84,
+          "EIAS": 59,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 85,
+          "EIAS": 59,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 85,
+          "EIAS": 59,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 85,
+          "EIAS": 59,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 85,
+          "EIAS": 59,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 86,
+          "EIAS": 60,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 86,
+          "EIAS": 60,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 86,
+          "EIAS": 60,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 86,
+          "EIAS": 60,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 87,
+          "EIAS": 60,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 87,
+          "EIAS": 60,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 87,
+          "EIAS": 60,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 87,
+          "EIAS": 60,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 88,
+          "EIAS": 60,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 88,
+          "EIAS": 60,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 88,
+          "EIAS": 60,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 88,
+          "EIAS": 60,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 89,
+          "EIAS": 61,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 89,
+          "EIAS": 61,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 89,
+          "EIAS": 61,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 89,
+          "EIAS": 61,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 90,
+          "EIAS": 61,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 90,
+          "EIAS": 61,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 90,
+          "EIAS": 61,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 90,
+          "EIAS": 61,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 91,
+          "EIAS": 61,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 91,
+          "EIAS": 61,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 91,
+          "EIAS": 61,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 91,
+          "EIAS": 61,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 92,
+          "EIAS": 62,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 92,
+          "EIAS": 62,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 92,
+          "EIAS": 62,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 92,
+          "EIAS": 62,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 93,
+          "EIAS": 62,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 93,
+          "EIAS": 62,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 93,
+          "EIAS": 62,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 93,
+          "EIAS": 62,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 94,
+          "EIAS": 62,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 94,
+          "EIAS": 62,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 94,
+          "EIAS": 62,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 94,
+          "EIAS": 62,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 95,
+          "EIAS": 63,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 95,
+          "EIAS": 63,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 95,
+          "EIAS": 63,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 95,
+          "EIAS": 63,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 96,
+          "EIAS": 63,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 96,
+          "EIAS": 63,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 96,
+          "EIAS": 63,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 96,
+          "EIAS": 63,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 97,
+          "EIAS": 63,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 97,
+          "EIAS": 63,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 97,
+          "EIAS": 63,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 97,
+          "EIAS": 63,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 98,
+          "EIAS": 63,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 98,
+          "EIAS": 63,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 98,
+          "EIAS": 63,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 98,
+          "EIAS": 63,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 99,
+          "EIAS": 64,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 99,
+          "EIAS": 64,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 99,
+          "EIAS": 64,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 99,
+          "EIAS": 64,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 100,
+          "EIAS": 64,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 100,
+          "EIAS": 64,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 100,
+          "EIAS": 64,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 100,
+          "EIAS": 64,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 101,
+          "EIAS": 64,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 101,
+          "EIAS": 64,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 101,
+          "EIAS": 64,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 101,
+          "EIAS": 64,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 102,
+          "EIAS": 65,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 102,
+          "EIAS": 65,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 102,
+          "EIAS": 65,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 102,
+          "EIAS": 65,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 103,
+          "EIAS": 65,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 103,
+          "EIAS": 65,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 103,
+          "EIAS": 65,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 103,
+          "EIAS": 65,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 104,
+          "EIAS": 65,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 104,
+          "EIAS": 65,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 104,
+          "EIAS": 65,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 104,
+          "EIAS": 65,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 105,
+          "EIAS": 66,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 105,
+          "EIAS": 66,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 105,
+          "EIAS": 66,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 105,
+          "EIAS": 66,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 106,
+          "EIAS": 66,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 106,
+          "EIAS": 66,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 106,
+          "EIAS": 66,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 106,
+          "EIAS": 66,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 107,
+          "EIAS": 66,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 107,
+          "EIAS": 66,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 107,
+          "EIAS": 66,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 107,
+          "EIAS": 66,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 108,
+          "EIAS": 66,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 14
+        },
+        {
+          "IAS": 108,
+          "EIAS": 66,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 19
+        },
+        {
+          "IAS": 108,
+          "EIAS": 66,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 24
+        },
+        {
+          "IAS": 108,
+          "EIAS": 66,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 9,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 29
+        },
+        {
+          "IAS": 109,
+          "EIAS": 67,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 109,
+          "EIAS": 67,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 109,
+          "EIAS": 67,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 109,
+          "EIAS": 67,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 110,
+          "EIAS": 67,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 110,
+          "EIAS": 67,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 110,
+          "EIAS": 67,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 110,
+          "EIAS": 67,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 111,
+          "EIAS": 67,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 111,
+          "EIAS": 67,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 111,
+          "EIAS": 67,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 111,
+          "EIAS": 67,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 112,
+          "EIAS": 67,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 112,
+          "EIAS": 67,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 112,
+          "EIAS": 67,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 112,
+          "EIAS": 67,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 113,
+          "EIAS": 68,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 113,
+          "EIAS": 68,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 113,
+          "EIAS": 68,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 113,
+          "EIAS": 68,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 114,
+          "EIAS": 68,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 114,
+          "EIAS": 68,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 114,
+          "EIAS": 68,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 114,
+          "EIAS": 68,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 115,
+          "EIAS": 68,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 115,
+          "EIAS": 68,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 115,
+          "EIAS": 68,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 115,
+          "EIAS": 68,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 116,
+          "EIAS": 68,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 116,
+          "EIAS": 68,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 116,
+          "EIAS": 68,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 116,
+          "EIAS": 68,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 117,
+          "EIAS": 69,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 117,
+          "EIAS": 69,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 117,
+          "EIAS": 69,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 117,
+          "EIAS": 69,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 118,
+          "EIAS": 69,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 118,
+          "EIAS": 69,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 118,
+          "EIAS": 69,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 118,
+          "EIAS": 69,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 119,
+          "EIAS": 69,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 119,
+          "EIAS": 69,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 119,
+          "EIAS": 69,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 119,
+          "EIAS": 69,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 120,
+          "EIAS": 70,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 120,
+          "EIAS": 70,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 120,
+          "EIAS": 70,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 120,
+          "EIAS": 70,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 121,
+          "EIAS": 70,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 121,
+          "EIAS": 70,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 121,
+          "EIAS": 70,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 121,
+          "EIAS": 70,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 122,
+          "EIAS": 70,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 122,
+          "EIAS": 70,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 122,
+          "EIAS": 70,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 122,
+          "EIAS": 70,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 123,
+          "EIAS": 70,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 123,
+          "EIAS": 70,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 123,
+          "EIAS": 70,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 123,
+          "EIAS": 70,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 124,
+          "EIAS": 70,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 124,
+          "EIAS": 70,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 124,
+          "EIAS": 70,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 124,
+          "EIAS": 70,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 125,
+          "EIAS": 71,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 125,
+          "EIAS": 71,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 125,
+          "EIAS": 71,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 125,
+          "EIAS": 71,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 126,
+          "EIAS": 71,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 126,
+          "EIAS": 71,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 126,
+          "EIAS": 71,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 126,
+          "EIAS": 71,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 127,
+          "EIAS": 71,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 127,
+          "EIAS": 71,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 127,
+          "EIAS": 71,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 127,
+          "EIAS": 71,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 128,
+          "EIAS": 71,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 128,
+          "EIAS": 71,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 128,
+          "EIAS": 71,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 128,
+          "EIAS": 71,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 129,
+          "EIAS": 72,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 129,
+          "EIAS": 72,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 129,
+          "EIAS": 72,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 129,
+          "EIAS": 72,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 130,
+          "EIAS": 72,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 130,
+          "EIAS": 72,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 130,
+          "EIAS": 72,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 130,
+          "EIAS": 72,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 131,
+          "EIAS": 72,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 131,
+          "EIAS": 72,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 131,
+          "EIAS": 72,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 131,
+          "EIAS": 72,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 132,
+          "EIAS": 72,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 132,
+          "EIAS": 72,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 132,
+          "EIAS": 72,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 132,
+          "EIAS": 72,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 133,
+          "EIAS": 73,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 133,
+          "EIAS": 73,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 133,
+          "EIAS": 73,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 133,
+          "EIAS": 73,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 134,
+          "EIAS": 73,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 134,
+          "EIAS": 73,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 134,
+          "EIAS": 73,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 134,
+          "EIAS": 73,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 135,
+          "EIAS": 73,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 135,
+          "EIAS": 73,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 135,
+          "EIAS": 73,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 135,
+          "EIAS": 73,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 136,
+          "EIAS": 73,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 136,
+          "EIAS": 73,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 136,
+          "EIAS": 73,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 136,
+          "EIAS": 73,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 137,
+          "EIAS": 73,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 137,
+          "EIAS": 73,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 137,
+          "EIAS": 73,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 137,
+          "EIAS": 73,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 138,
+          "EIAS": 74,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 138,
+          "EIAS": 74,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 138,
+          "EIAS": 74,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 138,
+          "EIAS": 74,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 139,
+          "EIAS": 74,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 139,
+          "EIAS": 74,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 139,
+          "EIAS": 74,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 139,
+          "EIAS": 74,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 140,
+          "EIAS": 74,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 140,
+          "EIAS": 74,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 140,
+          "EIAS": 74,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 140,
+          "EIAS": 74,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 141,
+          "EIAS": 74,
+          "hitCount": 2,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10
+          ],
+          "totalSequenceFrames": 13
+        },
+        {
+          "IAS": 141,
+          "EIAS": 74,
+          "hitCount": 3,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15
+          ],
+          "totalSequenceFrames": 18
+        },
+        {
+          "IAS": 141,
+          "EIAS": 74,
+          "hitCount": 4,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "totalSequenceFrames": 23
+        },
+        {
+          "IAS": 141,
+          "EIAS": 74,
+          "hitCount": 5,
+          "firstAttackFrames": 5,
+          "followUpAttackFrames": 5,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            5,
+            10,
+            15,
+            20,
+            25
+          ],
+          "totalSequenceFrames": 28
+        },
+        {
+          "IAS": 142,
+          "EIAS": 75,
+          "hitCount": 2,
+          "firstAttackFrames": 4,
+          "followUpAttackFrames": 4,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            4,
+            8
+          ],
+          "totalSequenceFrames": 12
+        },
+        {
+          "IAS": 142,
+          "EIAS": 75,
+          "hitCount": 3,
+          "firstAttackFrames": 4,
+          "followUpAttackFrames": 4,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            4,
+            8,
+            12
+          ],
+          "totalSequenceFrames": 16
+        },
+        {
+          "IAS": 142,
+          "EIAS": 75,
+          "hitCount": 4,
+          "firstAttackFrames": 4,
+          "followUpAttackFrames": 4,
+          "finalAttackFrames": 8,
+          "hitEventFrames": [
+            4,
+            8,
+            12,
+            16
+          ],
+          "totalSequenceFrames": 20
+        },
+        {
+          "IAS": 142,
           "EIAS": 75,
           "hitCount": 5,
           "firstAttackFrames": 4,

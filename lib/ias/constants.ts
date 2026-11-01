@@ -7,6 +7,7 @@ export const ZEAL_MAX_IAS_BY_WEAPON: Readonly<Record<string, number>> = {
   crs: 360,
   "7cr": 72,
   whm: 456,
+  lsd: 142,
 };
 
 export const PALADIN_CRS_A1 = {

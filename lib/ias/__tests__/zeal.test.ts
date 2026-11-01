@@ -8,6 +8,7 @@ import { calculateIAS } from "../calculate.ts";
 import { ZEAL_GOLDEN_DATASETS, ZEAL_GOLDEN_ROWS, deriveZealBreakpoints, getZealGoldenRow } from "../zeal-golden.ts";
 import { getCalculatorViewModelFromParts, getZealHitCountFromSkillLevel } from "../ui-model.ts";
 import { IAS_SKILLS } from "../skills.ts";
+import longSwordReference from "../data/paladin-lsd-zeal-reference.json" with { type: "json" };
 
 const base = {
   characterClass: "PALADIN",
@@ -25,7 +26,7 @@ test("Zeal registry binds the D2R skill ID and A1 repeated-attack scope", () => 
   assert.equal(IAS_SKILLS.ZEAL.animationMode, "A1");
   assert.equal(IAS_SKILLS.ZEAL.selectable, true);
   assert.equal(IAS_SKILLS.ZEAL.supportStatus, "SUPPORTED");
-  assert.deepEqual(IAS_SKILLS.ZEAL.supportedWeapons, ["crs", "7cr", "whm"]);
+  assert.deepEqual(IAS_SKILLS.ZEAL.supportedWeapons, ["crs", "7cr", "whm", "lsd"]);
 });
 
 test("Paladin 1HS Zeal formula matches all fixed reference rows and all EIAS cells", async () => {
@@ -43,10 +44,10 @@ test("Paladin 1HS Zeal formula matches all fixed reference rows and all EIAS cel
 });
 
 test("Zeal Golden expands complete IAS and 2–5 hit coverage from the fixed reference table", () => {
-  assert.equal(golden.rowCount, 3564);
-  assert.equal(ZEAL_GOLDEN_ROWS.length, 3564);
+  assert.equal(golden.rowCount, 4136);
+  assert.equal(ZEAL_GOLDEN_ROWS.length, 4136);
   assert.deepEqual(ZEAL_GOLDEN_DATASETS.map((dataset) => [dataset.weaponCode, dataset.IASRange.max]), [
-    ["crs", 360], ["7cr", 72], ["whm", 456],
+    ["crs", 360], ["7cr", 72], ["whm", 456], ["lsd", 142],
   ]);
   for (const dataset of ZEAL_GOLDEN_DATASETS) {
     assert.equal(dataset.gameBuild, "3.3.93847");
@@ -57,6 +58,21 @@ test("Zeal Golden expands complete IAS and 2–5 hit coverage from the fixed ref
       for (let hitCount = 2; hitCount <= 5; hitCount += 1) {
         assert.ok(getZealGoldenRow(dataset.weaponCode, ias, hitCount), `${dataset.weaponCode}/${ias}/${hitCount}`);
       }
+    }
+  }
+});
+
+test("Long Sword Zeal breakpoint boundaries match the independent D2R 3.3 reference", () => {
+  const dataset = ZEAL_GOLDEN_DATASETS.find((item) => item.weaponCode === "lsd")!;
+  const observed = longSwordReference.rows;
+  assert.equal(dataset.WSM, -10);
+  assert.deepEqual(deriveZealBreakpoints("lsd", 5), observed.map((row) => row.ias));
+  for (const row of observed) {
+    const goldenRow = getZealGoldenRow("lsd", row.ias, 5)!;
+    assert.deepEqual([goldenRow.firstAttackFrames, goldenRow.finalAttackFrames], [row.firstAttackFrames, row.finalAttackFrames]);
+    if (row.ias > 0) {
+      const previous = getZealGoldenRow("lsd", row.ias - 1, 5)!;
+      assert.ok(previous.totalSequenceFrames >= goldenRow.totalSequenceFrames, `boundary at ${row.ias}`);
     }
   }
 });
