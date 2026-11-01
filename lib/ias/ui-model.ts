@@ -1,8 +1,9 @@
 import { calculateIAS, deriveGoldenBreakpoints, getGoldenFrameCount } from "./index.ts";
-import type { IASResult } from "./types.ts";
+import type { IASAnimation, IASResult } from "./types.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 
-export function getWeaponBreakpoints(weaponCode: string) {
+export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1") {
+  if (animation !== "A1" || IAS_WEAPONS[weaponCode]?.animationEvidence[animation].status !== "VERIFIED") return [];
   return deriveGoldenBreakpoints(weaponCode).map((ias) => ({
     ias,
     fullAnimationFrames: getGoldenFrameCount(weaponCode, ias) as number,

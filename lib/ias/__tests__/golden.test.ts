@@ -9,6 +9,7 @@ import { deriveGoldenBreakpoints } from "../breakpoints.ts";
 const datasets = [golden, phaseBlade, warHammer] as const;
 
 test("each weapon Golden Dataset has complete, unique integer IAS coverage", () => {
+  assert.equal(datasets.reduce((sum, dataset) => sum + dataset.rows.length, 0), 720);
   for (const dataset of datasets) {
     assert.equal(dataset.gameBuild, "3.3.93847");
     assert.equal(dataset.rows.length, dataset.iasMax + 1, dataset.weaponCode);

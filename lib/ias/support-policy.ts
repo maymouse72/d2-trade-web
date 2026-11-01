@@ -113,7 +113,15 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "스킬, 버프 또는 디버프 IAS가 포함된 조합은 아직 검증되지 않았습니다."), input };
   }
   if (input.animation !== "A1") {
-    return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", "A2는 독립 기준표와 실제 선택 규칙이 확인되지 않았습니다."), input };
+    const animationEvidence = weapon?.animationEvidence[input.animation as "A1" | "A2"];
+    return {
+      ...decision(
+        "UNVERIFIED",
+        "UNVERIFIED_ANIMATION",
+        animationEvidence?.note ?? "이 공격 동작은 독립적으로 검증되지 않았습니다.",
+      ),
+      input,
+    };
   }
   if (!weapon || !weapon.verified) {
     return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 무기 조합은 독립적으로 검증되지 않았습니다."), input };

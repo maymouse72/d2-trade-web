@@ -52,6 +52,9 @@ test("unverified animations, weapons, and unsupported classes never return numbe
     assert.notEqual(model.status, "SUPPORTED");
     assert.equal("result" in model, false);
   }
+  assert.deepEqual(getWeaponBreakpoints("crs", "A2"), []);
+  assert.deepEqual(getWeaponBreakpoints("7cr", "A2"), []);
+  assert.deepEqual(getWeaponBreakpoints("whm", "A2"), []);
 });
 
 test("Phase Blade and War Hammer results use weapon-specific bounds and rows", () => {

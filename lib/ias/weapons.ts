@@ -1,3 +1,5 @@
+import type { IASAnimation, IASAnimationEvidence } from "./types.ts";
+
 export interface IASWeaponDefinition {
   code: string;
   name: string;
@@ -7,6 +9,7 @@ export interface IASWeaponDefinition {
   minIAS: number;
   maxIAS: number;
   verified: boolean;
+  animationEvidence: Readonly<Record<IASAnimation, IASAnimationEvidence>>;
   evidence: string;
 }
 
@@ -22,6 +25,10 @@ export const IAS_WEAPONS: Readonly<Record<string, IASWeaponDefinition>> = {
     minIAS: 0,
     maxIAS: 200,
     verified: true,
+    animationEvidence: {
+      A1: { status: "VERIFIED", note: "독립 기준표 대조 및 A1 Golden Dataset 검증 완료." },
+      A2: { status: "UNVERIFIED", note: "빌드별 독립 A2 프레임 기준표 또는 게임 내 측정 결과가 없습니다." },
+    },
     evidence: "Existing 201 row dataset matches the published Paladin 1HS WSM 0 frame table.",
   },
   "7cr": {
@@ -33,6 +40,10 @@ export const IAS_WEAPONS: Readonly<Record<string, IASWeaponDefinition>> = {
     minIAS: 0,
     maxIAS: 200,
     verified: true,
+    animationEvidence: {
+      A1: { status: "VERIFIED", note: "독립 기준표 대조 및 A1 Golden Dataset 검증 완료." },
+      A2: { status: "UNVERIFIED", note: "빌드별 독립 A2 프레임 기준표 또는 게임 내 측정 결과가 없습니다." },
+    },
     evidence: "D2R weapons.txt: WSM -30, weapon class 1hs; published Paladin 1HS WSM -30 frame thresholds match the complete 0–200 A1 dataset.",
   },
   whm: {
@@ -44,6 +55,10 @@ export const IAS_WEAPONS: Readonly<Record<string, IASWeaponDefinition>> = {
     minIAS: 0,
     maxIAS: 317,
     verified: true,
+    animationEvidence: {
+      A1: { status: "VERIFIED", note: "독립 기준표 대조 및 A1 Golden Dataset 검증 완료." },
+      A2: { status: "UNVERIFIED", note: "빌드별 독립 A2 프레임 기준표 또는 게임 내 측정 결과가 없습니다." },
+    },
     evidence: "D2R weapons.txt: WSM +20, weapon class 1hs; published Paladin 1HS WSM +20 thresholds match the complete 0–317 A1 dataset.",
   },
 };

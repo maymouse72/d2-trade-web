@@ -19,16 +19,22 @@ export default function IASCalculator() {
   const [ias, setIAS] = useState('0');
   const selectedWeapon = IAS_WEAPONS[weaponCode];
   const maxIAS = selectedWeapon?.maxIAS ?? 317;
+  const animationLabel = animation === 'A2' ? '기본 공격 동작 2 (A2)' : '기본 공격 동작 1 (A1)';
   const model = useMemo(() => getCalculatorViewModel(ias, { characterClass, weaponCode, animation }), [ias, characterClass, weaponCode, animation]);
   const result = model.status === 'SUPPORTED' ? model.result : null;
-  const breakpointRows = characterClass === 'PALADIN' && animation === 'A1' ? getWeaponBreakpoints(weaponCode) : [];
+  const breakpointRows = characterClass === 'PALADIN' ? getWeaponBreakpoints(weaponCode, animation as 'A1' | 'A2') : [];
   const statusMessage = model.status === 'INVALID_INPUT'
     ? model.reason
     : model.status === 'UNVERIFIED'
-      ? '현재 선택한 조합은 검증 중이므로 계산 결과를 제공하지 않습니다.'
+      ? animation === 'A2'
+        ? 'A2는 독립 검증 자료가 부족해 계산 결과를 제공하지 않습니다.'
+        : '현재 선택한 조합은 검증 중이므로 계산 결과를 제공하지 않습니다.'
       : model.status === 'UNSUPPORTED'
         ? '현재 지원하지 않는 직업 또는 공격 유형입니다.'
         : null;
+  const animationDescription = animation === 'A2'
+    ? '게임 내부에 기록된 또 다른 기본 공격 동작입니다. A1과 별도로 검증된 경우에만 계산 결과를 표시합니다.'
+    : 'A1은 게임 내부에 기록된 기본 공격 동작 1입니다. 실제 게임에서 어떤 공격 동작이 사용되는지는 이 계산기가 판별하지 않습니다.';
 
   function adjustIAS(delta: number) {
     const current = /^(0|[1-9]\d*)$/.test(ias) ? Number(ias) : 0;
@@ -45,7 +51,7 @@ export default function IASCalculator() {
       <GameInfoNavigation active="ias-calculator" />
       <div className={styles.heading}><h2 id="ias-title">디아블로2 레저렉션 공속 계산기</h2><span className={styles.badge}>시험 운영</span></div>
       <p className={styles.intro}>장비에 붙은 공격 속도 증가 수치를 합산해, 선택한 무기의 공격 동작 전체 길이를 확인할 수 있습니다.</p>
-      <p className={styles.notice}>현재는 성기사의 기본 공격 동작 1 (A1)과 검증된 무기별 공속 범위만 계산합니다. 스킬, 오라, 버프, 디버프의 공격 속도 효과는 포함하지 않습니다. 표시되는 프레임은 실제 타격 판정 시점이나 연속 공격의 정확한 주기를 의미하지 않습니다.</p>
+      <p className={styles.notice}>이 계산기는 선택한 공격 동작의 전체 애니메이션 길이를 보여줍니다. 실제 게임에서 A1과 A2가 선택되는 규칙이나 평균 공격 속도는 계산하지 않습니다. 스킬, 오라, 버프, 디버프의 공격 속도 효과도 포함하지 않습니다.</p>
 
       <div className={styles.layout}>
         <section className={styles.controls} aria-labelledby="conditions-title">
@@ -62,10 +68,10 @@ export default function IASCalculator() {
           </label>
           <label className={styles.field} htmlFor="ias-animation"><span>기준 공격 동작</span>
             <select id="ias-animation" value={animation} onChange={event => setAnimation(event.target.value)}>
-              <option value="A1">기본 공격 동작 1 (A1)</option><option value="A2">공격 동작 2 (A2) · 검증 중</option>
+              <option value="A1">기본 공격 동작 1 (A1)</option><option value="A2">기본 공격 동작 2 (A2) · 검증 중</option>
             </select>
           </label>
-          <p className={styles.hint}>A1은 게임 내부의 여러 공격 동작 중 하나입니다. 모든 일반 공격이 A1으로 실행된다는 의미는 아닙니다.</p>
+          <p className={styles.hint}>{animationDescription}</p>
           <div className={styles.iasField}>
             <label htmlFor="total-ias">공격 속도 증가 합계 (IAS)</label>
             <div className={styles.stepper}>
@@ -84,7 +90,7 @@ export default function IASCalculator() {
         <section className={styles.results} aria-labelledby="result-title" aria-live="polite" aria-atomic="true">
           <h3 id="result-title">계산 결과</h3>
           {result ? <>
-            <p className={styles.resultMeta}>성기사 · 인간형 · {selectedWeapon?.name} · 기본 공격 동작 1 (A1) · 공격 속도 증가 합계 {result.totalIAS} IAS</p>
+            <p className={styles.resultMeta}>성기사 · 인간형 · {selectedWeapon?.name} · {animationLabel} · 공격 속도 증가 합계 {result.totalIAS} IAS</p>
             <p className={styles.resultMeta}>선택한 공격 동작의 전체 애니메이션 길이입니다. 실제 타격 판정 시점이나 연속 공격의 정확한 주기를 뜻하지 않습니다.</p>
             <p className={styles.frameValue}><strong>{result.fullAnimationFrames}</strong><span>프레임</span></p>
             <dl className={styles.stats}>
@@ -99,13 +105,13 @@ export default function IASCalculator() {
       </div>
 
       <section className={styles.tableSection} aria-labelledby="table-title">
-        <div className={styles.tableHeading}><h3 id="table-title">검증된 공속 기준표</h3><p>성기사 · {selectedWeapon?.name ?? '선택 무기'} · 기본 공격 동작 1 (A1)</p></div>
+        <div className={styles.tableHeading}><h3 id="table-title">{animation === 'A2' ? '검증 중인 공속 기준표' : '검증된 공속 기준표'}</h3><p>성기사 · {selectedWeapon?.name ?? '선택 무기'} · {animationLabel}</p></div>
         <details className={styles.explanation}><summary>공속 기준(브레이크포인트)이란?</summary><p>공격 속도 증가 수치를 높여도 프레임이 매번 줄어드는 것은 아닙니다. 특정 수치에 도달해야 공격 동작의 전체 프레임이 한 단계 감소합니다. 이 기준값을 브레이크포인트라고 합니다.</p></details>
         {breakpointRows.length > 0 ? <>
         <p className={styles.hint}>강조된 행은 현재 수치가 포함된 프레임 구간의 시작 기준값입니다.</p>
         <div className={styles.tableWrap}>
           <table>
-            <caption className={styles.srOnly}>성기사 {selectedWeapon?.name} 기본 공격 동작 1의 공속 기준값과 전체 프레임</caption>
+            <caption className={styles.srOnly}>성기사 {selectedWeapon?.name} {animationLabel}의 공속 기준값과 전체 프레임</caption>
             <thead><tr><th scope="col">공속 기준값 (IAS)</th><th scope="col">공격 동작 전체 길이</th><th scope="col">공속 증가 수치 구간</th></tr></thead>
             <tbody>{breakpointRows.map((row, index) => {
               const next = breakpointRows[index + 1] ? breakpointRows[index + 1].ias - 1 : maxIAS;

@@ -29,6 +29,11 @@ test("accepts verified weapons and blocks unverified combinations", () => {
   assert.equal(evaluateIASSupport({ ...base, weaponCode: "7cr" }).status, "SUPPORTED");
   assert.equal(evaluateIASSupport({ ...base, weaponCode: "whm" }).status, "SUPPORTED");
   assertNoNumbers({ ...base, animation: "A2" }, "UNVERIFIED");
+  for (const weaponCode of ["crs", "7cr", "whm"]) {
+    const a2 = { ...base, animation: "A2", weaponCode };
+    assert.equal(evaluateIASSupport(a2).status, "UNVERIFIED", `${weaponCode} A2`);
+    assertNoNumbers(a2, "UNVERIFIED");
+  }
   assertNoNumbers({ ...base, weaponCode: "xyz" }, "UNVERIFIED");
   assertNoNumbers({ ...base, characterClass: "AMAZON" }, "UNSUPPORTED");
   assertNoNumbers({ ...base, attackMode: "ZEAL" }, "UNSUPPORTED");

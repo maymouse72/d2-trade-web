@@ -11,6 +11,12 @@ export type IASCharacterClass =
 export type IASAttackMode = "NORMAL";
 export type IASAnimation = "A1" | "A2";
 export type IASStatus = "SUPPORTED" | "UNVERIFIED" | "UNSUPPORTED" | "INVALID_INPUT";
+export type IASVerificationStatus = "VERIFIED" | "PROVISIONAL" | "CONFLICTED" | "UNVERIFIED";
+
+export interface IASAnimationEvidence {
+  status: IASVerificationStatus;
+  note: string;
+}
 
 export type IASReasonCode =
   | "SUPPORTED_GOLDEN_MATCH"
