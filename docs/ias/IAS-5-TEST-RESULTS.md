@@ -13,5 +13,7 @@
 - `npx tsc --noEmit`: PASS
 - `npm run lint`: PASS
 - `npx next build --webpack`: PASS, Next.js 16.4.3 / webpack; IAS 페이지 정적 생성 완료
+- `npm run test:ias:browser` local: desktop 1365×900 PASS, mobile 390×844 PASS; 콘솔 오류/가로 넘침 없음
+- Production `IAS_BASE_URL=https://www.d2jugobatgo.com npm run test:ias:browser`: desktop/mobile 2/2 PASS; 콘솔 오류/가로 넘침 없음
 
 완료 전 수치는 실제 명령 출력으로 갱신한다.
