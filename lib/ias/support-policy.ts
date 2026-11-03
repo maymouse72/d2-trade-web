@@ -2,6 +2,7 @@ import type { IASCharacterClass, IASStatus } from "./types.ts";
 import { IAS_HARD_MAX, SMITE_MAX_IAS_BY_WEAPON, ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
+import { getClassSkill } from "./class-registry.ts";
 
 const KNOWN_CLASSES: readonly IASCharacterClass[] = [
   "PALADIN",
@@ -120,7 +121,12 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
   if (skillCode === "SMITE" && SMITE_MAX_IAS_BY_WEAPON[weaponCode] !== undefined && totalIAS > SMITE_MAX_IAS_BY_WEAPON[weaponCode]) {
     return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon?.name ?? weaponCode} 강타 검증 범위는 0~${SMITE_MAX_IAS_BY_WEAPON[weaponCode]} IAS입니다.`), input };
   }
-  if (skillCode !== "ZEAL" && skillCode !== "SMITE" && weapon && totalIAS > weapon.maxIAS) {
+  const genericClassSkill = getClassSkill(value.characterClass as string, skillCode);
+  const classMaxIAS = genericClassSkill?.maxIASByWeapon[weaponCode];
+  if (classMaxIAS !== undefined && totalIAS > classMaxIAS) {
+    return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon?.name ?? weaponCode}의 검증 범위는 0~${classMaxIAS} IAS입니다.`), input: { characterClass: value.characterClass as string, characterForm: value.characterForm as string, attackMode: value.attackMode as string, animation: value.animation as string, skill: skillCode, weaponCode, weaponIAS: value.weaponIAS, offWeaponIAS: value.offWeaponIAS, totalIAS, skillIAS: (value.skillIAS as number | undefined) ?? 0, buffIAS: (value.buffIAS as number | undefined) ?? 0, debuffIAS: (value.debuffIAS as number | undefined) ?? 0, hitCount: 5, fanaticismLevel: (value.fanaticismLevel as number | undefined) ?? 0 } };
+  }
+  if (skillCode !== "ZEAL" && skillCode !== "SMITE" && !genericClassSkill && weapon && totalIAS > weapon.maxIAS) {
     return { ...decision("INVALID_INPUT", "IAS_OUT_OF_RANGE", `${weapon.name}의 검증 범위는 ${weapon.minIAS}~${weapon.maxIAS} IAS입니다.`), input };
   }
   if (skillCode === "ZEAL") {
@@ -133,7 +139,19 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     }
   }
 
-  if (!KNOWN_CLASSES.includes(input.characterClass as IASCharacterClass) || input.characterClass !== "PALADIN") {
+  if (!KNOWN_CLASSES.includes(input.characterClass as IASCharacterClass)) {
+    return { ...decision("UNSUPPORTED", "UNSUPPORTED_CLASS", "지원하지 않는 직업입니다."), input };
+  }
+  if (input.characterClass === "BARBARIAN") {
+    const definition = getClassSkill(input.characterClass, input.skill);
+    if (!definition) return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "야만용사 일반 공격만 구현되어 있습니다."), input };
+    if (input.characterForm !== "HUMAN") return { ...decision("UNSUPPORTED", "UNSUPPORTED_FORM", "현재 검증된 형태는 야만용사 인간형뿐입니다."), input };
+    if (input.attackMode !== "NORMAL" || input.animation !== definition.animationMode) return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", "야만용사 A1 일반 공격 외 애니메이션은 검증되지 않았습니다."), input };
+    if (!definition.supportedWeapons.includes(input.weaponCode) || !weapon?.verified || weapon.resolvedWeaponSpeedModifier !== 0) return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 야만용사 무기 조합은 별도 검증되지 않았습니다."), input };
+    if (input.skillIAS || input.buffIAS || input.debuffIAS || input.fanaticismLevel) return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "야만용사의 스킬/버프 IAS 및 광신 보정은 이 MVP에서 지원하지 않습니다."), input };
+    return { status: "SUPPORTED", reasonCode: "SUPPORTED_GOLDEN_MATCH", reason: "야만용사 인간형 일반 공격 A1, 검증된 WSM 0 한손 무기, IAS 0~200", input };
+  }
+  if (input.characterClass !== "PALADIN") {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_CLASS", "현재 검증된 직업은 Paladin뿐입니다."), input };
   }
   if (input.characterForm !== "HUMAN") {

@@ -10,6 +10,7 @@ import { SMITE_MAX_IAS_BY_WEAPON } from '../../../lib/ias/constants';
 import { filterIASWeaponCatalog, IAS_WEAPON_CATALOG, type WeaponCombinationStatus } from '../../../lib/ias/weapon-catalog';
 import { localizedWeaponName, WEAPON_CATEGORY_KO } from '../../../lib/ias/weapon-localization';
 import { fanaticismSIAS } from '../../../lib/ias/fanaticism';
+import { getClassSkill, getClassSkills } from '../../../lib/ias/class-registry';
 
 const classes = [
   ['AMAZON', '아마존'], ['ASSASSIN', '암살자'], ['BARBARIAN', '야만용사'], ['DRUID', '드루이드'],
@@ -41,18 +42,20 @@ export default function IASCalculator() {
   const [fanaticismLevel, setFanaticismLevel] = useState(0);
   const hitCount = getZealHitCountFromSkillLevel(skillLevel) ?? 5;
   const selectedWeapon = IAS_WEAPONS[weaponCode];
-  const selectedSkill = IAS_SKILLS[skill as keyof typeof IAS_SKILLS];
-  const compatibleAnimation = skill === 'SMITE' ? 'S1' : skill === 'NORMAL_ATTACK' ? animation : selectedSkill.animationMode;
+  const selectedSkill = characterClass === 'PALADIN' ? IAS_SKILLS[skill as keyof typeof IAS_SKILLS] : getClassSkill(characterClass, skill);
+  const compatibleAnimation = skill === 'SMITE' ? 'S1' : skill === 'NORMAL_ATTACK' || skill === 'BARBARIAN_NORMAL_ATTACK' ? animation : selectedSkill && 'animationMode' in selectedSkill ? selectedSkill.animationMode : null;
   const verifiedWeaponCodes = useMemo(() => (characterClass === 'PALADIN' && (compatibleAnimation === 'A1' || compatibleAnimation === 'S1')
-    ? selectedSkill.supportedWeapons
+    ? (selectedSkill?.supportedWeapons ?? [])
+    : characterClass === 'BARBARIAN' && selectedSkill && 'verificationStatus' in selectedSkill && selectedSkill.verificationStatus === 'VERIFIED'
+      ? selectedSkill.supportedWeapons
     : []), [characterClass, compatibleAnimation, selectedSkill]);
   const weaponStatuses = useMemo(() => Object.fromEntries(IAS_WEAPON_CATALOG.map(weapon => {
     const classOnly = ['Amazon Bow', 'Amazon Javelin', 'Amazon Spear', 'Hand to Hand', 'Hand to Hand 2', 'Orb'].includes(weapon.itemTypeName ?? '');
-    const status: WeaponCombinationStatus = characterClass !== 'PALADIN' || classOnly ? 'UNSUPPORTED' : verifiedWeaponCodes.includes(weapon.code) ? 'VERIFIED' : 'UNVERIFIED';
+    const status: WeaponCombinationStatus = classOnly ? 'UNSUPPORTED' : verifiedWeaponCodes.includes(weapon.code) ? 'VERIFIED' : characterClass === 'PALADIN' || characterClass === 'BARBARIAN' ? 'UNVERIFIED' : 'UNSUPPORTED';
     return [weapon.code, status];
   })), [characterClass, verifiedWeaponCodes]);
   const supportCounts = useMemo(() => Object.values(weaponStatuses).reduce((counts, status) => ({ ...counts, [status]: (counts[status] ?? 0) + 1 }), {} as Record<WeaponCombinationStatus, number>), [weaponStatuses]);
-  const maxIAS = getIASLimit(skill, weaponCode);
+  const maxIAS = characterClass === 'BARBARIAN' ? (selectedSkill && 'maxIASByWeapon' in selectedSkill ? selectedSkill.maxIASByWeapon[weaponCode] ?? 0 : 0) : getIASLimit(skill, weaponCode);
   const selectedCatalogWeapon = weaponByCode.get(weaponCode);
   const filteredWeapons = useMemo(() => filterIASWeaponCatalog({ search: weaponSearch, category: weaponCategory, handedness: weaponHandedness, support: weaponSupport, verifiedWeaponCodes, weaponStatuses }), [weaponCategory, weaponHandedness, weaponSearch, weaponSupport, verifiedWeaponCodes, weaponStatuses]);
   const weaponOptions = filteredWeapons.some(weapon => weapon.code === weaponCode) || !selectedCatalogWeapon
@@ -62,10 +65,10 @@ export default function IASCalculator() {
   const equipmentIASMax = Math.max(0, maxIAS - (Number(weaponIAS) || 0));
   const totalIAS = (Number(weaponIAS) || 0) + (Number(offWeaponIAS) || 0);
   const selectedAnimation = skill === 'NORMAL_ATTACK' ? animation : skill === 'SMITE' ? 'S1' : 'A1';
-  const currentAnimation = skill === 'NORMAL_ATTACK' ? selectedAnimation : selectedSkill.animationMode;
+  const currentAnimation = skill === 'NORMAL_ATTACK' || skill === 'BARBARIAN_NORMAL_ATTACK' ? selectedAnimation : selectedSkill?.animationMode;
   const model = useMemo(() => getCalculatorViewModelFromParts(weaponIAS, offWeaponIAS, { characterClass, weaponCode, animation: selectedAnimation, skill, hitCount, fanaticismLevel }), [weaponIAS, offWeaponIAS, characterClass, weaponCode, skill, selectedAnimation, hitCount, fanaticismLevel]);
   const result = model.status === 'SUPPORTED' ? model.result : null;
-  const breakpointRows = characterClass === 'PALADIN' ? getWeaponBreakpoints(weaponCode, (skill === 'SMITE' ? 'A1' : selectedAnimation) as 'A1' | 'A2', skill as keyof typeof IAS_SKILLS, hitCount, fanaticismLevel) : [];
+  const breakpointRows = (characterClass === 'PALADIN' || characterClass === 'BARBARIAN') ? getWeaponBreakpoints(weaponCode, (skill === 'SMITE' ? 'A1' : selectedAnimation) as 'A1' | 'A2', skill as keyof typeof IAS_SKILLS, hitCount, characterClass === 'PALADIN' ? fanaticismLevel : 0) : [];
   const zealBreakpointRows = skill === 'ZEAL' ? getZealBreakpoints(weaponCode, hitCount, fanaticismLevel) : [];
   const statusMessage = model.status === 'INVALID_INPUT'
     ? model.reason
@@ -74,6 +77,9 @@ export default function IASCalculator() {
       : model.status === 'UNSUPPORTED'
         ? model.reason
         : null;
+  const skillOptions = characterClass === 'PALADIN'
+    ? Object.values(IAS_SKILLS).filter(entry => entry.selectable).map(entry => ({ code: entry.code, label: entry.label, supported: entry.supportStatus === 'SUPPORTED' }))
+    : getClassSkills(characterClass).map(entry => ({ code: entry.skill, label: entry.label, supported: entry.verificationStatus === 'VERIFIED' }));
 
   function adjustIAS(delta: number) {
     const current = /^(0|[1-9]\d*)$/.test(offWeaponIAS) ? Number(offWeaponIAS) : 0;
@@ -93,26 +99,36 @@ export default function IASCalculator() {
     setOffWeaponIAS(String(Math.min(Number(offWeaponIAS) || 0, nextLimit - nextWeaponIAS)));
   }
 
+  function handleClassChange(nextClass: string) {
+    setCharacterClass(nextClass);
+    setSkill(nextClass === 'PALADIN' ? 'NORMAL_ATTACK' : getClassSkills(nextClass)[0]?.skill ?? 'NORMAL_ATTACK');
+    setWeaponCode(nextClass === 'BARBARIAN' ? 'crs' : 'crs');
+    setAnimation('A1');
+    setWeaponIAS('0');
+    setOffWeaponIAS('0');
+    setFanaticismLevel(0);
+  }
+
   return (
     <section className={styles.calculator} aria-labelledby="ias-title">
       <p className={styles.breadcrumb}>게임 정보 <span aria-hidden="true">›</span> 공속 계산기</p>
       <GameInfoNavigation active="ias-calculator" />
       <div className={styles.heading}><h2 id="ias-title">디아블로2 레저렉션 공속 계산기</h2><span className={styles.badge}>시험 운영</span></div>
-      <p className={styles.intro}>지원하는 성기사 공격 스킬과 한손 무기의 공격 속도 기준값 및 공격 동작 전체 길이를 확인할 수 있습니다.</p>
-      <p className={styles.notice}>계산 범위는 성기사 인간형의 검증된 한손 A1 공격, 열의, 방패 착용 강타 S1입니다. 광신은 검증된 성기사 조합에서만 적용합니다. 결과는 D2R 원본 데이터와 공개된 프레임 기준표에 대조했으며 게임 내 타격 프레임 실측값은 아닙니다.</p>
+      <p className={styles.intro}>직업과 공격 방식별로 검증된 무기의 공격 속도 기준값과 공격 동작 전체 길이를 확인할 수 있습니다.</p>
+      <p className={styles.notice}>미검증 조합은 숫자를 표시하지 않습니다. 현재 야만용사는 인간형 일반 공격 A1, WSM 0 한손 무기 1종만 검증됐습니다. 광신은 검증된 성기사 조합에만 적용합니다. 결과는 공개 프레임 기준표 대조값이며 게임 내 타격 프레임 실측값은 아닙니다.</p>
 
       <div className={styles.layout}>
         <section className={styles.controls} aria-labelledby="conditions-title">
           <h3 id="conditions-title">계산 조건</h3>
           <label className={styles.field} htmlFor="ias-class"><span>직업</span>
-            <select id="ias-class" value={characterClass} onChange={event => setCharacterClass(event.target.value)}>
-              {classes.map(([id, name]) => <option key={id} value={id}>{name}{id === 'PALADIN' ? '' : ' · 준비 중'}</option>)}
+            <select id="ias-class" value={characterClass} onChange={event => handleClassChange(event.target.value)}>
+              {classes.map(([id, name]) => <option key={id} value={id}>{name}{id === 'PALADIN' || id === 'BARBARIAN' ? '' : ' · 준비 중'}</option>)}
             </select>
           </label>
           <label className={styles.field} htmlFor="ias-skill"><span>공격 스킬</span>
             <select id="ias-skill" value={skill} onChange={event => handleSkillChange(event.target.value)}>
-              {Object.values(IAS_SKILLS).filter(entry => entry.selectable).map(entry => <option key={entry.code} value={entry.code}>{entry.label}{entry.supportStatus === 'SUPPORTED' ? '' : ' · 검증 중'}</option>)}
-              {Object.values(IAS_SKILLS).filter(entry => !entry.selectable).map(entry => <option key={entry.code} value={entry.code} disabled>{entry.label} · 준비 중</option>)}
+              {skillOptions.map(entry => <option key={entry.code} value={entry.code}>{entry.label}{entry.supported ? '' : ' · 검증 중'}</option>)}
+              {characterClass === 'PALADIN' ? Object.values(IAS_SKILLS).filter(entry => !entry.selectable).map(entry => <option key={entry.code} value={entry.code} disabled>{entry.label} · 준비 중</option>) : null}
             </select>
           </label>
           <label className={styles.field} htmlFor="ias-weapon-category"><span>무기 종류</span>
@@ -140,8 +156,8 @@ export default function IASCalculator() {
             </select>
           </label>
           <p className={styles.hint} aria-live="polite">등록 {IAS_WEAPON_CATALOG.length}종 · 선택 가능 {IAS_WEAPON_CATALOG.filter(weapon => weapon.spawnable).length}종 중 {filteredWeapons.length}종 표시 · 조합 상태: 지원 {supportCounts.VERIFIED ?? 0} · 검증 대기 {supportCounts.UNVERIFIED ?? 0} · 충돌 {supportCounts.CONFLICTED ?? 0} · 불가 {supportCounts.UNSUPPORTED ?? 0}</p>
-          <label className={styles.field} htmlFor="fanaticism-level"><span>광신 보정</span><select id="fanaticism-level" value={fanaticismLevel} onChange={event => setFanaticismLevel(Number(event.target.value))}><option value={0}>사용 안 함</option>{Array.from({length:60},(_,i)=>i+1).map(level=><option key={level} value={level}>레벨 {level} · +{fanaticismSIAS(level)} SIAS</option>)}</select></label>
-          {fanaticismLevel > 0 ? <p className={styles.hint}>광신 레벨 {fanaticismLevel}: 장비 IAS 감쇠 이후 +{fanaticismSIAS(fanaticismLevel)} 스킬 IAS 적용. 레벨은 장비 보너스를 포함한 합산 레벨입니다.</p> : null}
+          {characterClass === 'PALADIN' ? <label className={styles.field} htmlFor="fanaticism-level"><span>광신 보정</span><select id="fanaticism-level" value={fanaticismLevel} onChange={event => setFanaticismLevel(Number(event.target.value))}><option value={0}>사용 안 함</option>{Array.from({length:60},(_,i)=>i+1).map(level=><option key={level} value={level}>레벨 {level} · +{fanaticismSIAS(level)} SIAS</option>)}</select></label> : null}
+          {characterClass === 'PALADIN' && fanaticismLevel > 0 ? <p className={styles.hint}>광신 레벨 {fanaticismLevel}: 장비 IAS 감쇠 이후 +{fanaticismSIAS(fanaticismLevel)} 스킬 IAS 적용. 레벨은 장비 보너스를 포함한 합산 레벨입니다.</p> : null}
           {skill === 'ZEAL' ? <label className={styles.field} htmlFor="zeal-skill-level"><span>열의 기술 레벨</span>
             <select id="zeal-skill-level" value={skillLevel} onChange={event => setSkillLevel(Number(event.target.value))}>
               {Array.from({length: 20}, (_, index) => index + 1).map(level => <option key={level} value={level}>{level}레벨 · 최대 {Math.min(level + 1, 5)}회</option>)}
@@ -159,10 +175,10 @@ export default function IASCalculator() {
           </details>
           <details className={styles.explanation}>
             <summary>선택 스킬의 검증 근거</summary>
-            <p>D2R 빌드 {selectedSkill.gameBuild} · {selectedSkill.skillId === 0 ? '일반 공격' : `skills.txt Skill ID ${selectedSkill.skillId}`} · 애니메이션 {currentAnimation ?? '미검증'}</p>
-            <p>{selectedSkill.evidenceNote}</p>
-            <p>지원 무기: {selectedSkill.supportedWeapons.map(code => IAS_WEAPONS[code]?.name).filter(Boolean).join(', ') || '없음'} · 게임 내 실측: {selectedSkill.gameplayTestStatus === 'NOT_TESTED' ? '미수행' : '수행'}</p>
-            <p>{selectedSkill.evidenceScope}</p>
+            <p>D2R 빌드 {selectedSkill && 'gameBuild' in selectedSkill ? selectedSkill.gameBuild : '3.3.93847'} · {selectedSkill && 'skillId' in selectedSkill ? selectedSkill.skillId === 0 ? '일반 공격' : `skills.txt Skill ID ${selectedSkill.skillId}` : '직업별 일반 공격'} · 애니메이션 {currentAnimation ?? '미검증'} · {selectedSkill && 'animationClass' in selectedSkill ? selectedSkill.animationClass : characterClass === 'PALADIN' ? 'Paladin A1' : '미검증'}</p>
+            <p>{selectedSkill ? 'evidenceNote' in selectedSkill ? selectedSkill.evidenceNote : selectedSkill.evidenceSource : '선택 직업의 스킬 근거가 검증되지 않았습니다.'}</p>
+            <p>지원 무기: {selectedSkill?.supportedWeapons.map(code => IAS_WEAPONS[code]?.name).filter(Boolean).join(', ') || '없음'} · 게임 내 실측: 미수행</p>
+            <p>{selectedSkill ? 'evidenceScope' in selectedSkill ? selectedSkill.evidenceScope : '지원 상태는 직업·스킬·무기·애니메이션 조합 기준입니다.' : '이 직업은 계산 지원 준비 중입니다.'}</p>
           </details>
           <div className={styles.iasField}>
             <label>공격 속도 증가 입력</label>
@@ -177,7 +193,7 @@ export default function IASCalculator() {
               <button type="button" aria-label="장비 IAS 1 증가" disabled={totalIAS >= maxIAS} onClick={() => adjustIAS(1)}>+1</button>
               <button type="button" aria-label="장비 IAS 10 증가" disabled={totalIAS >= maxIAS} onClick={() => adjustIAS(10)}>+10</button>
             </div>
-            <p id="ias-range" className={styles.hint}>선택한 {selectedSkill.label}·무기의 검증 범위: 0~{maxIAS} IAS{skill === 'ZEAL' || skill === 'SMITE' ? ' (EIAS 75 상한)' : ''}</p>
+            <p id="ias-range" className={styles.hint}>선택한 {selectedSkill?.label ?? '공격'}·무기의 검증 범위: 0~{maxIAS} IAS{skill === 'ZEAL' || skill === 'SMITE' ? ' (EIAS 75 상한)' : ''}</p>
             {skill === 'SMITE' ? <p className={styles.hint}>강타 계산은 방패를 착용한 성기사 인간형 기준입니다. 방패 유형은 이 IAS 기준표에서 추가 속도 변수가 아닙니다.</p> : null}
             {skill === 'ZEAL' ? <p className={styles.hint}>원본 공식은 최소 타격 수 2회에서 시작해 기술 레벨에 따라 늘어나며 최대 5회입니다. 실제 타격 수는 대상과 전투 상황에 따라 달라질 수 있습니다. 열의는 action frame 이후 동작을 되감고, 마지막 공격은 전체 동작을 마칩니다.</p> : null}
           </div>
@@ -187,7 +203,7 @@ export default function IASCalculator() {
         <section className={styles.results} aria-labelledby="result-title" aria-live="polite" aria-atomic="true">
           <h3 id="result-title">계산 결과</h3>
           {result ? <>
-            <p className={styles.resultMeta}>성기사 · 인간형 · {selectedSkill.label} · {selectedWeapon?.name} · {currentAnimation} · 공격 속도 증가 합계 {result.totalIAS} IAS{fanaticismLevel ? ` · 광신 레벨 ${fanaticismLevel} (+${fanaticismSIAS(fanaticismLevel)} SIAS)` : ''}</p>
+            <p className={styles.resultMeta}>{classes.find(([id]) => id === characterClass)?.[1]} · 인간형 · {selectedSkill?.label} · {selectedWeapon?.name} · {currentAnimation} · 공격 속도 증가 합계 {result.totalIAS} IAS{characterClass === 'PALADIN' && fanaticismLevel ? ` · 광신 레벨 ${fanaticismLevel} (+${fanaticismSIAS(fanaticismLevel)} SIAS)` : ''}</p>
             {result.zealSequence ? <p className={styles.resultMeta}>{fanaticismLevel ? '광신 SIAS를 반영한 열의 연속 공격 시퀀스입니다.' : '고정 Paladin 1HS Zeal 표와 일치한 연속 공격 시퀀스입니다.'} 이벤트 프레임은 표의 action frame 산출값이며 게임 내 실측값은 아닙니다.</p>
               : <p className={styles.resultMeta}>{skill === 'SMITE' ? '방패 착용 상태의 강타 S1 전체 동작 길이입니다. 실제 타격 시점의 게임 내 실측은 아닙니다.' : '선택한 공격 동작의 전체 애니메이션 길이입니다. 실제 타격 판정 시점이나 연속 공격의 정확한 주기를 뜻하지 않습니다.'}</p>}
             <p className={styles.frameValue}><strong>{result.zealSequence?.totalSequenceFrames ?? result.fullAnimationFrames}</strong><span>프레임</span></p>
@@ -211,13 +227,13 @@ export default function IASCalculator() {
       </div>
 
       <section className={styles.tableSection} aria-labelledby="table-title">
-        <div className={styles.tableHeading}><h3 id="table-title">{selectedAnimation === 'A2' ? '검증 중인 공속 기준표' : skill === 'ZEAL' ? `열의 ${hitCount}회 공격 기준표` : skill === 'SMITE' ? '강타 공격 기준표' : '검증된 공속 기준표'}</h3><p>성기사 · {selectedSkill.label} · {selectedWeapon?.name ?? '선택 무기'} · {currentAnimation ?? selectedAnimation}</p></div>
+        <div className={styles.tableHeading}><h3 id="table-title">{selectedAnimation === 'A2' ? '검증 중인 공속 기준표' : skill === 'ZEAL' ? `열의 ${hitCount}회 공격 기준표` : skill === 'SMITE' ? '강타 공격 기준표' : '검증된 공속 기준표'}</h3><p>{classes.find(([id]) => id === characterClass)?.[1]} · {selectedSkill?.label} · {selectedWeapon?.name ?? '선택 무기'} · {currentAnimation ?? selectedAnimation}</p></div>
         <details className={styles.explanation}><summary>공속 기준(브레이크포인트)이란?</summary><p>공격 속도 증가 수치를 높여도 프레임이 매번 줄어드는 것은 아닙니다. 특정 수치에 도달해야 공격 동작의 전체 프레임이 한 단계 감소합니다. 이 기준값을 브레이크포인트라고 합니다.</p></details>
         {breakpointRows.length > 0 ? <>
         <p className={styles.hint}>강조된 행은 현재 수치가 포함된 프레임 구간의 시작 기준값입니다.</p>
         <div className={styles.tableWrap}>
           <table>
-          <caption className={styles.srOnly}>성기사 {selectedSkill.label} {selectedWeapon?.name} {currentAnimation}의 공속 기준값과 프레임</caption>
+          <caption className={styles.srOnly}>{classes.find(([id]) => id === characterClass)?.[1]} {selectedSkill?.label} {selectedWeapon?.name} {currentAnimation}의 공속 기준값과 프레임</caption>
             {skill === 'ZEAL' ? <>
               <thead><tr><th scope="col">기준 IAS</th><th scope="col">첫 공격</th><th scope="col">후속 간격</th><th scope="col">마지막 동작</th><th scope="col">전체 시퀀스</th><th scope="col">IAS 구간</th></tr></thead>
               <tbody>{zealBreakpointRows.map((row, index) => {

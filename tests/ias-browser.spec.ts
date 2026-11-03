@@ -41,6 +41,21 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
     await expect(weapon.locator("option").first()).toContainText("지원 불가");
     await expect(resultValue).toHaveCount(0);
 
+    await page.locator("#ias-class").selectOption("BARBARIAN");
+    await supportState.selectOption("ALL");
+    await expect(page.locator("#fanaticism-level")).toHaveCount(0);
+    await expect(page.locator("#ias-skill")).toHaveValue("BARBARIAN_NORMAL_ATTACK");
+    await expect(page.locator("#ias-weapon option:checked")).toContainText("crs");
+    await expect(resultValue).toHaveText("15");
+    await page.locator("#weapon-ias").fill("9");
+    await expect(resultValue).toHaveText("14");
+    await page.locator("#ias-weapon-search").fill("phase blade");
+    await page.locator("#ias-weapon").selectOption("7cr");
+    await expect(resultValue).toHaveCount(0);
+    await page.locator("#ias-class").selectOption("PALADIN");
+    await expect(page.locator("#ias-skill")).toHaveValue("NORMAL_ATTACK");
+    await expect(page.locator("#fanaticism-level")).toHaveValue("0");
+
     const dimensions = await page.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
     expect(dimensions.scrollWidth).toBeLessThanOrEqual(dimensions.width);
     expect(pageErrors).toEqual([]);
