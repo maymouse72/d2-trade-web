@@ -1,28 +1,26 @@
-import { IAS_WEAPONS } from "./weapons.ts";
-import { getBarbarianGoldenFrameCount } from "./barbarian-golden.ts";
+import { getBarbarianBreakpoints, getBarbarianGoldenFrameCount } from "./barbarian-golden.ts";
+import { getBarbarianWeapon } from "./class-registry.ts";
 import type { IASResult, CalculationTrace } from "./types.ts";
 import type { NormalizedIASInput } from "./support-policy.ts";
 
 export const BARBARIAN_A1 = { animationClass: "BAA11HS", animationSpeed: 256, framesPerDirection: 16, startingFrame: 0 } as const;
 
 export function calculateBarbarianNormalAttack(input: NormalizedIASInput): IASResult {
-  const weapon = IAS_WEAPONS[input.weaponCode];
+  const weapon = getBarbarianWeapon(input.weaponCode);
+  if (!weapon) return { status: "UNVERIFIED", reasonCode: "UNVERIFIED_WEAPON", fullAnimationFrames: null, totalIAS: null, effectiveIAS: null, currentBreakpoint: null, nextBreakpoint: null, requiredAdditionalIAS: null, evidenceVersion: null, reason: "야만용사 일반 공격 무기의 원본 검증이 완료되지 않았습니다." };
   const itemEffectiveIAS = Math.floor(120 * input.totalIAS / (120 + input.totalIAS));
-  const eiasRaw = itemEffectiveIAS - weapon.resolvedWeaponSpeedModifier;
+  const eiasRaw = itemEffectiveIAS - weapon.weaponSpeedModifier;
   const eiasApplied = Math.max(-85, Math.min(75, eiasRaw));
   const speedIncrease = Math.floor(BARBARIAN_A1.animationSpeed * (100 + eiasApplied) / 100);
   const frames = Math.ceil(256 * (BARBARIAN_A1.framesPerDirection - BARBARIAN_A1.startingFrame) / speedIncrease) - 1;
-  if (frames !== getBarbarianGoldenFrameCount(input.totalIAS)) {
+  if (frames !== getBarbarianGoldenFrameCount(input.weaponCode, input.totalIAS)) {
     return { status: "UNVERIFIED", reasonCode: "GOLDEN_DATA_MISMATCH", fullAnimationFrames: null, totalIAS: null, effectiveIAS: null, currentBreakpoint: null, nextBreakpoint: null, requiredAdditionalIAS: null, evidenceVersion: null, reason: "야만용사 계산이 공개 기준 Golden과 일치하지 않습니다." };
   }
-  let currentBreakpoint = 0;
-  let nextBreakpoint: number | null = null;
-  for (let ias = 0; ias <= 200; ias++) {
-    if (getBarbarianGoldenFrameCount(ias) === frames) currentBreakpoint = ias;
-    else if (ias > input.totalIAS && (getBarbarianGoldenFrameCount(ias) ?? frames) < frames) { nextBreakpoint = ias; break; }
-  }
+  const breakpointRows = getBarbarianBreakpoints(input.weaponCode);
+  const currentBreakpoint = breakpointRows.filter((row) => row.ias <= input.totalIAS).at(-1)?.ias ?? 0;
+  const nextBreakpoint = breakpointRows.find((row) => row.ias > input.totalIAS)?.ias ?? null;
   const trace: CalculationTrace = {
-    weaponSpeedModifier: weapon.resolvedWeaponSpeedModifier, totalIAS: input.totalIAS, itemEffectiveIAS,
+    weaponSpeedModifier: weapon.weaponSpeedModifier, totalIAS: input.totalIAS, itemEffectiveIAS,
     eiasRaw, eiasApplied, animationSpeed: BARBARIAN_A1.animationSpeed, framesPerDirection: BARBARIAN_A1.framesPerDirection,
     startingFrame: BARBARIAN_A1.startingFrame, speedIncrease, fullAnimationFrames: frames,
   };

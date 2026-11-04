@@ -2,7 +2,7 @@ import type { IASCharacterClass, IASStatus } from "./types.ts";
 import { IAS_HARD_MAX, SMITE_MAX_IAS_BY_WEAPON, ZEAL_MAX_IAS_BY_WEAPON } from "./constants.ts";
 import { IAS_WEAPONS } from "./weapons.ts";
 import { IAS_SKILLS } from "./skills.ts";
-import { getClassSkill } from "./class-registry.ts";
+import { getBarbarianWeapon, getClassSkill } from "./class-registry.ts";
 
 const KNOWN_CLASSES: readonly IASCharacterClass[] = [
   "PALADIN",
@@ -147,9 +147,10 @@ export function evaluateIASSupport(value: unknown): SupportDecision {
     if (!definition) return { ...decision("UNSUPPORTED", "UNSUPPORTED_ATTACK_MODE", "야만용사 일반 공격만 구현되어 있습니다."), input };
     if (input.characterForm !== "HUMAN") return { ...decision("UNSUPPORTED", "UNSUPPORTED_FORM", "현재 검증된 형태는 야만용사 인간형뿐입니다."), input };
     if (input.attackMode !== "NORMAL" || input.animation !== definition.animationMode) return { ...decision("UNVERIFIED", "UNVERIFIED_ANIMATION", "야만용사 A1 일반 공격 외 애니메이션은 검증되지 않았습니다."), input };
-    if (!definition.supportedWeapons.includes(input.weaponCode) || !weapon?.verified || weapon.resolvedWeaponSpeedModifier !== 0) return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "이 야만용사 무기 조합은 별도 검증되지 않았습니다."), input };
+    const barbarianWeapon = getBarbarianWeapon(input.weaponCode);
+    if (!definition.supportedWeapons.includes(input.weaponCode) || !barbarianWeapon || barbarianWeapon.verificationStatus !== "VERIFIED") return { ...decision("UNVERIFIED", "UNVERIFIED_WEAPON", "선택한 무기는 야만용사 일반 공격의 애니메이션 검증이 완료되지 않아 계산을 제공하지 않습니다."), input };
     if (input.skillIAS || input.buffIAS || input.debuffIAS || input.fanaticismLevel) return { ...decision("UNVERIFIED", "UNVERIFIED_MODIFIER", "야만용사의 스킬/버프 IAS 및 광신 보정은 이 MVP에서 지원하지 않습니다."), input };
-    return { status: "SUPPORTED", reasonCode: "SUPPORTED_GOLDEN_MATCH", reason: "야만용사 인간형 일반 공격 A1, 검증된 WSM 0 한손 무기, IAS 0~200", input };
+    return { status: "SUPPORTED", reasonCode: "SUPPORTED_GOLDEN_MATCH", reason: `야만용사 인간형 일반 공격 A1, ${barbarianWeapon.animationClass} ${barbarianWeapon.weaponClass} WSM ${barbarianWeapon.weaponSpeedModifier}, IAS 0~${barbarianWeapon.maxIAS}`, input };
   }
   if (input.characterClass !== "PALADIN") {
     return { ...decision("UNSUPPORTED", "UNSUPPORTED_CLASS", "현재 검증된 직업은 Paladin뿐입니다."), input };

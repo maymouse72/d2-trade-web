@@ -12,7 +12,7 @@ import { getClassSkill } from "./class-registry.ts";
 import { getBarbarianBreakpoints } from "./barbarian-golden.ts";
 
 export function getWeaponBreakpoints(weaponCode: string, animation: IASAnimation = "A1", skill: string = "NORMAL_ATTACK", hitCount = 5, fanaticismLevel = 0) {
-  if (skill === "BARBARIAN_NORMAL_ATTACK") return weaponCode === "crs" && animation === "A1" && fanaticismLevel === 0 ? getBarbarianBreakpoints() : [];
+  if (skill === "BARBARIAN_NORMAL_ATTACK") return animation === "A1" && fanaticismLevel === 0 ? getBarbarianBreakpoints(weaponCode) : [];
   if (animation !== "A1" || IAS_WEAPONS[weaponCode]?.animationEvidence[animation].status !== "VERIFIED") return [];
   const skillDefinition = IAS_SKILLS[skill];
   if (skillDefinition?.supportStatus !== "SUPPORTED") return [];
