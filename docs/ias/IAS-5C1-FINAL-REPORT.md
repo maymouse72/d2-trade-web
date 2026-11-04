@@ -11,4 +11,11 @@
 
 ## 최종 판정
 
-Git/push and Vercel Production checks are pending. Final result can be PASS/DEPLOYED only if every required gate passes. Otherwise keep PARTIAL/NOT DEPLOYED and state the blocked gate.
+**PASS / DEPLOYED**
+
+- Git commit: `d0c62bd4a59591a8d59ea96437f3a1d86b70b51e`
+- Vercel Production deployment: `dpl_5dEHfqeQBv2BebsC6Jv4SoPgDe7F` — READY
+- `www.d2jugobatgo.com` alias 연결 완료.
+- 운영 PC·모바일 Playwright 스모크 테스트: 2/2 PASS, 콘솔 오류 없음, 모바일 가로 넘침 없음.
+- 롤백: 없음.
+- 미완료 사항: 없음. IAS-2B/IAS-3A 기존 보고서 편집과 `debug.log`는 이 작업 범위에서 제외되어 로컬에 보존.

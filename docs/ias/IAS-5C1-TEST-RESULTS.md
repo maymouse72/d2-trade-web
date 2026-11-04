@@ -12,6 +12,6 @@
 - `npm run lint`: PASS
 - `npx next build --webpack`: PASS (Next.js 16.4.3, webpack; static generation 12/12)
 - `npm run test:ias:browser` (local desktop + mobile): 2/2 PASS
-- Production smoke: 배포 후 실행 예정
+- Production smoke: 운영 URL PC·모바일 2/2 PASS
 
 Barbarian tests verify all breakpoints at N−1/N, full supported IAS ranges, per-weapon limits, invalid/missing WSM, A2 rejection, no modifiers, current/next breakpoint output, and Paladin regressions.

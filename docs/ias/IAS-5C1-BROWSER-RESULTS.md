@@ -6,4 +6,6 @@ Playwright project runs the existing separate Chrome profile at desktop 1365×90
 - Local mobile 390×844: PASS
 - Browser/page console errors: 두 환경 모두 0
 - Horizontal overflow: 모바일 viewport에서 `scrollWidth <= clientWidth` PASS
-- Production smoke: 배포 후 실행 예정
+- Production desktop 1365×900: PASS
+- Production mobile 390×844: PASS
+- Production console/page errors: 0
