@@ -2,9 +2,9 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { calculateIAS } from "../calculate.ts";
 import { evaluateIASSupport } from "../support-policy.ts";
-import { BARBARIAN_GOLDEN_ROWS, BARBARIAN_TWO_HANDED_GOLDEN_ROWS, getBarbarianBreakpoints, getBarbarianGoldenFrameCount, getBarbarianMaxIAS } from "../barbarian-golden.ts";
+import { BARBARIAN_GOLDEN_ROWS, BARBARIAN_TWO_HANDED_GOLDEN_ROWS, BARBARIAN_C3_TWO_HANDED_GOLDEN_ROWS, getBarbarianBreakpoints, getBarbarianGoldenFrameCount, getBarbarianMaxIAS } from "../barbarian-golden.ts";
 import { getCalculatorViewModelFromParts, getWeaponBreakpoints } from "../ui-model.ts";
-import { BARBARIAN_WEAPONS, IAS_SUPPORTED_CLASSES } from "../class-registry.ts";
+import { BARBARIAN_WEAPONS, BARBARIAN_TWO_HANDED_WEAPONS, IAS_SUPPORTED_CLASSES } from "../class-registry.ts";
 
 const base = { characterClass: "BARBARIAN", characterForm: "HUMAN", attackMode: "NORMAL", animation: "A1", skill: "BARBARIAN_NORMAL_ATTACK", weaponCode: "crs", weaponIAS: 0, offWeaponIAS: 0 };
 const referenceSteps: Readonly<Record<string, readonly (readonly [number, number])[]>> = {
@@ -15,12 +15,13 @@ const referenceSteps: Readonly<Record<string, readonly (readonly [number, number
   whm: [[0, 20], [2, 19], [6, 18], [11, 17], [18, 16], [24, 15], [37, 14], [50, 13], [70, 12], [99, 11], [147, 10], [250, 9]],
 };
 
-test("class registry covers seven target classes and only source-verified Barbarian 1HS weapons", () => {
+test("class registry covers target classes and source-verified Barbarian one- and two-handed weapons", () => {
   assert.equal(IAS_SUPPORTED_CLASSES.length, 7);
   assert.deepEqual(Object.keys(BARBARIAN_WEAPONS).sort(), ["7cr", "crs", "lsd", "mpi", "whm"]);
   assert.deepEqual(Object.fromEntries(Object.values(BARBARIAN_WEAPONS).map(({ code, weaponSpeedModifier }) => [code, weaponSpeedModifier])), { crs: 0, lsd: -10, "7cr": -30, mpi: -10, whm: 20 });
   assert.equal(BARBARIAN_GOLDEN_ROWS.length, 35);
   assert.ok(BARBARIAN_GOLDEN_ROWS.every(row => row.gameBuild === "3.3.93847" && row.weaponClass === "1hs" && row.animationClass === "BAA11HS" && row.verificationStatus === "VERIFIED"));
+  assert.deepEqual(Object.keys(BARBARIAN_TWO_HANDED_WEAPONS).sort(), ["72h", "7fb", "9fb"]);
 });
 
 test("all weapon IAS values match independent Barbarian 1HS WSM breakpoint intervals", () => {
@@ -94,4 +95,32 @@ test("Colossal Sword two-hand A1 uses its independent BAA12HS 2HS WSM +10 breakp
   assert.notEqual(calculateIAS({ ...twoHandBase, weaponIAS: 0 }).fullAnimationFrames, calculateIAS({ ...twoHandBase, weaponIAS: 2 }).fullAnimationFrames);
   assert.equal(calculateIAS({ ...twoHandBase, weaponCode: "crs" }).fullAnimationFrames, null);
   assert.equal(calculateIAS({ ...twoHandBase, weaponIAS: 201 }).fullAnimationFrames, null);
+});
+
+test("IAS-5-C-3 two-handed sword Golden tables match both reference calculators over IAS 0..200", () => {
+  const reference: Readonly<Record<string, readonly (readonly [number, number])[]>> = {
+    "72h": [[0, 15], [7, 14], [16, 13], [30, 12], [50, 11], [83, 10]],
+    "9fb": [[0, 16], [4, 15], [13, 14], [23, 13], [39, 12], [60, 11], [99, 10]],
+  };
+  assert.equal(BARBARIAN_C3_TWO_HANDED_GOLDEN_ROWS.length, 13);
+  for (const [weaponCode, steps] of Object.entries(reference)) {
+    assert.equal(getBarbarianMaxIAS(weaponCode), 200);
+    for (let ias = 0; ias <= 200; ias++) {
+      const expected = [...steps].reverse().find(([start]) => ias >= start)![1];
+      const result = calculateIAS({ ...base, skill: "BARBARIAN_TWO_HANDED_NORMAL_ATTACK", weaponCode, weaponIAS: ias });
+      assert.equal(result.status, "SUPPORTED", `${weaponCode} IAS ${ias}`);
+      assert.equal(result.fullAnimationFrames, expected, `${weaponCode} IAS ${ias}`);
+      assert.equal(result.trace?.framesPerDirection, 18);
+      assert.equal(result.trace?.weaponSpeedModifier, { "72h": -15, "9fb": -10 }[weaponCode as "72h" | "9fb"]);
+    }
+    assert.deepEqual(getBarbarianBreakpoints(weaponCode), steps.map(([ias, fullAnimationFrames]) => ({ ias, fullAnimationFrames })));
+  }
+});
+
+test("IAS-5-C-3 dual wield, Double Swing, Frenzy, and Whirlwind remain blocked without validated timing", () => {
+  for (const skill of ["BARBARIAN_DUAL_WIELD_NORMAL_ATTACK", "BARBARIAN_DOUBLE_SWING", "BARBARIAN_FRENZY", "BARBARIAN_WHIRLWIND"]) {
+    const result = calculateIAS({ ...base, skill });
+    assert.notEqual(result.status, "SUPPORTED", `${skill} must remain blocked`);
+    assert.equal(result.fullAnimationFrames, null, `${skill} must not expose a numeric result`);
+  }
 });

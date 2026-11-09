@@ -21,6 +21,7 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
     await search.fill("");
 
     const resultValue = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+    const breakpointTable = page.getByRole("table");
     await page.locator("#fanaticism-level").selectOption("20");
     await expect(resultValue).toBeVisible();
     const fanaticismFrames = await resultValue.innerText();
@@ -77,6 +78,39 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
     await page.locator("#weapon-ias").fill("201");
     await expect(page.locator("#weapon-ias")).toHaveValue("200");
     await expect(resultValue).toHaveText("10");
+    await page.locator("#ias-weapon").selectOption("9fb");
+    await expect(resultValue).toHaveText("16");
+    await expect(breakpointTable).toBeVisible();
+    await expect(breakpointTable.getByRole("row").nth(1)).toContainText(/0 IAS.*16프레임/);
+    await page.locator("#weapon-ias").fill("4");
+    await expect(resultValue).toHaveText("15");
+    await page.locator("#weapon-ias").fill("99");
+    await expect(resultValue).toHaveText("10");
+    await expect(page.locator('[aria-current="true"]')).toContainText("99 IAS");
+    await page.locator("#ias-weapon").selectOption("72h");
+    await expect(resultValue).toHaveText("15");
+    const accessibleStepper = page.getByRole("button", { name: "장비 IAS 1 증가" });
+    await expect(accessibleStepper).toBeVisible();
+    await expect(accessibleStepper).toBeEnabled();
+    await accessibleStepper.focus();
+    await expect(accessibleStepper).toBeFocused();
+    await accessibleStepper.press("Enter");
+    await expect(page.locator("#equipment-ias")).toHaveValue("1");
+    await page.locator("#equipment-ias").fill("0");
+    await expect(resultValue).toHaveText("15");
+    await expect(breakpointTable.getByRole("row").nth(1)).toContainText(/0 IAS.*15프레임/);
+    await page.locator("#weapon-ias").fill("7");
+    await expect(resultValue).toHaveText("14");
+    await expect(page.locator('[aria-current="true"]')).toContainText("7 IAS");
+    await page.locator("#weapon-ias").fill("83");
+    await expect(resultValue).toHaveText("10");
+    await expect(page.locator('[aria-current="true"]')).toContainText("83 IAS");
+    await page.locator("#weapon-ias").fill("201");
+    await expect(page.locator("#weapon-ias")).toHaveValue("200");
+    await expect(resultValue).toHaveText("10");
+    for (const unsupportedSkill of ["BARBARIAN_DUAL_WIELD_NORMAL_ATTACK", "BARBARIAN_DOUBLE_SWING", "BARBARIAN_FRENZY", "BARBARIAN_WHIRLWIND"]) {
+      await expect(page.locator(`#ias-skill option[value="${unsupportedSkill}"]`)).toHaveCount(0);
+    }
     await page.locator("#ias-skill").selectOption("BARBARIAN_NORMAL_ATTACK");
     await expect(resultValue).toHaveCount(0);
     await page.locator("#ias-weapon-search").fill("phase blade");

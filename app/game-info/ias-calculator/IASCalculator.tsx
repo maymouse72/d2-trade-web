@@ -116,7 +116,7 @@ export default function IASCalculator() {
       <GameInfoNavigation active="ias-calculator" />
       <div className={styles.heading}><h2 id="ias-title">디아블로2 레저렉션 공속 계산기</h2><span className={styles.badge}>시험 운영</span></div>
       <p className={styles.intro}>직업과 공격 방식별로 검증된 무기의 공격 속도 기준값과 공격 동작 전체 길이를 확인할 수 있습니다.</p>
-      <p className={styles.notice}>미검증 조합은 숫자를 표시하지 않습니다. 현재 야만용사는 인간형 일반 공격 A1, WSM 0 한손 무기 1종만 검증됐습니다. 광신은 검증된 성기사 조합에만 적용합니다. 결과는 공개 프레임 기준표 대조값이며 게임 내 타격 프레임 실측값은 아닙니다.</p>
+      <p className={styles.notice}>미검증 조합은 숫자를 표시하지 않습니다. 야만용사는 인간형 일반 공격 A1의 검증된 한손 무기와 양손 검 조합만 계산합니다. 쌍수·이중 타격·광분·소용돌이는 검증 전까지 계산하지 않습니다. 결과는 공개 프레임 기준표 대조값이며 게임 내 타격 프레임 실측값은 아닙니다.</p>
 
       <div className={styles.layout}>
         <section className={styles.controls} aria-labelledby="conditions-title">

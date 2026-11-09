@@ -40,10 +40,12 @@ export const BARBARIAN_WEAPONS: Readonly<Record<string, BarbarianWeaponDefinitio
   whm: { code: "whm", label: "War Hammer", weaponClass: "1hs", weaponSpeedModifier: 20, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 456, cofFile: "baa11hs.cof", framesPerDirection: 16, startingFrame: 0, verificationStatus: "VERIFIED" },
 };
 
-// The Colossal Sword's two-hand mode is a separate animation profile from its
-// Barbarian one-hand sword mode. Only the two-hand mode is enabled here.
+// Two-handed sword bases use BAA12HS when equipped in both hands. The code and
+// WSM remain weapon-specific; the animation profile is shared by this class.
 export const BARBARIAN_TWO_HANDED_WEAPONS: Readonly<Record<string, BarbarianWeaponDefinition>> = {
   "7fb": { code: "7fb", label: "Colossal Sword (양손 장착)", weaponClass: "2hs", weaponSpeedModifier: 10, animationMode: "A1", animationClass: "BAA12HS", maxIAS: 200, cofFile: "baa12hs.cof", framesPerDirection: 18, startingFrame: 0, verificationStatus: "VERIFIED" },
+  "72h": { code: "72h", label: "Legend Sword (양손 장착)", weaponClass: "2hs", weaponSpeedModifier: -15, animationMode: "A1", animationClass: "BAA12HS", maxIAS: 200, cofFile: "baa12hs.cof", framesPerDirection: 18, startingFrame: 0, verificationStatus: "VERIFIED" },
+  "9fb": { code: "9fb", label: "Zweihander (양손 장착)", weaponClass: "2hs", weaponSpeedModifier: -10, animationMode: "A1", animationClass: "BAA12HS", maxIAS: 200, cofFile: "baa12hs.cof", framesPerDirection: 18, startingFrame: 0, verificationStatus: "VERIFIED" },
 };
 
 export const BARBARIAN_NORMAL_ATTACK: IASClassSkillDefinition = {
