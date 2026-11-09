@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { calculateIAS } from "../calculate.ts";
 import { evaluateIASSupport } from "../support-policy.ts";
-import { BARBARIAN_GOLDEN_ROWS, getBarbarianBreakpoints, getBarbarianGoldenFrameCount, getBarbarianMaxIAS } from "../barbarian-golden.ts";
+import { BARBARIAN_GOLDEN_ROWS, BARBARIAN_TWO_HANDED_GOLDEN_ROWS, getBarbarianBreakpoints, getBarbarianGoldenFrameCount, getBarbarianMaxIAS } from "../barbarian-golden.ts";
 import { getCalculatorViewModelFromParts, getWeaponBreakpoints } from "../ui-model.ts";
 import { BARBARIAN_WEAPONS, IAS_SUPPORTED_CLASSES } from "../class-registry.ts";
 
@@ -75,4 +75,23 @@ test("weapon-specific breakpoint UI and existing Crystal Sword/Paladin results r
   assert.deepEqual(getWeaponBreakpoints("hax", "A1", "BARBARIAN_NORMAL_ATTACK"), []);
   assert.equal(calculateIAS({ ...base, weaponIAS: 0 }).fullAnimationFrames, 15);
   assert.equal(calculateIAS({ characterClass: "PALADIN", characterForm: "HUMAN", attackMode: "NORMAL", animation: "A1", skill: "NORMAL_ATTACK", weaponCode: "crs", weaponIAS: 40, offWeaponIAS: 0 }).fullAnimationFrames, 11);
+});
+
+test("Colossal Sword two-hand A1 uses its independent BAA12HS 2HS WSM +10 breakpoint table", () => {
+  const twoHandBase = { ...base, skill: "BARBARIAN_TWO_HANDED_NORMAL_ATTACK", weaponCode: "7fb" };
+  const steps = [[0, 20], [2, 19], [6, 18], [11, 17], [20, 16], [29, 15], [42, 14], [58, 13], [83, 12], [120, 11], [194, 10]] as const;
+  assert.equal(BARBARIAN_TWO_HANDED_GOLDEN_ROWS.length, steps.length);
+  assert.equal(getBarbarianMaxIAS("7fb"), 200);
+  for (let ias = 0; ias <= 200; ias++) {
+    const expected = [...steps].reverse().find(([start]) => ias >= start)![1];
+    const result = calculateIAS({ ...twoHandBase, weaponIAS: ias });
+    assert.equal(result.status, "SUPPORTED", `Colossal Sword 2HS IAS ${ias}`);
+    assert.equal(result.fullAnimationFrames, expected, `Colossal Sword 2HS IAS ${ias}`);
+    assert.equal(result.trace?.framesPerDirection, 18);
+    assert.equal(result.trace?.weaponSpeedModifier, 10);
+  }
+  assert.deepEqual(getWeaponBreakpoints("7fb", "A1", "BARBARIAN_TWO_HANDED_NORMAL_ATTACK"), steps.map(([ias, fullAnimationFrames]) => ({ ias, fullAnimationFrames })));
+  assert.notEqual(calculateIAS({ ...twoHandBase, weaponIAS: 0 }).fullAnimationFrames, calculateIAS({ ...twoHandBase, weaponIAS: 2 }).fullAnimationFrames);
+  assert.equal(calculateIAS({ ...twoHandBase, weaponCode: "crs" }).fullAnimationFrames, null);
+  assert.equal(calculateIAS({ ...twoHandBase, weaponIAS: 201 }).fullAnimationFrames, null);
 });

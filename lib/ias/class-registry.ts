@@ -19,23 +19,31 @@ export interface IASClassSkillDefinition {
 export interface BarbarianWeaponDefinition {
   code: string;
   label: string;
-  weaponClass: "1hs";
+  weaponClass: "1hs" | "2hs";
   weaponSpeedModifier: number;
   animationMode: "A1";
-  animationClass: "BAA11HS";
+  animationClass: "BAA11HS" | "BAA12HS";
   maxIAS: number;
-  cofFile: "baa11hs.cof";
+  cofFile: "baa11hs.cof" | "baa12hs.cof";
+  framesPerDirection: 16 | 18;
+  startingFrame: 0;
   verificationStatus: "VERIFIED";
 }
 
 // Each weapon has a raw, explicitly populated weapons.txt WSM except Crystal Sword,
 // whose existing verified WSM=0 resolution is retained from IAS-5-B.
 export const BARBARIAN_WEAPONS: Readonly<Record<string, BarbarianWeaponDefinition>> = {
-  crs: { code: "crs", label: "Crystal Sword", weaponClass: "1hs", weaponSpeedModifier: 0, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 200, cofFile: "baa11hs.cof", verificationStatus: "VERIFIED" },
-  lsd: { code: "lsd", label: "Long Sword", weaponClass: "1hs", weaponSpeedModifier: -10, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 142, cofFile: "baa11hs.cof", verificationStatus: "VERIFIED" },
-  "7cr": { code: "7cr", label: "Phase Blade", weaponClass: "1hs", weaponSpeedModifier: -30, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 72, cofFile: "baa11hs.cof", verificationStatus: "VERIFIED" },
-  mpi: { code: "mpi", label: "Military Pick", weaponClass: "1hs", weaponSpeedModifier: -10, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 142, cofFile: "baa11hs.cof", verificationStatus: "VERIFIED" },
-  whm: { code: "whm", label: "War Hammer", weaponClass: "1hs", weaponSpeedModifier: 20, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 456, cofFile: "baa11hs.cof", verificationStatus: "VERIFIED" },
+  crs: { code: "crs", label: "Crystal Sword", weaponClass: "1hs", weaponSpeedModifier: 0, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 200, cofFile: "baa11hs.cof", framesPerDirection: 16, startingFrame: 0, verificationStatus: "VERIFIED" },
+  lsd: { code: "lsd", label: "Long Sword", weaponClass: "1hs", weaponSpeedModifier: -10, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 142, cofFile: "baa11hs.cof", framesPerDirection: 16, startingFrame: 0, verificationStatus: "VERIFIED" },
+  "7cr": { code: "7cr", label: "Phase Blade", weaponClass: "1hs", weaponSpeedModifier: -30, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 72, cofFile: "baa11hs.cof", framesPerDirection: 16, startingFrame: 0, verificationStatus: "VERIFIED" },
+  mpi: { code: "mpi", label: "Military Pick", weaponClass: "1hs", weaponSpeedModifier: -10, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 142, cofFile: "baa11hs.cof", framesPerDirection: 16, startingFrame: 0, verificationStatus: "VERIFIED" },
+  whm: { code: "whm", label: "War Hammer", weaponClass: "1hs", weaponSpeedModifier: 20, animationMode: "A1", animationClass: "BAA11HS", maxIAS: 456, cofFile: "baa11hs.cof", framesPerDirection: 16, startingFrame: 0, verificationStatus: "VERIFIED" },
+};
+
+// The Colossal Sword's two-hand mode is a separate animation profile from its
+// Barbarian one-hand sword mode. Only the two-hand mode is enabled here.
+export const BARBARIAN_TWO_HANDED_WEAPONS: Readonly<Record<string, BarbarianWeaponDefinition>> = {
+  "7fb": { code: "7fb", label: "Colossal Sword (양손 장착)", weaponClass: "2hs", weaponSpeedModifier: 10, animationMode: "A1", animationClass: "BAA12HS", maxIAS: 200, cofFile: "baa12hs.cof", framesPerDirection: 18, startingFrame: 0, verificationStatus: "VERIFIED" },
 };
 
 export const BARBARIAN_NORMAL_ATTACK: IASClassSkillDefinition = {
@@ -51,9 +59,22 @@ export const BARBARIAN_NORMAL_ATTACK: IASClassSkillDefinition = {
   evidenceSource: "D2R.org Barbarian breakpoint table, one-handed swing WSM 0, build 3.3.93847; local D2R weapons.txt crs record (1hs, speed blank) and existing resolved WSM 0 evidence.",
 };
 
+export const BARBARIAN_TWO_HANDED_NORMAL_ATTACK: IASClassSkillDefinition = {
+  characterClass: "BARBARIAN",
+  skill: "BARBARIAN_TWO_HANDED_NORMAL_ATTACK",
+  label: "일반 공격 · 양손 장착",
+  animationMode: "A1",
+  animationClass: "BAA12HS",
+  supportedWeapons: Object.keys(BARBARIAN_TWO_HANDED_WEAPONS),
+  weaponSlot: "main",
+  maxIASByWeapon: Object.fromEntries(Object.values(BARBARIAN_TWO_HANDED_WEAPONS).map((weapon) => [weapon.code, weapon.maxIAS])),
+  verificationStatus: "VERIFIED",
+  evidenceSource: "D2R 3.3.93847 weapons.txt 7fb (2handedwclass=2hs, speed=10); extracted BAA12HS COF (FPD18, speed256, event slot8); Amazon Basin Barbarian 2HS WSM +10 breakpoint table.",
+};
+
 export const IAS_CLASS_SKILLS: Readonly<Record<string, readonly IASClassSkillDefinition[]>> = {
   PALADIN: [], // Existing Paladin-specific registry remains authoritative.
-  BARBARIAN: [BARBARIAN_NORMAL_ATTACK],
+  BARBARIAN: [BARBARIAN_NORMAL_ATTACK, BARBARIAN_TWO_HANDED_NORMAL_ATTACK],
   AMAZON: [], ASSASSIN: [], DRUID: [], NECROMANCER: [], SORCERESS: [], WARLOCK: [],
 };
 
@@ -66,5 +87,5 @@ export function getClassSkill(characterClass: string, skill: string) {
 }
 
 export function getBarbarianWeapon(weaponCode: string) {
-  return BARBARIAN_WEAPONS[weaponCode];
+  return BARBARIAN_WEAPONS[weaponCode] ?? BARBARIAN_TWO_HANDED_WEAPONS[weaponCode];
 }

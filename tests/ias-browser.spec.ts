@@ -67,6 +67,18 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
     await expect(resultValue).toHaveText("20");
     await page.locator("#weapon-ias").fill("250");
     await expect(resultValue).toHaveText("9");
+    await page.locator("#ias-skill").selectOption("BARBARIAN_TWO_HANDED_NORMAL_ATTACK");
+    await page.locator("#ias-weapon").selectOption("7fb");
+    await expect(resultValue).toHaveText("20");
+    await page.locator("#weapon-ias").fill("2");
+    await expect(resultValue).toHaveText("19");
+    await page.locator("summary").filter({ hasText: "선택 스킬의 검증 근거" }).click();
+    await expect(page.getByText("BAA12HS").first()).toBeVisible();
+    await page.locator("#weapon-ias").fill("201");
+    await expect(page.locator("#weapon-ias")).toHaveValue("200");
+    await expect(resultValue).toHaveText("10");
+    await page.locator("#ias-skill").selectOption("BARBARIAN_NORMAL_ATTACK");
+    await expect(resultValue).toHaveCount(0);
     await page.locator("#ias-weapon-search").fill("phase blade");
     await page.locator("#ias-weapon-search").fill("hand axe");
     await page.locator("#ias-weapon").selectOption("hax");
