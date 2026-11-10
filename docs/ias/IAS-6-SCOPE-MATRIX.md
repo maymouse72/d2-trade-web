@@ -1,0 +1,19 @@
+# IAS-6 Scope Matrix
+
+**As of:** 2026-11-11 · **Status:** Reference-based MVP ready for Production approval; no Production action before approval.
+
+| Track | Implemented and selectable | Remaining / intentionally blocked |
+|---|---|---|
+| Amazon | A1; Jab; Impale 1HT/2HT; Fend 2–12 targets; Strafe 2–10 shots; bow/crossbow attack aliases including Immolation Arrow cadence; thrust and Throw-table skills | Projectile behavior excluded; unlisted multi-hit skill sequences not modeled |
+| Assassin | A1; Tiger/Cobra/Phoenix Strike A1 aliases; Fists of Fire/Claws of Thunder/Blades of Ice dual-claw sequences; Dragon Claw; Dragon Talon; Dragon Flight fixed 23 frames; Dragon Tail weapon-class timing; Trap Laying with Burst of Speed | Dragon Flight has no IAS/FCR/movement adjustment; mixed WSM Dragon Claw remains CONFLICTED; dual-claw trap aggregation and debuffs excluded |
+| Barbarian | One-/two-hand A1; Concentrate/Berserk/Bash/Stun aliases; Double Swing recorded PB/PB and PB/War Hammer pairs; Double Throw dual-wield 12-FPD sequence; Frenzy ordered legal pairs with uncharged/max-charge endpoints; Whirlwind repeated interval | Dual-wield normal attack and intermediate Frenzy charge states; Double Swing remains restricted to recorded pairs; Whirlwind omits startup, travel and hit confirmation |
+| Druid | Human, Werewolf and Werebear normal; Werewolf Fury/Feral Rage/Rabies; Fire Claws; Maul; Hunger | Werebear Fury is not a valid D2R skill path; external aura/slow modifiers excluded |
+| Necromancer | A1; Poison Dagger on eligible daggers | Other weapon attack motions not modeled; casting/FCR excluded |
+| Paladin | Existing VERIFIED normal, Sacrifice, Vengeance, Conversion, Zeal and Smite; Charge mode distinguishes real rush from A1 melee fallback | Real Charge movement cadence has no IAS frame result; Charge bonuses are not applied to fallback |
+| Sorceress | A1 normal weapon attacks | Other attack motions not modeled; casting/FCR excluded |
+
+All **7/7** target classes have selectable attack paths. The current UI exposes **64 selectable skills/modes**: Amazon 22, Assassin 12, Barbarian 11, Druid 9, Necromancer 2, Paladin 7, Sorceress 1. This includes 62 numeric-capable registry paths, Paladin Charge's distinct mode selection, and the Barbarian dual-wield normal option which is explicitly conflicted and produces no frame count. Warlock remains preparation-only and is excluded. The per-skill reference, inputs, weapon types, hand modes, engine, and status are listed in `IAS-6-SKILL-COVERAGE.md`.
+
+The catalog has 306 codes, 297 spawnable records and 23 item types. The reproducible audit `node --experimental-strip-types scripts/ias-coverage-audit.mjs` enumerates registry-declared spawnable skill/weapon/mode/form candidates and every ordered legal pair exposed by the current UI. With zero IAS and skill level 1, it reports **22,946** candidates: **22 VERIFIED**, **22,770 REFERENCE_BASED**, **154 CONFLICTED**, **0 UNSUPPORTED**, **0 INVALID_INPUT**, and **0 UNVERIFIED**. Thus 22,792/22,946 (**99.33%**) produce numbers inside this explicitly scoped candidate set. The 154 blocked cases are mixed-WSM Dragon Claw pairs. This percentage applies only to the deliberately enumerated legal candidate set.
+
+The audit also finds **196/306 (64.05%)** distinct catalog codes in at least one numeric candidate. The **110** without a numeric candidate reconcile as **9 non-spawnable** and **101 with unresolved WSM** under the audit's primary exclusion precedence. The remaining catalog codes stay searchable and receive no numeric result for the candidate setup unless an explicit source-backed class/skill path supports them. Candidate coverage does not claim every skill rank, IAS value, buff/debuff state, or every weapon pair in D2R. The generator documents the denominator and exclusions in its JSON output; the category counts are evaluated through the same calculator view-model path used by the application.

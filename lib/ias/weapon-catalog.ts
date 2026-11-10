@@ -23,7 +23,7 @@ export const IAS_WEAPON_CATALOG_SOURCE = catalog.sourceFiles;
 export const IAS_WEAPON_CATALOG_RECORD_COUNT = catalog.catalogRecordCount;
 
 export type WeaponHandednessFilter = "ALL" | IASWeaponCatalogEntry["handedness"];
-export type WeaponCombinationStatus = "VERIFIED" | "UNVERIFIED" | "CONFLICTED" | "UNSUPPORTED";
+export type WeaponCombinationStatus = "VERIFIED" | "REFERENCE_BASED" | "UNVERIFIED" | "CONFLICTED" | "UNSUPPORTED";
 export type WeaponSupportFilter = "ALL" | WeaponCombinationStatus;
 
 export function filterIASWeaponCatalog(options: {

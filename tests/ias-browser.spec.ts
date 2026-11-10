@@ -1,5 +1,29 @@
 import { expect, test } from "@playwright/test";
 
+test("Dragon Flight fixed timing and Barbarian Double Throw inputs render on desktop and mobile", async ({ page }) => {
+    const consoleErrors: string[] = [];
+    const pageErrors: string[] = [];
+    page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    page.on("pageerror", error => pageErrors.push(error.message));
+    await page.goto("/game-info/ias-calculator");
+    const resultValue = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+
+    await page.locator("#ias-class").selectOption("ASSASSIN");
+    await page.locator("#ias-skill").selectOption("ASSASSIN_DRAGON_FLIGHT");
+    await expect(resultValue).toHaveText("23");
+    await expect(page.getByText("용의 비상은 고정 23프레임이며 IAS·시전 속도·이동 속도 영향을 받지 않습니다.")).toBeVisible();
+    await expect(page.locator("#weapon-ias")).toBeDisabled();
+    await page.locator("#ias-class").selectOption("BARBARIAN");
+    await page.locator("#ias-skill").selectOption("BARBARIAN_DOUBLE_THROW");
+    await expect(page.locator("#ias-secondary-weapon")).toBeVisible();
+    await expect(page.locator("#ias-secondary-weapon-ias")).toBeVisible();
+    await expect(page.locator("#equipment-ias")).toHaveAttribute("max", "456");
+    await expect(resultValue).toBeVisible();
+    await expect(page.getByText(/Double Throw 12-FPD/)).toBeVisible();
+    expect(consoleErrors).toEqual([]);
+    expect(pageErrors).toEqual([]);
+});
+
 test("localized weapon selector, Fanaticism outputs, and console", async ({ page }) => {
     const consoleErrors: string[] = [];
     const pageErrors: string[] = [];
@@ -36,11 +60,11 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
     await expect(resultValue).toBeVisible();
 
     const supportState = page.locator("#ias-weapon-support");
-    await expect(supportState.locator("option")).toHaveCount(5);
+    await expect(supportState.locator("option")).toHaveCount(6);
     await page.locator("#ias-class").selectOption("AMAZON");
     await supportState.selectOption("UNSUPPORTED");
-    await expect(weapon.locator("option").first()).toContainText("지원 불가");
-    await expect(resultValue).toHaveCount(0);
+    await expect(weapon.locator("option").filter({ hasText: "지원 불가" }).first()).toBeAttached();
+    await expect(resultValue).toBeVisible();
 
     await page.locator("#ias-class").selectOption("BARBARIAN");
     await supportState.selectOption("ALL");
@@ -108,11 +132,14 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
     await page.locator("#weapon-ias").fill("201");
     await expect(page.locator("#weapon-ias")).toHaveValue("200");
     await expect(resultValue).toHaveText("10");
-    for (const unsupportedSkill of ["BARBARIAN_DUAL_WIELD_NORMAL_ATTACK", "BARBARIAN_DOUBLE_SWING", "BARBARIAN_FRENZY", "BARBARIAN_WHIRLWIND"]) {
-      await expect(page.locator(`#ias-skill option[value="${unsupportedSkill}"]`)).toHaveCount(0);
-    }
+    await expect(page.locator('#ias-skill option[value="BARBARIAN_DUAL_WIELD_NORMAL_ATTACK"]')).toContainText("자료 충돌로 계산 불가");
+    await page.locator("#ias-skill").selectOption("BARBARIAN_FRENZY");
+    await page.locator("#ias-weapon").selectOption("7cr");
+    await page.locator("#ias-secondary-weapon").selectOption("whm");
+    await expect(resultValue).toHaveText("23");
+    await expect(page.locator("#frenzy-charge-state")).toBeVisible();
     await page.locator("#ias-skill").selectOption("BARBARIAN_NORMAL_ATTACK");
-    await expect(resultValue).toHaveCount(0);
+    await expect(resultValue).toBeVisible();
     await page.locator("#ias-weapon-search").fill("phase blade");
     await page.locator("#ias-weapon-search").fill("hand axe");
     await page.locator("#ias-weapon").selectOption("hax");
@@ -123,6 +150,303 @@ test("localized weapon selector, Fanaticism outputs, and console", async ({ page
 
     const dimensions = await page.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
     expect(dimensions.scrollWidth).toBeLessThanOrEqual(dimensions.width);
+    expect(pageErrors).toEqual([]);
+    expect(consoleErrors).toEqual([]);
+});
+
+test("reference-based normal attacks cover all seven classes and conditional weapon modes", async ({ page }) => {
+    const pageErrors: string[] = [];
+    page.on("pageerror", error => pageErrors.push(error.message));
+    const consoleErrors: string[] = [];
+    page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    await page.goto("/game-info/ias-calculator");
+    const result = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+    const cases = [
+        ["AMAZON", "6sb"], ["ASSASSIN", "7tw"], ["BARBARIAN", "axe"],
+        ["DRUID", "crs"], ["NECROMANCER", "crs"], ["PALADIN", "6sb"], ["SORCERESS", "ob1"],
+    ] as const;
+    for (const [characterClass, weaponCode] of cases) {
+        await page.locator("#ias-class").selectOption(characterClass);
+        await page.locator("#ias-weapon").selectOption(weaponCode);
+        await expect(result, `${characterClass}/${weaponCode}`).toBeVisible();
+        await expect(page.getByText("외부 공속 계산 자료를 기준으로 산출한 참고값", { exact: false })).toBeVisible();
+    }
+    await page.locator("#ias-class").selectOption("AMAZON");
+    await page.locator("#ias-skill").selectOption("AMAZON_JAB");
+    await page.locator("#ias-weapon").selectOption("jav");
+    await expect(page.getByText("잽 3회 연속 공격", { exact: false }).first()).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#ias-skill").selectOption("AMAZON_IMPALE");
+    await page.locator("#ias-weapon").selectOption("jav");
+    await expect(result).toHaveText("27");
+    await page.locator("#equipment-ias").fill("9");
+    await expect(result).toHaveText("24");
+    await page.locator("#ias-weapon").selectOption("spr");
+    await expect(result).toHaveText("31");
+    await page.locator("#equipment-ias").fill("0");
+    await page.locator("#ias-skill").selectOption("AMAZON_JAB");
+    await page.locator("#ias-weapon").selectOption("jav");
+    const javelinSequence = await result.innerText();
+    await page.locator("#ias-weapon").selectOption("spr");
+    await expect(result).not.toHaveText(javelinSequence);
+    await page.locator("#ias-skill").selectOption("AMAZON_MULTIPLE_SHOT");
+    await page.locator("#ias-weapon").selectOption("6sb");
+    await expect(result).toHaveText("14");
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#ias-skill").selectOption("AMAZON_GUIDED_ARROW");
+    await expect(result).toHaveText("14");
+    await page.locator("#ias-weapon").selectOption("lxb");
+    await expect(result).toHaveText("18");
+    await page.locator("#ias-skill").selectOption("AMAZON_CHARGED_STRIKE");
+    await page.locator("#ias-weapon").selectOption("jav");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-weapon").selectOption("spr");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-weapon").selectOption("6sb");
+    await expect(result).toHaveCount(0);
+    await page.locator("#ias-skill").selectOption("AMAZON_FEND");
+    await page.locator("#ias-weapon").selectOption("jav");
+    await expect(result).toHaveText("17");
+    await expect(page.getByText("난격 2대상 (7+10프레임)", { exact: false }).first()).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#sequence-target-count").selectOption("3");
+    await expect(result).toHaveText("23");
+    await expect(page.locator("#table-title")).toContainText("3대상");
+    await page.locator("#sequence-target-count").selectOption("12");
+    await expect(result).toHaveText("77");
+    await page.locator("#ias-skill").selectOption("AMAZON_STRAFE");
+    await page.locator("#ias-weapon").selectOption("6sb");
+    await expect(result).toHaveText("18");
+    await page.locator("#sequence-target-count").selectOption("3");
+    await expect(result).toHaveText("22");
+    await page.locator("#sequence-target-count").selectOption("10");
+    await expect(result).toHaveText("50");
+    await page.locator("#ias-weapon").selectOption("lxb");
+    await expect(result).toHaveText("63");
+    await page.locator("#ias-skill").selectOption("AMAZON_LIGHTNING_FURY");
+    await page.locator("#ias-weapon").selectOption("jav");
+    await expect(result).toHaveText("14");
+    await expect(page.getByText("기술별 지연과 투사체 동작", { exact: false })).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#ias-skill").selectOption("AMAZON_IMMOLATION_ARROW");
+    await page.locator("#ias-weapon").selectOption("6sb");
+    await expect(result).toHaveText("22");
+    await expect(page.getByText(/D2R 로컬 지연 15프레임\(0\.6초\)/)).toBeVisible();
+    await page.locator("#ias-skill").selectOption("AMAZON_JAB");
+    await page.locator("#ias-weapon").selectOption("jav");
+    await page.locator("#ias-class").selectOption("AMAZON");
+    await page.locator("#ias-weapon").selectOption("7fb");
+    const mode = page.locator("#ias-weapon-mode");
+    await expect(mode).toBeVisible();
+    const oneHandFrames = await result.innerText();
+    await mode.selectOption("TWO_HAND");
+    await expect(result).not.toHaveText(oneHandFrames);
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#ias-class").selectOption("DRUID");
+    await page.locator("#ias-form").selectOption("WEREWOLF");
+    await expect(page.locator("#ias-skill")).toHaveValue("DRUID_WEREWOLF_NORMAL_ATTACK");
+    await page.locator("#ias-weapon").selectOption("sst");
+    const werewolfFrames = await result.innerText();
+    await expect(page.getByText("늑대인간 SIAS +40", { exact: false })).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#druid-werewolf-level").selectOption("20");
+    await expect(result).not.toHaveText(werewolfFrames);
+    await page.locator("#ias-form").selectOption("WEREBEAR");
+    await expect(page.locator("#ias-skill")).toHaveValue("DRUID_WEREBEAR_NORMAL_ATTACK");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-skill").selectOption("DRUID_MAUL");
+    await expect(page.locator("#druid-maul-level")).toBeVisible();
+    await page.locator("#druid-maul-level").selectOption("20");
+    await page.locator("#druid-maul-charges").selectOption("13");
+    await expect(page.getByText("Maul 충전 SIAS +39", { exact: false })).toBeVisible();
+    const chargedMaulFrames = await result.innerText();
+    await page.locator("#druid-maul-charges").selectOption("0");
+    await expect(result).not.toHaveText(chargedMaulFrames);
+    await page.locator("#ias-skill").selectOption("DRUID_FIRE_CLAWS");
+    await expect(result).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#ias-skill").selectOption("DRUID_HUNGER");
+    await expect(result).toBeVisible();
+    await expect(page.locator("#ias-skill option[value=\"DRUID_FERAL_RAGE\"]")).toHaveCount(0);
+    await page.locator("#ias-form").selectOption("WEREWOLF");
+    await page.locator("#ias-skill").selectOption("DRUID_FERAL_RAGE");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-skill").selectOption("DRUID_RABIES");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-skill").selectOption("DRUID_HUNGER");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-form").selectOption("WEREWOLF");
+    await page.locator("#ias-weapon").selectOption("rxb");
+    await expect(result).toBeVisible();
+    await page.locator("#ias-class").selectOption("NECROMANCER");
+    await page.locator("#ias-skill").selectOption("NECROMANCER_POISON_DAGGER");
+    await page.locator("#ias-weapon").selectOption("dgr");
+    await expect(result).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("#ias-weapon").selectOption("crs");
+    await expect(result).toHaveCount(0);
+    await expect(page.getByRole("status")).toContainText("단검 계열");
+    await page.locator("#ias-class").selectOption("ASSASSIN");
+    await page.locator("#ias-skill").selectOption("ASSASSIN_DRAGON_TAIL");
+    await page.locator("#ias-weapon").selectOption("7tw");
+    await expect(result).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    const dimensions = await page.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
+    expect(dimensions.scrollWidth).toBeLessThanOrEqual(dimensions.width);
+    expect(pageErrors).toEqual([]);
+    expect(consoleErrors).toEqual([]);
+});
+
+test("Paladin Charge separates non-IAS rush from the melee normal-attack fallback", async ({ page }) => {
+    const consoleErrors: string[] = [];
+    const pageErrors: string[] = [];
+    page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    page.on("pageerror", error => pageErrors.push(error.message));
+    await page.goto("/game-info/ias-calculator");
+    await page.locator("#ias-skill").selectOption("PALADIN_CHARGE");
+
+    const frames = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+    const mode = page.locator("#paladin-charge-mode");
+    await expect(mode).toHaveValue("RUSH");
+    await expect(frames).toHaveCount(0);
+    await expect(page.getByRole("status")).toContainText("실제 돌진은 IAS 공격 프레임으로 계산되지 않습니다");
+    await expect(page.locator("#weapon-ias")).toBeDisabled();
+
+    await mode.selectOption("MELEE_FALLBACK");
+    await expect(frames).toHaveText("14");
+    await expect(page.getByText(/Charge 피해·명중 보너스와 실제 돌진 주기는 포함하지 않습니다/)).toBeVisible();
+    await expect(page.getByRole("heading", { name: /Charge 근접 fallback · 일반 공격 기준표/ })).toBeVisible();
+    await expect(page.getByRole("table").getByRole("row").nth(1)).toContainText("14프레임");
+    expect(pageErrors).toEqual([]);
+    expect(consoleErrors).toEqual([]);
+});
+
+test("Assassin Dragon Claw exposes symmetric reference calculations and blocks disputed pairs", async ({ page }) => {
+    const pageErrors: string[] = [];
+    const consoleErrors: string[] = [];
+    page.on("pageerror", error => pageErrors.push(error.message));
+    page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    await page.goto("/game-info/ias-calculator");
+    await page.locator("#ias-class").selectOption("ASSASSIN");
+    await page.locator("#ias-skill").selectOption("ASSASSIN_DRAGON_CLAW");
+    await page.locator("#ias-weapon").selectOption("9tw");
+    const result = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+    await expect(result).toHaveText("16");
+    await expect(page.getByText("대칭 WSM·손별 동일 IAS 조건", { exact: false })).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
+    await page.locator("summary").filter({ hasText: "선택 스킬의 검증 근거" }).click();
+    await expect(page.getByRole("link", { name: "d2r.org · 원문 열기" })).toHaveAttribute("href", "https://d2r.org/data/skills/dragon-claw");
+    await page.locator("summary").filter({ hasText: "선택 스킬의 검증 근거" }).click();
+    await page.locator("#equipment-ias").fill("20");
+    await expect(result).toHaveText("14");
+    await page.locator("#ias-burst-level").selectOption("20");
+    await expect(result).not.toHaveText("14");
+    await page.locator("#ias-secondary-weapon").selectOption("9lw");
+    await expect(result).toHaveCount(0);
+    await expect(page.getByRole("status")).toContainText("혼합 WSM 쌍클러");
+    await page.getByRole("button", { name: "주·보조 클러 교환" }).click();
+    await expect(page.locator("#ias-weapon")).toHaveValue("9lw");
+    await expect(page.locator("#ias-secondary-weapon")).toHaveValue("9tw");
+    await page.getByRole("button", { name: "주·보조 클러 교환" }).click();
+    await expect(page.locator("#ias-weapon")).toHaveValue("9tw");
+    await page.getByRole("button", { name: "입력 초기화" }).click();
+    await expect(page.locator("#ias-skill")).toHaveValue("NORMAL_ATTACK");
+    await expect(page.locator("#ias-weapon")).toHaveValue("crs");
+    await expect(page.locator("#weapon-ias")).toHaveValue("0");
+    await expect(result).toBeVisible();
+    expect(pageErrors).toEqual([]);
+    expect(consoleErrors).toEqual([]);
+});
+
+test("Assassin dual-claw martial charge-up skills expose both weapons and Burst of Speed", async ({ page }) => {
+    const pageErrors: string[] = [];
+    const consoleErrors: string[] = [];
+    page.on("pageerror", error => pageErrors.push(error.message));
+    page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    await page.goto("/game-info/ias-calculator");
+    await page.locator("#ias-class").selectOption("ASSASSIN");
+    await page.locator("#ias-skill").selectOption("ASSASSIN_FISTS_OF_FIRE");
+    await page.locator("#ias-weapon").selectOption("9tw");
+    await page.locator("#ias-secondary-weapon").selectOption("9tw");
+    const result = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+    await expect(result).toHaveText("16");
+    await page.locator("#equipment-ias").fill("20");
+    await expect(result).toHaveText("14");
+    await expect(page.getByRole("table").getByRole("row").nth(1)).toContainText("0 IAS");
+    await page.locator("#ias-burst-level").selectOption("1");
+    await expect(result).not.toHaveText("14");
+    expect(pageErrors).toEqual([]);
+    expect(consoleErrors).toEqual([]);
+});
+
+test("IAS-6 Dragon Talon, Werewolf Fury, and Double Swing UI sequences", async ({ page }) => {
+    const consoleErrors: string[] = [];
+    const pageErrors: string[] = [];
+    page.on("pageerror", error => pageErrors.push(error.message));
+    page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+    await page.goto("/game-info/ias-calculator");
+    const result = page.getByRole("region", { name: "계산 결과" }).locator("strong");
+
+    await page.locator("#ias-class").selectOption("ASSASSIN");
+    await page.locator("#ias-skill").selectOption("ASSASSIN_DRAGON_TALON");
+    await page.locator("#ias-weapon").selectOption("9tw");
+    await page.locator("#dragon-talon-level").selectOption("6");
+    await expect(result).toHaveText("14");
+    await page.locator("#ias-burst-level").selectOption("20");
+    await expect(result).not.toHaveText("14");
+    await expect(page.getByRole("table")).toBeVisible();
+
+    await page.locator("#ias-skill").selectOption("ASSASSIN_TRAP_LAYING");
+    await page.locator("#ias-burst-level").selectOption("0");
+    await page.locator("#ias-weapon").selectOption("9tw");
+    await page.locator("#equipment-ias").fill("0");
+    await expect(result).toHaveText("12");
+    await page.locator("#ias-burst-level").selectOption("20");
+    await expect(result).toHaveText("9");
+    await page.locator("#ias-burst-level").selectOption("0");
+    await page.locator("#equipment-ias").fill("42");
+    await expect(result).toHaveText("9");
+    await expect(page.getByRole("table")).toBeVisible();
+
+    await page.locator("#ias-class").selectOption("DRUID");
+    await page.locator("#ias-form").selectOption("WEREWOLF");
+    await page.locator("#ias-skill").selectOption("DRUID_WEREWOLF_FURY");
+    await page.locator("#ias-weapon").selectOption("7cr");
+    await page.locator("#druid-werewolf-level").selectOption("1");
+    const baseFury = await result.innerText();
+    await expect(page.getByText("늑대인간 격노 5타 시퀀스", { exact: false }).first()).toBeVisible();
+    await page.locator("#druid-werewolf-level").selectOption("20");
+    await expect(result).not.toHaveText(baseFury);
+    await page.locator("#ias-form").selectOption("WEREBEAR");
+    await expect(page.locator('#ias-skill option[value="DRUID_WEREWOLF_FURY"]')).toHaveCount(0);
+
+    await page.locator("#ias-class").selectOption("BARBARIAN");
+    await page.locator("#ias-skill").selectOption("BARBARIAN_DUAL_WIELD_NORMAL_ATTACK");
+    await expect(page.locator('#ias-skill option:checked')).toContainText("자료 충돌로 계산 불가");
+    await expect(result).toHaveCount(0);
+    await expect(page.getByRole("status")).toContainText("보조 손 타격 주기 기준은 공개 자료에서 확인되지 않습니다");
+    for (const skill of ["BARBARIAN_CONCENTRATE", "BARBARIAN_BERSERK", "BARBARIAN_BASH", "BARBARIAN_STUN"]) {
+        await page.locator("#ias-skill").selectOption(skill);
+        await expect(result).toBeVisible();
+        await expect(page.getByRole("table")).toBeVisible();
+    }
+    await page.locator("#ias-skill").selectOption("BARBARIAN_DOUBLE_SWING");
+    await expect(page.locator("#ias-weapon option:checked")).toContainText("7cr");
+    await expect(result).toHaveText("12");
+    await page.locator("#ias-secondary-weapon").selectOption("whm");
+    await expect(result).toHaveText("14");
+    await expect(page.locator("#equipment-ias")).toBeDisabled();
+    await expect(page.getByRole("button", { name: "장비 IAS 1 증가" })).toBeDisabled();
+    await expect(result).toHaveText("14");
+    await page.locator("#ias-skill").selectOption("BARBARIAN_WHIRLWIND");
+    await expect(page.locator("#ias-secondary-weapon")).toHaveValue("");
+    await expect(result).toHaveText("12");
+    await page.locator("#ias-secondary-weapon").selectOption("whm");
+    await expect(result).toHaveText("16");
+    await page.locator("#equipment-ias").fill("13");
+    await expect(result).toHaveText("14");
+    await expect(page.getByText("소용돌이의 반복 타격 간격", { exact: false })).toBeVisible();
+    await expect(page.getByRole("table")).toBeVisible();
     expect(pageErrors).toEqual([]);
     expect(consoleErrors).toEqual([]);
 });

@@ -44,15 +44,15 @@ test("empty, non-integer, negative, malformed, and out-of-range inputs have no r
   }
 });
 
-test("unverified animations, weapons, and unsupported classes never return numbers", () => {
-  for (const selection of [
-    { ...paladin, animation: "A2" },
-    { ...paladin, characterClass: "AMAZON" },
-  ]) {
+test("unverified animations do not return numbers and reference-based classes return marked results", () => {
+  for (const selection of [{ ...paladin, animation: "A2" }]) {
     const model = getCalculatorViewModel("40", selection);
     assert.notEqual(model.status, "SUPPORTED");
     assert.equal("result" in model, false);
   }
+  const amazon = getCalculatorViewModel("40", { ...paladin, characterClass: "AMAZON" });
+  assert.equal(amazon.status, "REFERENCE_BASED");
+  if (amazon.status === "REFERENCE_BASED") assert.equal(amazon.result.status, "REFERENCE_BASED");
   assert.deepEqual(getWeaponBreakpoints("crs", "A2"), []);
   assert.deepEqual(getWeaponBreakpoints("7cr", "A2"), []);
   assert.deepEqual(getWeaponBreakpoints("whm", "A2"), []);
@@ -133,4 +133,76 @@ test("skill registry keeps evidence and UI support status separate", () => {
   assert.equal(IAS_SKILLS.ZEAL.supportStatus, "SUPPORTED");
   assert.equal(IAS_SKILLS.SMITE.selectable, true);
   assert.equal(IAS_SKILLS.SMITE.animationMode, "S1");
+});
+
+test("Assassin Dragon Claw UI model carries both claws, gear IAS, and Burst of Speed", () => {
+  const selection = { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "9tw", secondaryWeaponCode: "9tw", animation: "A1", skill: "ASSASSIN_DRAGON_CLAW", secondaryWeaponIAS: 0, burstOfSpeedLevel: 0 };
+  const base = getCalculatorViewModelFromParts("0", "0", selection);
+  assert.equal(base.status, "REFERENCE_BASED");
+  if (base.status === "REFERENCE_BASED") assert.equal(base.result.fullAnimationFrames, 16);
+
+  const geared = getCalculatorViewModelFromParts("0", "20", selection);
+  assert.equal(geared.status, "REFERENCE_BASED");
+  if (geared.status === "REFERENCE_BASED") assert.equal(geared.result.fullAnimationFrames, 14);
+
+  const mismatched = getCalculatorViewModelFromParts("0", "0", { ...selection, secondaryWeaponCode: "9lw" });
+  assert.equal(mismatched.status, "CONFLICTED");
+  assert.equal("result" in mismatched, false);
+
+  const overWeaponIAS = getCalculatorViewModelFromParts("121", "0", selection);
+  assert.equal(overWeaponIAS.status, "INVALID_INPUT");
+});
+
+test("IAS-6 integrated class sequences are reference-based and block out-of-scope modifiers", () => {
+  const talon = getCalculatorViewModelFromParts("0", "0", { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "9tw", animation: "A1", skill: "ASSASSIN_DRAGON_TALON", skillLevel: 6 });
+  assert.equal(talon.status, "REFERENCE_BASED");
+  if (talon.status === "REFERENCE_BASED") assert.deepEqual([talon.result.fullAnimationFrames, talon.result.attackSequence?.hitCount], [14, 2]);
+  const invalidTalon = getCalculatorViewModelFromParts("0", "0", { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "9tw", animation: "A1", skill: "ASSASSIN_DRAGON_TALON", skillLevel: 31 });
+  assert.equal(invalidTalon.status, "INVALID_INPUT");
+
+  const fury = getCalculatorViewModelFromParts("0", "0", { characterClass: "DRUID", characterForm: "WEREWOLF", weaponCode: "7cr", animation: "A1", skill: "DRUID_WEREWOLF_FURY", skillLevel: 1, skillIAS: 20 });
+  assert.equal(fury.status, "REFERENCE_BASED");
+  if (fury.status === "REFERENCE_BASED") assert.deepEqual([fury.result.fullAnimationFrames, fury.result.attackSequence?.hitCount], [32, 5]);
+  assert.equal(getCalculatorViewModelFromParts("0", "0", { characterClass: "DRUID", characterForm: "WEREBEAR", weaponCode: "7cr", animation: "A1", skill: "DRUID_WEREWOLF_FURY", skillLevel: 1, skillIAS: 20 }).status, "UNSUPPORTED");
+
+  const doubleSwing = getCalculatorViewModelFromParts("0", "0", { characterClass: "BARBARIAN", characterForm: "HUMAN", weaponCode: "7cr", secondaryWeaponCode: "whm", animation: "A1", skill: "BARBARIAN_DOUBLE_SWING" });
+  assert.equal(doubleSwing.status, "REFERENCE_BASED");
+  if (doubleSwing.status === "REFERENCE_BASED") assert.deepEqual([doubleSwing.result.fullAnimationFrames, doubleSwing.result.attackSequence?.hitCount], [14, 2]);
+  assert.equal(getCalculatorViewModelFromParts("0", "20", { characterClass: "BARBARIAN", characterForm: "HUMAN", weaponCode: "7cr", secondaryWeaponCode: "whm", animation: "A1", skill: "BARBARIAN_DOUBLE_SWING" }).status, "CONFLICTED");
+
+  const poisonDagger = getCalculatorViewModelFromParts("0", "0", { characterClass: "NECROMANCER", characterForm: "HUMAN", weaponCode: "dgr", animation: "A1", skill: "NECROMANCER_POISON_DAGGER" });
+  assert.equal(poisonDagger.status, "REFERENCE_BASED");
+  if (poisonDagger.status === "REFERENCE_BASED") assert.ok(poisonDagger.result.fullAnimationFrames !== null);
+  assert.equal(getCalculatorViewModelFromParts("0", "0", { characterClass: "NECROMANCER", characterForm: "HUMAN", weaponCode: "crs", animation: "A1", skill: "NECROMANCER_POISON_DAGGER" }).status, "UNSUPPORTED");
+  const dragonTail = getCalculatorViewModelFromParts("0", "0", { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "7tw", animation: "A1", skill: "ASSASSIN_DRAGON_TAIL" });
+  assert.equal(dragonTail.status, "REFERENCE_BASED");
+  if (dragonTail.status === "REFERENCE_BASED") assert.ok(dragonTail.result.fullAnimationFrames !== null);
+});
+
+test("Amazon Impale integrates its 1HT/2HT reference tiers and per-weapon IAS cap", () => {
+  const selection = { characterClass: "AMAZON", characterForm: "HUMAN", weaponCode: "jav", animation: "A1", skill: "AMAZON_IMPALE" };
+  const base = getCalculatorViewModelFromParts("0", "0", selection);
+  assert.equal(base.status, "REFERENCE_BASED");
+  if (base.status === "REFERENCE_BASED") assert.equal(base.result.fullAnimationFrames, 27);
+  const breakpoint = getCalculatorViewModelFromParts("0", "9", selection);
+  assert.equal(breakpoint.status, "REFERENCE_BASED");
+  if (breakpoint.status === "REFERENCE_BASED") assert.equal(breakpoint.result.fullAnimationFrames, 24);
+  const twoHanded = getCalculatorViewModelFromParts("0", "0", { ...selection, weaponCode: "spr" });
+  assert.equal(twoHanded.status, "REFERENCE_BASED");
+  if (twoHanded.status === "REFERENCE_BASED") assert.equal(twoHanded.result.fullAnimationFrames, 31);
+  assert.equal(getCalculatorViewModelFromParts("121", "0", selection).status, "INVALID_INPUT");
+});
+
+test("Assassin martial charge-ups use normal A1 and dual-claw sequence references", () => {
+  for (const skill of ["ASSASSIN_TIGER_STRIKE", "ASSASSIN_COBRA_STRIKE", "ASSASSIN_PHOENIX_STRIKE"]) {
+    const model = getCalculatorViewModelFromParts("0", "0", { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "7tw", animation: "A1", skill });
+    assert.equal(model.status, "REFERENCE_BASED", skill);
+    if (model.status === "REFERENCE_BASED") assert.equal(model.result.fullAnimationFrames, 10);
+  }
+  const fire = getCalculatorViewModelFromParts("0", "0", { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "9tw", secondaryWeaponCode: "9tw", animation: "A1", skill: "ASSASSIN_FISTS_OF_FIRE" });
+  assert.equal(fire.status, "REFERENCE_BASED");
+  if (fire.status === "REFERENCE_BASED") assert.equal(fire.result.fullAnimationFrames, 16);
+  const geared = getCalculatorViewModelFromParts("0", "20", { characterClass: "ASSASSIN", characterForm: "HUMAN", weaponCode: "9tw", secondaryWeaponCode: "9tw", animation: "A1", skill: "ASSASSIN_FISTS_OF_FIRE" });
+  assert.equal(geared.status, "REFERENCE_BASED");
+  if (geared.status === "REFERENCE_BASED") assert.equal(geared.result.fullAnimationFrames, 14);
 });

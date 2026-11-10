@@ -117,10 +117,17 @@ test("IAS-5-C-3 two-handed sword Golden tables match both reference calculators 
   }
 });
 
-test("IAS-5-C-3 dual wield, Double Swing, Frenzy, and Whirlwind remain blocked without validated timing", () => {
-  for (const skill of ["BARBARIAN_DUAL_WIELD_NORMAL_ATTACK", "BARBARIAN_DOUBLE_SWING", "BARBARIAN_FRENZY", "BARBARIAN_WHIRLWIND"]) {
+test("IAS-5-C-3 dual wield, Double Swing, and Frenzy remain blocked without validated timing", () => {
+  const dualNormal = calculateIAS({ ...base, skill: "BARBARIAN_DUAL_WIELD_NORMAL_ATTACK" });
+  assert.equal(dualNormal.status, "CONFLICTED");
+  assert.equal(dualNormal.fullAnimationFrames, null);
+  assert.match(dualNormal.reason, /보조 손 타격 주기 기준은 공개 자료에서 확인되지 않습니다/);
+  for (const skill of ["BARBARIAN_DOUBLE_SWING", "BARBARIAN_FRENZY"]) {
     const result = calculateIAS({ ...base, skill });
     assert.notEqual(result.status, "SUPPORTED", `${skill} must remain blocked`);
     assert.equal(result.fullAnimationFrames, null, `${skill} must not expose a numeric result`);
   }
+  const whirlwind = calculateIAS({ ...base, skill: "BARBARIAN_WHIRLWIND" });
+  assert.equal(whirlwind.status, "REFERENCE_BASED");
+  assert.equal(whirlwind.fullAnimationFrames, 15);
 });

@@ -35,7 +35,9 @@ test("accepts verified weapons and blocks unverified combinations", () => {
     assertNoNumbers(a2, "UNVERIFIED");
   }
   assertNoNumbers({ ...base, weaponCode: "xyz" }, "UNVERIFIED");
-  assertNoNumbers({ ...base, characterClass: "AMAZON" }, "UNSUPPORTED");
+  const amazon = calculateIAS({ ...base, characterClass: "AMAZON" });
+  assert.equal(amazon.status, "REFERENCE_BASED");
+  assert.ok(amazon.fullAnimationFrames !== null);
   assertNoNumbers({ ...base, attackMode: "ZEAL" }, "UNSUPPORTED");
   assertNoNumbers({ ...base, characterForm: "WEREWOLF" }, "UNSUPPORTED");
   assertNoNumbers({ ...base, buffIAS: 20 }, "UNVERIFIED");

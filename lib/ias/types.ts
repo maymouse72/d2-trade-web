@@ -11,8 +11,8 @@ export type IASCharacterClass =
 export type IASAttackMode = "NORMAL";
 export type IASAttackSkill = "NORMAL_ATTACK" | "SACRIFICE" | "VENGEANCE" | "CONVERSION" | "ZEAL" | "SMITE";
 export type IASAnimation = "A1" | "A2" | "S1";
-export type IASStatus = "SUPPORTED" | "UNVERIFIED" | "UNSUPPORTED" | "INVALID_INPUT";
-export type IASVerificationStatus = "VERIFIED" | "PROVISIONAL" | "CONFLICTED" | "UNVERIFIED";
+export type IASStatus = "SUPPORTED" | "REFERENCE_BASED" | "UNVERIFIED" | "UNSUPPORTED" | "CONFLICTED" | "INVALID_INPUT";
+export type IASVerificationStatus = "VERIFIED" | "REFERENCE_BASED" | "PROVISIONAL" | "CONFLICTED" | "UNVERIFIED";
 
 export interface IASAnimationEvidence {
   status: IASVerificationStatus;
@@ -32,6 +32,7 @@ export interface IASAttackSkillDefinition {
   iasRange: Readonly<Record<string, { min: number; max: number }>> | null;
   speedModifierPolicy: "NONE" | "UNVERIFIED";
   evidenceSource: string;
+  evidenceUrls?: readonly string[];
   evidenceScope: string;
   gameplayTestStatus: "NOT_TESTED" | "TESTED";
   evidenceStatus: IASVerificationStatus;
@@ -42,14 +43,18 @@ export interface IASAttackSkillDefinition {
 
 export type IASReasonCode =
   | "SUPPORTED_GOLDEN_MATCH"
+  | "REFERENCE_BASED_RESULT"
   | "INVALID_INPUT"
   | "IAS_OUT_OF_RANGE"
   | "UNSUPPORTED_CLASS"
   | "UNSUPPORTED_FORM"
   | "UNSUPPORTED_ATTACK_MODE"
+  | "UNSUPPORTED_WEAPON"
+  | "UNSUPPORTED_ANIMATION"
   | "UNVERIFIED_ANIMATION"
   | "UNVERIFIED_WEAPON"
   | "UNVERIFIED_MODIFIER"
+  | "CONFLICTED_REFERENCE"
   | "GOLDEN_DATA_MISMATCH";
 
 export interface IASInput {
@@ -59,6 +64,13 @@ export interface IASInput {
   animation: IASAnimation | string;
   skill?: IASAttackSkill | string;
   weaponCode: string;
+  secondaryWeaponCode?: string;
+  secondaryWeaponIAS?: number;
+  burstOfSpeedLevel?: number;
+  skillLevel?: number;
+  frenzyBuffSIAS?: number;
+  maulCharges?: number;
+  weaponMode?: string;
   weaponIAS: number;
   offWeaponIAS: number;
   hitCount?: number;
@@ -79,6 +91,7 @@ export interface CalculationTrace {
   startingFrame: number;
   speedIncrease: number;
   fullAnimationFrames: number;
+  skillSpeedModifier?: number;
 }
 
 export interface IASResult {
@@ -94,6 +107,9 @@ export interface IASResult {
   reason: string;
   trace?: CalculationTrace;
   zealSequence?: IASZealSequence | null;
+  attackSequence?: { hitCount: number; totalSequenceFrames: number; label: string } | null;
+  attackCadence?: { actionFrame: number; localDelayFrames: number; intervalFrames: number } | null;
+  attacksPerSecond?: number | null;
 }
 
 export interface IASZealSequence {

@@ -64,17 +64,27 @@ export function getZealBreakpoints(weaponCode: string, hitCount: number, fanatic
 
 export type CalculatorSelection = {
   characterClass: string;
+  characterForm?: string;
   weaponCode: string;
+  weaponMode?: "ONE_HAND" | "TWO_HAND" | "DEFAULT";
   animation: string;
   skill?: string;
   hitCount?: number;
   fanaticismLevel?: number;
+  skillIAS?: number;
+  buffIAS?: number;
+  secondaryWeaponCode?: string;
+  secondaryWeaponIAS?: number;
+  burstOfSpeedLevel?: number;
+  skillLevel?: number;
+  frenzyBuffSIAS?: number;
+  maulCharges?: number;
 };
 
 export type CalculatorViewModel =
-  | { status: "SUPPORTED"; ias: number; result: IASResult }
+  | { status: "SUPPORTED" | "REFERENCE_BASED"; ias: number; result: IASResult }
   | { status: "INVALID_INPUT"; reason: string }
-  | { status: "UNVERIFIED" | "UNSUPPORTED"; reason: string };
+  | { status: "UNVERIFIED" | "UNSUPPORTED" | "CONFLICTED"; reason: string };
 
 export function constrainIASInput(rawIAS: string, maxIAS: number): string {
   if (/^\d+$/.test(rawIAS) && Number(rawIAS) > maxIAS) return String(maxIAS);
@@ -94,7 +104,7 @@ export function getCalculatorViewModelFromParts(rawWeaponIAS: string, rawOffWeap
   const weapon = IAS_WEAPONS[selection.weaponCode];
   const skill = selection.skill ?? "NORMAL_ATTACK";
   const classSkill = getClassSkill(selection.characterClass, skill);
-  const maxIAS = classSkill?.maxIASByWeapon[selection.weaponCode] ?? (skill === "ZEAL" ? (ZEAL_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : skill === "SMITE" ? (SMITE_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : (weapon?.maxIAS ?? 317));
+  const maxIAS = skill === "BARBARIAN_FRENZY" ? 576 : classSkill?.maxIASByWeapon[selection.weaponCode] ?? (skill === "ZEAL" ? (ZEAL_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : skill === "SMITE" ? (SMITE_MAX_IAS_BY_WEAPON[selection.weaponCode] ?? 0) : (weapon?.maxIAS ?? 456));
   if (!/^\d+$/.test(rawWeaponIAS) || !/^\d+$/.test(rawOffWeaponIAS)) {
     return { status: "INVALID_INPUT", reason: `무기 IAS와 장비 IAS를 각각 0 이상의 정수로 입력해 주세요. 합계 범위는 0~${maxIAS}입니다.` };
   }
@@ -106,20 +116,27 @@ export function getCalculatorViewModelFromParts(rawWeaponIAS: string, rawOffWeap
 
   const result = calculateIAS({
     characterClass: selection.characterClass,
-    characterForm: "HUMAN",
+    characterForm: selection.characterForm ?? "HUMAN",
     attackMode: "NORMAL",
     animation: selection.animation,
     skill: selection.skill ?? "NORMAL_ATTACK",
     hitCount: selection.hitCount,
     weaponCode: selection.weaponCode,
+    secondaryWeaponCode: selection.secondaryWeaponCode,
+    secondaryWeaponIAS: selection.secondaryWeaponIAS ?? 0,
+    burstOfSpeedLevel: selection.burstOfSpeedLevel ?? 0,
+    skillLevel: selection.skillLevel ?? 1,
+    frenzyBuffSIAS: selection.frenzyBuffSIAS ?? 0,
+    maulCharges: selection.maulCharges ?? 0,
+    weaponMode: selection.weaponMode,
     weaponIAS,
     offWeaponIAS,
-    skillIAS: 0,
-    buffIAS: 0,
+    skillIAS: selection.skillIAS ?? 0,
+    buffIAS: selection.buffIAS ?? 0,
     debuffIAS: 0,
     fanaticismLevel: selection.fanaticismLevel ?? 0,
   });
 
-  if (result.status !== "SUPPORTED") return { status: result.status, reason: result.reason };
-  return { status: "SUPPORTED", ias, result };
+  if (result.status !== "SUPPORTED" && result.status !== "REFERENCE_BASED") return { status: result.status, reason: result.reason };
+  return { status: result.status, ias, result };
 }

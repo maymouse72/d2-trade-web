@@ -28,8 +28,8 @@ test("Fanaticism OFF preserves exact baseline and ON changes supported A1/Zeal/S
 });
 
 test("Fanaticism blocks unsupported classes, combinations, and generic modifiers", () => {
-  assert.equal(calculateIAS({ ...base, characterClass:"AMAZON", fanaticismLevel:20 }).status,"UNSUPPORTED");
-  assert.equal(calculateIAS({ ...base, weaponCode:"axe", fanaticismLevel:20 }).status,"UNVERIFIED");
+  assert.equal(calculateIAS({ ...base, characterClass:"AMAZON", fanaticismLevel:20 }).status,"REFERENCE_BASED");
+  assert.equal(calculateIAS({ ...base, weaponCode:"axe", fanaticismLevel:20 }).status,"REFERENCE_BASED");
   assert.equal(calculateIAS({ ...base, fanaticismLevel:61 }).status,"INVALID_INPUT");
   assert.equal(calculateIAS({ ...base, fanaticismLevel:20, skillIAS:1 }).status,"UNVERIFIED");
 });
