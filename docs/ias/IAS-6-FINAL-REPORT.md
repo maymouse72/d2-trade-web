@@ -1,7 +1,9 @@
 # IAS-6 Final Report
 
-**Status:** REFERENCE-BASED MVP READY FOR USER APPROVAL · **Date:** 2026-11-11
+**Status:** PASS / DEPLOYED · **Date:** 2026-11-11
 **Branch / starting HEAD:** `main` / `ee7f053e19843118e9200d4df039ad2a28141002`
+**Release commit:** `5ee6e587f6c4622a4749f4a633239a8a1385821e`
+**Vercel Production:** `dpl_EAFGNEjew4FhmLoYGdBf1wjYBUxn` · **READY**
 
 ## Implemented
 
@@ -47,11 +49,12 @@ This is scoped candidate coverage. It does not claim coverage of every D2R skill
 
 ## Release decision
 
-- IAS-6 milestone: **REFERENCE-BASED MVP READY FOR USER APPROVAL**.
-- Git staging, commit, and push: **none**.
-- Vercel Production deployment: **none**.
-- Approval is requested before any Production action, as required by the work order.
-- Rollback: not applicable.
-- Existing unrelated dirty files were preserved and not staged.
+- IAS-6 milestone: **PASS / DEPLOYED** after user approval.
+- IAS-6 source, tests, and reports were committed as `5ee6e587f6c4622a4749f4a633239a8a1385821e` and pushed to `origin/main` with a normal fast-forward push.
+- Vercel project `d2-trade-web-6e47` Production deployment `dpl_EAFGNEjew4FhmLoYGdBf1wjYBUxn` reached **READY** from that exact commit.
+- `www.d2jugobatgo.com` is assigned to the new deployment. `https://www.d2jugobatgo.com/game-info/ias-calculator` returned HTTP 200; the response contains the IAS calculator page, seven class options, skill/weapon selectors, and IAS information text.
+- Production HTML smoke check passed. Interactive PC/mobile browser automation was completed against the matching local production build (14/14); the live deployment was checked by Vercel authenticated fetch, not interactive live-browser automation.
+- Rollback: **not performed**.
+- Existing unrelated dirty files were preserved and not included in the release commit.
 
 Companion reports: Scope Matrix, Reference Sources, Engine Design, Weapon Coverage, Skill Coverage Matrix, Class Implementation, Reference Tests, Regression Results, Browser Results, and Deployment Decision.

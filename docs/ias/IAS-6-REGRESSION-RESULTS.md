@@ -16,4 +16,12 @@
 
 Browser coverage now includes fixed Dragon Flight timing, Double Throw dual-weapon controls, all existing class and sequence cases, console/page-error checks, and mobile horizontal overflow. The local browser run does not verify live-game timing or Production services.
 
-The initial sandboxed Webpack build hit EPERM creating a generated `.next` directory. Re-running with the previously approved workspace process permission succeeded, without ACL or security changes. No Production site, Git remote, database, or Vercel deployment was modified.
+The initial sandboxed Webpack build hit EPERM creating a generated `.next` directory. Re-running with the previously approved workspace process permission succeeded, without ACL or security changes.
+
+## Production smoke check
+
+- Vercel project `d2-trade-web-6e47`: deployment `dpl_EAFGNEjew4FhmLoYGdBf1wjYBUxn`, **READY**, source commit `5ee6e587f6c4622a4749f4a633239a8a1385821e`.
+- `www.d2jugobatgo.com` alias: assigned to the new deployment.
+- `/game-info/ias-calculator`: HTTP 200; server-rendered page contains the IAS calculator, seven class choices, skill and weapon selectors, and reference-status notice.
+- Live interactive browser and console checks were not repeated on the Production URL. Interactive desktop/mobile and console assertions passed in the 14-run local production-build browser suite above.
+- Rollback: not performed. No database, environment variable, or PWA/Push setting was changed.
