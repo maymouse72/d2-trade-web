@@ -238,7 +238,94 @@
       "이오",
       "랄"
     ],
-    "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n화염 저항 +40-60%\n화염 흡수 +10-15%"
+    "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n화염 저항 +40-60%\n화염 흡수 +10-15%",
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-17",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-17",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-17",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-17",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-17",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
+    ]
   },
   {
     "id": 18,
@@ -385,7 +472,94 @@
       "이오",
       "솔"
     ],
-    "options": "타격 회복 속도 +20%\n적중당 생명력 4-6% 훔침\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n생명력 회복 +30\n받는 물리 피해 10-15% 감소"
+    "options": "타격 회복 속도 +20%\n적중당 생명력 4-6% 훔침\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n생명력 회복 +30\n받는 물리 피해 10-15% 감소",
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-27",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-27",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-27",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-27",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-27",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
+    ]
   },
   {
     "id": 28,
@@ -837,7 +1011,33 @@
       "솔",
       "수르"
     ],
-    "options": "(파괴안됨)\n+260~310% 증가된 데미지 (변함)\n+9 최소 데미지\n7% 라이프 획득(공격 명중시)\n20% 강한 타격 확률\n목표물의 시야 감소(명중시)\n목표물 속도 둔화 33%\n마나 재생 16%\n라이프 회복 +16\n결빙되지 않음\n30% 매직 아이템 얻을 확률 증가\n레벨 8 리바이브 (88회)"
+    "options": "(파괴안됨)\n+260~310% 증가된 데미지 (변함)\n+9 최소 데미지\n7% 라이프 획득(공격 명중시)\n20% 강한 타격 확률\n목표물의 시야 감소(명중시)\n목표물 속도 둔화 33%\n마나 재생 16%\n라이프 회복 +16\n결빙되지 않음\n30% 매직 아이템 얻을 확률 증가\n레벨 8 리바이브 (88회)",
+    "variants": [
+      {
+        "id": "rotw-3.4-eternity-58",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "base": "5 소켓 근접 무기 및 미사일 무기",
+          "equipment": "근접 무기 및 미사일 무기",
+          "options": "(파괴안됨)\n+300~390% 증가된 데미지 (변함)\n+9 최소 데미지\n+30% 공격 속도 증가\n캐릭터 레벨에 따라 최대 피해 +3~297\n7% 라이프 획득(공격 명중시)\n20% 강한 타격 확률\n목표물의 시야 감소(명중시)\n목표물 속도 둔화 33%\n마나 재생 16%\n라이프 회복 +16\n결빙되지 않음\n30% 매직 아이템 얻을 확률 증가\n+5 부활 (O-skill)"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: Eternity는 RotW 온라인 래더와 오프라인에서 5소켓 근접 및 미사일 무기에 제작할 수 있습니다."
+      }
+    ]
   },
   {
     "id": 59,
@@ -1036,7 +1236,94 @@
       "이오",
       "오르트"
     ],
-    "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n번개 저항 +40-60%\n번개 흡수 +10-15%"
+    "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n번개 저항 +40-60%\n번개 흡수 +10-15%",
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-72",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-72",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-72",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-72",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-72",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
+    ]
   },
   {
     "id": 73,
@@ -1246,7 +1533,94 @@
       "이오",
       "탈"
     ],
-    "options": "장착 시 1레벨 정화 오라 효과\n타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n독 저항 +40-60%\n독 지속시간 50% 감소"
+    "options": "장착 시 1레벨 정화 오라 효과\n타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n독 저항 +40-60%\n독 지속시간 50% 감소",
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-86",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-86",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-86",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-86",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-86",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
+    ]
   },
   {
     "id": 87,
@@ -1277,7 +1651,94 @@
       "참",
       "팔"
     ],
-    "options": "늑대인간 공격이 180초 동안 징표 효과 부여\n늑대의 징표:\n명중률 보너스 30%\n최대 생명력 40% 증가\n\n곰인간 공격이 180초 동안 징표 효과 부여\n곰의 징표:\n공격 속도 +25%\n받는 물리 피해 20% 감소\n\n변신 기술 +5(드루이드 전용)\n강타 확률 +25%\n방어력 50-80% 증가\n힘 +10\n활력 +10\n모든 저항 +10\n빙결되지 않음"
+    "options": "늑대인간 공격이 180초 동안 징표 효과 부여\n늑대의 징표:\n명중률 보너스 30%\n최대 생명력 40% 증가\n\n곰인간 공격이 180초 동안 징표 효과 부여\n곰의 징표:\n공격 속도 +25%\n받는 물리 피해 20% 감소\n\n변신 기술 +5(드루이드 전용)\n강타 확률 +25%\n방어력 50-80% 증가\n힘 +10\n활력 +10\n모든 저항 +10\n빙결되지 않음",
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-88",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-88",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-88",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-88",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-88",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
+    ]
   },
   {
     "id": 89,
@@ -1310,6 +1771,93 @@
     "aliases": [
       "Hustle",
       "투지"
+    ],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-90",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-90",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-90",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-90",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-90",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
     ]
   },
   {
@@ -1328,6 +1876,93 @@
     "aliases": [
       "Hustle",
       "투지"
+    ],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-91",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-91",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-91",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-91",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-91",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
     ]
   },
   {
@@ -1416,7 +2051,94 @@
       "이오",
       "주울"
     ],
-    "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n+10 활력\n최대 생명력 5% 증가\n냉기 저항 +40-60%\n냉기 흡수 +10-15%\n빙결되지 않음"
+    "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n+10 활력\n최대 생명력 5% 증가\n냉기 저항 +40-60%\n냉기 흡수 +10-15%\n빙결되지 않음",
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-97",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-97",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치에서 해당 신규 룬워드는 RotW 래더 전용으로 안내했습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-97",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "UNAVAILABLE",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Blizzard 3.3 패치는 래더 전용으로 안내하며, 오프라인 이용 가능 여부는 명시하지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-nonladder-review-97",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 온라인 비래더 제작 허용을 확인하지 못했습니다. 제작 가능 여부를 검토 중입니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-97",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 3.4 패치에서 이 룬워드의 오프라인 제작 가능 여부를 확인하지 못했습니다. 확인 전까지 제작 옵션을 적용하지 않습니다."
+      }
+    ]
   },
   {
     "id": 98,

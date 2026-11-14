@@ -646,6 +646,100 @@
         "text": "모든 기술 +1",
         "variable": false
       }
+    ],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-angelic",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 세트 효과는 RotW 온라인 래더에 적용됩니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-angelic",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 비래더 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-angelic",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 온라인 래더 항목을 다루며 오프라인 세트 옵션은 확정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.4-online-angelic",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "3.4 패치부터 Angelic Raiment은 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-angelic",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4의 비래더 개방은 온라인 비래더로 공지됐으며 offline applicability는 별도 확인되지 않았습니다."
+      }
     ]
   },
   {
@@ -5007,6 +5101,186 @@
       {
         "text": "달리기/걷기 속도 +20%",
         "variable": false
+      }
+    ],
+    "variants": [
+      {
+        "id": "rotw-3.4-isenhart-4",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "piecesById": {
+            "13": {
+              "options": [
+                {
+                  "text": "최소 피해 +10",
+                  "variable": false
+                },
+                {
+                  "text": "공격 속도 +40%",
+                  "variable": false
+                },
+                {
+                  "text": "캐릭터 레벨에 따라 명중률 +5~495",
+                  "variable": false
+                }
+              ],
+              "bonuses": []
+            },
+            "14": {
+              "options": [
+                {
+                  "text": "방어력 +40",
+                  "variable": false
+                },
+                {
+                  "text": "공격자가 번개 피해 4 받음",
+                  "variable": false
+                }
+              ],
+              "bonuses": [
+                {
+                  "count": 2,
+                  "condition": "2개 이상 착용",
+                  "options": [
+                    {
+                      "text": "모든 저항 +8",
+                      "variable": false
+                    },
+                    {
+                      "text": "냉기 저항 +15%",
+                      "variable": false
+                    },
+                    {
+                      "text": "화염 저항 +15%",
+                      "variable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            "15": {
+              "options": [
+                {
+                  "text": "방어력 +40",
+                  "variable": false
+                },
+                {
+                  "text": "마법 피해 2 감소",
+                  "variable": false
+                },
+                {
+                  "text": "마법 저항 +25%",
+                  "variable": false
+                }
+              ],
+              "bonuses": [
+                {
+                  "count": 2,
+                  "condition": "2개 이상 착용",
+                  "options": [
+                    {
+                      "text": "캐릭터 레벨당 방어력 +2",
+                      "variable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            "16": {
+              "options": [
+                {
+                  "text": "민첩 +6",
+                  "variable": false
+                },
+                {
+                  "text": "피해 2 감소",
+                  "variable": false
+                },
+                {
+                  "text": "적중 시 생명력 5% 훔침",
+                  "variable": false
+                }
+              ],
+              "bonuses": [
+                {
+                  "count": 2,
+                  "condition": "2개 이상 착용",
+                  "options": [
+                    {
+                      "text": "모든 저항 +8",
+                      "variable": false
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "partial": [
+            {
+              "count": 2,
+              "options": [
+                {
+                  "text": "힘 +10",
+                  "variable": false
+                }
+              ]
+            },
+            {
+              "count": 3,
+              "options": [
+                {
+                  "text": "민첩 +10",
+                  "variable": false
+                },
+                {
+                  "text": "캐릭터 레벨에 따라 최대 피해 +2~198",
+                  "variable": false
+                }
+              ]
+            }
+          ],
+          "full": [
+            {
+              "text": "적중당 생명력 5% 훔침",
+              "variable": false
+            },
+            {
+              "text": "모든 저항 +10",
+              "variable": false
+            },
+            {
+              "text": "명중률 보너스 35%",
+              "variable": false
+            },
+            {
+              "text": "막기 확률 30% 증가",
+              "variable": false
+            },
+            {
+              "text": "달리기/걷기 속도 +30%",
+              "variable": false
+            },
+            {
+              "text": "타격 회복 속도 +25%",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4에서 갱신된 Isenhart's Armory는 RotW 온라인 래더와 오프라인에 적용됩니다."
       }
     ]
   },

@@ -647,7 +647,101 @@
       "기본 무기 피해 3~7"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-12",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-12",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-12",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-12",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-12",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "13",
@@ -1501,7 +1595,64 @@
       "기본 무기 피해 7~14"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-30",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "최소 화염 피해 +10~12",
+              "variable": true
+            },
+            {
+              "text": "최대 화염 피해 +15~25",
+              "variable": true
+            },
+            {
+              "text": "명중률 +100",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +10%",
+              "variable": false
+            },
+            {
+              "text": "타격 시 4% 확률로 1레벨 Amplify Damage 시전",
+              "variable": false
+            },
+            {
+              "text": "피해 +100~160%",
+              "variable": true
+            },
+            {
+              "text": "힘 +12",
+              "variable": false
+            },
+            {
+              "text": "대상 둔화 25%",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "31",
@@ -2317,7 +2468,68 @@
       "기본 양손 피해 14~63"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-47",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "최소 화염 피해 +23",
+              "variable": false
+            },
+            {
+              "text": "최대 화염 피해 +54",
+              "variable": false
+            },
+            {
+              "text": "최대 화염 저항 +15%",
+              "variable": false
+            },
+            {
+              "text": "생명력 +30",
+              "variable": false
+            },
+            {
+              "text": "명중률 +60",
+              "variable": false
+            },
+            {
+              "text": "시야 +3",
+              "variable": false
+            },
+            {
+              "text": "화염 저항 15%",
+              "variable": false
+            },
+            {
+              "text": "피해 +200~220%",
+              "variable": true
+            },
+            {
+              "text": "적중 시 생명력 5~9% 훔침",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "48",
@@ -2359,7 +2571,48 @@
       "기본 양손 피해 1~27"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-48",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "피해 +100~150%",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +20%",
+              "variable": false
+            },
+            {
+              "text": "방어력 -8",
+              "variable": false
+            },
+            {
+              "text": "힘 +20",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "49",
@@ -2505,7 +2758,101 @@
       "기본 양손 피해 18~39"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-51",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-51",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-51",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-51",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-51",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "52",
@@ -2609,7 +2956,52 @@
       "기본 양손 피해 15~36"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-53",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "치명적 공격 100%",
+              "variable": false
+            },
+            {
+              "text": "괴물 회복 저지",
+              "variable": false
+            },
+            {
+              "text": "적중당 마나 5~9% 훔침",
+              "variable": false
+            },
+            {
+              "text": "피해 +80~120%",
+              "variable": false
+            },
+            {
+              "text": "최소 피해 +15",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "54",
@@ -2663,7 +3055,101 @@
       "기본 양손 피해 1~5"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-54",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-54",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-54",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-54",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-54",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "55",
@@ -2717,7 +3203,68 @@
       "기본 양손 피해 2~8"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-55",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "독 피해 12 추가 (3초에 걸쳐)",
+              "variable": false
+            },
+            {
+              "text": "독 저항 50%",
+              "variable": false
+            },
+            {
+              "text": "시야 -1",
+              "variable": false
+            },
+            {
+              "text": "마나 +10",
+              "variable": false
+            },
+            {
+              "text": "피해 +40~80%",
+              "variable": true
+            },
+            {
+              "text": "적중당 마나 100% 훔침",
+              "variable": false
+            },
+            {
+              "text": "대상 방어력 50% 감소",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +15%",
+              "variable": false
+            },
+            {
+              "text": "최소 피해 +5",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "56",
@@ -2829,7 +3376,60 @@
       "기본 양손 피해 6~13"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-57",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "화염 피해 15~32 추가",
+              "variable": false
+            },
+            {
+              "text": "화염 저항 30%",
+              "variable": false
+            },
+            {
+              "text": "Fire Wall +1 (해당 직업 전용)",
+              "variable": false
+            },
+            {
+              "text": "Fire Ball +4 (해당 직업 전용)",
+              "variable": false
+            },
+            {
+              "text": "Warmth +3 (해당 직업 전용)",
+              "variable": false
+            },
+            {
+              "text": "화염 기술 +3",
+              "variable": false
+            },
+            {
+              "text": "시전 속도 +10%",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "58",
@@ -2941,7 +3541,101 @@
       "기본 양손 피해 1~4"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-59",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-59",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-59",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-59",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-59",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "60",
@@ -3077,10 +3771,6 @@
       {
         "text": "공격 속도 +50%",
         "variable": false
-      },
-      {
-        "text": "시즌 전용 추가 효과 (세부 조건 확인 중)",
-        "variable": false
       }
     ],
     "image": "/uniques/b449628ade6a7213.gif",
@@ -3091,7 +3781,112 @@
       "기본 양손 피해 4~8"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [
+      [
+        {
+          "text": "냉기 화살 +1~3 (아마존 전용)",
+          "variable": true
+        },
+        {
+          "text": "화염 화살 +1~3 (아마존 전용)",
+          "variable": true
+        }
+      ]
+    ],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-62",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-62",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-62",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-62",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-62",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "63",
@@ -3987,7 +4782,101 @@
       "기본 방어력 14~17"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-80",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-80",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-80",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-80",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-80",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "81",
@@ -4543,7 +5432,64 @@
       "기본 방어력 218~233"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-92",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "적중당 마나 5% 훔침",
+              "variable": false
+            },
+            {
+              "text": "모든 기술 +1",
+              "variable": false
+            },
+            {
+              "text": "시야 +2",
+              "variable": false
+            },
+            {
+              "text": "방어력 +100~120%",
+              "variable": true
+            },
+            {
+              "text": "달리기/걷기 속도 +20%",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +30%",
+              "variable": false
+            },
+            {
+              "text": "피해 +50~100%",
+              "variable": false
+            },
+            {
+              "text": "마법 아이템 발견 확률 +15%",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "93",
@@ -5049,7 +5995,101 @@
       "기본 무기 피해 2~6"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-101",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-101",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-101",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-101",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-101",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "102",
@@ -6040,7 +7080,101 @@
     "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
     "baseStats": [],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-121",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-121",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-121",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-121",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-121",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "122",
@@ -6141,7 +7275,60 @@
       "기본 무기 피해 10~21"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-129",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "냉기 피해 80~100 추가",
+              "variable": false
+            },
+            {
+              "text": "냉기 저항 15%",
+              "variable": false
+            },
+            {
+              "text": "최대 냉기 저항 +15%",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +30%",
+              "variable": false
+            },
+            {
+              "text": "타격 시 10% 확률로 10레벨 Ice Blast 시전",
+              "variable": false
+            },
+            {
+              "text": "피격 시 10% 확률로 5레벨 Frost Nova 시전",
+              "variable": false
+            },
+            {
+              "text": "피해 +160~200%",
+              "variable": true
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "130",
@@ -7373,7 +8560,64 @@
       "기본 무기 피해 35~58"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-151",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "타격 시 5% 확률로 7레벨 Eruption 시전",
+              "variable": false
+            },
+            {
+              "text": "밀쳐내기",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +30%",
+              "variable": false
+            },
+            {
+              "text": "피해 +180%",
+              "variable": false
+            },
+            {
+              "text": "적중 시 대상 실명 +1",
+              "variable": false
+            },
+            {
+              "text": "원소 기술 +3",
+              "variable": false
+            },
+            {
+              "text": "내구도 +50",
+              "variable": false
+            },
+            {
+              "text": "Fire Claw +3~5 (드루이드 전용)",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "152",
@@ -7547,7 +8791,101 @@
       "기본 무기 피해 8~22"
     ],
     "availability": "원본 데이터의 래더 시즌 조건: 15~15",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.3-ladder-154",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더 · 패치 3.3"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3에서 갱신된 래더 옵션입니다."
+      },
+      {
+        "id": "rotw-3.3-nonladder-review-154",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "NonLadder"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 갱신판은 래더 한정이었습니다. 이 모드의 이전 옵션 자료가 없어 추정하지 않습니다."
+      },
+      {
+        "id": "rotw-3.3-offline-review-154",
+        "patchFrom": "3.3",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24296140/diablo-ii-resurrected-ladder-season-15-has-concluded",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.3 공지는 래더 전용으로 안내합니다. 오프라인의 이전 옵션 variant는 확인되지 않았습니다."
+      },
+      {
+        "id": "rotw-3.4-online-154",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NonLadder"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "availability": "RotW 온라인 래더·비래더 · 패치 3.4부터"
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4부터 해당 Patch 3.3 갱신 아이템이 RotW 온라인 비래더에서도 이용 가능합니다."
+      },
+      {
+        "id": "rotw-3.4-offline-review-154",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Offline"
+        ],
+        "ladderStates": [
+          "NotApplicable"
+        ],
+        "availability": "REVIEW",
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "공식 Patch 3.4의 비래더 개방 목록은 온라인 비래더를 명시하며 이 아이템의 오프라인 갱신은 확인하지 못했습니다."
+      }
+    ]
   },
   {
     "id": "155",
@@ -7909,7 +9247,77 @@
       "기본 무기 피해 18~43"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-161",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "내구도 +100",
+              "variable": false
+            },
+            {
+              "text": "방어력 +75",
+              "variable": false
+            },
+            {
+              "text": "힘 +16",
+              "variable": false
+            },
+            {
+              "text": "민첩 +12",
+              "variable": false
+            },
+            {
+              "text": "활력 +8",
+              "variable": false
+            },
+            {
+              "text": "피해 +250~300%",
+              "variable": true
+            },
+            {
+              "text": "성기사 기술 +2",
+              "variable": false
+            },
+            {
+              "text": "명중률 보너스 50%",
+              "variable": false
+            },
+            {
+              "text": "Zeal +2~5 (성기사 전용)",
+              "variable": false
+            },
+            {
+              "text": "명중률 +100~125",
+              "variable": false
+            },
+            {
+              "text": "착용 조건 -20%",
+              "variable": false
+            }
+          ],
+          "level": 35
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "162",
@@ -8243,7 +9651,76 @@
       "기본 양손 피해 47~80"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-167",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "착용 조건 -50%",
+              "variable": false
+            },
+            {
+              "text": "캐릭터 레벨에 따라 방어력 +7~779",
+              "variable": false
+            },
+            {
+              "text": "모든 저항 +20~30",
+              "variable": true
+            },
+            {
+              "text": "원거리 공격 방어력 +100",
+              "variable": false
+            },
+            {
+              "text": "받는 피해의 30%만큼 마나 회복",
+              "variable": false
+            },
+            {
+              "text": "피해 +180~230%",
+              "variable": true
+            },
+            {
+              "text": "근접 공격 방어력 +200",
+              "variable": false
+            },
+            {
+              "text": "타격 회복 속도 +20%",
+              "variable": false
+            },
+            {
+              "text": "막기 확률 20% 증가",
+              "variable": false
+            },
+            {
+              "text": "생명력 회복 +10~15",
+              "variable": false
+            },
+            {
+              "text": "공격자가 피해 15~25 받음",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "168",
@@ -8517,7 +9994,68 @@
       "기본 양손 피해 10~37"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-172",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "대상의 방어력 무시",
+              "variable": false
+            },
+            {
+              "text": "명중률 +150",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +20%",
+              "variable": false
+            },
+            {
+              "text": "상처 악화 확률 40%",
+              "variable": false
+            },
+            {
+              "text": "괴물 회복 저지",
+              "variable": false
+            },
+            {
+              "text": "피해 +170~240%",
+              "variable": true
+            },
+            {
+              "text": "Impale +5 (해당 직업 전용)",
+              "variable": false
+            },
+            {
+              "text": "Power Strike +3 (해당 직업 전용)",
+              "variable": false
+            },
+            {
+              "text": "4초마다 내구도 1 회복",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "173",
@@ -9045,7 +10583,76 @@
       "기본 양손 피해 30~70"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-182",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "화염 피해 131~232 추가",
+              "variable": false
+            },
+            {
+              "text": "화염 저항 45%",
+              "variable": false
+            },
+            {
+              "text": "피해 +140~180%",
+              "variable": true
+            },
+            {
+              "text": "공격자가 피해 8 받음",
+              "variable": false
+            },
+            {
+              "text": "착용 조건 -50%",
+              "variable": false
+            },
+            {
+              "text": "강령술사 기술 +4",
+              "variable": false
+            },
+            {
+              "text": "대상 방어력 50% 감소",
+              "variable": false
+            },
+            {
+              "text": "방어력 +20%",
+              "variable": false
+            },
+            {
+              "text": "명중률 +200~250",
+              "variable": true
+            },
+            {
+              "text": "15% 확률로 Burning Dead Archer로 환생",
+              "variable": false
+            },
+            {
+              "text": "Fire Golem +3~5 (강령술사 전용)",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "183",
@@ -11785,7 +13392,60 @@
       "기본 방어력 39~47"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-235",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "화염 저항 24%",
+              "variable": false
+            },
+            {
+              "text": "결빙되지 않음",
+              "variable": false
+            },
+            {
+              "text": "타격 시 5% 확률로 10레벨 Enchant 시전",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +20%",
+              "variable": false
+            },
+            {
+              "text": "방어력 +150~200%",
+              "variable": true
+            },
+            {
+              "text": "화염 피해 13~46 추가",
+              "variable": false
+            },
+            {
+              "text": "내구도 +20",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "236",
@@ -12518,7 +14178,72 @@
       "기본 방어력 114~159"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-249",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "모든 저항 +50",
+              "variable": false
+            },
+            {
+              "text": "방어력 +60%",
+              "variable": false
+            },
+            {
+              "text": "힘 +15",
+              "variable": false
+            },
+            {
+              "text": "활력 +15",
+              "variable": false
+            },
+            {
+              "text": "시야 -4",
+              "variable": false
+            },
+            {
+              "text": "내구도 +20",
+              "variable": false
+            },
+            {
+              "text": "방어력 +140",
+              "variable": false
+            },
+            {
+              "text": "모든 기술 +2",
+              "variable": false
+            },
+            {
+              "text": "물리 피해 감소 15~25%",
+              "variable": false
+            },
+            {
+              "text": "마법 저항 +20~40%",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "250",
@@ -15745,7 +17470,60 @@
       "기본 양손 피해 60~124"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-315",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "피해 +260~300%",
+              "variable": true
+            },
+            {
+              "text": "강타 확률 25%",
+              "variable": false
+            },
+            {
+              "text": "대상 방어력 33% 감소",
+              "variable": false
+            },
+            {
+              "text": "적 처치 시 25% 확률로 13레벨 Amplify Damage 시전",
+              "variable": false
+            },
+            {
+              "text": "공격 속도 +40%",
+              "variable": false
+            },
+            {
+              "text": "적 처치 시 생명력 +15",
+              "variable": false
+            },
+            {
+              "text": "적 처치 시 마나 +5",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "316",
@@ -16145,7 +17923,68 @@
       "기본 양손 피해 62~110"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-324",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "피해 +220~260%",
+              "variable": true
+            },
+            {
+              "text": "공격 속도 +40%",
+              "variable": false
+            },
+            {
+              "text": "화염 흡수 +10~12",
+              "variable": true
+            },
+            {
+              "text": "악마에게 주는 피해 +150~200%",
+              "variable": true
+            },
+            {
+              "text": "악마 처치 시 생명력 +5~10",
+              "variable": true
+            },
+            {
+              "text": "명중률 +270~350",
+              "variable": true
+            },
+            {
+              "text": "무형 (수리 불가)",
+              "variable": false
+            },
+            {
+              "text": "파괴 불가",
+              "variable": false
+            },
+            {
+              "text": "캐릭터 레벨에 따라 최대 피해 +2~198",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "325",
@@ -16199,7 +18038,64 @@
       "기본 방어력 111~156"
     ],
     "availability": "",
-    "optionGroups": []
+    "optionGroups": [],
+    "variants": [
+      {
+        "id": "rotw-3.4-325",
+        "patchFrom": "3.4",
+        "gameEras": [
+          "RotW"
+        ],
+        "onlineStates": [
+          "Online",
+          "Offline"
+        ],
+        "ladderStates": [
+          "Ladder",
+          "NotApplicable"
+        ],
+        "availability": "AVAILABLE",
+        "properties": {
+          "options": [
+            {
+              "text": "방어력 +120~160%",
+              "variable": true
+            },
+            {
+              "text": "공격 속도 +20%",
+              "variable": false
+            },
+            {
+              "text": "적중당 생명력 3~6% 훔침",
+              "variable": true
+            },
+            {
+              "text": "공격자가 피해 55~77 받음",
+              "variable": true
+            },
+            {
+              "text": "전투 기술 (야만용사) 기술 +1~3",
+              "variable": true
+            },
+            {
+              "text": "전투 숙련 기술 +1~3",
+              "variable": true
+            },
+            {
+              "text": "함성 기술 +1~3",
+              "variable": true
+            },
+            {
+              "text": "야만용사 기술 +1",
+              "variable": false
+            }
+          ]
+        },
+        "sourceUrl": "https://news.blizzard.com/en-us/article/24316567/diablo-ii-resurrected-ladder-season-16",
+        "sourceCheckedAt": "2026-11-14",
+        "evidence": "Patch 3.4: 적용 범위는 Reign of the Warlock 온라인 래더와 오프라인입니다. Classic/LoD에는 적용되지 않습니다."
+      }
+    ]
   },
   {
     "id": "326",

@@ -1,0 +1,2779 @@
+{
+  "capturedAt": "2026-11-14",
+  "sourceHead": "4ff90957a53b0479ac374025790f8b0f7e68e734",
+  "sha256": {
+    "runewords": "2d5320847f2aa51b305b4d7a5f9776f0d5f7adb7acf578aed7588e137d2889ca",
+    "uniques": "461152731c92cf7f1ed774912f061bff216b15f8d47476cb188ee47db9a68c9b",
+    "sets": "f3c045c47a338a98af719965a83c8a23bffd385ff4e235a71058c282dc8a6f72"
+  },
+  "counts": {
+    "runewordRows": 102,
+    "uniqueRows": 415,
+    "setRows": 34,
+    "setPieces": 135
+  },
+  "ids": {
+    "runewords": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102
+    ],
+    "uniques": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85",
+      "86",
+      "87",
+      "88",
+      "89",
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111",
+      "112",
+      "113",
+      "114",
+      "115",
+      "116",
+      "117",
+      "118",
+      "119",
+      "120",
+      "121",
+      "122",
+      "129",
+      "130",
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "140",
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155",
+      "156",
+      "157",
+      "158",
+      "159",
+      "160",
+      "161",
+      "162",
+      "163",
+      "164",
+      "165",
+      "166",
+      "167",
+      "168",
+      "169",
+      "170",
+      "171",
+      "172",
+      "173",
+      "174",
+      "175",
+      "176",
+      "177",
+      "178",
+      "179",
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206",
+      "207",
+      "208",
+      "209",
+      "210",
+      "211",
+      "212",
+      "213",
+      "214",
+      "215",
+      "216",
+      "217",
+      "218",
+      "219",
+      "220",
+      "221",
+      "222",
+      "223",
+      "224",
+      "225",
+      "226",
+      "227",
+      "228",
+      "229",
+      "230",
+      "231",
+      "232",
+      "233",
+      "234",
+      "235",
+      "236",
+      "237",
+      "238",
+      "239",
+      "240",
+      "241",
+      "242",
+      "243",
+      "244",
+      "245",
+      "246",
+      "248",
+      "249",
+      "250",
+      "251",
+      "252",
+      "253",
+      "254",
+      "255",
+      "256",
+      "257",
+      "258",
+      "259",
+      "260",
+      "261",
+      "262",
+      "264",
+      "265",
+      "266",
+      "268",
+      "269",
+      "270",
+      "271",
+      "272",
+      "273",
+      "274",
+      "275",
+      "276",
+      "277",
+      "279",
+      "280",
+      "281",
+      "282",
+      "283",
+      "284",
+      "285",
+      "286",
+      "287",
+      "288",
+      "289",
+      "290",
+      "291",
+      "292",
+      "293",
+      "294",
+      "296",
+      "297",
+      "298",
+      "299",
+      "300",
+      "301",
+      "302",
+      "304",
+      "306",
+      "307",
+      "308",
+      "309",
+      "310",
+      "311",
+      "312",
+      "313",
+      "314",
+      "315",
+      "316",
+      "317",
+      "319",
+      "320",
+      "321",
+      "322",
+      "323",
+      "324",
+      "325",
+      "326",
+      "327",
+      "328",
+      "329",
+      "330",
+      "331",
+      "332",
+      "333",
+      "334",
+      "335",
+      "336",
+      "337",
+      "338",
+      "340",
+      "341",
+      "342",
+      "343",
+      "344",
+      "345",
+      "347",
+      "348",
+      "349",
+      "350",
+      "351",
+      "353",
+      "354",
+      "355",
+      "356",
+      "357",
+      "358",
+      "359",
+      "360",
+      "361",
+      "363",
+      "364",
+      "365",
+      "366",
+      "367",
+      "368",
+      "369",
+      "370",
+      "371",
+      "373",
+      "374",
+      "375",
+      "376",
+      "378",
+      "379",
+      "380",
+      "381",
+      "382",
+      "383",
+      "384",
+      "385",
+      "386",
+      "387",
+      "388",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "394",
+      "395",
+      "396",
+      "397",
+      "398",
+      "399",
+      "400",
+      "408",
+      "409",
+      "410",
+      "411",
+      "412",
+      "413",
+      "414",
+      "415",
+      "416",
+      "417",
+      "418",
+      "426",
+      "428",
+      "429",
+      "430",
+      "431",
+      "432",
+      "10004",
+      "10005",
+      "10006",
+      "10007",
+      "10008",
+      "10009",
+      "10010",
+      "10011",
+      "10012",
+      "10013",
+      "10014",
+      "10015",
+      "419",
+      "420",
+      "421",
+      "422",
+      "423",
+      "424",
+      "425"
+    ],
+    "sets": [
+      "18",
+      "13",
+      "15",
+      "14",
+      "34",
+      "11",
+      "29",
+      "7",
+      "0",
+      "2",
+      "30",
+      "12",
+      "21",
+      "25",
+      "35",
+      "1",
+      "27",
+      "19",
+      "10",
+      "3",
+      "4",
+      "23",
+      "32",
+      "6",
+      "31",
+      "17",
+      "26",
+      "28",
+      "9",
+      "20",
+      "8",
+      "24",
+      "22",
+      "5"
+    ],
+    "setPieces": [
+      "69",
+      "67",
+      "68",
+      "66",
+      "52",
+      "51",
+      "50",
+      "53",
+      "59",
+      "61",
+      "60",
+      "58",
+      "56",
+      "55",
+      "54",
+      "57",
+      "134",
+      "132",
+      "133",
+      "46",
+      "45",
+      "44",
+      "115",
+      "116",
+      "26",
+      "25",
+      "29",
+      "28",
+      "27",
+      "2",
+      "1",
+      "0",
+      "7",
+      "8",
+      "6",
+      "118",
+      "119",
+      "117",
+      "48",
+      "47",
+      "49",
+      "82",
+      "84",
+      "81",
+      "83",
+      "100",
+      "102",
+      "101",
+      "103",
+      "135",
+      "136",
+      "137",
+      "138",
+      "139",
+      "4",
+      "3",
+      "5",
+      "111",
+      "109",
+      "110",
+      "108",
+      "72",
+      "73",
+      "74",
+      "71",
+      "75",
+      "70",
+      "41",
+      "43",
+      "42",
+      "11",
+      "9",
+      "12",
+      "10",
+      "15",
+      "16",
+      "13",
+      "14",
+      "94",
+      "91",
+      "92",
+      "93",
+      "90",
+      "123",
+      "124",
+      "126",
+      "125",
+      "23",
+      "21",
+      "24",
+      "22",
+      "122",
+      "121",
+      "120",
+      "63",
+      "64",
+      "65",
+      "62",
+      "104",
+      "106",
+      "107",
+      "105",
+      "112",
+      "113",
+      "114",
+      "35",
+      "40",
+      "38",
+      "37",
+      "36",
+      "39",
+      "77",
+      "76",
+      "80",
+      "79",
+      "78",
+      "30",
+      "32",
+      "34",
+      "31",
+      "33",
+      "99",
+      "96",
+      "97",
+      "98",
+      "95",
+      "88",
+      "89",
+      "85",
+      "86",
+      "87",
+      "19",
+      "17",
+      "18",
+      "20"
+    ]
+  },
+  "legacyRecords": {
+    "runewords": [
+      {
+        "id": 17,
+        "name": "담금질(Temper)",
+        "level": 35,
+        "base": "3 소켓 헬름",
+        "sockets": 3,
+        "equipment": "헬름",
+        "runes": [
+          "샤엘",
+          "이오",
+          "랄"
+        ],
+        "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n화염 저항 +40-60%\n화염 흡수 +10-15%"
+      },
+      {
+        "id": 27,
+        "name": "방책(Bulwark)",
+        "level": 35,
+        "base": "3 소켓 헬름",
+        "sockets": 3,
+        "equipment": "헬름",
+        "runes": [
+          "샤엘",
+          "이오",
+          "솔"
+        ],
+        "options": "타격 회복 속도 +20%\n적중당 생명력 4-6% 훔침\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n생명력 회복 +30\n받는 물리 피해 10-15% 감소"
+      },
+      {
+        "id": 58,
+        "name": "영원(Eternity)",
+        "level": 63,
+        "base": "5 소켓 근접 무기",
+        "sockets": 5,
+        "equipment": "근접 무기",
+        "runes": [
+          "앰",
+          "베르",
+          "이스트",
+          "솔",
+          "수르"
+        ],
+        "options": "(파괴안됨)\n+260~310% 증가된 데미지 (변함)\n+9 최소 데미지\n7% 라이프 획득(공격 명중시)\n20% 강한 타격 확률\n목표물의 시야 감소(명중시)\n목표물 속도 둔화 33%\n마나 재생 16%\n라이프 회복 +16\n결빙되지 않음\n30% 매직 아이템 얻을 확률 증가\n레벨 8 리바이브 (88회)"
+      },
+      {
+        "id": 72,
+        "name": "접지(Ground)",
+        "level": 35,
+        "base": "3 소켓 헬름",
+        "sockets": 3,
+        "equipment": "헬름",
+        "runes": [
+          "샤엘",
+          "이오",
+          "오르트"
+        ],
+        "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n번개 저항 +40-60%\n번개 흡수 +10-15%"
+      },
+      {
+        "id": 86,
+        "name": "치료(Cure)",
+        "level": 35,
+        "base": "3 소켓 헬름",
+        "sockets": 3,
+        "equipment": "헬름",
+        "runes": [
+          "샤엘",
+          "이오",
+          "탈"
+        ],
+        "options": "장착 시 1레벨 정화 오라 효과\n타격 회복 속도 +20%\n방어력 75-100% 증가\n활력 +10\n최대 생명력 5% 증가\n독 저항 +40-60%\n독 지속시간 50% 감소"
+      },
+      {
+        "id": 88,
+        "name": "탈태(Metamorphosis)",
+        "level": 67,
+        "base": "3 소켓 헬름",
+        "sockets": 3,
+        "equipment": "헬름",
+        "runes": [
+          "이오",
+          "참",
+          "팔"
+        ],
+        "options": "늑대인간 공격이 180초 동안 징표 효과 부여\n늑대의 징표:\n명중률 보너스 30%\n최대 생명력 40% 증가\n\n곰인간 공격이 180초 동안 징표 효과 부여\n곰의 징표:\n공격 속도 +25%\n받는 물리 피해 20% 감소\n\n변신 기술 +5(드루이드 전용)\n강타 확률 +25%\n방어력 50-80% 증가\n힘 +10\n활력 +10\n모든 저항 +10\n빙결되지 않음"
+      },
+      {
+        "id": 90,
+        "name": "투지(갑옷)(Hysteria)",
+        "level": 39,
+        "base": "3 소켓 아머",
+        "sockets": 3,
+        "equipment": "아머",
+        "runes": [
+          "샤엘",
+          "코",
+          "엘드"
+        ],
+        "options": "달리기/걷기 속도 +65%\n공격 속도 +40%\n타격 회복 속도 +20%\n+6 피하기\n민첩 +10\n지구력 고갈 속도 50% 감소\n모든 저항 +10",
+        "aliases": [
+          "Hustle",
+          "투지"
+        ]
+      },
+      {
+        "id": 91,
+        "name": "투지(무기)(Mania)",
+        "level": 39,
+        "base": "3 소켓 무기",
+        "sockets": 3,
+        "equipment": "무기",
+        "runes": [
+          "샤엘",
+          "코",
+          "엘드"
+        ],
+        "options": "타격 시 5% 확률로 1 레벨 폭발적인 속도 시전\n장착 시 1 레벨 광신 오라 적용\n공격 속도 +30%\n피해 180-200% 증가\n언데드에게 주는 피해 +75%\n언데드에 대한 명중률 +50\n민첩 +10",
+        "aliases": [
+          "Hustle",
+          "투지"
+        ]
+      },
+      {
+        "id": 97,
+        "name": "화로(Hearth)",
+        "level": 35,
+        "base": "3 소켓 헬름",
+        "sockets": 3,
+        "equipment": "헬름",
+        "runes": [
+          "샤엘",
+          "이오",
+          "주울"
+        ],
+        "options": "타격 회복 속도 +20%\n방어력 75-100% 증가\n+10 활력\n최대 생명력 5% 증가\n냉기 저항 +40-60%\n냉기 흡수 +10-15%\n빙결되지 않음"
+      }
+    ],
+    "uniques": [
+      {
+        "id": "12",
+        "name": "새김등뼈",
+        "english": "Gravenspine",
+        "legacy": "그레이븐스파인",
+        "aliases": [],
+        "base": "본 원드",
+        "baseEnglish": "Bone Wand",
+        "category": "무기",
+        "type": "원드",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "힘 +10",
+            "variable": false
+          },
+          {
+            "text": "민첩 +10",
+            "variable": false
+          },
+          {
+            "text": "최소 냉기 피해 +4",
+            "variable": false
+          },
+          {
+            "text": "최대 냉기 피해 +8",
+            "variable": false
+          },
+          {
+            "text": "냉기 지속시간 3~3초",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "강령술사 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "마나 +25~50",
+            "variable": true
+          },
+          {
+            "text": "시전 속도 +10%",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/dc272c35afd8c2f1.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/uwands.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 3~7"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "30",
+        "name": "그리스월드의 날",
+        "english": "Griswold's Edge",
+        "legacy": "그리스월즈엣지",
+        "aliases": [],
+        "base": "브로드소드",
+        "baseEnglish": "Broad Sword",
+        "category": "무기",
+        "type": "검",
+        "tier": "노멀",
+        "level": 17,
+        "strength": 48,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "최소 화염 피해 +10~12",
+            "variable": true
+          },
+          {
+            "text": "최대 화염 피해 +15~25",
+            "variable": true
+          },
+          {
+            "text": "명중률 +100",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +10%",
+            "variable": false
+          },
+          {
+            "text": "밀쳐내기",
+            "variable": false
+          },
+          {
+            "text": "피해 +80~120%",
+            "variable": true
+          },
+          {
+            "text": "힘 +12",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/18f2ae00c51c44ea.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/uswords.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 7~14"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "47",
+        "name": "탄르 고어로드",
+        "english": "The Tannr Gorerod",
+        "legacy": "더 탄르 고어라드",
+        "aliases": [],
+        "base": "파이크",
+        "baseEnglish": "Pike",
+        "category": "무기",
+        "type": "창",
+        "tier": "노멀",
+        "level": 27,
+        "strength": 60,
+        "dexterity": 45,
+        "options": [
+          {
+            "text": "최소 화염 피해 +23",
+            "variable": false
+          },
+          {
+            "text": "최대 화염 피해 +54",
+            "variable": false
+          },
+          {
+            "text": "최대 화염 저항 +15%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +30",
+            "variable": false
+          },
+          {
+            "text": "명중률 +60",
+            "variable": false
+          },
+          {
+            "text": "시야 +3",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 15%",
+            "variable": false
+          },
+          {
+            "text": "피해 +80~100%",
+            "variable": true
+          }
+        ],
+        "image": "/uniques/1f37116f62b53f83.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/uspears.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 14~63"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "48",
+        "name": "디모악의 절단",
+        "english": "Dimoak's Hew",
+        "legacy": "디모악스 휴",
+        "aliases": [],
+        "base": "바디쉬",
+        "baseEnglish": "Bardiche",
+        "category": "무기",
+        "type": "미늘창",
+        "tier": "노멀",
+        "level": 8,
+        "strength": 40,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "민첩 +15",
+            "variable": false
+          },
+          {
+            "text": "피해 +100%",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "방어력 -8",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/45c8cbb731e55235.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/upolearms.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 1~27"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "51",
+        "name": "전투가지",
+        "english": "The Battlebranch",
+        "legacy": "더 배틀브랜치",
+        "aliases": [],
+        "base": "폴액스",
+        "baseEnglish": "Poleaxe",
+        "category": "무기",
+        "type": "미늘창",
+        "tier": "노멀",
+        "level": 17,
+        "strength": 62,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "공격 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "민첩 +10",
+            "variable": false
+          },
+          {
+            "text": "피해 +50~70%",
+            "variable": true
+          },
+          {
+            "text": "명중률 +50~100",
+            "variable": true
+          },
+          {
+            "text": "적중당 생명력 7% 훔침",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/aaac69c4cf0e32ac.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/upolearms.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 18~39"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "53",
+        "name": "사신의 낫",
+        "english": "The Grim Reaper",
+        "legacy": "더 그림 리퍼",
+        "aliases": [],
+        "base": "워 싸이드",
+        "baseEnglish": "War Scythe",
+        "category": "무기",
+        "type": "미늘창",
+        "tier": "노멀",
+        "level": 29,
+        "strength": 80,
+        "dexterity": 80,
+        "options": [
+          {
+            "text": "치명적 공격 100%",
+            "variable": false
+          },
+          {
+            "text": "괴물 회복 저지",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "피해 +20%",
+            "variable": false
+          },
+          {
+            "text": "최소 피해 +15",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/9ff980d65baa0c73.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/upolearms.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 15~36"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "54",
+        "name": "재앙의 재",
+        "english": "Bane Ash",
+        "legacy": "베인 애쉬",
+        "aliases": [],
+        "base": "숏스태프",
+        "baseEnglish": "Short Staff",
+        "category": "무기",
+        "type": "지팡이",
+        "tier": "노멀",
+        "level": 5,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "최소 화염 피해 +4",
+            "variable": false
+          },
+          {
+            "text": "최대 화염 피해 +6",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 50%",
+            "variable": false
+          },
+          {
+            "text": "마나 +30",
+            "variable": false
+          },
+          {
+            "text": "시전 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "Fire Bolt +5 (해당 직업 전용)",
+            "variable": false
+          },
+          {
+            "text": "Warmth +2 (해당 직업 전용)",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/e2842d48303077fd.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ustaves.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 1~5"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "55",
+        "name": "구렁이 군주",
+        "english": "Serpent Lord",
+        "legacy": "서펀트 로드",
+        "aliases": [],
+        "base": "롱스태프",
+        "baseEnglish": "Long Staff",
+        "category": "무기",
+        "type": "지팡이",
+        "tier": "노멀",
+        "level": 9,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "독 피해 12 추가 (3초에 걸쳐)",
+            "variable": false
+          },
+          {
+            "text": "독 저항 50%",
+            "variable": false
+          },
+          {
+            "text": "시야 -1",
+            "variable": false
+          },
+          {
+            "text": "마나 +10",
+            "variable": false
+          },
+          {
+            "text": "피해 +30~40%",
+            "variable": true
+          },
+          {
+            "text": "적중당 마나 100% 훔침",
+            "variable": false
+          },
+          {
+            "text": "대상 방어력 50% 감소",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/541ea4ad7e29d75b.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ustaves.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 2~8"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "57",
+        "name": "불도마뱀",
+        "english": "The Salamander",
+        "legacy": "더 샐러맨더",
+        "aliases": [],
+        "base": "배틀 스태프",
+        "baseEnglish": "Battle Staff",
+        "category": "무기",
+        "type": "지팡이",
+        "tier": "노멀",
+        "level": 21,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "화염 피해 15~32 추가",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 30%",
+            "variable": false
+          },
+          {
+            "text": "Fire Wall +1 (해당 직업 전용)",
+            "variable": false
+          },
+          {
+            "text": "Fire Ball +2 (해당 직업 전용)",
+            "variable": false
+          },
+          {
+            "text": "Warmth +3 (해당 직업 전용)",
+            "variable": false
+          },
+          {
+            "text": "화염 기술 +2",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/8aef6dfd0d37c52f.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ustaves.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 6~13"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "59",
+        "name": "눈살",
+        "english": "Pluckeye",
+        "legacy": "플럭아이",
+        "aliases": [],
+        "base": "숏보우",
+        "baseEnglish": "Short Bow",
+        "category": "무기",
+        "type": "활",
+        "tier": "노멀",
+        "level": 7,
+        "strength": 0,
+        "dexterity": 15,
+        "options": [
+          {
+            "text": "명중률 +28",
+            "variable": false
+          },
+          {
+            "text": "피해 +100%",
+            "variable": false
+          },
+          {
+            "text": "생명력 +10",
+            "variable": false
+          },
+          {
+            "text": "시야 +2",
+            "variable": false
+          },
+          {
+            "text": "적중당 마나 3% 훔침",
+            "variable": false
+          },
+          {
+            "text": "적 처치 시 마나 +2",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +25%",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/a01f0b891c8e45e2.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ubows.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 1~4"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "62",
+        "name": "도적의 활",
+        "english": "Rogue's Bow",
+        "legacy": "로그스 보우",
+        "aliases": [],
+        "base": "컴포지트 보우",
+        "baseEnglish": "Composite Bow",
+        "category": "무기",
+        "type": "활",
+        "tier": "노멀",
+        "level": 20,
+        "strength": 25,
+        "dexterity": 35,
+        "options": [
+          {
+            "text": "모든 저항 +10",
+            "variable": false
+          },
+          {
+            "text": "치명적 공격 30%",
+            "variable": false
+          },
+          {
+            "text": "명중률 +60",
+            "variable": false
+          },
+          {
+            "text": "언데드에게 주는 피해 +100%",
+            "variable": false
+          },
+          {
+            "text": "피해 +40~60%",
+            "variable": true
+          },
+          {
+            "text": "공격 속도 +50%",
+            "variable": false
+          },
+          {
+            "text": "시즌 전용 추가 효과 (세부 조건 확인 중)",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/b449628ade6a7213.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ubows.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 4~8"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "80",
+        "name": "점멸박쥐의 형상",
+        "english": "Blinkbat's Form",
+        "legacy": "블링크뱃스 폼",
+        "aliases": [],
+        "base": "레더 아머",
+        "baseEnglish": "Leather Armor",
+        "category": "방어구",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 12,
+        "strength": 15,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "원거리 공격 방어력 +50",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +25",
+            "variable": false
+          },
+          {
+            "text": "최소 화염 피해 +3",
+            "variable": false
+          },
+          {
+            "text": "최대 화염 피해 +6",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +40%",
+            "variable": false
+          },
+          {
+            "text": "적 처치 시 마나 +1",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/99c964afaa802803.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/uarmor.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 방어력 14~17"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "92",
+        "name": "승자의 비단",
+        "english": "Silks of the Victor",
+        "legacy": "실크 오브 빅터",
+        "aliases": [],
+        "base": "에인션트 아머",
+        "baseEnglish": "Ancient Armor",
+        "category": "방어구",
+        "type": "갑옷",
+        "tier": "노멀",
+        "level": 28,
+        "strength": 100,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "적중당 마나 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          },
+          {
+            "text": "시야 +2",
+            "variable": false
+          },
+          {
+            "text": "방어력 +100~120%",
+            "variable": true
+          }
+        ],
+        "image": "/uniques/b8e6a1307d7f073c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/uarmor.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 방어력 218~233"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "101",
+        "name": "호신부",
+        "english": "The Ward",
+        "legacy": "더 워드",
+        "aliases": [],
+        "base": "고딕 쉴드",
+        "baseEnglish": "Gothic Shield",
+        "category": "방어구",
+        "type": "방패",
+        "tier": "노멀",
+        "level": 26,
+        "strength": 60,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +40",
+            "variable": false
+          },
+          {
+            "text": "마법 피해 2 감소",
+            "variable": false
+          },
+          {
+            "text": "힘 +10",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 10% 증가",
+            "variable": false
+          },
+          {
+            "text": "방어력 +100%",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +30~50",
+            "variable": true
+          },
+          {
+            "text": "홈 0개",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/11d519469a05a230.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ushields.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 방어력 30~35",
+          "기본 무기 피해 2~6"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "121",
+        "name": "마날드 치유 반지",
+        "english": "Manald Heal",
+        "legacy": "머날드 힐",
+        "aliases": [],
+        "base": "반지",
+        "baseEnglish": "Ring",
+        "category": "장신구·기타",
+        "type": "반지",
+        "tier": "기타",
+        "level": 15,
+        "strength": 0,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "적중당 마나 4~7% 훔침",
+            "variable": true
+          },
+          {
+            "text": "생명력 회복 +5~8",
+            "variable": true
+          },
+          {
+            "text": "생명력 +20",
+            "variable": false
+          },
+          {
+            "text": "마나 재생 20%",
+            "variable": false
+          },
+          {
+            "text": "시전 속도 +10%",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/dafc96efb417fb3c.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/urings.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "129",
+        "name": "차가운 죽음",
+        "english": "Coldkill",
+        "legacy": "콜드킬",
+        "aliases": [],
+        "base": "해칫",
+        "baseEnglish": "Hatchet",
+        "category": "무기",
+        "type": "도끼",
+        "tier": "익셉셔널",
+        "level": 36,
+        "strength": 25,
+        "dexterity": 25,
+        "options": [
+          {
+            "text": "냉기 피해 40~40 추가",
+            "variable": false
+          },
+          {
+            "text": "냉기 저항 15%",
+            "variable": false
+          },
+          {
+            "text": "최대 냉기 저항 +15%",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "타격 시 10% 확률로 10레벨 Ice Blast 시전",
+            "variable": false
+          },
+          {
+            "text": "피격 시 10% 확률로 5레벨 Frost Nova 시전",
+            "variable": false
+          },
+          {
+            "text": "피해 +150~190%",
+            "variable": true
+          }
+        ],
+        "image": "/uniques/90e641941a3b909a.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/uaxes.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 10~21"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "151",
+        "name": "대지진의 망치",
+        "english": "Earthshaker",
+        "legacy": "어스쉐이커",
+        "aliases": [],
+        "base": "배틀 해머",
+        "baseEnglish": "Battle Hammer",
+        "category": "무기",
+        "type": "망치",
+        "tier": "익셉셔널",
+        "level": 43,
+        "strength": 100,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "타격 시 5% 확률로 7레벨 Eruption 시전",
+            "variable": false
+          },
+          {
+            "text": "밀쳐내기",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +30%",
+            "variable": false
+          },
+          {
+            "text": "피해 +180%",
+            "variable": false
+          },
+          {
+            "text": "적중 시 대상 실명 +1",
+            "variable": false
+          },
+          {
+            "text": "원소 기술 +3",
+            "variable": false
+          },
+          {
+            "text": "내구도 +50",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/a95dbd31fcf36bc2.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/umaces.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 35~58"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "154",
+        "name": "유혈자",
+        "english": "Bloodletter",
+        "legacy": "블러드레터",
+        "aliases": [],
+        "base": "글래디우스",
+        "baseEnglish": "Gladius",
+        "category": "무기",
+        "type": "검",
+        "tier": "익셉셔널",
+        "level": 30,
+        "strength": 25,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "물리 피해 12~45 추가",
+            "variable": false
+          },
+          {
+            "text": "명중률 +90",
+            "variable": false
+          },
+          {
+            "text": "적중당 생명력 8% 훔침",
+            "variable": false
+          },
+          {
+            "text": "지구력 소모 10% 감소",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "피해 +140%",
+            "variable": false
+          },
+          {
+            "text": "Blade Mastery +2~4 (해당 직업 전용)",
+            "variable": true
+          },
+          {
+            "text": "Whirlwind +1~3 (해당 직업 전용)",
+            "variable": true
+          },
+          {
+            "text": "내구도 +30",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/f3bc704cf4e5ff2a.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/uswords.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 8~22"
+        ],
+        "availability": "원본 데이터의 래더 시즌 조건: 15~15",
+        "optionGroups": []
+      },
+      {
+        "id": "161",
+        "name": "아틀란티안",
+        "english": "The Atlantean",
+        "legacy": "애틀랜티언",
+        "aliases": [],
+        "base": "에인션트 소드",
+        "baseEnglish": "Ancient Sword",
+        "category": "무기",
+        "type": "검",
+        "tier": "익셉셔널",
+        "level": 42,
+        "strength": 127,
+        "dexterity": 88,
+        "options": [
+          {
+            "text": "내구도 +100",
+            "variable": false
+          },
+          {
+            "text": "방어력 +75",
+            "variable": false
+          },
+          {
+            "text": "힘 +16",
+            "variable": false
+          },
+          {
+            "text": "민첩 +12",
+            "variable": false
+          },
+          {
+            "text": "활력 +8",
+            "variable": false
+          },
+          {
+            "text": "피해 +200~250%",
+            "variable": true
+          },
+          {
+            "text": "성기사 기술 +2",
+            "variable": false
+          },
+          {
+            "text": "명중률 보너스 50%",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/bce5be063f3d1677.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/uswords.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 18~43"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "167",
+        "name": "검막이",
+        "english": "Swordguard",
+        "legacy": "소드가드",
+        "aliases": [],
+        "base": "엑시큐셔너 소드",
+        "baseEnglish": "Executioner Sword",
+        "category": "무기",
+        "type": "검",
+        "tier": "익셉셔널",
+        "level": 48,
+        "strength": 85,
+        "dexterity": 55,
+        "options": [
+          {
+            "text": "착용 조건 -50%",
+            "variable": false
+          },
+          {
+            "text": "캐릭터 레벨당 방어력 +5",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +10~20",
+            "variable": true
+          },
+          {
+            "text": "원거리 공격 방어력 +100",
+            "variable": false
+          },
+          {
+            "text": "받는 피해의 30%만큼 마나 회복",
+            "variable": false
+          },
+          {
+            "text": "피해 +170~180%",
+            "variable": true
+          },
+          {
+            "text": "근접 공격 방어력 +200",
+            "variable": false
+          },
+          {
+            "text": "타격 회복 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 20% 증가",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/0443e0367b754312.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/uswords.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 무기 피해 24~40",
+          "기본 양손 피해 47~80"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "172",
+        "name": "꿰뚫는 자",
+        "english": "The Impaler",
+        "legacy": "임페일러",
+        "aliases": [],
+        "base": "워 스피어",
+        "baseEnglish": "War Spear",
+        "category": "무기",
+        "type": "창",
+        "tier": "익셉셔널",
+        "level": 31,
+        "strength": 25,
+        "dexterity": 25,
+        "options": [
+          {
+            "text": "대상의 방어력 무시",
+            "variable": false
+          },
+          {
+            "text": "명중률 +150",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "상처 악화 확률 40%",
+            "variable": false
+          },
+          {
+            "text": "괴물 회복 저지",
+            "variable": false
+          },
+          {
+            "text": "피해 +140~170%",
+            "variable": true
+          },
+          {
+            "text": "Impale +5 (해당 직업 전용)",
+            "variable": false
+          },
+          {
+            "text": "Power Strike +3 (해당 직업 전용)",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/4faef68a6a78bc16.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/uspears.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 10~37"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "182",
+        "name": "사신의 불타는 망자",
+        "english": "Grim's Burning Dead",
+        "legacy": "그림의 버닝 데드",
+        "aliases": [],
+        "base": "그림 싸이드",
+        "baseEnglish": "Grim Scythe",
+        "category": "무기",
+        "type": "미늘창",
+        "tier": "익셉셔널",
+        "level": 45,
+        "strength": 70,
+        "dexterity": 70,
+        "options": [
+          {
+            "text": "화염 피해 131~232 추가",
+            "variable": false
+          },
+          {
+            "text": "화염 저항 45%",
+            "variable": false
+          },
+          {
+            "text": "피해 +140~180%",
+            "variable": true
+          },
+          {
+            "text": "공격자가 피해 8 받음",
+            "variable": false
+          },
+          {
+            "text": "착용 조건 -50%",
+            "variable": false
+          },
+          {
+            "text": "강령술사 기술 +3",
+            "variable": false
+          },
+          {
+            "text": "대상 방어력 50% 감소",
+            "variable": false
+          },
+          {
+            "text": "방어력 +20%",
+            "variable": false
+          },
+          {
+            "text": "명중률 +200~250",
+            "variable": true
+          }
+        ],
+        "image": "/uniques/9ff980d65baa0c73.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/upolearms.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 30~70"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "235",
+        "name": "용암 불똥",
+        "english": "Lava Gout",
+        "legacy": "라바 가우트",
+        "aliases": [],
+        "base": "배틀 건틀릿",
+        "baseEnglish": "Battle Gauntlets",
+        "category": "방어구",
+        "type": "장갑",
+        "tier": "익셉셔널",
+        "level": 42,
+        "strength": 88,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "화염 저항 24%",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          },
+          {
+            "text": "타격 시 2% 확률로 10레벨 Enchant 시전",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +20%",
+            "variable": false
+          },
+          {
+            "text": "방어력 +150~200%",
+            "variable": true
+          },
+          {
+            "text": "화염 피해 13~46 추가",
+            "variable": false
+          },
+          {
+            "text": "내구도 +20",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/ded7f4204471be63.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/exceptional/ugloves.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 방어력 39~47"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "249",
+        "name": "강철의 베일",
+        "english": "Veil of Steel",
+        "legacy": "베일 오브 스틸",
+        "aliases": [],
+        "base": "스파이어드 헬름",
+        "baseEnglish": "Spired Helm",
+        "category": "방어구",
+        "type": "투구",
+        "tier": "엘리트",
+        "level": 73,
+        "strength": 192,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "모든 저항 +50",
+            "variable": false
+          },
+          {
+            "text": "방어력 +60%",
+            "variable": false
+          },
+          {
+            "text": "힘 +15",
+            "variable": false
+          },
+          {
+            "text": "활력 +15",
+            "variable": false
+          },
+          {
+            "text": "시야 -4",
+            "variable": false
+          },
+          {
+            "text": "내구도 +20",
+            "variable": false
+          },
+          {
+            "text": "방어력 +140",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/41e481b4ee6fb1ff.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/elite/uhelms.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 방어력 114~159"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "315",
+        "name": "집행자의 정의",
+        "english": "Executioner's Justice",
+        "legacy": "엑시큐셔너의 저스티스",
+        "aliases": [],
+        "base": "글로리어스 액스",
+        "baseEnglish": "Glorious Axe",
+        "category": "무기",
+        "type": "도끼",
+        "tier": "엘리트",
+        "level": 75,
+        "strength": 164,
+        "dexterity": 55,
+        "options": [
+          {
+            "text": "피해 +240~290%",
+            "variable": true
+          },
+          {
+            "text": "강타 확률 25%",
+            "variable": false
+          },
+          {
+            "text": "대상 방어력 33% 감소",
+            "variable": false
+          },
+          {
+            "text": "적 처치 시 50% 확률로 6레벨 Decrepify 시전",
+            "variable": false
+          },
+          {
+            "text": "공격 속도 +30%",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/60a71893f760011f.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/elite/uaxes.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 60~124"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "324",
+        "name": "무형의 날붙이",
+        "english": "Ethereal Edge",
+        "legacy": "에테리얼 엣지",
+        "aliases": [],
+        "base": "실버 엣지드 액스",
+        "baseEnglish": "Silver-edged Axe",
+        "category": "무기",
+        "type": "도끼",
+        "tier": "엘리트",
+        "level": 74,
+        "strength": 166,
+        "dexterity": 65,
+        "options": [
+          {
+            "text": "피해 +150~180%",
+            "variable": true
+          },
+          {
+            "text": "공격 속도 +25%",
+            "variable": false
+          },
+          {
+            "text": "화염 흡수 +10~12",
+            "variable": true
+          },
+          {
+            "text": "악마에게 주는 피해 +150~200%",
+            "variable": true
+          },
+          {
+            "text": "악마 처치 시 생명력 +5~10",
+            "variable": true
+          },
+          {
+            "text": "명중률 +270~350",
+            "variable": true
+          },
+          {
+            "text": "무형 (수리 불가)",
+            "variable": false
+          },
+          {
+            "text": "파괴 불가",
+            "variable": false
+          }
+        ],
+        "image": "/uniques/3555e90d26d3847d.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/elite/uaxes.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 양손 피해 62~110"
+        ],
+        "availability": "",
+        "optionGroups": []
+      },
+      {
+        "id": "325",
+        "name": "악마뿔의 날",
+        "english": "Demonhorn's Edge",
+        "legacy": "데몬혼스 엣지",
+        "aliases": [],
+        "base": "디스트로이어 헬름",
+        "baseEnglish": "Destroyer Helm",
+        "category": "방어구",
+        "type": "야만용사 투구",
+        "tier": "엘리트",
+        "level": 61,
+        "strength": 151,
+        "dexterity": 0,
+        "options": [
+          {
+            "text": "방어력 +120~160%",
+            "variable": true
+          },
+          {
+            "text": "공격 속도 +10%",
+            "variable": false
+          },
+          {
+            "text": "적중당 생명력 3~6% 훔침",
+            "variable": true
+          },
+          {
+            "text": "공격자가 피해 55~77 받음",
+            "variable": true
+          },
+          {
+            "text": "전투 기술 (야만용사) 기술 +1~3",
+            "variable": true
+          },
+          {
+            "text": "전투 숙련 기술 +1~3",
+            "variable": true
+          },
+          {
+            "text": "함성 기술 +1~3",
+            "variable": true
+          }
+        ],
+        "image": "/uniques/e03a555c6cfab161.gif",
+        "imageSource": "https://classic.battle.net/diablo2exp/items/normal/ubarbarian.shtml",
+        "variant": "",
+        "requirementsNote": "무형·업그레이드·추가 장착 효과에 따라 착용 조건이 달라질 수 있습니다.",
+        "baseStats": [
+          "기본 방어력 111~156"
+        ],
+        "availability": "",
+        "optionGroups": []
+      }
+    ],
+    "sets": [
+      {
+        "id": "13",
+        "name": "천사의 의복",
+        "english": "Angelic Raiment",
+        "legacy": "엔젤릭 레이먼트",
+        "aliases": [
+          "엔젤셋",
+          "엔젤릭"
+        ],
+        "className": "공용",
+        "level": 12,
+        "pieces": [
+          {
+            "id": "52",
+            "name": "천사의 후광",
+            "english": "Angelic Halo",
+            "legacy": "엔젤릭 헤일로우",
+            "base": "반지",
+            "type": "반지",
+            "tier": "기타",
+            "level": 12,
+            "strength": 0,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "생명력 회복 +6",
+                "variable": false
+              },
+              {
+                "text": "생명력 +20",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "캐릭터 레벨당 명중률 +12",
+                    "variable": false
+                  }
+                ]
+              },
+              {
+                "count": 3,
+                "condition": "3개 이상 착용",
+                "options": [
+                  {
+                    "text": "마법 아이템 발견 확률 50% 증가",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [],
+            "image": "/sets/dafc96efb417fb3c.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+            "availability": "원본 래더 시즌 조건: 15~16"
+          },
+          {
+            "id": "51",
+            "name": "천사의 어깨걸이",
+            "english": "Angelic Mantle",
+            "legacy": "엔젤릭 맨틀",
+            "base": "링 메일",
+            "type": "갑옷",
+            "tier": "노멀",
+            "level": 12,
+            "strength": 36,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "피해 3 감소",
+                "variable": false
+              },
+              {
+                "text": "방어력 +40%",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "방어력 +150",
+                    "variable": false
+                  }
+                ]
+              },
+              {
+                "count": 3,
+                "condition": "3개 이상 착용",
+                "options": [
+                  {
+                    "text": "화염 저항 50%",
+                    "variable": false
+                  },
+                  {
+                    "text": "언데드에게 주는 피해 +100%",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [
+              "기본 방어력 45~48"
+            ],
+            "image": "/sets/385a6f1a5217a149.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+            "availability": "원본 래더 시즌 조건: 15~16"
+          },
+          {
+            "id": "50",
+            "name": "천사의 낫",
+            "english": "Angelic Sickle",
+            "legacy": "엔젤릭 시클",
+            "base": "세이버",
+            "type": "검",
+            "tier": "노멀",
+            "level": 12,
+            "strength": 25,
+            "dexterity": 25,
+            "options": [
+              {
+                "text": "명중률 +75",
+                "variable": false
+              },
+              {
+                "text": "언데드에게 주는 피해 +250%",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "피해 +75%",
+                    "variable": false
+                  }
+                ]
+              },
+              {
+                "count": 3,
+                "condition": "3개 이상 착용",
+                "options": [
+                  {
+                    "text": "공격 속도 +30%",
+                    "variable": false
+                  },
+                  {
+                    "text": "피해 +6",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [
+              "기본 무기 피해 3~8"
+            ],
+            "image": "/sets/75e476f0565d5492.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+            "availability": "원본 래더 시즌 조건: 15~16"
+          },
+          {
+            "id": "53",
+            "name": "천사의 날개",
+            "english": "Angelic Wings",
+            "legacy": "엔젤릭 윙",
+            "base": "목걸이",
+            "type": "목걸이",
+            "tier": "기타",
+            "level": 12,
+            "strength": 0,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "시야 +3",
+                "variable": false
+              },
+              {
+                "text": "받는 피해의 20%만큼 마나 회복",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "생명력 +75",
+                    "variable": false
+                  }
+                ]
+              },
+              {
+                "count": 3,
+                "condition": "3개 이상 착용",
+                "options": [
+                  {
+                    "text": "모든 기술 +1",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [],
+            "image": "/sets/93017b8535da6b30.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets1.shtml",
+            "availability": "원본 래더 시즌 조건: 15~16"
+          }
+        ],
+        "partial": [
+          {
+            "count": 2,
+            "options": [
+              {
+                "text": "민첩 +10",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "options": [
+              {
+                "text": "마나 +50",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "full": [
+          {
+            "text": "모든 저항 +25",
+            "variable": false
+          },
+          {
+            "text": "빙결 지속시간 절반으로 감소",
+            "variable": false
+          },
+          {
+            "text": "마법 아이템 발견 확률 40% 증가",
+            "variable": false
+          },
+          {
+            "text": "마나 재생 8%",
+            "variable": false
+          },
+          {
+            "text": "모든 기술 +1",
+            "variable": false
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "아이젠하트의 무기고",
+        "english": "Isenhart's Armory",
+        "legacy": "아이젠하트 아머리",
+        "aliases": [],
+        "className": "공용",
+        "level": 8,
+        "pieces": [
+          {
+            "id": "15",
+            "name": "아이젠하트의 통",
+            "english": "Isenhart's Case",
+            "legacy": "아이젠하트의 케이스",
+            "base": "브레스트 플레이트",
+            "type": "갑옷",
+            "tier": "노멀",
+            "level": 8,
+            "strength": 30,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "방어력 +40",
+                "variable": false
+              },
+              {
+                "text": "마법 피해 2 감소",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "캐릭터 레벨당 방어력 +2",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [
+              "기본 방어력 65~68"
+            ],
+            "image": "/sets/eb0de68253b3bf5c.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+            "availability": ""
+          },
+          {
+            "id": "16",
+            "name": "아이젠하트의 뿔",
+            "english": "Isenhart's Horns",
+            "legacy": "아이젠하트의 혼즈",
+            "base": "풀 헬름",
+            "type": "투구",
+            "tier": "노멀",
+            "level": 8,
+            "strength": 41,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "민첩 +6",
+                "variable": false
+              },
+              {
+                "text": "피해 2 감소",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "모든 저항 +8",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [
+              "기본 방어력 23~26"
+            ],
+            "image": "/sets/af49e8a1fb3793b9.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+            "availability": ""
+          },
+          {
+            "id": "13",
+            "name": "아이젠하트의 빛 낙인",
+            "english": "Isenhart's Lightbrand",
+            "legacy": "아이젠하트의 라이트브랜드",
+            "base": "브로드소드",
+            "type": "검",
+            "tier": "노멀",
+            "level": 8,
+            "strength": 48,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "최소 피해 +10",
+                "variable": false
+              },
+              {
+                "text": "공격 속도 +20%",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "캐릭터 레벨당 명중률 +5",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [
+              "기본 무기 피해 7~14"
+            ],
+            "image": "/sets/09848200d98bd929.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+            "availability": ""
+          },
+          {
+            "id": "14",
+            "name": "아이젠하트의 회피",
+            "english": "Isenhart's Parry",
+            "legacy": "아이젠하트의 패리",
+            "base": "고딕 쉴드",
+            "type": "방패",
+            "tier": "노멀",
+            "level": 8,
+            "strength": 60,
+            "dexterity": 0,
+            "options": [
+              {
+                "text": "방어력 +40",
+                "variable": false
+              },
+              {
+                "text": "공격자가 번개 피해 4 받음",
+                "variable": false
+              }
+            ],
+            "bonuses": [
+              {
+                "count": 2,
+                "condition": "2개 이상 착용",
+                "options": [
+                  {
+                    "text": "모든 저항 +8",
+                    "variable": false
+                  }
+                ]
+              }
+            ],
+            "baseStats": [
+              "기본 방어력 30~35",
+              "기본 무기 피해 2~6"
+            ],
+            "image": "/sets/ddede0ac0ef70f99.gif",
+            "imageSource": "https://classic.battle.net/diablo2exp/items/sets/sets3.shtml",
+            "availability": ""
+          }
+        ],
+        "partial": [
+          {
+            "count": 2,
+            "options": [
+              {
+                "text": "힘 +10",
+                "variable": false
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "options": [
+              {
+                "text": "민첩 +10",
+                "variable": false
+              }
+            ]
+          }
+        ],
+        "full": [
+          {
+            "text": "적중당 생명력 5% 훔침",
+            "variable": false
+          },
+          {
+            "text": "모든 저항 +10",
+            "variable": false
+          },
+          {
+            "text": "명중률 보너스 35%",
+            "variable": false
+          },
+          {
+            "text": "막기 확률 30% 증가",
+            "variable": false
+          },
+          {
+            "text": "달리기/걷기 속도 +20%",
+            "variable": false
+          }
+        ]
+      }
+    ]
+  }
+}
