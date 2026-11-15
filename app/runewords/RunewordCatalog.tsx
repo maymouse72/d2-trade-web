@@ -6,9 +6,7 @@ import Image from 'next/image';
 import { records, equipment, filterRecords, countKinds } from './catalog';
 import runeFiles from './runes.json';
 import styles from './catalog.module.css';
-import ModeSelector from '../item-catalog/ModeSelector';
-import VariantNotice from '../item-catalog/VariantNotice';
-import { DEFAULT_MODE_PRESET, getModeContext, type ModePresetId } from '../item-catalog/mode-presets';
+import { DEFAULT_MODE_PRESET, getModeContext } from '../item-catalog/mode-presets';
 import { resolveItemVariant, type ItemVariant } from '../../lib/items/variants';
 
 const runes = '엘 엘드 티르 네프 에드 아이드 탈 랄 오르트 주울 앰 솔 샤엘 돌 헬 이오 룸 코 팔 렘 풀 우움 말 이스트 굴 벡스 오움 로 수르 베르 자 참 조드'.split(' ');
@@ -20,15 +18,13 @@ export default function RunewordCatalog() {
   const [level, setLevel] = useState('');
   const [rune, setRune] = useState('');
   const [sort, setSort] = useState('name');
-  const [mode, setMode] = useState<ModePresetId>(DEFAULT_MODE_PRESET);
-  const context = getModeContext(mode);
+  const context = getModeContext(DEFAULT_MODE_PRESET);
   const visible = filterRecords({ query, base, sockets, level, rune, sort });
   function reset() { setQuery(''); setBase(''); setSockets(''); setLevel(''); setRune(''); setSort('name'); }
   return (
     <SiteFrame active="runewords">
       <section className={styles.catalog}>
       <header className={styles.catalogHeader}><h2>룬워드 도감</h2><p>필요한 장비와 룬을 선택하고, 나에게 맞는 조합을 찾아보세요.</p></header>
-      <ModeSelector value={mode} onChange={setMode} id="runeword-item-mode" />
       <section className={styles.filters} aria-label="룬워드 검색 조건">
         <label className={styles.search}>통합 검색<input type="search" placeholder="이름·영문명·옵션·룬 검색" value={query} onChange={e => setQuery(e.target.value)} /></label>
         <label>장비 종류<select value={base} onChange={e => setBase(e.target.value)}><option value="">전체 장비</option>{equipment.map(value => <option key={value}>{value}</option>)}</select></label>
@@ -41,12 +37,11 @@ export default function RunewordCatalog() {
       <div className={styles.result} role="status">전체 {countKinds(records)}종 · 장비별 {records.length}개 항목 중 <strong>{countKinds(visible)}종 · {visible.length}개 항목</strong>{base && ` · ${base}`}{sockets && ` · ${sockets}소켓`}{level && ` · ${level}레벨 이하`}{rune && ` · ${rune} 포함`}</div>
       <p className={styles.note}>룬은 왼쪽부터 표시된 순서대로 장착하세요.<br />불사조·영혼·인내는 제작 장비에 따라 옵션이 달라, 장비별로 나누어 표시합니다.<br />악마술사의 군림 신규 룬워드 5종을 포함합니다. 표시 레벨보다 재료 장비의 요구 레벨이 높으면 재료 기준을 따릅니다.</p>
       <div className={styles.list}>
-        {visible.map(row => {const result=resolveItemVariant(row,row.variants as ItemVariant[]|undefined,context);const current=result.properties;return <article key={row.id} className={styles.card}>
+        {visible.map(row => {const result=resolveItemVariant(row,row.variants as ItemVariant[]|undefined,context);const current=result.properties || row;return <article key={row.id} className={styles.card}>
           <div className={styles.heading}><h2>{row.name}</h2><span>Lv. {row.level}</span></div>
-          <VariantNotice result={result} />
-          {current ? <><p className={styles.base}>{current.equipment} · {current.sockets}소켓{row.edition && ` · ${row.edition}`}</p>
+          <p className={styles.base}>{current.equipment} · {current.sockets}소켓{row.edition && ` · ${row.edition}`}</p>
           <ol className={styles.runes} aria-label="룬 장착 순서">{current.runes.map((name, index) => <li key={`${row.id}-${index}`}><span className={styles.order}>{index + 1}</span><Image src={`/runes/${runeFiles[name as keyof typeof runeFiles]}.gif`} alt={`${name} 룬`} width={28} height={28} unoptimized /><span>{name}</span></li>)}</ol>
-          <details><summary>옵션 보기</summary><p className={styles.options}>{current.options}</p>{current.base!==row.base&&<p className={styles.base}>기본 장비 조건: {current.base}</p>}</details></> : <details><summary>기존 원본 룬 순서와 옵션 · 현재 적용 미확정</summary><p className={styles.base}>{row.equipment} · {row.sockets}소켓</p><ol className={styles.runes} aria-label="기존 원본 룬 순서">{row.runes.map((name,index)=><li key={`${row.id}-legacy-${index}`}><span className={styles.order}>{index+1}</span><Image src={`/runes/${runeFiles[name as keyof typeof runeFiles]}.gif`} alt={`${name} 룬`} width={28} height={28} unoptimized /><span>{name}</span></li>)}</ol><p className={styles.options}>{row.options}</p></details>}
+          <details><summary>옵션 보기</summary><p className={styles.options}>{current.options}</p>{current.base!==row.base&&<p className={styles.base}>기본 장비 조건: {current.base}</p>}</details>
         </article>})}
       </div>
       {visible.length === 0 && <div className={styles.empty}><p>조건에 맞는 룬워드가 없습니다.</p><button onClick={reset}>검색 조건 초기화</button></div>}
