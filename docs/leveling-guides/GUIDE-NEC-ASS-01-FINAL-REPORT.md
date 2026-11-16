@@ -11,14 +11,16 @@
 - 두 직업 상세 페이지, 직업 별칭 검색, 스킬 투자 및 퀘스트 보상 미완료 안내, 목차, 체크리스트, 룬워드 도감 링크.
 - 암살자 레벨 40의 번개 파수기 20 과투자를 17로 수정하고, 레벨 41~43에 20을 완성하도록 단계별 투자 순서를 교정.
 - 테스트·빌드 및 PC·390×844 브라우저 검사 통과. 상세 내역은 [테스트 결과](GUIDE-NEC-ASS-01-TEST-RESULTS.md).
+- 운영 사이트 공략 스모크 테스트도 PC·390×844에서 6/6 통과했고 콘솔 오류가 없었습니다.
 
 ## 배포 기록
 
-- Git 커밋: (배포 후 기입)
-- `origin/main` push: (배포 후 기입)
+- Git 커밋: `e1b37130e7c2a6819032bda0b020ec8e108b0181`
+- `origin/main` push: 완료
 - Vercel 프로젝트: `d2-trade-web-6e47`
-- Production 배포 ID / READY: (배포 후 기입)
-- `www.d2jugobatgo.com` 연결 및 운영 스모크: (배포 후 기입)
+- Production 배포 ID: `dpl_HahdoyQ7D6h9tU4kaQ7i4Pc1HcGX` / READY
+- `www.d2jugobatgo.com`: 배포 alias 연결 확인
+- 운영 스모크: 신규·기존 공략, 검색, 체크리스트, 목차 앵커, 도감 링크 PASS
 
 ## 남은 사항
 

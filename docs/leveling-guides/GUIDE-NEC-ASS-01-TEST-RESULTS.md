@@ -5,6 +5,7 @@
 - `npm run test:guides`: PASS, 5/5. 포인트 총합, 랭크 상한, 요구 레벨·선행 기술, 미완료 퀘스트 fallback, 암살자 단계별 배분을 확인.
 - `npm run test:items`: PASS, 13/13. 도감 ID·데이터 및 변형 회귀.
 - `npm run test:guides:browser`: PASS, 6/6. PC와 모바일 390×844에서 디렉터리 검색, 기존 두 공략 회귀, 신규 두 페이지, 체크리스트, 목차 앵커, 화면 넘침, 콘솔 오류 및 잎새 도감 링크 확인.
+- 운영 `https://www.d2jugobatgo.com`의 같은 브라우저 스모크 테스트: PASS, PC·모바일 합계 6/6. 신규·기존 공략, 검색, 체크리스트, 목차 앵커, 도감 링크와 콘솔을 확인.
 - `npm run test:items:browser`: PASS, 6/6. 룬워드·유니크·세트 도감 PC/모바일 및 내부 ID 링크 회귀.
 - `npx tsc --noEmit`: PASS.
 - `npm run lint`: PASS.
