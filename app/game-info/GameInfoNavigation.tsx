@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './game-info.module.css';
 
-type GameInfoSection = 'experience' | 'ias-calculator' | null;
+type GameInfoSection = 'experience' | 'ias-calculator' | 'leveling-guides' | null;
 
 export default function GameInfoNavigation({ active = null }: { active?: GameInfoSection }) {
   return (
@@ -11,6 +11,9 @@ export default function GameInfoNavigation({ active = null }: { active?: GameInf
       </Link>
       <Link href="/game-info/ias-calculator" aria-current={active === 'ias-calculator' ? 'page' : undefined} className={active === 'ias-calculator' ? styles.activeLink : styles.link}>
         공속 계산기
+      </Link>
+      <Link href="/game-info/leveling-guides" aria-current={active === 'leveling-guides' ? 'page' : undefined} className={active === 'leveling-guides' ? styles.activeLink : styles.link}>
+        직업별 맨땅 공략집
       </Link>
     </nav>
   );
