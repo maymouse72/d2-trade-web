@@ -154,6 +154,52 @@ export const druidSkills: SkillTree = {
   hurricane: { requiredLevel: 30, prerequisites: ['tornado'] },
 };
 
+export const barbarianSkills: SkillTree = {
+  bash: { requiredLevel: 1 },
+  howl: { requiredLevel: 1 },
+  bladeMastery: { requiredLevel: 1 },
+  findPotion: { requiredLevel: 1 },
+  doubleSwing: { requiredLevel: 6, prerequisites: ['bash'] },
+  taunt: { requiredLevel: 6, prerequisites: ['howl'] },
+  shout: { requiredLevel: 6, prerequisites: ['howl'] },
+  doubleThrow: { requiredLevel: 12, prerequisites: ['doubleSwing'] },
+  findItem: { requiredLevel: 12, prerequisites: ['findPotion'] },
+  stun: { requiredLevel: 12, prerequisites: ['bash'] },
+  battleCry: { requiredLevel: 18, prerequisites: ['taunt'] },
+  concentrate: { requiredLevel: 18, prerequisites: ['stun'] },
+  frenzy: { requiredLevel: 24, prerequisites: ['doubleThrow'] },
+  battleOrders: { requiredLevel: 24, prerequisites: ['shout'] },
+  warCry: { requiredLevel: 30, prerequisites: ['battleCry', 'battleOrders'] },
+  battleCommand: { requiredLevel: 30, prerequisites: ['battleOrders'] },
+  berserk: { requiredLevel: 30, prerequisites: ['concentrate'] },
+  naturalResistance: { requiredLevel: 30 },
+};
+
+export const warlockSkills: SkillTree = {
+  levitationMastery: { requiredLevel: 1 },
+  echoingStrike: { requiredLevel: 12, prerequisites: ['levitationMastery'] },
+  bladeWarp: { requiredLevel: 18, prerequisites: ['echoingStrike'] },
+  miasmaBolt: { requiredLevel: 1 },
+  ringOfFire: { requiredLevel: 6 },
+  sigilLethargy: { requiredLevel: 6 },
+  miasmaChain: { requiredLevel: 12, prerequisites: ['miasmaBolt'] },
+  sigilRancor: { requiredLevel: 12, prerequisites: ['sigilLethargy'] },
+  flameWave: { requiredLevel: 18, prerequisites: ['ringOfFire'] },
+  enhancedEntropy: { requiredLevel: 24, prerequisites: ['miasmaChain'] },
+  sigilDeath: { requiredLevel: 24, prerequisites: ['sigilRancor'] },
+  abyss: { requiredLevel: 30, prerequisites: ['enhancedEntropy'] },
+  apocalypse: { requiredLevel: 30, prerequisites: ['flameWave', 'sigilDeath'] },
+};
+
+export const barbarianSkillSynergies = {
+  warCry: ['howl', 'taunt', 'battleCry'],
+} as const;
+
+export const warlockSkillSynergies = {
+  abyss: ['miasmaBolt', 'miasmaChain'],
+  apocalypse: ['ringOfFire', 'flameWave'],
+} as const;
+
 export const necromancerBuilds = {
   level40: {
     raiseSkeleton: 20, skeletonMastery: 14, clayGolem: 1, golemMastery: 1,
@@ -239,5 +285,44 @@ export const druidBuilds = {
   windLevel85NoQuests: {
     raven: 1, arcticBlast: 1, cycloneArmor: 18, twister: 20, tornado: 20,
     hurricane: 20, oakSage: 1, summonSpiritWolf: 1, summonDireWolf: 1, summonGrizzly: 1,
+  },
+} satisfies Record<string, SkillAllocation>;
+
+export const barbarianBuilds = {
+  meleeLevel29: {
+    bash: 1, doubleSwing: 10, howl: 1, taunt: 1, shout: 1,
+    doubleThrow: 1, battleCry: 1, battleOrders: 6, frenzy: 6,
+  },
+  singerLevel40: {
+    bash: 1, doubleSwing: 1, doubleThrow: 1, frenzy: 1, stun: 1, concentrate: 1, berserk: 1,
+    howl: 2, taunt: 3, battleCry: 1, shout: 1, battleOrders: 17,
+    battleCommand: 1, warCry: 11,
+  },
+  singerLevel40NoQuests: {
+    bash: 1, doubleSwing: 1, doubleThrow: 1, frenzy: 1, stun: 1, concentrate: 1, berserk: 1,
+    howl: 1, taunt: 1, battleCry: 1, shout: 1, battleOrders: 17,
+    battleCommand: 1, warCry: 10,
+  },
+  singerLevel85: {
+    bash: 1, doubleSwing: 1, doubleThrow: 1, frenzy: 1, stun: 1, concentrate: 1, berserk: 1,
+    howl: 20, taunt: 20, battleCry: 5, shout: 1, battleOrders: 20, findPotion: 1, findItem: 1,
+    battleCommand: 1, warCry: 20,
+  },
+} satisfies Record<string, SkillAllocation>;
+
+export const warlockBuilds = {
+  chaosLevel40: { levitationMastery: 1, echoingStrike: 1, bladeWarp: 1, miasmaBolt: 20, miasmaChain: 11, enhancedEntropy: 1, abyss: 8 },
+  chaosLevel40NoQuests: { levitationMastery: 1, echoingStrike: 1, bladeWarp: 1, miasmaBolt: 20, miasmaChain: 11, enhancedEntropy: 1, abyss: 4 },
+  chaosLevel85: {
+    levitationMastery: 1, echoingStrike: 1, bladeWarp: 1,
+    miasmaBolt: 20, miasmaChain: 20, enhancedEntropy: 1, abyss: 20,
+    ringOfFire: 1, sigilLethargy: 1, flameWave: 11,
+    sigilRancor: 1, sigilDeath: 1, apocalypse: 17,
+  },
+  chaosLevel85NoQuests: {
+    levitationMastery: 1, echoingStrike: 1, bladeWarp: 1,
+    miasmaBolt: 20, miasmaChain: 20, enhancedEntropy: 1, abyss: 20,
+    ringOfFire: 1, sigilLethargy: 1, flameWave: 5,
+    sigilRancor: 1, sigilDeath: 1, apocalypse: 11,
   },
 } satisfies Record<string, SkillAllocation>;

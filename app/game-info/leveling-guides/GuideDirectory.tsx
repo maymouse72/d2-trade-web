@@ -11,8 +11,8 @@ const classes = [
   { name: '암살자', icon: '⚡', route: '/game-info/leveling-guides/assassin', path: '화염 덫 → 번개 덫', terms: '어쌔신 Assassin 트랩씬 번개 파수기 죽음 파수기' },
   { name: '아마존', icon: '🏹', route: '/game-info/leveling-guides/amazon', path: '독 투창 → 번개 자벨마', terms: 'Amazon 자벨린 자벨마 맨땅 번개의 격노 역병 투창' },
   { name: '드루이드', icon: '🌪️', route: '/game-info/leveling-guides/druid', path: '화염 → 바람 엘리드루', terms: 'Druid 엘리드루 Tornado 허리케인 회오리바람' },
-  { name: '야만용사', icon: '⚔️', path: '근접 · 함성 육성', terms: '바바리안 Barbarian' },
-  { name: '악마술사', icon: '🔮', path: 'RotW 전용 · 추후 검토', terms: 'Warlock' },
+  { name: '야만용사', icon: '⚔️', route: '/game-info/leveling-guides/barbarian', path: '이중 타격 → 싱어 바바', terms: '바바리안 Barbarian 싱어 바바 전장의 함성' },
+  { name: '악마술사', icon: '🔮', route: '/game-info/leveling-guides/warlock', path: '혼돈 · 독기 → 심연', terms: 'Warlock 워록 Reign of the Warlock RotW 심연 독기' },
 ];
 
 export default function GuideDirectory() {
@@ -45,7 +45,7 @@ export default function GuideDirectory() {
         ))}
       </div>
       {filteredClasses.length === 0 && <p className={styles.directoryNote} role="status">검색 결과가 없습니다.</p>}
-      <p className={styles.directoryNote}>원소술사·성기사·강령술사·암살자·아마존·드루이드 공략을 제공합니다. 나머지 직업은 검토 후 추가할 예정입니다.</p>
+      <p className={styles.directoryNote}>8개 직업의 맨땅 공략을 제공합니다. 장비와 플레이 상황에 맞춰 육성 순서를 조정하세요.</p>
     </>
   );
 }

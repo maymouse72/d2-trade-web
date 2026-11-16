@@ -1,51 +1,75 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import sorceressContent from './content/sorceress.json';
 import paladinContent from './content/paladin.json';
 import necromancerContent from './content/necromancer.json';
 import assassinContent from './content/assassin.json';
 import amazonContent from './content/amazon.json';
 import druidContent from './content/druid.json';
+import barbarianContent from './content/barbarian.json';
+import warlockContent from './content/warlock.json';
 import Checklist from './Checklist';
+import TeleportStaffTip from './TeleportStaffTip';
 import styles from './leveling-guides.module.css';
 
-export type GuideKey = 'sorceress' | 'paladin' | 'necromancer' | 'assassin' | 'amazon' | 'druid';
+export type GuideKey = 'sorceress' | 'paladin' | 'necromancer' | 'assassin' | 'amazon' | 'druid' | 'barbarian' | 'warlock';
 
-const guides: Record<GuideKey, { title: string; className: string; summary: string; content: string }> = {
+const guides: Record<GuideKey, { title: string; className: string; summary: string; imageAlt: string; content: string }> = {
   sorceress: {
     title: '원소술사 맨땅 육성 공략',
     className: '소서리스',
     summary: '화염구로 시작해 얼음 보주와 함께 헬 바알까지 진행하는 무자본 육성 루트입니다.',
+    imageAlt: '화염과 푸른 마력을 다루는 원소술사',
     content: sorceressContent,
   },
   paladin: {
     title: '성기사 맨땅 육성 공략',
     className: '팔라딘',
     summary: '신성한 불꽃과 열의로 시작해 축복받은 망치 빌드로 전환하는 육성 가이드입니다.',
+    imageAlt: '방패와 갑옷을 갖춘 성기사',
     content: paladinContent,
   },
   necromancer: {
     title: '강령술사 맨땅 육성 공략',
     className: '강령술사 · 네크로맨서',
     summary: '해골 전사로 첫 시체를 만들고 피해 증폭과 시체 폭발로 헬 바알까지 진행하는 조폭넥 가이드입니다.',
+    imageAlt: '해골과 망령을 거느린 강령술사',
     content: necromancerContent,
   },
   assassin: {
     title: '암살자 맨땅 육성 공략',
     className: '암살자 · 어쌔신',
     summary: '화염 덫으로 노멀을 진행한 뒤 번개 파수기와 죽음 파수기를 사용하는 트랩씬 가이드입니다.',
+    imageAlt: '두 칼날을 든 어두운 복장의 암살자',
     content: assassinContent,
   },
   amazon: {
     title: '아마존 맨땅 육성 공략',
     className: '아마존 · 자벨마',
     summary: '맹독 투창과 역병 투창으로 시작해 번개의 격노·전류의 일격 자벨마로 전환하는 솔로 가이드입니다.',
+    imageAlt: '창과 투창을 든 아마존 전사',
     content: amazonContent,
   },
   druid: {
     title: '드루이드 맨땅 육성 공략',
     className: '드루이드 · 엘리드루',
     summary: '화염폭풍과 균열로 진행한 뒤 회오리바람·허리케인을 사용하는 엘리드루로 전환합니다.',
+    imageAlt: '늑대 동료와 푸른 원소 마력을 다루는 드루이드',
     content: druidContent,
+  },
+  barbarian: {
+    title: '야만용사 맨땅 육성 공략',
+    className: '야만용사 · 바바리안',
+    summary: '이중 타격과 광분으로 초반을 지나 전장의 함성을 쓰는 싱어 바바로 헬 바알에 도전합니다.',
+    imageAlt: '도끼를 든 야만용사 전사',
+    content: barbarianContent,
+  },
+  warlock: {
+    title: '악마술사 맨땅 육성 공략',
+    className: '악마술사 · 워록',
+    summary: 'RotW 혼돈 계열의 독기 기술로 시작해 심연과 종말을 함께 사용하는 마법 피해 빌드입니다.',
+    imageAlt: '마도서와 보랏빛 악마 마력을 든 악마술사',
+    content: warlockContent,
   },
 };
 
@@ -178,6 +202,7 @@ function makeToc(markdown: string) {
 export default function GuideContent({ guideKey }: { guideKey: GuideKey }) {
   const guide = guides[guideKey];
   const toc = makeToc(guide.content).filter((item) => item.level <= 2);
+  const imageSrc = `/images/leveling-guides/${guideKey}.webp`;
   return (
     <div className={styles.page}>
       <nav aria-label="위치" className={styles.breadcrumb}>
@@ -186,11 +211,17 @@ export default function GuideContent({ guideKey }: { guideKey: GuideKey }) {
         <span aria-current="page">{guide.className}</span>
       </nav>
       <header className={styles.hero}>
-        <span className={styles.eyebrow}>ROT W · PATCH 3.4 · SOLO / NO-TRADE</span>
-        <h1>{guide.title}</h1>
-        <p>{guide.summary}</p>
-        <p className={styles.versionNote}>맨땅 · 솔로 플레이 · 아이템 지원 없음 · 2026년 11월 기준</p>
+        <div className={styles.heroCopy}>
+          <span className={styles.eyebrow}>ROT W · PATCH 3.4 · SOLO / NO-TRADE</span>
+          <h1>{guide.title}</h1>
+          <p>{guide.summary}</p>
+          <p className={styles.versionNote}>맨땅 · 솔로 플레이 · 아이템 지원 없음 · 2026년 11월 기준</p>
+        </div>
+        <div className={styles.heroImageFrame}>
+          <Image className={styles.heroImage} src={imageSrc} width={300} height={724} sizes="(max-width: 640px) 180px, 240px" alt={guide.imageAlt} preload />
+        </div>
       </header>
+      {guideKey !== 'sorceress' && <TeleportStaffTip guideKey={guideKey} />}
       <details className={styles.toc}>
         <summary>목차 보기 <span>{toc.length}개 항목</span></summary>
         <ol>{toc.map((item) => <li className={item.level === 2 ? styles.tocSubitem : undefined} key={item.id}><a href={`#${item.id}`}>{item.title}</a></li>)}</ol>
