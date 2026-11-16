@@ -15,7 +15,8 @@
 |---|---|---|
 | Desktop Chrome 1365×900 | PASS | 목록, 페이지 렌더, 검색, 목차 앵커, 체크리스트, 룬워드 anchor, 기존 페이지, 콘솔, 가로 넘침 |
 | Mobile Chrome 390×844 | PASS | 같은 기능 및 가로 넘침 없음 |
-| Playwright 전체 | PASS | 8/8 |
+| Playwright 로컬 전체 | PASS | 8/8 |
+| Production `www.d2jugobatgo.com` | PASS | 8/8, Desktop + 390×844, 신규 페이지 및 기존 공략 회귀 |
 
 테스트 시 기본 포트 4173에는 이전 앱 버전이 남아 있어 최신 UI를 반영하지 않았습니다. 이를 발견해 새 Webpack 산출물을 4175 포트에 분리 실행하고, `IAS_BASE_URL`을 지정해 전체 suite를 재검증했습니다. 최초 실패는 구버전 서버 재사용과 테스트 assertion/브라우저 history 전제의 문제였으며 최종 suite에서는 해소했습니다.
 
@@ -26,3 +27,4 @@
 - 기존 소서리스·팔라딘·강령술사·암살자 공략 회귀 포함
 - 데스크톱과 모바일 테스트에서 browser console error·page exception 없음
 - 룬워드 deep link와 상세 페이지 목록 돌아가기 링크 확인
+- Vercel Production runtime `error`/`fatal` log 조회 (배포 ID 기준, 최근 15분): 로그 없음
