@@ -16,6 +16,11 @@
 
 ## 배포 범위
 
-사용자가 “특이사항 없으면 운영 배포”를 승인했고 검사에서 차단 결함은 없었습니다. 기존 미커밋 자료를 제외하고 GUIDE-BAR-WAR-01 변경만 커밋·푸시 후 Vercel Production 자동 배포 상태를 확인합니다.
+사용자가 “특이사항 없으면 운영 배포”를 승인했고 필수 검사에서 차단 결함이 없어 GUIDE-BAR-WAR-01 변경만 커밋·푸시했습니다. IAS·ITEM 관련 미커밋 자료는 커밋에서 제외했습니다.
 
-최종 운영 커밋·Vercel ID·READY·도메인 확인은 배포 후 이 보고서의 배포 결과 항목에 기록합니다.
+- 기능 커밋: `529476e22ec278f2ea623d37611c397e78f178df` (`feat(game-info): add barbarian and warlock leveling guides`)
+- Vercel Production 배포: `dpl_Hy7rGj6aiWbT2aW1NDmYuVVwh9M7` — `READY`
+- 배포 대상 커밋: `529476e22ec278f2ea623d37611c397e78f178df`
+- 운영 도메인: `www.d2jugobatgo.com` 별칭 연결 확인
+- 운영 스모크: 공략 목록, 야만용사·악마술사 상세 페이지, 두 직업 WebP 이미지 모두 HTTP 200. 페이지 HTML에서 직업 제목과 공통 순간이동 팁 확인.
+- 미해결 운영 오류: 확인되지 않음
