@@ -37,7 +37,7 @@ export default function RunewordCatalog() {
       <div className={styles.result} role="status">전체 {countKinds(records)}종 · 장비별 {records.length}개 항목 중 <strong>{countKinds(visible)}종 · {visible.length}개 항목</strong>{base && ` · ${base}`}{sockets && ` · ${sockets}소켓`}{level && ` · ${level}레벨 이하`}{rune && ` · ${rune} 포함`}</div>
       <p className={styles.note}>룬은 왼쪽부터 표시된 순서대로 장착하세요.<br />불사조·영혼·인내는 제작 장비에 따라 옵션이 달라, 장비별로 나누어 표시합니다.<br />악마술사의 군림 신규 룬워드 5종을 포함합니다. 표시 레벨보다 재료 장비의 요구 레벨이 높으면 재료 기준을 따릅니다.</p>
       <div className={styles.list}>
-        {visible.map(row => {const result=resolveItemVariant(row,row.variants as ItemVariant[]|undefined,context);const current=result.properties || row;return <article key={row.id} className={styles.card}>
+        {visible.map(row => {const result=resolveItemVariant(row,row.variants as ItemVariant[]|undefined,context);const current=result.properties || row;return <article id={`runeword-${row.id}`} key={row.id} className={styles.card}>
           <div className={styles.heading}><h2>{row.name}</h2><span>Lv. {row.level}</span></div>
           <p className={styles.base}>{current.equipment} · {current.sockets}소켓{row.edition && ` · ${row.edition}`}</p>
           <ol className={styles.runes} aria-label="룬 장착 순서">{current.runes.map((name, index) => <li key={`${row.id}-${index}`}><span className={styles.order}>{index + 1}</span><Image src={`/runes/${runeFiles[name as keyof typeof runeFiles]}.gif`} alt={`${name} 룬`} width={28} height={28} unoptimized /><span>{name}</span></li>)}</ol>

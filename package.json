@@ -10,6 +10,8 @@
     "lint": "eslint",
     "test:ias": "node --experimental-strip-types --test lib/ias/__tests__/*.test.ts",
     "test:ias:browser": "playwright test tests/ias-browser.spec.ts",
+    "test:guides": "node --experimental-strip-types --test tests/guide-skill-validation.test.ts",
+    "test:guides:browser": "playwright test tests/leveling-guides-browser.spec.ts",
     "test:items": "node --experimental-strip-types --test lib/items/variants.test.ts tests/items-data.test.ts",
     "test:items:browser": "playwright test tests/items-browser.spec.ts"
   },

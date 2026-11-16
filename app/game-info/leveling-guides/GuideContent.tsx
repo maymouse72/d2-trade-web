@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import sorceressContent from './content/sorceress.json';
 import paladinContent from './content/paladin.json';
+import necromancerContent from './content/necromancer.json';
+import assassinContent from './content/assassin.json';
+import Checklist from './Checklist';
 import styles from './leveling-guides.module.css';
 
-type GuideKey = 'sorceress' | 'paladin';
+export type GuideKey = 'sorceress' | 'paladin' | 'necromancer' | 'assassin';
 
 const guides: Record<GuideKey, { title: string; className: string; summary: string; content: string }> = {
   sorceress: {
@@ -17,6 +20,18 @@ const guides: Record<GuideKey, { title: string; className: string; summary: stri
     className: '팔라딘',
     summary: '신성한 불꽃과 열의로 시작해 축복받은 망치 빌드로 전환하는 육성 가이드입니다.',
     content: paladinContent,
+  },
+  necromancer: {
+    title: '강령술사 맨땅 육성 공략',
+    className: '강령술사 · 네크로맨서',
+    summary: '해골 전사로 첫 시체를 만들고 피해 증폭과 시체 폭발로 헬 바알까지 진행하는 조폭넥 가이드입니다.',
+    content: necromancerContent,
+  },
+  assassin: {
+    title: '암살자 맨땅 육성 공략',
+    className: '암살자 · 어쌔신',
+    summary: '화염 덫으로 노멀을 진행한 뒤 번개 파수기와 죽음 파수기를 사용하는 트랩씬 가이드입니다.',
+    content: assassinContent,
   },
 };
 
@@ -102,16 +117,23 @@ function parseBlocks(markdown: string) {
     const ordered = line.match(/^\d+[.)]\s+(.+)$/);
     if (unordered || ordered) {
       const isOrdered = Boolean(ordered);
-      const items = [];
+      const items: { text: string }[] = [];
+      let hasCheckboxes = false;
       while (index < lines.length) {
         const itemLine = lines[index].trim();
         const itemMatch = isOrdered ? itemLine.match(/^\d+[.)]\s+(.+)$/) : itemLine.match(/^[-*+]\s+(.+)$/);
         if (!itemMatch) break;
-        const text = itemMatch[1].replace(/^\[([ xX])\]\s*/, '');
-        items.push(<li key={`li-${index}`}>{inline(text, `li-${index}`)}</li>);
+        const checkbox = itemMatch[1].match(/^\[([ xX])\]\s*(.+)$/);
+        if (checkbox) hasCheckboxes = true;
+        items.push({ text: checkbox ? checkbox[2] : itemMatch[1] });
         index += 1;
       }
-      output.push(isOrdered ? <ol key={`list-${index}`}>{items}</ol> : <ul key={`list-${index}`}>{items}</ul>);
+      if (hasCheckboxes) {
+        output.push(<Checklist key={`checklist-${index}`} items={items.map((item) => item.text)} />);
+      } else {
+        const listItems = items.map((item, itemIndex) => <li key={`li-${index}-${itemIndex}`}>{inline(item.text, `li-${index}-${itemIndex}`)}</li>);
+        output.push(isOrdered ? <ol key={`list-${index}`}>{listItems}</ol> : <ul key={`list-${index}`}>{listItems}</ul>);
+      }
       continue;
     }
 
@@ -129,7 +151,7 @@ function parseBlocks(markdown: string) {
 function makeToc(markdown: string) {
   const usedSlugs = new Map<string, number>();
   return markdown.split(/\r?\n/).flatMap((line) => {
-    const heading = line.match(/^(#{1,2})\s+(.+)$/);
+    const heading = line.match(/^(#{1,3})\s+(.+)$/);
     if (!heading) return [];
     const title = heading[2].replace(/\*\*/g, '');
     const base = slug(title);
@@ -141,7 +163,7 @@ function makeToc(markdown: string) {
 
 export default function GuideContent({ guideKey }: { guideKey: GuideKey }) {
   const guide = guides[guideKey];
-  const toc = makeToc(guide.content);
+  const toc = makeToc(guide.content).filter((item) => item.level <= 2);
   return (
     <div className={styles.page}>
       <nav aria-label="위치" className={styles.breadcrumb}>
