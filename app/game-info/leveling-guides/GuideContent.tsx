@@ -3,10 +3,12 @@ import sorceressContent from './content/sorceress.json';
 import paladinContent from './content/paladin.json';
 import necromancerContent from './content/necromancer.json';
 import assassinContent from './content/assassin.json';
+import amazonContent from './content/amazon.json';
+import druidContent from './content/druid.json';
 import Checklist from './Checklist';
 import styles from './leveling-guides.module.css';
 
-export type GuideKey = 'sorceress' | 'paladin' | 'necromancer' | 'assassin';
+export type GuideKey = 'sorceress' | 'paladin' | 'necromancer' | 'assassin' | 'amazon' | 'druid';
 
 const guides: Record<GuideKey, { title: string; className: string; summary: string; content: string }> = {
   sorceress: {
@@ -32,6 +34,18 @@ const guides: Record<GuideKey, { title: string; className: string; summary: stri
     className: '암살자 · 어쌔신',
     summary: '화염 덫으로 노멀을 진행한 뒤 번개 파수기와 죽음 파수기를 사용하는 트랩씬 가이드입니다.',
     content: assassinContent,
+  },
+  amazon: {
+    title: '아마존 맨땅 육성 공략',
+    className: '아마존 · 자벨마',
+    summary: '맹독 투창과 역병 투창으로 시작해 번개의 격노·전류의 일격 자벨마로 전환하는 솔로 가이드입니다.',
+    content: amazonContent,
+  },
+  druid: {
+    title: '드루이드 맨땅 육성 공략',
+    className: '드루이드 · 엘리드루',
+    summary: '화염폭풍과 균열로 진행한 뒤 회오리바람·허리케인을 사용하는 엘리드루로 전환합니다.',
+    content: druidContent,
   },
 };
 

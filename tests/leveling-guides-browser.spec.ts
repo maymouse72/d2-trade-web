@@ -9,7 +9,7 @@ test('profession leveling guide directory and articles render without layout or 
   await expect(page.getByRole('heading', { name: '직업별 맨땅 공략집' })).toBeVisible();
   await expect(page.getByRole('link', { name: /원소술사/ })).toHaveAttribute('href', '/game-info/leveling-guides/sorceress');
   await expect(page.getByRole('link', { name: /성기사/ })).toHaveAttribute('href', '/game-info/leveling-guides/paladin');
-  await expect(page.getByText('준비 중')).toHaveCount(4);
+  await expect(page.getByText('준비 중')).toHaveCount(2);
   await expect(page.getByRole('navigation', { name: '게임 정보 메뉴' })).toContainText('직업별 맨땅 공략집');
 
   const pageWidth = await page.evaluate(() => ({ viewport: document.documentElement.clientWidth, content: document.documentElement.scrollWidth }));
@@ -31,6 +31,43 @@ test('profession leveling guide directory and articles render without layout or 
   const paladinWidth = await page.evaluate(() => ({ viewport: document.documentElement.clientWidth, content: document.documentElement.scrollWidth }));
   expect(paladinWidth.content).toBeLessThanOrEqual(paladinWidth.viewport);
   expect(errors).toEqual([]);
+});
+
+test('Amazon and Druid guides are searchable, linked, complete, and mobile-safe', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+
+  await page.goto('/game-info/leveling-guides');
+  await page.getByRole('searchbox', { name: '직업 검색' }).fill('자벨마');
+  await expect(page.getByRole('link', { name: /아마존/ })).toHaveAttribute('href', '/game-info/leveling-guides/amazon');
+  await expect(page.getByRole('link', { name: /드루이드/ })).toHaveCount(0);
+
+  await page.goto('/game-info/leveling-guides/amazon');
+  await expect(page.getByRole('heading', { name: '아마존 맨땅 육성 공략' })).toBeVisible();
+  await expect(page.locator('article')).toContainText('맹독 투창');
+  await expect(page.locator('article')).toContainText('합계');
+  await expect(page.locator('article')).toContainText('96');
+  await expect(page.locator('article a[href="/runewords#runeword-70"]')).toHaveText('잠행 룬워드 도감');
+  await page.getByText('목차 보기').click();
+  await page.getByRole('link', { name: /7\. 레벨 41~85/ }).click();
+  await expect.poll(() => page.evaluate(() => decodeURIComponent(location.hash))).toBe('#7-레벨-41-85-투자-순서');
+
+  await page.goto('/game-info/leveling-guides/druid');
+  await expect(page.getByRole('heading', { name: '드루이드 맨땅 육성 공략' })).toBeVisible();
+  await expect(page.locator('article')).toContainText('까마귀');
+  await expect(page.locator('article')).toContainText('FCR');
+  await expect(page.locator('article')).toContainText('68%');
+  await expect(page.locator('article a[href="/runewords#runeword-69"]')).toHaveText('잎새 룬워드 도감');
+  await page.getByRole('checkbox').first().check();
+  await expect(page.getByRole('status').filter({ hasText: '완료 1 /' })).toBeVisible();
+
+  const width = await page.evaluate(() => ({ viewport: document.documentElement.clientWidth, content: document.documentElement.scrollWidth }));
+  expect(width.content).toBeLessThanOrEqual(width.viewport);
+  expect(errors).toEqual([]);
+
+  await page.getByRole('link', { name: '← 직업별 공략 목록' }).click();
+  await expect(page.getByRole('heading', { name: '직업별 맨땅 공략집' })).toBeVisible();
 });
 
 test('necromancer and assassin guides expose searchable pages, verified skills, checklists, and runeword links', async ({ page }) => {

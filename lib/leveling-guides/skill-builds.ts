@@ -54,6 +54,7 @@ export type SkillProgressionStep = {
   level: number;
   questRewards: number;
   allocation: SkillAllocation;
+  unspentPoints?: number;
 };
 
 export function validateSkillProgression(classSkills: SkillTree, steps: readonly SkillProgressionStep[]) {
@@ -61,7 +62,15 @@ export function validateSkillProgression(classSkills: SkillTree, steps: readonly
   let previous: SkillAllocation = {};
   for (const step of steps) {
     const result = validateSkillAllocation(classSkills, step.allocation, step.level, step.questRewards);
-    errors.push(...result.errors.map((error) => `레벨 ${step.level}: ${error}`));
+    const unspentPoints = step.unspentPoints ?? 0;
+    if (!Number.isInteger(unspentPoints) || unspentPoints < 0) {
+      errors.push(`레벨 ${step.level}: 미투자 포인트는 0 이상의 정수여야 합니다.`);
+    }
+    const totalWithUnspent = result.total + unspentPoints;
+    if (totalWithUnspent !== result.available) {
+      errors.push(`레벨 ${step.level}: 투자 ${result.total} + 미투자 ${unspentPoints} = 사용 가능 ${result.available}이어야 합니다.`);
+    }
+    errors.push(...result.errors.filter((error) => !error.startsWith('포인트 합계')).map((error) => `레벨 ${step.level}: ${error}`));
     for (const [skill, points] of Object.entries(step.allocation)) {
       if (points < (previous[skill] ?? 0)) errors.push(`레벨 ${step.level}: ${skill} 포인트가 이전 단계보다 감소했습니다.`);
     }
@@ -108,6 +117,43 @@ export const assassinSkills: SkillTree = {
   fade: { requiredLevel: 12, prerequisites: ['cloakOfShadows'] },
 };
 
+export const amazonSkills: SkillTree = {
+  jab: { requiredLevel: 1 },
+  criticalStrike: { requiredLevel: 1 },
+  innerSight: { requiredLevel: 1 },
+  dodge: { requiredLevel: 6 },
+  powerStrike: { requiredLevel: 6, prerequisites: ['jab'] },
+  poisonJavelin: { requiredLevel: 6 },
+  slowMissiles: { requiredLevel: 12, prerequisites: ['innerSight'] },
+  avoid: { requiredLevel: 12, prerequisites: ['dodge'] },
+  lightningBolt: { requiredLevel: 12, prerequisites: ['poisonJavelin'] },
+  penetrate: { requiredLevel: 18, prerequisites: ['criticalStrike'] },
+  chargedStrike: { requiredLevel: 18, prerequisites: ['powerStrike', 'lightningBolt'] },
+  plagueJavelin: { requiredLevel: 18, prerequisites: ['lightningBolt'] },
+  decoy: { requiredLevel: 24, prerequisites: ['slowMissiles'] },
+  evade: { requiredLevel: 24, prerequisites: ['avoid'] },
+  valkyrie: { requiredLevel: 30, prerequisites: ['decoy', 'evade'] },
+  pierce: { requiredLevel: 30, prerequisites: ['penetrate'] },
+  lightningStrike: { requiredLevel: 30, prerequisites: ['chargedStrike'] },
+  lightningFury: { requiredLevel: 30, prerequisites: ['plagueJavelin'] },
+};
+
+export const druidSkills: SkillTree = {
+  firestorm: { requiredLevel: 1 },
+  raven: { requiredLevel: 1 },
+  oakSage: { requiredLevel: 6 },
+  summonSpiritWolf: { requiredLevel: 6, prerequisites: ['raven'] },
+  moltenBoulder: { requiredLevel: 6, prerequisites: ['firestorm'] },
+  arcticBlast: { requiredLevel: 6 },
+  fissure: { requiredLevel: 12, prerequisites: ['moltenBoulder'] },
+  cycloneArmor: { requiredLevel: 12, prerequisites: ['arcticBlast'] },
+  summonDireWolf: { requiredLevel: 18, prerequisites: ['oakSage', 'summonSpiritWolf'] },
+  twister: { requiredLevel: 18, prerequisites: ['cycloneArmor'] },
+  tornado: { requiredLevel: 24, prerequisites: ['twister'] },
+  summonGrizzly: { requiredLevel: 30, prerequisites: ['summonDireWolf'] },
+  hurricane: { requiredLevel: 30, prerequisites: ['tornado'] },
+};
+
 export const necromancerBuilds = {
   level40: {
     raiseSkeleton: 20, skeletonMastery: 14, clayGolem: 1, golemMastery: 1,
@@ -137,5 +183,61 @@ export const assassinBuilds = {
     fireBlast: 20, shockWeb: 10, chargedBoltSentry: 20, lightningSentry: 20,
     deathSentry: 20, clawMastery: 1, burstOfSpeed: 1, psychicHammer: 1,
     cloakOfShadows: 1, mindBlast: 1, fade: 1,
+  },
+} satisfies Record<string, SkillAllocation>;
+
+export const amazonBuilds = {
+  poisonLevel40: {
+    jab: 1, innerSight: 1, criticalStrike: 1, poisonJavelin: 20,
+    lightningBolt: 1, plagueJavelin: 18, dodge: 1,
+  },
+  poisonLevel40NoQuests: {
+    jab: 1, innerSight: 1, criticalStrike: 1, poisonJavelin: 20,
+    lightningBolt: 1, plagueJavelin: 14, dodge: 1,
+  },
+  lightningLevel40: {
+    jab: 1, powerStrike: 1, poisonJavelin: 1, lightningBolt: 1,
+    chargedStrike: 16, lightningStrike: 1, plagueJavelin: 1, lightningFury: 11,
+    criticalStrike: 1, penetrate: 1, pierce: 1, innerSight: 1, slowMissiles: 1,
+    decoy: 1, dodge: 1, avoid: 1, evade: 1, valkyrie: 1,
+  },
+  lightningLevel85: {
+    jab: 1, powerStrike: 20, poisonJavelin: 1, lightningBolt: 1,
+    chargedStrike: 20, lightningStrike: 20, plagueJavelin: 1, lightningFury: 20,
+    criticalStrike: 1, penetrate: 1, pierce: 1, innerSight: 1, slowMissiles: 1,
+    decoy: 3, dodge: 1, avoid: 1, evade: 1, valkyrie: 1,
+  },
+  lightningLevel85NoQuests: {
+    jab: 1, powerStrike: 14, poisonJavelin: 1, lightningBolt: 1,
+    chargedStrike: 20, lightningStrike: 20, plagueJavelin: 1, lightningFury: 20,
+    criticalStrike: 1, penetrate: 1, pierce: 1, innerSight: 1, slowMissiles: 1,
+    decoy: 1,
+  },
+  hybridLevel85: {
+    jab: 1, powerStrike: 3, poisonJavelin: 20, lightningBolt: 1,
+    chargedStrike: 20, lightningStrike: 1, plagueJavelin: 20, lightningFury: 20,
+    criticalStrike: 1, penetrate: 1, pierce: 1, innerSight: 1, slowMissiles: 1,
+    decoy: 1, dodge: 1, avoid: 1, evade: 1, valkyrie: 1,
+  },
+} satisfies Record<string, SkillAllocation>;
+
+export const druidBuilds = {
+  fireLevel40: { firestorm: 20, oakSage: 1, moltenBoulder: 1, arcticBlast: 1, fissure: 20 },
+  fireLevel40NoQuests: { firestorm: 16, oakSage: 1, moltenBoulder: 1, arcticBlast: 1, fissure: 20 },
+  windLevel40: {
+    raven: 1, arcticBlast: 1, cycloneArmor: 8, twister: 1, tornado: 17,
+    hurricane: 11, oakSage: 1, summonSpiritWolf: 1, summonDireWolf: 1, summonGrizzly: 1,
+  },
+  windLevel40NoQuests: {
+    raven: 1, arcticBlast: 1, cycloneArmor: 4, twister: 1, tornado: 17,
+    hurricane: 11, oakSage: 1, summonSpiritWolf: 1, summonDireWolf: 1, summonGrizzly: 1,
+  },
+  windLevel85: {
+    raven: 1, arcticBlast: 1, cycloneArmor: 20, twister: 20, tornado: 20,
+    hurricane: 20, oakSage: 11, summonSpiritWolf: 1, summonDireWolf: 1, summonGrizzly: 1,
+  },
+  windLevel85NoQuests: {
+    raven: 1, arcticBlast: 1, cycloneArmor: 18, twister: 20, tornado: 20,
+    hurricane: 20, oakSage: 1, summonSpiritWolf: 1, summonDireWolf: 1, summonGrizzly: 1,
   },
 } satisfies Record<string, SkillAllocation>;
