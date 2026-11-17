@@ -13,12 +13,14 @@
     "test:guides": "node --experimental-strip-types --test tests/guide-skill-validation.test.ts",
     "test:guides:browser": "playwright test tests/leveling-guides-browser.spec.ts",
     "test:items": "node --experimental-strip-types --test lib/items/variants.test.ts tests/items-data.test.ts",
-    "test:items:browser": "playwright test tests/items-browser.spec.ts"
+    "test:items:browser": "playwright test tests/items-browser.spec.ts",
+    "test:runeword-bases": "node --experimental-strip-types --test lib/runeword-bases/*.test.ts",
+    "report:runeword-bases": "node --experimental-strip-types scripts/generate-runeword-base-report.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.3",
     "@types/web-push": "^3.6.4",
-    "next": "16.4.3",
+    "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "web-push": "^3.6.7"
@@ -32,7 +34,7 @@
     "@types/react-dom": "^19",
     "autoprefixer": "^10.6.1",
     "eslint": "^9",
-    "eslint-config-next": "16.4.3",
+    "eslint-config-next": "16.4.6",
     "postcss": "^8.5.30",
     "tailwindcss": "^4.3.3",
     "typescript": "^5"

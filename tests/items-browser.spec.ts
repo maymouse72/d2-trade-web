@@ -75,19 +75,46 @@ for (const route of pages) {
       await search.fill('Eternity');
       const card = page.locator('article').filter({ hasText: 'Eternity' });
       await expect(card).toBeVisible();
-      await card.getByText('옵션 보기').click();
+      await card.getByText('옵션 및 추천 베이스 보기').click();
       await expect(card).toContainText('+300~390%');
       await expect(card).toContainText('미사일 무기');
+      await expect(card).toContainText('추천 베이스 아이템');
+      await expect(card).toContainText('(EL)');
       await page.getByLabel('장비 종류').selectOption('근접 무기 및 미사일 무기');
       await expect(card).toBeVisible();
       await page.getByRole('button', { name: '전체 초기화' }).click();
       await search.fill('Mania');
       const mania = page.locator('article').filter({ hasText: 'Mania' });
       await expect(mania).toBeVisible();
-      await expect(mania.getByText('옵션 보기')).toBeVisible();
-      await mania.getByText('옵션 보기').click();
+      await expect(mania.getByText('옵션 및 추천 베이스 보기')).toBeVisible();
+      await mania.getByText('옵션 및 추천 베이스 보기').click();
       await expect(mania).not.toContainText('검토 필요');
       await expect(mania).not.toContainText('옵션을 적용하지 않습니다');
+    }
+
+    if (route.path === '/runewords') {
+      await page.getByRole('button', { name: '전체 초기화' }).click();
+      const spiritSword = page.locator('#runeword-59');
+      await spiritSword.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(spiritSword).toContainText('크리스탈 소드 (NO)');
+      await expect(spiritSword).toContainText('롱 소드 (NO)');
+      await expect(spiritSword).toContainText('최종 장비');
+      const spiritShield = page.locator('#runeword-60');
+      await spiritShield.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(spiritShield.getByRole('heading', { name: '방패', exact: true })).toBeVisible();
+      await expect(spiritShield.getByRole('heading', { name: '성기사 방패', exact: true })).toBeVisible();
+      if (test.info().project.name === 'desktop-chrome') {
+        const allRunewords = page.locator('article[id^="runeword-"]');
+        const count = await allRunewords.count();
+        expect(count).toBe(102);
+        for (let index = 0; index < count; index += 1) {
+          const card = allRunewords.nth(index);
+          const details = card.locator('details');
+          if (await details.getAttribute('open') === null) await details.locator('summary').click();
+          await expect(card.locator('section[aria-label$="추천 베이스"]')).toBeVisible();
+          await expect(card.locator('section[aria-label$="추천 베이스"] li').first()).toBeVisible();
+        }
+      }
     }
 
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
