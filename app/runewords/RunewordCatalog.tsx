@@ -8,7 +8,7 @@ import runeFiles from './runes.json';
 import styles from './catalog.module.css';
 import { DEFAULT_MODE_PRESET, getModeContext } from '../item-catalog/mode-presets';
 import { resolveItemVariant, type ItemVariant } from '../../lib/items/variants';
-import { getBaseRecommendations, type BasePurpose } from '../../lib/runeword-bases';
+import { getBaseRecommendations, hasReviewedBaseRecommendations, type BasePurpose } from '../../lib/runeword-bases';
 
 const runes = '엘 엘드 티르 네프 에드 아이드 탈 랄 오르트 주울 앰 솔 샤엘 돌 헬 이오 룸 코 팔 렘 풀 우움 말 이스트 굴 벡스 오움 로 수르 베르 자 참 조드'.split(' ');
 const purposeNames: Record<BasePurpose, string> = { leveling: '맨땅·육성', endgame: '최종 장비', mercenary: '용병' };
@@ -55,10 +55,11 @@ export default function RunewordCatalog() {
           <details><summary>옵션 및 추천 베이스 보기</summary>
             <section className={styles.recommendations} aria-label={`${row.name} 추천 베이스`}>
               <h3>추천 베이스 아이템</h3>
+              {!hasReviewedBaseRecommendations(row.id) && <p className={styles.recommendationPending}>실전 추천 베이스를 검토 중입니다. 확인이 끝난 후보만 표시합니다.</p>}
               {Object.entries(groupedRecommendations).map(([group, recommendations]) => <div className={styles.recommendationGroup} key={group} aria-label={`${group} 추천 베이스`}>
-              <h4>{group}</h4><ul>{recommendations.map(({ baseItem, purposes, reason }) => <li key={baseItem.id}>
+              <h4>{group}</h4><ul>{recommendations.map(({ baseItem, purposes, reason, condition }) => <li key={baseItem.id}>
                 <div className={styles.recommendationHeading}><strong>{baseItem.nameKo} ({baseItem.tier})</strong>{baseItem.classRestriction && <span>{baseItem.classRestriction} 전용</span>}</div>
-                <p>{reason}</p><div className={styles.purposes}>{purposes.map(purpose => <span key={purpose}>{purposeNames[purpose]}</span>)}</div>
+                <p>{reason}</p>{condition && <p className={styles.recommendationCondition}>참고: {condition}</p>}<div className={styles.purposes}>{purposes.map(purpose => <span key={purpose}>{purposeNames[purpose]}</span>)}</div>
               </li>)}</ul></div>)}
             </section>
             <p className={styles.options}>{current.options}</p>{current.base!==row.base&&<p className={styles.base}>기본 장비 조건: {current.base}</p>}

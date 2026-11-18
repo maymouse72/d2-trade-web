@@ -10,6 +10,7 @@
 .catalog{padding:0 0 60px}
 .recommendations{margin:4px 0 20px;padding:14px 16px;border:1px solid #49391f;border-radius:6px;background:#0d0d0d;min-width:0}
 .recommendations h3{margin:0 0 12px;color:#c5a059;font-size:15px}
+.recommendations .recommendationPending{margin:0;color:#aaa;font-size:12px;line-height:1.6}
 .recommendationGroup+.recommendationGroup{margin-top:14px;padding-top:12px;border-top:1px solid #28231a}
 .recommendationGroup h4{margin:0 0 8px;color:#bda16c;font-size:12px;font-weight:600}
 .recommendations ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:0}
@@ -18,6 +19,7 @@
 .recommendationHeading strong{font-size:14px}
 .recommendationHeading span{font-size:11px;color:#aaa}
 .recommendations li p{margin:7px 0;color:#b9b9b9;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.recommendations li .recommendationCondition{color:#969696;font-size:11px}
 .purposes{display:flex;flex-wrap:wrap;gap:5px}
 .purposes span{border:1px solid #49391f;border-radius:10px;padding:2px 7px;color:#c5a059;font-size:10px}
 @media(max-width:650px){.recommendations{padding:12px}.recommendations ul{grid-template-columns:1fr}}
