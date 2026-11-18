@@ -8,6 +8,7 @@ const pages = [
 
 for (const route of pages) {
   test(`${route.path}: simplified catalog UI, interactions, and responsive layout`, async ({ page }) => {
+    test.setTimeout(90_000);
     const errors: string[] = [];
     page.on('pageerror', error => errors.push(error.message));
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
@@ -98,23 +99,59 @@ for (const route of pages) {
       await spiritSword.getByText('옵션 및 추천 베이스 보기').click();
       await expect(spiritSword).toContainText('크리스탈 소드 (NO)');
       await expect(spiritSword).toContainText('롱 소드 (NO)');
-      await expect(spiritSword).toContainText('최종 장비');
+      await expect(spiritSword).toContainText('낮은 요구 능력치로 초반 시전 캐릭터에게 적합합니다.');
+      await expect(spiritSword).not.toContainText('페이즈 블레이드');
       const spiritShield = page.locator('#runeword-60');
       await spiritShield.getByText('옵션 및 추천 베이스 보기').click();
       await expect(spiritShield.getByRole('heading', { name: '방패', exact: true })).toBeVisible();
       await expect(spiritShield.getByRole('heading', { name: '성기사 방패', exact: true })).toBeVisible();
-      if (test.info().project.name === 'desktop-chrome') {
-        const allRunewords = page.locator('article[id^="runeword-"]');
-        const count = await allRunewords.count();
-        expect(count).toBe(102);
-        for (let index = 0; index < count; index += 1) {
-          const card = allRunewords.nth(index);
-          const details = card.locator('details');
-          if (await details.getAttribute('open') === null) await details.locator('summary').click();
-          await expect(card.locator('section[aria-label$="추천 베이스"]')).toBeVisible();
-          await expect(card.locator('section[aria-label$="추천 베이스"] li').first()).toBeVisible();
-        }
+      const rhyme = page.locator('#runeword-1');
+      await rhyme.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(rhyme).toContainText('스몰 쉴드 (NO)');
+      await expect(rhyme).not.toContainText('모너크 (EL)');
+      const death = page.locator('#runeword-76');
+      await death.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(death).toContainText('파괴 불가');
+      const obsession = page.locator('#runeword-79');
+      await obsession.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(obsession).toContainText('워 스태프 (NO)');
+      await expect(obsession).toContainText('아이템 레벨 26 이상');
+      const passion = page.locator('#runeword-57');
+      await passion.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(passion).toContainText('열의·광폭화 기술과 공격 속도 옵션');
+      await expect(passion).not.toContainText('광신 효과');
+      const harmony = page.locator('#runeword-74');
+      await harmony.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(harmony).toContainText('원기 오라');
+      await expect(harmony).not.toContainText('발키리 소환 옵션');
+      const silence = page.locator('#runeword-87');
+      await silence.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(silence).toContainText('아이템 레벨 41 이상');
+      const unbending = page.locator('#runeword-31');
+      await unbending.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(unbending).toContainText('페이즈 블레이드 (EL)');
+      await expect(unbending).not.toContainText('크리스탈 소드');
+      const metamorphosis = page.locator('#runeword-88');
+      await metamorphosis.getByText('옵션 및 추천 베이스 보기').click();
+      await expect(metamorphosis).toContainText('늑대 머리 (NO)');
+      await expect(metamorphosis).toContainText('피의 정령 (EL)');
+      await expect(metamorphosis).toContainText('드루이드 전용');
+      await expect(metamorphosis).toContainText('아이템 레벨 26 이상');
+      const allRunewords = page.locator('article[id^="runeword-"]');
+      const count = await allRunewords.count();
+      expect(count).toBe(102);
+      let pendingCount = 0;
+      for (let index = 0; index < count; index += 1) {
+        const card = allRunewords.nth(index);
+        const details = card.locator('details');
+        if (await details.getAttribute('open') === null) await details.locator('summary').click();
+        await expect(card.locator('section[aria-label$="추천 베이스"]')).toBeVisible();
+        const recommendationList = card.locator('section[aria-label$="추천 베이스"] li');
+        const reviewNotice = card.getByText('실전 추천 베이스를 검토 중입니다. 확인이 끝난 후보만 표시합니다.');
+        if (await reviewNotice.count() === 1) pendingCount += 1;
+        expect(await recommendationList.count() > 0 || await reviewNotice.count() === 1, `runeword ${index + 1} must show reviewed recommendations or review notice`).toBe(true);
       }
+      expect(pendingCount).toBe(0);
     }
 
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);

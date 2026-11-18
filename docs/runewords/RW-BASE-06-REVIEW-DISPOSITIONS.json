@@ -1,0 +1,3341 @@
+{
+  "source": "RW-BASE-02-DATA-REPORT.md",
+  "sourceLinks": 398,
+  "dispositions": {
+    "KEEP": 0,
+    "REVISE": 192,
+    "REMOVE": 210,
+    "ADD": 14,
+    "REVIEW": 0
+  },
+  "links": [
+    {
+      "runewordId": 1,
+      "runeword": "각운 (Rhyme)",
+      "baseItemId": "bone-shield",
+      "baseItemNameKo": "본 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 쉴드를 각운 (Rhyme)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 1,
+      "runeword": "각운 (Rhyme)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 각운 (Rhyme)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 1,
+      "runeword": "각운 (Rhyme)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항 베이스에 각운의 결빙 방지와 저항 옵션을 더합니다."
+    },
+    {
+      "runewordId": 1,
+      "runeword": "각운 (Rhyme)",
+      "baseItemId": "large-shield",
+      "baseItemNameKo": "라지 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 라지 쉴드를 각운 (Rhyme)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 1,
+      "runeword": "각운 (Rhyme)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 각운 (Rhyme)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 1,
+      "runeword": "각운 (Rhyme)",
+      "baseItemId": "small-shield",
+      "baseItemNameKo": "스몰 쉴드",
+      "disposition": "ADD",
+      "rationale": "낮은 등급과 요구 능력치의 2소켓 방패로 각운의 결빙 방지와 저항을 활용합니다."
+    },
+    {
+      "runewordId": 2,
+      "runeword": "강철(Steel)",
+      "baseItemId": "broad-sword",
+      "baseItemNameKo": "브로드 소드",
+      "disposition": "REVISE",
+      "rationale": "저레벨에 구하기 쉬운 검 계열로 강철의 공격 속도와 상처 악화 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 2,
+      "runeword": "강철(Steel)",
+      "baseItemId": "broad-axe",
+      "baseItemNameKo": "브로드 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 브로드 액스를 강철(Steel)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 2,
+      "runeword": "강철(Steel)",
+      "baseItemId": "flail",
+      "baseItemNameKo": "프레일",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 프레일를 강철(Steel)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 2,
+      "runeword": "강철(Steel)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크리스탈 소드를 강철(Steel)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 2,
+      "runeword": "강철(Steel)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 강철(Steel)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 3,
+      "runeword": "강함(Strength)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REVISE",
+      "rationale": "낮은 단계에 제작해 생명력 흡수와 강한 타격 옵션을 이용하기 편한 검입니다."
+    },
+    {
+      "runewordId": 3,
+      "runeword": "강함(Strength)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 강함(Strength)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 3,
+      "runeword": "강함(Strength)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "후반 도끼 숙련을 활용하면서 강한 타격 옵션을 살리는 선택입니다."
+    },
+    {
+      "runewordId": 3,
+      "runeword": "강함(Strength)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 강함(Strength)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 3,
+      "runeword": "강함(Strength)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 강함(Strength)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 4,
+      "runeword": "고대인의 서약(Ancients' Pledge)",
+      "baseItemId": "large-shield",
+      "baseItemNameKo": "라지 쉴드",
+      "disposition": "REVISE",
+      "rationale": "초중반에 3소켓을 맞추기 쉬운 범용 방패 선택입니다."
+    },
+    {
+      "runewordId": 4,
+      "runeword": "고대인의 서약(Ancients' Pledge)",
+      "baseItemId": "targe",
+      "baseItemNameKo": "타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항을 활용하는 가벼운 육성용 방패입니다."
+    },
+    {
+      "runewordId": 4,
+      "runeword": "고대인의 서약(Ancients' Pledge)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 고대인의 서약(Ancients' Pledge)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 4,
+      "runeword": "고대인의 서약(Ancients' Pledge)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 고대인의 서약(Ancients' Pledge)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 4,
+      "runeword": "고대인의 서약(Ancients' Pledge)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 타아지를 고대인의 서약(Ancients' Pledge)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 5,
+      "runeword": "광채(Splendor)",
+      "baseItemId": "bone-shield",
+      "baseItemNameKo": "본 쉴드",
+      "disposition": "REVISE",
+      "rationale": "2소켓 방패에 기술과 시전 속도 옵션을 더하는 육성용 선택입니다."
+    },
+    {
+      "runewordId": 5,
+      "runeword": "광채(Splendor)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 광채(Splendor)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 5,
+      "runeword": "광채(Splendor)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항 베이스에 시전용 방패 옵션을 더할 수 있습니다."
+    },
+    {
+      "runewordId": 5,
+      "runeword": "광채(Splendor)",
+      "baseItemId": "large-shield",
+      "baseItemNameKo": "라지 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 라지 쉴드를 광채(Splendor)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 5,
+      "runeword": "광채(Splendor)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 광채(Splendor)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 6,
+      "runeword": "광휘(Radiance)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "초중반에 구할 수 있는 일반 투구로 방어·자원 보조 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 6,
+      "runeword": "광휘(Radiance)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 데몬헤드를 광휘(Radiance)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 6,
+      "runeword": "광휘(Radiance)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 광휘(Radiance)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 7,
+      "runeword": "구렁텅이(Nadir)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "초반에 쉽게 구하는 투구로 저렴한 룬 조합을 활용하기 좋습니다."
+    },
+    {
+      "runewordId": 7,
+      "runeword": "구렁텅이(Nadir)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 데몬헤드를 구렁텅이(Nadir)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 7,
+      "runeword": "구렁텅이(Nadir)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 구렁텅이(Nadir)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 7,
+      "runeword": "구렁텅이(Nadir)",
+      "baseItemId": "shako",
+      "baseItemNameKo": "샤코",
+      "disposition": "REVISE",
+      "rationale": "2소켓을 수용하는 투구 대안으로 방어와 능력치 보조를 얻습니다."
+    },
+    {
+      "runewordId": 8,
+      "runeword": "귀감(Pattern)",
+      "baseItemId": "greater-talons",
+      "baseItemNameKo": "그레이터 탤런",
+      "disposition": "REVISE",
+      "rationale": "암살자 클러의 기술 자동 옵션을 살려 귀감의 저항과 원소 피해를 활용합니다."
+    },
+    {
+      "runewordId": 8,
+      "runeword": "귀감(Pattern)",
+      "baseItemId": "runic-talons",
+      "baseItemNameKo": "루닉 탤런",
+      "disposition": "REVISE",
+      "rationale": "후반 클러 기술 자동 옵션을 노릴 때 사용할 수 있는 엘리트 선택입니다."
+    },
+    {
+      "runewordId": 8,
+      "runeword": "귀감(Pattern)",
+      "baseItemId": "suwayyah",
+      "baseItemNameKo": "수웨이야",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 수웨이야를 귀감(Pattern)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 9,
+      "runeword": "균열(Rift)",
+      "baseItemId": "partizan",
+      "baseItemNameKo": "파르티잔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 파르티잔를 균열(Rift)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 9,
+      "runeword": "균열(Rift)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "폴암에 균열의 원소 발동 옵션을 담아 근접 시전 빌드에 활용합니다."
+    },
+    {
+      "runewordId": 9,
+      "runeword": "균열(Rift)",
+      "baseItemId": "caduceus",
+      "baseItemNameKo": "카두세우스",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 스킬이 붙은 베이스를 살릴 수 있습니다."
+    },
+    {
+      "runewordId": 9,
+      "runeword": "균열(Rift)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 균열(Rift)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 9,
+      "runeword": "균열(Rift)",
+      "baseItemId": "cryptic-axe",
+      "baseItemNameKo": "크립틱 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크립틱 액스를 균열(Rift)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 10,
+      "runeword": "긍지(Pride)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "2막 용병에게 집중 오라를 제공하는 폴암 베이스입니다."
+    },
+    {
+      "runewordId": 10,
+      "runeword": "긍지(Pride)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "엘리트 폴암을 용병용 집중 오라 베이스로 활용합니다."
+    },
+    {
+      "runewordId": 10,
+      "runeword": "긍지(Pride)",
+      "baseItemId": "mancatcher",
+      "baseItemNameKo": "맨캐쳐",
+      "disposition": "REVISE",
+      "rationale": "스피어 분류 베이스로 용병에게 집중 오라를 제공하는 대안입니다."
+    },
+    {
+      "runewordId": 10,
+      "runeword": "긍지(Pride)",
+      "baseItemId": "war-pike",
+      "baseItemNameKo": "워 파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 파이크를 긍지(Pride)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 10,
+      "runeword": "긍지(Pride)",
+      "baseItemId": "cryptic-axe",
+      "baseItemNameKo": "크립틱 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크립틱 액스를 긍지(Pride)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 11,
+      "runeword": "기근(Famine)",
+      "baseItemId": "broad-axe",
+      "baseItemNameKo": "브로드 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 브로드 액스를 기근(Famine)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 11,
+      "runeword": "기근(Famine)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 전용 피해 옵션을 살리고 한손 도끼 운용을 원하는 선택입니다."
+    },
+    {
+      "runewordId": 11,
+      "runeword": "기근(Famine)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REVISE",
+      "rationale": "해머 계열에서 원소 피해와 생명력 흡수 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 11,
+      "runeword": "기근(Famine)",
+      "baseItemId": "battle-hammer",
+      "baseItemNameKo": "배틀 해머",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 배틀 해머를 기근(Famine)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 11,
+      "runeword": "기근(Famine)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 기근(Famine)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 12,
+      "runeword": "기억(Memory)",
+      "baseItemId": "gnarled-staff",
+      "baseItemNameKo": "나알드 스태프",
+      "disposition": "REVISE",
+      "rationale": "소서리스 전용 기술이 붙은 육성용 스태프를 골라 에너지 보호막 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 12,
+      "runeword": "기억(Memory)",
+      "baseItemId": "archon-staff",
+      "baseItemNameKo": "아콘 스태프",
+      "disposition": "REVISE",
+      "rationale": "원하는 소서리스 기술 자동 옵션을 갖춘 후반 스태프 대안입니다."
+    },
+    {
+      "runewordId": 12,
+      "runeword": "기억(Memory)",
+      "baseItemId": "war-staff",
+      "baseItemNameKo": "워 스태프",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스태프를 기억(Memory)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 13,
+      "runeword": "깨우침(Enlightenment)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 브레스트 플레이트를 깨우침(Enlightenment)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 13,
+      "runeword": "깨우침(Enlightenment)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "소서리스 기술과 화염 저항을 쓰면서 갑옷 힘 요구 부담을 줄이는 선택입니다."
+    },
+    {
+      "runewordId": 13,
+      "runeword": "깨우침(Enlightenment)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "갑옷 방어력을 중시하는 후반 대안입니다."
+    },
+    {
+      "runewordId": 13,
+      "runeword": "깨우침(Enlightenment)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 깨우침(Enlightenment)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 14,
+      "runeword": "꺼져가는 불길(Flickering Flame)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "화염 기술과 적 화염 저항 감소를 활용하는 후반 투구 베이스입니다."
+    },
+    {
+      "runewordId": 14,
+      "runeword": "꺼져가는 불길(Flickering Flame)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 꺼져가는 불길(Flickering Flame)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 15,
+      "runeword": "꿈(Dream)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "투구 슬롯에서 3소켓을 맞추는 엘리트 대안입니다."
+    },
+    {
+      "runewordId": 15,
+      "runeword": "꿈(Dream)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 꿈(Dream)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 15,
+      "runeword": "꿈(Dream)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 꿈(Dream)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 15,
+      "runeword": "꿈(Dream)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 방패의 고유 저항을 활용할 수 있습니다."
+    },
+    {
+      "runewordId": 15,
+      "runeword": "꿈(Dream)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 꿈(Dream)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 16,
+      "runeword": "낙인(Brand)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 낙인(Brand)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 16,
+      "runeword": "낙인(Brand)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존 전용 활 스킬 보너스를 활용하는 선택입니다."
+    },
+    {
+      "runewordId": 16,
+      "runeword": "낙인(Brand)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 장착할 수 있는 활 베이스입니다."
+    },
+    {
+      "runewordId": 16,
+      "runeword": "낙인(Brand)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 낙인(Brand)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 16,
+      "runeword": "낙인(Brand)",
+      "baseItemId": "matriarchal-bow",
+      "baseItemNameKo": "메이트리어컬 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 메이트리어컬 보우를 낙인(Brand)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 17,
+      "runeword": "담금질(Temper)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "화염 저항과 생명력 옵션을 초중반 투구 슬롯에서 활용할 수 있습니다."
+    },
+    {
+      "runewordId": 17,
+      "runeword": "담금질(Temper)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "화염 저항 보완이 필요한 후반 캐릭터용 투구 선택입니다."
+    },
+    {
+      "runewordId": 17,
+      "runeword": "담금질(Temper)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 담금질(Temper)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 18,
+      "runeword": "돌(Stone)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "힘 부담과 방어력을 절충하기 쉬운 4소켓 갑옷입니다."
+    },
+    {
+      "runewordId": 18,
+      "runeword": "돌(Stone)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REVISE",
+      "rationale": "캐릭터용으로 방어력을 더 중시할 때 고르는 갑옷입니다."
+    },
+    {
+      "runewordId": 19,
+      "runeword": "마지막 소원(Last Wish)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련과 높은 무기 피해를 중시하는 대안입니다."
+    },
+    {
+      "runewordId": 19,
+      "runeword": "마지막 소원(Last Wish)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 마지막 소원(Last Wish)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 19,
+      "runeword": "마지막 소원(Last Wish)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 마지막 소원(Last Wish)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 19,
+      "runeword": "마지막 소원(Last Wish)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 마지막 소원(Last Wish)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 19,
+      "runeword": "마지막 소원(Last Wish)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도 관리 없이 마지막 소원의 근접 발동 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 20,
+      "runeword": "맹독(Venom)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도를 소모하지 않는 검 베이스에서 맹독의 독 피해 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 20,
+      "runeword": "맹독(Venom)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 맹독(Venom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 20,
+      "runeword": "맹독(Venom)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REVISE",
+      "rationale": "메이스 계열 베이스에서 독 피해를 쓰는 대안입니다."
+    },
+    {
+      "runewordId": 20,
+      "runeword": "맹독(Venom)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 맹독(Venom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 20,
+      "runeword": "맹독(Venom)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 맹독(Venom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 21,
+      "runeword": "명예(Honor)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 명예(Honor)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 21,
+      "runeword": "명예(Honor)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 명예(Honor)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 21,
+      "runeword": "명예(Honor)",
+      "baseItemId": "caduceus",
+      "baseItemNameKo": "카두세우스",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 기술 자동 옵션을 가진 셉터에서 명예 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 21,
+      "runeword": "명예(Honor)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REVISE",
+      "rationale": "육성 단계에서 명예의 생명력 흡수와 처치 후 자원 회복을 이용하기 쉽습니다."
+    },
+    {
+      "runewordId": 21,
+      "runeword": "명예(Honor)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 명예(Honor)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 22,
+      "runeword": "명예의 굴레(Chains of Honor)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "힘 요구치와 방어력의 균형을 원하는 캐릭터용 대안입니다."
+    },
+    {
+      "runewordId": 22,
+      "runeword": "명예의 굴레(Chains of Honor)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REVISE",
+      "rationale": "힘을 투자해 갑옷 방어력을 더 확보하려는 선택입니다."
+    },
+    {
+      "runewordId": 22,
+      "runeword": "명예의 굴레(Chains of Honor)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "메이지 플레이트의 최대 3소켓은 4소켓 룬워드와 호환되지 않아 제외했습니다."
+    },
+    {
+      "runewordId": 23,
+      "runeword": "모서리(Edge)",
+      "baseItemId": "hunters-bow",
+      "baseItemNameKo": "헌터스 보우",
+      "disposition": "REVISE",
+      "rationale": "초반에 구하기 쉬운 활로 저렴한 룬워드를 시험하기 좋습니다."
+    },
+    {
+      "runewordId": 23,
+      "runeword": "모서리(Edge)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병용으로 공격 속도를 고려한 활 선택입니다."
+    },
+    {
+      "runewordId": 23,
+      "runeword": "모서리(Edge)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 모서리(Edge)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 23,
+      "runeword": "모서리(Edge)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 그랜드 메이트런 보우를 모서리(Edge)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 23,
+      "runeword": "모서리(Edge)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 모서리(Edge)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 24,
+      "runeword": "모자이크(Mosaic)",
+      "baseItemId": "runic-talons",
+      "baseItemNameKo": "루닉 탤런",
+      "disposition": "REVISE",
+      "rationale": "엘리트 클러의 암살자 기술 자동 옵션을 활용하는 선택입니다."
+    },
+    {
+      "runewordId": 24,
+      "runeword": "모자이크(Mosaic)",
+      "baseItemId": "suwayyah",
+      "baseItemNameKo": "수웨이야",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 수웨이야를 모자이크(Mosaic)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 24,
+      "runeword": "모자이크(Mosaic)",
+      "baseItemId": "greater-talons",
+      "baseItemNameKo": "그레이터 탤런",
+      "disposition": "ADD",
+      "rationale": "암살자 전용 클러의 원하는 기술 자동 옵션을 살리는 베이스입니다."
+    },
+    {
+      "runewordId": 25,
+      "runeword": "무한(Infinity)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "2막 용병의 선고 오라를 위한 폴암 베이스로 활용합니다."
+    },
+    {
+      "runewordId": 25,
+      "runeword": "무한(Infinity)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "용병용 엘리트 폴암에서 선고 오라를 활용하는 대안입니다."
+    },
+    {
+      "runewordId": 25,
+      "runeword": "무한(Infinity)",
+      "baseItemId": "cryptic-axe",
+      "baseItemNameKo": "크립틱 액스",
+      "disposition": "REVISE",
+      "rationale": "용병이 착용 가능한 폴암에서 선고 오라를 활용합니다."
+    },
+    {
+      "runewordId": 25,
+      "runeword": "무한(Infinity)",
+      "baseItemId": "colossus-voulge",
+      "baseItemNameKo": "콜로서스 불즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 불즈를 무한(Infinity)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 25,
+      "runeword": "무한(Infinity)",
+      "baseItemId": "mancatcher",
+      "baseItemNameKo": "맨캐쳐",
+      "disposition": "REVISE",
+      "rationale": "스피어 분류 베이스로 용병에게 선고 오라를 제공합니다."
+    },
+    {
+      "runewordId": 26,
+      "runeword": "바람(Wind)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도 관리 없이 후반 근접 전투 옵션을 활용하는 검입니다."
+    },
+    {
+      "runewordId": 26,
+      "runeword": "바람(Wind)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련을 사용하는 캐릭터의 후반 선택입니다."
+    },
+    {
+      "runewordId": 26,
+      "runeword": "바람(Wind)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 바람(Wind)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 26,
+      "runeword": "바람(Wind)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 바람(Wind)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 26,
+      "runeword": "바람(Wind)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 바람(Wind)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 27,
+      "runeword": "방책(Bulwark)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "초중반 투구에 생명력 흡수와 피해 감소 옵션을 더하는 선택입니다."
+    },
+    {
+      "runewordId": 27,
+      "runeword": "방책(Bulwark)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "후반 투구 슬롯에서 생명력 흡수와 피해 감소를 활용합니다."
+    },
+    {
+      "runewordId": 27,
+      "runeword": "방책(Bulwark)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 방책(Bulwark)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 28,
+      "runeword": "배신(Treachery)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "용병용으로 방어력을 보완하며 에테리얼을 활용할 수 있습니다."
+    },
+    {
+      "runewordId": 28,
+      "runeword": "배신(Treachery)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 배신(Treachery)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 28,
+      "runeword": "배신(Treachery)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "ADD",
+      "rationale": "캐릭터가 입을 때 낮은 힘 요구치로 능력치를 아낍니다."
+    },
+    {
+      "runewordId": 29,
+      "runeword": "부(Wealth)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "갑옷 슬롯을 골드·마법 아이템 발견 목적에 사용하기 좋은 후반 베이스입니다."
+    },
+    {
+      "runewordId": 29,
+      "runeword": "부(Wealth)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 부(Wealth)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 30,
+      "runeword": "분노(Fury)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "내구도 관리 없이 분노의 공격 속도와 출혈 계열 옵션을 이용하는 검입니다."
+    },
+    {
+      "runewordId": 30,
+      "runeword": "분노(Fury)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련과 근접 전투 옵션을 함께 쓰려는 후반 선택입니다."
+    },
+    {
+      "runewordId": 30,
+      "runeword": "분노(Fury)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 분노(Fury)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 30,
+      "runeword": "분노(Fury)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 분노(Fury)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 30,
+      "runeword": "분노(Fury)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 분노(Fury)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 31,
+      "runeword": "불굴의 의지(Unbending Will)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 불굴의 의지(Unbending Will)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 31,
+      "runeword": "불굴의 의지(Unbending Will)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REVISE",
+      "rationale": "후반 양손 검 운용에서 룬워드의 생명력 흡수와 공격 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 31,
+      "runeword": "불굴의 의지(Unbending Will)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "ADD",
+      "rationale": "6소켓 검에 생명력 흡수와 명중 보조 옵션을 담는 선택입니다."
+    },
+    {
+      "runewordId": 32,
+      "runeword": "불사조(무기)(Phoenix)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련과 무기 피해를 우선하는 직접 사용 대안입니다."
+    },
+    {
+      "runewordId": 32,
+      "runeword": "불사조(무기)(Phoenix)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "내구도 소모가 없어 무기 옵션을 지속적으로 활용하기 편합니다."
+    },
+    {
+      "runewordId": 32,
+      "runeword": "불사조(무기)(Phoenix)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 블레이드 보우를 불사조(무기)(Phoenix)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 32,
+      "runeword": "불사조(무기)(Phoenix)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 불사조(무기)(Phoenix)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 32,
+      "runeword": "불사조(무기)(Phoenix)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 불사조(무기)(Phoenix)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 33,
+      "runeword": "불사조(쉴드)(Phoenix)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REVISE",
+      "rationale": "비성기사 직업이 사용하는 대표적인 4소켓 방패입니다."
+    },
+    {
+      "runewordId": 33,
+      "runeword": "불사조(쉴드)(Phoenix)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항과 방패 블록 특성을 활용합니다."
+    },
+    {
+      "runewordId": 33,
+      "runeword": "불사조(쉴드)(Phoenix)",
+      "baseItemId": "vortex-shield",
+      "baseItemNameKo": "볼텍스 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 볼텍스 쉴드를 불사조(쉴드)(Phoenix)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 33,
+      "runeword": "불사조(쉴드)(Phoenix)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항을 살리는 대체 방패 베이스입니다."
+    },
+    {
+      "runewordId": 34,
+      "runeword": "비(Rain)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "드루이드 기술 옵션을 갑옷 슬롯에 더하면서 후반 방어구로 운용합니다."
+    },
+    {
+      "runewordId": 34,
+      "runeword": "비(Rain)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 비(Rain)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 35,
+      "runeword": "뼈(Bone)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "방어력과 강령술사 기술 옵션을 함께 원하는 후반 대안입니다."
+    },
+    {
+      "runewordId": 35,
+      "runeword": "뼈(Bone)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 뼈(Bone)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 35,
+      "runeword": "뼈(Bone)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "ADD",
+      "rationale": "강령술사 기술 옵션을 사용하면서 갑옷의 힘 요구 부담을 낮춥니다."
+    },
+    {
+      "runewordId": 36,
+      "runeword": "서약(Oath)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 서약(Oath)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 36,
+      "runeword": "서약(Oath)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련과 한손 운용을 고려하는 대안입니다."
+    },
+    {
+      "runewordId": 36,
+      "runeword": "서약(Oath)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 서약(Oath)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 36,
+      "runeword": "서약(Oath)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REVISE",
+      "rationale": "파괴 불가 옵션과 높은 양손 피해를 활용하는 검입니다."
+    },
+    {
+      "runewordId": 36,
+      "runeword": "서약(Oath)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 서약(Oath)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 37,
+      "runeword": "서풍(Zephyr)",
+      "baseItemId": "hunters-bow",
+      "baseItemNameKo": "헌터스 보우",
+      "disposition": "REVISE",
+      "rationale": "초반에 구하기 쉬운 활로 이동·공격 보조 옵션을 얻습니다."
+    },
+    {
+      "runewordId": 37,
+      "runeword": "서풍(Zephyr)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 블레이드 보우를 서풍(Zephyr)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 37,
+      "runeword": "서풍(Zephyr)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 서풍(Zephyr)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 37,
+      "runeword": "서풍(Zephyr)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 그랜드 메이트런 보우를 서풍(Zephyr)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 37,
+      "runeword": "서풍(Zephyr)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 서풍(Zephyr)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 38,
+      "runeword": "선율(Melody)",
+      "baseItemId": "hunters-bow",
+      "baseItemNameKo": "헌터스 보우",
+      "disposition": "REVISE",
+      "rationale": "활 기술 보너스를 활용하는 아마존 육성용 일반 활입니다."
+    },
+    {
+      "runewordId": 38,
+      "runeword": "선율(Melody)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 블레이드 보우를 선율(Melody)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 38,
+      "runeword": "선율(Melody)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 선율(Melody)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 38,
+      "runeword": "선율(Melody)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존 전용 활 기술 자동 옵션을 살리는 후반 선택입니다."
+    },
+    {
+      "runewordId": 38,
+      "runeword": "선율(Melody)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 선율(Melody)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 39,
+      "runeword": "성역(Sanctuary)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 성역(Sanctuary)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 39,
+      "runeword": "성역(Sanctuary)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 성역(Sanctuary)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 39,
+      "runeword": "성역(Sanctuary)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항 옵션과 블록 특성을 활용합니다."
+    },
+    {
+      "runewordId": 39,
+      "runeword": "성역(Sanctuary)",
+      "baseItemId": "vortex-shield",
+      "baseItemNameKo": "볼텍스 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 볼텍스 쉴드를 성역(Sanctuary)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 39,
+      "runeword": "성역(Sanctuary)",
+      "baseItemId": "large-shield",
+      "baseItemNameKo": "라지 쉴드",
+      "disposition": "ADD",
+      "rationale": "요구치 부담을 낮춰 방패 저항 옵션을 쓰기 쉬운 선택입니다."
+    },
+    {
+      "runewordId": 40,
+      "runeword": "소집(Call to Arms)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REVISE",
+      "rationale": "스왑용으로 낮은 요구 능력치를 유지하기 좋은 검입니다."
+    },
+    {
+      "runewordId": 40,
+      "runeword": "소집(Call to Arms)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 소집(Call to Arms)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 40,
+      "runeword": "소집(Call to Arms)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 소집(Call to Arms)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 40,
+      "runeword": "소집(Call to Arms)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 소집(Call to Arms)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 40,
+      "runeword": "소집(Call to Arms)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 소집(Call to Arms)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 40,
+      "runeword": "소집(Call to Arms)",
+      "baseItemId": "flail",
+      "baseItemNameKo": "프레일",
+      "disposition": "ADD",
+      "rationale": "메이스 분류의 저요구치 한손 무기라 스왑에 편리합니다."
+    },
+    {
+      "runewordId": 41,
+      "runeword": "수수께끼(Enigma)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "낮은 힘 요구치로 순간이동 세팅의 능력치를 아낍니다."
+    },
+    {
+      "runewordId": 41,
+      "runeword": "수수께끼(Enigma)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "낮은 힘 부담과 방어력 사이의 균형을 원하는 대안입니다."
+    },
+    {
+      "runewordId": 41,
+      "runeword": "수수께끼(Enigma)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REVISE",
+      "rationale": "힘을 투자해 방어력을 더 확보하려는 캐릭터용입니다."
+    },
+    {
+      "runewordId": 42,
+      "runeword": "순백(White)",
+      "baseItemId": "bone-wand",
+      "baseItemNameKo": "본 원드",
+      "disposition": "REVISE",
+      "rationale": "필요한 강령술사 기술이 붙은 낮은 요구치 원드를 고를 수 있습니다."
+    },
+    {
+      "runewordId": 42,
+      "runeword": "순백(White)",
+      "baseItemId": "ghost-wand",
+      "baseItemNameKo": "고스트 원드",
+      "disposition": "REVISE",
+      "rationale": "원하는 강령술사 기술 자동 옵션을 살리는 엘리트 대안입니다."
+    },
+    {
+      "runewordId": 43,
+      "runeword": "순종(Obedience)",
+      "baseItemId": "partizan",
+      "baseItemNameKo": "파르티잔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 파르티잔를 순종(Obedience)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 43,
+      "runeword": "순종(Obedience)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "용병 폴암에 강타와 마법부여 발동 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 43,
+      "runeword": "순종(Obedience)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "엘리트 폴암에서 강타와 마법부여 발동 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 43,
+      "runeword": "순종(Obedience)",
+      "baseItemId": "mancatcher",
+      "baseItemNameKo": "맨캐쳐",
+      "disposition": "REVISE",
+      "rationale": "스피어 분류 용병 무기에 강타와 마법부여 발동 옵션을 담습니다."
+    },
+    {
+      "runewordId": 43,
+      "runeword": "순종(Obedience)",
+      "baseItemId": "cryptic-axe",
+      "baseItemNameKo": "크립틱 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크립틱 액스를 순종(Obedience)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 44,
+      "runeword": "슬픔(Grief)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도 관리 없이 슬픔의 추가 피해 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 44,
+      "runeword": "슬픔(Grief)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "높은 무기 피해와 도끼 숙련을 활용하는 대안입니다."
+    },
+    {
+      "runewordId": 44,
+      "runeword": "슬픔(Grief)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 슬픔(Grief)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 44,
+      "runeword": "슬픔(Grief)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 슬픔(Grief)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 44,
+      "runeword": "슬픔(Grief)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 슬픔(Grief)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 45,
+      "runeword": "신념(Faith)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존 전용 활 스킬 보너스를 살리는 직접 사용 베이스입니다."
+    },
+    {
+      "runewordId": 45,
+      "runeword": "신념(Faith)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병용으로 피해와 요구치를 비교할 수 있는 활입니다."
+    },
+    {
+      "runewordId": 45,
+      "runeword": "신념(Faith)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 착용할 수 있는 활로 용병 세팅에 적합합니다."
+    },
+    {
+      "runewordId": 45,
+      "runeword": "신념(Faith)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 신념(Faith)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 45,
+      "runeword": "신념(Faith)",
+      "baseItemId": "matriarchal-bow",
+      "baseItemNameKo": "메이트리어컬 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 메이트리어컬 보우를 신념(Faith)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 46,
+      "runeword": "신성한 천둥(Holy Thunder)",
+      "baseItemId": "divine-scepter",
+      "baseItemNameKo": "디바인 셉터",
+      "disposition": "REVISE",
+      "rationale": "성기사 기술 자동 옵션을 확인해 초중반 번개 피해와 저항 보조를 활용합니다."
+    },
+    {
+      "runewordId": 46,
+      "runeword": "신성한 천둥(Holy Thunder)",
+      "baseItemId": "caduceus",
+      "baseItemNameKo": "카두세우스",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 기술 자동 옵션을 더 중시하는 후반 셉터입니다."
+    },
+    {
+      "runewordId": 47,
+      "runeword": "신중(Prudence)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "자동 수리 옵션과 저항·피해 감소를 갑옷 슬롯에서 활용하는 선택입니다."
+    },
+    {
+      "runewordId": 47,
+      "runeword": "신중(Prudence)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REVISE",
+      "rationale": "방어력을 중시하는 후반 갑옷 대안입니다."
+    },
+    {
+      "runewordId": 48,
+      "runeword": "신화(Myth)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REVISE",
+      "rationale": "야만용사 기술 옵션을 갑옷에 더하면서 낮은 등급 베이스를 활용합니다."
+    },
+    {
+      "runewordId": 48,
+      "runeword": "신화(Myth)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 더스크 슈라우드를 신화(Myth)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 48,
+      "runeword": "신화(Myth)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "갑옷의 힘 부담을 관리하며 야만용사 기술 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 48,
+      "runeword": "신화(Myth)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 신화(Myth)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 49,
+      "runeword": "악의(Malice)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REVISE",
+      "rationale": "초반 검에 출혈과 적 회복 방해 옵션을 더하는 저비용 선택입니다."
+    },
+    {
+      "runewordId": 49,
+      "runeword": "악의(Malice)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도 관리 없이 적 회복 방해와 출혈 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 49,
+      "runeword": "악의(Malice)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 악의(Malice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 49,
+      "runeword": "악의(Malice)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 악의(Malice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 49,
+      "runeword": "악의(Malice)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 악의(Malice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 50,
+      "runeword": "안개(Mist)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존 전용 활 기술 보너스를 활용하는 직접 사용 선택입니다."
+    },
+    {
+      "runewordId": 50,
+      "runeword": "안개(Mist)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 쓸 수 있는 5소켓 활 베이스입니다."
+    },
+    {
+      "runewordId": 50,
+      "runeword": "안개(Mist)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 블레이드 보우를 안개(Mist)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 50,
+      "runeword": "안개(Mist)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 안개(Mist)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 50,
+      "runeword": "안개(Mist)",
+      "baseItemId": "matriarchal-bow",
+      "baseItemNameKo": "메이트리어컬 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 메이트리어컬 보우를 안개(Mist)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 51,
+      "runeword": "야수(Beast)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "광폭화 오라와 소환 보조 옵션을 도끼 한손 운용에 활용합니다."
+    },
+    {
+      "runewordId": 51,
+      "runeword": "야수(Beast)",
+      "baseItemId": "caduceus",
+      "baseItemNameKo": "카두세우스",
+      "disposition": "REVISE",
+      "rationale": "성기사의 기술 자동 옵션을 유지하면서 오라 효과를 활용하는 셉터입니다."
+    },
+    {
+      "runewordId": 51,
+      "runeword": "야수(Beast)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 야수(Beast)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 51,
+      "runeword": "야수(Beast)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 야수(Beast)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 51,
+      "runeword": "야수(Beast)",
+      "baseItemId": "ettin-axe",
+      "baseItemNameKo": "에틴 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 에틴 액스를 야수(Beast)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 52,
+      "runeword": "어둠(Black)",
+      "baseItemId": "spiked-club",
+      "baseItemNameKo": "스파이크 클럽",
+      "disposition": "REVISE",
+      "rationale": "낮은 단계의 클럽 베이스에서 강한 타격 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 52,
+      "runeword": "어둠(Black)",
+      "baseItemId": "flail",
+      "baseItemNameKo": "프레일",
+      "disposition": "REVISE",
+      "rationale": "강한 타격 옵션을 초중반 메이스 계열에서 활용하는 선택입니다."
+    },
+    {
+      "runewordId": 52,
+      "runeword": "어둠(Black)",
+      "baseItemId": "war-hammer",
+      "baseItemNameKo": "워 해머",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 해머를 어둠(Black)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 52,
+      "runeword": "어둠(Black)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 어둠(Black)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 52,
+      "runeword": "어둠(Black)",
+      "baseItemId": "battle-hammer",
+      "baseItemNameKo": "배틀 해머",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 배틀 해머를 어둠(Black)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 53,
+      "runeword": "어스름(Gloom)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "저항과 피해 감소를 갑옷 슬롯에서 쓰며 용병 장비로도 활용할 수 있습니다."
+    },
+    {
+      "runewordId": 53,
+      "runeword": "어스름(Gloom)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 어스름(Gloom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 54,
+      "runeword": "얼음(Ice)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존 전용 활 기술과 냉기 오라를 직접 활용하는 후반 선택입니다."
+    },
+    {
+      "runewordId": 54,
+      "runeword": "얼음(Ice)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 얼음(Ice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 54,
+      "runeword": "얼음(Ice)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 장착 가능한 활 베이스에서 냉기 오라를 제공합니다."
+    },
+    {
+      "runewordId": 54,
+      "runeword": "얼음(Ice)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 얼음(Ice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 54,
+      "runeword": "얼음(Ice)",
+      "baseItemId": "matriarchal-bow",
+      "baseItemNameKo": "메이트리어컬 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 메이트리어컬 보우를 얼음(Ice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 55,
+      "runeword": "역병(Plague)",
+      "baseItemId": "legend-spike",
+      "baseItemNameKo": "레전드 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전드 스파이크를 역병(Plague)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 55,
+      "runeword": "역병(Plague)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "내구도 소모 없는 검에서 피격 시 저주 발동과 기술 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 55,
+      "runeword": "역병(Plague)",
+      "baseItemId": "runic-talons",
+      "baseItemNameKo": "루닉 탤런",
+      "disposition": "REVISE",
+      "rationale": "암살자 클러 기술 자동 옵션과 저주 발동을 함께 활용할 수 있습니다."
+    },
+    {
+      "runewordId": 55,
+      "runeword": "역병(Plague)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 역병(Plague)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 55,
+      "runeword": "역병(Plague)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 역병(Plague)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 56,
+      "runeword": "연기(Smoke)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REVISE",
+      "rationale": "낮은 등급 갑옷에서 저항 옵션을 갖춘 2소켓 연기를 제작합니다."
+    },
+    {
+      "runewordId": 56,
+      "runeword": "연기(Smoke)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "후반 캐릭터나 용병의 저항 보완용 갑옷으로 활용합니다."
+    },
+    {
+      "runewordId": 56,
+      "runeword": "연기(Smoke)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 메이지 플레이트를 연기(Smoke)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 56,
+      "runeword": "연기(Smoke)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 연기(Smoke)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 57,
+      "runeword": "열정(Passion)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "열정의 광신 효과와 열의 기술을 내구도 소모 없는 검에서 활용합니다."
+    },
+    {
+      "runewordId": 57,
+      "runeword": "열정(Passion)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련 캐릭터가 열정의 공격 기술을 쓰는 후반 대안입니다."
+    },
+    {
+      "runewordId": 57,
+      "runeword": "열정(Passion)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 열정(Passion)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 57,
+      "runeword": "열정(Passion)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 열정(Passion)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 57,
+      "runeword": "열정(Passion)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 열정(Passion)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 58,
+      "runeword": "영원(Eternity)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REVISE",
+      "rationale": "파괴 불가 옵션과 양손 검 피해를 조합하는 대안입니다."
+    },
+    {
+      "runewordId": 58,
+      "runeword": "영원(Eternity)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "파괴 불가 옵션을 활용해 에테리얼 무기의 피해 이점을 노립니다."
+    },
+    {
+      "runewordId": 58,
+      "runeword": "영원(Eternity)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 블레이드 보우를 영원(Eternity)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 58,
+      "runeword": "영원(Eternity)",
+      "baseItemId": "war-pike",
+      "baseItemNameKo": "워 파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 파이크를 영원(Eternity)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 58,
+      "runeword": "영원(Eternity)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 영원(Eternity)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 59,
+      "runeword": "영혼(검)(Spirit)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REVISE",
+      "rationale": "낮은 요구 능력치로 초반 시전 캐릭터에게 적합합니다."
+    },
+    {
+      "runewordId": 59,
+      "runeword": "영혼(검)(Spirit)",
+      "baseItemId": "broad-sword",
+      "baseItemNameKo": "브로드 소드",
+      "disposition": "REVISE",
+      "rationale": "민첩 투자 부담이 적은 실용적인 대체 검입니다."
+    },
+    {
+      "runewordId": 59,
+      "runeword": "영혼(검)(Spirit)",
+      "baseItemId": "long-sword",
+      "baseItemNameKo": "롱 소드",
+      "disposition": "REVISE",
+      "rationale": "앞선 후보가 없을 때 선택할 수 있는 저단계 대안입니다."
+    },
+    {
+      "runewordId": 59,
+      "runeword": "영혼(검)(Spirit)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 영혼(검)(Spirit)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 59,
+      "runeword": "영혼(검)(Spirit)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 영혼(검)(Spirit)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 60,
+      "runeword": "영혼(방패)(Spirit)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REVISE",
+      "rationale": "비성기사 시전 직업의 대표적인 4소켓 방패 베이스입니다."
+    },
+    {
+      "runewordId": 60,
+      "runeword": "영혼(방패)(Spirit)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항 옵션을 살려 방패 저항을 높일 수 있습니다."
+    },
+    {
+      "runewordId": 60,
+      "runeword": "영혼(방패)(Spirit)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항을 활용하는 타아지 계열 대안입니다."
+    },
+    {
+      "runewordId": 60,
+      "runeword": "영혼(방패)(Spirit)",
+      "baseItemId": "targe",
+      "baseItemNameKo": "타아지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타아지를 영혼(방패)(Spirit)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 60,
+      "runeword": "영혼(방패)(Spirit)",
+      "baseItemId": "vortex-shield",
+      "baseItemNameKo": "볼텍스 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 볼텍스 쉴드를 영혼(방패)(Spirit)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 61,
+      "runeword": "왕 시해자(Kingslayer)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "강한 타격과 방어력 무시 옵션을 내구도 소모 없는 검에서 활용합니다."
+    },
+    {
+      "runewordId": 61,
+      "runeword": "왕 시해자(Kingslayer)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련과 강한 타격 옵션을 함께 쓰는 후반 선택입니다."
+    },
+    {
+      "runewordId": 61,
+      "runeword": "왕 시해자(Kingslayer)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 왕 시해자(Kingslayer)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 61,
+      "runeword": "왕 시해자(Kingslayer)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 왕 시해자(Kingslayer)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 61,
+      "runeword": "왕 시해자(Kingslayer)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 왕 시해자(Kingslayer)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 62,
+      "runeword": "왕의 은총(King's Grace)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REVISE",
+      "rationale": "초반 검에 악마·언데드 대상 피해 옵션을 더하는 육성용 선택입니다."
+    },
+    {
+      "runewordId": 62,
+      "runeword": "왕의 은총(King's Grace)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 왕의 은총(King's Grace)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 62,
+      "runeword": "왕의 은총(King's Grace)",
+      "baseItemId": "caduceus",
+      "baseItemNameKo": "카두세우스",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 기술 자동 옵션을 살리는 셉터 대안입니다."
+    },
+    {
+      "runewordId": 62,
+      "runeword": "왕의 은총(King's Grace)",
+      "baseItemId": "broad-sword",
+      "baseItemNameKo": "브로드 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 브로드 소드를 왕의 은총(King's Grace)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 62,
+      "runeword": "왕의 은총(King's Grace)",
+      "baseItemId": "long-sword",
+      "baseItemNameKo": "롱 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 롱 소드를 왕의 은총(King's Grace)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 63,
+      "runeword": "용(Dragon)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "갑옷 슬롯에서 힘 부담과 방어력을 절충하는 선택입니다."
+    },
+    {
+      "runewordId": 63,
+      "runeword": "용(Dragon)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 용(Dragon)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 63,
+      "runeword": "용(Dragon)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 용(Dragon)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 63,
+      "runeword": "용(Dragon)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 방패 슬롯에서 고유 저항을 활용할 수 있습니다."
+    },
+    {
+      "runewordId": 63,
+      "runeword": "용(Dragon)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 용(Dragon)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 64,
+      "runeword": "용맹(Lionheart)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "생명력·저항과 능력치 옵션을 갑옷 슬롯에서 활용하는 후반 베이스입니다."
+    },
+    {
+      "runewordId": 64,
+      "runeword": "용맹(Lionheart)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 용맹(Lionheart)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 65,
+      "runeword": "원칙(Principle)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "성기사 기술과 생명력 회복 옵션을 후반 갑옷 슬롯에서 활용합니다."
+    },
+    {
+      "runewordId": 65,
+      "runeword": "원칙(Principle)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 원칙(Principle)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 66,
+      "runeword": "이유있는 항변(Voice of Reason)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "내구도 관리 없이 냉기 피해와 적 둔화 옵션을 검에 담습니다."
+    },
+    {
+      "runewordId": 66,
+      "runeword": "이유있는 항변(Voice of Reason)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REVISE",
+      "rationale": "메이스 계열에서 냉기 피해와 적 둔화 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 66,
+      "runeword": "이유있는 항변(Voice of Reason)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 이유있는 항변(Voice of Reason)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 66,
+      "runeword": "이유있는 항변(Voice of Reason)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 이유있는 항변(Voice of Reason)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 67,
+      "runeword": "인내(무기)(Fortitude)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "높은 무기 피해와 도끼 숙련을 중시하는 직접 사용 베이스입니다."
+    },
+    {
+      "runewordId": 67,
+      "runeword": "인내(무기)(Fortitude)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 인내(무기)(Fortitude)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 67,
+      "runeword": "인내(무기)(Fortitude)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 그랜드 메이트런 보우를 인내(무기)(Fortitude)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 67,
+      "runeword": "인내(무기)(Fortitude)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 쓰레셔를 인내(무기)(Fortitude)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 67,
+      "runeword": "인내(무기)(Fortitude)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도 관리 없이 인내의 무기 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 68,
+      "runeword": "인내(아머)(Fortitude)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "캐릭터와 용병 모두 힘 부담을 줄이는 방어구 선택입니다."
+    },
+    {
+      "runewordId": 68,
+      "runeword": "인내(아머)(Fortitude)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REVISE",
+      "rationale": "힘 투자를 감수하고 방어력을 높이려는 캐릭터용입니다."
+    },
+    {
+      "runewordId": 68,
+      "runeword": "인내(아머)(Fortitude)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "메이지 플레이트의 최대 3소켓은 4소켓 룬워드와 호환되지 않아 제외했습니다."
+    },
+    {
+      "runewordId": 69,
+      "runeword": "잎새(Leaf)",
+      "baseItemId": "gnarled-staff",
+      "baseItemNameKo": "나알드 스태프",
+      "disposition": "REVISE",
+      "rationale": "화염 기술 보너스가 붙은 낮은 단계 스태프에 잎새를 제작합니다."
+    },
+    {
+      "runewordId": 69,
+      "runeword": "잎새(Leaf)",
+      "baseItemId": "archon-staff",
+      "baseItemNameKo": "아콘 스태프",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 스태프를 잎새(Leaf)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 69,
+      "runeword": "잎새(Leaf)",
+      "baseItemId": "war-staff",
+      "baseItemNameKo": "워 스태프",
+      "disposition": "REVISE",
+      "rationale": "화염 기술 자동 옵션을 활용하는 스태프 대안입니다."
+    },
+    {
+      "runewordId": 70,
+      "runeword": "잠행(Stealth)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REVISE",
+      "rationale": "낮은 요구치의 가벼운 갑옷으로 초반 능력치를 아낍니다."
+    },
+    {
+      "runewordId": 70,
+      "runeword": "잠행(Stealth)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "육성 중에도 낮은 힘 부담과 방어력을 함께 챙깁니다."
+    },
+    {
+      "runewordId": 70,
+      "runeword": "잠행(Stealth)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 더스크 슈라우드를 잠행(Stealth)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 70,
+      "runeword": "잠행(Stealth)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 잠행(Stealth)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 71,
+      "runeword": "전승(Lore)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "낮은 등급 투구에 모든 기술과 번개 저항 보조를 더합니다."
+    },
+    {
+      "runewordId": 71,
+      "runeword": "전승(Lore)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 데몬헤드를 전승(Lore)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 71,
+      "runeword": "전승(Lore)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 전승(Lore)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 71,
+      "runeword": "전승(Lore)",
+      "baseItemId": "shako",
+      "baseItemNameKo": "샤코",
+      "disposition": "REVISE",
+      "rationale": "2소켓 투구에서 모든 기술과 번개 저항 보조를 활용합니다."
+    },
+    {
+      "runewordId": 72,
+      "runeword": "접지(Ground)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "냉기 저항과 피해 감소를 초중반 투구 슬롯에서 확보합니다."
+    },
+    {
+      "runewordId": 72,
+      "runeword": "접지(Ground)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "후반 투구 슬롯에서 냉기 저항과 피해 감소를 활용합니다."
+    },
+    {
+      "runewordId": 72,
+      "runeword": "접지(Ground)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 접지(Ground)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 73,
+      "runeword": "정의의 손길(Hand of Justice)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "내구도 소모 없이 신성한 화염과 강타 옵션을 근접 전투에 활용합니다."
+    },
+    {
+      "runewordId": 73,
+      "runeword": "정의의 손길(Hand of Justice)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "도끼 숙련을 사용하는 캐릭터의 후반 근접 베이스입니다."
+    },
+    {
+      "runewordId": 73,
+      "runeword": "정의의 손길(Hand of Justice)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 스컬지를 정의의 손길(Hand of Justice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 73,
+      "runeword": "정의의 손길(Hand of Justice)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 정의의 손길(Hand of Justice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 73,
+      "runeword": "정의의 손길(Hand of Justice)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 정의의 손길(Hand of Justice)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 74,
+      "runeword": "조화(Harmony)",
+      "baseItemId": "hunters-bow",
+      "baseItemNameKo": "헌터스 보우",
+      "disposition": "REVISE",
+      "rationale": "활 기술 보너스와 원소 피해를 초중반 아마존 육성에 활용합니다."
+    },
+    {
+      "runewordId": 74,
+      "runeword": "조화(Harmony)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 착용 가능한 활로 원소 피해와 발키리 소환 옵션을 제공합니다."
+    },
+    {
+      "runewordId": 74,
+      "runeword": "조화(Harmony)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 조화(Harmony)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 74,
+      "runeword": "조화(Harmony)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 그랜드 메이트런 보우를 조화(Harmony)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 74,
+      "runeword": "조화(Harmony)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 조화(Harmony)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 75,
+      "runeword": "죽어가는 자의 숨결(Breath of the Dying)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 죽어가는 자의 숨결(Breath of the Dying)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 75,
+      "runeword": "죽어가는 자의 숨결(Breath of the Dying)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REVISE",
+      "rationale": "검 숙련과 파괴 불가 효과를 활용하는 양손 검 대안입니다."
+    },
+    {
+      "runewordId": 75,
+      "runeword": "죽어가는 자의 숨결(Breath of the Dying)",
+      "baseItemId": "war-pike",
+      "baseItemNameKo": "워 파이크",
+      "disposition": "REVISE",
+      "rationale": "파괴 불가 옵션과 높은 양손 피해를 조합하는 선택입니다."
+    },
+    {
+      "runewordId": 75,
+      "runeword": "죽어가는 자의 숨결(Breath of the Dying)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 죽어가는 자의 숨결(Breath of the Dying)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 75,
+      "runeword": "죽어가는 자의 숨결(Breath of the Dying)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 죽어가는 자의 숨결(Breath of the Dying)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 75,
+      "runeword": "죽어가는 자의 숨결(Breath of the Dying)",
+      "baseItemId": "thunder-maul",
+      "baseItemNameKo": "썬더 마울",
+      "disposition": "ADD",
+      "rationale": "둔기 숙련과 양손 피해를 중시하는 대안입니다."
+    },
+    {
+      "runewordId": 76,
+      "runeword": "죽음(Death)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 죽음(Death)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 76,
+      "runeword": "죽음(Death)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REVISE",
+      "rationale": "파괴 불가 옵션을 활용해 에테리얼 도끼를 한손으로 운용할 수 있습니다."
+    },
+    {
+      "runewordId": 76,
+      "runeword": "죽음(Death)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REVISE",
+      "rationale": "파괴 불가 옵션으로 에테리얼 양손 검의 내구도 문제를 막으며 근접 피해를 활용합니다."
+    },
+    {
+      "runewordId": 76,
+      "runeword": "죽음(Death)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 죽음(Death)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 76,
+      "runeword": "죽음(Death)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 죽음(Death)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 77,
+      "runeword": "지혜(Wisdom)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "관통과 마나 흡수 옵션을 후반 투구 슬롯에서 활용합니다."
+    },
+    {
+      "runewordId": 77,
+      "runeword": "지혜(Wisdom)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REVISE",
+      "rationale": "후반 투구 슬롯에서 관통과 마나 흡수 옵션을 활용하는 대안입니다."
+    },
+    {
+      "runewordId": 78,
+      "runeword": "진노(Wrath)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 장착 가능한 활에서 저주 발동과 피해 옵션을 사용합니다."
+    },
+    {
+      "runewordId": 78,
+      "runeword": "진노(Wrath)",
+      "baseItemId": "ballista",
+      "baseItemNameKo": "발리스타",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 발리스타를 진노(Wrath)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 78,
+      "runeword": "진노(Wrath)",
+      "baseItemId": "grand-matron-bow",
+      "baseItemNameKo": "그랜드 메이트런 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 그랜드 메이트런 보우를 진노(Wrath)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 78,
+      "runeword": "진노(Wrath)",
+      "baseItemId": "crusader-bow",
+      "baseItemNameKo": "크루세이더 보우",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크루세이더 보우를 진노(Wrath)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 78,
+      "runeword": "진노(Wrath)",
+      "baseItemId": "matriarchal-bow",
+      "baseItemNameKo": "메이트리어컬 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존 전용 활 기술 자동 옵션과 저주 발동을 활용합니다."
+    },
+    {
+      "runewordId": 79,
+      "runeword": "집착(Obsession)",
+      "baseItemId": "archon-staff",
+      "baseItemNameKo": "아콘 스태프",
+      "disposition": "REVISE",
+      "rationale": "엘리트 스태프에 원하는 소서리스 기술 자동 옵션을 살릴 수 있습니다."
+    },
+    {
+      "runewordId": 79,
+      "runeword": "집착(Obsession)",
+      "baseItemId": "war-staff",
+      "baseItemNameKo": "워 스태프",
+      "disposition": "REVISE",
+      "rationale": "노멀 등급 스태프에 소서리스 기술 자동 옵션을 살려 집착을 제작할 수 있습니다."
+    },
+    {
+      "runewordId": 79,
+      "runeword": "집착(Obsession)",
+      "baseItemId": "gnarled-staff",
+      "baseItemNameKo": "나알드 스태프",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 나알드 스태프를 집착(Obsession)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 80,
+      "runeword": "집행자(Lawbringer)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "저주 발동과 성기사의 성역 오라를 내구도 소모 없는 검에서 활용합니다."
+    },
+    {
+      "runewordId": 80,
+      "runeword": "집행자(Lawbringer)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 집행자(Lawbringer)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 80,
+      "runeword": "집행자(Lawbringer)",
+      "baseItemId": "caduceus",
+      "baseItemNameKo": "카두세우스",
+      "disposition": "REVISE",
+      "rationale": "성기사 기술 자동 옵션과 성역 오라를 함께 활용하는 셉터 선택입니다."
+    },
+    {
+      "runewordId": 80,
+      "runeword": "집행자(Lawbringer)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 집행자(Lawbringer)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 80,
+      "runeword": "집행자(Lawbringer)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 집행자(Lawbringer)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 81,
+      "runeword": "찔레(Bramble)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "가시 오라와 독 피해 보너스를 갑옷 슬롯에서 활용합니다."
+    },
+    {
+      "runewordId": 81,
+      "runeword": "찔레(Bramble)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REVISE",
+      "rationale": "캐릭터가 힘을 투자해 방어력을 중시할 때 선택할 수 있습니다."
+    },
+    {
+      "runewordId": 82,
+      "runeword": "착란(Delirium)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 데몬헤드를 착란(Delirium)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 82,
+      "runeword": "착란(Delirium)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REVISE",
+      "rationale": "후반 투구에 모든 기술과 변신 저주 발동을 담는 선택입니다."
+    },
+    {
+      "runewordId": 82,
+      "runeword": "착란(Delirium)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "ADD",
+      "rationale": "초중반 투구 슬롯에서 모든 기술과 변신 저주 발동을 활용합니다."
+    },
+    {
+      "runewordId": 83,
+      "runeword": "참나무의 심장(Heart of the Oak)",
+      "baseItemId": "flail",
+      "baseItemNameKo": "프레일",
+      "disposition": "REVISE",
+      "rationale": "낮은 요구치의 메이스 분류 한손 무기로 쓰기 편합니다."
+    },
+    {
+      "runewordId": 83,
+      "runeword": "참나무의 심장(Heart of the Oak)",
+      "baseItemId": "scourge",
+      "baseItemNameKo": "스컬지",
+      "disposition": "REVISE",
+      "rationale": "공격 속도와 내구도를 비교해 선택하는 엘리트 대안입니다."
+    },
+    {
+      "runewordId": 83,
+      "runeword": "참나무의 심장(Heart of the Oak)",
+      "baseItemId": "archon-staff",
+      "baseItemNameKo": "아콘 스태프",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 스태프를 참나무의 심장(Heart of the Oak)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 84,
+      "runeword": "초승달(Crescent Moon)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 초승달(Crescent Moon)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 84,
+      "runeword": "초승달(Crescent Moon)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "정전기장 발동과 적 저항 감소를 내구도 소모 없는 검에서 활용합니다."
+    },
+    {
+      "runewordId": 84,
+      "runeword": "초승달(Crescent Moon)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "용병용 폴암에서 정전기장 발동과 적 저항 감소를 지원합니다."
+    },
+    {
+      "runewordId": 84,
+      "runeword": "초승달(Crescent Moon)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 초승달(Crescent Moon)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 84,
+      "runeword": "초승달(Crescent Moon)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 소드를 초승달(Crescent Moon)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 85,
+      "runeword": "추방(Exile)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항과 블록을 살리는 대표 방패입니다."
+    },
+    {
+      "runewordId": 85,
+      "runeword": "추방(Exile)",
+      "baseItemId": "vortex-shield",
+      "baseItemNameKo": "볼텍스 쉴드",
+      "disposition": "REVISE",
+      "rationale": "방어력을 더 중시하는 성기사용 엘리트 방패입니다."
+    },
+    {
+      "runewordId": 85,
+      "runeword": "추방(Exile)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 추방(Exile)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 86,
+      "runeword": "치료(Cure)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "정화 오라와 생존 보조 옵션을 초중반 투구에서 활용합니다."
+    },
+    {
+      "runewordId": 86,
+      "runeword": "치료(Cure)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "용병의 저주·독 대응을 위한 정화 오라 투구 선택입니다."
+    },
+    {
+      "runewordId": 86,
+      "runeword": "치료(Cure)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 치료(Cure)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 87,
+      "runeword": "침묵(Silence)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "내구도 관리 없이 침묵의 저항과 공격 보조 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 87,
+      "runeword": "침묵(Silence)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 침묵(Silence)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 87,
+      "runeword": "침묵(Silence)",
+      "baseItemId": "tyrant-club",
+      "baseItemNameKo": "타이런트 클럽",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 타이런트 클럽를 침묵(Silence)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 87,
+      "runeword": "침묵(Silence)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 레전더리 맬릿를 침묵(Silence)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 87,
+      "runeword": "침묵(Silence)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 침묵(Silence)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 87,
+      "runeword": "침묵(Silence)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "ADD",
+      "rationale": "저항과 공격 보조 옵션을 검에 담고 조드 룬을 절약하는 비에테리얼 선택입니다."
+    },
+    {
+      "runewordId": 88,
+      "runeword": "탈태(Metamorphosis)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REMOVE",
+      "rationale": "기존 일반 투구 후보를 드루이드 전용 펠트 추천으로 교체했습니다."
+    },
+    {
+      "runewordId": 88,
+      "runeword": "탈태(Metamorphosis)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "기존 일반 투구 후보를 드루이드 전용 펠트 추천으로 교체했습니다."
+    },
+    {
+      "runewordId": 89,
+      "runeword": "통찰(Insight)",
+      "baseItemId": "partizan",
+      "baseItemNameKo": "파르티잔",
+      "disposition": "REVISE",
+      "rationale": "중반에 구하기 쉬운 4소켓 폴암으로 용병 마나 회복을 지원합니다."
+    },
+    {
+      "runewordId": 89,
+      "runeword": "통찰(Insight)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "2막 용병 공격 속도를 고려한 엘리트 폴암입니다."
+    },
+    {
+      "runewordId": 89,
+      "runeword": "통찰(Insight)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 통찰(Insight)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 89,
+      "runeword": "통찰(Insight)",
+      "baseItemId": "matriarchal-bow",
+      "baseItemNameKo": "메이트리어컬 보우",
+      "disposition": "REVISE",
+      "rationale": "아마존이 직접 활로 마나 회복 오라를 얻는 선택입니다."
+    },
+    {
+      "runewordId": 89,
+      "runeword": "통찰(Insight)",
+      "baseItemId": "archon-staff",
+      "baseItemNameKo": "아콘 스태프",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 스태프를 통찰(Insight)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 90,
+      "runeword": "투지(갑옷)(Hysteria)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REVISE",
+      "rationale": "갑옷 힘 요구 부담을 줄인 채 이동·공격 보조 옵션을 사용합니다."
+    },
+    {
+      "runewordId": 90,
+      "runeword": "투지(갑옷)(Hysteria)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 더스크 슈라우드를 투지(갑옷)(Hysteria)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 90,
+      "runeword": "투지(갑옷)(Hysteria)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "낮은 갑옷 힘 요구치로 이동·공격 보조 옵션을 유지합니다."
+    },
+    {
+      "runewordId": 90,
+      "runeword": "투지(갑옷)(Hysteria)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 투지(갑옷)(Hysteria)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 91,
+      "runeword": "투지(무기)(Mania)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 투지(무기)(Mania)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 91,
+      "runeword": "투지(무기)(Mania)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REVISE",
+      "rationale": "무기 내구도 관리 없이 투지의 이동·공격 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 91,
+      "runeword": "투지(무기)(Mania)",
+      "baseItemId": "blade-bow",
+      "baseItemNameKo": "블레이드 보우",
+      "disposition": "REVISE",
+      "rationale": "1막 용병이 장착할 수 있는 활 계열 대안입니다."
+    },
+    {
+      "runewordId": 91,
+      "runeword": "투지(무기)(Mania)",
+      "baseItemId": "runic-talons",
+      "baseItemNameKo": "루닉 탤런",
+      "disposition": "REVISE",
+      "rationale": "암살자 클러의 기술 자동 옵션과 투지의 이동·공격 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 91,
+      "runeword": "투지(무기)(Mania)",
+      "baseItemId": "crystal-sword",
+      "baseItemNameKo": "크리스탈 소드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 크리스탈 소드를 투지(무기)(Mania)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 92,
+      "runeword": "파괴(Destruction)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "폴암에서 파괴의 원소 발동과 강한 타격 옵션을 용병에 활용합니다."
+    },
+    {
+      "runewordId": 92,
+      "runeword": "파괴(Destruction)",
+      "baseItemId": "phase-blade",
+      "baseItemNameKo": "페이즈 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 페이즈 블레이드를 파괴(Destruction)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 92,
+      "runeword": "파괴(Destruction)",
+      "baseItemId": "colossus-blade",
+      "baseItemNameKo": "콜로서스 블레이드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 콜로서스 블레이드를 파괴(Destruction)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 92,
+      "runeword": "파괴(Destruction)",
+      "baseItemId": "colossus-sword",
+      "baseItemNameKo": "콜로서스 소드",
+      "disposition": "REVISE",
+      "rationale": "양손 검으로 파괴의 원소 발동과 강한 타격 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 92,
+      "runeword": "파괴(Destruction)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 파괴(Destruction)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "berserker-axe",
+      "baseItemNameKo": "버서커 액스",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 버서커 액스를 파멸(Doom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "thresher",
+      "baseItemNameKo": "쓰레셔",
+      "disposition": "REVISE",
+      "rationale": "용병 폴암에 빙결 오라와 공격 옵션을 제공하는 선택입니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REVISE",
+      "rationale": "해머 계열 근접 무기에서 빙결 오라와 강타 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "war-spike",
+      "baseItemNameKo": "워 스파이크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 워 스파이크를 파멸(Doom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "giant-thresher",
+      "baseItemNameKo": "자이언트 쓰레셔",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 자이언트 쓰레셔를 파멸(Doom)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 94,
+      "runeword": "평화(Peace)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 브레스트 플레이트를 평화(Peace)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 94,
+      "runeword": "평화(Peace)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 더스크 슈라우드를 평화(Peace)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 94,
+      "runeword": "평화(Peace)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "아마존 기술과 생존 옵션을 갑옷 슬롯에서 쓰면서 힘 부담을 낮춥니다."
+    },
+    {
+      "runewordId": 94,
+      "runeword": "평화(Peace)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 평화(Peace)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 95,
+      "runeword": "협박(Duress)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "강타·상처 악화와 저항 옵션을 갑옷 슬롯에서 활용합니다."
+    },
+    {
+      "runewordId": 95,
+      "runeword": "협박(Duress)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 협박(Duress)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 96,
+      "runeword": "혼돈(Chaos)",
+      "baseItemId": "runic-talons",
+      "baseItemNameKo": "루닉 탤런",
+      "disposition": "REVISE",
+      "rationale": "암살자의 훨윈드와 클러 기술 자동 옵션을 함께 살리는 선택입니다."
+    },
+    {
+      "runewordId": 96,
+      "runeword": "혼돈(Chaos)",
+      "baseItemId": "greater-talons",
+      "baseItemNameKo": "그레이터 탤런",
+      "disposition": "REVISE",
+      "rationale": "클러 기술 자동 옵션을 고를 수 있는 대안입니다."
+    },
+    {
+      "runewordId": 96,
+      "runeword": "혼돈(Chaos)",
+      "baseItemId": "suwayyah",
+      "baseItemNameKo": "수웨이야",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 수웨이야를 혼돈(Chaos)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 97,
+      "runeword": "화로(Hearth)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "REVISE",
+      "rationale": "냉기 흡수와 빙결 방지를 초중반 투구에서 활용합니다."
+    },
+    {
+      "runewordId": 97,
+      "runeword": "화로(Hearth)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 데몬헤드를 화로(Hearth)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 97,
+      "runeword": "화로(Hearth)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REVISE",
+      "rationale": "후반 투구 슬롯에서 빙결 방지와 냉기 흡수 옵션을 얻습니다."
+    },
+    {
+      "runewordId": 98,
+      "runeword": "권위(Authority)",
+      "baseItemId": "breast-plate",
+      "baseItemNameKo": "브레스트 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 브레스트 플레이트를 권위(Authority)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 98,
+      "runeword": "권위(Authority)",
+      "baseItemId": "dusk-shroud",
+      "baseItemNameKo": "더스크 슈라우드",
+      "disposition": "REVISE",
+      "rationale": "악마술사 기술과 피해 증가를 후반 갑옷에 담는 선택입니다."
+    },
+    {
+      "runewordId": 98,
+      "runeword": "권위(Authority)",
+      "baseItemId": "mage-plate",
+      "baseItemNameKo": "메이지 플레이트",
+      "disposition": "REVISE",
+      "rationale": "악마술사 기술과 착용 조건 감소를 갑옷에 담으면서 힘 부담을 조절합니다."
+    },
+    {
+      "runewordId": 98,
+      "runeword": "권위(Authority)",
+      "baseItemId": "archon-plate",
+      "baseItemNameKo": "아콘 플레이트",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 아콘 플레이트를 권위(Authority)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 99,
+      "runeword": "마녀단(Coven)",
+      "baseItemId": "demonhead",
+      "baseItemNameKo": "데몬헤드",
+      "disposition": "REVISE",
+      "rationale": "시전 속도와 모든 기술 옵션을 후반 투구 슬롯에서 활용합니다."
+    },
+    {
+      "runewordId": 99,
+      "runeword": "마녀단(Coven)",
+      "baseItemId": "bone-visage",
+      "baseItemNameKo": "본 비지즈",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 본 비지즈를 마녀단(Coven)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 99,
+      "runeword": "마녀단(Coven)",
+      "baseItemId": "mask",
+      "baseItemNameKo": "마스크",
+      "disposition": "ADD",
+      "rationale": "시전 속도와 모든 기술 옵션을 초중반 투구 슬롯에서 활용합니다."
+    },
+    {
+      "runewordId": 100,
+      "runeword": "의식(Ritual)",
+      "baseItemId": "kris",
+      "baseItemNameKo": "크리스",
+      "disposition": "REVISE",
+      "rationale": "단검 기술 자동 옵션을 확인하며 의식의 공격·생명력 흡수 옵션을 이용합니다."
+    },
+    {
+      "runewordId": 100,
+      "runeword": "의식(Ritual)",
+      "baseItemId": "legend-spike",
+      "baseItemNameKo": "레전드 스파이크",
+      "disposition": "REVISE",
+      "rationale": "후반 단검 베이스에서 공격 속도와 피해 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 101,
+      "runeword": "경계(Vigilance)",
+      "baseItemId": "bone-shield",
+      "baseItemNameKo": "본 쉴드",
+      "disposition": "REVISE",
+      "rationale": "낮은 등급 일반 방패에 이동 속도·저항·생존 옵션을 담습니다."
+    },
+    {
+      "runewordId": 101,
+      "runeword": "경계(Vigilance)",
+      "baseItemId": "monarch",
+      "baseItemNameKo": "모너크",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 모너크를 경계(Vigilance)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 101,
+      "runeword": "경계(Vigilance)",
+      "baseItemId": "sacred-targe",
+      "baseItemNameKo": "세이크리드 타아지",
+      "disposition": "REVISE",
+      "rationale": "성기사 전용 저항 방패에서 경계의 막기·저항 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 101,
+      "runeword": "경계(Vigilance)",
+      "baseItemId": "vortex-shield",
+      "baseItemNameKo": "볼텍스 쉴드",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 볼텍스 쉴드를 경계(Vigilance)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 101,
+      "runeword": "경계(Vigilance)",
+      "baseItemId": "sacred-rondache",
+      "baseItemNameKo": "세이크리드 론다쉬",
+      "disposition": "REMOVE",
+      "rationale": "장비·소켓 호환만으로는 세이크리드 론다쉬를 경계(Vigilance)의 실전 베이스로 우선 공개할 근거가 부족해 선별 추천에서 제외했습니다."
+    },
+    {
+      "runewordId": 102,
+      "runeword": "공허(Void)",
+      "baseItemId": "kris",
+      "baseItemNameKo": "크리스",
+      "disposition": "REVISE",
+      "rationale": "단검 기술 자동 옵션과 파괴 불가·시전 속도 옵션을 함께 활용합니다."
+    },
+    {
+      "runewordId": 102,
+      "runeword": "공허(Void)",
+      "baseItemId": "legend-spike",
+      "baseItemNameKo": "레전드 스파이크",
+      "disposition": "REVISE",
+      "rationale": "단검의 자동 기술 옵션과 공허의 파괴 불가·기술 옵션을 활용합니다."
+    },
+    {
+      "runewordId": 88,
+      "runeword": "탈태(Metamorphosis)",
+      "baseItemId": "wolf-head",
+      "baseItemNameKo": "늑대 머리",
+      "disposition": "ADD",
+      "rationale": "낮은 힘 요구치의 드루이드 전용 펠트로 기술 자동 옵션을 확인하는 선택입니다."
+    },
+    {
+      "runewordId": 88,
+      "runeword": "탈태(Metamorphosis)",
+      "baseItemId": "blood-spirit",
+      "baseItemNameKo": "피의 정령",
+      "disposition": "ADD",
+      "rationale": "요구 힘 86의 엘리트 펠트이며 드루이드 기술 자동 옵션을 확인합니다."
+    },
+    {
+      "runewordId": 52,
+      "runeword": "어둠(Black)",
+      "baseItemId": "spiked-club",
+      "baseItemNameKo": "스파이크 클럽",
+      "disposition": "REMOVE",
+      "rationale": "스파이크 클럽은 최대 2소켓 베이스로 3소켓 어둠 룬워드 제작이 불가능합니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "legendary-mallet",
+      "baseItemNameKo": "레전더리 맬릿",
+      "disposition": "REMOVE",
+      "rationale": "레전더리 맬릿은 최대 4소켓 베이스로 5소켓 파멸 룬워드 제작이 불가능합니다."
+    },
+    {
+      "runewordId": 93,
+      "runeword": "파멸(Doom)",
+      "baseItemId": "thunder-maul",
+      "baseItemNameKo": "썬더 마울",
+      "disposition": "ADD",
+      "rationale": "썬더 마울은 5소켓 제작이 가능한 해머 베이스이며, 엘리트 요구치와 아이템 레벨에 따른 실제 소켓 수를 확인해야 합니다."
+    }
+  ]
+}

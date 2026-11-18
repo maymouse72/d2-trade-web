@@ -1,5 +1,5 @@
 import catalog from './base-items.json' with { type: 'json' };
-import recommendationPreferences from './recommendation-preferences.json' with { type: 'json' };
+import recommendationOverrides from './practical-recommendations.json' with { type: 'json' };
 import type { Runeword } from '../../app/runewords/catalog.ts';
 
 export type BaseTier = 'NO' | 'EX' | 'EL';
@@ -14,6 +14,13 @@ export interface BaseItem {
   maxSockets: number;
   classRestriction?: string;
   mercenaryClasses?: string[];
+  requiredLevel?: number;
+  strengthRequired?: number;
+  dexterityRequired?: number;
+  durability?: number;
+  baseCode?: string;
+  staffmodsPossible?: boolean;
+  socketLimitsByItemLevel?: { minItemLevel: number; maxItemLevel?: number; maxSockets: number }[];
 }
 
 export interface BaseRecommendation {
@@ -21,12 +28,23 @@ export interface BaseRecommendation {
   purposes: BasePurpose[];
   priority: number;
   reason: string;
+  condition?: string;
+}
+
+interface CuratedRecommendation {
+  baseItemId: string;
+  purposes: BasePurpose[];
+  reason: string;
+  condition?: string;
 }
 
 export const BASE_ITEMS = catalog.items as BaseItem[];
 export const BASE_ITEM_SOURCES = catalog.sources;
 
-const TIER_ORDER: Record<BaseTier, number> = { NO: 0, EX: 1, EL: 2 };
+export function hasReviewedBaseRecommendations(runewordId: number | string | undefined): boolean {
+  return runewordId !== undefined && Object.hasOwn(recommendationOverrides, String(runewordId));
+}
+
 const NON_RANGED_WEAPONS = ['sword', 'axe', 'mace', 'club', 'hammer', 'polearm', 'spear', 'staff', 'claw', 'dagger', 'scepter'];
 const ALL_RUNeword_WEAPONS = [...NON_RANGED_WEAPONS, 'bow', 'crossbow', 'wand'];
 
@@ -66,85 +84,39 @@ export function isBaseCompatible(base: BaseItem, equipment: string, sockets: num
   return base.maxSockets >= sockets && base.equipmentTypes.some((type) => categories.includes(type));
 }
 
-function choose(items: BaseItem[], predicate: (item: BaseItem) => boolean, order: (a: BaseItem, b: BaseItem) => number) {
-  return items.filter(predicate).sort(order)[0];
-}
-
-function reasonFor(item: BaseItem, purpose: BasePurpose): string {
-  if (purpose === 'leveling') return '필요 소켓을 맞출 수 있는 육성 단계의 제작 후보입니다.';
-  if (purpose === 'endgame') return '필요 소켓과 장비 유형을 만족하는 최종 베이스 후보입니다.';
-  const classNames = (item.mercenaryClasses || []).map((value) => ({ act1: '1막', act2: '2막', act3: '3막', act5: '5막' }[value] || value));
-  return `용병이 장착할 수 있는 장비 유형입니다${classNames.length ? ` (${classNames.join('·')} 용병)` : ''}.`;
+function minItemLevelForSockets(base: BaseItem, sockets: number): number | undefined {
+  const bands = base.socketLimitsByItemLevel;
+  if (!bands?.length) return undefined;
+  const band = [...bands].sort((a, b) => a.minItemLevel - b.minItemLevel).find((item) => item.maxSockets >= sockets);
+  return band && band.minItemLevel > 1 ? band.minItemLevel : undefined;
 }
 
 export function getBaseRecommendations(runeword: Pick<Runeword, 'equipment' | 'sockets'> & Partial<Pick<Runeword, 'id' | 'level'>>): BaseRecommendation[] {
   const compatible = BASE_ITEMS.filter((item) => isBaseCompatible(item, runeword.equipment, runeword.sockets));
-  const selected = new Map<string, BaseRecommendation>();
-  const add = (item: BaseItem | undefined, purpose: BasePurpose) => {
-    if (!item) return;
-    const existing = selected.get(item.id);
-    if (existing) {
-      if (!existing.purposes.includes(purpose)) {
-        existing.purposes.push(purpose);
-        existing.reason = `${existing.reason} ${reasonFor(item, purpose)}`;
-      }
-      return;
-    }
-    selected.set(item.id, {
-      baseItem: item,
-      purposes: [purpose],
-      priority: selected.size + 1,
-      reason: reasonFor(item, purpose),
+  const curated = runeword.id === undefined ? undefined : (recommendationOverrides as Record<string, CuratedRecommendation[]>)[String(runeword.id)];
+  if (curated) {
+    const curatedRecommendations = curated.flatMap((entry, index) => {
+      const baseItem = compatible.find((item) => item.id === entry.baseItemId);
+      return baseItem ? [{ baseItem, purposes: entry.purposes, priority: index + 1, reason: entry.reason, ...(entry.condition ? { condition: entry.condition } : {}) }] : [];
     });
-  };
-
-  const preferredIds = runeword.id === undefined ? [] : (recommendationPreferences as Record<string, string[]>)[String(runeword.id)] || [];
-  for (const id of preferredIds) {
-    if (selected.size >= 5) break;
-    const item = compatible.find((candidate) => candidate.id === id);
-    if (item) add(item, item.tier === 'EL' ? 'endgame' : (runeword.level === undefined || runeword.level <= 40 ? 'leveling' : 'endgame'));
+    return curatedRecommendations;
   }
-
-  if (runeword.level === undefined || runeword.level <= 40) {
-    const earlierTier = choose(compatible, (item) => item.tier !== 'EL' && !selected.has(item.id), (a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
-    if (selected.size < 5) add(earlierTier, 'leveling');
-  }
-
-  const recommendationGroups = [...new Set(equipmentCategories(runeword.equipment).map((type) =>
-    type === 'paladinShield' || type === 'necromancerShield' || type === 'warlockBook' ? 'shield' : type,
-  ))];
-  for (const group of recommendationGroups) {
-    if (selected.size >= 5) break;
-    const groupItems = compatible.filter((item) => item.equipmentTypes.some((type) =>
-      (type === 'paladinShield' || type === 'necromancerShield' || type === 'warlockBook' ? 'shield' : type) === group,
-    ));
-    const elite = choose(groupItems, (item) => item.tier === 'EL', (a, b) => groupItems.indexOf(a) - groupItems.indexOf(b));
-    add(elite, 'endgame');
-  }
-
-  const mercenary = choose(compatible.filter((item) => item.mercenaryClasses?.length), () => true,
-    (a, b) => TIER_ORDER[b.tier] - TIER_ORDER[a.tier] || compatible.indexOf(a) - compatible.indexOf(b));
-  if (selected.size < 5) add(mercenary, 'mercenary');
-
-  for (const item of compatible) {
-    if (selected.size >= 5) break;
-    if (!selected.has(item.id) && (item.tier === 'EL' || runeword.level === undefined || runeword.level <= 40)) {
-      add(item, item.tier === 'EL' ? 'endgame' : 'leveling');
-    }
-  }
-
-  return [...selected.values()].sort((a, b) => a.priority - b.priority);
+  return [];
 }
 
 export function validateBaseRecommendationData(runewords: Runeword[]): string[] {
   const errors: string[] = [];
   const baseById = new Map(BASE_ITEMS.map((base) => [base.id, base]));
   const runewordIds = new Set(runewords.map((row) => String(row.id)));
-  const preferences = recommendationPreferences as Record<string, string[]>;
   if (baseById.size !== BASE_ITEMS.length) errors.push('베이스 ID가 중복됩니다.');
-  for (const [runewordId, baseIds] of Object.entries(preferences)) {
-    if (!runewordIds.has(runewordId)) errors.push(`추천 우선순위에 존재하지 않는 룬워드 ID ${runewordId}가 있습니다.`);
-    for (const baseId of baseIds) if (!baseById.has(baseId)) errors.push(`${runewordId}: 우선 추천 베이스 ${baseId}가 카탈로그에 없습니다.`);
+  for (const [runewordId, recommendations] of Object.entries(recommendationOverrides as Record<string, CuratedRecommendation[]>)) {
+    if (!runewordIds.has(runewordId)) errors.push(`추천 데이터에 존재하지 않는 룬워드 ID ${runewordId}가 있습니다.`);
+    const runeword = runewords.find((row) => String(row.id) === runewordId);
+    for (const recommendation of recommendations) {
+      const base = baseById.get(recommendation.baseItemId);
+      if (!base) errors.push(`${runewordId}: 추천 베이스 ${recommendation.baseItemId}가 카탈로그에 없습니다.`);
+      else if (runeword && !isBaseCompatible(base, runeword.equipment, runeword.sockets)) errors.push(`${runewordId} ${runeword.name}: ${base.nameEn} 원본 추천 데이터가 장비 종류/소켓과 호환되지 않습니다.`);
+    }
   }
 
   for (const item of BASE_ITEMS) {
@@ -155,6 +127,7 @@ export function validateBaseRecommendationData(runewords: Runeword[]): string[] 
   }
 
   for (const runeword of runewords) {
+    if (!hasReviewedBaseRecommendations(runeword.id)) continue;
     const recommendations = getBaseRecommendations(runeword);
     if (recommendations.length < 1 || recommendations.length > 5) errors.push(`${runeword.id} ${runeword.name}: 추천 베이스가 1~5개 범위를 벗어납니다.`);
     if (new Set(recommendations.map((row) => row.baseItem.id)).size !== recommendations.length) errors.push(`${runeword.id} ${runeword.name}: 중복 추천 베이스가 있습니다.`);
@@ -163,6 +136,23 @@ export function validateBaseRecommendationData(runewords: Runeword[]): string[] 
       if (!base) errors.push(`${runeword.id} ${runeword.name}: 존재하지 않는 베이스 ID입니다.`);
       else if (!isBaseCompatible(base, runeword.equipment, runeword.sockets)) errors.push(`${runeword.id} ${runeword.name}: ${base.nameEn} 장비 유형/소켓 호환 오류.`);
       if (!recommendation.reason.trim()) errors.push(`${runeword.id} ${runeword.name}: 추천 이유가 없습니다.`);
+      if (recommendation.reason.trim().length < 12 || recommendation.reason.length > 100) errors.push(`${runeword.id} ${runeword.name}: 추천 이유 길이가 12~100자 기준을 벗어납니다.`);
+      for (const text of [recommendation.reason, recommendation.condition || '']) {
+        for (const match of text.matchAll(/(\d)\s*소켓/g)) {
+          if (Number(match[1]) !== runeword.sockets) errors.push(`${runeword.id} ${runeword.name}: 설명의 ${match[0]}이 실제 ${runeword.sockets}소켓과 다릅니다.`);
+        }
+      }
+      const text = `${recommendation.reason} ${recommendation.condition || ''}`.replace(/\s/g, '');
+      const options = String((runeword as Runeword & { options?: string }).options || '').replace(/\s/g, '');
+      if (/파괴불가/.test(options) && /파괴불가(가|는)?없/.test(text)) errors.push(`${runeword.id} ${runeword.name}: 파괴 불가 옵션을 잘못 부정하는 설명이 있습니다.`);
+      if (/(광신|파나티시즘|파나틱|fanaticism)/i.test(text) && !/(광신|파나티시즘|파나틱|fanaticism)/i.test(options)) errors.push(`${runeword.id} ${runeword.name}: 룬워드 옵션에 없는 광신 효과를 설명합니다.`);
+      if (/광폭화\s*오라/.test(text)) errors.push(`${runeword.id} ${runeword.name}: 광폭화 기술을 오라로 잘못 설명합니다.`);
+      if (/(원기\s*오라|비거\s*오라|vigor\s*aura)/i.test(text) && !/(원기|비거|vigor)/i.test(options)) errors.push(`${runeword.id} ${runeword.name}: 룬워드 옵션에 없는 원기 오라를 설명합니다.`);
+      if (recommendation.purposes.includes('mercenary') && /(발키리|valkyrie)/i.test(text)) errors.push(`${runeword.id} ${runeword.name}: 용병 추천 이유에서 발키리 기술을 활용한다고 안내합니다.`);
+      if (/(자동\s*수리|수리\s*옵션)/.test(text) && !/(자동\s*수리|내구력\s*\d+\s*회복)/.test(options)) errors.push(`${runeword.id} ${runeword.name}: 실제 옵션에 없는 자동 수리를 설명합니다.`);
+      if (/(파괴\s*불가|내구도\s*소모가\s*없)/.test(text) && base?.durability !== 0 && !/(파괴\s*불가|파괴안됨)/.test(options)) errors.push(`${runeword.id} ${runeword.name}: 베이스나 룬워드 옵션에 없는 내구도 효과를 설명합니다.`);
+      const socketLevel = base ? minItemLevelForSockets(base, runeword.sockets) : undefined;
+      if (socketLevel && !new RegExp(`아이템\\s*레벨\\s*${socketLevel}\\s*이상`).test(recommendation.condition || '')) errors.push(`${runeword.id} ${runeword.name}: ${base?.nameEn} ${runeword.sockets}소켓의 아이템 레벨 ${socketLevel}+ 조건 안내가 없습니다.`);
       if (!recommendation.purposes.length) errors.push(`${runeword.id} ${runeword.name}: 목적 분류가 없습니다.`);
       if (recommendation.purposes.includes('mercenary') && (!base?.mercenaryClasses?.length || base.classRestriction)) {
         errors.push(`${runeword.id} ${runeword.name}: 용병 장착 자격이 없는 ${base?.nameEn || recommendation.baseItem.id}가 용병 용도로 표시됩니다.`);
@@ -177,6 +167,16 @@ export function validateBaseRecommendationData(runewords: Runeword[]): string[] 
       for (const recommendation of variantRecommendations) {
         if (!isBaseCompatible(recommendation.baseItem, equipment, sockets)) errors.push(`${runeword.id} ${runeword.name}: Variant ${variant.id}의 ${recommendation.baseItem.nameEn} 호환 오류.`);
       }
+    }
+  }
+  const seenReasons = new Map<string, string>();
+  for (const runeword of runewords) {
+    if (!(recommendationOverrides as Record<string, CuratedRecommendation[]>)[String(runeword.id)]) continue;
+    for (const recommendation of getBaseRecommendations(runeword)) {
+      const key = recommendation.reason.trim();
+      const prior = seenReasons.get(key);
+      if (prior) errors.push(`${runeword.id} ${runeword.name}: ${prior}와 추천 이유가 중복됩니다.`);
+      else seenReasons.set(key, `${runeword.id} ${runeword.name}`);
     }
   }
   return errors;
