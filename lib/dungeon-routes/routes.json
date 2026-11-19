@@ -1,0 +1,133 @@
+[
+  {
+    "id": "tower",
+    "act": 1,
+    "name": "잊힌 탑",
+    "en": "Forgotten Tower",
+    "boss": "백작",
+    "start": "검은 습지에서 잊힌 탑을 찾아 지하 1층에 들어갑니다.",
+    "finish": "지하 5층에서는 안쪽 방으로 이동해 백작을 찾습니다.",
+    "diagram": "/images/dungeon-routes/tower.svg",
+    "verifiedVersion": "RotW 3.4 직접 검증 전",
+    "sources": [
+      "https://diablo2.io/forums/map-reading-t3490.html",
+      "https://www.youtube.com/watch?v=iaAmrldC3c4"
+    ],
+    "segments": [
+      {
+        "from": "탑 지하 1층",
+        "to": "2층",
+        "direction": "LEFT",
+        "reference": "ENTRANCE_TILE",
+        "confidence": "COMMUNITY_RULE"
+      },
+      {
+        "from": "탑 지하 2층",
+        "to": "3층",
+        "direction": "LEFT",
+        "reference": "ENTRANCE_TILE",
+        "confidence": "COMMUNITY_RULE"
+      },
+      {
+        "from": "탑 지하 3층",
+        "to": "4층",
+        "direction": "LEFT",
+        "reference": "ENTRANCE_TILE",
+        "confidence": "COMMUNITY_RULE"
+      },
+      {
+        "from": "탑 지하 4층",
+        "to": "5층",
+        "direction": "LEFT",
+        "reference": "ENTRANCE_TILE",
+        "confidence": "COMMUNITY_RULE"
+      }
+    ]
+  },
+  {
+    "id": "catacombs",
+    "act": 1,
+    "name": "지하 묘지",
+    "en": "Catacombs",
+    "boss": "안다리엘",
+    "start": "지하 묘지 2층 웨이포인트로 이동합니다.",
+    "finish": "4층에서 큰 문을 지나 안쪽 홀에서 안다리엘을 찾습니다.",
+    "diagram": "/images/dungeon-routes/catacombs.svg",
+    "verifiedVersion": "RotW 3.4 직접 검증 전",
+    "sources": [
+      "https://diablo2.io/forums/map-reading-t3490.html",
+      "https://www.youtube.com/watch?v=iaAmrldC3c4"
+    ],
+    "segments": [
+      {
+        "from": "지하 묘지 2층",
+        "to": "3층",
+        "direction": "RIGHT",
+        "reference": "WAYPOINT_TILE",
+        "confidence": "COMMUNITY_RULE"
+      },
+      {
+        "from": "3층",
+        "to": "4층",
+        "direction": "UNKNOWN",
+        "reference": "GENERAL",
+        "confidence": "UNVERIFIED"
+      }
+    ]
+  },
+  {
+    "id": "durance",
+    "act": 3,
+    "name": "증오의 억류지",
+    "en": "Durance of Hate",
+    "boss": "메피스토",
+    "start": "증오의 억류지 2층 웨이포인트로 이동합니다.",
+    "finish": "3층에 도착하면 중앙 수로 건너편에서 메피스토를 찾습니다.",
+    "diagram": "/images/dungeon-routes/durance.svg",
+    "verifiedVersion": "RotW 3.4 직접 검증 전",
+    "sources": [
+      "https://diablo2.io/forums/map-reading-t3490.html",
+      "https://www.youtube.com/watch?v=iaAmrldC3c4"
+    ],
+    "segments": [
+      {
+        "from": "증오의 억류지 2층",
+        "to": "3층",
+        "direction": "LEFT",
+        "reference": "WAYPOINT_TILE",
+        "confidence": "COMMUNITY_RULE"
+      }
+    ]
+  },
+  {
+    "id": "worldstone",
+    "act": 5,
+    "name": "세계석 성채",
+    "en": "Worldstone Keep",
+    "boss": "바알",
+    "start": "세계석 성채 2층 웨이포인트로 이동합니다.",
+    "finish": "파괴의 왕좌 안쪽에서 다섯 차례의 몬스터 무리를 처치한 뒤 세계석 보관실로 들어가 바알을 상대합니다.",
+    "diagram": "/images/dungeon-routes/worldstone.svg",
+    "verifiedVersion": "RotW 3.4 직접 검증 전",
+    "sources": [
+      "https://diablo2.io/forums/map-reading-t3490.html",
+      "https://www.youtube.com/watch?v=iaAmrldC3c4"
+    ],
+    "segments": [
+      {
+        "from": "세계석 성채 2층",
+        "to": "3층",
+        "direction": "RIGHT",
+        "reference": "WAYPOINT_TILE",
+        "confidence": "COMMUNITY_RULE"
+      },
+      {
+        "from": "3층",
+        "to": "파괴의 왕좌",
+        "direction": "UNKNOWN",
+        "reference": "GENERAL",
+        "confidence": "UNVERIFIED"
+      }
+    ]
+  }
+]

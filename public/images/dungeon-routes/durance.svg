@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 208" role="img" aria-labelledby="title desc">
+<title id="title">증오의 억류지 · 증오의 억류지 2층 → 3층</title><desc id="desc">웨이포인트 타일을 빠져나오는 방향이 위일 때 왼쪽을 향해 진입하는 출구 타일의 예시</desc>
+<rect width="360" height="208" rx="12" fill="#161713"/><g font-family="sans-serif" text-anchor="middle" fill="#f1e9d6">
+<text x="180" y="27" font-size="15">증오의 억류지 2층 → 3층</text>
+<path d="M180 144V74m-8 11 8-12 8 12" fill="none" stroke="#e5bd78" stroke-width="4"/>
+<path d="M138 76H65m10 -8 -11 8 11 8" fill="none" stroke="#89d9c6" stroke-width="4"/>
+<circle id="start" cx="180" cy="147" r="7" fill="#e5bd78"/><text x="180" y="181">웨이포인트에서 출발</text>
+<text x="180" y="56" font-size="14">타일 진행 방향</text><g id="target"><text x="65" y="105" font-size="15">계단 예시</text><text x="65" y="127" font-size="14">왼쪽 우선</text></g></g></svg>
